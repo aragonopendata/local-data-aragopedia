@@ -1,0 +1,24 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+<http://opendata.aragon.es/kos/iaest/número-de-viajes-diarios> a skos:ConceptScheme ;
+ skos:notation "número-de-viajes-diarios" ;
+ rdfs:label "Número de viajes diarios"@es .
+
+<http://opendata.aragon.es/kos/iaest/número-de-viajes-diarios/0-viajes> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/número-de-viajes-diarios> ;
+  skos:notation "0-viajes" ;
+  skos:prefLabel "0 viajes" .
+
+<http://opendata.aragon.es/kos/iaest/número-de-viajes-diarios/1-viaje> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/número-de-viajes-diarios> ;
+  skos:notation "1-viaje" ;
+  skos:prefLabel "1 viaje" .
+
+<http://opendata.aragon.es/kos/iaest/número-de-viajes-diarios/2-o-mas-viajes> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/número-de-viajes-diarios> ;
+  skos:notation "2-o-mas-viajes" ;
+  skos:prefLabel "2 ó más viajes" .

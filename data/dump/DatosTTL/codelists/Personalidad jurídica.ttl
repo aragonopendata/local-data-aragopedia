@@ -1,0 +1,34 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+<http://opendata.aragon.es/kos/iaest/personalidad-jurídica> a skos:ConceptScheme ;
+ skos:notation "personalidad-jurídica" ;
+ rdfs:label "Personalidad jurídica"@es .
+
+<http://opendata.aragon.es/kos/iaest/personalidad-jurídica/entidad-publica> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/personalidad-jurídica> ;
+  skos:notation "entidad-publica" ;
+  skos:prefLabel "Entidad pública" .
+
+<http://opendata.aragon.es/kos/iaest/personalidad-jurídica/otras-condiciones-juridicas> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/personalidad-jurídica> ;
+  skos:notation "otras-condiciones-juridicas" ;
+  skos:prefLabel "Otras condiciones jurídicas" .
+
+<http://opendata.aragon.es/kos/iaest/personalidad-jurídica/persona-fisica> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/personalidad-jurídica> ;
+  skos:notation "persona-fisica" ;
+  skos:prefLabel "Persona física" .
+
+<http://opendata.aragon.es/kos/iaest/personalidad-jurídica/sociedad-cooperativa> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/personalidad-jurídica> ;
+  skos:notation "sociedad-cooperativa" ;
+  skos:prefLabel "Sociedad cooperativa" .
+
+<http://opendata.aragon.es/kos/iaest/personalidad-jurídica/sociedad-mercantil> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/personalidad-jurídica> ;
+  skos:notation "sociedad-mercantil" ;
+  skos:prefLabel "Sociedad mercantil" .

@@ -1,0 +1,39 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+<http://opendata.aragon.es/kos/iaest/sector-descripción> a skos:ConceptScheme ;
+ skos:notation "sector-descripción" ;
+ rdfs:label "Sector descripción"@es .
+
+<http://opendata.aragon.es/kos/iaest/sector-descripción/agricultura-ganaderia-y-pesca> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/sector-descripción> ;
+  skos:notation "agricultura-ganaderia-y-pesca" ;
+  skos:prefLabel "Agricultura ganadería y pesca" .
+
+<http://opendata.aragon.es/kos/iaest/sector-descripción/construccion> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/sector-descripción> ;
+  skos:notation "construccion" ;
+  skos:prefLabel "Construcción" .
+
+<http://opendata.aragon.es/kos/iaest/sector-descripción/industria-y-energia> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/sector-descripción> ;
+  skos:notation "industria-y-energia" ;
+  skos:prefLabel "Industria y energía" .
+
+<http://opendata.aragon.es/kos/iaest/sector-descripción/servicios> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/sector-descripción> ;
+  skos:notation "servicios" ;
+  skos:prefLabel "Servicios" .
+
+<http://opendata.aragon.es/kos/iaest/sector-descripción/sin-clasificar> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/sector-descripción> ;
+  skos:notation "sin-clasificar" ;
+  skos:prefLabel "Sin clasificar" .
+
+<http://opendata.aragon.es/kos/iaest/sector-descripción/sin-empleo-anterior> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/sector-descripción> ;
+  skos:notation "sin-empleo-anterior" ;
+  skos:prefLabel "Sin empleo anterior" .

@@ -1,0 +1,29 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+<http://opendata.aragon.es/kos/iaest/titularidad> a skos:ConceptScheme ;
+ skos:notation "titularidad" ;
+ rdfs:label "Titularidad"@es .
+
+<http://opendata.aragon.es/kos/iaest/titularidad/centros-privados> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/titularidad> ;
+  skos:notation "centros-privados" ;
+  skos:prefLabel "Centros privados" .
+
+<http://opendata.aragon.es/kos/iaest/titularidad/centros-publicos> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/titularidad> ;
+  skos:notation "centros-publicos" ;
+  skos:prefLabel "Centros públicos" .
+
+<http://opendata.aragon.es/kos/iaest/titularidad/privada> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/titularidad> ;
+  skos:notation "privada" ;
+  skos:prefLabel "Privada" .
+
+<http://opendata.aragon.es/kos/iaest/titularidad/publica> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/titularidad> ;
+  skos:notation "publica" ;
+  skos:prefLabel "Pública" .

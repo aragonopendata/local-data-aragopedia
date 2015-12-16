@@ -1,0 +1,39 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+<http://opendata.aragon.es/kos/iaest/combustible> a skos:ConceptScheme ;
+ skos:notation "combustible" ;
+ rdfs:label "Combustible"@es .
+
+<http://opendata.aragon.es/kos/iaest/combustible/derivados-del-carbon> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/combustible> ;
+  skos:notation "derivados-del-carbon" ;
+  skos:prefLabel "Derivados del carbón" .
+
+<http://opendata.aragon.es/kos/iaest/combustible/derivados-del-petroleo> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/combustible> ;
+  skos:notation "derivados-del-petroleo" ;
+  skos:prefLabel "Derivados del petróleo" .
+
+<http://opendata.aragon.es/kos/iaest/combustible/electricidad> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/combustible> ;
+  skos:notation "electricidad" ;
+  skos:prefLabel "Electricidad" .
+
+<http://opendata.aragon.es/kos/iaest/combustible/gas> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/combustible> ;
+  skos:notation "gas" ;
+  skos:prefLabel "Gas" .
+
+<http://opendata.aragon.es/kos/iaest/combustible/madera> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/combustible> ;
+  skos:notation "madera" ;
+  skos:prefLabel "Madera" .
+
+<http://opendata.aragon.es/kos/iaest/combustible/otros> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/combustible> ;
+  skos:notation "otros" ;
+  skos:prefLabel "Otros" .

@@ -1,0 +1,44 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+<http://opendata.aragon.es/kos/iaest/régimen> a skos:ConceptScheme ;
+ skos:notation "régimen" ;
+ rdfs:label "Régimen"@es .
+
+<http://opendata.aragon.es/kos/iaest/régimen/agrario-ajena> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/régimen> ;
+  skos:notation "agrario-ajena" ;
+  skos:prefLabel "Agrario ajena" .
+
+<http://opendata.aragon.es/kos/iaest/régimen/autonomos> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/régimen> ;
+  skos:notation "autonomos" ;
+  skos:prefLabel "Autónomos" .
+
+<http://opendata.aragon.es/kos/iaest/régimen/general> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/régimen> ;
+  skos:notation "general" ;
+  skos:prefLabel "General" .
+
+<http://opendata.aragon.es/kos/iaest/régimen/hogar-fijos> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/régimen> ;
+  skos:notation "hogar-fijos" ;
+  skos:prefLabel "Hogar Fijos" .
+
+<http://opendata.aragon.es/kos/iaest/régimen/mineria> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/régimen> ;
+  skos:notation "mineria" ;
+  skos:prefLabel "Minería" .
+
+<http://opendata.aragon.es/kos/iaest/régimen/regimen-general-(excluido-s.e.-hogar)-y-r.-e.-mineria-del-carbon> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/régimen> ;
+  skos:notation "regimen-general-(excluido-s.e.-hogar)-y-r.-e.-mineria-del-carbon" ;
+  skos:prefLabel "Régimen General (excluído S.E. Hogar) y R. E. Minería del Carbón" .
+
+<http://opendata.aragon.es/kos/iaest/régimen/regimen-general-r.e.-mineria-del-carbon-y-r.e.-empleados-hogar-fijos> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/régimen> ;
+  skos:notation "regimen-general-r.e.-mineria-del-carbon-y-r.e.-empleados-hogar-fijos" ;
+  skos:prefLabel "Régimen General R.E. Minería del Carbón y R.E. Empleados Hogar fijos" .

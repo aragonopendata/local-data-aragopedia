@@ -1,0 +1,29 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+<http://opendata.aragon.es/kos/iaest/nacionalidad> a skos:ConceptScheme ;
+ skos:notation "nacionalidad" ;
+ rdfs:label "Nacionalidad"@es .
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad/españoles> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad> ;
+  skos:notation "españoles" ;
+  skos:prefLabel "Españoles" .
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-comunitarios> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad> ;
+  skos:notation "extranjeros-comunitarios" ;
+  skos:prefLabel "Extranjeros comunitarios" .
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-no-comunitarios> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad> ;
+  skos:notation "extranjeros-no-comunitarios" ;
+  skos:prefLabel "Extranjeros no comunitarios" .
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad/no-consta> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad> ;
+  skos:notation "no-consta" ;
+  skos:prefLabel "No consta" .

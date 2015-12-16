@@ -1,0 +1,19 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+<http://opendata.aragon.es/kos/iaest/tipo-nacionalidad> a skos:ConceptScheme ;
+ skos:notation "tipo-nacionalidad" ;
+ rdfs:label "Tipo nacionalidad"@es .
+
+<http://opendata.aragon.es/kos/iaest/tipo-nacionalidad/nacionalidad-española> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-nacionalidad> ;
+  skos:notation "nacionalidad-española" ;
+  skos:prefLabel "Nacionalidad española" .
+
+<http://opendata.aragon.es/kos/iaest/tipo-nacionalidad/nacionalidad-extranjera> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-nacionalidad> ;
+  skos:notation "nacionalidad-extranjera" ;
+  skos:prefLabel "Nacionalidad extranjera" .

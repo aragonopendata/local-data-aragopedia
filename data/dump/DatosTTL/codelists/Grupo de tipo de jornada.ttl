@@ -1,0 +1,24 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+<http://opendata.aragon.es/kos/iaest/grupo-de-tipo-de-jornada> a skos:ConceptScheme ;
+ skos:notation "grupo-de-tipo-de-jornada" ;
+ rdfs:label "Grupo de tipo de jornada"@es .
+
+<http://opendata.aragon.es/kos/iaest/grupo-de-tipo-de-jornada/1---jornada-completa> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/grupo-de-tipo-de-jornada> ;
+  skos:notation "1---jornada-completa" ;
+  skos:prefLabel "1 - Jornada Completa" .
+
+<http://opendata.aragon.es/kos/iaest/grupo-de-tipo-de-jornada/2---jornada-parcial> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/grupo-de-tipo-de-jornada> ;
+  skos:notation "2---jornada-parcial" ;
+  skos:prefLabel "2 - Jornada Parcial" .
+
+<http://opendata.aragon.es/kos/iaest/grupo-de-tipo-de-jornada/3---fijos-discontinuos> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/grupo-de-tipo-de-jornada> ;
+  skos:notation "3---fijos-discontinuos" ;
+  skos:prefLabel "3 - Fijos Discontinuos" .

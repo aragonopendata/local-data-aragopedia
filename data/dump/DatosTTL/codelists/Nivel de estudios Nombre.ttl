@@ -1,0 +1,34 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+<http://opendata.aragon.es/kos/iaest/nivel-de-estudios-nombre> a skos:ConceptScheme ;
+ skos:notation "nivel-de-estudios-nombre" ;
+ rdfs:label "Nivel de estudios Nombre"@es .
+
+<http://opendata.aragon.es/kos/iaest/nivel-de-estudios-nombre/bup-bachiller-logse-o-superior> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/nivel-de-estudios-nombre> ;
+  skos:notation "bup-bachiller-logse-o-superior" ;
+  skos:prefLabel "BUP Bachiller LOGSE ó superior" .
+
+<http://opendata.aragon.es/kos/iaest/nivel-de-estudios-nombre/graduado-escolar-o-eso> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/nivel-de-estudios-nombre> ;
+  skos:notation "graduado-escolar-o-eso" ;
+  skos:prefLabel "Graduado escolar o ESO" .
+
+<http://opendata.aragon.es/kos/iaest/nivel-de-estudios-nombre/inferior-a-graduado-escolar-o-eso> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/nivel-de-estudios-nombre> ;
+  skos:notation "inferior-a-graduado-escolar-o-eso" ;
+  skos:prefLabel "Inferior a graduado escolar o ESO" .
+
+<http://opendata.aragon.es/kos/iaest/nivel-de-estudios-nombre/no-sabe-leer-ni-escribir> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/nivel-de-estudios-nombre> ;
+  skos:notation "no-sabe-leer-ni-escribir" ;
+  skos:prefLabel "No sabe leer ni escribir" .
+
+<http://opendata.aragon.es/kos/iaest/nivel-de-estudios-nombre/sin-clasificar> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/nivel-de-estudios-nombre> ;
+  skos:notation "sin-clasificar" ;
+  skos:prefLabel "Sin clasificar" .

@@ -1,0 +1,39 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+<http://opendata.aragon.es/kos/iaest/tipo-de-hogar> a skos:ConceptScheme ;
+ skos:notation "tipo-de-hogar" ;
+ rdfs:label "Tipo de hogar"@es .
+
+<http://opendata.aragon.es/kos/iaest/tipo-de-hogar/hogares-multipersonales> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-de-hogar> ;
+  skos:notation "hogares-multipersonales" ;
+  skos:prefLabel "Hogares multipersonales" .
+
+<http://opendata.aragon.es/kos/iaest/tipo-de-hogar/hogares-multipersonales-con-dos-o-mas-familias> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-de-hogar> ;
+  skos:notation "hogares-multipersonales-con-dos-o-mas-familias" ;
+  skos:prefLabel "Hogares multipersonales con dos o más familias" .
+
+<http://opendata.aragon.es/kos/iaest/tipo-de-hogar/hogares-multipersonales-forman-una-familia-con-otras-personas-no-emparentadas> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-de-hogar> ;
+  skos:notation "hogares-multipersonales-forman-una-familia-con-otras-personas-no-emparentadas" ;
+  skos:prefLabel "Hogares multipersonales forman una familia con otras personas no emparentadas" .
+
+<http://opendata.aragon.es/kos/iaest/tipo-de-hogar/hogares-multipersonales-forman-una-familia-sin-otras-personas> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-de-hogar> ;
+  skos:notation "hogares-multipersonales-forman-una-familia-sin-otras-personas" ;
+  skos:prefLabel "Hogares multipersonales forman una familia sin otras personas" .
+
+<http://opendata.aragon.es/kos/iaest/tipo-de-hogar/hogares-multipersonales-no-forman-familia> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-de-hogar> ;
+  skos:notation "hogares-multipersonales-no-forman-familia" ;
+  skos:prefLabel "Hogares multipersonales no forman familia" .
+
+<http://opendata.aragon.es/kos/iaest/tipo-de-hogar/hogares-unipersonales> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-de-hogar> ;
+  skos:notation "hogares-unipersonales" ;
+  skos:prefLabel "Hogares unipersonales" .

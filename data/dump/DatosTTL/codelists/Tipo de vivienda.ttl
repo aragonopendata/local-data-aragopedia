@@ -1,0 +1,24 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+<http://opendata.aragon.es/kos/iaest/tipo-de-vivienda> a skos:ConceptScheme ;
+ skos:notation "tipo-de-vivienda" ;
+ rdfs:label "Tipo de vivienda"@es .
+
+<http://opendata.aragon.es/kos/iaest/tipo-de-vivienda/vivienda-no-principal-secundaria> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-de-vivienda> ;
+  skos:notation "vivienda-no-principal-secundaria" ;
+  skos:prefLabel "Vivienda no principal secundaria" .
+
+<http://opendata.aragon.es/kos/iaest/tipo-de-vivienda/vivienda-no-principal-vacia> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-de-vivienda> ;
+  skos:notation "vivienda-no-principal-vacia" ;
+  skos:prefLabel "Vivienda no principal vacía" .
+
+<http://opendata.aragon.es/kos/iaest/tipo-de-vivienda/vivienda-principal> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-de-vivienda> ;
+  skos:notation "vivienda-principal" ;
+  skos:prefLabel "Vivienda principal" .

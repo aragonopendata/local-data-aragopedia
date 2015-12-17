@@ -1,0 +1,44 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+<http://opendata.aragon.es/kos/iaest/porcentaje-de-sau-en-propiedad-del-titular> a skos:ConceptScheme ;
+ skos:notation "porcentaje-de-sau-en-propiedad-del-titular" ;
+ rdfs:label "Porcentaje de SAU en propiedad del titular"@es .
+
+<http://opendata.aragon.es/kos/iaest/porcentaje-de-sau-en-propiedad-del-titular/a)-no-hay-sau> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/porcentaje-de-sau-en-propiedad-del-titular> ;
+  skos:notation "a)-no-hay-sau" ;
+  skos:prefLabel "a) No hay SAU" .
+
+<http://opendata.aragon.es/kos/iaest/porcentaje-de-sau-en-propiedad-del-titular/b)-<-10%-de-la-sau-en-propiedad> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/porcentaje-de-sau-en-propiedad-del-titular> ;
+  skos:notation "b)-<-10%-de-la-sau-en-propiedad" ;
+  skos:prefLabel "b) < 10% de la SAU en propiedad" .
+
+<http://opendata.aragon.es/kos/iaest/porcentaje-de-sau-en-propiedad-del-titular/c)->=10%-a-<-25%--de-la-sau-en-propiedad> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/porcentaje-de-sau-en-propiedad-del-titular> ;
+  skos:notation "c)->=10%-a-<-25%--de-la-sau-en-propiedad" ;
+  skos:prefLabel "c) >=10% a < 25%  de la SAU en propiedad" .
+
+<http://opendata.aragon.es/kos/iaest/porcentaje-de-sau-en-propiedad-del-titular/d)->=25%-a-<-50%--de-la-sau-en-propiedad> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/porcentaje-de-sau-en-propiedad-del-titular> ;
+  skos:notation "d)->=25%-a-<-50%--de-la-sau-en-propiedad" ;
+  skos:prefLabel "d) >=25% a < 50%  de la SAU en propiedad" .
+
+<http://opendata.aragon.es/kos/iaest/porcentaje-de-sau-en-propiedad-del-titular/e)->=50%-a-<-75%--de-la-sau-en-propiedad> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/porcentaje-de-sau-en-propiedad-del-titular> ;
+  skos:notation "e)->=50%-a-<-75%--de-la-sau-en-propiedad" ;
+  skos:prefLabel "e) >=50% a < 75%  de la SAU en propiedad" .
+
+<http://opendata.aragon.es/kos/iaest/porcentaje-de-sau-en-propiedad-del-titular/f)->=-75%-a-<-90%--de-la-sau-en-propiedad> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/porcentaje-de-sau-en-propiedad-del-titular> ;
+  skos:notation "f)->=-75%-a-<-90%--de-la-sau-en-propiedad" ;
+  skos:prefLabel "f) >= 75% a < 90%  de la SAU en propiedad" .
+
+<http://opendata.aragon.es/kos/iaest/porcentaje-de-sau-en-propiedad-del-titular/g)->=-90%--de-la-sau-en-propiedad> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/porcentaje-de-sau-en-propiedad-del-titular> ;
+  skos:notation "g)->=-90%--de-la-sau-en-propiedad" ;
+  skos:prefLabel "g) >= 90%  de la SAU en propiedad" .

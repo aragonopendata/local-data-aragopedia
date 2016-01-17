@@ -1,0 +1,29 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+<http://opendata.aragon.es/kos/iaest/tipo-de-alojamiento> a skos:ConceptScheme ;
+ skos:notation "tipo-de-alojamiento" ;
+ rdfs:label "Tipo de alojamiento"@es .
+
+<http://opendata.aragon.es/kos/iaest/tipo-de-alojamiento/apartamentos-turisticos> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-de-alojamiento> ;
+  skos:notation "apartamentos-turisticos" ;
+  skos:prefLabel "Apartamentos turísticos" .
+
+<http://opendata.aragon.es/kos/iaest/tipo-de-alojamiento/campings-y-areas-de-acampada> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-de-alojamiento> ;
+  skos:notation "campings-y-areas-de-acampada" ;
+  skos:prefLabel "Campings y áreas de acampada" .
+
+<http://opendata.aragon.es/kos/iaest/tipo-de-alojamiento/hoteles-hostales-y-similares> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-de-alojamiento> ;
+  skos:notation "hoteles-hostales-y-similares" ;
+  skos:prefLabel "Hoteles hostales y similares" .
+
+<http://opendata.aragon.es/kos/iaest/tipo-de-alojamiento/viviendas-de-turismo-rural> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-de-alojamiento> ;
+  skos:notation "viviendas-de-turismo-rural" ;
+  skos:prefLabel "Viviendas de turismo rural" .

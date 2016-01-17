@@ -1,0 +1,19 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+<http://opendata.aragon.es/kos/iaest/municipio-zona-desfavorecida> a skos:ConceptScheme ;
+ skos:notation "municipio-zona-desfavorecida" ;
+ rdfs:label "Municipio zona desfavorecida"@es .
+
+<http://opendata.aragon.es/kos/iaest/municipio-zona-desfavorecida/no-es-zona-desfavorecida> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/municipio-zona-desfavorecida> ;
+  skos:notation "no-es-zona-desfavorecida" ;
+  skos:prefLabel "No es zona desfavorecida" .
+
+<http://opendata.aragon.es/kos/iaest/municipio-zona-desfavorecida/zona-desfavorecida> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/municipio-zona-desfavorecida> ;
+  skos:notation "zona-desfavorecida" ;
+  skos:prefLabel "Zona desfavorecida" .

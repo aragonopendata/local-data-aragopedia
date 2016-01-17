@@ -1,0 +1,24 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+<http://opendata.aragon.es/kos/iaest/evacuación-aguas-residuales> a skos:ConceptScheme ;
+ skos:notation "evacuación-aguas-residuales" ;
+ rdfs:label "Evacuación aguas residuales"@es .
+
+<http://opendata.aragon.es/kos/iaest/evacuación-aguas-residuales/alcantarillado> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/evacuación-aguas-residuales> ;
+  skos:notation "alcantarillado" ;
+  skos:prefLabel "Alcantarillado" .
+
+<http://opendata.aragon.es/kos/iaest/evacuación-aguas-residuales/otro-tipo-de-evacuacion> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/evacuación-aguas-residuales> ;
+  skos:notation "otro-tipo-de-evacuacion" ;
+  skos:prefLabel "Otro tipo de evacuación" .
+
+<http://opendata.aragon.es/kos/iaest/evacuación-aguas-residuales/sin-evacuacion> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/evacuación-aguas-residuales> ;
+  skos:notation "sin-evacuacion" ;
+  skos:prefLabel "Sin evacuación" .

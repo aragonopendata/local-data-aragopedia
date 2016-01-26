@@ -21,7 +21,7 @@ for f in `ls *.csv`; do
  if tr '[\000-\011\013-\037\177-\377]' '.' < $f | grep -q 'D.O.C.T.Y.P.E'; then
   mv $f ../InformesErroresHTML
  fi
- if tr '[\000-\011\013-\037\177-\377]' '.' < $f | grep -q 'd.i.v'; then
+ if tr '[\000-\011\013-\037\177-\377]' '.' < $f | grep -q '<.d.i.v'; then
   mv $f ../InformesErroresHTML
  fi
 done
@@ -29,3 +29,5 @@ done
 ls ../InformesErroresHTML > ../InformesErroresHTML.txt
 
 cd ../../src/01_extraction-scripts
+pwd
+

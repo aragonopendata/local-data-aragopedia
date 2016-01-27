@@ -1,0 +1,19 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmls.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+<http://opendata.aragon.es/kos/iaest/ascensor> a skos:ConceptScheme ;
+ skos:notation "ascensor" ;
+ rdfs:label "Ascensor"@es .
+
+<http://opendata.aragon.es/kos/iaest/ascensor/con-ascensor> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/ascensor> ;
+  skos:notation "con-ascensor" ;
+  skos:prefLabel "Con ascensor" .
+
+<http://opendata.aragon.es/kos/iaest/ascensor/sin-ascensor> a skos:Concept ;
+  skos:inScheme <http://opendata.aragon.es/kos/iaest/ascensor> ;
+  skos:notation "sin-ascensor" ;
+  skos:prefLabel "Sin ascensor" .

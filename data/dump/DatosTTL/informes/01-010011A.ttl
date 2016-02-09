@@ -1,0 +1,84 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-010011A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010011>;
+	rdfs:label "Cubo de datos para 01-010011A"@es ;
+	rdfs:comment "Cubo de datos para 01-010011A"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010011A/eda5c4d4-0c6d-3c9f-91bf-192099faa907> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010011>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:plantas-sobre-rasante <http://opendata.aragon.es/kos/iaest/plantas-sobre-rasante/01> ;
+	iaest-measure:numero-de-edificios 74637 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010011A/5f0a86b4-1aed-399f-8d45-aed4cb120543> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010011>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:plantas-sobre-rasante <http://opendata.aragon.es/kos/iaest/plantas-sobre-rasante/02> ;
+	iaest-measure:numero-de-edificios 123893 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010011A/f6aac1dc-74ec-334e-8360-3746b6791b1f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010011>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:plantas-sobre-rasante <http://opendata.aragon.es/kos/iaest/plantas-sobre-rasante/03> ;
+	iaest-measure:numero-de-edificios 49572 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010011A/93d16a95-a5f8-391f-adc7-61d279770ad7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010011>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:plantas-sobre-rasante <http://opendata.aragon.es/kos/iaest/plantas-sobre-rasante/04> ;
+	iaest-measure:numero-de-edificios 7697 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010011A/9f321bab-23d9-3605-ac9c-3902a0ca360e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010011>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:plantas-sobre-rasante <http://opendata.aragon.es/kos/iaest/plantas-sobre-rasante/05> ;
+	iaest-measure:numero-de-edificios 7597 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010011A/53090be8-6c19-3506-8e2f-1f22c17d6532> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010011>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:plantas-sobre-rasante <http://opendata.aragon.es/kos/iaest/plantas-sobre-rasante/06> ;
+	iaest-measure:numero-de-edificios 2668 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010011A/839316da-eaa0-3fea-806b-a9f769ba49c5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010011>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:plantas-sobre-rasante <http://opendata.aragon.es/kos/iaest/plantas-sobre-rasante/07> ;
+	iaest-measure:numero-de-edificios 1608 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010011A/6489a2b4-d272-3831-8b11-19eae0d03289> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010011>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:plantas-sobre-rasante <http://opendata.aragon.es/kos/iaest/plantas-sobre-rasante/08> ;
+	iaest-measure:numero-de-edificios 1963 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010011A/25f5abb5-71dd-33b1-850e-74458dd98991> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010011>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:plantas-sobre-rasante <http://opendata.aragon.es/kos/iaest/plantas-sobre-rasante/09> ;
+	iaest-measure:numero-de-edificios 824 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010011A/968eea33-e5b9-37b1-8445-905f29f8f02c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010011>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:plantas-sobre-rasante <http://opendata.aragon.es/kos/iaest/plantas-sobre-rasante/10-o-mas> ;
+	iaest-measure:numero-de-edificios 1957 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

@@ -1,0 +1,48 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/915-150001A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/915-150001>;
+	rdfs:label "Cubo de datos para 915-150001A"@es ;
+	rdfs:comment "Cubo de datos para 915-150001A"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150001A/e0ab1fa4-0518-36db-a974-3396aa8fc50a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/915-150001>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-measure:censo-electoral 1018510 ;
+	iaest-measure:participacion 723071 ;
+	iaest-measure:abstencion 295439 ;
+	iaest-measure:votos-nulos 11379 ;
+	iaest-measure:votos-blancos 14535 ;
+	iaest-measure:votos-a-candidaturas 697157 ;
+	iaest-measure:-participacion 709930192143425 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150001A/6be176c4-6e94-3e23-b474-ac42d021eb74> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/915-150001>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2008> ;
+	iaest-measure:censo-electoral 1016420 ;
+	iaest-measure:participacion 771633 ;
+	iaest-measure:abstencion 244787 ;
+	iaest-measure:votos-nulos 4153 ;
+	iaest-measure:votos-blancos 9620 ;
+	iaest-measure:votos-a-candidaturas 757860 ;
+	iaest-measure:-participacion 759167470140296 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

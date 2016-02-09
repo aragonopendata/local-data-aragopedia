@@ -14,20 +14,26 @@
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
 @prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
 @prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/03-030061TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030061>;
+	rdfs:label "Cubo de datos para 03-030061TP"@es ;
+	rdfs:comment "Cubo de datos para 03-030061TP"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://opendata.aragon.es/recurso/iaest/observacion/03-030061TP/2ac827ed-388a-3ef1-8a2e-6b8d195a7957> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030061TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030061>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:tamano-medio 27637356680129 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/03-030061TP/0870ec1a-eee9-3c08-9452-889b05df8958> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030061TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030061>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
 	iaest-measure:tamano-medio 262083414920697 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/03-030061TP/78e4db78-90e1-34b1-834a-26af194fdf6c> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030061TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030061>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:tamano-medio 26818463065389 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

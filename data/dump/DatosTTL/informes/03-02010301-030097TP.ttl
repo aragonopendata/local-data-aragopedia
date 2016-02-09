@@ -14,10 +14,16 @@
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
 @prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
 @prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030097TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030097>;
+	rdfs:label "Cubo de datos para 03-02010301-030097TP"@es ;
+	rdfs:comment "Cubo de datos para 03-02010301-030097TP"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030097TP/30f4c757-dddd-389d-99a7-e12e99f5bd47> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030097TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030097>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:total-viviendas 891799463662784 ;
 	iaest-measure:viviendas-con-calefaccion 763376837163493 ;
@@ -30,7 +36,7 @@
 	iaest-measure:viviendas-con-acceso-a-internet 44820798124016 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030097TP/50cb6909-87b5-3dd8-b464-7362b09edcd3> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030097TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030097>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
 	iaest-measure:total-viviendas 561086627265971 ;
 	iaest-measure:viviendas-con-calefaccion 429609860065044 ;
@@ -43,7 +49,7 @@
 	iaest-measure:viviendas-con-acceso-a-internet 244405648742399 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030097TP/69f29289-f8fb-304a-8937-7077aa1214fc> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030097TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030097>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:total-viviendas 393581849665256 ;
 	iaest-measure:viviendas-con-calefaccion 33939836801332 ;

@@ -1,0 +1,54 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-010045A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010045>;
+	rdfs:label "Cubo de datos para 01-010045A"@es ;
+	rdfs:comment "Cubo de datos para 01-010045A"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010045A/18b52985-2fd4-3082-b2d3-a62dcfd35835> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010045>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:numero-total-de-explotaciones 80021 ;
+	iaest-measure:explotaciones-cuyo-titular-es-persona-fisica 74544 ;
+	iaest-measure:explotaciones-cuyo-titular-es-una-sociedad 1095 ;
+	iaest-measure:explotaciones-cuyo-titular-es-una-entidad-publica 1322 ;
+	iaest-dimension:explotaciones-cuyo-titular-es-una-cooperativa-de-produccion <http://opendata.aragon.es/kos/iaest/explotaciones-cuyo-titular-es-una-cooperativa-de-produccion/81> ;
+	iaest-measure:explotaciones-con-otra-condicion-juridica 2979 ;
+	iaest-measure:explotaciones-con-experiencia-practica-exclusiva-del-titular 73148 ;
+	iaest-measure:explotaciones-con-formacion-universitaria-del-titular 943 ;
+	iaest-measure:explotaciones-con-formacion-profesional-del-titular 2811 ;
+	iaest-measure:explotaciones-con-otra-formacion-agricola-del-titular 3119 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010045A/69bdf2f7-12e9-3e42-b15f-4f706f172ec3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010045>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1989> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:numero-total-de-explotaciones 100731 ;
+	iaest-measure:explotaciones-cuyo-titular-es-persona-fisica 97472 ;
+	iaest-measure:explotaciones-cuyo-titular-es-una-sociedad 749 ;
+	iaest-measure:explotaciones-cuyo-titular-es-una-entidad-publica 1709 ;
+	iaest-dimension:explotaciones-cuyo-titular-es-una-cooperativa-de-produccion <http://opendata.aragon.es/kos/iaest/explotaciones-cuyo-titular-es-una-cooperativa-de-produccion/43> ;
+	iaest-measure:explotaciones-con-otra-condicion-juridica 758 ;
+	iaest-measure:explotaciones-con-experiencia-practica-exclusiva-del-titular 97642 ;
+	iaest-measure:explotaciones-con-formacion-universitaria-del-titular 1237 ;
+	iaest-measure:explotaciones-con-formacion-profesional-del-titular 756 ;
+	iaest-measure:explotaciones-con-otra-formacion-agricola-del-titular 1096 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

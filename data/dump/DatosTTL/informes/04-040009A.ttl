@@ -1,0 +1,94 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/04-040009A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/04-040009>;
+	rdfs:label "Cubo de datos para 04-040009A"@es ;
+	rdfs:comment "Cubo de datos para 04-040009A"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040009A/66e78248-7772-3e9a-bda4-585ca92c8a82> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/04-040009>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-dimension:corine-land-cover-2000-nivel-1-descripcion <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-1-descripcion/superficies-artificiales> ;
+	iaest-measure:superficie-has 49185780003 ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040009A/6c3e29cc-7bf4-384e-9fbb-74f3b0f3952c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/04-040009>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-dimension:corine-land-cover-2000-nivel-1-descripcion <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-1-descripcion/superficies-artificiales> ;
+	iaest-measure:superficie-has 40260606002 ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040009A/e2835c81-29dc-3a93-b9b0-5fe321137825> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/04-040009>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-dimension:corine-land-cover-2000-nivel-1-descripcion <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-1-descripcion/zonas-agricolas> ;
+	iaest-measure:superficie-has 2321543069497 ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040009A/22e2c0ca-349d-3e4f-a7b5-91c8aac8b4c7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/04-040009>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-dimension:corine-land-cover-2000-nivel-1-descripcion <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-1-descripcion/zonas-agricolas> ;
+	iaest-measure:superficie-has 2330808597188 ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040009A/56e57620-3a48-3873-a495-eaa5970b8abc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/04-040009>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-dimension:corine-land-cover-2000-nivel-1-descripcion <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-1-descripcion/zonas-forestales-con-vegetacion-natural-y-espacios-abiertos> ;
+	iaest-measure:superficie-has 2369287167685 ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040009A/f1980938-9e1c-34fe-a25d-667ba8eb1ebb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/04-040009>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-dimension:corine-land-cover-2000-nivel-1-descripcion <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-1-descripcion/zonas-forestales-con-vegetacion-natural-y-espacios-abiertos> ;
+	iaest-measure:superficie-has 2370785235412 ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040009A/0e7be5d1-209f-3f73-bed8-220a748f74cd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/04-040009>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-dimension:corine-land-cover-2000-nivel-1-descripcion <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-1-descripcion/zonas-humedas> ;
+	iaest-measure:superficie-has 4320993166 ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040009A/b3c7b8c2-d120-31cb-b494-173e9bc2e084> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/04-040009>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-dimension:corine-land-cover-2000-nivel-1-descripcion <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-1-descripcion/zonas-humedas> ;
+	iaest-measure:superficie-has 3874267719 ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040009A/c152a14f-4966-3961-b7c2-3a90890e7864> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/04-040009>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-dimension:corine-land-cover-2000-nivel-1-descripcion <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-1-descripcion/superficies-de-agua> ;
+	iaest-measure:superficie-has 2810803528 ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040009A/774ee049-7e39-3625-805a-9565f7a1b01f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/04-040009>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-dimension:corine-land-cover-2000-nivel-1-descripcion <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-1-descripcion/superficies-de-agua> ;
+	iaest-measure:superficie-has 27244455294 ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

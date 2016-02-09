@@ -1,0 +1,73 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030102A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030102>;
+	rdfs:label "Cubo de datos para 03-02010301-030102A"@es ;
+	rdfs:comment "Cubo de datos para 03-02010301-030102A"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030102A/b4f13ffd-9ed4-378c-af0f-4fc06b0dda1e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030102>; 
+	iaest-dimension:numero-de-miembros <http://opendata.aragon.es/kos/iaest/numero-de-miembros/1-persona> ;
+	iaest-measure:n-medio-de-miembros 1 ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:n-hogares 136519749655023 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030102A/0a4bf7ef-f5a2-31fa-9976-b1d2f4115581> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030102>; 
+	iaest-dimension:numero-de-miembros <http://opendata.aragon.es/kos/iaest/numero-de-miembros/2-personas> ;
+	iaest-measure:n-medio-de-miembros 2 ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:n-hogares 168054210122845 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030102A/514e42db-6578-3f25-ae7f-152bb7229ad5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030102>; 
+	iaest-dimension:numero-de-miembros <http://opendata.aragon.es/kos/iaest/numero-de-miembros/3-personas> ;
+	iaest-measure:n-medio-de-miembros 3 ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:n-hogares 114830683633541 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030102A/2ca0d7ac-dbd2-30a7-bad8-fccb43943fd0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030102>; 
+	iaest-dimension:numero-de-miembros <http://opendata.aragon.es/kos/iaest/numero-de-miembros/4-personas> ;
+	iaest-measure:n-medio-de-miembros 4 ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:n-hogares 925363952689878 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030102A/6270fca9-70d0-35df-8c05-d58d0e0138e4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030102>; 
+	iaest-dimension:numero-de-miembros <http://opendata.aragon.es/kos/iaest/numero-de-miembros/5-personas> ;
+	iaest-measure:n-medio-de-miembros 5 ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:n-hogares 201074044063076 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030102A/104f4ff7-32a8-3509-8362-c7bf05418ea9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030102>; 
+	iaest-dimension:numero-de-miembros <http://opendata.aragon.es/kos/iaest/numero-de-miembros/6-personas> ;
+	iaest-measure:n-medio-de-miembros 6 ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:n-hogares 52946493291716 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030102A/cf5fd5a0-fd42-39b6-ab0a-107c46c165b9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030102>; 
+	iaest-dimension:numero-de-miembros <http://opendata.aragon.es/kos/iaest/numero-de-miembros/7-o-mas-personas> ;
+	iaest-measure:n-medio-de-miembros 760670420661859 ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:n-hogares 15273663422554 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

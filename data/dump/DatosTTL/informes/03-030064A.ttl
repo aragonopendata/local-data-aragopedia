@@ -1,0 +1,114 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/03-030064A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030064>;
+	rdfs:label "Cubo de datos para 03-030064A"@es ;
+	rdfs:comment "Cubo de datos para 03-030064A"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030064A/24f05e47-1dcc-319c-9570-dd6f7f13f5c5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030064>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-34-anos> ;
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/solterosas> ;
+	iaest-measure:numero-hogares 12412 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030064A/9532ee00-c84f-3da6-aef9-6e4be4c6928b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030064>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-34-anos> ;
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/casadosas> ;
+	iaest-measure:numero-hogares 2621 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030064A/7e700171-64a8-3353-9a94-2ea75f11e86b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030064>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-34-anos> ;
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/viudosas> ;
+	iaest-measure:numero-hogares 51 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030064A/dc3d8e00-3c53-3321-960c-3ecae99f57b4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030064>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-34-anos> ;
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/separadosas> ;
+	iaest-measure:numero-hogares 613 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030064A/cf12a185-f817-3802-a964-7d71dba9006d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030064>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-34-anos> ;
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/divorciadosas> ;
+	iaest-measure:numero-hogares 278 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030064A/c83230d2-c8b0-3b8a-a12a-d632bab23dd3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030064>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/35-a-64-anos> ;
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/solterosas> ;
+	iaest-measure:numero-hogares 17697 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030064A/9aeb5a23-6d07-37bc-ab24-1b1dfe4c27bf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030064>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/35-a-64-anos> ;
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/casadosas> ;
+	iaest-measure:numero-hogares 5388 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030064A/c4c50e54-94da-3d33-9e87-2dcddd9d0625> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030064>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/35-a-64-anos> ;
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/viudosas> ;
+	iaest-measure:numero-hogares 3252 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030064A/ce8fe0fd-edae-300d-b78b-fca47054eb9f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030064>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/35-a-64-anos> ;
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/separadosas> ;
+	iaest-measure:numero-hogares 2972 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030064A/4275995e-f9ea-3667-878c-b37ab43804bf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030064>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/35-a-64-anos> ;
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/divorciadosas> ;
+	iaest-measure:numero-hogares 2146 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030064A/81390b43-8eb2-3ca1-85d5-7247c961e010> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030064>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/mayores-de-64-anos> ;
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/solterosas> ;
+	iaest-measure:numero-hogares 10634 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030064A/d23fdc63-56b7-341c-a956-ce4dffa73f59> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030064>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/mayores-de-64-anos> ;
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/casadosas> ;
+	iaest-measure:numero-hogares 1918 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030064A/4a108692-63e1-3517-add8-b03da27da459> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030064>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/mayores-de-64-anos> ;
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/viudosas> ;
+	iaest-measure:numero-hogares 38544 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030064A/cf554fe4-f91e-395d-916e-3451c463dc72> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030064>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/mayores-de-64-anos> ;
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/separadosas> ;
+	iaest-measure:numero-hogares 810 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030064A/c7b62a21-d6a9-3c1f-8bf9-09ebe6af7110> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030064>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/mayores-de-64-anos> ;
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/divorciadosas> ;
+	iaest-measure:numero-hogares 398 .

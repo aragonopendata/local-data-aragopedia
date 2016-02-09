@@ -14,10 +14,16 @@
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
 @prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
 @prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>;
+	rdfs:label "Cubo de datos para 01-110304-11030403TP"@es ;
+	rdfs:comment "Cubo de datos para 01-110304-11030403TP"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/9cc0a525-ff2c-3700-bc23-a6809dd9ac23> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
@@ -45,7 +51,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0083222887239646 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 163486545367489 ;
 	iaest-measure:c-pasivo-corriente 290345007421594 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 0635513047641848 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 115993677519751 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 172788222169021 ;
@@ -77,7 +83,7 @@
 	iaest-measure:rentabilidad-financiera 1171126385024 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/772f0695-5b68-3567-9a6b-4baa1b4b90e9> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
@@ -105,7 +111,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 143510832625319 ;
 	iaest-measure:c-pasivo-corriente 313236269753611 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 389542990654206 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 128736621920136 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 178995198810535 ;
@@ -137,7 +143,7 @@
 	iaest-measure:rentabilidad-financiera -136446751078252 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/f71ba0e3-080f-31cb-91a3-aa148a4ac091> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
@@ -165,7 +171,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 111303490216816 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 569060589635114 ;
 	iaest-measure:c-pasivo-corriente 5862361556055 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/141875898995241> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 141875898995241 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 257924841353781 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 350338947580645 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 230911068746695 ;
@@ -197,7 +203,7 @@
 	iaest-measure:rentabilidad-financiera -475544897707739 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/29850f1c-51a1-3f7b-83aa-55c013512e23> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
@@ -225,7 +231,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 222547735849057 ;
 	iaest-measure:c-pasivo-corriente 725762798113208 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 578594339622642 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 282036933962264 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 441309360377358 ;
@@ -257,7 +263,7 @@
 	iaest-measure:rentabilidad-financiera 320871072367734 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/97e404a1-8add-34aa-8387-01fdc67c4549> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
@@ -285,7 +291,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 949463052631579 ;
 	iaest-measure:c-pasivo-corriente 787670484210526 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 383374736842105 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 372112247368421 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 409047289473684 ;
@@ -317,7 +323,7 @@
 	iaest-measure:rentabilidad-financiera 325185202670288 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/c3740c52-c6b8-3752-b369-b41af1192180> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
@@ -345,7 +351,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 170486943699732 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 323805967828418 ;
 	iaest-measure:c-pasivo-corriente 918869534316354 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 795290428954424 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 35805685308311 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 537721446112601 ;
@@ -377,7 +383,7 @@
 	iaest-measure:rentabilidad-financiera 21853237471378 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/3fc7b051-5fab-313e-9b3c-ecb8fc92b7b8> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/grande> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
@@ -405,7 +411,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 323332 ;
 	iaest-measure:c-pasivo-corriente 99410765 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 30005 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 2168784 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 7769292 ;
@@ -437,7 +443,7 @@
 	iaest-measure:rentabilidad-financiera 716032994835847 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/b5316e14-6ecf-337b-975d-e7d46a8fbad2> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/grande> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
@@ -465,7 +471,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 260764679545455 ;
 	iaest-measure:c-pasivo-corriente 729722037272727 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 270392047727273 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 296926409318182 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 404717687727273 ;
@@ -497,7 +503,7 @@
 	iaest-measure:rentabilidad-financiera -589962946291496 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/2a521297-7739-39ab-9613-2ddfc9d5971f> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
@@ -525,7 +531,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0081809132640735 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 162546871224934 ;
 	iaest-measure:c-pasivo-corriente 285354007248128 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 0506178062333897 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 110111071998067 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 174182278811307 ;
@@ -557,7 +563,7 @@
 	iaest-measure:rentabilidad-financiera -023947637261919 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/5b9d2adc-543d-3236-90cf-3209ea0c4490> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
@@ -585,7 +591,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0000182646420824 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 136721648590022 ;
 	iaest-measure:c-pasivo-corriente 287998460303688 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 496337310195228 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 116919396963124 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 164693770498915 ;
@@ -617,7 +623,7 @@
 	iaest-measure:rentabilidad-financiera -253837025544808 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/7bddd0fd-88da-32e4-8c75-754db56d41ad> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
@@ -645,7 +651,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0269045933274445 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 542920432153292 ;
 	iaest-measure:c-pasivo-corriente 501848617041517 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/420792797445131> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 420792797445131 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 39224171366447 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 27299600597948 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 219806971665421 ;
@@ -677,7 +683,7 @@
 	iaest-measure:rentabilidad-financiera -757365903039488 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/e5be1c28-f9b0-3be4-9f5f-7ea40e95debf> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
@@ -705,7 +711,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 212366977777778 ;
 	iaest-measure:c-pasivo-corriente 578051155555556 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 509471111111111 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 198543568888889 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 378561606666667 ;
@@ -737,7 +743,7 @@
 	iaest-measure:rentabilidad-financiera 643203358922576 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/2c7a27bd-c86c-3a71-9c3b-f8dbdc00d9aa> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
@@ -765,7 +771,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 972543 ;
 	iaest-measure:c-pasivo-corriente 676440055 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 73903 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 26883133 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 40485259 ;
@@ -797,7 +803,7 @@
 	iaest-measure:rentabilidad-financiera 233459271756066 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/6a909a76-59f1-319e-a07f-1d9a43d7fff6> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
@@ -825,7 +831,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 575406051136364 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 424602809659091 ;
 	iaest-measure:c-pasivo-corriente 896535790625 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 608593380681818 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 363629085227273 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 524009754829545 ;
@@ -857,7 +863,7 @@
 	iaest-measure:rentabilidad-financiera 0636556504715198 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/1607a68d-7c80-3002-9adf-f35ac94ff66b> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/grande> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
@@ -885,7 +891,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 28971325 ;
 	iaest-measure:c-pasivo-corriente 96104425 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 0 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 1550735 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 80597075 ;
@@ -917,7 +923,7 @@
 	iaest-measure:rentabilidad-financiera 615281568757944 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/fb256df5-9dc5-3c79-82e4-50bcc6582700> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/grande> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
@@ -945,7 +951,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 274636585365854 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 263765236585366 ;
 	iaest-measure:c-pasivo-corriente 679226058780488 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 202912385365854 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 225847334146341 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 431976205609756 ;
@@ -977,7 +983,7 @@
 	iaest-measure:rentabilidad-financiera -325516786428866 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/aa62580f-d5f0-301f-884d-768b40cccda9> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
@@ -1005,7 +1011,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0072699676823638 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 0719027931671283 ;
 	iaest-measure:c-pasivo-corriente 235982122576177 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 0679029316712835 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 906046131117267 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 144095429593721 ;
@@ -1037,7 +1043,7 @@
 	iaest-measure:rentabilidad-financiera 0704964144467229 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/d1086597-b35c-34bb-913d-39245a158dee> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
@@ -1065,7 +1071,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 0977431767337808 ;
 	iaest-measure:c-pasivo-corriente 264849434899329 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 315067516778523 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 944239794183445 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 166120251454139 ;
@@ -1097,7 +1103,7 @@
 	iaest-measure:rentabilidad-financiera -124101313719771 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/ec625151-7303-3525-a43f-5307a756d3fe> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
@@ -1125,7 +1131,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0127869066987338 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 209004017825564 ;
 	iaest-measure:c-pasivo-corriente 40483026547358 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0006568154488222> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0006568154488222 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 367433281459999 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 204672863195869 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 195750520407441 ;
@@ -1157,7 +1163,7 @@
 	iaest-measure:rentabilidad-financiera -28660581510963 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/e592012f-f217-3b7a-814c-21b645c6d8ce> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
@@ -1185,7 +1191,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 184821423728814 ;
 	iaest-measure:c-pasivo-corriente 486547179661017 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 483292881355932 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 191452644067797 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 289553698305085 ;
@@ -1217,7 +1223,7 @@
 	iaest-measure:rentabilidad-financiera 175177219440712 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/dedd5c40-6523-3043-b31b-2d966855d89c> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
@@ -1245,7 +1251,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 172601678571429 ;
 	iaest-measure:c-pasivo-corriente 686628892857143 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 147081785714286 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 337594367857143 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 344289557142857 ;
@@ -1277,7 +1283,7 @@
 	iaest-measure:rentabilidad-financiera -0752724738017489 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/4f7629da-7ed6-3e39-bc14-472cbbd6d7a1> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
@@ -1305,7 +1311,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 89255512195122 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 309032146341463 ;
 	iaest-measure:c-pasivo-corriente 679108449268293 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 699175707317073 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 325943482926829 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 343148301219512 ;
@@ -1337,7 +1343,7 @@
 	iaest-measure:rentabilidad-financiera -56057276074607 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/ff464804-aecb-3c93-95ee-cd5b4cdf224c> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/grande> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
@@ -1365,7 +1371,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 480061333333333 ;
 	iaest-measure:c-pasivo-corriente 132655676666667 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 0 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 412141977777778 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 909785466666667 ;
@@ -1397,7 +1403,7 @@
 	iaest-measure:rentabilidad-financiera 632530237068902 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/de9a4d0e-4bb2-3a48-89ea-132ff341e091> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/grande> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
@@ -1425,7 +1431,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 5787656 ;
 	iaest-measure:c-pasivo-corriente 3437283375 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 05685 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 9618054 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 247452035 ;
@@ -1457,7 +1463,7 @@
 	iaest-measure:rentabilidad-financiera 466099448632702 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
 <http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/5b69a433-d47a-34fd-8d28-f7916a415dda> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403TP>; 
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/grande> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
@@ -1485,7 +1491,7 @@
 	iaest-measure:vi-acreedores-comerciales-no-corrientes 0 ;
 	iaest-measure:ivvvii-otros-pasivos-a-largo-plazo 276735876923077 ;
 	iaest-measure:c-pasivo-corriente 582671860769231 ;
-	iaest-dimension:i-pasivos-vinculados-con-activos-no-corrientes <http://opendata.aragon.es/kos/iaest/i-pasivos-vinculados-con-activos-no-corrientes/0> ;
+	iaest-measure:i-pasivos-vinculados-con-activos-no-corrientes 0 ;
 	iaest-measure:ii-provisiones-a-corto-plazo 170493690769231 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 160343624769231 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 404807551692308 ;

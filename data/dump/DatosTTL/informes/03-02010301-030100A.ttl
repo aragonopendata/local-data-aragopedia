@@ -1,0 +1,64 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030100A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030100>;
+	rdfs:label "Cubo de datos para 03-02010301-030100A"@es ;
+	rdfs:comment "Cubo de datos para 03-02010301-030100A"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030100A/06520e48-404f-3b1e-a1a8-37639dc172ba> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030100>; 
+	iaest-dimension:tipo-de-hogar <http://opendata.aragon.es/kos/iaest/tipo-de-hogar/hogares-unipersonales> ;
+	iaest-measure:n-hogares 136519749655023 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030100A/9a703c08-fe54-36da-a2a2-29b68940dbd7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030100>; 
+	iaest-dimension:tipo-de-hogar <http://opendata.aragon.es/kos/iaest/tipo-de-hogar/hogares-multipersonales-no-forman-familia> ;
+	iaest-measure:n-hogares 71376481255481 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030100A/be36b241-cbfa-39e4-b5ae-5730791d7ef2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030100>; 
+	iaest-dimension:tipo-de-hogar <http://opendata.aragon.es/kos/iaest/tipo-de-hogar/hogares-multipersonales-forman-una-familia-sin-otras-personas> ;
+	iaest-measure:n-hogares 106911824790906 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030100A/340e214e-f34e-321b-815f-d69c455a5021> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030100>; 
+	iaest-dimension:tipo-de-hogar <http://opendata.aragon.es/kos/iaest/tipo-de-hogar/hogares-multipersonales-forman-una-familia-sin-otras-personas> ;
+	iaest-measure:n-hogares 346767568183047 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030100A/124ee41c-9de8-3ee3-a48a-81cafe47d10d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030100>; 
+	iaest-dimension:tipo-de-hogar <http://opendata.aragon.es/kos/iaest/tipo-de-hogar/hogares-multipersonales-forman-una-familia-sin-otras-personas> ;
+	iaest-measure:n-hogares 250354049898407 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030100A/86d81c76-7bd6-3212-9c4e-bde71186a236> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030100>; 
+	iaest-dimension:tipo-de-hogar <http://opendata.aragon.es/kos/iaest/tipo-de-hogar/hogares-multipersonales-forman-una-familia-sin-otras-personas> ;
+	iaest-measure:n-hogares 63841603375219 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030100A/43adffef-5256-3108-ad5a-abe7d8a8362e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030100>; 
+	iaest-dimension:tipo-de-hogar <http://opendata.aragon.es/kos/iaest/tipo-de-hogar/hogares-multipersonales-forman-una-familia-con-otras-personas-no-emparentadas> ;
+	iaest-measure:n-hogares 56922800087973 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030100A/493227ef-1176-331b-8be0-d20985b8d3f2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030100>; 
+	iaest-dimension:tipo-de-hogar <http://opendata.aragon.es/kos/iaest/tipo-de-hogar/hogares-multipersonales-con-dos-o-mas-familias> ;
+	iaest-measure:n-hogares 6424649792629 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

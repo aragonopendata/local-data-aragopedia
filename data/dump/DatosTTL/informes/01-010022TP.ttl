@@ -14,11 +14,18 @@
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
 @prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
 @prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TP/794a2e11-fc7c-3123-a771-7a3f2e591dd8> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010022TP>; 
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/catastro-diciembre-de----cast-ano-as-character--30---/catastro-diciembre-de-2014--------------------------> ;
+<http://opendata.aragon.es/recurso/iaest/cubo/01-010022TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010022>;
+	rdfs:label "Cubo de datos para 01-010022TP"@es ;
+	rdfs:comment "Cubo de datos para 01-010022TP"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TP/459e08d9-4dab-35d4-b675-9d504c41da1a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010022>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2014--------------------------> ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2014> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:total-edificios 265217 ;
 	iaest-measure:antes-de-1950 50464 ;
@@ -31,9 +38,10 @@
 	iaest-measure:2010-y-posterior 6703 ;
 	iaest-measure:sin-definir 10651 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TP/ae25610f-a615-37ae-a4d5-3c757719df22> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010022TP>; 
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/catastro-diciembre-de----cast-ano-as-character--30---/catastro-diciembre-de-2014--------------------------> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TP/789af985-d7da-3453-854a-b6a5490a4047> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010022>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2014--------------------------> ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2014> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
 	iaest-measure:total-edificios 175814 ;
 	iaest-measure:antes-de-1950 59544 ;
@@ -46,9 +54,10 @@
 	iaest-measure:2010-y-posterior 5532 ;
 	iaest-measure:sin-definir 6016 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TP/0426890a-f934-3962-9a2d-eec16199abc6> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010022TP>; 
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/catastro-diciembre-de----cast-ano-as-character--30---/catastro-diciembre-de-2014--------------------------> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TP/d876c8a4-734c-3aaf-a67f-e706fd759110> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010022>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2014--------------------------> ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2014> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:total-edificios 786394 ;
 	iaest-measure:antes-de-1950 105096 ;

@@ -1,0 +1,108 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/03-030059TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030059>;
+	rdfs:label "Cubo de datos para 03-030059TP"@es ;
+	rdfs:comment "Cubo de datos para 03-030059TP"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030059TP/e5cc08f5-f392-3b77-9a99-1bfa7c9e46f8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030059>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-hogar-1 <http://opendata.aragon.es/kos/iaest/tipo-hogar-1/1--hogar-unipersonal> ;
+	iaest-dimension:tipo-de-hogar-2 <http://opendata.aragon.es/kos/iaest/tipo-de-hogar-2/1--hogar-unipersonal> ;
+	iaest-measure:numero-hogares 17422 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030059TP/526be190-8e02-3922-87b3-d19b2f1befc6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030059>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-hogar-1 <http://opendata.aragon.es/kos/iaest/tipo-hogar-1/2--hogar-multipersonal> ;
+	iaest-dimension:tipo-de-hogar-2 <http://opendata.aragon.es/kos/iaest/tipo-de-hogar-2/2--hogar-multipersonal-no-forman-familia> ;
+	iaest-measure:numero-hogares 630 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030059TP/cac073e1-a459-3cdc-b400-a297a16c9567> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030059>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-hogar-1 <http://opendata.aragon.es/kos/iaest/tipo-hogar-1/2--hogar-multipersonal> ;
+	iaest-dimension:tipo-de-hogar-2 <http://opendata.aragon.es/kos/iaest/tipo-de-hogar-2/3--hogar-multipersonal-una-familia> ;
+	iaest-measure:numero-hogares 55525 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030059TP/e6711091-1a15-3972-ade1-9eedc9863f1e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030059>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-hogar-1 <http://opendata.aragon.es/kos/iaest/tipo-hogar-1/2--hogar-multipersonal> ;
+	iaest-dimension:tipo-de-hogar-2 <http://opendata.aragon.es/kos/iaest/tipo-de-hogar-2/4--hogar-multipersonal-mas-de-un-familia> ;
+	iaest-measure:numero-hogares 209 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030059TP/233d1d2e-564d-334d-8dc9-bfb3de02ef9c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030059>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-hogar-1 <http://opendata.aragon.es/kos/iaest/tipo-hogar-1/1--hogar-unipersonal> ;
+	iaest-dimension:tipo-de-hogar-2 <http://opendata.aragon.es/kos/iaest/tipo-de-hogar-2/1--hogar-unipersonal> ;
+	iaest-measure:numero-hogares 12863 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030059TP/125d5986-4a0e-3d13-b72f-bc662b4b4c81> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030059>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-hogar-1 <http://opendata.aragon.es/kos/iaest/tipo-hogar-1/2--hogar-multipersonal> ;
+	iaest-dimension:tipo-de-hogar-2 <http://opendata.aragon.es/kos/iaest/tipo-de-hogar-2/2--hogar-multipersonal-no-forman-familia> ;
+	iaest-measure:numero-hogares 341 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030059TP/8e7cffc9-9656-3700-b952-08b44b84e450> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030059>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-hogar-1 <http://opendata.aragon.es/kos/iaest/tipo-hogar-1/2--hogar-multipersonal> ;
+	iaest-dimension:tipo-de-hogar-2 <http://opendata.aragon.es/kos/iaest/tipo-de-hogar-2/3--hogar-multipersonal-una-familia> ;
+	iaest-measure:numero-hogares 37762 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030059TP/04897128-a6b8-3808-aa1e-f14307075415> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030059>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-hogar-1 <http://opendata.aragon.es/kos/iaest/tipo-hogar-1/2--hogar-multipersonal> ;
+	iaest-dimension:tipo-de-hogar-2 <http://opendata.aragon.es/kos/iaest/tipo-de-hogar-2/4--hogar-multipersonal-mas-de-un-familia> ;
+	iaest-measure:numero-hogares 104 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030059TP/bb03a296-b006-3a39-85c5-c6c9b469e54c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030059>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-hogar-1 <http://opendata.aragon.es/kos/iaest/tipo-hogar-1/1--hogar-unipersonal> ;
+	iaest-dimension:tipo-de-hogar-2 <http://opendata.aragon.es/kos/iaest/tipo-de-hogar-2/1--hogar-unipersonal> ;
+	iaest-measure:numero-hogares 69449 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030059TP/ea7508d0-91b6-3a2d-b13d-edf5425fd334> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030059>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-hogar-1 <http://opendata.aragon.es/kos/iaest/tipo-hogar-1/2--hogar-multipersonal> ;
+	iaest-dimension:tipo-de-hogar-2 <http://opendata.aragon.es/kos/iaest/tipo-de-hogar-2/2--hogar-multipersonal-no-forman-familia> ;
+	iaest-measure:numero-hogares 2794 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030059TP/25a2a003-f33c-3e3b-9bda-4beb3b8d3a26> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030059>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-hogar-1 <http://opendata.aragon.es/kos/iaest/tipo-hogar-1/2--hogar-multipersonal> ;
+	iaest-dimension:tipo-de-hogar-2 <http://opendata.aragon.es/kos/iaest/tipo-de-hogar-2/3--hogar-multipersonal-una-familia> ;
+	iaest-measure:numero-hogares 245074 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030059TP/d1180b1c-aad8-3123-86b0-b909b459e53d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030059>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-hogar-1 <http://opendata.aragon.es/kos/iaest/tipo-hogar-1/2--hogar-multipersonal> ;
+	iaest-dimension:tipo-de-hogar-2 <http://opendata.aragon.es/kos/iaest/tipo-de-hogar-2/4--hogar-multipersonal-mas-de-un-familia> ;
+	iaest-measure:numero-hogares 1070 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

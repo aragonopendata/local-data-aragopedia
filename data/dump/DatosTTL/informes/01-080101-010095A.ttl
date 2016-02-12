@@ -1,0 +1,232 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010095A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>;
+	rdfs:label "Cubo de datos para 01-080101-010095A"@es ;
+	rdfs:comment "Cubo de datos para 01-080101-010095A"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/e99620a8-4f52-395f-b4ab-acf06afb11f6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 168 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/regadio> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/citricos> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/cb0415e0-308e-3ad4-98d0-bb0d12784794> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 3311812 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/regadio> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/frutales-originarios-de-clima-templado> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/ae989934-e6a2-36e3-b6da-54773cd9d715> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 3049 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/regadio> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/frutales-originarios-de-clima-subtropical> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/677b6893-8425-353c-a81b-3e0dfbc08249> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 1336 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/regadio> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/bayas> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/717cbd1c-1bb5-3f7e-b8c7-e787d099a311> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 69351 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/regadio> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/frutales-de-fruto-seco> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/a95ff229-5272-39d1-a297-78fac06081d2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 1120236 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/regadio> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/olivar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/e1ec8218-5537-3c62-9e7d-ec36552190b0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 5904 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/regadio> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/uva-de-mesa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/480cac6d-953c-3b37-88c5-194da00cfe93> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 1168678 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/regadio> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/uva-de-vinificacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/08d84d5a-4404-3024-9592-29056e2c590c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 22988 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/regadio> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/viveros> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/119a00d3-53bf-3e84-8092-557cdb4dc1f3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 30872 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/regadio> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/otros-cultivos-lenosos-al-aire-libre> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/95a97349-df87-3bb6-8132-b8774d81f0c7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 17 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/regadio> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/cultivos-lenosos-en-invernadero> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/28ae00c4-a5f6-34ef-a6d4-ec3ee287a8ad> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 765777 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/regadio> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/tierras-para-pastos-permanentes> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/prados-y-praderas-permanentes> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/5f85b625-5644-330f-a2ee-72af3147bbf7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 655368 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/secano> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/frutales-originarios-de-clima-templado> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/0d8af1d3-9213-36f1-9dd3-82482ca0a9b2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 7209 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/secano> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/frutales-originarios-de-clima-subtropical> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/29af3e64-08e7-3279-8df2-fb8929d3dd71> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 19137 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/secano> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/bayas> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/d171e0d1-3ed6-36a5-a695-a69118a94cd5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 5831569 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/secano> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/frutales-de-fruto-seco> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/27ccb915-805b-3c7e-bbab-152cb68519d4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 3712461 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/secano> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/olivar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/55109100-695c-3527-b8d4-a8354bd9adb9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 26575 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/secano> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/uva-de-mesa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/cd8be5b5-9f68-3f63-9afe-83536dfb7932> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 2384724 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/secano> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/uva-de-vinificacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/7ed0b1c8-fda9-3291-8da7-973fe215ccf7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 4655 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/secano> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/viveros> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/4353255a-017b-3392-a16f-af35cf8a9d2a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 453596 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/secano> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/cultivos-lenosos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/otros-cultivos-lenosos-al-aire-libre> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/fed35cfa-8891-3751-8063-61b98137e10b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 7902131 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/secano> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/tierras-para-pastos-permanentes> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/prados-y-praderas-permanentes> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/f209757d-41ed-30d9-8b17-178714ffd9cd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 22396595 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/sin-clasificar> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/barbechos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/barbechos-sin-ayuda-economica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/8906d595-485c-3f0e-93d3-427f5551f8d3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 17890155 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/sin-clasificar> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/barbechos> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/barbechos-subvencionados> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/219abd2e-cd12-3f41-95c5-e13c34624861> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 62657127 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/sin-clasificar> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/tierras-para-pastos-permanentes> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/otras-superficies-utilizadas-para-pastos> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010095A/cef9d3d7-4c16-36db-8d85-7cdb20cf05b3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010095>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:superficie 2105624 ;
+	iaest-dimension:secanoregadio <http://opendata.aragon.es/kos/iaest/secanoregadio/sin-clasificar> ;
+	iaest-dimension:grupo-cultivo-descripcion <http://opendata.aragon.es/kos/iaest/grupo-cultivo-descripcion/tierras-para-pastos-permanentes> ;
+	iaest-dimension:cultivo-descripcion <http://opendata.aragon.es/kos/iaest/cultivo-descripcion/superficies-de-pastos-que-ya-no-se-utilizan-a-efectos-de-produccion-y-estan-acogidas-a-un-regimen-de-ayudas> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

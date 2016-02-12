@@ -1,0 +1,78 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010085TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010085>;
+	rdfs:label "Cubo de datos para 01-080101-010085TP"@es ;
+	rdfs:comment "Cubo de datos para 01-080101-010085TP"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010085TP/dd52825e-0ea3-3c43-8321-1bf33435159f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010085>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:explotaciones 12363 ;
+	iaest-dimension:gestion-explotacion <http://opendata.aragon.es/kos/iaest/gestion-explotacion/el-titular-es-el-jefe-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010085TP/403073f7-939a-3156-bc3b-bb9b4ebee61c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010085>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:explotaciones 2694 ;
+	iaest-dimension:gestion-explotacion <http://opendata.aragon.es/kos/iaest/gestion-explotacion/otra-persona-o-sociedad-es-jefe-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010085TP/e629c6f4-e410-3edd-b639-63af26c312ae> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010085>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:explotaciones 1223 ;
+	iaest-dimension:gestion-explotacion <http://opendata.aragon.es/kos/iaest/gestion-explotacion/un-miembro-de-la-familia-es-el-jefe-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010085TP/759fb5f0-4697-39ad-bcb5-a837cecf3eb3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010085>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:explotaciones 9488 ;
+	iaest-dimension:gestion-explotacion <http://opendata.aragon.es/kos/iaest/gestion-explotacion/el-titular-es-el-jefe-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010085TP/6f9ba34a-4fc2-3ba1-99e9-19aa4c8b31dc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010085>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:explotaciones 1145 ;
+	iaest-dimension:gestion-explotacion <http://opendata.aragon.es/kos/iaest/gestion-explotacion/otra-persona-o-sociedad-es-jefe-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010085TP/d30df49c-3c8d-333f-a5e4-bc27cc836a10> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010085>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:explotaciones 1188 ;
+	iaest-dimension:gestion-explotacion <http://opendata.aragon.es/kos/iaest/gestion-explotacion/un-miembro-de-la-familia-es-el-jefe-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010085TP/7d897377-7dfb-3ec3-bd93-03b33ccc4b79> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010085>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:explotaciones 19203 ;
+	iaest-dimension:gestion-explotacion <http://opendata.aragon.es/kos/iaest/gestion-explotacion/el-titular-es-el-jefe-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010085TP/4e0ab47d-4c9a-3874-bf58-e81532c4a613> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010085>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:explotaciones 2828 ;
+	iaest-dimension:gestion-explotacion <http://opendata.aragon.es/kos/iaest/gestion-explotacion/otra-persona-o-sociedad-es-jefe-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010085TP/c3d5faf8-98db-3606-a79e-327a7bfb92c8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010085>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:explotaciones 2642 ;
+	iaest-dimension:gestion-explotacion <http://opendata.aragon.es/kos/iaest/gestion-explotacion/un-miembro-de-la-familia-es-el-jefe-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

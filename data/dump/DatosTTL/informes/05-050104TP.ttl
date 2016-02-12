@@ -1,0 +1,456 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/05-050104TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>;
+	rdfs:label "Cubo de datos para 05-050104TP"@es ;
+	rdfs:comment "Cubo de datos para 05-050104TP"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/34c91126-cc75-377d-ab38-85d77a3e294a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2015 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 12291 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/a5c83946-bad5-3909-9f5e-a0dcaba6d755> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2015 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 6595 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/1d67708e-a7f5-3439-b376-80510a028aa5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2015 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 43864 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/9b0a0aca-3074-3142-b039-36bca495222b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2015 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 12157 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/d222308e-2853-3f6c-bdaa-e7a311e3a49a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2015 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 6635 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/c717f8c7-945b-3d69-b429-d955f1aeca2d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2015 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 43760 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/8acc4607-8de9-3ef3-8365-f98bb5f3e059> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2015 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 12706 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/c3b5e6c7-b1e7-3e6d-87c8-3ee5c297eafd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2015 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 6697 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/63b0830f-f7b8-3104-8848-9976a22d93d6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2015 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 44368 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/83f0b0fc-c394-3a04-a172-7810679bab07> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2015 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 12118 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/4dac01f3-a82b-34b0-be7c-8ab42110cecf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2015 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 6440 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/c62061df-95f8-30ba-9658-afc9bf817632> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2015 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 43845 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/f2cedb76-139e-3f8d-aea8-630820c19a92> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2014 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 12102 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/7ee0db38-ac67-379f-b0bf-9ef0f1c37ca2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2014 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 6447 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/39cab0f8-64aa-3612-9d20-bd147af59447> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2014 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 43883 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/a7f2ebc9-ea15-3fe8-964e-3cd084373917> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2014 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 11888 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/937382c0-b3ca-3bd3-a281-5b492e17a553> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2014 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 6514 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/00da9224-2a18-3abd-bf1b-b7fa8f5a6f1b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2014 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 43698 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/f796ef43-f1e9-3c59-b62c-030ea9fa0fe9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2014 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 12396 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/8887ac5a-7230-3fad-94e8-f77897f13b69> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2014 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 6592 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/9a50dd34-9990-3349-bcab-1cac64c9f393> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2014 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 44220 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/3fda39d2-31de-3bd7-8f6b-a652d4f2a1c5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2014 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 11780 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/2ed1b022-8e61-3406-8e57-c0fd6c404c67> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2014 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 6367 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/a14c25e0-6b75-31f5-8867-02d2e256d852> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2014 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 43546 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/1173a01c-716b-3386-8e92-5d6e3a660ac7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2013 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 11760 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/c9045edd-5317-33bc-8647-0d12e264525c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2013 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 6442 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/7c4b9409-84a0-3e8b-a8b3-75252dc4aaaa> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2013 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 43492 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/12aa7509-9f54-380e-8b89-4dc6867d8ee7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2013 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 11739 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/1f3579e5-a058-3d6d-8325-2d5f276c1002> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2013 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 6448 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/83e437b0-f4e9-3890-8d40-73250c28ad75> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2013 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 43546 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/eb3a6dcb-993b-3553-a7cc-da7e5fe1d0b2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2013 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 12200 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/a6302af1-ea15-349c-bf07-120f18761991> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2013 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 6575 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/f318d380-3611-3416-bde3-19d865ea887e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2013 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 44319 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/ca697ce8-f6ad-3f98-b42a-f3610148e7b9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2013 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 11803 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/ab87a3d6-6277-3211-9d3f-7e73fc11db27> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2013 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 6354 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/e482b463-2db2-3cec-b06d-bbd34f13c3ee> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2013 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 43894 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/4e205ab1-01f5-325e-9ee5-c80d6cc82627> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2012 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 11767 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/f2b35fe2-4728-3cb7-a166-661ca7b7731c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2012 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 6432 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/d7257ab8-10f8-3824-8c68-f340f4acdf18> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2012 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 44154 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/c0f4b3ce-5f3c-3bfc-879f-5101dac58852> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2012 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 11628 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/046eb34f-a986-3395-9e0b-3f76dcdc36b3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2012 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 6530 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/d5f4ba84-d046-3672-89f8-6586dde618af> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2012 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 43552 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/ca8823d0-4c27-33f8-b32a-4d1f5b8c0e10> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2012 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 11477 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/809e98b7-9c8d-3fb0-9b38-4edc62802497> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2012 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 6374 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/38cbf18d-0c65-34d9-904f-6b6e8d5479c8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2012 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 41200 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/f0bab225-5a0e-31c0-9a62-722ad9c497ba> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2012 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 10611 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/eaf6afc8-2028-3f5a-85e9-83b2072c2a6e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2012 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 6057 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/ffbd14ed-f988-3724-a15e-0da388532624> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2012 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 37510 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/70fac96e-c213-3965-a433-b08ab96c9540> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2011 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 9677 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/8b61df1a-5770-3ca5-a704-530dc3345613> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2011 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 5716 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/8dfb7476-a34c-3f87-8c42-fbf99f74bdda> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2011 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 35081 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/c34623db-47e7-31b2-b672-88cf876e8900> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2011 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 9698 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/7dbf5e1d-cfe2-3115-ac2e-8db2d97c81a4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2011 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 5779 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/2d0acdea-c791-342a-b389-6373bb9c9172> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2011 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 35317 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/e13e620e-ec17-3caa-ba7a-f2e75cfb85ae> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2011 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 9820 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/2f7c3ecb-facd-3963-8a61-e865c1fac8b4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2011 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 5843 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/40409f56-d319-3d61-b6fd-337c504f79d9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2011 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 35712 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/d6f08b99-ad80-3b60-9abb-14b1e4cd82cb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2011 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 9731 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/4788265d-1119-30bc-916b-82ca282eed34> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2011 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 5749 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/8b890ce0-dd89-3e3a-8ba6-4d6bfaedbc45> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2011 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 35640 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/145e8e1b-bc3b-3be7-91be-f54a3c70bbb4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2010 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 9856 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/b36fca0f-cb6a-3348-a017-e39c41a5947b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2010 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 5842 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/45edc6a7-6d15-3462-a95e-7472705a9290> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano diciembre-2010 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 35722 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/e2961627-6692-38cf-bba6-be8c42987b07> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2010 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 9846 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/9d4a6959-0615-3692-b132-e3a00cdfd708> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2010 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 5920 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/7da78c7a-56b8-3a2e-b8ac-7891dc872a63> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano septiembre-2010 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 35820 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/7b7ff1d8-c10e-3141-8f20-d37d69ab07f0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2010 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 10050 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/232d02de-2273-3898-9d76-484db3d1b274> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2010 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 5958 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/980a953e-0217-3df0-bff6-3fbc168abc3a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano junio-2010 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 36144 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/5105541a-6beb-392b-9f1a-6ccff5cedadf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2010 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 9931 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/27cd516f-8907-38ec-8b72-be17f2700dc3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2010 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 5862 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050104TP/478030cb-fd93-3669-82c7-e3c2c5be8935> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/05-050104>; 
+	iaest-measure:mes-y-ano marzo-2010 ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:cuentas-cotizacion-con-trabajadores 35992 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

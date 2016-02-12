@@ -1,0 +1,288 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010090TC> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>;
+	rdfs:label "Cubo de datos para 01-080101-010090TC"@es ;
+	rdfs:comment "Cubo de datos para 01-080101-010090TC"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/dd9ed842-70d3-3b2e-bc0e-8cccce310e3f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:numero-total-de-explotaciones 699 ;
+	iaest-measure:unidades-ganaderas-totales 18115011 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 408 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 291 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/239ad7aa-fb46-310f-a68c-369e375dabca> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:numero-total-de-explotaciones 435 ;
+	iaest-measure:unidades-ganaderas-totales 12466979 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 216 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 219 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/abec5dcc-acc7-380c-b962-348d34561ca7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:numero-total-de-explotaciones 812 ;
+	iaest-measure:unidades-ganaderas-totales 38375164 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 284 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 528 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/59ae71e6-d890-3ed8-b195-66f78264cce7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:numero-total-de-explotaciones 1586 ;
+	iaest-measure:unidades-ganaderas-totales 94214414 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 765 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 821 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/83c37182-488c-33eb-9a65-f764677c3d0e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:numero-total-de-explotaciones 3491 ;
+	iaest-measure:unidades-ganaderas-totales 207144815 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 2848 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 643 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/c259c130-cf79-3684-bf72-458bd501ff22> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:numero-total-de-explotaciones 2547 ;
+	iaest-measure:unidades-ganaderas-totales 154244594 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 2040 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 507 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/c9fc4b3e-e126-32ad-b56d-2b99a38b7c09> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:numero-total-de-explotaciones 2087 ;
+	iaest-measure:unidades-ganaderas-totales 72555859 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 1687 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 400 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/bdd734d3-5b1b-3bc9-9c25-604887ff888c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:numero-total-de-explotaciones 1584 ;
+	iaest-measure:unidades-ganaderas-totales 98532656 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 1196 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 388 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/ed93b4bf-0317-3211-ab18-ab79cc14fb1d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:numero-total-de-explotaciones 2112 ;
+	iaest-measure:unidades-ganaderas-totales 150920271 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 1473 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 639 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/13b494c3-b511-3df0-8de5-c7121316ecfd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:numero-total-de-explotaciones 3299 ;
+	iaest-measure:unidades-ganaderas-totales 246506023 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 2479 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 820 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/2a039d4b-b710-3f87-b18a-04b72795a3ed> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:numero-total-de-explotaciones 2405 ;
+	iaest-measure:unidades-ganaderas-totales 151381614 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 1920 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 485 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/af8efe1c-1cbd-3008-a451-af7aeea4c4f9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:numero-total-de-explotaciones 822 ;
+	iaest-measure:unidades-ganaderas-totales 14208646 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 737 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 85 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/adfcb8bf-f30e-39fd-8344-19a702fe4626> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:numero-total-de-explotaciones 1774 ;
+	iaest-measure:unidades-ganaderas-totales 41709964 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 1604 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 170 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/65b17343-e062-3aca-a9e3-3cb4bc3b19f7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:numero-total-de-explotaciones 685 ;
+	iaest-measure:unidades-ganaderas-totales 5770678 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 610 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 75 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/03c1bf2a-f6c0-3520-9131-d622ae49a094> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:numero-total-de-explotaciones 1107 ;
+	iaest-measure:unidades-ganaderas-totales 2480879 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 973 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 134 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/ee5f6249-af25-3c83-b2db-3a153698227e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:numero-total-de-explotaciones 2515 ;
+	iaest-measure:unidades-ganaderas-totales 48322055 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 2329 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 186 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/5591c46e-ea67-3628-9a02-a823046d17fa> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:numero-total-de-explotaciones 2609 ;
+	iaest-measure:unidades-ganaderas-totales 5081162 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 2307 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 302 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/c767d5f0-36c8-3728-80e3-202152b092bb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:numero-total-de-explotaciones 1079 ;
+	iaest-measure:unidades-ganaderas-totales 41028058 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 887 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 192 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/63f0bd51-88b9-3859-8107-7cd0af2f7ac5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:numero-total-de-explotaciones 1617 ;
+	iaest-measure:unidades-ganaderas-totales 73044567 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 1366 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 251 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/ebcb004c-0638-384b-b559-f80c9c43dcd8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:numero-total-de-explotaciones 3355 ;
+	iaest-measure:unidades-ganaderas-totales 26498617 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 3026 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 329 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/5387c7b0-089a-324e-8faf-6ca6ee2dbc64> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:numero-total-de-explotaciones 1976 ;
+	iaest-measure:unidades-ganaderas-totales 20520552 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 1916 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 60 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/36ca8137-ab63-37c9-9e6a-210379cd7332> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:numero-total-de-explotaciones 1130 ;
+	iaest-measure:unidades-ganaderas-totales 39192405 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 969 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 161 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/ce167de0-85ea-3951-b4b5-c8167e94d4e5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:numero-total-de-explotaciones 856 ;
+	iaest-measure:unidades-ganaderas-totales 25242217 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 690 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 166 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/3a18a250-6cb9-319f-b5fa-3b168e1d090e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:numero-total-de-explotaciones 1227 ;
+	iaest-measure:unidades-ganaderas-totales 31434212 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 1073 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 154 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/e21d9ee3-a247-3ba6-bb27-19b3656d6a6e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:numero-total-de-explotaciones 1894 ;
+	iaest-measure:unidades-ganaderas-totales 60026162 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 1444 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 450 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/6175d9aa-848a-3348-9347-69069df7965e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:numero-total-de-explotaciones 635 ;
+	iaest-measure:unidades-ganaderas-totales 15601067 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 435 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 200 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/d5a7967e-5739-3771-a480-33701cd9a315> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:numero-total-de-explotaciones 757 ;
+	iaest-measure:unidades-ganaderas-totales 9602672 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 651 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 106 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/1f01fd99-98dc-3b34-bb4f-ddd4f242d13a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:numero-total-de-explotaciones 2145 ;
+	iaest-measure:unidades-ganaderas-totales 69577987 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 1787 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 358 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/314ed517-8aa1-351e-8232-4fc4facdba7a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:numero-total-de-explotaciones 2147 ;
+	iaest-measure:unidades-ganaderas-totales 51086624 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 1561 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 586 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/875b6af8-60a7-30f6-abc8-6831a2e2a40d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:numero-total-de-explotaciones 596 ;
+	iaest-measure:unidades-ganaderas-totales 29753375 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 280 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 316 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/fca76601-5777-319e-b3a6-430325f3e043> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:numero-total-de-explotaciones 363 ;
+	iaest-measure:unidades-ganaderas-totales 11393521 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 192 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 171 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/2250e4f6-0e1c-31d4-bd44-c29b3acb7c7e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:numero-total-de-explotaciones 798 ;
+	iaest-measure:unidades-ganaderas-totales 15233062 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 463 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 335 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010090TC/c6cad50d-b179-3798-8001-55180feb3fa0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010090>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:numero-total-de-explotaciones 1630 ;
+	iaest-measure:unidades-ganaderas-totales 64432284 ;
+	iaest-measure:numero-de-explotaciones-sin-ganado 1284 ;
+	iaest-measure:numero-de-explotaciones-con-ganado 346 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

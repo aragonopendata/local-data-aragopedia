@@ -1,0 +1,141 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/915-150007TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/915-150007>;
+	rdfs:label "Cubo de datos para 915-150007TP"@es ;
+	rdfs:comment "Cubo de datos para 915-150007TP"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150007TP/57e38476-8211-324e-a16d-5a0f11217f44> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/915-150007>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2007> ;
+	iaest-measure:poblacion 218023 ;
+	iaest-measure:censo-electoral 177816 ;
+	iaest-measure:participacion 123673 ;
+	iaest-measure:abstencion 54143 ;
+	iaest-measure:votos-nulos 1215 ;
+	iaest-measure:votos-blancos 2836 ;
+	iaest-measure:votos-a-candidaturas 119622 ;
+	iaest-measure:-participacion 695511090115625 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150007TP/60f66267-9717-3449-8d2f-b5f94957a958> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/915-150007>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-measure:poblacion 228566 ;
+	iaest-measure:censo-electoral 173108 ;
+	iaest-measure:participacion 123303 ;
+	iaest-measure:abstencion 49805 ;
+	iaest-measure:votos-nulos 1955 ;
+	iaest-measure:votos-blancos 3391 ;
+	iaest-measure:votos-a-candidaturas 117957 ;
+	iaest-measure:-participacion 712289437807611 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150007TP/d7624214-5972-3a35-903e-cfad87af5834> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/915-150007>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2015> ;
+	iaest-measure:poblacion 224909 ;
+	iaest-measure:censo-electoral 170956 ;
+	iaest-measure:participacion 117492 ;
+	iaest-measure:abstencion 53464 ;
+	iaest-measure:votos-nulos 2390 ;
+	iaest-measure:votos-blancos 3144 ;
+	iaest-measure:votos-a-candidaturas 111958 ;
+	iaest-measure:-participacion 687264559301809 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150007TP/c3b072e6-ceea-30fa-bc14-14f44894601b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/915-150007>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2007> ;
+	iaest-measure:poblacion 142160 ;
+	iaest-measure:censo-electoral 115924 ;
+	iaest-measure:participacion 85366 ;
+	iaest-measure:abstencion 30558 ;
+	iaest-measure:votos-nulos 1054 ;
+	iaest-measure:votos-blancos 1684 ;
+	iaest-measure:votos-a-candidaturas 82628 ;
+	iaest-measure:-participacion 736396259618371 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150007TP/db5d4ad2-7d75-3137-b6fd-cd370f2d6b5a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/915-150007>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-measure:poblacion 145277 ;
+	iaest-measure:censo-electoral 110323 ;
+	iaest-measure:participacion 82688 ;
+	iaest-measure:abstencion 27635 ;
+	iaest-measure:votos-nulos 1463 ;
+	iaest-measure:votos-blancos 2138 ;
+	iaest-measure:votos-a-candidaturas 79087 ;
+	iaest-measure:-participacion 749508262103097 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150007TP/7acc1b6e-8e9b-3c4c-bdef-84f036d0b3fd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/915-150007>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2015> ;
+	iaest-measure:poblacion 140365 ;
+	iaest-measure:censo-electoral 107508 ;
+	iaest-measure:participacion 77624 ;
+	iaest-measure:abstencion 29884 ;
+	iaest-measure:votos-nulos 2314 ;
+	iaest-measure:votos-blancos 2121 ;
+	iaest-measure:votos-a-candidaturas 73189 ;
+	iaest-measure:-participacion 722029988465975 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150007TP/914260d5-e0b1-3281-8765-41665df08987> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/915-150007>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2007> ;
+	iaest-measure:poblacion 917288 ;
+	iaest-measure:censo-electoral 730774 ;
+	iaest-measure:participacion 470028 ;
+	iaest-measure:abstencion 260746 ;
+	iaest-measure:votos-nulos 3611 ;
+	iaest-measure:votos-blancos 11927 ;
+	iaest-measure:votos-a-candidaturas 454490 ;
+	iaest-measure:-participacion 643192012852127 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150007TP/e0418a5e-1599-3dda-89bf-ead407a4f30e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/915-150007>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-measure:poblacion 973252 ;
+	iaest-measure:censo-electoral 719154 ;
+	iaest-measure:participacion 489168 ;
+	iaest-measure:abstencion 229986 ;
+	iaest-measure:votos-nulos 7677 ;
+	iaest-measure:votos-blancos 15951 ;
+	iaest-measure:votos-a-candidaturas 465540 ;
+	iaest-measure:-participacion 680199234100068 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150007TP/42005bca-b138-30d8-badb-a8f42d78129e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/915-150007>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2015> ;
+	iaest-measure:poblacion 960111 ;
+	iaest-measure:censo-electoral 721942 ;
+	iaest-measure:participacion 485553 ;
+	iaest-measure:abstencion 236389 ;
+	iaest-measure:votos-nulos 6725 ;
+	iaest-measure:votos-blancos 10406 ;
+	iaest-measure:votos-a-candidaturas 468422 ;
+	iaest-measure:-participacion 672565109108488 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

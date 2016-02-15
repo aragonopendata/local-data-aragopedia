@@ -12,18 +12,18 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010108TP> a qb:dataSet;
-	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010108>;
+<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010108TP> a qb:dataSet;
+	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-080101-010108>;
 	rdfs:label "Cubo de datos para 01-080101-010108TP"@es ;
 	rdfs:comment "Cubo de datos para 01-080101-010108TP"@es ;
-	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010108TP/8bf7d08f-e115-388b-adf8-0b5039512bd6> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010108>; 
+	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010108TP/8bf7d08f-e115-388b-adf8-0b5039512bd6> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010108TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/menos-de-25-anos/59> ;
 	iaest-measure:de-25-a-34-anos 833 ;
 	iaest-measure:de-35-a-44-anos 1944 ;
@@ -46,8 +46,8 @@
 	iaest-dimension:la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion <http://opendata.aragon.es/kos/iaest/la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion/4> ;
 	iaest-dimension:la-otra-actividad-del-titular-no-esta-relacionada-con-la-explotacion <http://opendata.aragon.es/kos/iaest/la-otra-actividad-del-titular-no-esta-relacionada-con-la-explotacion/236> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010108TP/f0c226af-098c-39f6-9629-c5b1d04e83e9> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010108>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010108TP/f0c226af-098c-39f6-9629-c5b1d04e83e9> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010108TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/menos-de-25-anos/28> ;
 	iaest-measure:de-25-a-34-anos 362 ;
 	iaest-measure:de-35-a-44-anos 1268 ;
@@ -70,8 +70,8 @@
 	iaest-dimension:la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion <http://opendata.aragon.es/kos/iaest/la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion/8> ;
 	iaest-dimension:la-otra-actividad-del-titular-no-esta-relacionada-con-la-explotacion <http://opendata.aragon.es/kos/iaest/la-otra-actividad-del-titular-no-esta-relacionada-con-la-explotacion/101> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010108TP/4c6ffac0-bd9b-310c-8ea7-ab9d3b5d6769> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010108>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010108TP/4c6ffac0-bd9b-310c-8ea7-ab9d3b5d6769> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010108TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/menos-de-25-anos/69> ;
 	iaest-measure:de-25-a-34-anos 905 ;
 	iaest-measure:de-35-a-44-anos 2681 ;

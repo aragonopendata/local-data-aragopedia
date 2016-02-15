@@ -12,26 +12,26 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://opendata.aragon.es/recurso/iaest/cubo/04-040003A> a qb:dataSet;
-	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/04-040003>;
+<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/04-040003A> a qb:dataSet;
+	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/04-040003>;
 	rdfs:label "Cubo de datos para 04-040003A"@es ;
 	rdfs:comment "Cubo de datos para 04-040003A"@es ;
-	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://opendata.aragon.es/recurso/iaest/observacion/04-040003A/f45bcfbf-c86f-3bf4-a0e1-34f551d08ab7> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/04-040003>; 
+	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/04-040003A/f45bcfbf-c86f-3bf4-a0e1-34f551d08ab7> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/04-040003A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1989> ;
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:superficie-regada-has 32259173 ;
 	iaest-measure:superficie-agricola-utilizada-sau 2460183 ;
 	iaest-measure:-superficie-regada-sobre-sau 131125095165685 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/04-040003A/08ff4f8e-eedf-3337-beef-7077755586b4> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/04-040003>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/04-040003A/08ff4f8e-eedf-3337-beef-7077755586b4> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/04-040003A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:superficie-regada-has 37768519 ;

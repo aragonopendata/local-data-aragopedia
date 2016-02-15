@@ -12,78 +12,78 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010100TP> a qb:dataSet;
-	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>;
+<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010100TP> a qb:dataSet;
+	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-080101-010100>;
 	rdfs:label "Cubo de datos para 01-080101-010100TP"@es ;
 	rdfs:comment "Cubo de datos para 01-080101-010100TP"@es ;
-	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TP/13cf1bbf-eeef-3cc4-9f43-5b9f5dfb3ea5> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010100TP/13cf1bbf-eeef-3cc4-9f43-5b9f5dfb3ea5> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010100TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:explotaciones 17 ;
 	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TP/594e5f9f-2b4e-3022-a800-87f31dc50b29> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010100TP/594e5f9f-2b4e-3022-a800-87f31dc50b29> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010100TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:explotaciones 7 ;
 	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TP/65ff3245-b5c7-3d89-a7e1-3338897a0437> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010100TP/65ff3245-b5c7-3d89-a7e1-3338897a0437> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010100TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:explotaciones 4 ;
 	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otro-tipo-de-fuente-de-energia-renovable> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TP/9bc403c0-08e4-3cab-962e-7fa6a7cb94c8> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010100TP/9bc403c0-08e4-3cab-962e-7fa6a7cb94c8> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010100TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:explotaciones 89 ;
 	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TP/56e122a1-c4d8-3192-a654-eeb60b713b95> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010100TP/56e122a1-c4d8-3192-a654-eeb60b713b95> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010100TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
 	iaest-measure:explotaciones 7 ;
 	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TP/d57d8cca-66d4-35b0-89a5-6afc63c0dd6b> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010100TP/d57d8cca-66d4-35b0-89a5-6afc63c0dd6b> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010100TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
 	iaest-measure:explotaciones 4 ;
 	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TP/606cc057-db75-37d2-a844-3fb6d6437e5f> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010100TP/606cc057-db75-37d2-a844-3fb6d6437e5f> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010100TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
 	iaest-measure:explotaciones 48 ;
 	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TP/24007a73-543f-350a-86ad-801ce2e2280e> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010100TP/24007a73-543f-350a-86ad-801ce2e2280e> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010100TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:explotaciones 37 ;
 	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TP/273a7248-bcb4-3200-9df1-1f9bff0d9255> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010100TP/273a7248-bcb4-3200-9df1-1f9bff0d9255> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010100TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:explotaciones 13 ;
 	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TP/06ead04c-d40f-390d-9d99-f06032246bdf> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010100TP/06ead04c-d40f-390d-9d99-f06032246bdf> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010100TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:explotaciones 3 ;
 	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otro-tipo-de-fuente-de-energia-renovable> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TP/da7dd7e7-664f-3c0f-868c-57136bff7935> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010100TP/da7dd7e7-664f-3c0f-868c-57136bff7935> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010100TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:explotaciones 79 ;
 	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;

@@ -12,34 +12,34 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010111TP> a qb:dataSet;
-	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010111>;
+<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010111TP> a qb:dataSet;
+	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-080101-010111>;
 	rdfs:label "Cubo de datos para 01-080101-010111TP"@es ;
 	rdfs:comment "Cubo de datos para 01-080101-010111TP"@es ;
-	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010111TP/a73adae5-a3e4-39f6-ad70-d33bbdfb754a> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010111>; 
+	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010111TP/a73adae5-a3e4-39f6-ad70-d33bbdfb754a> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010111TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:otras-tierrras 2953057 ;
 	iaest-measure:pastizales-permanentes 27691263 ;
 	iaest-measure:tierras-labradas 48658989 ;
 	iaest-measure:superficie-total 105880822 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010111TP/e1a78466-3fcd-3890-a7ec-4c359b3752da> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010111>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010111TP/e1a78466-3fcd-3890-a7ec-4c359b3752da> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010111TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
 	iaest-measure:otras-tierrras 2541911 ;
 	iaest-measure:pastizales-permanentes 29770455 ;
 	iaest-measure:tierras-labradas 38393037 ;
 	iaest-measure:superficie-total 93582602 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010111TP/08e0e772-2bff-30ae-a8a3-d2e7bec165b2> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010111>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010111TP/08e0e772-2bff-30ae-a8a3-d2e7bec165b2> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010111TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:otras-tierrras 14951435 ;
 	iaest-measure:pastizales-permanentes 15968941 ;

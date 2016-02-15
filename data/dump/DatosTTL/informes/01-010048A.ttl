@@ -12,18 +12,18 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://opendata.aragon.es/recurso/iaest/cubo/01-010048A> a qb:dataSet;
-	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010048>;
+<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010048A> a qb:dataSet;
+	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-010048>;
 	rdfs:label "Cubo de datos para 01-010048A"@es ;
 	rdfs:comment "Cubo de datos para 01-010048A"@es ;
-	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://opendata.aragon.es/recurso/iaest/observacion/01-010048A/152695b7-fca4-3dfc-8fd8-015e09a28ec9> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010048>; 
+	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010048A/152695b7-fca4-3dfc-8fd8-015e09a28ec9> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010048A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:superficie-total-regada 37768519 ;
@@ -40,8 +40,8 @@
 	iaest-measure:superficie-regada-con-agua-insuficiente 4530182 ;
 	iaest-measure:superficie-no-regada-disponiendo-la-explotacion-de-instalaciones-y-agua 2864047 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-010048A/b9fd4210-eef1-302f-a917-a8dd54fcdb28> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010048>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010048A/b9fd4210-eef1-302f-a917-a8dd54fcdb28> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010048A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1989> ;
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:superficie-total-regada 32259173 ;

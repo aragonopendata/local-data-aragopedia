@@ -12,18 +12,18 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010106TP> a qb:dataSet;
-	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010106>;
+<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010106TP> a qb:dataSet;
+	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-080101-010106>;
 	rdfs:label "Cubo de datos para 01-080101-010106TP"@es ;
 	rdfs:comment "Cubo de datos para 01-080101-010106TP"@es ;
-	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010106TP/5c798d14-983b-3722-89a9-978d290f08d7> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010106>; 
+	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010106TP/5c798d14-983b-3722-89a9-978d290f08d7> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010106TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:titular-explotacion-es-persona-fisica 14135 ;
 	iaest-measure:titular-explotacion-es-persona-fisica-mujer 2671 ;
@@ -34,8 +34,8 @@
 	iaest-dimension:el-jefe-de-la-explotacion-no-es-el-titular-mujer <http://opendata.aragon.es/kos/iaest/el-jefe-de-la-explotacion-no-es-el-titular-mujer/359> ;
 	iaest-dimension:conyuges-del-titular-cuando-este-es-persona-fisica <http://opendata.aragon.es/kos/iaest/conyuges-del-titular-cuando-este-es-persona-fisica/104> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010106TP/d06cc629-54a5-3610-a1b4-21c8443d4847> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010106>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010106TP/d06cc629-54a5-3610-a1b4-21c8443d4847> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010106TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
 	iaest-measure:titular-explotacion-es-persona-fisica 11084 ;
 	iaest-measure:titular-explotacion-es-persona-fisica-mujer 2719 ;
@@ -46,8 +46,8 @@
 	iaest-dimension:el-jefe-de-la-explotacion-no-es-el-titular-mujer <http://opendata.aragon.es/kos/iaest/el-jefe-de-la-explotacion-no-es-el-titular-mujer/291> ;
 	iaest-dimension:conyuges-del-titular-cuando-este-es-persona-fisica <http://opendata.aragon.es/kos/iaest/conyuges-del-titular-cuando-este-es-persona-fisica/126> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010106TP/988704cd-cc8d-319c-928b-5748d76f53e3> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010106>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010106TP/988704cd-cc8d-319c-928b-5748d76f53e3> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010106TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:titular-explotacion-es-persona-fisica 22718 ;
 	iaest-measure:titular-explotacion-es-persona-fisica-mujer 5010 ;

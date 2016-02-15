@@ -12,30 +12,30 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010102A> a qb:dataSet;
-	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>;
+<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010102A> a qb:dataSet;
+	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-080101-010102>;
 	rdfs:label "Cubo de datos para 01-080101-010102A"@es ;
 	rdfs:comment "Cubo de datos para 01-080101-010102A"@es ;
-	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102A/5ed7edb8-c06a-3a73-a1ad-75e2727cc952> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010102A/5ed7edb8-c06a-3a73-a1ad-75e2727cc952> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010102A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:explotaciones 475 ;
 	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102A/32691b43-116e-3715-932d-874590895d97> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010102A/32691b43-116e-3715-932d-874590895d97> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010102A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:explotaciones 328 ;
 	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102A/66004a72-b5f0-3e43-a124-8cf88cf870f6> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010102A/66004a72-b5f0-3e43-a124-8cf88cf870f6> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010102A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:explotaciones 510 ;
 	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;

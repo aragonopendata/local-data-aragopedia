@@ -4,89 +4,37 @@ Repositorio en el que se incluye el código fuente y los datos correspondientes 
 
 Para un correcto uso del código se necesita tener una credencial del https://console.developers.google.com
 
-## Procesamiento de datos:
+## Pasos a realizar para la descarga masiva de datos:
 
-* Primero se debe de configurar el archivo system.properties espeficicando los parámetros que pide del google drive, una vez hecho en Constants podremos la variable 
-publicDrive a true.
+* Se deben utilizar los scripts que se encuentra en la carpeta src/01_extraction-scripts, en el orden que se indica. Ojo, que hay que tener cuidado con las cookies, que deben ser actualizadas cada vez que se haga un proceso de extracción masiva.
 
+## Pasos a realizar para el procesamiento de datos:
+
+* Primero se debe de configurar el archivo system.properties espeficicando los parámetros que pide del Google Drive. Una vez hecho esto, en Constants se pondrá la variable publicDrive a true.
 * Se ejecuta la clase GenerateConfig.
-
-* Si hemos configurado que se publique en google drive, debemos de descargar la configuración en formato excel a una nueva carpeta.
-
+* Si se ha configurado que se publique en Google Drive, se debe descargar la configuración en formato Excel a una nueva carpeta.
 * Se ejecuta la clase GenerateData.
+* Se suben los archivos procesados a la base de datos de tripletas
+* Se configura el linked data API
 
-* Subimos los archivos procesados a la base de datos orientada a grafos
+## URLs de la API:
 
-* Configuramos el linked data API
-
-## URL del api:
-
-* Todas las observaciones
-
-http://opendata.aragon.es/recurso/iaest/observacion
-
-* Observacion por Id
-
-http://opendata.aragon.es/recurso/iaest/observacion/{idCubo}/{idObservation}
-
-* Todos los dsd
-
-http://opendata.aragon.es/recurso/iaest/dsd
-
-* Estructura de un cubo dado
-
-http://opendata.aragon.es/recurso/iaest/dsd/{idCubo}
-
-* Todas los property
-
-http://opendata.aragon.es/recurso/iaest/property
-
-* Dimension por Id
-
-http://opendata.aragon.es/recurso/iaest/dimension/{idCubo}
-
-* Medida por Id
-
-http://opendata.aragon.es/recurso/iaest/medida/{idCubo}
-
-* Codelist
-
-http://opendata.aragon.es/kos/iaest/{idCodelist}
-
-* Codelist por valor
-
-http://opendata.aragon.es/kos/iaest/{idCodelist}/{valor}
-
-* Todos los cubos
-
-http://opendata.aragon.es/recurso/iaest/cubo
-
-* Todas las observaciones del cubo
-
-http://opendata.aragon.es/recurso/iaest/cubo/{idCubo}
-
-* Cubos que tienen un valor dado para una dimensión dada
-
-http://opendata.aragon.es/recurso/iaest/cubosdimension/{dimension}/{valor}
-
-* Cubos que tienen un valor dado para una medida dada
-
-http://opendata.aragon.es/recurso/iaest/cubosmedida/{medida}/{valor}
-
-* Cubos que tienen un valor dado para alguna dimensión
-
-http://opendata.aragon.es/recurso/iaest/cubosdimensionvalor/{valor}
-
-* Cubos que tienen un valor dado para alguna medida
-
-http://opendata.aragon.es/recurso/iaest/cubosmedidavalor/{valor}
-
-* Cubos que tienen una dimensión dada
-
-http://opendata.aragon.es/recurso/iaest/cubosdimensionpropiedad/{dimension}
-
-* Cubos que tienen una medida dada
-
-http://opendata.aragon.es/recurso/iaest/cubosmedidapropiedad/{medida}
+* Todas las observaciones: http://opendata.aragon.es/recurso/iaest/observacion
+* Observación específica: http://opendata.aragon.es/recurso/iaest/observacion/{idCubo}/{idObservation}
+* Todos los dsd (Data Structure Definitions): http://opendata.aragon.es/recurso/iaest/dsd
+* Estructura de un cubo específico: http://opendata.aragon.es/recurso/iaest/dsd/{idCubo}
+* Todas los propiedades: http://opendata.aragon.es/recurso/iaest/property
+* Dimension específica: http://opendata.aragon.es/recurso/iaest/dimension/{idDimension}
+* Medida específica: http://opendata.aragon.es/recurso/iaest/medida/{idMedida}
+* Codelist: http://opendata.aragon.es/kos/iaest/{idCodelist}
+* Concepto específico de una codelist: http://opendata.aragon.es/kos/iaest/{idCodelist}/{valor}
+* Todos los cubos: http://opendata.aragon.es/recurso/iaest/cubo
+* Todas las observaciones del cubo: http://opendata.aragon.es/recurso/iaest/cubo/{idCubo}
+* Cubos que tienen un valor dado para una dimensión dada: http://opendata.aragon.es/recurso/iaest/cubosdimension/{dimension}/{valor}
+* Cubos que tienen un valor dado para una medida dada: http://opendata.aragon.es/recurso/iaest/cubosmedida/{medida}/{valor}
+* Cubos que tienen un valor dado para alguna dimensión: http://opendata.aragon.es/recurso/iaest/cubosdimensionvalor/{valor}
+* Cubos que tienen un valor dado para alguna medida: http://opendata.aragon.es/recurso/iaest/cubosmedidavalor/{valor}
+* Cubos que tienen una dimensión dada: http://opendata.aragon.es/recurso/iaest/cubosdimensionpropiedad/{dimension}
+* Cubos que tienen una medida dada: http://opendata.aragon.es/recurso/iaest/cubosmedidapropiedad/{medida}
 
 

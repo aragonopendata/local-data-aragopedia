@@ -12,18 +12,18 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://opendata.aragon.es/recurso/iaest/cubo/01-010047A> a qb:dataSet;
-	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010047>;
+<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010047A> a qb:dataSet;
+	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-010047>;
 	rdfs:label "Cubo de datos para 01-010047A"@es ;
 	rdfs:comment "Cubo de datos para 01-010047A"@es ;
-	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://opendata.aragon.es/recurso/iaest/observacion/01-010047A/c394dade-c492-361c-a3f6-599673da5d8c> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010047>; 
+	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010047A/c394dade-c492-361c-a3f6-599673da5d8c> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010047A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:total-maquinas 68210 ;
@@ -42,8 +42,8 @@
 	iaest-measure:explotaciones-que-usan-maquinaria-no-en-propiedad-exclusiva-cosechadora 31128 ;
 	iaest-measure:explotaciones-que-usan-maquinaria-no-en-propiedad-exclusiva-otra-maquina 0 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://opendata.aragon.es/recurso/iaest/observacion/01-010047A/73a02a25-7a23-3852-8d8a-76623f69be89> a qb:Observation ;
-	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010047>; 
+<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010047A/73a02a25-7a23-3852-8d8a-76623f69be89> a qb:Observation ;
+	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010047A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1989> ;
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:total-maquinas 70031 ;

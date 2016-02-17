@@ -7,6 +7,8 @@ public class SkosBean {
 	private String id;
 
 	private String URI;
+
+	private String label;
 	
 	public String getId() {
 		return id;
@@ -19,6 +21,12 @@ public class SkosBean {
 	}
 	public void setURI(String uRI) {
 		URI = uRI;
+	}
+	public String getLabel() {
+		return label;
+	}
+	public void setLabel(String label) {
+		this.label = label;
 	}
 	
 	@Override

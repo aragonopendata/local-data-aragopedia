@@ -41,10 +41,12 @@ public class Utils {
 
 	private static String comunidadAragon = null;
 
+
 	public static String weakClean(String chain) {
 		return chain.replace(new String(Character.toChars(0)), "");
 	}
 	
+
 	public static String urlify(String chain) {
 
 		String chainToURI = chain.trim().toLowerCase();
@@ -138,6 +140,7 @@ public class Utils {
 		return chainToURI;
 	}
 
+
 	public static String genUUIDHash(String id) {
 
 		String hash;
@@ -215,6 +218,7 @@ public class Utils {
 		return "<"+cadidateUrl+">";
 	}
 	
+
 	private static String getComarcasAragon() {
 		if (comarcasAragon == null) {
 			String url = "http://opendata.aragon.es/recurso/territorio/Comarca";
@@ -244,7 +248,7 @@ public class Utils {
 		return comarcasAragon;
 	}
 	
-	
+
 	private static String getMunicipiosAragon() {
 		if (municipiosAragon == null) {
 			String url = "http://opendata.aragon.es/recurso/territorio/Municipio";
@@ -343,10 +347,8 @@ public class Utils {
 		try {
 			URL targetUrl = null;
 			if ((urlParameters == null) || (urlParameters.equals(""))) {
-				// log.info("URL: " + url);
 				targetUrl = new URL(url);
 			} else {
-				// log.info("URL: " + url + "?" + urlParameters);
 				targetUrl = new URL(url + "?" + urlParameters);
 			}
 
@@ -410,7 +412,7 @@ public class Utils {
 
 	}
 	
-	public static void stringToFileAppend(File file, String content){
+	public static void stringToFileAppend(String content, File file){
 		
 		try {
 			FileUtils.writeStringToFile(file, content, "UTF-8", true);

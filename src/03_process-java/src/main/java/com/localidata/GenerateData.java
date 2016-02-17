@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
@@ -25,11 +27,9 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 
+public class GenerateData {
 
-
-public class App {
-
-	private final static Logger log = Logger.getLogger(App.class);
+	private final static Logger log = Logger.getLogger(GenerateData.class);
 
 	static String inputDirectoryString = "";
 
@@ -44,38 +44,37 @@ public class App {
 	String[] extensionsConfig = new String[] { "xlsx", "csv" };
 	HashMap<String,ConfigBean> mapconfig = new HashMap<String,ConfigBean>();
 	private String formatConfig = "xlsx";
-	
-	public App(String input, String output, String config) {
+
+	public GenerateData(String input, String output, String config) {
 		this.inputDirectoryString = input;
 		this.outputDirectoryString = output;
 		this.configDirectoryString = config;
 	}
 
+
 	public static void main(String[] args) {
 		if ((log == null) || (log.getLevel() == null))
 			PropertyConfigurator.configure("log4j.properties");
-		if (args.length == 3) {
+		
 			log.info("Start process");
-			App app = new App(args[0], args[1], args[2]);
+			GenerateData app = new GenerateData(args[0], args[1], args[2]);
 			app.backup();
 			app.extractConfig();
 			app.extractInformation();
 			log.info("Finish process");
-		} else {
-			log.info("Se deben de pasar dos parámetros: ");
-			log.info("\tEl directorio donde están los archivos de entrada");
-			log.info("\tEl directorio donde se generaranlos archivos ttl");
-			log.info("\tEl directorio donde están los excel de configuación");
-		}
 
 	}
 	
 	private void extractConfig() {
 		
+		log.info("Comienza a extraerse la configuración");
 		File configDirectoryFile = new File(configDirectoryString);
 		Collection<File> listCSV = FileUtils.listFiles(configDirectoryFile,
 				extensionsConfig, true);
+		int cont=0;
+		int size=listCSV.size();
 		for (File file : listCSV) {
+			log.info("Se extrae el fichero "+file.getName()+" "+(++cont)+" "+size);
 			if(!file.getName().startsWith("mapping")){
 				ConfigBean configBean = new ConfigBean();
 				configBean.setNameFile(file.getName());
@@ -91,14 +90,15 @@ public class App {
 				}
 				
 				configBean.setId(id);
-				if(formatConfig.equals("csv"))
+				if(formatConfig.equals("csv")){
 					readCsv(file, configBean);
-				else
+				}else{
 					readXlsx(file, configBean);
+				}
 				mapconfig.put(id, configBean);
 			}
 		}
-		
+		log.info("Finaliza de extraerse la configuración");
 	}
 
 	private void readCsv(File file, ConfigBean configBean) {
@@ -251,8 +251,62 @@ public class App {
 		
 		return mapSkos;
 	}
+	
+	private void createSkos() {
+		
+		log.info("Init to create skos");
+		File kosFile = new File(outputDirectoryString + File.separator + "DatosTTL" + File.separator +"codelists"+ File.separator + "kos.ttl");
+		StringBuffer resultIni = new StringBuffer();
+		StringBuffer resultFin = new StringBuffer();
+		HashSet<String> kosCreated = new HashSet<String>();
+		resultIni.append(TransformToRDF.addPrefix());
+		for (Iterator iterator = mapconfig.keySet().iterator(); iterator.hasNext();) {
+			String keyConfig = (String) iterator.next();
+			ConfigBean configBean = mapconfig.get(keyConfig);
+			if(configBean!=null){
+				for (Iterator iterator2 = configBean.getMapData().keySet().iterator(); iterator2
+						.hasNext();) {
+					String keyData = (String) iterator2.next();
+					DataBean dataBean = configBean.getMapData().get(keyData);
+					if(dataBean!=null && !kosCreated.contains(dataBean.getName())){
+						String suject = Constants.host+"/"+Constants.kosName+"/"+Constants.datasetName+"/"+Utils.urlify(dataBean.getName());
+						resultIni.append("<"+suject+"> "+"a skos:ConceptScheme.\n");
+						resultIni.append("<"+suject+"> skos:notation \""+Utils.urlify(dataBean.getName())+"\".\n");
+						resultIni.append("<"+suject+"> rdfs:label \""+dataBean.getName()+"\".\n");
+												
+						for (Iterator iterator3 = dataBean.getMapSkos().keySet().iterator(); iterator3
+								.hasNext();) {
+							String keySkos = (String) iterator3.next();
+							SkosBean skosBean = dataBean.getMapSkos().get(keySkos);
+							if(skosBean!=null){
+								resultIni.append("<"+suject+"> skos:narrower <"+skosBean.getURI()+">.\n");
+								resultFin.append("<"+skosBean.getURI()+"> a skos:Concept.\n");
+								resultFin.append("<"+skosBean.getURI()+"> skos:inScheme <"+suject+">.\n");
+								resultFin.append("<"+skosBean.getURI()+"> skos:notation \""+skosBean.getId()+"\".\n");
+								String label = skosBean.getId();
+								if(skosBean.getLabel()!=null && skosBean.getLabel().equals(""))
+									label=skosBean.getLabel();
+								resultFin.append("<"+skosBean.getURI()+"> skos:prefLabel \""+label+"\".\n");
+								
+								resultFin.append("\n");
+							}
+						}
+						resultIni.append("\n");
+						resultIni.append(resultFin);
+						kosCreated.add(dataBean.getName());
+					}
+					Utils.stringToFileAppend(resultIni.toString(), kosFile);
+					resultIni.setLength(0);
+					resultFin.setLength(0);
+				}
+			}
+		}
+		
+		log.info("end to create skos");
+	}
 
 	private void backup(){
+		log.info("Comienza a hacerse el backup");
 		File outputDirectoryFile = new File(outputDirectoryString);
 		if(outputDirectoryFile.exists()){
 			SimpleDateFormat formatFullDate = new SimpleDateFormat("yyyyMMdd");
@@ -269,11 +323,11 @@ public class App {
 				log.error("Error haciendo backup",e);
 			}
 		}
+		log.info("Finaliza de hacerse el backup");
 	}
 	
-	@SuppressWarnings("unchecked")
+
 	private void extractInformation() {
-		// Getting input files
 		File inputDirectoryFile = new File(inputDirectoryString);
 		File propertiesFile = new File(outputDirectoryString + File.separator + "DatosTTL" + File.separator +"codelists"+ File.separator + "properties.ttl");
 		File dsdFile = new File(outputDirectoryString + File.separator + "DatosTTL" + File.separator + "dataStructures" + File.separator + "dsd.ttl");
@@ -286,7 +340,7 @@ public class App {
 				extensions, true);
 		String properties="";
 		int numfile=1;
-		// Transforming input files
+
 		for (File file : listCSV) {
 			try {
 				String fileName = "";
@@ -321,5 +375,7 @@ public class App {
 		} catch (Exception e) {
 			log.error(e);
 		}
+		
+		createSkos();
 	}
 }

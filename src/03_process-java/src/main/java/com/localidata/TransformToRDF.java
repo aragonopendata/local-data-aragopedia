@@ -16,7 +16,7 @@ import org.apache.log4j.Logger;
 public class TransformToRDF {
 
 
-	private final static Logger log = Logger.getLogger(App.class);
+	private final static Logger log = Logger.getLogger(GenerateData.class);
 
 	private List<String> csvLines = null;
 
@@ -44,6 +44,9 @@ public class TransformToRDF {
 	
 	protected static StringBuffer propertiesContent = new StringBuffer();
 	
+	String cubo="";
+	
+
 	public TransformToRDF(List<String> csvLines, File outputDirectoryFile,
 			File propertiesFile, File dsdFile, File errorReportFile, ConfigBean configBean) {
 		this.csvLines = csvLines;
@@ -53,6 +56,7 @@ public class TransformToRDF {
 		this.errorReportFile = errorReportFile;
 		this.configBean = configBean;
 	}
+
 
 	public void initTransformation(String fileName, int numfile, String id) {
 
@@ -64,6 +68,7 @@ public class TransformToRDF {
 			boolean cabecera = true;
 			int numLine = 1;
 			String dsd="";
+			
 			for (int h = 0; h < csvLines.size(); h++) {
 				if (h == (int) (csvLines.size() * 0.75)) {
 					log.info("\tProcesed 75%");
@@ -81,11 +86,10 @@ public class TransformToRDF {
 					cabecera = false;
 				} else {
 					lineAux.setLength(0);
-					lineAux.append(addObservation(line, fileName, dsd));
+					lineAux.append(addObservation(line, fileName));
 					log.debug("Insert line " + numLine);
 				}
-				Utils.stringToFileAppend(outputDirectoryFile,
-						lineAux.toString());
+				Utils.stringToFileAppend(lineAux.toString(), outputDirectoryFile);
 				numLine++;
 			}
 			log.debug("Insert observations");	
@@ -94,6 +98,7 @@ public class TransformToRDF {
 
 	}
 	
+
 	public static StringBuffer addPrefix() {
 		StringBuffer result = new StringBuffer();
 
@@ -138,7 +143,8 @@ public class TransformToRDF {
 	private  StringBuffer addCubeLink(String fileName, String dsd) {
 		StringBuffer result = new StringBuffer();
 		String url = Constants.host+"/"+Constants.eldaName+"/"+Constants.datasetName;
-		result.append("<"+url+"/cubo/"+fileName+"> a qb:dataSet;\n");
+		cubo=url+"/cubo/"+fileName;
+		result.append("<"+cubo+"> a qb:dataSet;\n");
 		result.append("\tqb:structure <"+dsd+">;\n");
 		result.append("\trdfs:label \"Cubo de datos para "+fileName+"\"@es ;\n");
 		result.append("\trdfs:comment \"Cubo de datos para "+fileName+"\"@es ;\n");
@@ -148,6 +154,7 @@ public class TransformToRDF {
 		
 		return result;
 	}
+
 
 	private String addHeader(String headerLine, String nextLine,
 			String fileName, int numfile) {
@@ -169,7 +176,7 @@ public class TransformToRDF {
 
 		int col = 1;
 		int numCell = 1;
-
+		// for (String cell : cells) {
 		for (int h = 0; h < cells.length; h++) {
 			String cell = cells[h];
 			String cleanCell = Utils.weakClean(cell);
@@ -205,7 +212,7 @@ public class TransformToRDF {
 										+ "\n");
 								propertiesContent.append("\trdfs:label \"" + cleanCell
 										+ "\"@es ;" + "\n");
-								propertiesContent.append("\trdfs:comment \"" + cleanCell
+								propertiesContent.append("\trdfs:comment \"" + normalizedCell
 										+ "\"@es ;" + "\n");
 								propertiesContent.append("\trdfs:range "+dataBean.getType());
 								if(dataBean.getType().equals(Constants.skosType)){
@@ -271,7 +278,7 @@ public class TransformToRDF {
 	}
 
 
-	private StringBuffer addObservation(String line, String fileName, String dsd) {
+	private StringBuffer addObservation(String line, String fileName) {
 
 		StringBuffer result = new StringBuffer();
 		String endResult = "";
@@ -283,7 +290,7 @@ public class TransformToRDF {
 		String id = Utils.genUUIDHash(cleanLine);
 		result.append("<"+Constants.host+"/"+Constants.eldaName+"/"+Constants.datasetName+"/observacion/"
 				+ fileName + "/" + id + "> a qb:Observation ;" + "\n");
-		result.append("\tqb:dataSet <"+dsd+ ">; \n");
+		result.append("\tqb:dataSet <"+cubo+ ">; \n");
 
 		String[] cells = cleanLine.split("\t");
 		int col = 1;
@@ -312,6 +319,7 @@ public class TransformToRDF {
 											result.append("\t"+dataBean.getNormalizacion()
 													+ " <"+ dataBean.getMapSkos().get(normalizedCell).getURI() +"> ;"
 													+ "\n");
+											dataBean.getMapSkos().get(normalizedCell).setLabel(Utils.weakClean(cell));
 										}
 									}else{
 										result.append("\t"+dataBean.getNormalizacion()
@@ -364,6 +372,8 @@ public class TransformToRDF {
 		
 		return result;
 	}
+	
+	
 
 	public boolean isString(String cell) {
 		boolean resultado = false;
@@ -382,13 +392,16 @@ public class TransformToRDF {
 		return rdfFinal;
 	}
 
+
 	public void setRdfFinal(String rdfFinal) {
 		this.rdfFinal = rdfFinal;
 	}
 
+
 	public String getRdfProperties() {
 		return rdfProperties;
 	}
+
 
 	public void setRdfProperties(String rdfProperties) {
 		this.rdfProperties = rdfProperties;

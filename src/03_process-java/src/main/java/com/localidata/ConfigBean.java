@@ -8,6 +8,7 @@ import java.util.Iterator;
 
 import org.apache.log4j.Logger;
 
+
 public class ConfigBean {
 	
 
@@ -97,7 +98,7 @@ public class ConfigBean {
 		}
 		content=content.substring(0, content.length()-1)+System.getProperty("line.separator");
 		for (DataBean dataBean : dataArray) {
-			DataBean dataBeanAux = ConfigAdmin.skosExtrated.get(dataBean.getName());
+			DataBean dataBeanAux = GenerateConfig.skosExtrated.get(dataBean.getName());
 			if(dataBeanAux!=null && dataBeanAux.getMapSkos()!=null && dataBeanAux.getMapSkos().size()>0){
 				String nameFile = dataBeanAux.generateSkosMapping();
 				content=content+fieldSeparator+nameFile+fieldSeparator+csvSepartor;
@@ -108,7 +109,7 @@ public class ConfigBean {
 		}
 		content=content.substring(0, content.length()-1)+System.getProperty("line.separator");
 		
-		String nameFile=ConfigAdmin.configDirectoryString+File.separator+getNameFile();
+		String nameFile=GenerateConfig.configDirectoryString+File.separator+getNameFile();
 		File file = new File(nameFile);
 		try {
 			Utils.stringToFile(content, file);

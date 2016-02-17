@@ -12,41 +12,43 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-public class ConfigAdmin {
+public class GenerateConfig {
 	
-	private final static Logger log = Logger.getLogger(ConfigAdmin.class);
 
-	String inputDirectoryString = "D:\\trabajo\\gitOpenDataAragon2\\doc\\iaest\\DatosPrueba2";
+	private final static Logger log = Logger.getLogger(GenerateConfig.class);
+
+	String inputDirectoryString = "";
 
 	static String configDirectoryString = "";
 
-	String dimensionDirectoryString = "D:\\trabajo\\gitOpenDataAragon2\\doc\\iaest\\DimensionesFinales\\PosiblesDimensionesMenos20Valores";
+	String dimensionDirectoryString = "";
 
-	String dimensionUndecidedDirectoryString = "D:\\trabajo\\gitOpenDataAragon2\\doc\\iaest\\DimensionesFinales\\Undecided";
-
+	
 	String[] extensions = new String[] { "csv", "txt" };
 	
 	protected static HashMap<String,DataBean> skosExtrated  = new HashMap<String,DataBean>();
 
 	public static final String errorFileString = "errores.txt";
 	
-	public ConfigAdmin(String input, String dimension, String undecided, String config){
+
+	public GenerateConfig(String input, String dimension, String config){
 		this.inputDirectoryString=input;
 		this.dimensionDirectoryString=dimension;
-		this.dimensionUndecidedDirectoryString=undecided;
 		this.configDirectoryString=config;
 	}
 	
+
 	public void generateAllConfig(){
 		
 		HashSet<String> dimension = extractDimensions(dimensionDirectoryString);
-		HashSet<String> dimensionUndecided = extractDimensions(dimensionUndecidedDirectoryString);
 		HashMap<String,ConfigBean> configExtrated = new HashMap<String,ConfigBean>();
 		File inputDirectoryFile = new File(inputDirectoryString);
 		Collection<File> listCSV = FileUtils.listFiles(inputDirectoryFile,
 				extensions, true);
+		int cont=0;
+		int size=listCSV.size();
 		for (File file : listCSV) {
-			
+						
 			ArrayList<DataBean> skosData = new ArrayList<DataBean>();
 			String id = "";
 			String letters="";
@@ -57,7 +59,7 @@ public class ConfigAdmin {
 				id = file.getName().substring(0, file.getName().length()-6);
 				letters = file.getName().substring(file.getName().length()-6, file.getName().length()-4);
 			}
-			log.info("Comienza tratamiento para "+id+letters);
+			log.info("Comienza tratamiento para "+id+letters+" "+(++cont)+"/"+size);
 			ConfigBean configBean = null;
 			if(configExtrated.get(id)!=null){
 				configBean = configExtrated.get(id);
@@ -86,21 +88,19 @@ public class ConfigAdmin {
 						dataBean.setType("null");
 					}else{
 						
-						if(contains(dimension,name+".txt") || contains(dimensionUndecided,name+".txt")){
-							if(dimensionUndecided.contains(name+".txt")){
-								log.info("Configuration need revised "+configBean.getNameFile());
-							}
+						if(contains(dimension,name+".txt")){
+							
 							dataBean.setDimensionMesure("dim");
-							if(name.toLowerCase().contains("comarca")){
+							if(dataBean.getName().toLowerCase().contains("comarca")){
 								dataBean.setNormalizacion("sdmx-dimension:refArea");
 								dataBean.setType("URI-comarca");
-							}else if(name.toLowerCase().contains("municipio")){
+							}else if(dataBean.getName().toLowerCase().contains("municipio")){
 								dataBean.setNormalizacion("sdmx-dimension:refArea");
 								dataBean.setType("URI-Municipio");
-							}else if(name.toLowerCase().contains("provincia")){
+							}else if(dataBean.getName().toLowerCase().contains("provincia")){
 								dataBean.setNormalizacion("sdmx-dimension:refArea");
 								dataBean.setType("URI-Provincia");
-							}else if(name.toLowerCase().contains("comunidad") || name.toLowerCase().contains("aragon")){
+							}else if(dataBean.getName().toLowerCase().contains("comunidad") || dataBean.getName().toLowerCase().contains("aragon")){
 								dataBean.setNormalizacion("sdmx-dimension:refArea");
 								dataBean.setType("URI-Comunidad");
 							}else{
@@ -130,7 +130,10 @@ public class ConfigAdmin {
 			log.info("Finaliza tratamiento para "+id+letters);
 		}
 		
+		cont=0;
+		size = configExtrated.keySet().size();
 		for (String key : configExtrated.keySet()) {
+			
 			ConfigBean configBean = configExtrated.get(key);
 			String letters = "-";
 			for (String letter : configBean.getLetters()) {
@@ -138,9 +141,9 @@ public class ConfigAdmin {
 			}
 			letters=letters.substring(0, letters.length()-1);
 			configBean.setNameFile("Informe-"+configBean.getId()+letters+".csv");
-			log.info("Comienza a escribirse el archivo"+"Informe-"+configBean.getId()+letters+".csv");
+			log.info("Comienza a escribirse el archivo "+"Informe-"+configBean.getId()+letters+".csv "+(++cont)+"/"+size);
 			configBean.toCSV();
-			log.info("Finaliza de escribirse el archivo"+"Informe-"+configBean.getId()+letters+".csv");
+			log.info("Finaliza de escribirse el archivo "+"Informe-"+configBean.getId()+letters+".csv");
 		}
 		generateSkosMapping();
 	}
@@ -203,6 +206,7 @@ public class ConfigAdmin {
 		}
 	}
 	
+
 	private HashSet<String> extractDimensions(String directoryString){
 		HashSet<String> result = new HashSet<String>();
 		File dimensionDirectoryFile = new File(directoryString);
@@ -214,6 +218,7 @@ public class ConfigAdmin {
 		return result;
 	}
 	
+
 	private boolean contains(HashSet<String> set, String busqueda){
 		boolean result=false;
 		for (String setString : set) {
@@ -225,13 +230,14 @@ public class ConfigAdmin {
 		return result;
 	}
 	
+
 	public void generateSkosMapping(){
 		String filedSeparator ="\"";
 		String csvSeparator=",";
 		
-		for (String key : ConfigAdmin.skosExtrated.keySet()) {
+		for (String key : GenerateConfig.skosExtrated.keySet()) {
 			String content = "";
-			DataBean data = ConfigAdmin.skosExtrated.get(key);
+			DataBean data = GenerateConfig.skosExtrated.get(key);
 			
 			for (String skosName : data.getMapSkos().keySet()) {
 				SkosBean skosBean = data.getMapSkos().get(skosName);
@@ -239,7 +245,7 @@ public class ConfigAdmin {
 					content=content+filedSeparator+skosBean.getId()+filedSeparator+csvSeparator+filedSeparator+skosBean.getURI()+filedSeparator+System.getProperty("line.separator");
 			}
 			String nameFile ="mapping-"+Utils.urlify(data.getName());
-			String pathFile=ConfigAdmin.configDirectoryString+File.separator+nameFile+".csv";
+			String pathFile=GenerateConfig.configDirectoryString+File.separator+nameFile+".csv";
 			log.info("comienza a escribirse el archivo "+nameFile+".csv");
 			File file = new File(pathFile);
 			try {
@@ -260,22 +266,16 @@ public class ConfigAdmin {
 		
 	}
 	
+
 	public static void main(String[] args) {
 		
 		if ((log == null) || (log.getLevel() == null))
 			PropertyConfigurator.configure("log4j.properties");
-		if (args.length == 4) {
+
 			log.info("Start process");
-			ConfigAdmin config = new ConfigAdmin(args[0], args[1], args[2], args[3]);
+			GenerateConfig config = new GenerateConfig(args[0], args[1], args[2]);
 			config.generateAllConfig();
 			log.info("Finish process");
-		} else {
-			log.info("Se deben de pasar dos parámetros: ");
-			log.info("\tEl directorio donde están los archivos de entrada");
-			log.info("\tEl directorio donde están las dimensiones");
-			log.info("\tEl directorio donde están las dimensiones indecisas");
-			log.info("\tEl directorio donde va a ir la configuración");
-		}
 
 
 	}

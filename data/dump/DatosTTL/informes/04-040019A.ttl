@@ -12,16 +12,16 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/04-040019A> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/04-040019>;
+<http://opendata.aragon.es/recurso/iaest/cubo/04-040019A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/04-040019>;
 	rdfs:label "Cubo de datos para 04-040019A"@es ;
 	rdfs:comment "Cubo de datos para 04-040019A"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/04-040019A/3d5729fd-6a58-37b2-a6f3-d1a171eb2403> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/04-040019A>; 
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040019A/3d5729fd-6a58-37b2-a6f3-d1a171eb2403> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/04-040019A>; 
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

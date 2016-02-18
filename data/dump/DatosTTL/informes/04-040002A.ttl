@@ -12,31 +12,31 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/04-040002A> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/04-040002>;
+<http://opendata.aragon.es/recurso/iaest/cubo/04-040002A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/04-040002>;
 	rdfs:label "Cubo de datos para 04-040002A"@es ;
 	rdfs:comment "Cubo de datos para 04-040002A"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/04-040002A/0071a5a2-2a76-36e5-a1b8-9744d6d66a65> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/04-040002A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040002A/0071a5a2-2a76-36e5-a1b8-9744d6d66a65> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/04-040002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	iaest-dimension:agua-corriente <http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-abastecimiento-privado> ;
 	iaest-measure:numero-de-edificios 4596 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/04-040002A/54fcae4b-05f0-3f2d-9ff7-a8036e26663b> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/04-040002A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040002A/54fcae4b-05f0-3f2d-9ff7-a8036e26663b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/04-040002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	iaest-dimension:agua-corriente <http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-abastecimiento-publico> ;
 	iaest-measure:numero-de-edificios 265220 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/04-040002A/52c891c5-95fc-3bd1-a622-811c9731af9a> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/04-040002A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040002A/52c891c5-95fc-3bd1-a622-811c9731af9a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/04-040002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	iaest-dimension:agua-corriente <http://opendata.aragon.es/kos/iaest/agua-corriente/sin-agua-corriente> ;
 	iaest-measure:numero-de-edificios 2600 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

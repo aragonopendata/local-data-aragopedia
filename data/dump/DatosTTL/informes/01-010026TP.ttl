@@ -12,21 +12,21 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-010026>;
+<http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010026>;
 	rdfs:label "Cubo de datos para 01-010026TP"@es ;
 	rdfs:comment "Cubo de datos para 01-010026TP"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/b591cb9c-d0dd-33b5-84a7-7f61aa85a711> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/b591cb9c-d0dd-33b5-84a7-7f61aa85a711> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 904 ;
 	iaest-measure:licencias-nueva-planta-total 600 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 29 ;
@@ -37,11 +37,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 38 ;
 	iaest-measure:licencias-demolicion 16 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/d7e533e0-2fe4-32ca-aa95-f232d844cce3> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/d7e533e0-2fe4-32ca-aa95-f232d844cce3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 634 ;
 	iaest-measure:licencias-nueva-planta-total 376 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 17 ;
@@ -52,11 +52,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 10 ;
 	iaest-measure:licencias-demolicion 14 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/e30676a8-9941-34a4-8f71-240a919da30d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/e30676a8-9941-34a4-8f71-240a919da30d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 2533 ;
 	iaest-measure:licencias-nueva-planta-total 1166 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 72 ;
@@ -67,11 +67,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 777 ;
 	iaest-measure:licencias-demolicion 155 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/08276f6c-8335-38e7-8e82-50d3eeebe075> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/08276f6c-8335-38e7-8e82-50d3eeebe075> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2001> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 784 ;
 	iaest-measure:licencias-nueva-planta-total 531 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 34 ;
@@ -82,11 +82,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 29 ;
 	iaest-measure:licencias-demolicion 8 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/5793d768-b42c-38d7-899f-637f4b6f30f0> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/5793d768-b42c-38d7-899f-637f4b6f30f0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2001> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 610 ;
 	iaest-measure:licencias-nueva-planta-total 379 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 19 ;
@@ -97,11 +97,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 12 ;
 	iaest-measure:licencias-demolicion 22 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/3e0b2ea5-0327-3314-ad3c-b5d70c2335e4> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/3e0b2ea5-0327-3314-ad3c-b5d70c2335e4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2001> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 2699 ;
 	iaest-measure:licencias-nueva-planta-total 1128 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 64 ;
@@ -112,11 +112,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 939 ;
 	iaest-measure:licencias-demolicion 167 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/240c47ec-c4b3-310d-aa9e-3db95b06729f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/240c47ec-c4b3-310d-aa9e-3db95b06729f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2002> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 811 ;
 	iaest-measure:licencias-nueva-planta-total 524 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 25 ;
@@ -127,11 +127,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 53 ;
 	iaest-measure:licencias-demolicion 11 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/f6bffdcb-c4bb-33a2-b9d6-590b4442854e> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/f6bffdcb-c4bb-33a2-b9d6-590b4442854e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2002> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 596 ;
 	iaest-measure:licencias-nueva-planta-total 370 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 13 ;
@@ -142,11 +142,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 22 ;
 	iaest-measure:licencias-demolicion 24 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/e6d09cae-07c1-3040-8f12-ada903130c69> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/e6d09cae-07c1-3040-8f12-ada903130c69> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2002> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 2514 ;
 	iaest-measure:licencias-nueva-planta-total 994 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 58 ;
@@ -157,11 +157,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 787 ;
 	iaest-measure:licencias-demolicion 179 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/55973c57-44ac-3c11-b4e9-573a16f1b01e> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/55973c57-44ac-3c11-b4e9-573a16f1b01e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2003> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 970 ;
 	iaest-measure:licencias-nueva-planta-total 649 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 28 ;
@@ -172,11 +172,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 33 ;
 	iaest-measure:licencias-demolicion 13 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/4066159f-868a-327b-92bf-bf1c5b770aef> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/4066159f-868a-327b-92bf-bf1c5b770aef> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2003> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 645 ;
 	iaest-measure:licencias-nueva-planta-total 459 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 17 ;
@@ -187,11 +187,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 5 ;
 	iaest-measure:licencias-demolicion 33 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/e3e963f0-c7b0-3e31-bf41-ae99f9c95a7b> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/e3e963f0-c7b0-3e31-bf41-ae99f9c95a7b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2003> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 2444 ;
 	iaest-measure:licencias-nueva-planta-total 1020 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 64 ;
@@ -202,11 +202,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 706 ;
 	iaest-measure:licencias-demolicion 198 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/f0b71712-2c9e-33f8-b8e0-4becd956b8c5> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/f0b71712-2c9e-33f8-b8e0-4becd956b8c5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2004> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 996 ;
 	iaest-measure:licencias-nueva-planta-total 647 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 44 ;
@@ -217,11 +217,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 42 ;
 	iaest-measure:licencias-demolicion 20 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/0aa65abd-d247-3517-af99-414e39d5e1aa> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/0aa65abd-d247-3517-af99-414e39d5e1aa> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2004> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 705 ;
 	iaest-measure:licencias-nueva-planta-total 440 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 17 ;
@@ -232,11 +232,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 16 ;
 	iaest-measure:licencias-demolicion 50 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/c6fb29e2-07bf-3c2f-b424-1bb1bce57b8d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/c6fb29e2-07bf-3c2f-b424-1bb1bce57b8d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2004> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 2748 ;
 	iaest-measure:licencias-nueva-planta-total 1117 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 93 ;
@@ -247,11 +247,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 774 ;
 	iaest-measure:licencias-demolicion 236 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/d8afee38-9977-3035-91be-48f172eba1d9> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/d8afee38-9977-3035-91be-48f172eba1d9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2005> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 1114 ;
 	iaest-measure:licencias-nueva-planta-total 683 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 51 ;
@@ -262,11 +262,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 54 ;
 	iaest-measure:licencias-demolicion 40 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/535fea46-4b1a-39fa-8feb-22617594d4ab> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/535fea46-4b1a-39fa-8feb-22617594d4ab> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2005> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 726 ;
 	iaest-measure:licencias-nueva-planta-total 491 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 24 ;
@@ -277,11 +277,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 11 ;
 	iaest-measure:licencias-demolicion 48 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/b8f7271d-ba1c-3ad0-8bb0-2842a64eaecd> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/b8f7271d-ba1c-3ad0-8bb0-2842a64eaecd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2005> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 2841 ;
 	iaest-measure:licencias-nueva-planta-total 1131 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 74 ;
@@ -292,11 +292,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 813 ;
 	iaest-measure:licencias-demolicion 278 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/9f5b6aab-8375-3950-9751-5fe45fa0cd2a> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/9f5b6aab-8375-3950-9751-5fe45fa0cd2a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 1117 ;
 	iaest-measure:licencias-nueva-planta-total 650 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 42 ;
@@ -307,11 +307,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 53 ;
 	iaest-measure:licencias-demolicion 45 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/d0db9a6a-0560-3bfc-81a5-7c4ad7018b28> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/d0db9a6a-0560-3bfc-81a5-7c4ad7018b28> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 651 ;
 	iaest-measure:licencias-nueva-planta-total 421 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 19 ;
@@ -322,11 +322,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 7 ;
 	iaest-measure:licencias-demolicion 41 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/c9ca0b7c-af75-3b74-9682-0d1975b458a5> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/c9ca0b7c-af75-3b74-9682-0d1975b458a5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 3155 ;
 	iaest-measure:licencias-nueva-planta-total 1370 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 112 ;
@@ -337,11 +337,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 767 ;
 	iaest-measure:licencias-demolicion 371 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/9a2d7579-c807-3b09-b196-e1101d6c0fd5> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/9a2d7579-c807-3b09-b196-e1101d6c0fd5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2007> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 1079 ;
 	iaest-measure:licencias-nueva-planta-total 607 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 42 ;
@@ -352,11 +352,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 56 ;
 	iaest-measure:licencias-demolicion 63 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/61e845d0-209b-354f-a047-04dc69333084> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/61e845d0-209b-354f-a047-04dc69333084> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2007> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 716 ;
 	iaest-measure:licencias-nueva-planta-total 459 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 13 ;
@@ -367,11 +367,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 13 ;
 	iaest-measure:licencias-demolicion 44 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/9c5458e1-03ef-3d78-aac4-9a1aeef5b8ec> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/9c5458e1-03ef-3d78-aac4-9a1aeef5b8ec> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2007> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 3019 ;
 	iaest-measure:licencias-nueva-planta-total 1173 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 86 ;
@@ -382,11 +382,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 929 ;
 	iaest-measure:licencias-demolicion 280 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/8be667ec-7725-3a2e-a75f-ca9dbd49dd73> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/8be667ec-7725-3a2e-a75f-ca9dbd49dd73> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2008> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 806 ;
 	iaest-measure:licencias-nueva-planta-total 408 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 20 ;
@@ -397,11 +397,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 39 ;
 	iaest-measure:licencias-demolicion 29 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/08831ce2-daa8-3b3a-8e15-260f2729cc71> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/08831ce2-daa8-3b3a-8e15-260f2729cc71> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2008> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 641 ;
 	iaest-measure:licencias-nueva-planta-total 384 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 24 ;
@@ -412,11 +412,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 15 ;
 	iaest-measure:licencias-demolicion 49 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/5949ef80-81fe-3127-bc20-7fdd6d719aae> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/5949ef80-81fe-3127-bc20-7fdd6d719aae> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2008> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 2908 ;
 	iaest-measure:licencias-nueva-planta-total 889 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 57 ;
@@ -427,11 +427,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 970 ;
 	iaest-measure:licencias-demolicion 132 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/2a857708-3425-3240-a812-34f37298f12d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/2a857708-3425-3240-a812-34f37298f12d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 619 ;
 	iaest-measure:licencias-nueva-planta-total 279 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 23 ;
@@ -442,11 +442,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 31 ;
 	iaest-measure:licencias-demolicion 14 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/f155500e-da24-31b7-80bf-b8cb4a138a1f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/f155500e-da24-31b7-80bf-b8cb4a138a1f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 592 ;
 	iaest-measure:licencias-nueva-planta-total 316 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 21 ;
@@ -457,11 +457,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 16 ;
 	iaest-measure:licencias-demolicion 30 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/b1eff365-6850-32fa-9f8d-bd1ce0921f8f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/b1eff365-6850-32fa-9f8d-bd1ce0921f8f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 2091 ;
 	iaest-measure:licencias-nueva-planta-total 515 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 34 ;
@@ -472,11 +472,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 709 ;
 	iaest-measure:licencias-demolicion 75 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/39939375-b94e-360a-8c98-4dee91eb32e8> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/39939375-b94e-360a-8c98-4dee91eb32e8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 605 ;
 	iaest-measure:licencias-nueva-planta-total 244 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 13 ;
@@ -487,11 +487,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 27 ;
 	iaest-measure:licencias-demolicion 25 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/e04c2a38-f420-30f8-bc58-e864373bb85b> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/e04c2a38-f420-30f8-bc58-e864373bb85b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 494 ;
 	iaest-measure:licencias-nueva-planta-total 224 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 15 ;
@@ -502,11 +502,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 12 ;
 	iaest-measure:licencias-demolicion 40 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/ccd879b4-dab1-3daf-9f01-8c8e6c69ce96> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/ccd879b4-dab1-3daf-9f01-8c8e6c69ce96> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 2114 ;
 	iaest-measure:licencias-nueva-planta-total 458 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 26 ;
@@ -517,11 +517,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 763 ;
 	iaest-measure:licencias-demolicion 78 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/2366f216-0fb5-3b85-88fc-56627d3f7d7c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/2366f216-0fb5-3b85-88fc-56627d3f7d7c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 591 ;
 	iaest-measure:licencias-nueva-planta-total 235 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 22 ;
@@ -532,11 +532,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 31 ;
 	iaest-measure:licencias-demolicion 35 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/fcc62321-e20a-3280-982f-1a4abb0904ca> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/fcc62321-e20a-3280-982f-1a4abb0904ca> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 449 ;
 	iaest-measure:licencias-nueva-planta-total 205 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 19 ;
@@ -547,11 +547,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 5 ;
 	iaest-measure:licencias-demolicion 22 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/3baf7b75-01e4-35ee-84ed-027fd09506f5> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/3baf7b75-01e4-35ee-84ed-027fd09506f5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 2188 ;
 	iaest-measure:licencias-nueva-planta-total 362 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 25 ;
@@ -562,11 +562,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 764 ;
 	iaest-measure:licencias-demolicion 69 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/84926052-768f-3223-8e85-b3367ff87d79> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/84926052-768f-3223-8e85-b3367ff87d79> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 502 ;
 	iaest-measure:licencias-nueva-planta-total 201 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 5 ;
@@ -577,11 +577,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 18 ;
 	iaest-measure:licencias-demolicion 33 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/977039b6-09ef-356e-8248-ef39cd9ea0f7> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/977039b6-09ef-356e-8248-ef39cd9ea0f7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 362 ;
 	iaest-measure:licencias-nueva-planta-total 167 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 10 ;
@@ -592,11 +592,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 9 ;
 	iaest-measure:licencias-demolicion 33 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/b5480df4-8319-348b-a710-e2f9d9eefb4f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/b5480df4-8319-348b-a710-e2f9d9eefb4f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 2022 ;
 	iaest-measure:licencias-nueva-planta-total 291 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 22 ;
@@ -607,11 +607,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 855 ;
 	iaest-measure:licencias-demolicion 95 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/2ae257f5-7b8d-30c8-b399-8833523a9946> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/2ae257f5-7b8d-30c8-b399-8833523a9946> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 433 ;
 	iaest-measure:licencias-nueva-planta-total 216 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 11 ;
@@ -622,11 +622,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 11 ;
 	iaest-measure:licencias-demolicion 10 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/3d0d3bb2-d316-37c9-9dd8-e04c6fdbbf5d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/3d0d3bb2-d316-37c9-9dd8-e04c6fdbbf5d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 301 ;
 	iaest-measure:licencias-nueva-planta-total 134 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 8 ;
@@ -637,11 +637,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 10 ;
 	iaest-measure:licencias-demolicion 30 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/bf2acdf5-36cb-30a2-8030-cf133a13f653> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/bf2acdf5-36cb-30a2-8030-cf133a13f653> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 1840 ;
 	iaest-measure:licencias-nueva-planta-total 229 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 25 ;
@@ -652,11 +652,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 828 ;
 	iaest-measure:licencias-demolicion 79 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/2bb4d0b3-557f-3187-bc01-3d9fd3a1c746> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/2bb4d0b3-557f-3187-bc01-3d9fd3a1c746> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2014> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 435 ;
 	iaest-measure:licencias-nueva-planta-total 211 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 9 ;
@@ -667,11 +667,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 7 ;
 	iaest-measure:licencias-demolicion 24 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/d7725590-d577-3d30-8f9c-7e3aaec35b78> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/d7725590-d577-3d30-8f9c-7e3aaec35b78> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2014> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 311 ;
 	iaest-measure:licencias-nueva-planta-total 138 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 12 ;
@@ -682,11 +682,11 @@
 	iaest-measure:licencias-rehabilitacion-locales 7 ;
 	iaest-measure:licencias-demolicion 28 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010026TP/cb890aa6-bd68-35f6-b4aa-03a2a158d263> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010026TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026TP/cb890aa6-bd68-35f6-b4aa-03a2a158d263> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010026TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2014> ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:estado-de-la-informacion estimacion ;
 	iaest-measure:licencias-total 1928 ;
 	iaest-measure:licencias-nueva-planta-total 262 ;
 	iaest-measure:licencias-nueva-planta-con-demolicion 18 ;

@@ -1,0 +1,360 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/03-030046A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>;
+	rdfs:label "Cubo de datos para 03-030046A"@es ;
+	rdfs:comment "Cubo de datos para 03-030046A"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/af767010-70f7-3bb2-8f5a-6ac4ca46490e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/empresario-o-profesional-que-emplea-personal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-25-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 455 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/5c8f0447-2af9-3935-800e-1278046ca598> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/empresario-o-profesional-que-emplea-personal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/26-a-45-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 5217 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/f2ae1f88-dbc0-3175-8152-64c1843dfcdf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/empresario-o-profesional-que-emplea-personal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/46-a-64-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 3027 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/a79e1a7d-516c-341a-ba45-228551938118> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/empresario-o-profesional-que-emplea-personal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/65-anos-y-mas> ;
+	iaest-measure:personas-residentes-viviendas-familiares 274 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/5fad38f2-81aa-39d6-b9c6-0a070fa1fcb3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/empresario-o-profesional-que-emplea-personal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-25-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 1022 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/7291a52c-f44c-36aa-83c3-bd9c429fe174> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/empresario-o-profesional-que-emplea-personal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/26-a-45-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 14165 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/bc42b3e1-0746-3998-98a6-637dec4dc8af> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/empresario-o-profesional-que-emplea-personal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/46-a-64-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 11004 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/fd01cc6f-7e61-3a3e-8a8d-f8646343ec62> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/empresario-o-profesional-que-emplea-personal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/65-anos-y-mas> ;
+	iaest-measure:personas-residentes-viviendas-familiares 473 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/553ea5ad-3add-33e7-a908-a7bf1fdcb92d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/empresario-o-profesional-que-no-emplea-personal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-25-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 1256 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/3b3f97a3-8454-38b5-a1a5-4c3dea203e87> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/empresario-o-profesional-que-no-emplea-personal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/26-a-45-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 9170 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/d3b2ea25-ac57-3be1-8cfb-2ca7df7780b9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/empresario-o-profesional-que-no-emplea-personal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/46-a-64-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 6862 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/c2968c7d-6b6f-3626-9061-64fc534879fa> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/empresario-o-profesional-que-no-emplea-personal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/65-anos-y-mas> ;
+	iaest-measure:personas-residentes-viviendas-familiares 488 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/c1258f8e-b79e-3086-8b54-2cbfa813b6a6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/empresario-o-profesional-que-no-emplea-personal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-25-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 3378 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/afd2a009-7e19-3315-ba0a-8530c8deed3e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/empresario-o-profesional-que-no-emplea-personal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/26-a-45-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 23292 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/20250bbd-e140-3a0b-9acb-5baf33d8a394> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/empresario-o-profesional-que-no-emplea-personal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/46-a-64-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 20626 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/4dc6b08b-01aa-3619-86bd-808bc12337e2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/empresario-o-profesional-que-no-emplea-personal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/65-anos-y-mas> ;
+	iaest-measure:personas-residentes-viviendas-familiares 742 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/feab4b26-1d87-38f7-9597-f799b5efb26c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/trabajador-por-cuenta-ajena-con-caracter-fijo-o-indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-25-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 11026 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/f7e0d71a-ba53-380d-8ea4-98eaec5d4cf3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/trabajador-por-cuenta-ajena-con-caracter-fijo-o-indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/26-a-45-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 66731 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/3e2cb927-6b26-34e8-b8f5-94c1db11e342> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/trabajador-por-cuenta-ajena-con-caracter-fijo-o-indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/46-a-64-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 27379 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/81628f79-58c2-3c49-9f52-30099b8a747b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/trabajador-por-cuenta-ajena-con-caracter-fijo-o-indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/65-anos-y-mas> ;
+	iaest-measure:personas-residentes-viviendas-familiares 1086 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/8866ae6f-48bc-372a-855a-5dfc41a85ede> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/trabajador-por-cuenta-ajena-con-caracter-fijo-o-indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-25-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 16305 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/63ebb6b4-64bb-33ec-9ece-cdf53b35c385> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/trabajador-por-cuenta-ajena-con-caracter-fijo-o-indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/26-a-45-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 102929 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/89bb5155-3781-388e-a299-41c47177b8dd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/trabajador-por-cuenta-ajena-con-caracter-fijo-o-indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/46-a-64-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 59519 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/87205ac5-cd50-3d93-be7d-eb0d32333a4c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/trabajador-por-cuenta-ajena-con-caracter-fijo-o-indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/65-anos-y-mas> ;
+	iaest-measure:personas-residentes-viviendas-familiares 1259 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/ee1cc03d-6ae4-370f-a790-39a0fb020394> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/trabajador-por-cuenta-ajena-con-caracter-eventual-temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-25-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 14651 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/c3f3b209-faa6-3677-bdbe-9d40f3e493a1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/trabajador-por-cuenta-ajena-con-caracter-eventual-temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/26-a-45-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 29829 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/2a251e81-de41-3d89-93ee-c7b1aec63d24> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/trabajador-por-cuenta-ajena-con-caracter-eventual-temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/46-a-64-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 5810 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/99469a5f-358a-31aa-b81d-fbd4da96b2a9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/trabajador-por-cuenta-ajena-con-caracter-eventual-temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/65-anos-y-mas> ;
+	iaest-measure:personas-residentes-viviendas-familiares 437 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/c11e2091-180b-3139-8313-1184118864c0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/trabajador-por-cuenta-ajena-con-caracter-eventual-temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-25-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 18041 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/b09c4b19-657b-382c-a3c0-8aea0dee56fa> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/trabajador-por-cuenta-ajena-con-caracter-eventual-temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/26-a-45-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 29445 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/3d743396-eedf-33cd-b694-4601745c4127> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/trabajador-por-cuenta-ajena-con-caracter-eventual-temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/46-a-64-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 6878 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/64d8e36d-5772-390b-b268-8d9c447761d5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/trabajador-por-cuenta-ajena-con-caracter-eventual-temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/65-anos-y-mas> ;
+	iaest-measure:personas-residentes-viviendas-familiares 317 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/2ad63587-a8b1-3430-a61d-1720b5a8d3b0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/otra-situacion-ayuda-familiar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-25-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 127 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/0243e2be-3796-3a73-b769-8ccbc957505e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/otra-situacion-ayuda-familiar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/26-a-45-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 296 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/2d79d33e-3bc6-3ebb-aa1d-c48e04dcbeed> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/otra-situacion-ayuda-familiar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/46-a-64-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 244 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/5199f7ce-3732-33a6-ac0b-acd1521dea18> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/otra-situacion-ayuda-familiar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/65-anos-y-mas> ;
+	iaest-measure:personas-residentes-viviendas-familiares 11 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/8b9a0953-3a68-35b9-8ff1-d55955d905dc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/otra-situacion-ayuda-familiar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-25-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 225 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/73b48a4e-1ad7-309a-af5d-3fa650dd2909> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/otra-situacion-ayuda-familiar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/26-a-45-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 152 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/39b745cb-fed1-3ebd-ad3d-27a7e6f68edf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/otra-situacion-ayuda-familiar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/46-a-64-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 54 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/6edcd33c-9f8f-347b-a6e4-6e243727aacf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/otra-situacion-ayuda-familiar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/65-anos-y-mas> ;
+	iaest-measure:personas-residentes-viviendas-familiares 6 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/e4749c25-fe67-36d6-91e6-af86b2f34fe7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/otra-situacion-miembro-de-cooperativas> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-25-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 127 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/c0f5ded8-2ac9-3c67-b87e-7adf790eeb87> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/otra-situacion-miembro-de-cooperativas> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/26-a-45-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 434 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/a29d93c6-5e93-366b-934f-d1e72931a8db> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/otra-situacion-miembro-de-cooperativas> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/46-a-64-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 160 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/8db3770b-2d7b-3cfb-9e18-a0433d7cdaa2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/otra-situacion-miembro-de-cooperativas> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/65-anos-y-mas> ;
+	iaest-measure:personas-residentes-viviendas-familiares 4 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/e41f3e54-4e9e-37bc-83e6-e977124cc860> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/otra-situacion-miembro-de-cooperativas> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-25-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 88 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/4356c468-ea76-3919-a784-9859cd988b18> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/otra-situacion-miembro-de-cooperativas> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/26-a-45-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 417 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/bc1f7820-eb40-3832-a6d7-586e7862b0ea> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/otra-situacion-miembro-de-cooperativas> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/46-a-64-anos> ;
+	iaest-measure:personas-residentes-viviendas-familiares 324 .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030046A/6ae76540-2efb-3d82-8d77-09b052dcf3c2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-030046>; 
+	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	iaest-dimension:situacion-profesional <http://opendata.aragon.es/kos/iaest/situacion-profesional/otra-situacion-miembro-de-cooperativas> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/65-anos-y-mas> ;
+	iaest-measure:personas-residentes-viviendas-familiares 7 .

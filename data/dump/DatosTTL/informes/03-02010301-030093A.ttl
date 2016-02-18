@@ -12,39 +12,39 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030093A> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/03-02010301-030093>;
+<http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030093A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030093>;
 	rdfs:label "Cubo de datos para 03-02010301-030093A"@es ;
 	rdfs:comment "Cubo de datos para 03-02010301-030093A"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030093A/b23f0e26-8c2d-3332-9e15-a2b09efc6f38> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030093A>; 
-	iaest-dimension:tipo-de-vivienda <http://opendata.aragon.es/kos/iaest/tipo-de-vivienda/vivienda-principal> ;
-	iaest-dimension:tipo-de-vivienda-principal <http://opendata.aragon.es/kos/iaest/tipo-de-vivienda-principal/vivienda-principal-convencional> ;
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030093A/b23f0e26-8c2d-3332-9e15-a2b09efc6f38> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030093A>; 
+	iaest-measure:tipo-de-vivienda vivienda-principal ;
+	iaest-measure:tipo-de-vivienda-principal vivienda-principal-convencional ;
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:n-viviendas 5386780420538 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030093A/e1f752bb-9a04-3b88-b22e-23eb15c7347a> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030093A>; 
-	iaest-dimension:tipo-de-vivienda <http://opendata.aragon.es/kos/iaest/tipo-de-vivienda/vivienda-principal> ;
-	iaest-dimension:tipo-de-vivienda-principal <http://opendata.aragon.es/kos/iaest/tipo-de-vivienda-principal/alojamiento> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030093A/e1f752bb-9a04-3b88-b22e-23eb15c7347a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030093A>; 
+	iaest-measure:tipo-de-vivienda vivienda-principal ;
+	iaest-measure:tipo-de-vivienda-principal alojamiento ;
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:n-viviendas 1924167043322 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030093A/4761e20a-f133-38f6-a686-b619f9447a7b> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030093A>; 
-	iaest-dimension:tipo-de-vivienda <http://opendata.aragon.es/kos/iaest/tipo-de-vivienda/vivienda-no-principal-secundaria> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030093A/4761e20a-f133-38f6-a686-b619f9447a7b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030093A>; 
+	iaest-measure:tipo-de-vivienda vivienda-no-principal-secundaria ;
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:n-viviendas 139109336600458 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030093A/b8770ec7-b874-3b90-9cbb-d048a14cd5ca> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030093A>; 
-	iaest-dimension:tipo-de-vivienda <http://opendata.aragon.es/kos/iaest/tipo-de-vivienda/vivienda-no-principal-vacia> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030093A/b8770ec7-b874-3b90-9cbb-d048a14cd5ca> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030093A>; 
+	iaest-measure:tipo-de-vivienda vivienda-no-principal-vacia ;
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:n-viviendas 100336663399612 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

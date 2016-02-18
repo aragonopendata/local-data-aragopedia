@@ -12,37 +12,37 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010086A> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-080101-010086>;
+<http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010086A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010086>;
 	rdfs:label "Cubo de datos para 01-080101-010086A"@es ;
 	rdfs:comment "Cubo de datos para 01-080101-010086A"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010086A/af5b54e2-cc04-3af0-b3d3-48091af95269> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010086A>; 
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086A/af5b54e2-cc04-3af0-b3d3-48091af95269> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010086A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:explotaciones 3355 ;
-	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	iaest-measure:formacion-jefe-explotacion estudios-profesionales-agrarios ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010086A/3bbb656b-8e83-3c68-95e1-0758757f3004> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010086A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086A/3bbb656b-8e83-3c68-95e1-0758757f3004> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010086A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:explotaciones 1023 ;
-	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	iaest-measure:formacion-jefe-explotacion estudios-universitarios-agrarios ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010086A/623d074b-fba4-3e21-8aaf-654e73b8995e> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010086A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086A/623d074b-fba4-3e21-8aaf-654e73b8995e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010086A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:explotaciones 41914 ;
-	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	iaest-measure:formacion-jefe-explotacion experiencia-agraria-exclusivamente ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010086A/2cd5fea7-605b-3d45-b663-acaeea6cf2ad> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010086A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086A/2cd5fea7-605b-3d45-b663-acaeea6cf2ad> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010086A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:explotaciones 6482 ;
-	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	iaest-measure:formacion-jefe-explotacion otra-formacion-agraria-o-cursos-agrarios ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

@@ -12,20 +12,20 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-010069>;
+<http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010069>;
 	rdfs:label "Cubo de datos para 01-010069TM"@es ;
 	rdfs:comment "Cubo de datos para 01-010069TM"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/e966bf3a-8588-3be6-875c-1d96bf261094> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/e966bf3a-8588-3be6-875c-1d96bf261094> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	iaest-measure:municipio-nombre barbastro ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Barbastro> ;
 	iaest-measure:numero-de-empresas 267 ;
 	iaest-measure:a-activo-no-corriente 70649063670412 ;
 	iaest-measure:i-inmovilizado-intangible 475243445692884 ;
@@ -82,10 +82,10 @@
 	iaest-measure:rentabilidad-economica 212015871343797 ;
 	iaest-measure:rentabilidad-financiera 0217376764096047 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/6107b677-30f8-30d9-8d51-365ba2469553> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/6107b677-30f8-30d9-8d51-365ba2469553> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	iaest-measure:municipio-nombre fraga ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Fraga> ;
 	iaest-measure:numero-de-empresas 310 ;
 	iaest-measure:a-activo-no-corriente 727116129032258 ;
 	iaest-measure:i-inmovilizado-intangible 21141935483871 ;
@@ -142,10 +142,10 @@
 	iaest-measure:rentabilidad-economica 442019134528583 ;
 	iaest-measure:rentabilidad-financiera 387750398122538 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/bf201b6f-5574-3cd4-b041-b381188ed640> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/bf201b6f-5574-3cd4-b041-b381188ed640> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	iaest-measure:municipio-nombre huesca ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Huesca> ;
 	iaest-measure:numero-de-empresas 921 ;
 	iaest-measure:a-activo-no-corriente 565642779587405 ;
 	iaest-measure:i-inmovilizado-intangible 834419109663409 ;
@@ -202,10 +202,10 @@
 	iaest-measure:rentabilidad-economica 147326044644486 ;
 	iaest-measure:rentabilidad-financiera -0615140912552301 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/fdadc535-42f0-3489-bc6d-3d1eb2bbc3eb> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/fdadc535-42f0-3489-bc6d-3d1eb2bbc3eb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	iaest-measure:municipio-nombre jaca ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Jaca> ;
 	iaest-measure:numero-de-empresas 178 ;
 	iaest-measure:a-activo-no-corriente 231393258426966 ;
 	iaest-measure:i-inmovilizado-intangible 205056179775281 ;
@@ -262,10 +262,10 @@
 	iaest-measure:rentabilidad-economica 203144358525227 ;
 	iaest-measure:rentabilidad-financiera 10361919944205 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/4d154e44-ff41-34b0-b674-68399db715ba> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/4d154e44-ff41-34b0-b674-68399db715ba> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	iaest-measure:municipio-nombre monzon ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Monzón> ;
 	iaest-measure:numero-de-empresas 288 ;
 	iaest-measure:a-activo-no-corriente 6498125 ;
 	iaest-measure:i-inmovilizado-intangible 145 ;
@@ -322,10 +322,10 @@
 	iaest-measure:rentabilidad-economica 464165065568303 ;
 	iaest-measure:rentabilidad-financiera 595714668865291 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/8a987321-92e9-3c24-88ea-9de57ef68601> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/8a987321-92e9-3c24-88ea-9de57ef68601> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	iaest-measure:municipio-nombre alcaniz ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Alcañiz> ;
 	iaest-measure:numero-de-empresas 324 ;
 	iaest-measure:a-activo-no-corriente 60775 ;
 	iaest-measure:i-inmovilizado-intangible 605246913580247 ;
@@ -382,10 +382,10 @@
 	iaest-measure:rentabilidad-economica -0326791536150355 ;
 	iaest-measure:rentabilidad-financiera -228732394366197 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/98e759d7-b16c-3aff-81d0-0907b6941b45> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/98e759d7-b16c-3aff-81d0-0907b6941b45> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	iaest-measure:municipio-nombre teruel ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Teruel> ;
 	iaest-measure:numero-de-empresas 617 ;
 	iaest-measure:a-activo-no-corriente 837100486223663 ;
 	iaest-measure:i-inmovilizado-intangible 560291734197731 ;
@@ -442,10 +442,10 @@
 	iaest-measure:rentabilidad-economica 255046456549463 ;
 	iaest-measure:rentabilidad-financiera 3925696026663 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/0fa70eb1-6685-31b5-8aa4-41d0ce13d2b1> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/0fa70eb1-6685-31b5-8aa4-41d0ce13d2b1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	iaest-measure:municipio-nombre calatayud ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Calatayud> ;
 	iaest-measure:numero-de-empresas 299 ;
 	iaest-measure:a-activo-no-corriente 375739130434783 ;
 	iaest-measure:i-inmovilizado-intangible 796321070234114 ;
@@ -502,10 +502,10 @@
 	iaest-measure:rentabilidad-economica 263016425359418 ;
 	iaest-measure:rentabilidad-financiera 205953925334283 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/0177eb9a-7abf-36fc-8ae6-222860788130> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/0177eb9a-7abf-36fc-8ae6-222860788130> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	iaest-measure:municipio-nombre cuarte-de-huerva ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Cuarte_de_Huerva> ;
 	iaest-measure:numero-de-empresas 511 ;
 	iaest-measure:a-activo-no-corriente 347039138943249 ;
 	iaest-measure:i-inmovilizado-intangible 878277886497065 ;
@@ -562,10 +562,10 @@
 	iaest-measure:rentabilidad-economica 0986708097356797 ;
 	iaest-measure:rentabilidad-financiera -0734939872849734 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/7caf9ae6-b598-378e-87c2-59cb3728caba> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/7caf9ae6-b598-378e-87c2-59cb3728caba> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	iaest-measure:municipio-nombre ejea-de-los-caballeros ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Ejea_de_los_Caballeros> ;
 	iaest-measure:numero-de-empresas 286 ;
 	iaest-measure:a-activo-no-corriente 929174825174825 ;
 	iaest-measure:i-inmovilizado-intangible 382797202797203 ;
@@ -622,10 +622,10 @@
 	iaest-measure:rentabilidad-economica 276235272921479 ;
 	iaest-measure:rentabilidad-financiera 218062371378819 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/1e3b3006-68f2-374c-a1cf-f48312789cd5> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/1e3b3006-68f2-374c-a1cf-f48312789cd5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	iaest-measure:municipio-nombre tarazona ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Tarazona> ;
 	iaest-measure:numero-de-empresas 156 ;
 	iaest-measure:a-activo-no-corriente 492160256410256 ;
 	iaest-measure:i-inmovilizado-intangible 342948717948718 ;
@@ -682,10 +682,10 @@
 	iaest-measure:rentabilidad-economica -397638768698232 ;
 	iaest-measure:rentabilidad-financiera -197059350905505 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/0f1cda9d-5dd4-3138-a8a9-a5882bfcd701> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/0f1cda9d-5dd4-3138-a8a9-a5882bfcd701> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	iaest-measure:municipio-nombre utebo ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Utebo> ;
 	iaest-measure:numero-de-empresas 216 ;
 	iaest-measure:a-activo-no-corriente 1032375 ;
 	iaest-measure:i-inmovilizado-intangible 872037037037037 ;
@@ -742,10 +742,10 @@
 	iaest-measure:rentabilidad-economica 0959372313859365 ;
 	iaest-measure:rentabilidad-financiera -250074060570152 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/38d14882-039f-3f8a-859e-5309bcc5d991> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/38d14882-039f-3f8a-859e-5309bcc5d991> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	iaest-measure:municipio-nombre zaragoza ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Zaragoza> ;
 	iaest-measure:numero-de-empresas 9028 ;
 	iaest-measure:a-activo-no-corriente 159440584847142 ;
 	iaest-measure:i-inmovilizado-intangible 598083739477182 ;
@@ -802,10 +802,10 @@
 	iaest-measure:rentabilidad-economica 182592877034753 ;
 	iaest-measure:rentabilidad-financiera 175862368693102 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/bbb0f053-2582-30b5-802f-023b70b267b3> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/bbb0f053-2582-30b5-802f-023b70b267b3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	iaest-measure:municipio-nombre barbastro ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Barbastro> ;
 	iaest-measure:numero-de-empresas 199 ;
 	iaest-measure:a-activo-no-corriente 779924623115578 ;
 	iaest-measure:i-inmovilizado-intangible 668492462311558 ;
@@ -862,10 +862,10 @@
 	iaest-measure:rentabilidad-economica 217127671623402 ;
 	iaest-measure:rentabilidad-financiera 168349608237819 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/42638351-aab1-322d-8114-dd3b63d2fe17> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/42638351-aab1-322d-8114-dd3b63d2fe17> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	iaest-measure:municipio-nombre fraga ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Fraga> ;
 	iaest-measure:numero-de-empresas 259 ;
 	iaest-measure:a-activo-no-corriente 444853281853282 ;
 	iaest-measure:i-inmovilizado-intangible 315444015444015 ;
@@ -922,10 +922,10 @@
 	iaest-measure:rentabilidad-economica 323700654906267 ;
 	iaest-measure:rentabilidad-financiera 283551811656827 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/6d0ca743-c0cc-3249-913c-1ba64bfdcab6> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/6d0ca743-c0cc-3249-913c-1ba64bfdcab6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	iaest-measure:municipio-nombre huesca ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Huesca> ;
 	iaest-measure:numero-de-empresas 774 ;
 	iaest-measure:a-activo-no-corriente 524727390180879 ;
 	iaest-measure:i-inmovilizado-intangible 916149870801034 ;
@@ -982,10 +982,10 @@
 	iaest-measure:rentabilidad-economica 138313858716082 ;
 	iaest-measure:rentabilidad-financiera 0586169359715808 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/2e44b21a-2399-3837-93ef-9b88c770163d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/2e44b21a-2399-3837-93ef-9b88c770163d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	iaest-measure:municipio-nombre jaca ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Jaca> ;
 	iaest-measure:numero-de-empresas 145 ;
 	iaest-measure:a-activo-no-corriente 216275862068966 ;
 	iaest-measure:i-inmovilizado-intangible 208275862068966 ;
@@ -1042,10 +1042,10 @@
 	iaest-measure:rentabilidad-economica 192240616028548 ;
 	iaest-measure:rentabilidad-financiera 100460803113999 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/b2e8eab7-5f44-3fe4-bd5d-7a350144b4e5> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/b2e8eab7-5f44-3fe4-bd5d-7a350144b4e5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	iaest-measure:municipio-nombre monzon ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Monzón> ;
 	iaest-measure:numero-de-empresas 237 ;
 	iaest-measure:a-activo-no-corriente 667383966244726 ;
 	iaest-measure:i-inmovilizado-intangible 137763713080169 ;
@@ -1102,10 +1102,10 @@
 	iaest-measure:rentabilidad-economica 29001965119838 ;
 	iaest-measure:rentabilidad-financiera 401255238131685 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/5fbc014b-6ef8-35e9-a489-bad874fb3fc2> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/5fbc014b-6ef8-35e9-a489-bad874fb3fc2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	iaest-measure:municipio-nombre alcaniz ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Alcañiz> ;
 	iaest-measure:numero-de-empresas 267 ;
 	iaest-measure:a-activo-no-corriente 654606741573034 ;
 	iaest-measure:i-inmovilizado-intangible 438202247191011 ;
@@ -1162,10 +1162,10 @@
 	iaest-measure:rentabilidad-economica -0199115577405051 ;
 	iaest-measure:rentabilidad-financiera -197438813482904 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/f739872c-23c8-35bc-a6e5-22cba6f7a11c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/f739872c-23c8-35bc-a6e5-22cba6f7a11c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	iaest-measure:municipio-nombre teruel ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Teruel> ;
 	iaest-measure:numero-de-empresas 567 ;
 	iaest-measure:a-activo-no-corriente 72942151675485 ;
 	iaest-measure:i-inmovilizado-intangible 673544973544974 ;
@@ -1222,10 +1222,10 @@
 	iaest-measure:rentabilidad-economica 267173390924465 ;
 	iaest-measure:rentabilidad-financiera 387705765629804 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/619c772c-29e7-3eb5-b572-dbf83dd5c449> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/619c772c-29e7-3eb5-b572-dbf83dd5c449> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	iaest-measure:municipio-nombre calatayud ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Calatayud> ;
 	iaest-measure:numero-de-empresas 268 ;
 	iaest-measure:a-activo-no-corriente 390100746268657 ;
 	iaest-measure:i-inmovilizado-intangible 493283582089552 ;
@@ -1282,10 +1282,10 @@
 	iaest-measure:rentabilidad-economica 130275936917346 ;
 	iaest-measure:rentabilidad-financiera 0419959531172451 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/c9dbf548-3e37-3466-b360-ad57afff5a60> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/c9dbf548-3e37-3466-b360-ad57afff5a60> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	iaest-measure:municipio-nombre cuarte-de-huerva ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Cuarte_de_Huerva> ;
 	iaest-measure:numero-de-empresas 425 ;
 	iaest-measure:a-activo-no-corriente 379065882352941 ;
 	iaest-measure:i-inmovilizado-intangible 897411764705882 ;
@@ -1342,10 +1342,10 @@
 	iaest-measure:rentabilidad-economica 122978164528069 ;
 	iaest-measure:rentabilidad-financiera 0371123089157904 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/5553d745-e943-3154-a372-cd6aec2c90fc> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/5553d745-e943-3154-a372-cd6aec2c90fc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	iaest-measure:municipio-nombre ejea-de-los-caballeros ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Ejea_de_los_Caballeros> ;
 	iaest-measure:numero-de-empresas 249 ;
 	iaest-measure:a-activo-no-corriente 836815261044177 ;
 	iaest-measure:i-inmovilizado-intangible 274056224899598 ;
@@ -1402,10 +1402,10 @@
 	iaest-measure:rentabilidad-economica 195637199882546 ;
 	iaest-measure:rentabilidad-financiera -0154892134011483 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/6566d18a-cdaa-33b5-be27-20576dbf73be> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/6566d18a-cdaa-33b5-be27-20576dbf73be> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	iaest-measure:municipio-nombre tarazona ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Tarazona> ;
 	iaest-measure:numero-de-empresas 140 ;
 	iaest-measure:a-activo-no-corriente 439714285714286 ;
 	iaest-measure:i-inmovilizado-intangible 504285714285714 ;
@@ -1462,10 +1462,10 @@
 	iaest-measure:rentabilidad-economica 22906381535968 ;
 	iaest-measure:rentabilidad-financiera 230461870585339 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/22196273-935a-30fa-8f3d-4c8b5a1ac3f4> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/22196273-935a-30fa-8f3d-4c8b5a1ac3f4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	iaest-measure:municipio-nombre utebo ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Utebo> ;
 	iaest-measure:numero-de-empresas 182 ;
 	iaest-measure:a-activo-no-corriente 981725274725275 ;
 	iaest-measure:i-inmovilizado-intangible 619505494505495 ;
@@ -1522,10 +1522,10 @@
 	iaest-measure:rentabilidad-economica 0399625764822445 ;
 	iaest-measure:rentabilidad-financiera -108128022643142 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/0956cd73-3975-36c2-bd31-df14fcee89ac> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/0956cd73-3975-36c2-bd31-df14fcee89ac> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	iaest-measure:municipio-nombre zaragoza ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Zaragoza> ;
 	iaest-measure:numero-de-empresas 7749 ;
 	iaest-measure:a-activo-no-corriente 159687495160666 ;
 	iaest-measure:i-inmovilizado-intangible 499057942960382 ;
@@ -1582,10 +1582,10 @@
 	iaest-measure:rentabilidad-economica 164497144919033 ;
 	iaest-measure:rentabilidad-financiera 639618760772649 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/15427159-1288-3c0e-a617-1b4ba547bcae> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/15427159-1288-3c0e-a617-1b4ba547bcae> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	iaest-measure:municipio-nombre barbastro ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Barbastro> ;
 	iaest-measure:numero-de-empresas 309 ;
 	iaest-measure:a-activo-no-corriente 612509097087379 ;
 	iaest-measure:i-inmovilizado-intangible 439083300970874 ;
@@ -1641,10 +1641,10 @@
 	iaest-measure:rentabilidad-economica 333858670095341 ;
 	iaest-measure:rentabilidad-financiera 366966647214648 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/3668f718-36dd-3c11-8660-4e2779d1b801> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/3668f718-36dd-3c11-8660-4e2779d1b801> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	iaest-measure:municipio-nombre fraga ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Fraga> ;
 	iaest-measure:numero-de-empresas 353 ;
 	iaest-measure:a-activo-no-corriente 809400269121813 ;
 	iaest-measure:i-inmovilizado-intangible 827989801699717 ;
@@ -1700,10 +1700,10 @@
 	iaest-measure:rentabilidad-economica 324440344549192 ;
 	iaest-measure:rentabilidad-financiera 491410330476609 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/78d24dbc-885a-3eac-8d71-31b9aff6d20a> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/78d24dbc-885a-3eac-8d71-31b9aff6d20a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	iaest-measure:municipio-nombre huesca ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Huesca> ;
 	iaest-measure:numero-de-empresas 978 ;
 	iaest-measure:a-activo-no-corriente 486622299591002 ;
 	iaest-measure:i-inmovilizado-intangible 837563496932515 ;
@@ -1759,10 +1759,10 @@
 	iaest-measure:rentabilidad-economica 142120642202277 ;
 	iaest-measure:rentabilidad-financiera -0185531301459038 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/27fd22d9-a4e0-30b0-aa65-52f699d9a046> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/27fd22d9-a4e0-30b0-aa65-52f699d9a046> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	iaest-measure:municipio-nombre jaca ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Jaca> ;
 	iaest-measure:numero-de-empresas 192 ;
 	iaest-measure:a-activo-no-corriente 257552411458333 ;
 	iaest-measure:i-inmovilizado-intangible 412260729166667 ;
@@ -1818,10 +1818,10 @@
 	iaest-measure:rentabilidad-economica -18121799856818 ;
 	iaest-measure:rentabilidad-financiera -581243915840376 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/8b40d980-d8f1-3327-9caf-25dbc8109af8> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/8b40d980-d8f1-3327-9caf-25dbc8109af8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	iaest-measure:municipio-nombre monzon ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Monzón> ;
 	iaest-measure:numero-de-empresas 308 ;
 	iaest-measure:a-activo-no-corriente 687443295454545 ;
 	iaest-measure:i-inmovilizado-intangible 575963311688312 ;
@@ -1877,10 +1877,10 @@
 	iaest-measure:rentabilidad-economica 156416011252021 ;
 	iaest-measure:rentabilidad-financiera 707188387056501 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/535c1d29-6a31-399d-a5a7-82b33cedc1d2> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/535c1d29-6a31-399d-a5a7-82b33cedc1d2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	iaest-measure:municipio-nombre alcaniz ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Alcañiz> ;
 	iaest-measure:numero-de-empresas 386 ;
 	iaest-measure:a-activo-no-corriente 49780281865285 ;
 	iaest-measure:i-inmovilizado-intangible 686680569948187 ;
@@ -1936,10 +1936,10 @@
 	iaest-measure:rentabilidad-economica -0897106644586593 ;
 	iaest-measure:rentabilidad-financiera -427822835505555 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/04b2a4b9-3ce2-39ab-955c-bb1fa7f6d177> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/04b2a4b9-3ce2-39ab-955c-bb1fa7f6d177> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	iaest-measure:municipio-nombre teruel ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Teruel> ;
 	iaest-measure:numero-de-empresas 729 ;
 	iaest-measure:a-activo-no-corriente 751502150891632 ;
 	iaest-measure:i-inmovilizado-intangible 781294375857339 ;
@@ -1995,10 +1995,10 @@
 	iaest-measure:rentabilidad-economica 149677714493787 ;
 	iaest-measure:rentabilidad-financiera 120925040022688 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/5fc68034-100e-3c4a-a00e-40cd3a145f0d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/5fc68034-100e-3c4a-a00e-40cd3a145f0d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	iaest-measure:municipio-nombre calatayud ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Calatayud> ;
 	iaest-measure:numero-de-empresas 332 ;
 	iaest-measure:a-activo-no-corriente 38110161746988 ;
 	iaest-measure:i-inmovilizado-intangible 406651204819277 ;
@@ -2054,10 +2054,10 @@
 	iaest-measure:rentabilidad-economica 03075293603719 ;
 	iaest-measure:rentabilidad-financiera -220109090048708 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/61daddda-11ad-310c-8826-b8b1acf7232f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/61daddda-11ad-310c-8826-b8b1acf7232f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	iaest-measure:municipio-nombre cuarte-de-huerva ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Cuarte_de_Huerva> ;
 	iaest-measure:numero-de-empresas 481 ;
 	iaest-measure:a-activo-no-corriente 400004652806653 ;
 	iaest-measure:i-inmovilizado-intangible 378044095634096 ;
@@ -2113,10 +2113,10 @@
 	iaest-measure:rentabilidad-economica 122634868517454 ;
 	iaest-measure:rentabilidad-financiera 0080488261679651 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/07b1e98b-8ecd-3abe-a0ea-99cbb6133e41> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/07b1e98b-8ecd-3abe-a0ea-99cbb6133e41> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	iaest-measure:municipio-nombre ejea-de-los-caballeros ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Ejea_de_los_Caballeros> ;
 	iaest-measure:numero-de-empresas 365 ;
 	iaest-measure:a-activo-no-corriente 813240857534247 ;
 	iaest-measure:i-inmovilizado-intangible 291385205479452 ;
@@ -2172,10 +2172,10 @@
 	iaest-measure:rentabilidad-economica 179844364402806 ;
 	iaest-measure:rentabilidad-financiera 0613223882548876 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/87cdd35f-7cb2-3c4f-b002-63e0978c40f4> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/87cdd35f-7cb2-3c4f-b002-63e0978c40f4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	iaest-measure:municipio-nombre tarazona ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Tarazona> ;
 	iaest-measure:numero-de-empresas 167 ;
 	iaest-measure:a-activo-no-corriente 543655317365269 ;
 	iaest-measure:i-inmovilizado-intangible 387639520958084 ;
@@ -2231,10 +2231,10 @@
 	iaest-measure:rentabilidad-economica -0250359704962809 ;
 	iaest-measure:rentabilidad-financiera -230113875503201 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/771c9b7c-3cf6-3ded-a3a2-5bd80e8ae8c5> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/771c9b7c-3cf6-3ded-a3a2-5bd80e8ae8c5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	iaest-measure:municipio-nombre utebo ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Utebo> ;
 	iaest-measure:numero-de-empresas 235 ;
 	iaest-measure:a-activo-no-corriente 114366784680851 ;
 	iaest-measure:i-inmovilizado-intangible 719081787234043 ;
@@ -2290,10 +2290,10 @@
 	iaest-measure:rentabilidad-economica 0592633850610758 ;
 	iaest-measure:rentabilidad-financiera -0973916261099924 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/f82afdcd-f3c8-359e-a3a1-21dfcd331dc1> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/f82afdcd-f3c8-359e-a3a1-21dfcd331dc1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	iaest-measure:municipio-nombre zaragoza ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Zaragoza> ;
 	iaest-measure:numero-de-empresas 10170 ;
 	iaest-measure:a-activo-no-corriente 172002798220256 ;
 	iaest-measure:i-inmovilizado-intangible 814280743362832 ;
@@ -2349,10 +2349,10 @@
 	iaest-measure:rentabilidad-economica 0754557023406052 ;
 	iaest-measure:rentabilidad-financiera -18528671385055 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/ea377215-ce4c-313c-8e55-45ed0a313fc6> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/ea377215-ce4c-313c-8e55-45ed0a313fc6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	iaest-measure:municipio-nombre barbastro ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Barbastro> ;
 	iaest-measure:numero-de-empresas 305 ;
 	iaest-measure:a-activo-no-corriente 612297055737705 ;
 	iaest-measure:i-inmovilizado-intangible 436142393442623 ;
@@ -2408,10 +2408,10 @@
 	iaest-measure:rentabilidad-economica 0537728002489878 ;
 	iaest-measure:rentabilidad-financiera -181155217515822 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/566b69cd-e6b1-396e-8015-4e634af9aaad> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/566b69cd-e6b1-396e-8015-4e634af9aaad> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	iaest-measure:municipio-nombre fraga ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Fraga> ;
 	iaest-measure:numero-de-empresas 344 ;
 	iaest-measure:a-activo-no-corriente 86770785755814 ;
 	iaest-measure:i-inmovilizado-intangible 149017906976744 ;
@@ -2467,10 +2467,10 @@
 	iaest-measure:rentabilidad-economica 512625001632889 ;
 	iaest-measure:rentabilidad-financiera 893961066979235 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/9963cde3-ea2c-31db-931f-ab53927d637f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/9963cde3-ea2c-31db-931f-ab53927d637f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	iaest-measure:municipio-nombre huesca ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Huesca> ;
 	iaest-measure:numero-de-empresas 958 ;
 	iaest-measure:a-activo-no-corriente 491846868475992 ;
 	iaest-measure:i-inmovilizado-intangible 843861169102296 ;
@@ -2526,10 +2526,10 @@
 	iaest-measure:rentabilidad-economica 041980094121611 ;
 	iaest-measure:rentabilidad-financiera -128660782488138 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/11a0becc-0daf-3b55-8862-10f9de8ecfab> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/11a0becc-0daf-3b55-8862-10f9de8ecfab> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	iaest-measure:municipio-nombre jaca ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Jaca> ;
 	iaest-measure:numero-de-empresas 199 ;
 	iaest-measure:a-activo-no-corriente 236388105527638 ;
 	iaest-measure:i-inmovilizado-intangible 402210804020101 ;
@@ -2585,10 +2585,10 @@
 	iaest-measure:rentabilidad-economica -126495936643639 ;
 	iaest-measure:rentabilidad-financiera -46959472685861 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/80ab0655-3302-3789-9a6c-576e0a6fabcf> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/80ab0655-3302-3789-9a6c-576e0a6fabcf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	iaest-measure:municipio-nombre monzon ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Monzón> ;
 	iaest-measure:numero-de-empresas 296 ;
 	iaest-measure:a-activo-no-corriente 702267351351351 ;
 	iaest-measure:i-inmovilizado-intangible 907243581081081 ;
@@ -2644,10 +2644,10 @@
 	iaest-measure:rentabilidad-economica 0548513589637534 ;
 	iaest-measure:rentabilidad-financiera -206239332889944 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/40109665-160c-3659-8560-d35611224612> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/40109665-160c-3659-8560-d35611224612> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	iaest-measure:municipio-nombre alcaniz ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Alcañiz> ;
 	iaest-measure:numero-de-empresas 383 ;
 	iaest-measure:a-activo-no-corriente 489427626631854 ;
 	iaest-measure:i-inmovilizado-intangible 273960052219321 ;
@@ -2703,10 +2703,10 @@
 	iaest-measure:rentabilidad-economica -227577183863029 ;
 	iaest-measure:rentabilidad-financiera -781277144325846 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/ac320d12-d242-34b7-a28f-48dcb7e25476> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/ac320d12-d242-34b7-a28f-48dcb7e25476> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	iaest-measure:municipio-nombre teruel ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Teruel> ;
 	iaest-measure:numero-de-empresas 717 ;
 	iaest-measure:a-activo-no-corriente 74102809623431 ;
 	iaest-measure:i-inmovilizado-intangible 707957740585774 ;
@@ -2762,10 +2762,10 @@
 	iaest-measure:rentabilidad-economica 14458283708753 ;
 	iaest-measure:rentabilidad-financiera 190939689850551 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/dab7259f-36a4-3d65-aba7-7961b21b1adc> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/dab7259f-36a4-3d65-aba7-7961b21b1adc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	iaest-measure:municipio-nombre calatayud ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Calatayud> ;
 	iaest-measure:numero-de-empresas 325 ;
 	iaest-measure:a-activo-no-corriente 346040606153846 ;
 	iaest-measure:i-inmovilizado-intangible 398946769230769 ;
@@ -2821,10 +2821,10 @@
 	iaest-measure:rentabilidad-economica 118772034521963 ;
 	iaest-measure:rentabilidad-financiera -0457983850855576 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/b61304be-7cec-3c48-971e-5d9f2801f9dc> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/b61304be-7cec-3c48-971e-5d9f2801f9dc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	iaest-measure:municipio-nombre cuarte-de-huerva ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Cuarte_de_Huerva> ;
 	iaest-measure:numero-de-empresas 481 ;
 	iaest-measure:a-activo-no-corriente 359572043659044 ;
 	iaest-measure:i-inmovilizado-intangible 355983638253638 ;
@@ -2880,10 +2880,10 @@
 	iaest-measure:rentabilidad-economica 104121589503919 ;
 	iaest-measure:rentabilidad-financiera -0788092420904993 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/a39d1863-fa85-3079-bc75-d4ae14d41cf0> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/a39d1863-fa85-3079-bc75-d4ae14d41cf0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	iaest-measure:municipio-nombre ejea-de-los-caballeros ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Ejea_de_los_Caballeros> ;
 	iaest-measure:numero-de-empresas 356 ;
 	iaest-measure:a-activo-no-corriente 745668084269663 ;
 	iaest-measure:i-inmovilizado-intangible 232971966292135 ;
@@ -2939,10 +2939,10 @@
 	iaest-measure:rentabilidad-economica 216788680672937 ;
 	iaest-measure:rentabilidad-financiera 0544086490735935 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/c26bcf4d-24e1-34a5-a40c-21a178ba3e1a> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/c26bcf4d-24e1-34a5-a40c-21a178ba3e1a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	iaest-measure:municipio-nombre tarazona ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Tarazona> ;
 	iaest-measure:numero-de-empresas 159 ;
 	iaest-measure:a-activo-no-corriente 479071327044025 ;
 	iaest-measure:i-inmovilizado-intangible 400079245283019 ;
@@ -2998,10 +2998,10 @@
 	iaest-measure:rentabilidad-economica 107943397596113 ;
 	iaest-measure:rentabilidad-financiera -0103703152531923 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/7075df36-f010-30bb-a720-8a63abde6a5b> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/7075df36-f010-30bb-a720-8a63abde6a5b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	iaest-measure:municipio-nombre utebo ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Utebo> ;
 	iaest-measure:numero-de-empresas 227 ;
 	iaest-measure:a-activo-no-corriente 11766473215859 ;
 	iaest-measure:i-inmovilizado-intangible 742784625550661 ;
@@ -3057,10 +3057,10 @@
 	iaest-measure:rentabilidad-economica 0873588544475558 ;
 	iaest-measure:rentabilidad-financiera -0350686463226999 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/3705f78f-557b-3303-90b5-3efc52a3f613> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/3705f78f-557b-3303-90b5-3efc52a3f613> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	iaest-measure:municipio-nombre zaragoza ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Zaragoza> ;
 	iaest-measure:numero-de-empresas 9865 ;
 	iaest-measure:a-activo-no-corriente 175627196695388 ;
 	iaest-measure:i-inmovilizado-intangible 810523855043082 ;
@@ -3116,10 +3116,10 @@
 	iaest-measure:rentabilidad-economica -0856763763078053 ;
 	iaest-measure:rentabilidad-financiera -462910465772455 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/5f50bc4a-5734-3837-a2ee-191043afdc43> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/5f50bc4a-5734-3837-a2ee-191043afdc43> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	iaest-measure:municipio-nombre barbastro ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Barbastro> ;
 	iaest-measure:numero-de-empresas 321 ;
 	iaest-measure:a-activo-no-corriente 499159806853583 ;
 	iaest-measure:i-inmovilizado-intangible 40737507788162 ;
@@ -3175,10 +3175,10 @@
 	iaest-measure:rentabilidad-economica 194052012300107 ;
 	iaest-measure:rentabilidad-financiera 125828496066672 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/015f2756-319a-3b8e-a936-21145b0eed33> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/015f2756-319a-3b8e-a936-21145b0eed33> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	iaest-measure:municipio-nombre fraga ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Fraga> ;
 	iaest-measure:numero-de-empresas 358 ;
 	iaest-measure:a-activo-no-corriente 794798170391061 ;
 	iaest-measure:i-inmovilizado-intangible 135566340782123 ;
@@ -3234,10 +3234,10 @@
 	iaest-measure:rentabilidad-economica 437669290413771 ;
 	iaest-measure:rentabilidad-financiera 478235073365918 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/fedaaf94-81f7-3283-8aa8-62e464b8a214> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/fedaaf94-81f7-3283-8aa8-62e464b8a214> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	iaest-measure:municipio-nombre huesca ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Huesca> ;
 	iaest-measure:numero-de-empresas 994 ;
 	iaest-measure:a-activo-no-corriente 51082308249497 ;
 	iaest-measure:i-inmovilizado-intangible 20312467806841 ;
@@ -3293,10 +3293,10 @@
 	iaest-measure:rentabilidad-economica 173418191608754 ;
 	iaest-measure:rentabilidad-financiera 11783380608932 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/fa782c0b-20fc-3b8d-bca7-bd9ed6904fe8> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/fa782c0b-20fc-3b8d-bca7-bd9ed6904fe8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	iaest-measure:municipio-nombre jaca ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Jaca> ;
 	iaest-measure:numero-de-empresas 203 ;
 	iaest-measure:a-activo-no-corriente 241458866995074 ;
 	iaest-measure:i-inmovilizado-intangible 387476305418719 ;
@@ -3352,10 +3352,10 @@
 	iaest-measure:rentabilidad-economica -128550276295933 ;
 	iaest-measure:rentabilidad-financiera -397042120471939 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/877f4020-ee04-3a75-b56d-cd8a0ecafb83> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/877f4020-ee04-3a75-b56d-cd8a0ecafb83> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	iaest-measure:municipio-nombre monzon ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Monzón> ;
 	iaest-measure:numero-de-empresas 315 ;
 	iaest-measure:a-activo-no-corriente 589098920634921 ;
 	iaest-measure:i-inmovilizado-intangible 932613650793651 ;
@@ -3411,10 +3411,10 @@
 	iaest-measure:rentabilidad-economica -209207165145938 ;
 	iaest-measure:rentabilidad-financiera -702874896849667 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/201f2c86-e55e-3ab9-b8c6-91e1de765b19> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/201f2c86-e55e-3ab9-b8c6-91e1de765b19> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	iaest-measure:municipio-nombre alcaniz ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Alcañiz> ;
 	iaest-measure:numero-de-empresas 378 ;
 	iaest-measure:a-activo-no-corriente 486000013227513 ;
 	iaest-measure:i-inmovilizado-intangible 890007671957672 ;
@@ -3470,10 +3470,10 @@
 	iaest-measure:rentabilidad-economica -160614549328437 ;
 	iaest-measure:rentabilidad-financiera -726786693768511 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/dacd62a8-4528-3100-86c9-5a328b9b0542> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/dacd62a8-4528-3100-86c9-5a328b9b0542> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	iaest-measure:municipio-nombre teruel ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Teruel> ;
 	iaest-measure:numero-de-empresas 687 ;
 	iaest-measure:a-activo-no-corriente 802018352256186 ;
 	iaest-measure:i-inmovilizado-intangible 929811208151383 ;
@@ -3529,10 +3529,10 @@
 	iaest-measure:rentabilidad-economica 177416674130045 ;
 	iaest-measure:rentabilidad-financiera 245321765736966 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/50068377-99bd-3a95-8622-c082869c08e3> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/50068377-99bd-3a95-8622-c082869c08e3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	iaest-measure:municipio-nombre calatayud ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Calatayud> ;
 	iaest-measure:numero-de-empresas 298 ;
 	iaest-measure:a-activo-no-corriente 348162308724832 ;
 	iaest-measure:i-inmovilizado-intangible 553301677852349 ;
@@ -3588,10 +3588,10 @@
 	iaest-measure:rentabilidad-economica 17779907443404 ;
 	iaest-measure:rentabilidad-financiera 0914361821075779 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/2a9a8555-0271-3c95-9bf2-489a361def8a> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/2a9a8555-0271-3c95-9bf2-489a361def8a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	iaest-measure:municipio-nombre cuarte-de-huerva ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Cuarte_de_Huerva> ;
 	iaest-measure:numero-de-empresas 499 ;
 	iaest-measure:a-activo-no-corriente 353816382765531 ;
 	iaest-measure:i-inmovilizado-intangible 325622124248497 ;
@@ -3647,10 +3647,10 @@
 	iaest-measure:rentabilidad-economica 246409057059585 ;
 	iaest-measure:rentabilidad-financiera 192848531782974 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/458a8c58-6989-37cd-aefd-01452e6fec6c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/458a8c58-6989-37cd-aefd-01452e6fec6c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	iaest-measure:municipio-nombre ejea-de-los-caballeros ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Ejea_de_los_Caballeros> ;
 	iaest-measure:numero-de-empresas 312 ;
 	iaest-measure:a-activo-no-corriente 904071560897436 ;
 	iaest-measure:i-inmovilizado-intangible 223462692307692 ;
@@ -3706,10 +3706,10 @@
 	iaest-measure:rentabilidad-economica 211079140843539 ;
 	iaest-measure:rentabilidad-financiera 194593273845124 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/06a2c5a7-f593-3e3d-92e1-2447e407d17c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/06a2c5a7-f593-3e3d-92e1-2447e407d17c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	iaest-measure:municipio-nombre tarazona ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Tarazona> ;
 	iaest-measure:numero-de-empresas 144 ;
 	iaest-measure:a-activo-no-corriente 457648513888889 ;
 	iaest-measure:i-inmovilizado-intangible 36513125 ;
@@ -3765,10 +3765,10 @@
 	iaest-measure:rentabilidad-economica 173674921213814 ;
 	iaest-measure:rentabilidad-financiera 0838678840096571 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/500513c4-4914-38b8-8bc9-5d99a27e6d77> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/500513c4-4914-38b8-8bc9-5d99a27e6d77> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	iaest-measure:municipio-nombre utebo ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Utebo> ;
 	iaest-measure:numero-de-empresas 216 ;
 	iaest-measure:a-activo-no-corriente 228153864351852 ;
 	iaest-measure:i-inmovilizado-intangible 218535416666667 ;
@@ -3824,10 +3824,10 @@
 	iaest-measure:rentabilidad-economica 0990733093774582 ;
 	iaest-measure:rentabilidad-financiera -0334315244062886 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010069TM/96e5c199-49c2-382b-9a47-83880ba91fc9> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010069TM>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010069TM/96e5c199-49c2-382b-9a47-83880ba91fc9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010069TM>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	iaest-measure:municipio-nombre zaragoza ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Municipio/Zaragoza> ;
 	iaest-measure:numero-de-empresas 9547 ;
 	iaest-measure:a-activo-no-corriente 178751067319577 ;
 	iaest-measure:i-inmovilizado-intangible 115628406724626 ;

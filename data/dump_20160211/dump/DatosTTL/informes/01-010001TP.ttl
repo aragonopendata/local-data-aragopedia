@@ -1,0 +1,87 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-010001TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>;
+	rdfs:label "Cubo de datos para 01-010001TP"@es ;
+	rdfs:comment "Cubo de datos para 01-010001TP"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TP/50ef4694-4cf9-39d2-9b8c-e56a1acbaa44> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 121 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TP/4aa00ef4-87e7-3b33-8a97-0b64f5d90e26> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 53814 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TP/c3af10b7-a816-38dc-911f-b8c0fbcb1450> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 73786 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TP/193b723a-f71c-322e-a6e4-fd057d88695f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 52 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TP/65c2c1fa-6382-396a-8e3f-2676cf20698d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 45335 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TP/f08e30a8-6cda-3dd0-b673-3d4b4f1cd00a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 51070 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TP/ce7f1ca7-486c-3106-9faa-44f919124334> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 399 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TP/ad0648ab-f872-3366-8a83-7adb6fda6bcf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 112091 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TP/4f21848e-ee35-32cd-b75d-0a2a882ca25c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 318387 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

@@ -1,0 +1,132 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030095TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>;
+	rdfs:label "Cubo de datos para 03-02010301-030095TP"@es ;
+	rdfs:comment "Cubo de datos para 03-02010301-030095TP"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/07767644-77e8-3717-b532-17bf56b5644c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-compra-totalmente-pagada> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-viviendas 341764076381104 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/91cc3891-a599-3807-a3c6-a3ee6759445b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-compra-totalmente-pagada> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-viviendas 248163113477881 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/89a2f356-8365-3167-8019-6b5b2b05e607> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-compra-totalmente-pagada> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-viviendas 166937365193983 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/604ba2bf-6976-332d-86c4-fa15089c30eb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-compra-con-pagos-pendientes-hipotecas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-viviendas 238953907606161 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/ebe95ded-6d17-3250-a9ea-6573fa64f45f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-compra-con-pagos-pendientes-hipotecas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-viviendas 115265463925925 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/2b8dc114-b782-3ce1-8ff2-95f0293bc516> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-compra-con-pagos-pendientes-hipotecas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-viviendas 122837444473552 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/b13419f3-c742-3f56-8ae0-14b7086a6cde> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-herencia-o-donacion> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-viviendas 123124160451104 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/57139ca8-7520-3bdd-b1e8-424193d46012> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-herencia-o-donacion> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-viviendas 82580845754664 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/f72ce75a-75a7-33ec-a282-1f9ea7d20bc3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-herencia-o-donacion> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-viviendas 242642471779305 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/752798e2-2be0-3151-88e9-583421161f91> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/alquilada> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-viviendas 118885971191346 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/1d943c13-6788-31d6-8e63-6b18e3939e5c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/alquilada> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-viviendas 65191256481848 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/1c3ca353-a52a-3f8e-b6fa-4bf938da2288> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/alquilada> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-viviendas 539641316400975 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/35987d60-9cdb-368e-afea-13a20ce2a649> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/cedida-gratis-o-a-bajo-precio-por-otro-hogar-pagada-por-la-empresa> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-viviendas 23460061935967 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/c5c4a5a8-d0b9-346b-82ce-59f12b3ca90a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/cedida-gratis-o-a-bajo-precio-por-otro-hogar-pagada-por-la-empresa> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-viviendas 18386439049408 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/f0fe4df1-74bc-3718-8317-7bf45d18df93> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/cedida-gratis-o-a-bajo-precio-por-otro-hogar-pagada-por-la-empresa> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-viviendas 91764560338837 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/675146db-efd4-3d55-aed7-07969bb12dbd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/otra-forma> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-viviendas 45611286097102 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/0fe8d021-3cc5-3bf9-a2a7-290430bad4e6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/otra-forma> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-viviendas 31499508576245 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030095TP/88b6e6f0-b3cd-3c98-905b-8125494a2477> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030095>; 
+	iaest-dimension:regimen-de-tenencia <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/otra-forma> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-viviendas 164022051458089 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

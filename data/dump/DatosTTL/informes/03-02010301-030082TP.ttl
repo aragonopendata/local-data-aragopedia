@@ -12,223 +12,223 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/03-02010301-030082>;
+<http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030082>;
 	rdfs:label "Cubo de datos para 03-02010301-030082TP"@es ;
 	rdfs:comment "Cubo de datos para 03-02010301-030082TP"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/4cc1283a-652e-3ad6-b10c-5dbb96611c18> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/4cc1283a-652e-3ad6-b10c-5dbb96611c18> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/soltero> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:estado-civil soltero ;
+	iaest-measure:sexo hombre ;
 	iaest-measure:personas 366129160146869 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/46bd5807-c440-32af-afa3-7c6bb47b7240> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/46bd5807-c440-32af-afa3-7c6bb47b7240> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/casado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:estado-civil casado ;
+	iaest-measure:sexo hombre ;
 	iaest-measure:personas 536335161315471 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/e85db630-6e5a-3523-91be-ad06d8103ed6> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/e85db630-6e5a-3523-91be-ad06d8103ed6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/viudo> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:estado-civil viudo ;
+	iaest-measure:sexo hombre ;
 	iaest-measure:personas 29441213708045 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/22f03155-0041-347b-a1c4-a0ecc4f15939> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/22f03155-0041-347b-a1c4-a0ecc4f15939> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/separado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:estado-civil separado ;
+	iaest-measure:sexo hombre ;
 	iaest-measure:personas 1469849106204 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/b1f7c394-f101-3507-99c6-20d2ccb51cd6> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/b1f7c394-f101-3507-99c6-20d2ccb51cd6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/divorciado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:estado-civil divorciado ;
+	iaest-measure:sexo hombre ;
 	iaest-measure:personas 23599219545129 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/e45b5d47-b5b5-3105-a927-6d8c10e24eb3> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/e45b5d47-b5b5-3105-a927-6d8c10e24eb3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/soltero> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:estado-civil soltero ;
+	iaest-measure:sexo hombre ;
 	iaest-measure:personas 223942804720845 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/efea30d2-096a-359e-a632-1527a43c69fb> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/efea30d2-096a-359e-a632-1527a43c69fb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/casado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:estado-civil casado ;
+	iaest-measure:sexo hombre ;
 	iaest-measure:personas 357228182358008 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/e5d7bbac-e691-307d-adbb-32bf347b974e> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/e5d7bbac-e691-307d-adbb-32bf347b974e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/viudo> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:estado-civil viudo ;
+	iaest-measure:sexo hombre ;
 	iaest-measure:personas 24485708253303 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/34a66d26-6ca4-3058-801e-342d1221dc6f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/34a66d26-6ca4-3058-801e-342d1221dc6f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/separado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:estado-civil separado ;
+	iaest-measure:sexo hombre ;
 	iaest-measure:personas 6493324471384 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/ce8fef41-9288-3e9d-9505-0550ceb825f4> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/ce8fef41-9288-3e9d-9505-0550ceb825f4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/divorciado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:estado-civil divorciado ;
+	iaest-measure:sexo hombre ;
 	iaest-measure:personas 1235447099126 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/9fd6fb40-546f-3746-907e-06ccedec6d7d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/9fd6fb40-546f-3746-907e-06ccedec6d7d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/soltero> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:estado-civil soltero ;
+	iaest-measure:sexo hombre ;
 	iaest-measure:personas 142246414433687 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/84eff089-0ff2-3592-bfa4-9c373aeb476a> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/84eff089-0ff2-3592-bfa4-9c373aeb476a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/casado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:estado-civil casado ;
+	iaest-measure:sexo hombre ;
 	iaest-measure:personas 23061000453067 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/f9dd2014-4b39-3ad7-be09-8a620293480c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/f9dd2014-4b39-3ad7-be09-8a620293480c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/viudo> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:estado-civil viudo ;
+	iaest-measure:sexo hombre ;
 	iaest-measure:personas 11549537926528 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/4f013f02-fea1-3013-8fbf-e992657b66fd> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/4f013f02-fea1-3013-8fbf-e992657b66fd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/separado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:estado-civil separado ;
+	iaest-measure:sexo hombre ;
 	iaest-measure:personas 59212437100802 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/5e8a2349-b1dd-32e0-b726-9a147644d8d4> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/5e8a2349-b1dd-32e0-b726-9a147644d8d4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/divorciado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:estado-civil divorciado ;
+	iaest-measure:sexo hombre ;
 	iaest-measure:personas 122091588230392 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/0e8360c4-7e3b-3539-99b6-858e55ac9973> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/0e8360c4-7e3b-3539-99b6-858e55ac9973> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/soltero> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:estado-civil soltero ;
+	iaest-measure:sexo mujer ;
 	iaest-measure:personas 238857502568882 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/06ef4585-6a83-3378-823c-66fd3df749bc> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/06ef4585-6a83-3378-823c-66fd3df749bc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/casado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:estado-civil casado ;
+	iaest-measure:sexo mujer ;
 	iaest-measure:personas 522830086719546 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/f2c7e931-4ccf-3a54-a05b-4de1cf47d95b> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/f2c7e931-4ccf-3a54-a05b-4de1cf47d95b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/viudo> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:estado-civil viudo ;
+	iaest-measure:sexo mujer ;
 	iaest-measure:personas 135089220550242 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/6e2851e6-5628-3ba0-ad73-c2e491e1ba38> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/6e2851e6-5628-3ba0-ad73-c2e491e1ba38> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/separado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:estado-civil separado ;
+	iaest-measure:sexo mujer ;
 	iaest-measure:personas 12349185572744 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/6dd02019-4fec-3a9d-b8d3-3c63e7e82080> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/6dd02019-4fec-3a9d-b8d3-3c63e7e82080> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/divorciado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:estado-civil divorciado ;
+	iaest-measure:sexo mujer ;
 	iaest-measure:personas 3162339997292 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/b90e7668-bf0b-3e57-860f-f2deafb7a411> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/b90e7668-bf0b-3e57-860f-f2deafb7a411> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/soltero> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:estado-civil soltero ;
+	iaest-measure:sexo mujer ;
 	iaest-measure:personas 142872226401108 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/3e1c4fda-bd76-30ab-9c19-ee18cf9ca1fc> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/3e1c4fda-bd76-30ab-9c19-ee18cf9ca1fc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/casado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:estado-civil casado ;
+	iaest-measure:sexo mujer ;
 	iaest-measure:personas 347022335020742 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/715139eb-fb00-3277-b568-9fdae60e6a35> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/715139eb-fb00-3277-b568-9fdae60e6a35> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/viudo> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:estado-civil viudo ;
+	iaest-measure:sexo mujer ;
 	iaest-measure:personas 81694346710407 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/7ff12bad-aff4-3956-b714-3f7803aa0061> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/7ff12bad-aff4-3956-b714-3f7803aa0061> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/separado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:estado-civil separado ;
+	iaest-measure:sexo mujer ;
 	iaest-measure:personas 5500788460535 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/c192cf39-967c-3281-8f2f-7a27ceb80a29> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/c192cf39-967c-3281-8f2f-7a27ceb80a29> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/divorciado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:estado-civil divorciado ;
+	iaest-measure:sexo mujer ;
 	iaest-measure:personas 12880872983009 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/dedc872b-127c-3210-9fcc-8556a4c46f66> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/dedc872b-127c-3210-9fcc-8556a4c46f66> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/soltero> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:estado-civil soltero ;
+	iaest-measure:sexo mujer ;
 	iaest-measure:personas 115310761914231 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/9116da97-2dc4-3804-b35d-e27ec902222d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/9116da97-2dc4-3804-b35d-e27ec902222d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/casado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:estado-civil casado ;
+	iaest-measure:sexo mujer ;
 	iaest-measure:personas 227868263807148 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/52b92eb7-3b60-3fd8-bc3a-f4d73f451459> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/52b92eb7-3b60-3fd8-bc3a-f4d73f451459> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/viudo> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:estado-civil viudo ;
+	iaest-measure:sexo mujer ;
 	iaest-measure:personas 522497146511066 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/0950c227-d52a-374d-af34-a87b82ce1563> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/0950c227-d52a-374d-af34-a87b82ce1563> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/separado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:estado-civil separado ;
+	iaest-measure:sexo mujer ;
 	iaest-measure:personas 65713733857607 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-02010301-030082TP/e577c610-7b59-314b-ad38-6757e14ecc0d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-02010301-030082TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082TP/e577c610-7b59-314b-ad38-6757e14ecc0d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030082TP>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/divorciado> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:estado-civil divorciado ;
+	iaest-measure:sexo mujer ;
 	iaest-measure:personas 150427644085839 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

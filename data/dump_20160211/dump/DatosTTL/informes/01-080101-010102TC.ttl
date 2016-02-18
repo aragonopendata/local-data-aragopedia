@@ -1,0 +1,612 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010102TC> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>;
+	rdfs:label "Cubo de datos para 01-080101-010102TC"@es ;
+	rdfs:comment "Cubo de datos para 01-080101-010102TC"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/20058d79-cbf1-3759-a9fa-07837f7b1907> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:explotaciones 16 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/31ae960c-aaca-31ef-9cb0-f8f130962836> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/ee451c55-fc98-3cd7-9090-fae2549816e5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:explotaciones 21 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/a4db5423-2d2b-3d2f-a927-e2c2dc03898a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:explotaciones 3 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/1705416b-eb37-3195-b631-d5d8d97f6c69> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:explotaciones 4 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/8be3c749-133f-386e-bd69-17a88abbf281> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:explotaciones 9 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/e7ab66f2-3042-359b-88e0-4fe046cb92e5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:explotaciones 28 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/3ea44260-561a-3aaa-be30-9fdef30c01c4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:explotaciones 10 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/781a74f9-a8c8-33b2-a3f5-d3d0a771a031> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:explotaciones 28 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/847567d7-40c9-3f80-9c23-22cce58aeb8b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:explotaciones 28 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/607c2381-783f-31f6-9ac1-9155518b8c29> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:explotaciones 10 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/d7549427-9164-3ecf-ae76-4bc2ba67d147> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:explotaciones 27 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/c1ee211c-6621-3662-be0a-8c98448d5f43> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:explotaciones 57 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/d00191da-5637-3d40-9cec-3cb0ce24269c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:explotaciones 21 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/3346e4bf-0588-3de9-8d81-b9e8275e8f0f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:explotaciones 41 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/7e5731f3-f72c-3cb1-a3d7-d5930508886d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:explotaciones 25 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/aef4dc15-a977-36d1-933f-3a1f727d31dc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:explotaciones 17 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/b2e3eb92-24f1-3c92-8924-2094e083f669> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:explotaciones 36 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/55024cd6-4749-3eb5-ab70-7eea0313d37b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:explotaciones 36 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/da6c69d4-c174-31e7-8ef6-9eb01b1fd3d9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:explotaciones 27 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/9a42f9d9-2ba5-3660-9ded-5eae4c97df3c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:explotaciones 30 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/0b29a92d-cec8-30b8-b915-280c6c64d756> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:explotaciones 22 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/fe629eca-4b2d-3d1a-a08a-35177acfd7e4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:explotaciones 11 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/ccf5da08-487e-3382-845b-b3417dc86c72> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:explotaciones 13 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/cbbaeb90-834c-3985-a15f-e015ae9b2f26> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:explotaciones 19 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/fa5a95e7-7e0c-3442-91bb-a2cd1950e9a2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:explotaciones 9 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/b5b82b7b-7603-3367-87fd-8a5e0b5a5f55> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:explotaciones 19 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/91d8ff2e-bce1-3338-8923-9b60b0595502> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:explotaciones 31 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/bf607f55-d7c0-3aab-af78-862c8f0b3375> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:explotaciones 27 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/780ac231-dea5-3843-ada4-bfd0ec3b5a46> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:explotaciones 43 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/65c4e701-4248-3a8f-b202-4e603bb046d1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:explotaciones 15 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/ff3b9167-2fa3-3aa3-9083-382d12faa1c5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:explotaciones 20 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/d99603f5-5fa4-362d-8006-f21a5b361bb6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:explotaciones 18 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/c724bf73-7f83-3373-8093-4986d0feac50> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:explotaciones 4 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/22ab3392-9da0-3658-8e30-6dcbc1c43b06> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:explotaciones 4 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/e7d64e71-94c5-30ce-9d3f-db315143f069> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:explotaciones 3 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/de68e8ba-91c6-3c69-8841-037f89fe10d3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:explotaciones 12 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/f75ef050-001e-3cf2-a87b-4d87478cd7e3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:explotaciones 9 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/dbdb9710-0b11-326e-b3c2-670d7dc9fcc2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:explotaciones 12 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/4a5fb488-ef3a-37c4-98e6-9b87b6d9d045> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/2e5ee56b-a6af-3750-b6d8-779d0d2a00a0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:explotaciones 4 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/3958c790-63d1-375e-b274-f11bb4666470> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:explotaciones 14 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/0af24065-417b-37e6-8bd2-19f5561d87c4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:explotaciones 6 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/38313d39-de5a-3180-8813-23c02c7aa506> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:explotaciones 11 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/89bf816c-1ed4-357d-b170-a5439d7a0fce> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:explotaciones 20 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/3ae86574-9e25-390b-8d41-fec8ac6e694f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:explotaciones 15 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/9ea9de50-fb32-3527-b600-149dd6bb78a0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:explotaciones 15 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/1587102c-134b-38a9-a62f-b7fb9a807cf3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:explotaciones 18 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/b0c535ec-8a80-3cc9-a24c-cf3ffb1afba0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:explotaciones 15 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/3c83f4bb-6fd8-3b11-9bc2-d9d5ccb38b7e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:explotaciones 21 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/499a5535-5166-35ba-9ef0-283b72d92778> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:explotaciones 6 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/d3ab0d25-63b7-3a90-94b9-3b33e48ccb28> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:explotaciones 3 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/3d87340e-d3a4-3d1e-af7f-ed094f9b641c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:explotaciones 6 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/87cb10a2-83aa-39c8-addf-4e41782a7968> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:explotaciones 11 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/50091fc8-9607-32b5-9b58-2000fd737bc0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:explotaciones 9 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/2bf6ef60-0384-3fc6-a2e0-72a12c04bd37> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:explotaciones 15 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/035ba2ec-73f4-3882-9e6f-dfe38210592d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:explotaciones 10 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/ccb721df-60ee-3d89-9ccd-49e1071e2ecc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:explotaciones 14 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/9ec57b00-f786-3103-aaa2-b837add56a1d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:explotaciones 13 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/613a8f0e-4741-35e9-b374-e046b2ed350b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:explotaciones 6 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/d4ad2da4-8a58-365e-92ae-46d97a4a67e6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:explotaciones 12 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/70222a83-b8c4-3f99-aa0c-8a52e1584b41> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:explotaciones 10 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/358aa609-f8ea-30f9-9e6c-40a41380d9c0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:explotaciones 7 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/a994b6a6-e23c-347a-83fa-c52df7de5ecf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:explotaciones 4 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/d8687641-3a3b-3616-b1a0-645c7e3ea780> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:explotaciones 11 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/56ae2b69-d1d8-39fd-b143-b9c97bb517a2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:explotaciones 4 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/e6ab282d-2626-30f1-98ed-b7322dc9ab99> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:explotaciones 3 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/c0da1817-c517-3ffd-ba98-8bb41cf4a9ef> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:explotaciones 4 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/6cdd4005-9b55-37f7-8d9b-a0f07d84189c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:explotaciones 9 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/b87f2768-45df-3f71-bc5f-28f7b74fed92> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:explotaciones 11 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/f82bb46f-6639-3993-9d13-cd66fe642253> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:explotaciones 4 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/80f46504-5028-3489-a522-bfe8fed75503> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:explotaciones 14 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/5b627488-bd0c-3052-8450-b3bcff560901> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:explotaciones 14 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/c3e8c4d5-d299-3d7a-89f9-912fddab48b0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:explotaciones 18 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/31d7c821-049e-3eca-9cdf-5acb454c32f3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:explotaciones 5 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/f802f31e-eea8-33a6-9d13-d5656f25b8aa> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:explotaciones 4 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/fbd1d921-c0de-381e-8695-a71efe0396f6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:explotaciones 5 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/fb6df9f6-2e4c-35e2-911e-41e77170acb9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/bbc729fc-78bd-34f2-866e-9f8f54496510> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/f1e66b27-a36d-3081-8032-b3f14bb880bb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:explotaciones 6 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/1e432abe-02c5-318a-9415-3d2f07b9b768> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:explotaciones 11 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/8086f317-ccee-32c7-8940-52ca1925e383> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:explotaciones 10 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/bfab15a7-35fd-3769-9141-64a7cea2015b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:explotaciones 10 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/c431c68f-3967-3832-b54d-0af879cef0b9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:explotaciones 10 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/d62614d8-3077-3b16-95a2-9587247a3b9c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:explotaciones 12 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/31a49ac9-e820-3482-b26f-fcc16308ce07> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:explotaciones 23 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/14e72edb-c1cf-3fea-aad3-79ac308289a0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:explotaciones 6 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/f3c4b5da-2b7f-3ed8-9559-8e0cdfe80acb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:explotaciones 4 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/07ab19b6-409f-32dc-8f67-550b1ed6eb38> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:explotaciones 5 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/90b9fdc3-b8fa-35b1-9f1a-aa2df8ceb889> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:explotaciones 3 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/39088dee-376c-3db4-82f4-977f709479d5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/5be2563f-9499-35c7-9c1b-679c486c6024> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:explotaciones 10 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/09b6f172-d600-347e-99e3-93b09a226b43> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:explotaciones 7 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/fa6ff2f6-a134-33bc-82e5-ef4d3ef036f4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:explotaciones 7 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/b1b9f8d6-a1fd-394a-b87f-858eaa2da12a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:explotaciones 6 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/6ae44217-5b45-3490-9478-7e1a2e969e2b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:explotaciones 15 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-del-10-a-menos-del-50-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/3caf5a5d-535a-30b4-8746-bda4c4d91042> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:explotaciones 12 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-el-50-o-mas-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010102TC/fd98a1b4-5c04-3cef-b967-bfc413b74950> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010102>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:explotaciones 13 ;
+	iaest-dimension:porcentaje-actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/porcentaje-actividades-desarrollo-rural/las-actividades-complementarias-representan-menos-del-10-de-la-actividad-total-de-la-explotacion> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

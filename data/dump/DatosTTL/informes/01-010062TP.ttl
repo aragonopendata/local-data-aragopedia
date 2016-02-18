@@ -12,20 +12,20 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010062TP> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-010062>;
+<http://opendata.aragon.es/recurso/iaest/cubo/01-010062TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010062>;
 	rdfs:label "Cubo de datos para 01-010062TP"@es ;
 	rdfs:comment "Cubo de datos para 01-010062TP"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010062TP/1460a876-0124-349a-88db-749d8a94737d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010062TP>; 
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010062TP/1460a876-0124-349a-88db-749d8a94737d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010062TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1989> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:provincia huesca ;
 	iaest-measure:numero-total-de-explotaciones 23425 ;
 	iaest-measure:explotaciones-con-tierras 23269 ;
 	iaest-measure:explotaciones-con-tierras-sin-sau 1911 ;
@@ -36,10 +36,10 @@
 	iaest-measure:explotaciones-con-tierras-con-sau-totalmente-de-su-propiedad 13884 ;
 	iaest-measure:explotaciones-con-tierras-con-sau 21358 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010062TP/c25bbb39-c77d-3324-ae80-898402b975eb> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010062TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010062TP/c25bbb39-c77d-3324-ae80-898402b975eb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010062TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1989> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:provincia teruel ;
 	iaest-measure:numero-total-de-explotaciones 25692 ;
 	iaest-measure:explotaciones-con-tierras 25468 ;
 	iaest-measure:explotaciones-con-tierras-sin-sau 3225 ;
@@ -50,10 +50,10 @@
 	iaest-measure:explotaciones-con-tierras-con-sau-totalmente-de-su-propiedad 13787 ;
 	iaest-measure:explotaciones-con-tierras-con-sau 22243 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010062TP/a1407a01-fa2b-3539-bd8b-e97161c4e18c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010062TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010062TP/a1407a01-fa2b-3539-bd8b-e97161c4e18c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010062TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1989> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:provincia zaragoza ;
 	iaest-measure:numero-total-de-explotaciones 51614 ;
 	iaest-measure:explotaciones-con-tierras 50912 ;
 	iaest-measure:explotaciones-con-tierras-sin-sau 2053 ;
@@ -64,10 +64,10 @@
 	iaest-measure:explotaciones-con-tierras-con-sau-totalmente-de-su-propiedad 31416 ;
 	iaest-measure:explotaciones-con-tierras-con-sau 48859 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010062TP/cb9ee02c-e993-3f34-8fff-e21af107b3e1> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010062TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010062TP/cb9ee02c-e993-3f34-8fff-e21af107b3e1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010062TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:provincia huesca ;
 	iaest-measure:numero-total-de-explotaciones 21318 ;
 	iaest-measure:explotaciones-con-tierras 20887 ;
 	iaest-measure:explotaciones-con-tierras-sin-sau 1765 ;
@@ -78,10 +78,10 @@
 	iaest-measure:explotaciones-con-tierras-con-sau-totalmente-de-su-propiedad 12194 ;
 	iaest-measure:explotaciones-con-tierras-con-sau 19122 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010062TP/796b97e4-736f-3f5c-b168-2212db9e3c9b> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010062TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010062TP/796b97e4-736f-3f5c-b168-2212db9e3c9b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010062TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:provincia teruel ;
 	iaest-measure:numero-total-de-explotaciones 17926 ;
 	iaest-measure:explotaciones-con-tierras 17347 ;
 	iaest-measure:explotaciones-con-tierras-sin-sau 1518 ;
@@ -92,10 +92,10 @@
 	iaest-measure:explotaciones-con-tierras-con-sau-totalmente-de-su-propiedad 9389 ;
 	iaest-measure:explotaciones-con-tierras-con-sau 15829 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010062TP/e9a18bf7-4c79-3379-afef-dc54f6a24feb> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010062TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010062TP/e9a18bf7-4c79-3379-afef-dc54f6a24feb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010062TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:provincia zaragoza ;
 	iaest-measure:numero-total-de-explotaciones 40777 ;
 	iaest-measure:explotaciones-con-tierras 40010 ;
 	iaest-measure:explotaciones-con-tierras-sin-sau 2896 ;

@@ -1,0 +1,150 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-010019A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010019>;
+	rdfs:label "Cubo de datos para 01-010019A"@es ;
+	rdfs:comment "Cubo de datos para 01-010019A"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010019A/3c1feaa4-b596-3412-a731-1e637ab62294> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010019>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2014> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:urbano-superficie 3737661 ;
+	iaest-measure:-urbana 0785330827703269 ;
+	iaest-measure:rustico-superficie 472196922 ;
+	iaest-measure:-rustica 992146691722967 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010019A/dc2eac7f-0084-3f0f-91d5-623b202528e9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010019>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:urbano-superficie 3696536 ;
+	iaest-measure:-urbana 077519428451769 ;
+	iaest-measure:rustico-superficie 473156309 ;
+	iaest-measure:-rustica 992248057154823 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010019A/0ea81be4-e034-39dd-9719-2b697fe8bf7a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010019>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:urbano-superficie 365534 ;
+	iaest-measure:-urbana 0766691863627898 ;
+	iaest-measure:rustico-superficie 473112469 ;
+	iaest-measure:-rustica 992333081363721 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010019A/54a0d7df-fc1e-3961-ae86-11b1de109962> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010019>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:urbano-superficie 3905604 ;
+	iaest-measure:-urbana 0818565960716776 ;
+	iaest-measure:rustico-superficie 473221981 ;
+	iaest-measure:-rustica 991814340392832 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010019A/462eea6c-c97d-35ae-b4b5-91a207b658db> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010019>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:urbano-superficie 3841069 ;
+	iaest-measure:-urbana 0805054016949002 ;
+	iaest-measure:rustico-superficie 473278344 ;
+	iaest-measure:-rustica 99194945983051 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010019A/24cb748c-7203-3330-b2be-fe50b31e26f4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010019>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:urbano-superficie 3769117 ;
+	iaest-measure:-urbana 0790987702504116 ;
+	iaest-measure:rustico-superficie 472738544 ;
+	iaest-measure:-rustica 992090122974959 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010019A/a48d94f0-afa4-34e3-90a6-ef7ec9009075> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010019>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2008> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:urbano-superficie 3575102 ;
+	iaest-measure:-urbana 0750490151076033 ;
+	iaest-measure:rustico-superficie 472793841 ;
+	iaest-measure:-rustica 99249509848924 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010019A/1dd45f06-5033-3fdd-91f1-3bca1070b6de> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010019>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2007> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:urbano-superficie 3402011 ;
+	iaest-measure:-urbana 071285783597998 ;
+	iaest-measure:rustico-superficie 473833537 ;
+	iaest-measure:-rustica 9928714216402 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010019A/79f73dd0-2853-3cbb-b9fa-17d511f4c9cc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010019>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:urbano-superficie 3444643 ;
+	iaest-measure:-urbana 0718894667436948 ;
+	iaest-measure:rustico-superficie 475713592 ;
+	iaest-measure:-rustica 992811053325631 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010019A/a9cd750e-ac29-35fb-bdc8-1d5ca653402d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010019>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2005> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:urbano-superficie 4038491 ;
+	iaest-measure:-urbana 0844936422195124 ;
+	iaest-measure:rustico-superficie 4739254 ;
+	iaest-measure:-rustica 991550635778049 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010019A/c9716eab-3789-39f5-ba55-6e4994cfa27a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010019>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2004> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:urbano-superficie 3960545 ;
+	iaest-measure:-urbana 0830058885516983 ;
+	iaest-measure:rustico-superficie 4731797 ;
+	iaest-measure:-rustica 99169941114483 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010019A/d211c31a-eebe-3d58-b1ba-71fd2499f4ac> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010019>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2003> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:urbano-superficie 3880776 ;
+	iaest-measure:-urbana 0816831486857865 ;
+	iaest-measure:rustico-superficie 4712204 ;
+	iaest-measure:-rustica 991831685131421 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010019A/a5e30574-1076-3d59-a62f-97676dfcd47b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010019>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2002> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:urbano-superficie 3741345 ;
+	iaest-measure:-urbana 0789021245079445 ;
+	iaest-measure:rustico-superficie 4704341 ;
+	iaest-measure:-rustica 992109787549206 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010019A/744fbdb8-4422-3172-83f9-ba85a9d73461> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010019>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2001> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:urbano-superficie 3636612 ;
+	iaest-measure:-urbana 0770079342855599 ;
+	iaest-measure:rustico-superficie 4686020 ;
+	iaest-measure:-rustica 992299206571444 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

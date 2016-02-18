@@ -12,37 +12,37 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010014A> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-010014>;
+<http://opendata.aragon.es/recurso/iaest/cubo/01-010014A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010014>;
 	rdfs:label "Cubo de datos para 01-010014A"@es ;
 	rdfs:comment "Cubo de datos para 01-010014A"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010014A/ee66c972-5642-3fce-85bd-371ec8e5a868> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010014A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	dc:modify "2016-02-17"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010014A/ee66c972-5642-3fce-85bd-371ec8e5a868> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010014A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	iaest-dimension:estado <http://opendata.aragon.es/kos/iaest/estado/ruinoso> ;
 	iaest-measure:numero-de-edificios 3407 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010014A/4b490429-0736-3e19-aa0c-0b230cb04a56> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010014A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010014A/4b490429-0736-3e19-aa0c-0b230cb04a56> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010014A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	iaest-dimension:estado <http://opendata.aragon.es/kos/iaest/estado/malo> ;
 	iaest-measure:numero-de-edificios 6280 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010014A/309bc32c-0b90-3318-8177-32aa5fa1c6be> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010014A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010014A/309bc32c-0b90-3318-8177-32aa5fa1c6be> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010014A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	iaest-dimension:estado <http://opendata.aragon.es/kos/iaest/estado/deficiente> ;
 	iaest-measure:numero-de-edificios 22989 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010014A/e3b156fb-c399-35cd-803e-eff2191633a6> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010014A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010014A/e3b156fb-c399-35cd-803e-eff2191633a6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010014A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	iaest-dimension:estado <http://opendata.aragon.es/kos/iaest/estado/bueno> ;
 	iaest-measure:numero-de-edificios 239740 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

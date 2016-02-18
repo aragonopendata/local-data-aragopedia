@@ -12,21 +12,21 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/03-030006>;
+<http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030006>;
 	rdfs:label "Cubo de datos para 03-030006TP"@es ;
 	rdfs:comment "Cubo de datos para 03-030006TP"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/4f192052-fdb3-3a63-be92-8933681bf097> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/4f192052-fdb3-3a63-be92-8933681bf097> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1998> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 182470386502947 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 561808936279244 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 255720677217809 ;
@@ -50,11 +50,11 @@
 	iaest-measure:indice-de-potencialidad 106353324177222 ;
 	iaest-measure:personas 101474 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/40a8f599-121d-33d6-a461-6c7fd212785e> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/40a8f599-121d-33d6-a461-6c7fd212785e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1998> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 187924906723296 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 526626259051158 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 285448834225545 ;
@@ -78,11 +78,11 @@
 	iaest-measure:indice-de-potencialidad 108315745040101 ;
 	iaest-measure:personas 67809 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/0293f427-cab5-32db-8a1e-fa8bfe40f29f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/0293f427-cab5-32db-8a1e-fa8bfe40f29f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1998> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 186028813728614 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 59755430517439 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 216416881096995 ;
@@ -106,11 +106,11 @@
 	iaest-measure:indice-de-potencialidad 109087734410467 ;
 	iaest-measure:personas 420494 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/f777e7df-a3ef-30b3-95e1-93e443f64947> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/f777e7df-a3ef-30b3-95e1-93e443f64947> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 177438564452737 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 561425622295446 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 261135813251816 ;
@@ -134,11 +134,11 @@
 	iaest-measure:indice-de-potencialidad 10331650681474 ;
 	iaest-measure:personas 100756 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/5a698399-71e8-313e-8fd4-fb97de5f3cc2> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/5a698399-71e8-313e-8fd4-fb97de5f3cc2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 183395921542812 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 524080252547166 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 292523825910023 ;
@@ -162,11 +162,11 @@
 	iaest-measure:indice-de-potencialidad 104124227750877 ;
 	iaest-measure:personas 66839 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/fc52730e-e85e-3da8-8267-8c889cd14400> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/fc52730e-e85e-3da8-8267-8c889cd14400> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 178796644896313 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 598376834968845 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 222826520134842 ;
@@ -190,11 +190,11 @@
 	iaest-measure:indice-de-potencialidad 107878130883779 ;
 	iaest-measure:personas 426574 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/466b2c7e-046c-3f4a-9939-3978bf86cb6a> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/466b2c7e-046c-3f4a-9939-3978bf86cb6a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 172640253689856 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 564362056140626 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 262997690169518 ;
@@ -218,11 +218,11 @@
 	iaest-measure:indice-de-potencialidad 101887253703613 ;
 	iaest-measure:personas 102172 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/6dcf2bde-0b69-3d36-be11-704f9edda6d1> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/6dcf2bde-0b69-3d36-be11-704f9edda6d1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 179050804315333 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 526482470809347 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 29446672487532 ;
@@ -246,11 +246,11 @@
 	iaest-measure:indice-de-potencialidad 100511304625709 ;
 	iaest-measure:personas 67573 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/08d9ed48-1ab5-3d27-aeba-2ad50b930cdb> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/08d9ed48-1ab5-3d27-aeba-2ad50b930cdb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 175135262563067 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 599065815839529 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 225798921597404 ;
@@ -274,11 +274,11 @@
 	iaest-measure:indice-de-potencialidad 10641303984769 ;
 	iaest-measure:personas 432677 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/2e6d1790-4d45-3241-b306-92bb5c871238> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/2e6d1790-4d45-3241-b306-92bb5c871238> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2001> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 168447523434901 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 56552965811464 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 266022818450459 ;
@@ -302,11 +302,11 @@
 	iaest-measure:indice-de-potencialidad 983413564653734 ;
 	iaest-measure:personas 102198 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/750ac6c0-58e7-3572-a204-7190df0c8f0f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/750ac6c0-58e7-3572-a204-7190df0c8f0f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2001> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 175700351846078 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 525171098145756 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 299128550008165 ;
@@ -330,11 +330,11 @@
 	iaest-measure:indice-de-potencialidad 971101887383507 ;
 	iaest-measure:personas 67359 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/b8b32c0f-ccb4-39ad-9158-1624866deae3> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/b8b32c0f-ccb4-39ad-9158-1624866deae3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2001> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 170219441479982 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 601755623445566 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 228024935074453 ;
@@ -358,11 +358,11 @@
 	iaest-measure:indice-de-potencialidad 105252219707521 ;
 	iaest-measure:personas 436654 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/fa9dcffa-b4e5-3226-be5a-bfe699988019> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/fa9dcffa-b4e5-3226-be5a-bfe699988019> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2002> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 167567724402062 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 566824956236641 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 265607319361297 ;
@@ -386,11 +386,11 @@
 	iaest-measure:indice-de-potencialidad 97873429502094 ;
 	iaest-measure:personas 103397 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/10cf1964-fde3-35ee-b114-c6c35c9739dd> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/10cf1964-fde3-35ee-b114-c6c35c9739dd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2002> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 174150162577594 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 529101389299438 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 296748448122968 ;
@@ -414,11 +414,11 @@
 	iaest-measure:indice-de-potencialidad 948785838565701 ;
 	iaest-measure:personas 67660 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/f6a9d32b-771a-32bd-8ff8-fb706e31ec02> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/f6a9d32b-771a-32bd-8ff8-fb706e31ec02> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2002> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 16923765316315 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 602831173644413 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 227931173192438 ;
@@ -442,11 +442,11 @@
 	iaest-measure:indice-de-potencialidad 103788207642058 ;
 	iaest-measure:personas 442502 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/443af5d5-ea62-3c91-9a0f-cff7ca67c2fa> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/443af5d5-ea62-3c91-9a0f-cff7ca67c2fa> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2003> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 167066063417814 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 568661094283195 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 264272842298992 ;
@@ -470,11 +470,11 @@
 	iaest-measure:indice-de-potencialidad 963736714865666 ;
 	iaest-measure:personas 104324 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/d63cf03f-a841-3577-8308-283f4229fda5> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/d63cf03f-a841-3577-8308-283f4229fda5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2003> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 173591005951944 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 531559997060769 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 294848996987288 ;
@@ -498,11 +498,11 @@
 	iaest-measure:indice-de-potencialidad 929108327192336 ;
 	iaest-measure:personas 68045 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/cd16e202-1bc9-303d-9fd9-3487dd2a8c75> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/cd16e202-1bc9-303d-9fd9-3487dd2a8c75> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2003> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 169390249625149 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 60474491129827 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 225864839076581 ;
@@ -526,11 +526,11 @@
 	iaest-measure:indice-de-potencialidad 102136224516263 ;
 	iaest-measure:personas 447511 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/0d4cfe66-6778-3694-afa0-667a6fa6b39f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/0d4cfe66-6778-3694-afa0-667a6fa6b39f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2004> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 166056794358681 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 573956546598056 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 259986659043263 ;
@@ -554,11 +554,11 @@
 	iaest-measure:indice-de-potencialidad 942905571167313 ;
 	iaest-measure:personas 104940 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/5a6c2c69-52a3-3faa-8800-a93a35f12831> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/5a6c2c69-52a3-3faa-8800-a93a35f12831> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2004> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 172970993261061 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 537371813653677 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 289657193085262 ;
@@ -582,11 +582,11 @@
 	iaest-measure:indice-de-potencialidad 9117859725235 ;
 	iaest-measure:personas 68260 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/98aa3a07-0eff-32f3-9443-3bdb7f573643> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/98aa3a07-0eff-32f3-9443-3bdb7f573643> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2004> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 168946894689469 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 608122763495862 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 222930341814669 ;
@@ -610,11 +610,11 @@
 	iaest-measure:indice-de-potencialidad 100301301946874 ;
 	iaest-measure:personas 455510 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/c9793e2d-ba6f-3467-a86c-ee7a697f669e> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/c9793e2d-ba6f-3467-a86c-ee7a697f669e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2005> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 165498372564744 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 57931977923487 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 255181848200387 ;
@@ -638,11 +638,11 @@
 	iaest-measure:indice-de-potencialidad 929411250491717 ;
 	iaest-measure:personas 105995 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/aefa3208-474e-3f53-8389-924267e7d4d6> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/aefa3208-474e-3f53-8389-924267e7d4d6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2005> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 172498474236392 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 544290737888343 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 283210787875265 ;
@@ -666,11 +666,11 @@
 	iaest-measure:indice-de-potencialidad 885250489784495 ;
 	iaest-measure:personas 68818 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/7fb81f37-fddf-3b88-becf-a6e749193f9f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/7fb81f37-fddf-3b88-becf-a6e749193f9f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2005> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 169449818857046 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 611101011543805 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 219449169599148 ;
@@ -694,11 +694,11 @@
 	iaest-measure:indice-de-potencialidad 989372075843388 ;
 	iaest-measure:personas 462066 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/1c9df2c8-342f-3395-81cd-839a5875d0bf> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/1c9df2c8-342f-3395-81cd-839a5875d0bf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 167404708520179 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 581128550074738 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 251466741405082 ;
@@ -722,11 +722,11 @@
 	iaest-measure:indice-de-potencialidad 911404335532516 ;
 	iaest-measure:personas 107040 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/6448f55f-7fc1-3017-9528-c2a22b613851> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/6448f55f-7fc1-3017-9528-c2a22b613851> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 171816879188317 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 546496649346514 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 281686471465169 ;
@@ -750,11 +750,11 @@
 	iaest-measure:indice-de-potencialidad 876296501175494 ;
 	iaest-measure:personas 69091 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/9ba0f535-9595-3071-b54a-e39c8fa7b95b> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/9ba0f535-9595-3071-b54a-e39c8fa7b95b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 169576548212645 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 610870683328993 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 219552768458362 ;
@@ -778,11 +778,11 @@
 	iaest-measure:indice-de-potencialidad 96541820298855 ;
 	iaest-measure:personas 464681 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/6236be5b-6910-308f-b4aa-03bf61fb466d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/6236be5b-6910-308f-b4aa-03bf61fb466d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2007> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 167771828094221 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 585226904900628 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 247001267005151 ;
@@ -806,11 +806,11 @@
 	iaest-measure:indice-de-potencialidad 903653083607526 ;
 	iaest-measure:personas 108129 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/fc269374-f91d-381d-bb6f-881b197a1028> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/fc269374-f91d-381d-bb6f-881b197a1028> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2007> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 171887538690817 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 552863120486071 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 275249340823111 ;
@@ -834,11 +834,11 @@
 	iaest-measure:indice-de-potencialidad 876584208742799 ;
 	iaest-measure:personas 69784 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/f6cd84dc-7239-3331-b587-4c738aa5ec29> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/f6cd84dc-7239-3331-b587-4c738aa5ec29> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2007> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 170610879583505 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 612405828560285 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 216983291856211 ;
@@ -862,11 +862,11 @@
 	iaest-measure:indice-de-potencialidad 945981005766445 ;
 	iaest-measure:personas 471746 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/b327550a-9573-3e13-8438-f7fb1c0d5084> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/b327550a-9573-3e13-8438-f7fb1c0d5084> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2008> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 169678787659065 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 58845121995432 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 241869992386615 ;
@@ -890,11 +890,11 @@
 	iaest-measure:indice-de-potencialidad 90123253225607 ;
 	iaest-measure:personas 110332 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/2f28674e-a7cd-3621-9037-aee4d0b5cb56> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/2f28674e-a7cd-3621-9037-aee4d0b5cb56> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2008> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 173529703601854 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 557117949735637 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 269352346662509 ;
@@ -918,11 +918,11 @@
 	iaest-measure:indice-de-potencialidad 883234133618672 ;
 	iaest-measure:personas 70547 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/119420f9-ca35-37a5-8bed-26ad5e982f2d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/119420f9-ca35-37a5-8bed-26ad5e982f2d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2008> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 172516174040147 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 613749802755608 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 213734023204246 ;
@@ -946,11 +946,11 @@
 	iaest-measure:indice-de-potencialidad 931857495123477 ;
 	iaest-measure:personas 481636 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/880d3d44-e8c8-3473-8e71-c0f6e0146b3e> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/880d3d44-e8c8-3473-8e71-c0f6e0146b3e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 172366902548779 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 588276867747967 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 239356229703254 ;
@@ -974,11 +974,11 @@
 	iaest-measure:indice-de-potencialidad 88226034308779 ;
 	iaest-measure:personas 111779 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/5c48e444-3bd0-3b40-8736-bd4a001c4817> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/5c48e444-3bd0-3b40-8736-bd4a001c4817> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 174505055056465 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 560562111014109 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 264932833929426 ;
@@ -1002,11 +1002,11 @@
 	iaest-measure:indice-de-potencialidad 879668874172185 ;
 	iaest-measure:personas 71018 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/934ddcc4-22e5-3329-96ec-4207c5e781ad> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/934ddcc4-22e5-3329-96ec-4207c5e781ad> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 173866795402336 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 6127129201382 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 213420284459464 ;
@@ -1030,11 +1030,11 @@
 	iaest-measure:indice-de-potencialidad 910855052748223 ;
 	iaest-measure:personas 488857 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/7089be18-0de1-3ff2-8d77-0fa6974fa259> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/7089be18-0de1-3ff2-8d77-0fa6974fa259> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 173265382624373 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 587110190821299 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 239624426554328 ;
@@ -1058,11 +1058,11 @@
 	iaest-measure:indice-de-potencialidad 855490400835408 ;
 	iaest-measure:personas 112042 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/a7f652a2-36b9-3b51-a8e9-c5f4b4d17a3f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/a7f652a2-36b9-3b51-a8e9-c5f4b4d17a3f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 175000707073564 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 56100630709619 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 263992985830246 ;
@@ -1086,11 +1086,11 @@
 	iaest-measure:indice-de-potencialidad 854391422331061 ;
 	iaest-measure:personas 70714 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/83ab81ef-cc6e-30a2-8d3c-7ac006b59801> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/83ab81ef-cc6e-30a2-8d3c-7ac006b59801> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 175241569991164 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 609910783000314 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 214847647008523 ;
@@ -1114,11 +1114,11 @@
 	iaest-measure:indice-de-potencialidad 876352134010514 ;
 	iaest-measure:personas 491162 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/252d7d4d-3889-3b02-8aef-2fca83ff194f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/252d7d4d-3889-3b02-8aef-2fca83ff194f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 174170880262536 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 585221648519222 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 240607471218242 ;
@@ -1142,11 +1142,11 @@
 	iaest-measure:indice-de-potencialidad 826226226226226 ;
 	iaest-measure:personas 112137 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/63f21a72-3449-3c49-9821-eb6c69b038fa> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/63f21a72-3449-3c49-9821-eb6c69b038fa> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 174577543591269 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 562373404722446 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 263049051686285 ;
@@ -1170,11 +1170,11 @@
 	iaest-measure:indice-de-potencialidad 838664812239221 ;
 	iaest-measure:personas 70599 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/ae49ef55-3f3c-3815-8b24-e093427dd4ec> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/ae49ef55-3f3c-3815-8b24-e093427dd4ec> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 176260636925596 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 606269717289867 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 217469645784537 ;
@@ -1198,11 +1198,11 @@
 	iaest-measure:indice-de-potencialidad 835030172565903 ;
 	iaest-measure:personas 492271 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/9dbfc7eb-90bb-32cd-b3fb-09cc13ce2ea0> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/9dbfc7eb-90bb-32cd-b3fb-09cc13ce2ea0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 17542842359742 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 584565153393936 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 240006423008644 ;
@@ -1226,11 +1226,11 @@
 	iaest-measure:indice-de-potencialidad 790413459249266 ;
 	iaest-measure:personas 112097 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/6ed8a841-8783-3ba2-b309-fcedf0e1363d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/6ed8a841-8783-3ba2-b309-fcedf0e1363d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 175701067615658 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 563274021352313 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 261024911032028 ;
@@ -1254,11 +1254,11 @@
 	iaest-measure:indice-de-potencialidad 830106518389496 ;
 	iaest-measure:personas 70250 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/a020ab04-c37d-3630-a757-3841d5dffce0> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/a020ab04-c37d-3630-a757-3841d5dffce0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 176799495983619 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 604411758766775 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 218788745249605 ;
@@ -1282,11 +1282,11 @@
 	iaest-measure:indice-de-potencialidad 802296251195964 ;
 	iaest-measure:personas 495222 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/1614190b-ea6d-34dc-b8cb-3e78b8787031> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/1614190b-ea6d-34dc-b8cb-3e78b8787031> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 176013913292932 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 583596299350952 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 240389787356116 ;
@@ -1310,11 +1310,11 @@
 	iaest-measure:indice-de-potencialidad 764419819029776 ;
 	iaest-measure:personas 111548 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/d577d4f7-b92c-32f8-90eb-658fb68aede4> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/d577d4f7-b92c-32f8-90eb-658fb68aede4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 175094036236253 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 564059494070692 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 260846469693054 ;
@@ -1338,11 +1338,11 @@
 	iaest-measure:indice-de-potencialidad 809334590517241 ;
 	iaest-measure:personas 69654 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/1df58baf-90ef-30ac-bc1f-6ebb59337f5b> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/1df58baf-90ef-30ac-bc1f-6ebb59337f5b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 176703410147169 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 602607866344329 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 220688723508502 ;
@@ -1366,11 +1366,11 @@
 	iaest-measure:indice-de-potencialidad 766318885954877 ;
 	iaest-measure:personas 495961 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/cf92a17c-59db-3b07-b2b3-d2f80e16aa58> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/cf92a17c-59db-3b07-b2b3-d2f80e16aa58> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2014> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 177844403028748 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 579414598132692 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 24274099883856 ;
@@ -1394,11 +1394,11 @@
 	iaest-measure:indice-de-potencialidad 735217268963299 ;
 	iaest-measure:personas 111069 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/bffffb3c-d02e-3148-95b8-c170129138c4> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/bffffb3c-d02e-3148-95b8-c170129138c4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2014> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 173849323814499 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 564542341401126 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 261608334784375 ;
@@ -1422,11 +1422,11 @@
 	iaest-measure:indice-de-potencialidad 799464690137945 ;
 	iaest-measure:personas 68916 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/c3cbe5b6-fd3f-32f0-9729-5928992c33d9> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/c3cbe5b6-fd3f-32f0-9729-5928992c33d9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2014> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 176774439230524 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 596225503443645 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 227000057325832 ;
@@ -1450,11 +1450,11 @@
 	iaest-measure:indice-de-potencialidad 721096429379711 ;
 	iaest-measure:personas 488436 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/a6078de1-df92-3ea7-bb4d-333eb4196cec> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/a6078de1-df92-3ea7-bb4d-333eb4196cec> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1998> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 193321978151063 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 59285798191002 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 213820039938917 ;
@@ -1475,11 +1475,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 828639240506329 ;
 	iaest-measure:personas 102156 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/348056db-50b8-3b4b-be20-58ccd50c79c5> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/348056db-50b8-3b4b-be20-58ccd50c79c5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1998> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 193170448778366 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 566359747698108 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 240469803523526 ;
@@ -1500,11 +1500,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 740133037694013 ;
 	iaest-measure:personas 68965 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/51c64347-e15c-3e4e-b20a-d13e22dbf738> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/51c64347-e15c-3e4e-b20a-d13e22dbf738> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1998> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 204434628534352 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 630338648898206 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 165226722567443 ;
@@ -1525,11 +1525,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 985532177671916 ;
 	iaest-measure:personas 400710 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/ea80ed15-4858-3322-b45b-975f85b10894> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/ea80ed15-4858-3322-b45b-975f85b10894> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 18893927444795 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 594114747634069 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 216945977917981 ;
@@ -1550,11 +1550,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 837984102824285 ;
 	iaest-measure:personas 101440 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/bc1c54f9-c34c-3478-92df-b276ff32246e> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/bc1c54f9-c34c-3478-92df-b276ff32246e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 189078719087247 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 564589643308731 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 246331637604023 ;
@@ -1575,11 +1575,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 798600699650175 ;
 	iaest-measure:personas 68014 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/46d22645-fd46-3d36-a674-aa404d41ae72> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/46d22645-fd46-3d36-a674-aa404d41ae72> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 196872261012576 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 632547295234531 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 170580443752893 ;
@@ -1600,11 +1600,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 99595649749024 ;
 	iaest-measure:personas 406172 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/b1e71b17-490c-3aec-8ff7-a4cc4a35b886> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/b1e71b17-490c-3aec-8ff7-a4cc4a35b886> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 18275932262536 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 5983831412425 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 21885753613214 ;
@@ -1625,11 +1625,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 890772128060264 ;
 	iaest-measure:personas 103163 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/d9a226ec-03f5-331e-8512-20add981f2b7> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/d9a226ec-03f5-331e-8512-20add981f2b7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 183526850507983 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 568766328011611 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 247706821480406 ;
@@ -1650,11 +1650,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 865558060879369 ;
 	iaest-measure:personas 68900 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/0e32349c-5c13-3568-a3fe-5e513e43e411> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/0e32349c-5c13-3568-a3fe-5e513e43e411> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 193542915574251 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 633874008345166 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 172583076080583 ;
@@ -1675,11 +1675,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 101892979579669 ;
 	iaest-measure:personas 412694 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/5f4fd022-6b9b-3dd8-afa6-b27da0b3dedc> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/5f4fd022-6b9b-3dd8-afa6-b27da0b3dedc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2001> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 177683239759989 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 601898477744979 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 220418282495032 ;
@@ -1700,11 +1700,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 913419043792688 ;
 	iaest-measure:personas 103662 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/a14a286f-8853-317d-ae1d-0f986a20d121> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/a14a286f-8853-317d-ae1d-0f986a20d121> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2001> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 179501698754247 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 570810465487702 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 249687835758051 ;
@@ -1725,11 +1725,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 856641310708016 ;
 	iaest-measure:personas 68874 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/968133bc-0814-3814-bbd8-f2ac05268224> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/968133bc-0814-3814-bbd8-f2ac05268224> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2001> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 187282657953109 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 639795358599471 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 172921983447421 ;
@@ -1750,11 +1750,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 968719308583775 ;
 	iaest-measure:personas 419270 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/be874cfb-9129-3f59-aa3a-5d8be6b2bd64> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/be874cfb-9129-3f59-aa3a-5d8be6b2bd64> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2002> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 17471534395544 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 60808404221056 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 217200613834 ;
@@ -1775,11 +1775,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 957791515668301 ;
 	iaest-measure:personas 105566 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/e514d54b-7137-3ac5-9e25-a88ea902663b> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/e514d54b-7137-3ac5-9e25-a88ea902663b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2002> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 176630980741081 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 577337045434976 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 246031973823943 ;
@@ -1800,11 +1800,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 906082571698708 ;
 	iaest-measure:personas 69682 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/c143fe85-9c9a-3743-b317-62afd9e70d13> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/c143fe85-9c9a-3743-b317-62afd9e70d13> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2002> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 184861277942853 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 643284466267207 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 17185425578994 ;
@@ -1825,11 +1825,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 972531927832962 ;
 	iaest-measure:personas 427077 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/aba3c6b2-a94e-3981-aca3-7b8f20a6d26d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/aba3c6b2-a94e-3981-aca3-7b8f20a6d26d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2003> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 172650100035527 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 613404760569174 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 213945139395299 ;
@@ -1850,11 +1850,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 974097852557007 ;
 	iaest-measure:personas 106962 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/9f6e3821-1a82-3466-ac38-83d78d546c03> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/9f6e3821-1a82-3466-ac38-83d78d546c03> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2003> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 175139083535058 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 583471355162016 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 241389561302926 ;
@@ -1875,11 +1875,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 948201913559881 ;
 	iaest-measure:personas 70641 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/abdcc524-85fb-3d8c-a5fb-adc21dd767ea> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/abdcc524-85fb-3d8c-a5fb-adc21dd767ea> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2003> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 184775096103392 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 644598908478134 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 170625995418475 ;
@@ -1900,11 +1900,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 91790641724358 ;
 	iaest-measure:personas 432607 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/b29058c9-197d-35c8-862f-609baa2f7696> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/b29058c9-197d-35c8-862f-609baa2f7696> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2004> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 17116366095164 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 618565963635016 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 210270375413344 ;
@@ -1925,11 +1925,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 888446215139442 ;
 	iaest-measure:personas 107961 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/74ece9b3-751a-3fa3-b41f-ec8b305639c1> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/74ece9b3-751a-3fa3-b41f-ec8b305639c1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2004> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 173807212302844 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 589464353551982 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 236728434145175 ;
@@ -1950,11 +1950,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 923707440100883 ;
 	iaest-measure:personas 71073 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/702ae19a-d517-386b-bf80-e9261c9cc02e> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/702ae19a-d517-386b-bf80-e9261c9cc02e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2004> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 183953467318486 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 648773311606011 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 167273221075502 ;
@@ -1975,11 +1975,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 844910923905538 ;
 	iaest-measure:personas 441840 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/6332d5bb-8986-3a53-9bbc-8fbafc59986c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/6332d5bb-8986-3a53-9bbc-8fbafc59986c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2005> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 170939937562006 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 625745205654006 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 203314856783988 ;
@@ -2000,11 +2000,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 811008468052348 ;
 	iaest-measure:personas 109869 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/1154e3ec-66dc-38f8-9e53-219d3aed5486> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/1154e3ec-66dc-38f8-9e53-219d3aed5486> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2005> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 173674816321448 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 598010321973628 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 228314861704924 ;
@@ -2025,11 +2025,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 85579128440367 ;
 	iaest-measure:personas 72273 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/aaeb5cd7-3966-32af-a058-23efb34646a9> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/aaeb5cd7-3966-32af-a058-23efb34646a9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2005> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 182659786758399 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 653795727168082 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 163544486073519 ;
@@ -2050,11 +2050,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 772988505747126 ;
 	iaest-measure:personas 450006 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/c4bb2446-f7b7-368a-8fe6-81e851335ee4> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/c4bb2446-f7b7-368a-8fe6-81e851335ee4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 172098429489201 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 628321454637197 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 199580115873602 ;
@@ -2075,11 +2075,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 765792390099741 ;
 	iaest-measure:personas 110983 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/1fab9d71-c6a1-3005-9610-6579f45910f3> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/1fab9d71-c6a1-3005-9610-6579f45910f3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 171933378039935 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 602622179036253 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 225444442923812 ;
@@ -2100,11 +2100,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 870354111793971 ;
 	iaest-measure:personas 73069 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/3847732d-d75d-3630-8059-62d1ab86fb89> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/3847732d-d75d-3630-8059-62d1ab86fb89> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 183125758108027 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 652292165167574 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 164582076724399 ;
@@ -2125,11 +2125,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 753782435973291 ;
 	iaest-measure:personas 452607 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/a37d3e28-05aa-33d4-a5b0-f7f92570b0e3> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/a37d3e28-05aa-33d4-a5b0-f7f92570b0e3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2007> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 173069710121631 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 630873921663184 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 196056368215185 ;
@@ -2150,11 +2150,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 722465417615129 ;
 	iaest-measure:personas 111978 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/290c3d6c-aa83-3867-8a33-4051144ad457> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/290c3d6c-aa83-3867-8a33-4051144ad457> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2007> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 171999138186421 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 609679243758584 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 218321618054994 ;
@@ -2175,11 +2175,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 845808802915615 ;
 	iaest-measure:personas 74262 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/8ac8c32c-5107-3859-924e-81c0cac44857> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/8ac8c32c-5107-3859-924e-81c0cac44857> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2007> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 183841339016746 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 653445641510908 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 162713019472345 ;
@@ -2200,11 +2200,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 730002864039933 ;
 	iaest-measure:personas 460756 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/b4df03e7-e93b-336e-b6c0-481f7b4d4b43> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/b4df03e7-e93b-336e-b6c0-481f7b4d4b43> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2008> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 17505807428288 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 634727986149175 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 190213939567945 ;
@@ -2225,11 +2225,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 717151454363089 ;
 	iaest-measure:personas 114939 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/4c358913-6e38-3236-997d-97225c0fa14d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/4c358913-6e38-3236-997d-97225c0fa14d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2008> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 172123467542922 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 617245338295261 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 210631194161817 ;
@@ -2250,11 +2250,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 817786238781615 ;
 	iaest-measure:personas 75777 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/4f8b3791-bc61-3591-be09-a0f25a160c15> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/4f8b3791-bc61-3591-be09-a0f25a160c15> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2008> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 185251020188437 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 655114030995151 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 159634948816413 ;
@@ -2275,11 +2275,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 731292380532039 ;
 	iaest-measure:personas 473687 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/b96a7b39-28e1-3ee4-af27-e0583b1946be> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/b96a7b39-28e1-3ee4-af27-e0583b1946be> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 175666638086256 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 636542913487096 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 187790448426648 ;
@@ -2300,11 +2300,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 69888961463096 ;
 	iaest-measure:personas 116630 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/955748d9-4a48-372c-9bba-75ea0fe14ce7> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/955748d9-4a48-372c-9bba-75ea0fe14ce7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 172302694994256 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 618990400485918 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 208706904519826 ;
@@ -2325,11 +2325,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 772824345969034 ;
 	iaest-measure:personas 75733 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/994b4deb-e8f6-31cf-b511-7c2818259e3d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/994b4deb-e8f6-31cf-b511-7c2818259e3d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 187219600545013 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 654095078262603 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 158685321192383 ;
@@ -2350,11 +2350,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 71110937133015 ;
 	iaest-measure:personas 481456 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/72c68a9c-675c-3ea6-a3fc-d5374266e894> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/72c68a9c-675c-3ea6-a3fc-d5374266e894> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 177130891490165 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 635371253990594 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 187497854519241 ;
@@ -2375,11 +2375,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 671570195075152 ;
 	iaest-measure:personas 116524 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/35e3dbb3-df1d-37dd-94f9-0e387fba29aa> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/35e3dbb3-df1d-37dd-94f9-0e387fba29aa> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 175301422957767 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 614165202580368 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 210533374461864 ;
@@ -2400,11 +2400,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 769128938310829 ;
 	iaest-measure:personas 74563 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/b6a2aaae-56b0-399c-ae48-97a1a762fefc> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/b6a2aaae-56b0-399c-ae48-97a1a762fefc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 189242672530026 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 650013482959613 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 160743844510361 ;
@@ -2425,11 +2425,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 690180236171535 ;
 	iaest-measure:personas 482090 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/9d49012a-d9c6-3fa5-93e7-db657304a36a> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/9d49012a-d9c6-3fa5-93e7-db657304a36a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 178293639867841 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 633173871145374 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 188532488986784 ;
@@ -2450,11 +2450,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 66967823743858 ;
 	iaest-measure:personas 116224 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/87b0abab-9b1c-3bae-81c0-b46ccd7dfb97> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/87b0abab-9b1c-3bae-81c0-b46ccd7dfb97> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 175953950924224 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 613947140849638 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 210098908226138 ;
@@ -2475,11 +2475,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 755743332453129 ;
 	iaest-measure:personas 74008 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/64e4f3f3-759e-31be-980a-f602343b055d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/64e4f3f3-759e-31be-980a-f602343b055d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 190868384838293 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 645445209893276 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 163686405268431 ;
@@ -2500,11 +2500,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 680808002179582 ;
 	iaest-measure:personas 481054 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/743d9f29-79ff-3d43-9a5d-2b91ecb8bd70> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/743d9f29-79ff-3d43-9a5d-2b91ecb8bd70> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 17915887526837 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 630609806773322 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 190231317958307 ;
@@ -2525,11 +2525,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 675710386899984 ;
 	iaest-measure:personas 115512 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/87af3141-39bd-32a6-be2b-6d64c1be66a6> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/87af3141-39bd-32a6-be2b-6d64c1be66a6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 176025477013528 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 615789760200332 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 20818476278614 ;
@@ -2550,11 +2550,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 722728456131216 ;
 	iaest-measure:personas 73478 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/510e8521-0958-328a-8beb-550ad20663dc> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/510e8521-0958-328a-8beb-550ad20663dc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 192235374025694 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 642584094692985 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 165180531281321 ;
@@ -2575,11 +2575,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 674356389578164 ;
 	iaest-measure:personas 482908 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/f1b37a74-37f5-35ef-83d7-4885c7bf61f3> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/f1b37a74-37f5-35ef-83d7-4885c7bf61f3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 180386997848076 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 62818759202307 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 191425410128854 ;
@@ -2600,11 +2600,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 656799113503245 ;
 	iaest-measure:personas 114781 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/dd46df0a-99f1-30da-8a46-8ab7cf76816c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/dd46df0a-99f1-30da-8a46-8ab7cf76816c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 175860690206676 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 61536764604503 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 208771663748294 ;
@@ -2625,11 +2625,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 692603020220118 ;
 	iaest-measure:personas 72529 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/5ca93e30-26c7-36af-954d-ab548bf78bb0> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/5ca93e30-26c7-36af-954d-ab548bf78bb0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 192706509736325 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 639730088651417 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 167563401612258 ;
@@ -2650,11 +2650,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 659832779750315 ;
 	iaest-measure:personas 482677 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/c057819a-87da-33dc-82b3-9c574d223bfc> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/c057819a-87da-33dc-82b3-9c574d223bfc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2014> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre huesca ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 181447645818693 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 624183063949403 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 194369290231904 ;
@@ -2675,11 +2675,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 642410993129294 ;
 	iaest-measure:personas 113840 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/d43c1d78-fb64-3a93-b45e-68ca0854ed54> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/d43c1d78-fb64-3a93-b45e-68ca0854ed54> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2014> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre teruel ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 175845708127476 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 612408851068594 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 21174544080393 ;
@@ -2700,11 +2700,11 @@
 	iaest-measure:indice-reemplazamiento-edad-activa-total 652871833458741 ;
 	iaest-measure:personas 71449 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006TP/db8ea92d-c4d7-35d2-b4a6-6a03ff6930ba> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006TP/db8ea92d-c4d7-35d2-b4a6-6a03ff6930ba> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2014> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-provincia-nombre zaragoza ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 194773943923252 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 631364816876027 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 173861239200721 ;

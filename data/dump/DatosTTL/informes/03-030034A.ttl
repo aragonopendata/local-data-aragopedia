@@ -12,85 +12,85 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030034A> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/03-030034>;
+<http://opendata.aragon.es/recurso/iaest/cubo/03-030034A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030034>;
 	rdfs:label "Cubo de datos para 03-030034A"@es ;
 	rdfs:comment "Cubo de datos para 03-030034A"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030034A/d8ab11f9-b32e-3174-8b64-178df208a022> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030034A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:tipo-estudios <http://opendata.aragon.es/kos/iaest/tipo-estudios/derecho> ;
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030034A/d8ab11f9-b32e-3174-8b64-178df208a022> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030034A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:tipo-estudios derecho ;
 	iaest-measure:personas-residentes-viviendas-familiares 13321 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030034A/b0bbccd1-6b43-3e74-b8da-c73a3bff0b58> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030034A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:tipo-estudios <http://opendata.aragon.es/kos/iaest/tipo-estudios/magisterio-educacion-infantil> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030034A/b0bbccd1-6b43-3e74-b8da-c73a3bff0b58> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030034A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:tipo-estudios magisterio-educacion-infantil ;
 	iaest-measure:personas-residentes-viviendas-familiares 22353 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030034A/cb015b2e-774c-3f5a-8627-4a269d5e0a67> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030034A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:tipo-estudios <http://opendata.aragon.es/kos/iaest/tipo-estudios/ciencias-sociales> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030034A/cb015b2e-774c-3f5a-8627-4a269d5e0a67> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030034A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:tipo-estudios ciencias-sociales ;
 	iaest-measure:personas-residentes-viviendas-familiares 39371 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030034A/c4354230-4f60-3405-83b2-21bf8ee94bb5> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030034A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:tipo-estudios <http://opendata.aragon.es/kos/iaest/tipo-estudios/artes-y-humanidades> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030034A/c4354230-4f60-3405-83b2-21bf8ee94bb5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030034A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:tipo-estudios artes-y-humanidades ;
 	iaest-measure:personas-residentes-viviendas-familiares 15990 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030034A/8febc71a-57f3-3c72-9416-45a507a4e0c7> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030034A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:tipo-estudios <http://opendata.aragon.es/kos/iaest/tipo-estudios/informatica> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030034A/8febc71a-57f3-3c72-9416-45a507a4e0c7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030034A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:tipo-estudios informatica ;
 	iaest-measure:personas-residentes-viviendas-familiares 6544 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030034A/1f80aab0-8152-31be-a795-6c06928f4cd8> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030034A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:tipo-estudios <http://opendata.aragon.es/kos/iaest/tipo-estudios/ingenierias> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030034A/1f80aab0-8152-31be-a795-6c06928f4cd8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030034A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:tipo-estudios ingenierias ;
 	iaest-measure:personas-residentes-viviendas-familiares 14805 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030034A/a7c07950-217e-3ff3-8bfd-bc7ced11bcc6> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030034A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:tipo-estudios <http://opendata.aragon.es/kos/iaest/tipo-estudios/formacion-tecnica-e-industrial> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030034A/a7c07950-217e-3ff3-8bfd-bc7ced11bcc6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030034A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:tipo-estudios formacion-tecnica-e-industrial ;
 	iaest-measure:personas-residentes-viviendas-familiares 44433 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030034A/e36c87b8-cf12-3f7e-870c-7c3d298aedbd> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030034A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:tipo-estudios <http://opendata.aragon.es/kos/iaest/tipo-estudios/ciencias> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030034A/e36c87b8-cf12-3f7e-870c-7c3d298aedbd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030034A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:tipo-estudios ciencias ;
 	iaest-measure:personas-residentes-viviendas-familiares 9033 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030034A/bb6aeee7-2b58-3065-a8fd-c9c5089dff7e> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030034A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:tipo-estudios <http://opendata.aragon.es/kos/iaest/tipo-estudios/arquitectura-o-construccion> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030034A/bb6aeee7-2b58-3065-a8fd-c9c5089dff7e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030034A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:tipo-estudios arquitectura-o-construccion ;
 	iaest-measure:personas-residentes-viviendas-familiares 3146 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030034A/f59be885-b843-3670-bfc5-d77ff27d756d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030034A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:tipo-estudios <http://opendata.aragon.es/kos/iaest/tipo-estudios/agricultura-veterinaria> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030034A/f59be885-b843-3670-bfc5-d77ff27d756d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030034A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:tipo-estudios agricultura-veterinaria ;
 	iaest-measure:personas-residentes-viviendas-familiares 5689 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030034A/f991e749-1e05-32d6-8dca-ce3d3093c4f3> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030034A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:tipo-estudios <http://opendata.aragon.es/kos/iaest/tipo-estudios/salud-servicios-sociales> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030034A/f991e749-1e05-32d6-8dca-ce3d3093c4f3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030034A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:tipo-estudios salud-servicios-sociales ;
 	iaest-measure:personas-residentes-viviendas-familiares 29208 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030034A/5dd175f3-8feb-384b-a61e-6a8f1c6b4546> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030034A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:tipo-estudios <http://opendata.aragon.es/kos/iaest/tipo-estudios/otros-servicios> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030034A/5dd175f3-8feb-384b-a61e-6a8f1c6b4546> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030034A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:tipo-estudios otros-servicios ;
 	iaest-measure:personas-residentes-viviendas-familiares 12407 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

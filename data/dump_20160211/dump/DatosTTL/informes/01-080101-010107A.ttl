@@ -1,0 +1,50 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010107A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010107>;
+	rdfs:label "Cubo de datos para 01-080101-010107A"@es ;
+	rdfs:comment "Cubo de datos para 01-080101-010107A"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010107A/0b7b24f8-d320-35c1-9b21-430f805598a4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010107>; 
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/menos-de-25-anos/176> ;
+	iaest-measure:de-25-a-34-anos 2342 ;
+	iaest-measure:de-35-a-44-anos 6608 ;
+	iaest-measure:de-45-a-54-anos 10303 ;
+	iaest-measure:de-55-a-64-anos 12342 ;
+	iaest-measure:de-65-anos-o-mas 16166 ;
+	iaest-measure:jornadas 5242302 ;
+	iaest-measure:0-del-tiempo-anual-trabajado-por-una-persona-a-tiempo-completo 2880 ;
+	iaest-measure:0-a-25-del-tiempo-anual-trabajado-por-una-persona-a-tiempo-completo 23349 ;
+	iaest-measure:25-a-50-del-tiempo-anual-trabajado-por-una-persona-a-tiempo-completo 5677 ;
+	iaest-measure:50-al-75-del-tiempo-anual-trabajado-por-una-persona-a-tiempo-completo 2478 ;
+	iaest-measure:75-a-100-del-tiempo-anual-trabajado-por-una-persona-a-tiempo-completo 2804 ;
+	iaest-measure:100-del-tiempo-anual-trabajado-por-una-persona-a-tiempo-completo 10749 ;
+	iaest-measure:el-titular-ha-realizado-trabajos-agricolas-o-ganaderos-para-la-explotacion 45376 ;
+	iaest-measure:el-titular-no-ha-realizado-trabajos-agricolas-o-ganaderos-para-la-explotacion 2561 ;
+	iaest-measure:no-consta-si-el-titular-ha-realizado-actividades-complementarias 45376 ;
+	iaest-dimension:el-titular-no-ha-realizado-actividades-complementarias <http://opendata.aragon.es/kos/iaest/el-titular-no-ha-realizado-actividades-complementarias/1981> ;
+	iaest-dimension:el-titular-ha-realizado-actividades-complementarias-como-actividad-principal <http://opendata.aragon.es/kos/iaest/el-titular-ha-realizado-actividades-complementarias-como-actividad-principal/218> ;
+	iaest-dimension:el-titular-ha-realizado-actividades-complementarias-como-actividad-secundaria <http://opendata.aragon.es/kos/iaest/el-titular-ha-realizado-actividades-complementarias-como-actividad-secundaria/362> ;
+	iaest-measure:no-consta-si-la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion 47357 ;
+	iaest-dimension:la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion <http://opendata.aragon.es/kos/iaest/la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion/20> ;
+	iaest-dimension:la-otra-actividad-del-titular-no-esta-relacionada-con-la-explotacion <http://opendata.aragon.es/kos/iaest/la-otra-actividad-del-titular-no-esta-relacionada-con-la-explotacion/560> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

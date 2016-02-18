@@ -1,0 +1,934 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-010076A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>;
+	rdfs:label "Cubo de datos para 01-010076A"@es ;
+	rdfs:comment "Cubo de datos para 01-010076A"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/ed0a7f1a-e6b8-378e-93dd-8e69d342a3c9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/agricultura-ganaderia-silvicultura-y-pesca-cnae-01-02-03> ;
+	iaest-measure:numero-de-actividades 7649 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/95bbddb3-01ae-35d1-8deb-b93ea0ca2bfd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industrias-extractivas-cnae-05-06-07-08-09> ;
+	iaest-measure:numero-de-actividades 407 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/9478ec43-5e04-3e4d-a9e1-a27f78aa5fb5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industria-de-la-alimentacion-bebidas-y-tabaco-cnae-10-11-12> ;
+	iaest-measure:numero-de-actividades 1762 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/94b91a77-af55-3d07-a5e2-f259b37a73b0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industria-textil-confeccion-de-prendas-de-vestir-cuero-y-calzado-cnae-13-14-15> ;
+	iaest-measure:numero-de-actividades 961 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/db163f20-c126-335a-94f1-17c8c1694c12> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industria-de-la-madera-y-corcho-papel-y-artes-graficas-cnae-16-17-18> ;
+	iaest-measure:numero-de-actividades 1343 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/357e5d71-d9f5-3426-bfb8-3cce88cb5fe8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/coquerias-y-refino-de-petroleo-industria-quimica-productos-farmaceuticos-cnae-19-20-21> ;
+	iaest-measure:numero-de-actividades 245 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/1e47ac45-4050-3613-891f-05729bd02d31> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-productos-de-caucho-y-plastico-y-de-otros-minerales-no-metalicos-cnae-22-23> ;
+	iaest-measure:numero-de-actividades 834 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/eb7a9fc2-3ce5-308e-995a-b41fc89b7867> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/metalurgia-y-fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo-cnae-24-25> ;
+	iaest-measure:numero-de-actividades 2573 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/ff651d2c-076e-3309-b86a-228dc7938e00> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-productos-informaticos-electronicos-y-opticos-material-y-equipo-electrico-maquinaria-y-equipo-cnae-26-27-28> ;
+	iaest-measure:numero-de-actividades 1012 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/79b55290-2ab4-3ebf-ab79-ab2f9f4395eb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-material-de-transporte-cnae-29-30> ;
+	iaest-measure:numero-de-actividades 296 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/65eab690-e4cf-37ad-92bc-d93c40f94b01> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-muebles-otras-industrias-manufactureras-y-reparacion-e-instalacion-de-maquinaria-y-equipo-cnae-31-32-33> ;
+	iaest-measure:numero-de-actividades 1649 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/9c024588-d908-3a90-a04b-2d33f3127b25> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/suministro-de-energia-electrica-gas-vapor-y-aire-acondicionado-cnae-35> ;
+	iaest-measure:numero-de-actividades 1708 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/54533c88-a4e8-3e06-9ee2-21a51a606995> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/suministro-de-agua-actividades-de-saneamiento-gestion-de-residuos-y-descontaminacion-cnae-36-37-38-39> ;
+	iaest-measure:numero-de-actividades 441 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/bb9edc6e-1ccc-3376-bfbb-fb37c627b55f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/construccion> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/construccion-cnae-41-42-43> ;
+	iaest-measure:numero-de-actividades 29299 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/0c54258a-a578-3c05-a435-07761c3d56de> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/comercio-al-por-mayor-y-al-por-menor-reparacion-de-vehiculos-de-motor-y-motocicletas-cnae-45-46-47> ;
+	iaest-measure:numero-de-actividades 37907 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/61dbe785-e08e-3478-bbb8-1d437c2785be> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/transporte-y-almacenamiento-cnae-49-50-51-52-53> ;
+	iaest-measure:numero-de-actividades 9048 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/b96d6270-5666-345a-86e2-2e9ef8e42752> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/hosteleria-cnae-55-56> ;
+	iaest-measure:numero-de-actividades 13668 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/6efe8dce-b5c3-3cf3-ae4c-542cc077d7e6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/informacion-y-comunicaciones-cnae-58-59-60-61-62-63> ;
+	iaest-measure:numero-de-actividades 2089 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/773d2fe5-f5c9-3fe3-8dfb-2374d514a26f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-financieras-y-de-seguros-cnae-64-65-66> ;
+	iaest-measure:numero-de-actividades 4695 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/74033ff3-7eb0-36b3-a350-432a2fac4998> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-inmobiliarias-cnae-68> ;
+	iaest-measure:numero-de-actividades 13743 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/b45be3ed-8b36-3cdc-8f3b-f17e8d0d1af7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-profesionales-cientificas-y-tecnicas-cnae-69-70-71-72-73-74-75> ;
+	iaest-measure:numero-de-actividades 14429 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/2f878a99-aa8a-382b-8e4a-06b00c443ad6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-administrativas-y-servicios-auxliares-cnae-77-78-79-80-81-82> ;
+	iaest-measure:numero-de-actividades 7316 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/3857d133-1960-3e17-a73c-4ac1d67d71c1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/educacion-cnae-85> ;
+	iaest-measure:numero-de-actividades 3385 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/e6217fff-3ea8-3d4c-adaf-07b0e47a984b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-sanitarias-y-de-servicios-sociales-cnae-86-87-88> ;
+	iaest-measure:numero-de-actividades 4016 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/a72ad543-eb7c-38f4-8425-3e0b88639ce8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-artisticas-recreativas-y-de-entretenimiento-cnae-90-91-92-93> ;
+	iaest-measure:numero-de-actividades 3269 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/f2149943-cbb1-3805-ba53-709fb70d781e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/otros-servicios-cnae-94-95-96> ;
+	iaest-measure:numero-de-actividades 6588 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/83b68fae-9fd2-31ad-aa44-b1b7216449bb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/agricultura-ganaderia-silvicultura-y-pesca-cnae-01-02-03> ;
+	iaest-measure:numero-de-actividades 7225 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/fb2811a5-6c74-3cc6-b89b-0514b8efe6ba> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industrias-extractivas-cnae-05-06-07-08-09> ;
+	iaest-measure:numero-de-actividades 395 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/873a5694-cbbb-3dd7-a487-eaee1c7f5f30> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industria-de-la-alimentacion-bebidas-y-tabaco-cnae-10-11-12> ;
+	iaest-measure:numero-de-actividades 1765 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/40a902da-c82d-3677-8b6a-286b821a16b8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industria-textil-confeccion-de-prendas-de-vestir-cuero-y-calzado-cnae-13-14-15> ;
+	iaest-measure:numero-de-actividades 883 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/35515342-c71b-3f71-ba78-b6dafbe9404d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industria-de-la-madera-y-corcho-papel-y-artes-graficas-cnae-16-17-18> ;
+	iaest-measure:numero-de-actividades 1327 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/c30bcfd2-7c05-3344-abb0-63733acd3df8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/coquerias-y-refino-de-petroleo-industria-quimica-productos-farmaceuticos-cnae-19-20-21> ;
+	iaest-measure:numero-de-actividades 258 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/7bb74d39-4072-3859-a5db-97cbbe4177a5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-productos-de-caucho-y-plastico-y-de-otros-minerales-no-metalicos-cnae-22-23> ;
+	iaest-measure:numero-de-actividades 825 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/c32e8b45-30f4-3a66-9786-10f4bf3ea680> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/metalurgia-y-fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo-cnae-24-25> ;
+	iaest-measure:numero-de-actividades 2466 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/1d23e70d-e9e4-3f40-9097-a318ba4bf471> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-productos-informaticos-electronicos-y-opticos-material-y-equipo-electrico-maquinaria-y-equipo-cnae-26-27-28> ;
+	iaest-measure:numero-de-actividades 982 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/74e2e6a3-7b60-3279-80e1-efb2a213d742> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-material-de-transporte-cnae-29-30> ;
+	iaest-measure:numero-de-actividades 299 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/3408e324-bdcb-30d7-bc61-92845e601c57> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-muebles-otras-industrias-manufactureras-y-reparacion-e-instalacion-de-maquinaria-y-equipo-cnae-31-32-33> ;
+	iaest-measure:numero-de-actividades 1596 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/7c347009-7253-310e-803f-564ebcf616c1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/suministro-de-energia-electrica-gas-vapor-y-aire-acondicionado-cnae-35> ;
+	iaest-measure:numero-de-actividades 1897 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/95caab56-53cb-3f13-9264-702ad1546c38> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/suministro-de-agua-actividades-de-saneamiento-gestion-de-residuos-y-descontaminacion-cnae-36-37-38-39> ;
+	iaest-measure:numero-de-actividades 430 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/81fb2c74-3ef0-331e-8e51-b0b0b6b1d80c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/construccion> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/construccion-cnae-41-42-43> ;
+	iaest-measure:numero-de-actividades 25931 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/62d27509-f276-3087-8367-201c510db958> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/comercio-al-por-mayor-y-al-por-menor-reparacion-de-vehiculos-de-motor-y-motocicletas-cnae-45-46-47> ;
+	iaest-measure:numero-de-actividades 42611 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/ef3a21cf-15bc-3b63-b141-c2a2336145d2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/transporte-y-almacenamiento-cnae-49-50-51-52-53> ;
+	iaest-measure:numero-de-actividades 8711 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/80d3fad3-aaa5-3666-b2ab-d39b1b79b262> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/hosteleria-cnae-55-56> ;
+	iaest-measure:numero-de-actividades 13585 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/a66be1f3-c16a-37e2-87c1-aec6644a14c3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/informacion-y-comunicaciones-cnae-58-59-60-61-62-63> ;
+	iaest-measure:numero-de-actividades 2170 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/541675da-5ffe-3426-9c0e-406d5b98f566> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-financieras-y-de-seguros-cnae-64-65-66> ;
+	iaest-measure:numero-de-actividades 3601 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/6f9f032e-8993-3fc9-b333-67e83d03bd76> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-inmobiliarias-cnae-68> ;
+	iaest-measure:numero-de-actividades 14290 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/016b8af0-b45f-39c9-b887-cc4be8d15e54> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-profesionales-cientificas-y-tecnicas-cnae-69-70-71-72-73-74-75> ;
+	iaest-measure:numero-de-actividades 13874 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/1b882dd1-c3dd-378b-9580-db39f38259e4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-administrativas-y-servicios-auxliares-cnae-77-78-79-80-81-82> ;
+	iaest-measure:numero-de-actividades 7143 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/a7615734-1a67-3a9b-a211-3ce61ecee63f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/educacion-cnae-85> ;
+	iaest-measure:numero-de-actividades 3137 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/b42ee5e2-6285-3c86-a2b1-ab3d49365bac> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-sanitarias-y-de-servicios-sociales-cnae-86-87-88> ;
+	iaest-measure:numero-de-actividades 2918 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/06fd25d8-c45b-38f4-aa53-b6bd35727255> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-artisticas-recreativas-y-de-entretenimiento-cnae-90-91-92-93> ;
+	iaest-measure:numero-de-actividades 3184 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/999e22c8-da33-3f10-beca-a3bac80d5b0e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/otros-servicios-cnae-94-95-96> ;
+	iaest-measure:numero-de-actividades 6521 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/fd9c998e-7028-3572-8f39-6f73ecf46b28> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/agricultura-ganaderia-silvicultura-y-pesca-cnae-01-02-03> ;
+	iaest-measure:numero-de-actividades 7887 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/c7754027-67c5-3f69-8526-7883f001c8ba> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industrias-extractivas-cnae-05-06-07-08-09> ;
+	iaest-measure:numero-de-actividades 396 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/4d61b3b8-6c1e-3916-b271-3cf000a37fad> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industria-de-la-alimentacion-bebidas-y-tabaco-cnae-10-11-12> ;
+	iaest-measure:numero-de-actividades 1822 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/fe3bcc64-288f-3948-b859-32765d4556a8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industria-textil-confeccion-de-prendas-de-vestir-cuero-y-calzado-cnae-13-14-15> ;
+	iaest-measure:numero-de-actividades 967 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/063a8ec8-2ed9-3394-b3a9-77720923b06d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industria-de-la-madera-y-corcho-papel-y-artes-graficas-cnae-16-17-18> ;
+	iaest-measure:numero-de-actividades 1389 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/331c0cdc-7c9f-33a5-a3bc-3e1bdb94d522> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/coquerias-y-refino-de-petroleo-industria-quimica-productos-farmaceuticos-cnae-19-20-21> ;
+	iaest-measure:numero-de-actividades 284 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/e7652eaa-c491-3ea4-bd0e-afdc374be39e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-productos-de-caucho-y-plastico-y-de-otros-minerales-no-metalicos-cnae-22-23> ;
+	iaest-measure:numero-de-actividades 859 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/efc2a9bf-dea4-3964-864c-2d2d644808a8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/metalurgia-y-fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo-cnae-24-25> ;
+	iaest-measure:numero-de-actividades 2617 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/e1f39813-c5ed-3db9-99a6-6efe3ffb6695> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-productos-informaticos-electronicos-y-opticos-material-y-equipo-electrico-maquinaria-y-equipo-cnae-26-27-28> ;
+	iaest-measure:numero-de-actividades 1073 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/dfdd2e32-51ac-3de2-8cb8-49fbc58f460a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-material-de-transporte-cnae-29-30> ;
+	iaest-measure:numero-de-actividades 310 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/0ceab8b2-8198-3e74-b3f5-95e9cd5911ee> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-muebles-otras-industrias-manufactureras-y-reparacion-e-instalacion-de-maquinaria-y-equipo-cnae-31-32-33> ;
+	iaest-measure:numero-de-actividades 1733 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/b4d84d17-751c-3a02-88ac-668cbb7977c0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/suministro-de-energia-electrica-gas-vapor-y-aire-acondicionado-cnae-35> ;
+	iaest-measure:numero-de-actividades 1932 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/4b02535a-f586-3c2c-8db0-034192d7c146> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/suministro-de-agua-actividades-de-saneamiento-gestion-de-residuos-y-descontaminacion-cnae-36-37-38-39> ;
+	iaest-measure:numero-de-actividades 545 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/0aa6aefc-60ef-3f7b-871a-a1c05abd3a4e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/construccion> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/construccion-cnae-41-42-43> ;
+	iaest-measure:numero-de-actividades 27598 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/8256bc9f-864c-3fd1-9ce0-ec901ab947a7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/comercio-al-por-mayor-y-al-por-menor-reparacion-de-vehiculos-de-motor-y-motocicletas-cnae-45-46-47> ;
+	iaest-measure:numero-de-actividades 45858 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/668110fb-2fc3-3f5e-80d3-14890b64d27c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/transporte-y-almacenamiento-cnae-49-50-51-52-53> ;
+	iaest-measure:numero-de-actividades 9062 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/d73fb596-60d2-3b31-901a-b4f24eeeb7ba> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/hosteleria-cnae-55-56> ;
+	iaest-measure:numero-de-actividades 15244 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/1e06194d-8835-37f6-9d9c-8e77afc4db45> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/informacion-y-comunicaciones-cnae-58-59-60-61-62-63> ;
+	iaest-measure:numero-de-actividades 2445 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/44f9b16b-9824-33b5-8cbd-733bc3140107> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-financieras-y-de-seguros-cnae-64-65-66> ;
+	iaest-measure:numero-de-actividades 4754 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/1eb2db4f-a07d-3ba3-8df2-d74cfd7db380> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-inmobiliarias-cnae-68> ;
+	iaest-measure:numero-de-actividades 15301 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/fc714883-c008-39bb-af5d-74c7234e4c53> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-profesionales-cientificas-y-tecnicas-cnae-69-70-71-72-73-74-75> ;
+	iaest-measure:numero-de-actividades 14894 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/33640673-c132-358f-86a5-70f1571d0b7e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-administrativas-y-servicios-auxliares-cnae-77-78-79-80-81-82> ;
+	iaest-measure:numero-de-actividades 8016 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/a1343d5e-ba17-3e20-bffe-df3ab444e974> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/educacion-cnae-85> ;
+	iaest-measure:numero-de-actividades 4214 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/b7324fb9-5de4-30f7-8b20-73f3506ee3d3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-sanitarias-y-de-servicios-sociales-cnae-86-87-88> ;
+	iaest-measure:numero-de-actividades 3671 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/bf59c88f-ca82-3784-989a-7c35008625d6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-artisticas-recreativas-y-de-entretenimiento-cnae-90-91-92-93> ;
+	iaest-measure:numero-de-actividades 3697 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/c5913601-db2e-3f22-b7f7-d81707a0fd89> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/otros-servicios-cnae-94-95-96> ;
+	iaest-measure:numero-de-actividades 6986 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/7802df51-5797-3253-9535-9b03e4ba6cfe> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/agricultura-ganaderia-silvicultura-y-pesca-cnae-01-02-03> ;
+	iaest-measure:numero-de-actividades 7774 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/d2b971b9-9ce5-390a-8432-18b882792c12> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industrias-extractivas-cnae-05-06-07-08-09> ;
+	iaest-measure:numero-de-actividades 354 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/d3fedd7e-db9c-34c8-9326-31f0c3199cca> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industria-de-la-alimentacion-bebidas-y-tabaco-cnae-10-11-12> ;
+	iaest-measure:numero-de-actividades 1761 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/965f6aca-1afa-3081-9e06-c94df45f5bb7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industria-textil-confeccion-de-prendas-de-vestir-cuero-y-calzado-cnae-13-14-15> ;
+	iaest-measure:numero-de-actividades 874 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/490266ae-2851-3003-b712-7fe799bf4110> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industria-de-la-madera-y-corcho-papel-y-artes-graficas-cnae-16-17-18> ;
+	iaest-measure:numero-de-actividades 1275 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/c1cff4db-84f6-34ec-906e-c2fe886338f3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/coquerias-y-refino-de-petroleo-industria-quimica-productos-farmaceuticos-cnae-19-20-21> ;
+	iaest-measure:numero-de-actividades 294 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/446d4fdc-610f-351c-9d7c-a1e29d3a3896> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-productos-de-caucho-y-plastico-y-de-otros-minerales-no-metalicos-cnae-22-23> ;
+	iaest-measure:numero-de-actividades 792 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/f4756680-e40c-3fa5-ac48-055f01689923> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/metalurgia-y-fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo-cnae-24-25> ;
+	iaest-measure:numero-de-actividades 2362 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/74d95c7a-351a-3950-a38c-4e4ba416ea3e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-productos-informaticos-electronicos-y-opticos-material-y-equipo-electrico-maquinaria-y-equipo-cnae-26-27-28> ;
+	iaest-measure:numero-de-actividades 992 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/09ba7a26-da8f-3cda-8f8c-65f06ef3faa1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-material-de-transporte-cnae-29-30> ;
+	iaest-measure:numero-de-actividades 295 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/c1ccd8a8-3740-39b7-8a1c-1d91a8767cb1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-muebles-otras-industrias-manufactureras-y-reparacion-e-instalacion-de-maquinaria-y-equipo-cnae-31-32-33> ;
+	iaest-measure:numero-de-actividades 1610 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/fa56003d-6e01-3481-8dca-07dd52303c12> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/suministro-de-energia-electrica-gas-vapor-y-aire-acondicionado-cnae-35> ;
+	iaest-measure:numero-de-actividades 1893 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/79b28cfd-f506-3238-b7be-72583c7df82d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/suministro-de-agua-actividades-de-saneamiento-gestion-de-residuos-y-descontaminacion-cnae-36-37-38-39> ;
+	iaest-measure:numero-de-actividades 565 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/5ea518eb-b819-3b8f-bec9-ec92dca5c958> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/construccion> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/construccion-cnae-41-42-43> ;
+	iaest-measure:numero-de-actividades 23184 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/c430a4d3-1bac-3a0a-a7ae-45e1c737b5c7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/comercio-al-por-mayor-y-al-por-menor-reparacion-de-vehiculos-de-motor-y-motocicletas-cnae-45-46-47> ;
+	iaest-measure:numero-de-actividades 43446 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/ca3e7b04-4c3c-3e4e-92af-b6034d2bbbc4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/transporte-y-almacenamiento-cnae-49-50-51-52-53> ;
+	iaest-measure:numero-de-actividades 8414 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/70325313-c5f9-3f02-be8d-05ca50499eae> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/hosteleria-cnae-55-56> ;
+	iaest-measure:numero-de-actividades 13421 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/2fe98df7-d7aa-3a4a-8bc1-32f24acaf906> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/informacion-y-comunicaciones-cnae-58-59-60-61-62-63> ;
+	iaest-measure:numero-de-actividades 2234 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/65568987-9493-3539-8c42-b49e3e630320> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-financieras-y-de-seguros-cnae-64-65-66> ;
+	iaest-measure:numero-de-actividades 4448 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/2e02f258-a70a-31e7-81b8-740a56cf096d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-inmobiliarias-cnae-68> ;
+	iaest-measure:numero-de-actividades 15145 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/43a5e069-560a-37c4-a8df-cf6b5406c3d2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-profesionales-cientificas-y-tecnicas-cnae-69-70-71-72-73-74-75> ;
+	iaest-measure:numero-de-actividades 13862 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/d88482af-5b33-384c-add9-6eb930b6c9b3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-administrativas-y-servicios-auxliares-cnae-77-78-79-80-81-82> ;
+	iaest-measure:numero-de-actividades 7608 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/e98e2d90-3aff-3bc8-b44a-e767286e4b2e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/educacion-cnae-85> ;
+	iaest-measure:numero-de-actividades 4125 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/e7bbab97-f13d-36af-8ac9-8b56d89e14a3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-sanitarias-y-de-servicios-sociales-cnae-86-87-88> ;
+	iaest-measure:numero-de-actividades 4034 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/c9038bca-4b1e-3bfc-b81d-6cb76a53282d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-artisticas-recreativas-y-de-entretenimiento-cnae-90-91-92-93> ;
+	iaest-measure:numero-de-actividades 3350 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/53d6e720-55cd-32ba-b17b-b578b3f4bb7e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/otros-servicios-cnae-94-95-96> ;
+	iaest-measure:numero-de-actividades 6598 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/1ea3b22d-b140-3cbe-ad82-72f2564b6beb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/agricultura-ganaderia-silvicultura-y-pesca-cnae-01-02-03> ;
+	iaest-measure:numero-de-actividades 8477 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/839306dc-32b1-3d3a-8f16-d74c5c8c4a7a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industrias-extractivas-cnae-05-06-07-08-09> ;
+	iaest-measure:numero-de-actividades 362 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/f64fa616-7554-3083-ba64-dfd061d1dc08> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industria-de-la-alimentacion-bebidas-y-tabaco-cnae-10-11-12> ;
+	iaest-measure:numero-de-actividades 1875 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/e706d419-b770-3745-9d41-9903ee944788> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industria-textil-confeccion-de-prendas-de-vestir-cuero-y-calzado-cnae-13-14-15> ;
+	iaest-measure:numero-de-actividades 993 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/e5648aad-2033-3a7e-b435-162574807a58> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/industria-de-la-madera-y-corcho-papel-y-artes-graficas-cnae-16-17-18> ;
+	iaest-measure:numero-de-actividades 1390 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/3fa2a5e3-d5eb-3540-850e-dfee87644e3b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/coquerias-y-refino-de-petroleo-industria-quimica-productos-farmaceuticos-cnae-19-20-21> ;
+	iaest-measure:numero-de-actividades 302 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/cb30d3db-198a-3e37-bf3b-d5699d2c6ce4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-productos-de-caucho-y-plastico-y-de-otros-minerales-no-metalicos-cnae-22-23> ;
+	iaest-measure:numero-de-actividades 822 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/81db5db1-eb69-3bf7-ae83-8cb9d49e3a7b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/metalurgia-y-fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo-cnae-24-25> ;
+	iaest-measure:numero-de-actividades 2470 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/32f26733-92d5-3881-9d22-055459fa0e74> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-productos-informaticos-electronicos-y-opticos-material-y-equipo-electrico-maquinaria-y-equipo-cnae-26-27-28> ;
+	iaest-measure:numero-de-actividades 1030 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/b77c5068-e980-3a0f-9368-2a2f892fa457> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-material-de-transporte-cnae-29-30> ;
+	iaest-measure:numero-de-actividades 306 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/a44870da-c580-3a06-901d-51c02c585f06> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/fabricacion-de-muebles-otras-industrias-manufactureras-y-reparacion-e-instalacion-de-maquinaria-y-equipo-cnae-31-32-33> ;
+	iaest-measure:numero-de-actividades 1765 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/ee98a959-4691-3941-a539-47d842e41d53> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/suministro-de-energia-electrica-gas-vapor-y-aire-acondicionado-cnae-35> ;
+	iaest-measure:numero-de-actividades 1906 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/2fee8bc0-eb93-3e69-8e44-41c6646d7d01> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/industria-y-energia> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/suministro-de-agua-actividades-de-saneamiento-gestion-de-residuos-y-descontaminacion-cnae-36-37-38-39> ;
+	iaest-measure:numero-de-actividades 698 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/b5b8c5bd-9166-35af-99d2-3610d4fa21f7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/construccion> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/construccion-cnae-41-42-43> ;
+	iaest-measure:numero-de-actividades 26314 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/deb3d68d-5a6e-36ac-b5e4-cceb37ecb11e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/comercio-al-por-mayor-y-al-por-menor-reparacion-de-vehiculos-de-motor-y-motocicletas-cnae-45-46-47> ;
+	iaest-measure:numero-de-actividades 49476 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/8bc947d0-442d-3ba8-97a4-e74f88308be0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/transporte-y-almacenamiento-cnae-49-50-51-52-53> ;
+	iaest-measure:numero-de-actividades 9000 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/1a36f770-3962-388d-ad60-8a042128408c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/hosteleria-cnae-55-56> ;
+	iaest-measure:numero-de-actividades 16001 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/6ae0feea-b713-3b2c-93cb-df53cb9509b6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/informacion-y-comunicaciones-cnae-58-59-60-61-62-63> ;
+	iaest-measure:numero-de-actividades 2746 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/bc2b13ae-e8a7-3c32-8b4e-68d7bb56514c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-financieras-y-de-seguros-cnae-64-65-66> ;
+	iaest-measure:numero-de-actividades 5228 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/9c075230-162d-3822-89ef-c26ea1e5a24a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-inmobiliarias-cnae-68> ;
+	iaest-measure:numero-de-actividades 17032 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/08a9eb15-15ec-3bb7-85b2-51d42f7eb520> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-profesionales-cientificas-y-tecnicas-cnae-69-70-71-72-73-74-75> ;
+	iaest-measure:numero-de-actividades 16585 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/fdf82e03-8c39-3977-9524-4c26aa65a59b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-administrativas-y-servicios-auxliares-cnae-77-78-79-80-81-82> ;
+	iaest-measure:numero-de-actividades 8921 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/d9c719d8-293c-358b-825a-10b3585f45dc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/educacion-cnae-85> ;
+	iaest-measure:numero-de-actividades 5711 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/aab922f6-e49b-3fa0-9c94-f7f85be4ccfd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-sanitarias-y-de-servicios-sociales-cnae-86-87-88> ;
+	iaest-measure:numero-de-actividades 5412 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/2dfdea8e-52bc-31f3-8c4b-db4b9dc32647> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/actividades-artisticas-recreativas-y-de-entretenimiento-cnae-90-91-92-93> ;
+	iaest-measure:numero-de-actividades 4374 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010076A/7ae957a3-a2c9-3a46-9b6a-38835462ec8e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010076>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
+	iaest-dimension:sector <http://opendata.aragon.es/kos/iaest/sector/servicios> ;
+	iaest-dimension:rama-de-actividad <http://opendata.aragon.es/kos/iaest/rama-de-actividad/otros-servicios-cnae-94-95-96> ;
+	iaest-measure:numero-de-actividades 7642 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

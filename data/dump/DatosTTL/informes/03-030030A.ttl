@@ -12,43 +12,43 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030030A> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/03-030030>;
+<http://opendata.aragon.es/recurso/iaest/cubo/03-030030A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030030>;
 	rdfs:label "Cubo de datos para 03-030030A"@es ;
 	rdfs:comment "Cubo de datos para 03-030030A"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030030A/365df069-6e81-3a68-839f-dbba0381898a> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030030A>; 
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/solterosas> ;
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030030A/365df069-6e81-3a68-839f-dbba0381898a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030030A>; 
+	iaest-measure:estado-civil solterosas ;
 	iaest-measure:personas-residentes-viviendas-familiares 321201 ;
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030030A/b1403424-5261-33a1-b52f-d4f3b404a5bc> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030030A>; 
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/casadosas> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030030A/b1403424-5261-33a1-b52f-d4f3b404a5bc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030030A>; 
+	iaest-measure:estado-civil casadosas ;
 	iaest-measure:personas-residentes-viviendas-familiares 591747 ;
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030030A/c5e7b9ef-2f70-35f0-aaf6-4740e32380ce> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030030A>; 
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/viudosas> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030030A/c5e7b9ef-2f70-35f0-aaf6-4740e32380ce> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030030A>; 
+	iaest-measure:estado-civil viudosas ;
 	iaest-measure:personas-residentes-viviendas-familiares 88716 ;
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030030A/21315b32-9bb4-3f2c-b39f-714bc2013633> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030030A>; 
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/separadosas> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030030A/21315b32-9bb4-3f2c-b39f-714bc2013633> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030030A>; 
+	iaest-measure:estado-civil separadosas ;
 	iaest-measure:personas-residentes-viviendas-familiares 16162 ;
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030030A/207a05ce-6074-3ae5-b9f6-90d8fe75b172> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030030A>; 
-	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/divorciadosas> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030030A/207a05ce-6074-3ae5-b9f6-90d8fe75b172> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030030A>; 
+	iaest-measure:estado-civil divorciadosas ;
 	iaest-measure:personas-residentes-viviendas-familiares 10619 ;
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

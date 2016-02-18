@@ -12,73 +12,73 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010101A> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-080101-010101>;
+<http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010101A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010101>;
 	rdfs:label "Cubo de datos para 01-080101-010101A"@es ;
 	rdfs:comment "Cubo de datos para 01-080101-010101A"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010101A/12cc5b97-32b6-3157-98e5-dbd27e1ca6f8> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010101A>; 
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010101A/12cc5b97-32b6-3157-98e5-dbd27e1ca6f8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010101A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:explotaciones 2 ;
-	iaest-dimension:actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/actividades-desarrollo-rural/acuicultura-cria-de-peces-cangrejos-> ;
+	iaest-measure:actividades-desarrollo-rural acuicultura-cria-de-peces-cangrejos- ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010101A/3880d7ed-4c5a-330d-854f-a4a452d961e7> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010101A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010101A/3880d7ed-4c5a-330d-854f-a4a452d961e7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010101A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:explotaciones 11 ;
-	iaest-dimension:actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/actividades-desarrollo-rural/artesania> ;
+	iaest-measure:actividades-desarrollo-rural artesania ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010101A/1f5d2235-aaa1-3b47-90bb-d838af08555d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010101A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010101A/1f5d2235-aaa1-3b47-90bb-d838af08555d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010101A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:explotaciones 303 ;
-	iaest-dimension:actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/actividades-desarrollo-rural/otros> ;
+	iaest-measure:actividades-desarrollo-rural otros ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010101A/9d53d23e-2555-3a7f-b8f8-15d278f4f89c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010101A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010101A/9d53d23e-2555-3a7f-b8f8-15d278f4f89c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010101A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:explotaciones 38 ;
-	iaest-dimension:actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/actividades-desarrollo-rural/produccion-de-energia-renovable-para-la-venta-eolica-biogas-soalr-> ;
+	iaest-measure:actividades-desarrollo-rural produccion-de-energia-renovable-para-la-venta-eolica-biogas-soalr- ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010101A/aa0d433d-80b8-33ea-a3b5-d5e2c8a1f6cd> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010101A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010101A/aa0d433d-80b8-33ea-a3b5-d5e2c8a1f6cd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010101A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:explotaciones 29 ;
-	iaest-dimension:actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/actividades-desarrollo-rural/selvicultura> ;
+	iaest-measure:actividades-desarrollo-rural selvicultura ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010101A/339aff46-d8eb-3a82-bc3f-854f26add5b3> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010101A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010101A/339aff46-d8eb-3a82-bc3f-854f26add5b3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010101A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:explotaciones 476 ;
-	iaest-dimension:actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/actividades-desarrollo-rural/trabajos-agricolas-bajo-contrato-para-otras-explotaciones> ;
+	iaest-measure:actividades-desarrollo-rural trabajos-agricolas-bajo-contrato-para-otras-explotaciones ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010101A/7cc65ffc-0496-3bf3-b124-1e67444cd368> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010101A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010101A/7cc65ffc-0496-3bf3-b124-1e67444cd368> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010101A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:explotaciones 157 ;
-	iaest-dimension:actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/actividades-desarrollo-rural/trabajos-no-agricolas-bajo-contrato> ;
+	iaest-measure:actividades-desarrollo-rural trabajos-no-agricolas-bajo-contrato ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010101A/b9985f12-fc29-3581-9017-8b8d0d3fc51a> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010101A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010101A/b9985f12-fc29-3581-9017-8b8d0d3fc51a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010101A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:explotaciones 10 ;
-	iaest-dimension:actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/actividades-desarrollo-rural/transformacion-de-la-madera-aserradero> ;
+	iaest-measure:actividades-desarrollo-rural transformacion-de-la-madera-aserradero ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010101A/169e0691-5d80-3cfd-95eb-fc9c095aa008> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010101A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010101A/169e0691-5d80-3cfd-95eb-fc9c095aa008> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010101A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:explotaciones 174 ;
-	iaest-dimension:actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/actividades-desarrollo-rural/transformacion-de-productos-agricolas-queso-vino-conservas-> ;
+	iaest-measure:actividades-desarrollo-rural transformacion-de-productos-agricolas-queso-vino-conservas- ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010101A/7e97b67f-e719-3606-95eb-946460dca6d2> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010101A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010101A/7e97b67f-e719-3606-95eb-946460dca6d2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010101A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:explotaciones 216 ;
-	iaest-dimension:actividades-desarrollo-rural <http://opendata.aragon.es/kos/iaest/actividades-desarrollo-rural/turismo-alojamiento-y-otras-actividades-recreativas> ;
+	iaest-measure:actividades-desarrollo-rural turismo-alojamiento-y-otras-actividades-recreativas ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

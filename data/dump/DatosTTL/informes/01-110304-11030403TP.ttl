@@ -12,20 +12,20 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-110304-11030403>;
+<http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030403>;
 	rdfs:label "Cubo de datos para 01-110304-11030403TP"@es ;
 	rdfs:comment "Cubo de datos para 01-110304-11030403TP"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/9cc0a525-ff2c-3700-bc23-a6809dd9ac23> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/9cc0a525-ff2c-3700-bc23-a6809dd9ac23> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
+	iaest-measure:tamano-empresa pequena ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:numero-de-empresas 4177 ;
 	iaest-measure:a-activo-no-corriente 479160183864017 ;
@@ -82,10 +82,10 @@
 	iaest-measure:rentabilidad-economica 151410533716187 ;
 	iaest-measure:rentabilidad-financiera 1171126385024 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/772f0695-5b68-3567-9a6b-4baa1b4b90e9> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/772f0695-5b68-3567-9a6b-4baa1b4b90e9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
+	iaest-measure:tamano-empresa pequena ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
 	iaest-measure:numero-de-empresas 2354 ;
 	iaest-measure:a-activo-no-corriente 475949294817332 ;
@@ -142,10 +142,10 @@
 	iaest-measure:rentabilidad-economica 0675810171866512 ;
 	iaest-measure:rentabilidad-financiera -136446751078252 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/f71ba0e3-080f-31cb-91a3-aa148a4ac091> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/f71ba0e3-080f-31cb-91a3-aa148a4ac091> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
+	iaest-measure:tamano-empresa pequena ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:numero-de-empresas 15128 ;
 	iaest-measure:a-activo-no-corriente 929107462519831 ;
@@ -202,10 +202,10 @@
 	iaest-measure:rentabilidad-economica -0147981049731047 ;
 	iaest-measure:rentabilidad-financiera -475544897707739 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/29850f1c-51a1-3f7b-83aa-55c013512e23> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/29850f1c-51a1-3f7b-83aa-55c013512e23> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
+	iaest-measure:tamano-empresa mediana ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:numero-de-empresas 53 ;
 	iaest-measure:a-activo-no-corriente 868920396226415 ;
@@ -262,10 +262,10 @@
 	iaest-measure:rentabilidad-economica 312658040504911 ;
 	iaest-measure:rentabilidad-financiera 320871072367734 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/97e404a1-8add-34aa-8387-01fdc67c4549> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/97e404a1-8add-34aa-8387-01fdc67c4549> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
+	iaest-measure:tamano-empresa mediana ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
 	iaest-measure:numero-de-empresas 19 ;
 	iaest-measure:a-activo-no-corriente 531904419473684 ;
@@ -322,10 +322,10 @@
 	iaest-measure:rentabilidad-economica 0372309313816836 ;
 	iaest-measure:rentabilidad-financiera 325185202670288 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/c3740c52-c6b8-3752-b369-b41af1192180> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/c3740c52-c6b8-3752-b369-b41af1192180> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
+	iaest-measure:tamano-empresa mediana ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:numero-de-empresas 373 ;
 	iaest-measure:a-activo-no-corriente 997588606702413 ;
@@ -382,10 +382,10 @@
 	iaest-measure:rentabilidad-economica 258196555091313 ;
 	iaest-measure:rentabilidad-financiera 21853237471378 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/3fc7b051-5fab-313e-9b3c-ecb8fc92b7b8> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/3fc7b051-5fab-313e-9b3c-ecb8fc92b7b8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/grande> ;
+	iaest-measure:tamano-empresa grande ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:numero-de-empresas 4 ;
 	iaest-measure:a-activo-no-corriente 1417045675 ;
@@ -442,10 +442,10 @@
 	iaest-measure:rentabilidad-economica 420262397932358 ;
 	iaest-measure:rentabilidad-financiera 716032994835847 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/b5316e14-6ecf-337b-975d-e7d46a8fbad2> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/b5316e14-6ecf-337b-975d-e7d46a8fbad2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/grande> ;
+	iaest-measure:tamano-empresa grande ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:numero-de-empresas 44 ;
 	iaest-measure:a-activo-no-corriente 1042029205 ;
@@ -502,10 +502,10 @@
 	iaest-measure:rentabilidad-economica -0655608375978447 ;
 	iaest-measure:rentabilidad-financiera -589962946291496 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/2a521297-7739-39ab-9613-2ddfc9d5971f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/2a521297-7739-39ab-9613-2ddfc9d5971f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
+	iaest-measure:tamano-empresa pequena ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:numero-de-empresas 4139 ;
 	iaest-measure:a-activo-no-corriente 483225221067891 ;
@@ -562,10 +562,10 @@
 	iaest-measure:rentabilidad-economica 096262091051719 ;
 	iaest-measure:rentabilidad-financiera -023947637261919 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/5b9d2adc-543d-3236-90cf-3209ea0c4490> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/5b9d2adc-543d-3236-90cf-3209ea0c4490> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
+	iaest-measure:tamano-empresa pequena ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
 	iaest-measure:numero-de-empresas 2305 ;
 	iaest-measure:a-activo-no-corriente 457017052060738 ;
@@ -622,10 +622,10 @@
 	iaest-measure:rentabilidad-economica 0248556966556613 ;
 	iaest-measure:rentabilidad-financiera -253837025544808 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/7bddd0fd-88da-32e4-8c75-754db56d41ad> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/7bddd0fd-88da-32e4-8c75-754db56d41ad> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
+	iaest-measure:tamano-empresa pequena ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:numero-de-empresas 14717 ;
 	iaest-measure:a-activo-no-corriente 939767502344228 ;
@@ -682,10 +682,10 @@
 	iaest-measure:rentabilidad-economica -138805317856132 ;
 	iaest-measure:rentabilidad-financiera -757365903039488 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/e5be1c28-f9b0-3be4-9f5f-7ea40e95debf> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/e5be1c28-f9b0-3be4-9f5f-7ea40e95debf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
+	iaest-measure:tamano-empresa mediana ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:numero-de-empresas 45 ;
 	iaest-measure:a-activo-no-corriente 814857555555556 ;
@@ -742,10 +742,10 @@
 	iaest-measure:rentabilidad-economica 531204699376326 ;
 	iaest-measure:rentabilidad-financiera 643203358922576 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/2c7a27bd-c86c-3a71-9c3b-f8dbdc00d9aa> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/2c7a27bd-c86c-3a71-9c3b-f8dbdc00d9aa> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
+	iaest-measure:tamano-empresa mediana ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
 	iaest-measure:numero-de-empresas 20 ;
 	iaest-measure:a-activo-no-corriente 5468011565 ;
@@ -802,10 +802,10 @@
 	iaest-measure:rentabilidad-economica 0440601919751459 ;
 	iaest-measure:rentabilidad-financiera 233459271756066 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/6a909a76-59f1-319e-a07f-1d9a43d7fff6> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/6a909a76-59f1-319e-a07f-1d9a43d7fff6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
+	iaest-measure:tamano-empresa mediana ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:numero-de-empresas 352 ;
 	iaest-measure:a-activo-no-corriente 104314429573864 ;
@@ -862,10 +862,10 @@
 	iaest-measure:rentabilidad-economica 126678372658066 ;
 	iaest-measure:rentabilidad-financiera 0636556504715198 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/1607a68d-7c80-3002-9adf-f35ac94ff66b> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/1607a68d-7c80-3002-9adf-f35ac94ff66b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/grande> ;
+	iaest-measure:tamano-empresa grande ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:numero-de-empresas 4 ;
 	iaest-measure:a-activo-no-corriente 138643565 ;
@@ -922,10 +922,10 @@
 	iaest-measure:rentabilidad-economica 464728593609934 ;
 	iaest-measure:rentabilidad-financiera 615281568757944 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/fb256df5-9dc5-3c79-82e4-50bcc6582700> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/fb256df5-9dc5-3c79-82e4-50bcc6582700> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/grande> ;
+	iaest-measure:tamano-empresa grande ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:numero-de-empresas 41 ;
 	iaest-measure:a-activo-no-corriente 975720917317073 ;
@@ -982,10 +982,10 @@
 	iaest-measure:rentabilidad-economica -103946953971789 ;
 	iaest-measure:rentabilidad-financiera -325516786428866 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/aa62580f-d5f0-301f-884d-768b40cccda9> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/aa62580f-d5f0-301f-884d-768b40cccda9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
+	iaest-measure:tamano-empresa pequena ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:numero-de-empresas 4332 ;
 	iaest-measure:a-activo-no-corriente 449284021929825 ;
@@ -1042,10 +1042,10 @@
 	iaest-measure:rentabilidad-economica 144269713952006 ;
 	iaest-measure:rentabilidad-financiera 0704964144467229 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/d1086597-b35c-34bb-913d-39245a158dee> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/d1086597-b35c-34bb-913d-39245a158dee> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
+	iaest-measure:tamano-empresa pequena ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
 	iaest-measure:numero-de-empresas 2235 ;
 	iaest-measure:a-activo-no-corriente 452690623266219 ;
@@ -1102,10 +1102,10 @@
 	iaest-measure:rentabilidad-economica 0181617580918015 ;
 	iaest-measure:rentabilidad-financiera -124101313719771 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/ec625151-7303-3525-a43f-5307a756d3fe> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/ec625151-7303-3525-a43f-5307a756d3fe> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/pequena> ;
+	iaest-measure:tamano-empresa pequena ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:numero-de-empresas 14137 ;
 	iaest-measure:a-activo-no-corriente 808417657282309 ;
@@ -1162,10 +1162,10 @@
 	iaest-measure:rentabilidad-economica -0068124833562249 ;
 	iaest-measure:rentabilidad-financiera -28660581510963 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/e592012f-f217-3b7a-814c-21b645c6d8ce> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/e592012f-f217-3b7a-814c-21b645c6d8ce> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
+	iaest-measure:tamano-empresa mediana ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:numero-de-empresas 59 ;
 	iaest-measure:a-activo-no-corriente 796797106779661 ;
@@ -1222,10 +1222,10 @@
 	iaest-measure:rentabilidad-economica 270933478924705 ;
 	iaest-measure:rentabilidad-financiera 175177219440712 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/dedd5c40-6523-3043-b31b-2d966855d89c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/dedd5c40-6523-3043-b31b-2d966855d89c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
+	iaest-measure:tamano-empresa mediana ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
 	iaest-measure:numero-de-empresas 28 ;
 	iaest-measure:a-activo-no-corriente 627473457142857 ;
@@ -1282,10 +1282,10 @@
 	iaest-measure:rentabilidad-economica 211075516238871 ;
 	iaest-measure:rentabilidad-financiera -0752724738017489 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/4f7629da-7ed6-3e39-bc14-472cbbd6d7a1> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/4f7629da-7ed6-3e39-bc14-472cbbd6d7a1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/mediana> ;
+	iaest-measure:tamano-empresa mediana ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:numero-de-empresas 410 ;
 	iaest-measure:a-activo-no-corriente 119193612195122 ;
@@ -1342,10 +1342,10 @@
 	iaest-measure:rentabilidad-economica 0886043388523111 ;
 	iaest-measure:rentabilidad-financiera -56057276074607 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/ff464804-aecb-3c93-95ee-cd5b4cdf224c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/ff464804-aecb-3c93-95ee-cd5b4cdf224c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/grande> ;
+	iaest-measure:tamano-empresa grande ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
 	iaest-measure:numero-de-empresas 9 ;
 	iaest-measure:a-activo-no-corriente 180683032222222 ;
@@ -1402,10 +1402,10 @@
 	iaest-measure:rentabilidad-economica 516740636100609 ;
 	iaest-measure:rentabilidad-financiera 632530237068902 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/de9a4d0e-4bb2-3a48-89ea-132ff341e091> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/de9a4d0e-4bb2-3a48-89ea-132ff341e091> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/grande> ;
+	iaest-measure:tamano-empresa grande ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
 	iaest-measure:numero-de-empresas 4 ;
 	iaest-measure:a-activo-no-corriente 295010458 ;
@@ -1462,10 +1462,10 @@
 	iaest-measure:rentabilidad-economica 174145909597957 ;
 	iaest-measure:rentabilidad-financiera 466099448632702 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030403TP/5b69a433-d47a-34fd-8d28-f7916a415dda> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030403TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030403TP/5b69a433-d47a-34fd-8d28-f7916a415dda> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030403TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/tamano-empresa/grande> ;
+	iaest-measure:tamano-empresa grande ;
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
 	iaest-measure:numero-de-empresas 65 ;
 	iaest-measure:a-activo-no-corriente 738058445538462 ;

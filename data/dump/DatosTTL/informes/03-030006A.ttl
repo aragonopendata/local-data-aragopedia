@@ -12,21 +12,21 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/03-030006>;
+<http://opendata.aragon.es/recurso/iaest/cubo/03-030006A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030006>;
 	rdfs:label "Cubo de datos para 03-030006A"@es ;
 	rdfs:comment "Cubo de datos para 03-030006A"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/3aa2d64f-b472-30f3-9ee2-1e5c274c536e> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/3aa2d64f-b472-30f3-9ee2-1e5c274c536e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1998> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 185634570354558 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 5832492620092 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 231116167636242 ;
@@ -50,11 +50,11 @@
 	iaest-measure:indice-de-potencialidad 108552009607277 ;
 	iaest-measure:personas 589777 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/824fe651-99f6-339d-8aff-88490fd8936f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/824fe651-99f6-339d-8aff-88490fd8936f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 17908372870345 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 583753107280925 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 237163164015625 ;
@@ -78,11 +78,11 @@
 	iaest-measure:indice-de-potencialidad 106744931880793 ;
 	iaest-measure:personas 594169 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/17543be5-ac85-39c5-8977-353034257512> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/17543be5-ac85-39c5-8977-353034257512> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 175151305895203 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 585038395012134 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 239810299092663 ;
@@ -106,11 +106,11 @@
 	iaest-measure:indice-de-potencialidad 105057538664517 ;
 	iaest-measure:personas 602422 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/e4e9ab68-89a6-3f50-bb68-f3c15efedab6> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/e4e9ab68-89a6-3f50-bb68-f3c15efedab6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2001> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 170529733046744 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 587138801506406 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 242331465446849 ;
@@ -134,11 +134,11 @@
 	iaest-measure:indice-de-potencialidad 103270886720677 ;
 	iaest-measure:personas 606211 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/ebbb97d1-5999-310c-8812-d576cda00290> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/ebbb97d1-5999-310c-8812-d576cda00290> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2002> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 169497961891195 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 588632878011732 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 241869160097073 ;
@@ -162,11 +162,11 @@
 	iaest-measure:indice-de-potencialidad 101892226695571 ;
 	iaest-measure:personas 613559 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/445f1f52-ef58-3899-9c9e-d1f7940f3736> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/445f1f52-ef58-3899-9c9e-d1f7940f3736> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2003> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 16946021810673 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 590638510679486 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 239901271213783 ;
@@ -190,11 +190,11 @@
 	iaest-measure:indice-de-potencialidad 100228999529869 ;
 	iaest-measure:personas 619880 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/e00bb0ca-9a4b-3dc9-b2fe-ec51e56216f9> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/e00bb0ca-9a4b-3dc9-b2fe-ec51e56216f9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2004> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 16890140128199 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 594738432663708 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 236360166054302 ;
@@ -218,11 +218,11 @@
 	iaest-measure:indice-de-potencialidad 983754659187364 ;
 	iaest-measure:personas 628710 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/f1bc7a3f-8985-3df3-af77-7e79b196e78f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/f1bc7a3f-8985-3df3-af77-7e79b196e78f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2005> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 16912160708706 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 598592511293354 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 232285881619586 ;
@@ -246,11 +246,11 @@
 	iaest-measure:indice-de-potencialidad 968751802503317 ;
 	iaest-measure:personas 636879 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/cf9c2b8b-4b77-37d1-a9cb-fd3392ce7bad> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/cf9c2b8b-4b77-37d1-a9cb-fd3392ce7bad> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 169455316067739 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 598961942036042 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 231582741896219 ;
@@ -274,11 +274,11 @@
 	iaest-measure:indice-de-potencialidad 947317980463426 ;
 	iaest-measure:personas 640812 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/76e5e1f9-e64e-327e-9e0f-b71e860d4314> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/76e5e1f9-e64e-327e-9e0f-b71e860d4314> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2007> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 17027548298415 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 601486318206936 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 228238198808914 ;
@@ -302,11 +302,11 @@
 	iaest-measure:indice-de-potencialidad 931909045477261 ;
 	iaest-measure:personas 649659 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/53d00f35-695d-3831-b66b-1d5baadbf111> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/53d00f35-695d-3831-b66b-1d5baadbf111> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2008> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 172151573926628 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 603506335705607 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 224342090367765 ;
@@ -330,11 +330,11 @@
 	iaest-measure:indice-de-potencialidad 921918104614053 ;
 	iaest-measure:personas 662515 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/9279b937-e592-35b6-910c-4ca22bb1928c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/9279b937-e592-35b6-910c-4ca22bb1928c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 173684665020978 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 603131969734417 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 223183365244605 ;
@@ -358,11 +358,11 @@
 	iaest-measure:indice-de-potencialidad 90303829685698 ;
 	iaest-measure:personas 671654 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/2f9c2b76-dba6-300d-b29b-4b47a30650af> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/2f9c2b76-dba6-300d-b29b-4b47a30650af> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 1748877459869 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 600988547568102 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 224123706444998 ;
@@ -386,11 +386,11 @@
 	iaest-measure:indice-de-potencialidad 870760721769346 ;
 	iaest-measure:personas 673918 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/76c5d695-2b23-3822-a593-f605b0ea40a7> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/76c5d695-2b23-3822-a593-f605b0ea40a7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 175737436796952 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 598181944779832 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 226080618423216 ;
@@ -414,11 +414,11 @@
 	iaest-measure:indice-de-potencialidad 833954713144138 ;
 	iaest-measure:personas 675007 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/6cdd3814-b1d8-36f7-a532-b20b0b7724b8> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/6cdd3814-b1d8-36f7-a532-b20b0b7724b8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 176458781319688 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 596863197696471 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 226678020983841 ;
@@ -442,11 +442,11 @@
 	iaest-measure:indice-de-potencialidad 803041928058853 ;
 	iaest-measure:personas 677569 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/7356d7dd-feaf-3f4f-bbad-87e450fc5941> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/7356d7dd-feaf-3f4f-bbad-87e450fc5941> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 176424287800722 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 595510977416073 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 228064734783206 ;
@@ -470,11 +470,11 @@
 	iaest-measure:indice-de-potencialidad 770102947578683 ;
 	iaest-measure:personas 677163 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/e6321829-e964-3d7a-8a28-eabdde266c28> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/e6321829-e964-3d7a-8a28-eabdde266c28> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2014> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 176650643830759 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 590165479540589 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 233183876628652 ;
@@ -498,11 +498,11 @@
 	iaest-measure:indice-de-potencialidad 730771722931381 ;
 	iaest-measure:personas 668421 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/daf6dc6a-3b05-3dfc-bcc4-10f2dba1cd30> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/daf6dc6a-3b05-3dfc-bcc4-10f2dba1cd30> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1998> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 20109088174653 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 615926733597864 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 182982384655606 ;
@@ -521,14 +521,14 @@
 	iaest-measure:tasa-global-de-dependencia-jovenes 198276436943753 ;
 	iaest-measure:indice-estructura-de-poblacion-activa-total 120217847391867 ;
 	iaest-measure:indice-reemplazamiento-edad-activa-total 922897823945554 ;
-	iaest-dimension:tasa-de-feminidad <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> ;
+	iaest-measure:tasa-de-feminidad 0 ;
 	iaest-measure:personas 571831 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/239c43b9-29e8-3223-b5ee-fdf20f3b5049> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/239c43b9-29e8-3223-b5ee-fdf20f3b5049> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 194553407941962 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 617744855166375 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 187701736891662 ;
@@ -547,14 +547,14 @@
 	iaest-measure:tasa-global-de-dependencia-jovenes 194286794341965 ;
 	iaest-measure:indice-estructura-de-poblacion-activa-total 118406055966658 ;
 	iaest-measure:indice-reemplazamiento-edad-activa-total 9411090961153 ;
-	iaest-dimension:tasa-de-feminidad <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> ;
+	iaest-measure:tasa-de-feminidad 0 ;
 	iaest-measure:personas 575626 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/9ce02d48-0dc0-36e5-bfb9-7419ccffb176> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/9ce02d48-0dc0-36e5-bfb9-7419ccffb176> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 190460310864171 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 619941274751734 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 189598414384095 ;
@@ -573,14 +573,14 @@
 	iaest-measure:tasa-global-de-dependencia-jovenes 19301443284435 ;
 	iaest-measure:indice-estructura-de-poblacion-activa-total 117282577876121 ;
 	iaest-measure:indice-reemplazamiento-edad-activa-total 976677591857858 ;
-	iaest-dimension:tasa-de-feminidad <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> ;
+	iaest-measure:tasa-de-feminidad 0 ;
 	iaest-measure:personas 584757 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/47b6f04b-c80c-3a9a-a5e9-6d49532e9248> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/47b6f04b-c80c-3a9a-a5e9-6d49532e9248> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2001> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 184695660402226 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 625128842897842 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 190175496699932 ;
@@ -599,14 +599,14 @@
 	iaest-measure:tasa-global-de-dependencia-jovenes 188237598429101 ;
 	iaest-measure:indice-estructura-de-poblacion-activa-total 116940329487852 ;
 	iaest-measure:indice-reemplazamiento-edad-activa-total 945827538247566 ;
-	iaest-dimension:tasa-de-feminidad <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> ;
+	iaest-measure:tasa-de-feminidad 0 ;
 	iaest-measure:personas 591806 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/fdee814a-0668-3a07-85f7-92ae92e8c9a5> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/fdee814a-0668-3a07-85f7-92ae92e8c9a5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2002> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 18213090939277 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 629485742746856 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 188383347860374 ;
@@ -625,14 +625,14 @@
 	iaest-measure:tasa-global-de-dependencia-jovenes 187604006481502 ;
 	iaest-measure:indice-estructura-de-poblacion-activa-total 117665362969639 ;
 	iaest-measure:indice-reemplazamiento-edad-activa-total 962385853022177 ;
-	iaest-dimension:tasa-de-feminidad <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> ;
+	iaest-measure:tasa-de-feminidad 0 ;
 	iaest-measure:personas 602325 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/febb76bf-0856-3a55-885c-78b676c905b0> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/febb76bf-0856-3a55-885c-78b676c905b0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2003> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 181534225922223 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 632054538601465 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 186411235476311 ;
@@ -651,14 +651,14 @@
 	iaest-measure:tasa-global-de-dependencia-jovenes 189396389597633 ;
 	iaest-measure:indice-estructura-de-poblacion-activa-total 115927509244932 ;
 	iaest-measure:indice-reemplazamiento-edad-activa-total 930288375425399 ;
-	iaest-dimension:tasa-de-feminidad <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> ;
+	iaest-measure:tasa-de-feminidad 0 ;
 	iaest-measure:personas 610210 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/6554db44-6652-3053-af20-c1af0bfb6349> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/6554db44-6652-3053-af20-c1af0bfb6349> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2004> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 180568037959393 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 636731446316 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 182700515724608 ;
@@ -677,14 +677,14 @@
 	iaest-measure:tasa-global-de-dependencia-jovenes 189119268118931 ;
 	iaest-measure:indice-estructura-de-poblacion-activa-total 113403546491286 ;
 	iaest-measure:indice-reemplazamiento-edad-activa-total 860335760517799 ;
-	iaest-dimension:tasa-de-feminidad <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> ;
+	iaest-measure:tasa-de-feminidad 0 ;
 	iaest-measure:personas 620874 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/31dd4b0b-e16f-37f7-b6b4-6bd81f734e3c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/31dd4b0b-e16f-37f7-b6b4-6bd81f734e3c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2005> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 179595601030139 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 6425425691452 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 177861829824661 ;
@@ -703,14 +703,14 @@
 	iaest-measure:tasa-global-de-dependencia-jovenes 188127254687693 ;
 	iaest-measure:indice-estructura-de-poblacion-activa-total 111135146775251 ;
 	iaest-measure:indice-reemplazamiento-edad-activa-total 7881875 ;
-	iaest-dimension:tasa-de-feminidad <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> ;
+	iaest-measure:tasa-de-feminidad 0 ;
 	iaest-measure:personas 632148 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/30b7c5e0-1e06-3b86-97ed-15f58262a69e> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/30b7c5e0-1e06-3b86-97ed-15f58262a69e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 179918920489618 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 642412971465101 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 17766810804528 ;
@@ -729,14 +729,14 @@
 	iaest-measure:tasa-global-de-dependencia-jovenes 19042692521078 ;
 	iaest-measure:indice-estructura-de-poblacion-activa-total 108755177340447 ;
 	iaest-measure:indice-reemplazamiento-edad-activa-total 768042347582556 ;
-	iaest-dimension:tasa-de-feminidad <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> ;
+	iaest-measure:tasa-de-feminidad 0 ;
 	iaest-measure:personas 636659 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/b0273882-3a96-35da-9c36-496295b2861c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/b0273882-3a96-35da-9c36-496295b2861c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2007> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 180617809074554 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 644515576603256 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 174866614322191 ;
@@ -755,14 +755,14 @@
 	iaest-measure:tasa-global-de-dependencia-jovenes 19248312433268 ;
 	iaest-measure:indice-estructura-de-poblacion-activa-total 106623408194177 ;
 	iaest-measure:indice-reemplazamiento-edad-activa-total 740976897298259 ;
-	iaest-dimension:tasa-de-feminidad <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> ;
+	iaest-measure:tasa-de-feminidad 0 ;
 	iaest-measure:personas 646996 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/da9a05a6-3d52-38b3-8508-19d069ac1e28> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/da9a05a6-3d52-38b3-8508-19d069ac1e28> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2008> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 181990448568113 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 64726829951099 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 170741251920897 ;
@@ -781,14 +781,14 @@
 	iaest-measure:tasa-global-de-dependencia-jovenes 193723743307861 ;
 	iaest-measure:indice-estructura-de-poblacion-activa-total 106558060874257 ;
 	iaest-measure:indice-reemplazamiento-edad-activa-total 738042912497831 ;
-	iaest-dimension:tasa-de-feminidad <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> ;
+	iaest-measure:tasa-de-feminidad 0 ;
 	iaest-measure:personas 664403 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/e366583a-33df-3792-bdd4-a10cdc841a06> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/e366583a-33df-3792-bdd4-a10cdc841a06> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 183543355114652 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 647111464651487 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 169345180233861 ;
@@ -807,14 +807,14 @@
 	iaest-measure:tasa-global-de-dependencia-jovenes 197557860142883 ;
 	iaest-measure:indice-estructura-de-poblacion-activa-total 104610847487693 ;
 	iaest-measure:indice-reemplazamiento-edad-activa-total 715524056923424 ;
-	iaest-dimension:tasa-de-feminidad <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> ;
+	iaest-measure:tasa-de-feminidad 0 ;
 	iaest-measure:personas 673819 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/0f89c01e-6f6e-3397-9d18-a028adc2e443> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/0f89c01e-6f6e-3397-9d18-a028adc2e443> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 185602003633517 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 643508319505865 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 170889676860618 ;
@@ -833,14 +833,14 @@
 	iaest-measure:tasa-global-de-dependencia-jovenes 202779932764417 ;
 	iaest-measure:indice-estructura-de-poblacion-activa-total 100344646606018 ;
 	iaest-measure:indice-reemplazamiento-edad-activa-total 695262054507338 ;
-	iaest-dimension:tasa-de-feminidad <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> ;
+	iaest-measure:tasa-de-feminidad 0 ;
 	iaest-measure:personas 673177 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/c5d199ec-3b7f-3249-80f8-7dc32a5c2bc3> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/c5d199ec-3b7f-3249-80f8-7dc32a5c2bc3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 187046951671866 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 639847993254738 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 173105055073396 ;
@@ -859,14 +859,14 @@
 	iaest-measure:tasa-global-de-dependencia-jovenes 206793995195287 ;
 	iaest-measure:indice-estructura-de-poblacion-activa-total 961411041089855 ;
 	iaest-measure:indice-reemplazamiento-edad-activa-total 686775266143228 ;
-	iaest-dimension:tasa-de-feminidad <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> ;
+	iaest-measure:tasa-de-feminidad 0 ;
 	iaest-measure:personas 671286 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/503891f6-d62f-3522-a2ca-3bc4c65017ac> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/503891f6-d62f-3522-a2ca-3bc4c65017ac> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 188214580189255 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 637595289761244 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 174190130049502 ;
@@ -885,14 +885,14 @@
 	iaest-measure:tasa-global-de-dependencia-jovenes 209525179730655 ;
 	iaest-measure:indice-estructura-de-poblacion-activa-total 927005839192387 ;
 	iaest-measure:indice-reemplazamiento-edad-activa-total 679772461100887 ;
-	iaest-dimension:tasa-de-feminidad <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> ;
+	iaest-measure:tasa-de-feminidad 0 ;
 	iaest-measure:personas 671898 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/72ca722a-a274-3d4c-90da-ba99c024f151> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/72ca722a-a274-3d4c-90da-ba99c024f151> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 188772319462915 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 635115308207473 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 176112372329612 ;
@@ -911,14 +911,14 @@
 	iaest-measure:tasa-global-de-dependencia-jovenes 211482875547313 ;
 	iaest-measure:indice-estructura-de-poblacion-activa-total 888846882495516 ;
 	iaest-measure:indice-reemplazamiento-edad-activa-total 662822308262625 ;
-	iaest-dimension:tasa-de-feminidad <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> ;
+	iaest-measure:tasa-de-feminidad 0 ;
 	iaest-measure:personas 669987 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030006A/8ac45862-7f5d-328c-b549-4cca238f2ff9> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030006A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030006A/8ac45862-7f5d-328c-b549-4cca238f2ff9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030006A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2014> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
+	iaest-measure:sexo hombres ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 19040617141883 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 628058767299274 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 181535061281897 ;
@@ -937,6 +937,6 @@
 	iaest-measure:tasa-global-de-dependencia-jovenes 215744705866393 ;
 	iaest-measure:indice-estructura-de-poblacion-activa-total 845946872104682 ;
 	iaest-measure:indice-reemplazamiento-edad-activa-total 657865542489461 ;
-	iaest-dimension:tasa-de-feminidad <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> ;
+	iaest-measure:tasa-de-feminidad 0 ;
 	iaest-measure:personas 656964 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

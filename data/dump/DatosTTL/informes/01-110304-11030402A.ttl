@@ -12,18 +12,18 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-110304-11030402>;
+<http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030402>;
 	rdfs:label "Cubo de datos para 01-110304-11030402A"@es ;
 	rdfs:comment "Cubo de datos para 01-110304-11030402A"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/bcb7ac1e-217f-3930-ac23-f87f51338831> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/bcb7ac1e-217f-3930-ac23-f87f51338831> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 1293 ;
 	iaest-measure:a-activo-no-corriente 734242047177108 ;
@@ -39,7 +39,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 598499721577726 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 519948383604022 ;
 	iaest-measure:total-activo-ab 121343560015468 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/agricultura-ganaderia-y-pesca> ;
+	iaest-measure:sector-descripcion agricultura-ganaderia-y-pesca ;
 	iaest-measure:a-patrimonio-neto 436107180974478 ;
 	iaest-measure:a-1-fondos-propios 423425245939675 ;
 	iaest-measure:i-capital 226045119102862 ;
@@ -54,7 +54,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 0312068058778036 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 187305952822892 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 2243574354215 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/agricultura-ganaderia-silvicultura-y-pesca-cnae-01-03> ;
+	iaest-measure:rama-descripcion agricultura-ganaderia-silvicultura-y-pesca-cnae-01-03 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0440626450116009 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 12134356929621 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 968095614075793 ;
@@ -82,8 +82,8 @@
 	iaest-measure:rentabilidad-economica 125804724965843 ;
 	iaest-measure:rentabilidad-financiera 0287390770255689 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/81f4351f-c112-3a08-8c0a-6d96f93bb8fc> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/81f4351f-c112-3a08-8c0a-6d96f93bb8fc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 185 ;
 	iaest-measure:a-activo-no-corriente 871147000540541 ;
@@ -99,7 +99,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 133687865945946 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 384548437837838 ;
 	iaest-measure:total-activo-ab 117327407891892 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 739812783243243 ;
 	iaest-measure:a-1-fondos-propios 73306284972973 ;
 	iaest-measure:i-capital 15682326972973 ;
@@ -114,7 +114,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 247825405405405 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 663384908108108 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 810756437837838 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/industria-extractiva-agua-y-residuos-cnae-05-09-y-36-39> ;
+	iaest-measure:rama-descripcion industria-extractiva-agua-y-residuos-cnae-05-09-y-36-39 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 15169027027027 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 117327407621622 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 364752053513514 ;
@@ -142,8 +142,8 @@
 	iaest-measure:rentabilidad-economica 116106181343828 ;
 	iaest-measure:rentabilidad-financiera 363177499554528 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/dffc2a08-7a18-3bb1-bedd-55224fb97adc> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/dffc2a08-7a18-3bb1-bedd-55224fb97adc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 508 ;
 	iaest-measure:a-activo-no-corriente 206670240748031 ;
@@ -159,7 +159,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 317029350393701 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 16402749015748 ;
 	iaest-measure:total-activo-ab 439821226377953 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 172187284055118 ;
 	iaest-measure:a-1-fondos-propios 160040425393701 ;
 	iaest-measure:i-capital 676090082677165 ;
@@ -174,7 +174,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 474795472440945 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 674852899606299 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 101165417322835 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/industria-de-la-alimentacion-bebidas-y-tabaco-cnae-10-12> ;
+	iaest-measure:rama-descripcion industria-de-la-alimentacion-bebidas-y-tabaco-cnae-10-12 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 577293897637795 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 439821226377953 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 543064440354331 ;
@@ -202,8 +202,8 @@
 	iaest-measure:rentabilidad-economica 300011449265336 ;
 	iaest-measure:rentabilidad-financiera 321410820798457 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/5dc077cd-751f-3c8d-938f-59d8781b90a9> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/5dc077cd-751f-3c8d-938f-59d8781b90a9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 194 ;
 	iaest-measure:a-activo-no-corriente 249310510309278 ;
@@ -219,7 +219,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 56498175257732 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 13239887628866 ;
 	iaest-measure:total-activo-ab 108495912371134 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 466615329896907 ;
 	iaest-measure:a-1-fondos-propios 463963221649485 ;
 	iaest-measure:i-capital 615412680412371 ;
@@ -234,7 +234,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 0310685567010309 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 192119943298969 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 327297804123711 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/industria-textil-confeccion-cuero-y-calzado-cnae-13-15> ;
+	iaest-measure:rama-descripcion industria-textil-confeccion-cuero-y-calzado-cnae-13-15 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0124819587628866 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 108495912371134 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 138675294845361 ;
@@ -262,8 +262,8 @@
 	iaest-measure:rentabilidad-economica 292137567822285 ;
 	iaest-measure:rentabilidad-financiera 2974615152988 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/1aad9335-2153-36c2-855e-b4de34f93b25> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/1aad9335-2153-36c2-855e-b4de34f93b25> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 358 ;
 	iaest-measure:a-activo-no-corriente 467421163687151 ;
@@ -279,7 +279,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 137300344972067 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 166430418994413 ;
 	iaest-measure:total-activo-ab 747038474022346 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 41198728603352 ;
 	iaest-measure:a-1-fondos-propios 409362867318436 ;
 	iaest-measure:i-capital 505338717877095 ;
@@ -294,7 +294,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 784032849162011 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 740683173184358 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 578455142458101 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/industria-de-la-madera-y-del-corcho-excepto-muebles-cesteria-y-esparteria-papel-y-artes-graficas-cnae-16-18> ;
+	iaest-measure:rama-descripcion industria-de-la-madera-y-del-corcho-excepto-muebles-cesteria-y-esparteria-papel-y-artes-graficas-cnae-16-18 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0053360335195531 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 747038474022346 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 457165340502793 ;
@@ -322,8 +322,8 @@
 	iaest-measure:rentabilidad-economica 641626881544134 ;
 	iaest-measure:rentabilidad-financiera 903443565342328 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/c729acdd-f0a2-3f76-904a-d95e6e2068ad> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/c729acdd-f0a2-3f76-904a-d95e6e2068ad> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 112 ;
 	iaest-measure:a-activo-no-corriente 3397639125 ;
@@ -339,7 +339,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 681177321428571 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 348736910714286 ;
 	iaest-measure:total-activo-ab 745130278571429 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 371420291964286 ;
 	iaest-measure:a-1-fondos-propios 364778316964286 ;
 	iaest-measure:i-capital 145472033928571 ;
@@ -354,7 +354,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 512023214285714 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 102259095535714 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 174120092857143 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/industria-quimica-y-productos-farmaceuticos-cnae-20-21> ;
+	iaest-measure:rama-descripcion industria-quimica-y-productos-farmaceuticos-cnae-20-21 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 211366964285714 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 745130278571429 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 890395355357143 ;
@@ -382,8 +382,8 @@
 	iaest-measure:rentabilidad-economica 752158642171864 ;
 	iaest-measure:rentabilidad-financiera 118013592163558 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/faa0f4d3-7b56-3fee-bdc4-3e4717504d13> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/faa0f4d3-7b56-3fee-bdc4-3e4717504d13> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 268 ;
 	iaest-measure:a-activo-no-corriente 124159637313433 ;
@@ -399,7 +399,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 167077078358209 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 126708305970149 ;
 	iaest-measure:total-activo-ab 318267691791045 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 119552523134328 ;
 	iaest-measure:a-1-fondos-propios 115954512313433 ;
 	iaest-measure:i-capital 428850570895522 ;
@@ -414,7 +414,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 244592537313433 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 431380246268657 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 842735007462687 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/fabricacion-de-productos-de-caucho-y-plasticos-y-otros-productos-minerales-no-metalicos-cnae-22-23> ;
+	iaest-measure:rama-descripcion fabricacion-de-productos-de-caucho-y-plasticos-y-otros-productos-minerales-no-metalicos-cnae-22-23 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 552165298507463 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 318267691791045 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 388021883208955 ;
@@ -442,8 +442,8 @@
 	iaest-measure:rentabilidad-economica 0805759688255667 ;
 	iaest-measure:rentabilidad-financiera -261374534433848 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/6d09fceb-e954-33a9-9860-9c7172738cc4> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/6d09fceb-e954-33a9-9860-9c7172738cc4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 678 ;
 	iaest-measure:a-activo-no-corriente 104568166961652 ;
@@ -459,7 +459,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 213418650442478 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 118255957227139 ;
 	iaest-measure:total-activo-ab 242400508259587 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 883188520648968 ;
 	iaest-measure:a-1-fondos-propios 865682297935103 ;
 	iaest-measure:i-capital 195029163716814 ;
@@ -474,7 +474,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 350207079646018 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 344731539823009 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 55375059439528 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/metalurgia-y-fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo-cnae-24-25> ;
+	iaest-measure:rama-descripcion metalurgia-y-fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo-cnae-24-25 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 185993067846608 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 242400508259587 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 269696471091445 ;
@@ -502,8 +502,8 @@
 	iaest-measure:rentabilidad-economica 0009824667620863 ;
 	iaest-measure:rentabilidad-financiera -330949095967757 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/ec410c15-adf5-3ac1-9f4f-d8ab3e0972b4> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/ec410c15-adf5-3ac1-9f4f-d8ab3e0972b4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 142 ;
 	iaest-measure:a-activo-no-corriente 13480156971831 ;
@@ -519,7 +519,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 410823183098592 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 315562098591549 ;
 	iaest-measure:total-activo-ab 447300664084507 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 216068876760563 ;
 	iaest-measure:a-1-fondos-propios 214066347887324 ;
 	iaest-measure:i-capital 382113816901408 ;
@@ -534,7 +534,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 332669577464789 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 408095823943662 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 123859838028169 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/fabricacion-de-productos-informaticos-electronicos-opticos-y-material-electrico-cnae-26-27> ;
+	iaest-measure:rama-descripcion fabricacion-de-productos-informaticos-electronicos-opticos-y-material-electrico-cnae-26-27 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 276652816901408 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 447300664084507 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 571194673239437 ;
@@ -562,8 +562,8 @@
 	iaest-measure:rentabilidad-economica 250873477840927 ;
 	iaest-measure:rentabilidad-financiera 294868154734371 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/8a5d2872-4dc6-3325-a195-57dcc7b07793> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/8a5d2872-4dc6-3325-a195-57dcc7b07793> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 259 ;
 	iaest-measure:a-activo-no-corriente 322474728571429 ;
@@ -579,7 +579,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 250786023166023 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 180365239382239 ;
 	iaest-measure:total-activo-ab 595982616216216 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 238920153667954 ;
 	iaest-measure:a-1-fondos-propios 237617455984556 ;
 	iaest-measure:i-capital 327193942084942 ;
@@ -594,7 +594,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 445265135135135 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 698338451737452 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 150999645559846 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/fabricacion-de-maquinaria-y-equipo-cnae-28> ;
+	iaest-measure:rama-descripcion fabricacion-de-maquinaria-y-equipo-cnae-28 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 886955598455598 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 595982616216216 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 401509754440154 ;
@@ -622,8 +622,8 @@
 	iaest-measure:rentabilidad-economica 464767611422959 ;
 	iaest-measure:rentabilidad-financiera 245446452912482 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/1a0ede7f-c26f-34ce-b7de-f4a53e23f1a2> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/1a0ede7f-c26f-34ce-b7de-f4a53e23f1a2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 115 ;
 	iaest-measure:a-activo-no-corriente 107538184 ;
@@ -639,7 +639,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 837790347826087 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 566966130434783 ;
 	iaest-measure:total-activo-ab 219032008782609 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto -189463348695652 ;
 	iaest-measure:a-1-fondos-propios -194336077391304 ;
 	iaest-measure:i-capital 188907373043478 ;
@@ -654,7 +654,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 687366017391304 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 574025397391304 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 779566513043478 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/fabricacion-de-material-de-transporte-cnae-29-30> ;
+	iaest-measure:rama-descripcion fabricacion-de-material-de-transporte-cnae-29-30 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 415275652173913 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 219032008782609 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 510398218173913 ;
@@ -682,8 +682,8 @@
 	iaest-measure:rentabilidad-economica -116495098684804 ;
 	iaest-measure:rentabilidad-financiera 158955476491355 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/135d4668-d6ad-31de-9c9f-7c97ceda3999> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/135d4668-d6ad-31de-9c9f-7c97ceda3999> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 398 ;
 	iaest-measure:a-activo-no-corriente 855250298994975 ;
@@ -699,7 +699,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 110128917085427 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 101881673366834 ;
 	iaest-measure:total-activo-ab 177339362562814 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 849965208542714 ;
 	iaest-measure:a-1-fondos-propios 847873954773869 ;
 	iaest-measure:i-capital 152216168341709 ;
@@ -714,7 +714,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 389323618090452 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 30217175879397 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 282140376884422 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/otras-industrias-manufactureras-cnae-31-33> ;
+	iaest-measure:rama-descripcion otras-industrias-manufactureras-cnae-31-33 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0810331658291457 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 177339362562814 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 146400915075377 ;
@@ -742,8 +742,8 @@
 	iaest-measure:rentabilidad-economica 0413125382323673 ;
 	iaest-measure:rentabilidad-financiera 0275783975112928 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/b28e6ce8-3d92-3830-b620-ae6a4134179e> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/b28e6ce8-3d92-3830-b620-ae6a4134179e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 447 ;
 	iaest-measure:a-activo-no-corriente 423945432885906 ;
@@ -759,7 +759,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 138759840715884 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 217329507829978 ;
 	iaest-measure:total-activo-ab 610994982997763 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 184377903803132 ;
 	iaest-measure:a-1-fondos-propios 18637980246085 ;
 	iaest-measure:i-capital 733486700223714 ;
@@ -774,7 +774,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 718513870246085 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 175098418791946 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 161314615212528 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/suministro-de-energia-electrica-gas-vapor-y-aire-acondicionado-cnae-35> ;
+	iaest-measure:rama-descripcion suministro-de-energia-electrica-gas-vapor-y-aire-acondicionado-cnae-35 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 035165548098434 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 610994982997763 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 10516952885906 ;
@@ -802,8 +802,8 @@
 	iaest-measure:rentabilidad-economica 681856355082481 ;
 	iaest-measure:rentabilidad-financiera 134540724118031 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/2c4f33e1-d3ba-3168-80f0-7b825c4d9e1f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/2c4f33e1-d3ba-3168-80f0-7b825c4d9e1f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 3883 ;
 	iaest-measure:a-activo-no-corriente 864880751738347 ;
@@ -819,7 +819,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 138067995879475 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 931413136749936 ;
 	iaest-measure:total-activo-ab 283594746072624 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/construccion> ;
+	iaest-measure:sector-descripcion construccion ;
 	iaest-measure:a-patrimonio-neto 782008877929436 ;
 	iaest-measure:a-1-fondos-propios 748091471800155 ;
 	iaest-measure:i-capital 383653332989956 ;
@@ -834,7 +834,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 880724542879217 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 597680557558589 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 43037838423899 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/construccion-cnae-41-43> ;
+	iaest-measure:rama-descripcion construccion-cnae-41-43 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 12589979654906 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 283594746072624 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 73562333608035 ;
@@ -862,8 +862,8 @@
 	iaest-measure:rentabilidad-economica -304505001373508 ;
 	iaest-measure:rentabilidad-financiera -176304622895767 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/ad2cf591-ed59-33ca-af2c-8ea94ff46c69> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/ad2cf591-ed59-33ca-af2c-8ea94ff46c69> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 5075 ;
 	iaest-measure:a-activo-no-corriente 476192095566502 ;
@@ -879,7 +879,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 961511749753695 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 117325374187192 ;
 	iaest-measure:total-activo-ab 134334083704433 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 524567283940887 ;
 	iaest-measure:a-1-fondos-propios 517258686305419 ;
 	iaest-measure:i-capital 123690918226601 ;
@@ -894,7 +894,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 118505773399015 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 20334868453202 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 423945534581281 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/comercio-al-por-mayor-y-al-por-menor-reparacion-de-vehiculos-de-motor-y-motocicletas-cnae-45-47> ;
+	iaest-measure:rama-descripcion comercio-al-por-mayor-y-al-por-menor-reparacion-de-vehiculos-de-motor-y-motocicletas-cnae-45-47 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 13291881773399 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 134334089004926 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 244478466541872 ;
@@ -922,8 +922,8 @@
 	iaest-measure:rentabilidad-economica 234249862893259 ;
 	iaest-measure:rentabilidad-financiera 217811554897546 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/4d74d62f-ec7c-39e3-880d-083306dc7975> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/4d74d62f-ec7c-39e3-880d-083306dc7975> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 871 ;
 	iaest-measure:a-activo-no-corriente 977916444316877 ;
@@ -939,7 +939,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 167057230769231 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 848219563719862 ;
 	iaest-measure:total-activo-ab 181071354190586 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 58642720206659 ;
 	iaest-measure:a-1-fondos-propios 598916851894374 ;
 	iaest-measure:i-capital 216740024110218 ;
@@ -954,7 +954,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 17307233065442 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 264546833524684 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 40748457749713 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/transporte-y-almacenamiento-cnae-49-53> ;
+	iaest-measure:rama-descripcion transporte-y-almacenamiento-cnae-49-53 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 125057405281286 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 181071354190586 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 188379471297359 ;
@@ -982,8 +982,8 @@
 	iaest-measure:rentabilidad-economica 254098267183486 ;
 	iaest-measure:rentabilidad-financiera 193002051871477 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/625f3e95-c0e0-301c-93ca-e0f7b36c7145> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/625f3e95-c0e0-301c-93ca-e0f7b36c7145> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 1283 ;
 	iaest-measure:a-activo-no-corriente 538856803585347 ;
@@ -999,7 +999,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 377584653156664 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 313206484801247 ;
 	iaest-measure:total-activo-ab 664365936866719 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 194062075604053 ;
 	iaest-measure:a-1-fondos-propios 186220760717069 ;
 	iaest-measure:i-capital 138565341387373 ;
@@ -1014,7 +1014,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 0219836321122369 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 843689306313328 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 848296882307093 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/hosteleria-cnae-55-56> ;
+	iaest-measure:rama-descripcion hosteleria-cnae-55-56 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0996208106001559 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 664365936866719 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 418717351519875 ;
@@ -1042,8 +1042,8 @@
 	iaest-measure:rentabilidad-economica -238457299595747 ;
 	iaest-measure:rentabilidad-financiera -13004259514827 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/3e9b178d-76f7-3a62-a53b-c55bf90325f9> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/3e9b178d-76f7-3a62-a53b-c55bf90325f9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 393 ;
 	iaest-measure:a-activo-no-corriente 446245300254453 ;
@@ -1059,7 +1059,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 13156768956743 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 697155267175573 ;
 	iaest-measure:total-activo-ab 108208447328244 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 424280122137405 ;
 	iaest-measure:a-1-fondos-propios 408758282442748 ;
 	iaest-measure:i-capital 153784152671756 ;
@@ -1074,7 +1074,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 167838422391858 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 202000040712468 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 294012264631043 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/informacion-y-comunicaciones-cnae-58-63> ;
+	iaest-measure:rama-descripcion informacion-y-comunicaciones-cnae-58-63 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 396772010178117 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 108208447328244 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 125209062086514 ;
@@ -1102,8 +1102,8 @@
 	iaest-measure:rentabilidad-economica -78673494088657 ;
 	iaest-measure:rentabilidad-financiera -246802037167725 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/20f1cdb6-d7b4-3145-a88e-6d814c0871f5> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/20f1cdb6-d7b4-3145-a88e-6d814c0871f5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 1694 ;
 	iaest-measure:a-activo-no-corriente 272003529397875 ;
@@ -1119,7 +1119,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 285180864817001 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 126014384297521 ;
 	iaest-measure:total-activo-ab 438721332290437 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 195982394214876 ;
 	iaest-measure:a-1-fondos-propios 195170918181818 ;
 	iaest-measure:i-capital 11206372768595 ;
@@ -1134,7 +1134,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 798461038961039 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 779406074970484 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 126585731404959 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/actividades-inmobiliarias-cnae-68> ;
+	iaest-measure:rama-descripcion actividades-inmobiliarias-cnae-68 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 137365584415584 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 438721332290437 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 240581358323495 ;
@@ -1162,8 +1162,8 @@
 	iaest-measure:rentabilidad-economica 0088886475952089 ;
 	iaest-measure:rentabilidad-financiera -501665393974661 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/29917f9b-9050-37f0-8a90-cf988722fe33> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/29917f9b-9050-37f0-8a90-cf988722fe33> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 2534 ;
 	iaest-measure:a-activo-no-corriente 102588724704025 ;
@@ -1179,7 +1179,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 120996406077348 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 612925276243094 ;
 	iaest-measure:total-activo-ab 142102163535912 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 885499742304657 ;
 	iaest-measure:a-1-fondos-propios 891311669297553 ;
 	iaest-measure:i-capital 415011843725335 ;
@@ -1194,7 +1194,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 128079123914759 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 156871687056038 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 144605378453039 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/actividades-profesionales-cientificas-y-tecnicas-actividades-administrativas-y-servicios-auxiliares-cnae-69-82> ;
+	iaest-measure:rama-descripcion actividades-profesionales-cientificas-y-tecnicas-actividades-administrativas-y-servicios-auxiliares-cnae-69-82 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 13197316495659 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 142102163535912 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 668564893449092 ;
@@ -1222,8 +1222,8 @@
 	iaest-measure:rentabilidad-economica 244300423869037 ;
 	iaest-measure:rentabilidad-financiera 350251677675692 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/943452bf-7ed0-3544-8bc5-06000b7309de> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/943452bf-7ed0-3544-8bc5-06000b7309de> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 287 ;
 	iaest-measure:a-activo-no-corriente 363614216027875 ;
@@ -1239,7 +1239,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 763569895470383 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 352879616724739 ;
 	iaest-measure:total-activo-ab 662120505226481 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 322971714285714 ;
 	iaest-measure:a-1-fondos-propios 303821163763066 ;
 	iaest-measure:i-capital 102584550522648 ;
@@ -1254,7 +1254,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 101497317073171 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 761983101045296 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 100382773519164 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/educacion-cnae-85> ;
+	iaest-measure:rama-descripcion educacion-cnae-85 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 723756097560976 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 662120505226481 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 585854494773519 ;
@@ -1282,8 +1282,8 @@
 	iaest-measure:rentabilidad-economica 093261916358531 ;
 	iaest-measure:rentabilidad-financiera -111828435758422 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/de99c3ef-f7fc-3f9f-82d7-0db8709f6713> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/de99c3ef-f7fc-3f9f-82d7-0db8709f6713> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 372 ;
 	iaest-measure:a-activo-no-corriente 680219177419355 ;
@@ -1299,7 +1299,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 129296438172043 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 747848924731183 ;
 	iaest-measure:total-activo-ab 104211687903226 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 454646720430108 ;
 	iaest-measure:a-1-fondos-propios 409096126344086 ;
 	iaest-measure:i-capital 222295908602151 ;
@@ -1314,7 +1314,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 164114784946237 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 115687408602151 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 124430080645161 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/actividades-sanitarias-y-de-servicios-sociales-cnae-86-88> ;
+	iaest-measure:rama-descripcion actividades-sanitarias-y-de-servicios-sociales-cnae-86-88 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 067069623655914 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 104211687903226 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 861493231182796 ;
@@ -1342,8 +1342,8 @@
 	iaest-measure:rentabilidad-economica 514825928950311 ;
 	iaest-measure:rentabilidad-financiera 621875853270926 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/7a38ae6e-7f64-36d4-bcf8-f8d9919a7f7b> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/7a38ae6e-7f64-36d4-bcf8-f8d9919a7f7b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
 	iaest-measure:numero-de-empresas 806 ;
 	iaest-measure:a-activo-no-corriente 947242933002481 ;
@@ -1359,7 +1359,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 857375521091811 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 625567431761787 ;
 	iaest-measure:total-activo-ab 124828880148883 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 484079325062035 ;
 	iaest-measure:a-1-fondos-propios 42368529528536 ;
 	iaest-measure:i-capital 284570985111663 ;
@@ -1374,7 +1374,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 310892555831266 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 192686109181141 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 157202189826303 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/otros-servicios-cnae-90-99> ;
+	iaest-measure:rama-descripcion otros-servicios-cnae-90-99 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 883822456575682 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 124828879156328 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 490659169975186 ;
@@ -1402,8 +1402,8 @@
 	iaest-measure:rentabilidad-economica -156255266825452 ;
 	iaest-measure:rentabilidad-financiera -701417427597126 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/0810571b-0ac5-335c-b7c4-af239f35c863> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/0810571b-0ac5-335c-b7c4-af239f35c863> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 1303 ;
 	iaest-measure:a-activo-no-corriente 754042320798158 ;
@@ -1419,7 +1419,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 683825594781274 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 551866569455104 ;
 	iaest-measure:total-activo-ab 127684723407521 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/agricultura-ganaderia-y-pesca> ;
+	iaest-measure:sector-descripcion agricultura-ganaderia-y-pesca ;
 	iaest-measure:a-patrimonio-neto 473623361473523 ;
 	iaest-measure:a-1-fondos-propios 460711719877206 ;
 	iaest-measure:i-capital 231189950115119 ;
@@ -1434,7 +1434,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 167665541059094 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 1834715257099 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 238896979278588 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/agricultura-ganaderia-silvicultura-y-pesca-cnae-01-03> ;
+	iaest-measure:rama-descripcion agricultura-ganaderia-silvicultura-y-pesca-cnae-01-03 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0460712970069071 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 127684723407521 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 109363255640829 ;
@@ -1462,8 +1462,8 @@
 	iaest-measure:rentabilidad-economica 367599991976111 ;
 	iaest-measure:rentabilidad-financiera 424419026332227 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/cdab5067-75f6-3ee9-a162-f3e3e1f5644f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/cdab5067-75f6-3ee9-a162-f3e3e1f5644f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 185 ;
 	iaest-measure:a-activo-no-corriente 932473907027027 ;
@@ -1479,7 +1479,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 127438147027027 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 346422627027027 ;
 	iaest-measure:total-activo-ab 12456810372973 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 763533153513514 ;
 	iaest-measure:a-1-fondos-propios 757952442702703 ;
 	iaest-measure:i-capital 160213077837838 ;
@@ -1494,7 +1494,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 392631351351351 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 674041162162162 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 839192302702703 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/industria-extractiva-agua-y-residuos-cnae-05-09-y-36-39> ;
+	iaest-measure:rama-descripcion industria-extractiva-agua-y-residuos-cnae-05-09-y-36-39 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0700810810810811 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 12456810372973 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 344257962162162 ;
@@ -1522,8 +1522,8 @@
 	iaest-measure:rentabilidad-economica 102970509279895 ;
 	iaest-measure:rentabilidad-financiera 233395263586898 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/c35681fd-cbf9-36e6-993b-3ea0b5bfb680> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/c35681fd-cbf9-36e6-993b-3ea0b5bfb680> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 498 ;
 	iaest-measure:a-activo-no-corriente 207604553012048 ;
@@ -1539,7 +1539,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 33399225502008 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 130152341365462 ;
 	iaest-measure:total-activo-ab 432703462449799 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 170076872891566 ;
 	iaest-measure:a-1-fondos-propios 158394823293173 ;
 	iaest-measure:i-capital 622379931726908 ;
@@ -1554,7 +1554,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 372520883534137 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 617876004016064 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 104737939156627 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/industria-de-la-alimentacion-bebidas-y-tabaco-cnae-10-12> ;
+	iaest-measure:rama-descripcion industria-de-la-alimentacion-bebidas-y-tabaco-cnae-10-12 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 484738353413655 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 432703462449799 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 554167074899598 ;
@@ -1582,8 +1582,8 @@
 	iaest-measure:rentabilidad-economica 377141311700401 ;
 	iaest-measure:rentabilidad-financiera 420696817740792 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/30dbe613-fc35-38f9-9963-64285c9adb2a> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/30dbe613-fc35-38f9-9963-64285c9adb2a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 192 ;
 	iaest-measure:a-activo-no-corriente 234439072916667 ;
@@ -1599,7 +1599,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 612774739583333 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 10980290625 ;
 	iaest-measure:total-activo-ab 95058675 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 443241192708333 ;
 	iaest-measure:a-1-fondos-propios 441361453125 ;
 	iaest-measure:i-capital 635377395833333 ;
@@ -1614,7 +1614,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 0461072916666667 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 116058921875 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 29390146875 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/industria-textil-confeccion-cuero-y-calzado-cnae-13-15> ;
+	iaest-measure:rama-descripcion industria-textil-confeccion-cuero-y-calzado-cnae-13-15 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0117953125 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 95058675 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 124756488020833 ;
@@ -1642,8 +1642,8 @@
 	iaest-measure:rentabilidad-economica 293501016170627 ;
 	iaest-measure:rentabilidad-financiera 199760149868554 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/762006df-4148-3078-a56d-209a0e321dec> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/762006df-4148-3078-a56d-209a0e321dec> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 339 ;
 	iaest-measure:a-activo-no-corriente 500350051917404 ;
@@ -1659,7 +1659,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 134424180235988 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 134169861356932 ;
 	iaest-measure:total-activo-ab 779225093215339 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 455708494985251 ;
 	iaest-measure:a-1-fondos-propios 453316374631268 ;
 	iaest-measure:i-capital 516836056047198 ;
@@ -1674,7 +1674,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 199782772861357 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 839223545722714 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 59188198820059 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/industria-de-la-madera-y-del-corcho-excepto-muebles-cesteria-y-esparteria-papel-y-artes-graficas-cnae-16-18> ;
+	iaest-measure:rama-descripcion industria-de-la-madera-y-del-corcho-excepto-muebles-cesteria-y-esparteria-papel-y-artes-graficas-cnae-16-18 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0156306784660767 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 779225093215339 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 460622507669617 ;
@@ -1702,8 +1702,8 @@
 	iaest-measure:rentabilidad-economica 569012748254604 ;
 	iaest-measure:rentabilidad-financiera 719425896671028 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/80a1340a-d108-32e1-8914-d68fc4f1e519> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/80a1340a-d108-32e1-8914-d68fc4f1e519> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 116 ;
 	iaest-measure:a-activo-no-corriente 319922522413793 ;
@@ -1719,7 +1719,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 587176879310345 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 359607775862069 ;
 	iaest-measure:total-activo-ab 730723995689655 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 403192656896552 ;
 	iaest-measure:a-1-fondos-propios 397867209482759 ;
 	iaest-measure:i-capital 158950649137931 ;
@@ -1734,7 +1734,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 549487068965517 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 650492431034483 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 17628376637931 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/industria-quimica-y-productos-farmaceuticos-cnae-20-21> ;
+	iaest-measure:rama-descripcion industria-quimica-y-productos-farmaceuticos-cnae-20-21 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 464544827586207 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 730723995689655 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 819137537931034 ;
@@ -1762,8 +1762,8 @@
 	iaest-measure:rentabilidad-economica 73657810100442 ;
 	iaest-measure:rentabilidad-financiera 121543138308301 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/e354358f-6852-3916-bde6-15bd09425ff1> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/e354358f-6852-3916-bde6-15bd09425ff1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 259 ;
 	iaest-measure:a-activo-no-corriente 12195262972973 ;
@@ -1779,7 +1779,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 18720650965251 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 13860628957529 ;
 	iaest-measure:total-activo-ab 299556261003861 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 131639774903475 ;
 	iaest-measure:a-1-fondos-propios 128737858687259 ;
 	iaest-measure:i-capital 562668586872587 ;
@@ -1794,7 +1794,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 318612355212355 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 315213536679537 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 762249799227799 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/fabricacion-de-productos-de-caucho-y-plasticos-y-otros-productos-minerales-no-metalicos-cnae-22-23> ;
+	iaest-measure:rama-descripcion fabricacion-de-productos-de-caucho-y-plasticos-y-otros-productos-minerales-no-metalicos-cnae-22-23 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 236525868725869 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 299556261003861 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 354447957528958 ;
@@ -1822,8 +1822,8 @@
 	iaest-measure:rentabilidad-economica -116013026918441 ;
 	iaest-measure:rentabilidad-financiera -372726739533257 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/88e0bb83-75c4-343e-8164-2ae731208a52> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/88e0bb83-75c4-343e-8164-2ae731208a52> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 660 ;
 	iaest-measure:a-activo-no-corriente 88224641969697 ;
@@ -1839,7 +1839,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 190834183333333 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 126687628787879 ;
 	iaest-measure:total-activo-ab 213338411666667 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 738685607575758 ;
 	iaest-measure:a-1-fondos-propios 7226883 ;
 	iaest-measure:i-capital 202861672727273 ;
@@ -1854,7 +1854,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 492749696969697 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 302801713636364 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 510470018181818 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/metalurgia-y-fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo-cnae-24-25> ;
+	iaest-measure:rama-descripcion metalurgia-y-fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo-cnae-24-25 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0776387878787879 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 213338411666667 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 242400785909091 ;
@@ -1882,8 +1882,8 @@
 	iaest-measure:rentabilidad-economica -649025175158526 ;
 	iaest-measure:rentabilidad-financiera -18904195271281 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/1c93aaca-59c2-3501-bcdd-ab7d550dde2d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/1c93aaca-59c2-3501-bcdd-ab7d550dde2d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 136 ;
 	iaest-measure:a-activo-no-corriente 136844322058824 ;
@@ -1899,7 +1899,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 410115727941176 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 316720588235294 ;
 	iaest-measure:total-activo-ab 484198519117647 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 235694899264706 ;
 	iaest-measure:a-1-fondos-propios 233341118382353 ;
 	iaest-measure:i-capital 421572154411765 ;
@@ -1914,7 +1914,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 399333235294118 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 561931441176471 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 141410840441176 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/fabricacion-de-productos-informaticos-electronicos-opticos-y-material-electrico-cnae-26-27> ;
+	iaest-measure:rama-descripcion fabricacion-de-productos-informaticos-electronicos-opticos-y-material-electrico-cnae-26-27 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 138363235294118 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 484198519117647 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 674057238235294 ;
@@ -1942,8 +1942,8 @@
 	iaest-measure:rentabilidad-economica 447590494094648 ;
 	iaest-measure:rentabilidad-financiera 692868634198868 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/0aa3e39b-997b-3352-8a3d-3d836cd3aa36> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/0aa3e39b-997b-3352-8a3d-3d836cd3aa36> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 252 ;
 	iaest-measure:a-activo-no-corriente 300159176190476 ;
@@ -1959,7 +1959,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 211912801587302 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 180630805555556 ;
 	iaest-measure:total-activo-ab 575932396428571 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 262237592063492 ;
 	iaest-measure:a-1-fondos-propios 260814646428571 ;
 	iaest-measure:i-capital 355035603174603 ;
@@ -1974,7 +1974,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 231538095238095 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 597779488095238 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 154720001190476 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/fabricacion-de-maquinaria-y-equipo-cnae-28> ;
+	iaest-measure:rama-descripcion fabricacion-de-maquinaria-y-equipo-cnae-28 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 622769444444444 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 575932396428571 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 390193631349206 ;
@@ -2002,8 +2002,8 @@
 	iaest-measure:rentabilidad-economica 545865302688789 ;
 	iaest-measure:rentabilidad-financiera 299740852659344 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/15ddfa16-8dc6-3f28-961e-68e2b8a3ac40> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/15ddfa16-8dc6-3f28-961e-68e2b8a3ac40> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 116 ;
 	iaest-measure:a-activo-no-corriente 639460734482759 ;
@@ -2019,7 +2019,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 687897637931034 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 421280913793103 ;
 	iaest-measure:total-activo-ab 154944243189655 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 963276456896552 ;
 	iaest-measure:a-1-fondos-propios 919303189655172 ;
 	iaest-measure:i-capital 18062851637931 ;
@@ -2034,7 +2034,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 580566120689655 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 273306372413793 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 837139454310345 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/fabricacion-de-material-de-transporte-cnae-29-30> ;
+	iaest-measure:rama-descripcion fabricacion-de-material-de-transporte-cnae-29-30 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 508709482758621 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 154944243189655 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 382934951465517 ;
@@ -2062,8 +2062,8 @@
 	iaest-measure:rentabilidad-economica -481275739177592 ;
 	iaest-measure:rentabilidad-financiera -820234719919495 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/4fad1d42-7127-3f90-955a-383deaf634d5> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/4fad1d42-7127-3f90-955a-383deaf634d5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 390 ;
 	iaest-measure:a-activo-no-corriente 871468241025641 ;
@@ -2079,7 +2079,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 873280102564103 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 767592538461538 ;
 	iaest-measure:total-activo-ab 17092826 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 8587396 ;
 	iaest-measure:a-1-fondos-propios 854727846153846 ;
 	iaest-measure:i-capital 157479184615385 ;
@@ -2094,7 +2094,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 0707564102564103 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 259510835897436 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 270125543589744 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/otras-industrias-manufactureras-cnae-31-33> ;
+	iaest-measure:rama-descripcion otras-industrias-manufactureras-cnae-31-33 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0750387179487179 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 17092826 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 132108064102564 ;
@@ -2122,8 +2122,8 @@
 	iaest-measure:rentabilidad-economica -0401387168256497 ;
 	iaest-measure:rentabilidad-financiera -178782025573533 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/5bac60c6-56c8-392a-9c5e-73f906f43ef6> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/5bac60c6-56c8-392a-9c5e-73f906f43ef6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 455 ;
 	iaest-measure:a-activo-no-corriente 440512678021978 ;
@@ -2139,7 +2139,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 19229847032967 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 261784808791209 ;
 	iaest-measure:total-activo-ab 520197635164835 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 200902451428571 ;
 	iaest-measure:a-1-fondos-propios 204190043736264 ;
 	iaest-measure:i-capital 743995252747253 ;
@@ -2154,7 +2154,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 56183010989011 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 719840492307692 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 175455692307692 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/suministro-de-energia-electrica-gas-vapor-y-aire-acondicionado-cnae-35> ;
+	iaest-measure:rama-descripcion suministro-de-energia-electrica-gas-vapor-y-aire-acondicionado-cnae-35 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0245395604395604 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 520197635164835 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 116459238021978 ;
@@ -2182,8 +2182,8 @@
 	iaest-measure:rentabilidad-economica 972854412678759 ;
 	iaest-measure:rentabilidad-financiera 160379544934122 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/07de4b6c-55f3-3337-9f31-2799f8ec9e58> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/07de4b6c-55f3-3337-9f31-2799f8ec9e58> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 3687 ;
 	iaest-measure:a-activo-no-corriente 801734777054516 ;
@@ -2199,7 +2199,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 132135951179821 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 796556086248983 ;
 	iaest-measure:total-activo-ab 252402717032818 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/construccion> ;
+	iaest-measure:sector-descripcion construccion ;
 	iaest-measure:a-patrimonio-neto 654514437211825 ;
 	iaest-measure:a-1-fondos-propios 622946995117982 ;
 	iaest-measure:i-capital 396585395985896 ;
@@ -2214,7 +2214,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 132949877949552 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 558276475725522 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 373059225657716 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/construccion-cnae-41-43> ;
+	iaest-measure:rama-descripcion construccion-cnae-41-43 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 126774450772986 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 252402717032818 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 596494538106862 ;
@@ -2242,8 +2242,8 @@
 	iaest-measure:rentabilidad-economica -366642115903519 ;
 	iaest-measure:rentabilidad-financiera -229448856785793 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/23ae4d30-0bb1-3bf2-b28b-68bff8a69fc7> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/23ae4d30-0bb1-3bf2-b28b-68bff8a69fc7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 4960 ;
 	iaest-measure:a-activo-no-corriente 469041041733871 ;
@@ -2259,7 +2259,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 100096141532258 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 957066427419355 ;
 	iaest-measure:total-activo-ab 127596687600806 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 512156393346774 ;
 	iaest-measure:a-1-fondos-propios 505947883064516 ;
 	iaest-measure:i-capital 121284280241935 ;
@@ -2274,7 +2274,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 225140181451613 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 190932494758065 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 386793102822581 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/comercio-al-por-mayor-y-al-por-menor-reparacion-de-vehiculos-de-motor-y-motocicletas-cnae-45-47> ;
+	iaest-measure:rama-descripcion comercio-al-por-mayor-y-al-por-menor-reparacion-de-vehiculos-de-motor-y-motocicletas-cnae-45-47 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 117654637096774 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 127596687600806 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 221891881633065 ;
@@ -2302,8 +2302,8 @@
 	iaest-measure:rentabilidad-economica 234948806899432 ;
 	iaest-measure:rentabilidad-financiera 240593690472125 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/ae56e44a-7d9c-30b9-a480-8a58daa68d01> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/ae56e44a-7d9c-30b9-a480-8a58daa68d01> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 846 ;
 	iaest-measure:a-activo-no-corriente 108212925650118 ;
@@ -2319,7 +2319,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 181527341607565 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 887855224586288 ;
 	iaest-measure:total-activo-ab 192788855910165 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 62168059929078 ;
 	iaest-measure:a-1-fondos-propios 643680020094563 ;
 	iaest-measure:i-capital 236139757683215 ;
@@ -2334,7 +2334,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 112210638297872 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 23925946572104 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 398907507092199 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/transporte-y-almacenamiento-cnae-49-53> ;
+	iaest-measure:rama-descripcion transporte-y-almacenamiento-cnae-49-53 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 178201418439716 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 192788855910165 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 186920869267139 ;
@@ -2362,8 +2362,8 @@
 	iaest-measure:rentabilidad-economica 270998517228504 ;
 	iaest-measure:rentabilidad-financiera 204363092373947 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/8d2b6ae7-01d5-353c-8a1a-404d8ff888ef> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/8d2b6ae7-01d5-353c-8a1a-404d8ff888ef> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 1219 ;
 	iaest-measure:a-activo-no-corriente 527523399507793 ;
@@ -2379,7 +2379,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 310695373256768 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 28473165709598 ;
 	iaest-measure:total-activo-ab 658989366694011 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 194270210008203 ;
 	iaest-measure:a-1-fondos-propios 186023484003281 ;
 	iaest-measure:i-capital 14651297292863 ;
@@ -2394,7 +2394,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 0235675143560295 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 101237077932732 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 863170508613618 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/hosteleria-cnae-55-56> ;
+	iaest-measure:rama-descripcion hosteleria-cnae-55-56 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0478804757998359 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 658989366694011 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 395233320754717 ;
@@ -2422,8 +2422,8 @@
 	iaest-measure:rentabilidad-economica -359817002104988 ;
 	iaest-measure:rentabilidad-financiera -153497725016904 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/de616e3e-80aa-3385-bb90-234ccf801a16> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/de616e3e-80aa-3385-bb90-234ccf801a16> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 400 ;
 	iaest-measure:a-activo-no-corriente 4227955725 ;
@@ -2439,7 +2439,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 156575105 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 674051 ;
 	iaest-measure:total-activo-ab 105395514 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 3685905675 ;
 	iaest-measure:a-1-fondos-propios 3579519625 ;
 	iaest-measure:i-capital 14893579 ;
@@ -2454,7 +2454,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 1448765 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 1946673925 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 25492626 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/informacion-y-comunicaciones-cnae-58-63> ;
+	iaest-measure:rama-descripcion informacion-y-comunicaciones-cnae-58-63 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 49272775 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 105395514 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 11790997475 ;
@@ -2482,8 +2482,8 @@
 	iaest-measure:rentabilidad-economica -129671107254147 ;
 	iaest-measure:rentabilidad-financiera -374645045684735 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/c3f965ef-2e45-3b71-bcde-06bbf0266d07> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/c3f965ef-2e45-3b71-bcde-06bbf0266d07> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 1621 ;
 	iaest-measure:a-activo-no-corriente 280663242257866 ;
@@ -2499,7 +2499,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 279727368908081 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 767230018507094 ;
 	iaest-measure:total-activo-ab 418688889574337 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 196223698951265 ;
 	iaest-measure:a-1-fondos-propios 195481027267119 ;
 	iaest-measure:i-capital 128697200801974 ;
@@ -2514,7 +2514,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 804177668106107 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 581511321406539 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 126117829117829 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/actividades-inmobiliarias-cnae-68> ;
+	iaest-measure:rama-descripcion actividades-inmobiliarias-cnae-68 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 152531153608883 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 418688889574337 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 227012004935225 ;
@@ -2542,8 +2542,8 @@
 	iaest-measure:rentabilidad-economica -65256636087723 ;
 	iaest-measure:rentabilidad-financiera -158300286995716 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/f57a66ff-bafd-3c28-9b7d-444d94e76491> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/f57a66ff-bafd-3c28-9b7d-444d94e76491> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 2550 ;
 	iaest-measure:a-activo-no-corriente 102492708862745 ;
@@ -2559,7 +2559,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 11427824 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 762305921568627 ;
 	iaest-measure:total-activo-ab 140239800196078 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 879765716470588 ;
 	iaest-measure:a-1-fondos-propios 889788935294118 ;
 	iaest-measure:i-capital 463488981568627 ;
@@ -2574,7 +2574,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 0848547843137255 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 126347949019608 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 128833256470588 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/actividades-profesionales-cientificas-y-tecnicas-actividades-administrativas-y-servicios-auxiliares-cnae-69-82> ;
+	iaest-measure:rama-descripcion actividades-profesionales-cientificas-y-tecnicas-actividades-administrativas-y-servicios-auxiliares-cnae-69-82 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0716853333333333 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 140240652196078 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 622240328627451 ;
@@ -2602,8 +2602,8 @@
 	iaest-measure:rentabilidad-economica 239637738933336 ;
 	iaest-measure:rentabilidad-financiera 207145300074245 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/35262d42-4de9-344b-b3f7-5e1444f0051c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/35262d42-4de9-344b-b3f7-5e1444f0051c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 277 ;
 	iaest-measure:a-activo-no-corriente 274490332129964 ;
@@ -2619,7 +2619,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 714104440433213 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 312986389891697 ;
 	iaest-measure:total-activo-ab 471652660649819 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 21708159566787 ;
 	iaest-measure:a-1-fondos-propios 198937718411552 ;
 	iaest-measure:i-capital 985368736462094 ;
@@ -2634,7 +2634,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 0630064981949458 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 45848559566787 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 817216353790614 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/educacion-cnae-85> ;
+	iaest-measure:rama-descripcion educacion-cnae-85 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 611328519855596 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 471652660649819 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 414815790613718 ;
@@ -2662,8 +2662,8 @@
 	iaest-measure:rentabilidad-economica 247492902424746 ;
 	iaest-measure:rentabilidad-financiera 169427716228149 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/b39d282c-f179-3e86-ae34-474315a23bb2> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/b39d282c-f179-3e86-ae34-474315a23bb2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 362 ;
 	iaest-measure:a-activo-no-corriente 10946053839779 ;
@@ -2679,7 +2679,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 169513243093923 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 100909491712707 ;
 	iaest-measure:total-activo-ab 169188976519337 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 564363480662983 ;
 	iaest-measure:a-1-fondos-propios 520189276243094 ;
 	iaest-measure:i-capital 253226494475138 ;
@@ -2694,7 +2694,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 157242817679558 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 171244132596685 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 274406668508287 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/actividades-sanitarias-y-de-servicios-sociales-cnae-86-88> ;
+	iaest-measure:rama-descripcion actividades-sanitarias-y-de-servicios-sociales-cnae-86-88 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0367756906077348 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 169188976519337 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 164767462154696 ;
@@ -2722,8 +2722,8 @@
 	iaest-measure:rentabilidad-economica 375815418208311 ;
 	iaest-measure:rentabilidad-financiera 465955681357739 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/9f6512a4-b261-335f-9586-56e9a31eae7a> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/9f6512a4-b261-335f-9586-56e9a31eae7a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
 	iaest-measure:numero-de-empresas 803 ;
 	iaest-measure:a-activo-no-corriente 893752161892902 ;
@@ -2739,7 +2739,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 572639452054795 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 596182727272727 ;
 	iaest-measure:total-activo-ab 111370436737235 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 476488155666252 ;
 	iaest-measure:a-1-fondos-propios 421052474470735 ;
 	iaest-measure:i-capital 279400895392279 ;
@@ -2754,7 +2754,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 0656374844333748 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 768492191780822 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 107300232876712 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/otros-servicios-cnae-90-99> ;
+	iaest-measure:rama-descripcion otros-servicios-cnae-90-99 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 7169200498132 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 111370436737235 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 415738825653798 ;
@@ -2782,8 +2782,8 @@
 	iaest-measure:rentabilidad-economica -374067289133399 ;
 	iaest-measure:rentabilidad-financiera 235086750786562 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/5908a703-06a8-37eb-beda-749b7d7299d8> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/5908a703-06a8-37eb-beda-749b7d7299d8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 1410 ;
 	iaest-measure:a-activo-no-corriente 755754695035461 ;
@@ -2799,7 +2799,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 587615829787234 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 592221035460993 ;
 	iaest-measure:total-activo-ab 125431406453901 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/agricultura-ganaderia-y-pesca> ;
+	iaest-measure:sector-descripcion agricultura-ganaderia-y-pesca ;
 	iaest-measure:a-patrimonio-neto 554104474468085 ;
 	iaest-measure:a-1-fondos-propios 542419519858156 ;
 	iaest-measure:i-capital 284185560283688 ;
@@ -2814,7 +2814,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 028008865248227 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 174537133333333 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 225334883687943 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/agricultura-ganaderia-silvicultura-y-pesca-cnae-01-03> ;
+	iaest-measure:rama-descripcion agricultura-ganaderia-silvicultura-y-pesca-cnae-01-03 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0312301418439716 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 125431406453901 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 104532375106383 ;
@@ -2842,8 +2842,8 @@
 	iaest-measure:rentabilidad-economica 411212450586093 ;
 	iaest-measure:rentabilidad-financiera 497178407386622 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/2dd62ec6-b1d7-3104-b911-8aa959f57bd1> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/2dd62ec6-b1d7-3104-b911-8aa959f57bd1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 181 ;
 	iaest-measure:a-activo-no-corriente 122090268895028 ;
@@ -2859,7 +2859,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 632857093922652 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 847141022099448 ;
 	iaest-measure:total-activo-ab 153204138674033 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 891844159668508 ;
 	iaest-measure:a-1-fondos-propios 813499601104972 ;
 	iaest-measure:i-capital 161237892265193 ;
@@ -2874,7 +2874,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 248969060773481 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 569392281767956 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 977861895027624 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/industria-extractiva-agua-y-residuos-cnae-05-09-y-36-39> ;
+	iaest-measure:rama-descripcion industria-extractiva-agua-y-residuos-cnae-05-09-y-36-39 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0661685082872928 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 153204138674033 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 389390331491713 ;
@@ -2902,8 +2902,8 @@
 	iaest-measure:rentabilidad-economica 154010383668537 ;
 	iaest-measure:rentabilidad-financiera 359177726891337 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/018b6d33-f223-31ad-8c08-2f7665641b82> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/018b6d33-f223-31ad-8c08-2f7665641b82> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 503 ;
 	iaest-measure:a-activo-no-corriente 196670010139165 ;
@@ -2919,7 +2919,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 304981027833002 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 139008532803181 ;
 	iaest-measure:total-activo-ab 405977892445328 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 162976765805169 ;
 	iaest-measure:a-1-fondos-propios 151841772763419 ;
 	iaest-measure:i-capital 598083208747515 ;
@@ -2934,7 +2934,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 368922465208748 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 617449055666004 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 99113492445328 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/industria-de-la-alimentacion-bebidas-y-tabaco-cnae-10-12> ;
+	iaest-measure:rama-descripcion industria-de-la-alimentacion-bebidas-y-tabaco-cnae-10-12 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 338117495029821 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 405977892445328 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 553186097813121 ;
@@ -2962,8 +2962,8 @@
 	iaest-measure:rentabilidad-economica 321912234456504 ;
 	iaest-measure:rentabilidad-financiera 362264605178595 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/4991d17d-6e6b-352c-b899-980911bee914> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/4991d17d-6e6b-352c-b899-980911bee914> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 178 ;
 	iaest-measure:a-activo-no-corriente 241416314606742 ;
@@ -2979,7 +2979,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 638539438202247 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 138244168539326 ;
 	iaest-measure:total-activo-ab 982648280898876 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 456290247191011 ;
 	iaest-measure:a-1-fondos-propios 453990882022472 ;
 	iaest-measure:i-capital 712212134831461 ;
@@ -2994,7 +2994,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 0941820224719101 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 133191926966292 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 291229151685393 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/industria-textil-confeccion-cuero-y-calzado-cnae-13-15> ;
+	iaest-measure:rama-descripcion industria-textil-confeccion-cuero-y-calzado-cnae-13-15 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0152084269662921 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 982648280898876 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 120818475842697 ;
@@ -3022,8 +3022,8 @@
 	iaest-measure:rentabilidad-economica 334579061213131 ;
 	iaest-measure:rentabilidad-financiera 278464954004242 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/f64c5c26-9801-3329-80b1-d491640ab4a6> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/f64c5c26-9801-3329-80b1-d491640ab4a6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 324 ;
 	iaest-measure:a-activo-no-corriente 52132554691358 ;
@@ -3039,7 +3039,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 152683673765432 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 134405608024691 ;
 	iaest-measure:total-activo-ab 821047225617284 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 51781277808642 ;
 	iaest-measure:a-1-fondos-propios 514660223148148 ;
 	iaest-measure:i-capital 562952592592593 ;
@@ -3054,7 +3054,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 386344907407407 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 91626925617284 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 582644324074074 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/industria-de-la-madera-y-del-corcho-excepto-muebles-cesteria-y-esparteria-papel-y-artes-graficas-cnae-16-18> ;
+	iaest-measure:rama-descripcion industria-de-la-madera-y-del-corcho-excepto-muebles-cesteria-y-esparteria-papel-y-artes-graficas-cnae-16-18 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 0148009259259259 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 821047225617284 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 498578913888889 ;
@@ -3082,8 +3082,8 @@
 	iaest-measure:rentabilidad-economica 620121793109996 ;
 	iaest-measure:rentabilidad-financiera 728930167256857 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/c6d81a13-f961-311e-80bd-fcdbf99f486c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/c6d81a13-f961-311e-80bd-fcdbf99f486c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 105 ;
 	iaest-measure:a-activo-no-corriente 334625243809524 ;
@@ -3099,7 +3099,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 704081580952381 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 397810352380952 ;
 	iaest-measure:total-activo-ab 769263467619048 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 459436356190476 ;
 	iaest-measure:a-1-fondos-propios 455802132380952 ;
 	iaest-measure:i-capital 182700039047619 ;
@@ -3114,7 +3114,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 8031 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 675880428571429 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 17223226 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/industria-quimica-y-productos-farmaceuticos-cnae-20-21> ;
+	iaest-measure:rama-descripcion industria-quimica-y-productos-farmaceuticos-cnae-20-21 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 191700952380952 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 769263467619048 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 850609414285714 ;
@@ -3142,8 +3142,8 @@
 	iaest-measure:rentabilidad-economica 624050643390875 ;
 	iaest-measure:rentabilidad-financiera 841990252014262 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/dc17f23d-20e7-3124-9a6f-37afe2a8c49f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/dc17f23d-20e7-3124-9a6f-37afe2a8c49f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 251 ;
 	iaest-measure:a-activo-no-corriente 119720818326693 ;
@@ -3159,7 +3159,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 156480792828685 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 147451139442231 ;
 	iaest-measure:total-activo-ab 292533029482072 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 131651493227092 ;
 	iaest-measure:a-1-fondos-propios 129109694023904 ;
 	iaest-measure:i-capital 461225517928287 ;
@@ -3174,7 +3174,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 484330278884462 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 340752203187251 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 675460422310757 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/fabricacion-de-productos-de-caucho-y-plasticos-y-otros-productos-minerales-no-metalicos-cnae-22-23> ;
+	iaest-measure:rama-descripcion fabricacion-de-productos-de-caucho-y-plasticos-y-otros-productos-minerales-no-metalicos-cnae-22-23 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 143839043824701 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 292533029482072 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 329144240239044 ;
@@ -3202,8 +3202,8 @@
 	iaest-measure:rentabilidad-economica -136759317745118 ;
 	iaest-measure:rentabilidad-financiera -465589657987758 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/53813b7b-01d4-3032-a134-8b31e3d508b8> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/53813b7b-01d4-3032-a134-8b31e3d508b8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 652 ;
 	iaest-measure:a-activo-no-corriente 788797007668712 ;
@@ -3219,7 +3219,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 202355906441718 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 15186198006135 ;
 	iaest-measure:total-activo-ab 209397631134969 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 103429986349693 ;
 	iaest-measure:a-1-fondos-propios 102262529754601 ;
 	iaest-measure:i-capital 226671777607362 ;
@@ -3234,7 +3234,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 317854601226994 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 220788892638037 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 465993386503067 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/metalurgia-y-fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo-cnae-24-25> ;
+	iaest-measure:rama-descripcion metalurgia-y-fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo-cnae-24-25 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 133292024539877 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 209397631134969 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 237543413496933 ;
@@ -3262,8 +3262,8 @@
 	iaest-measure:rentabilidad-economica 096870738019047 ;
 	iaest-measure:rentabilidad-financiera -0689586243049262 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/847fa459-6b1f-3f9a-a28f-0b2084a11657> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/847fa459-6b1f-3f9a-a28f-0b2084a11657> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 137 ;
 	iaest-measure:a-activo-no-corriente 150834186131387 ;
@@ -3279,7 +3279,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 454005525547445 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 372460540145985 ;
 	iaest-measure:total-activo-ab 519552789781022 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 255664937226277 ;
 	iaest-measure:a-1-fondos-propios 252195194160584 ;
 	iaest-measure:i-capital 462235452554745 ;
@@ -3294,7 +3294,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 421956788321168 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 557868583941606 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 151565425547445 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/fabricacion-de-productos-informaticos-electronicos-opticos-y-material-electrico-cnae-26-27> ;
+	iaest-measure:rama-descripcion fabricacion-de-productos-informaticos-electronicos-opticos-y-material-electrico-cnae-26-27 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 433962773722628 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 519552789781022 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 763205911678832 ;
@@ -3322,8 +3322,8 @@
 	iaest-measure:rentabilidad-economica 702839464173541 ;
 	iaest-measure:rentabilidad-financiera 102575689821947 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/0d3fb6d0-399d-36bb-bc40-45ebbdc87ceb> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/0d3fb6d0-399d-36bb-bc40-45ebbdc87ceb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 249 ;
 	iaest-measure:a-activo-no-corriente 310934512048193 ;
@@ -3339,7 +3339,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 316892016064257 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 191288714859438 ;
 	iaest-measure:total-activo-ab 614059779919679 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 211501152610442 ;
 	iaest-measure:a-1-fondos-propios 210229708835341 ;
 	iaest-measure:i-capital 352116212851406 ;
@@ -3354,7 +3354,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 463862088353414 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 122325557429719 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 172549379518072 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/fabricacion-de-maquinaria-y-equipo-cnae-28> ;
+	iaest-measure:rama-descripcion fabricacion-de-maquinaria-y-equipo-cnae-28 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 382555020080321 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 614059779919679 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 386278329317269 ;
@@ -3382,8 +3382,8 @@
 	iaest-measure:rentabilidad-economica 351979459959333 ;
 	iaest-measure:rentabilidad-financiera 24021861549759 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/22d949e3-0b88-3c72-9c15-81a0539b5229> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/22d949e3-0b88-3c72-9c15-81a0539b5229> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 112 ;
 	iaest-measure:a-activo-no-corriente 462931794642857 ;
@@ -3399,7 +3399,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 359093091964286 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 422529991071429 ;
 	iaest-measure:total-activo-ab 164081974910714 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 396724366964286 ;
 	iaest-measure:a-1-fondos-propios 393116404464286 ;
 	iaest-measure:i-capital 188693447321429 ;
@@ -3414,7 +3414,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 659591348214286 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 103328036607143 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 875813854464286 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/fabricacion-de-material-de-transporte-cnae-29-30> ;
+	iaest-measure:rama-descripcion fabricacion-de-material-de-transporte-cnae-29-30 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 529751785714286 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 164081974910714 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 380336828392857 ;
@@ -3442,8 +3442,8 @@
 	iaest-measure:rentabilidad-economica -846588164917582 ;
 	iaest-measure:rentabilidad-financiera 154229635382578 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/109405d7-bde1-3f22-92f7-0a8562f5fdbe> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/109405d7-bde1-3f22-92f7-0a8562f5fdbe> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 381 ;
 	iaest-measure:a-activo-no-corriente 362920918635171 ;
@@ -3459,7 +3459,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 866077585301837 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 762585380577428 ;
 	iaest-measure:total-activo-ab 104190030446194 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 44986694488189 ;
 	iaest-measure:a-1-fondos-propios 444544409448819 ;
 	iaest-measure:i-capital 114078181102362 ;
@@ -3474,7 +3474,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 0686732283464567 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 135137845144357 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 265321577427822 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/otras-industrias-manufactureras-cnae-31-33> ;
+	iaest-measure:rama-descripcion otras-industrias-manufactureras-cnae-31-33 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 150932020997375 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 104190030446194 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 112006731496063 ;
@@ -3502,8 +3502,8 @@
 	iaest-measure:rentabilidad-economica 0447487159642198 ;
 	iaest-measure:rentabilidad-financiera -0481047455349673 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/f087dc99-5848-3a40-96d8-947087d5d000> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/f087dc99-5848-3a40-96d8-947087d5d000> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 423 ;
 	iaest-measure:a-activo-no-corriente 468174458392435 ;
@@ -3519,7 +3519,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 477956498817967 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 275293557919622 ;
 	iaest-measure:total-activo-ab 587411666193853 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia> ;
+	iaest-measure:sector-descripcion industria-y-energia ;
 	iaest-measure:a-patrimonio-neto 250559978014184 ;
 	iaest-measure:a-1-fondos-propios 251417276595745 ;
 	iaest-measure:i-capital 928915092198582 ;
@@ -3534,7 +3534,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 287646808510638 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 706134607565012 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 278653572104019 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/suministro-de-energia-electrica-gas-vapor-y-aire-acondicionado-cnae-35> ;
+	iaest-measure:rama-descripcion suministro-de-energia-electrica-gas-vapor-y-aire-acondicionado-cnae-35 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 205831678486998 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 587411666193853 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 132844034751773 ;
@@ -3562,8 +3562,8 @@
 	iaest-measure:rentabilidad-economica 674966382994392 ;
 	iaest-measure:rentabilidad-financiera 987649793872063 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/8f40fe22-d73d-3c23-9843-03dd0911d7bc> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/8f40fe22-d73d-3c23-9843-03dd0911d7bc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 3290 ;
 	iaest-measure:a-activo-no-corriente 806428185714286 ;
@@ -3579,7 +3579,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 142906885106383 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 762025893617021 ;
 	iaest-measure:total-activo-ab 240828095106383 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/construccion> ;
+	iaest-measure:sector-descripcion construccion ;
 	iaest-measure:a-patrimonio-neto 609823745896657 ;
 	iaest-measure:a-1-fondos-propios 59639353556231 ;
 	iaest-measure:i-capital 468649551671733 ;
@@ -3594,7 +3594,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 117032553191489 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 46112789787234 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 370227970820669 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/construccion-cnae-41-43> ;
+	iaest-measure:rama-descripcion construccion-cnae-41-43 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 155594589665653 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 240828095106383 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 522519205775076 ;
@@ -3622,8 +3622,8 @@
 	iaest-measure:rentabilidad-economica -441130614539705 ;
 	iaest-measure:rentabilidad-financiera -287925178085888 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/25b5e9e0-3ef0-335d-85cb-17745f05131f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/25b5e9e0-3ef0-335d-85cb-17745f05131f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 4931 ;
 	iaest-measure:a-activo-no-corriente 535670476373961 ;
@@ -3639,7 +3639,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 10421111174204 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 114806313526668 ;
 	iaest-measure:total-activo-ab 138942441776516 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 60085042060434 ;
 	iaest-measure:a-1-fondos-propios 593544161427702 ;
 	iaest-measure:i-capital 178498447779355 ;
@@ -3654,7 +3654,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 355362482255121 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 188667898195092 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 406446258568242 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/comercio-al-por-mayor-y-al-por-menor-reparacion-de-vehiculos-de-motor-y-motocicletas-cnae-45-47> ;
+	iaest-measure:rama-descripcion comercio-al-por-mayor-y-al-por-menor-reparacion-de-vehiculos-de-motor-y-motocicletas-cnae-45-47 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 119509166497668 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 138942441776516 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 231946963334009 ;
@@ -3682,8 +3682,8 @@
 	iaest-measure:rentabilidad-economica 290487692896946 ;
 	iaest-measure:rentabilidad-financiera 347869065609213 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/c0c9eb40-75e4-3354-a831-96d56444b2e4> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/c0c9eb40-75e4-3354-a831-96d56444b2e4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 863 ;
 	iaest-measure:a-activo-no-corriente 119066949942063 ;
@@ -3699,7 +3699,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 260919397450753 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 896874380069525 ;
 	iaest-measure:total-activo-ab 215881328505214 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 752285750869061 ;
 	iaest-measure:a-1-fondos-propios 765539644264195 ;
 	iaest-measure:i-capital 25093447161066 ;
@@ -3714,7 +3714,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 15491077636153 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 459933300115875 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 447971227114716 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/transporte-y-almacenamiento-cnae-49-53> ;
+	iaest-measure:rama-descripcion transporte-y-almacenamiento-cnae-49-53 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 158379490150637 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 215881328505214 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 200563564889919 ;
@@ -3742,8 +3742,8 @@
 	iaest-measure:rentabilidad-economica 316472023773694 ;
 	iaest-measure:rentabilidad-financiera 402688136229293 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/a7d1af7c-73a7-3c2e-8fd1-3f144b854c79> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/a7d1af7c-73a7-3c2e-8fd1-3f144b854c79> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 1248 ;
 	iaest-measure:a-activo-no-corriente 591741108974359 ;
@@ -3759,7 +3759,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 288377323717949 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 321955280448718 ;
 	iaest-measure:total-activo-ab 709678105769231 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 285955461538462 ;
 	iaest-measure:a-1-fondos-propios 279620998397436 ;
 	iaest-measure:i-capital 249397944711538 ;
@@ -3774,7 +3774,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 0371178685897436 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 797076386217949 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 852863725961538 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/hosteleria-cnae-55-56> ;
+	iaest-measure:rama-descripcion hosteleria-cnae-55-56 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 023364983974359 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 709678105769231 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 401898757211538 ;
@@ -3802,8 +3802,8 @@
 	iaest-measure:rentabilidad-economica -195066159667215 ;
 	iaest-measure:rentabilidad-financiera -644656380503222 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/8a8e065b-001d-3587-bc3c-ffb58cb8b878> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/8a8e065b-001d-3587-bc3c-ffb58cb8b878> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 390 ;
 	iaest-measure:a-activo-no-corriente 436788443589744 ;
@@ -3819,7 +3819,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 186106279487179 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 773758076923077 ;
 	iaest-measure:total-activo-ab 110591664358974 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 402398507692308 ;
 	iaest-measure:a-1-fondos-propios 390630158974359 ;
 	iaest-measure:i-capital 145591464102564 ;
@@ -3834,7 +3834,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 201579230769231 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 182550043589744 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 252889771794872 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/informacion-y-comunicaciones-cnae-58-63> ;
+	iaest-measure:rama-descripcion informacion-y-comunicaciones-cnae-58-63 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 31173358974359 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 110591664358974 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 116321116666667 ;
@@ -3862,8 +3862,8 @@
 	iaest-measure:rentabilidad-economica 188347551793391 ;
 	iaest-measure:rentabilidad-financiera 141231025363567 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/dfea9fb7-a1f1-3c58-ba43-55d84d2c2edd> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/dfea9fb7-a1f1-3c58-ba43-55d84d2c2edd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 1608 ;
 	iaest-measure:a-activo-no-corriente 282670763681592 ;
@@ -3879,7 +3879,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 266017573383085 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 827730976368159 ;
 	iaest-measure:total-activo-ab 38282075460199 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 209958781094527 ;
 	iaest-measure:a-1-fondos-propios 204320134950249 ;
 	iaest-measure:i-capital 118230431156716 ;
@@ -3894,7 +3894,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 989721206467662 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 327798351368159 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 947930553482587 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/actividades-inmobiliarias-cnae-68> ;
+	iaest-measure:rama-descripcion actividades-inmobiliarias-cnae-68 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 116252736318408 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 38282075460199 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 179749387437811 ;
@@ -3922,8 +3922,8 @@
 	iaest-measure:rentabilidad-economica -188890128599073 ;
 	iaest-measure:rentabilidad-financiera -542667247053822 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/3b6642a6-ff0a-3cca-a7d3-18c3b6850409> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/3b6642a6-ff0a-3cca-a7d3-18c3b6850409> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 2531 ;
 	iaest-measure:a-activo-no-corriente 945706077044646 ;
@@ -3939,7 +3939,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 107998598972738 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 734081035163967 ;
 	iaest-measure:total-activo-ab 132909150059265 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 833649129988147 ;
 	iaest-measure:a-1-fondos-propios 835780939154484 ;
 	iaest-measure:i-capital 453986453970763 ;
@@ -3954,7 +3954,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 183694942710391 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 136953580798104 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 131838624654287 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/actividades-profesionales-cientificas-y-tecnicas-actividades-administrativas-y-servicios-auxiliares-cnae-69-82> ;
+	iaest-measure:rama-descripcion actividades-profesionales-cientificas-y-tecnicas-actividades-administrativas-y-servicios-auxiliares-cnae-69-82 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 170583998419597 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 132909150059265 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 630705774792572 ;
@@ -3982,8 +3982,8 @@
 	iaest-measure:rentabilidad-economica 24027337926748 ;
 	iaest-measure:rentabilidad-financiera 208821782369352 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/888eaace-f0cd-3c18-8d74-47853bc41315> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/888eaace-f0cd-3c18-8d74-47853bc41315> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 286 ;
 	iaest-measure:a-activo-no-corriente 338989031468531 ;
@@ -3999,7 +3999,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 789692097902098 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 399087202797203 ;
 	iaest-measure:total-activo-ab 579629863636364 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 29894679020979 ;
 	iaest-measure:a-1-fondos-propios 280591181818182 ;
 	iaest-measure:i-capital 106271227272727 ;
@@ -4014,7 +4014,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 413633916083916 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 626506888111888 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 830792762237762 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/educacion-cnae-85> ;
+	iaest-measure:rama-descripcion educacion-cnae-85 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 618383916083916 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 579629863636364 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 465042573426573 ;
@@ -4042,8 +4042,8 @@
 	iaest-measure:rentabilidad-economica -119661485683705 ;
 	iaest-measure:rentabilidad-financiera -406088942881081 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/425366e2-b674-3865-a9df-05ba1a2c4c13> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/425366e2-b674-3865-a9df-05ba1a2c4c13> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 398 ;
 	iaest-measure:a-activo-no-corriente 916997668341709 ;
@@ -4059,7 +4059,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 150407364321608 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 114457914572864 ;
 	iaest-measure:total-activo-ab 149248811557789 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 559389690954774 ;
 	iaest-measure:a-1-fondos-propios 508937600502513 ;
 	iaest-measure:i-capital 184078542713568 ;
@@ -4074,7 +4074,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 209752763819095 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 161302537688442 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 279409082914573 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/actividades-sanitarias-y-de-servicios-sociales-cnae-86-88> ;
+	iaest-measure:rama-descripcion actividades-sanitarias-y-de-servicios-sociales-cnae-86-88 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 233683417085427 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 149248811557789 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 15803722638191 ;
@@ -4102,8 +4102,8 @@
 	iaest-measure:rentabilidad-economica 676275529714326 ;
 	iaest-measure:rentabilidad-financiera 995234769882038 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-110304-11030402A/738ddd11-5420-3322-b8a7-8acaafc6defc> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-110304-11030402A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-110304-11030402A/738ddd11-5420-3322-b8a7-8acaafc6defc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-110304-11030402A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
 	iaest-measure:numero-de-empresas 828 ;
 	iaest-measure:a-activo-no-corriente 781095666666667 ;
@@ -4119,7 +4119,7 @@
 	iaest-measure:iv-vi-otros-activos-corrientes 595544033816425 ;
 	iaest-measure:vii-efectivo-y-otros-activos-liquidos-equivalentes 561052753623188 ;
 	iaest-measure:total-activo-ab 992923189613527 ;
-	iaest-dimension:sector-descripcion <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> ;
+	iaest-measure:sector-descripcion servicios ;
 	iaest-measure:a-patrimonio-neto 432143176328502 ;
 	iaest-measure:a-1-fondos-propios 373371814009662 ;
 	iaest-measure:i-capital 281913958937198 ;
@@ -4134,7 +4134,7 @@
 	iaest-measure:ii-provisiones-a-corto-plazo 0402340579710145 ;
 	iaest-measure:iii-iv-deudas-a-corto-plazo 725659166666667 ;
 	iaest-measure:v-acreedores-comerciales-y-otras-cuentas-a-pagar 107318184782609 ;
-	iaest-dimension:rama-descripcion <http://opendata.aragon.es/kos/iaest/rama-descripcion/otros-servicios-cnae-90-99> ;
+	iaest-measure:rama-descripcion otros-servicios-cnae-90-99 ;
 	iaest-measure:vi-vii-otros-pasivos-a-corto-plazo 31198768115942 ;
 	iaest-measure:total-patrimonio-neto-y-pasivo 992923189613527 ;
 	iaest-measure:1-importe-neto-de-la-cifra-de-negocios 399743240338164 ;

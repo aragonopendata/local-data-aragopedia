@@ -28,13 +28,17 @@ Para un correcto uso del código se necesita tener una credencial del https://co
 * Medida específica: http://opendata.aragon.es/recurso/iaest/medida/{idMedida}
 * Codelist: http://opendata.aragon.es/kos/iaest/{idCodelist}
 * Concepto específico de una codelist: http://opendata.aragon.es/kos/iaest/{idCodelist}/{valor}
-* Todos los cubos: http://opendata.aragon.es/recurso/iaest/cubo
-* Todas las observaciones del cubo: http://opendata.aragon.es/recurso/iaest/cubo/{idCubo}
+* Todos los cubos: http://opendata.aragon.es/recurso/iaest/dataset
+* Todas las observaciones del cubo: http://opendata.aragon.es/recurso/iaest/dataset/{idCubo}
 * Cubos que tienen un valor dado para una dimensión dada: http://opendata.aragon.es/recurso/iaest/cubosdimension/{dimension}/{valor}
 * Cubos que tienen un valor dado para una medida dada: http://opendata.aragon.es/recurso/iaest/cubosmedida/{medida}/{valor}
 * Cubos que tienen un valor dado para alguna dimensión: http://opendata.aragon.es/recurso/iaest/cubosdimensionvalor/{valor}
 * Cubos que tienen un valor dado para alguna medida: http://opendata.aragon.es/recurso/iaest/cubosmedidavalor/{valor}
 * Cubos que tienen una dimensión dada: http://opendata.aragon.es/recurso/iaest/cubosdimensionpropiedad/{dimension}
 * Cubos que tienen una medida dada: http://opendata.aragon.es/recurso/iaest/cubosmedidapropiedad/{medida}
+* Cubos que tienen una comcarca para una dimensión específica http://alzir.dia.fi.upm.es/recurso/iaest/cubosComarca/{valor}
+* Cubos que tienen un municipio para una dimensión específica http://alzir.dia.fi.upm.es/recurso/iaest/cubosMunicipio/{valor}
+* Cubos que tienen una provincia para una dimensión específica http://alzir.dia.fi.upm.es/recurso/iaest/cubosProvincia/{valor}
+* Cubos que tienen una comunidad autónoma para una dimensión específica http://alzir.dia.fi.upm.es/recurso/iaest/cubosComunidadAutonoma/{valor}
 
 

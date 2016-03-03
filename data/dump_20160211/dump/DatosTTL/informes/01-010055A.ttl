@@ -1,0 +1,78 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-010055A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010055>;
+	rdfs:label "Cubo de datos para 01-010055A"@es ;
+	rdfs:comment "Cubo de datos para 01-010055A"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010055A/2fdcac15-2ea7-3745-9269-f85e736c01cc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010055>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:personas-que-son-mano-de-obra-familiar 111361 ;
+	iaest-measure:personas-mano-obra-familiar-solo-trabajan-en-la-explotacion 68523 ;
+	iaest-measure:personas-mano-obra-familiar-trabajan-tambien-en-otra-activ-lucrativa 42838 ;
+	iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-principal 38849 ;
+	iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-secundaria 3989 ;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-solo-trabajan-en-la-explotacion 48026 ;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-tambien-en-otra-activ-lucrativa 26518 ;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-principal 23469 ;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-secundaria 3049 ;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-solo-trabajan-en-la-explotacion 11246 ;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-tambien-en-otra-activ-lucrativa 4556 ;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-principal 4176 ;
+	iaest-dimension:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-secundaria <http://opendata.aragon.es/kos/iaest/personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-secundaria/380> ;
+	iaest-measure:personas-mano-obra-familiar-otros-que-solo-trabajan-en-la-explotacion 9251 ;
+	iaest-measure:personas-mano-obra-familiar-otros-que--trabajan-tambien-en-otra-activ-lucrativa 11764 ;
+	iaest-measure:personas-mano-obra-familiar-otros--trabajan-en-otra-actividad-como-principal 11204 ;
+	iaest-measure:personas-mano-obra-familiar-otros-que-trabajan-en-otra-actividad-como-secundaria 560 ;
+	iaest-measure:personas-mano-obra-familiar-con-25-trabajando-en-explotacion 69546 ;
+	iaest-measure:personas-mano-obra-familiar-con-2499-y-50-trabajando-en-explotacion 13320 ;
+	iaest-measure:personas-mano-obra-familiar-con-4999-y-75-trabajando-en-explotacion 5469 ;
+	iaest-measure:personas-mano-obra-familiar-con-7499-y-100-trabajando-en-explotacion 5493 ;
+	iaest-measure:personas-mano-obra-familiar-con-100-trabajando-en-explotacion 15436 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010055A/0e88a192-169b-3a35-bc44-3d5bbcbce3cc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010055>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1989> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:personas-que-son-mano-de-obra-familiar 136987 ;
+	iaest-measure:personas-mano-obra-familiar-solo-trabajan-en-la-explotacion 91730 ;
+	iaest-measure:personas-mano-obra-familiar-trabajan-tambien-en-otra-activ-lucrativa 45257 ;
+	iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-principal 39833 ;
+	iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-secundaria 5424 ;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-solo-trabajan-en-la-explotacion 64853 ;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-tambien-en-otra-activ-lucrativa 32619 ;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-principal 28592 ;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-secundaria 4027 ;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-solo-trabajan-en-la-explotacion 15304 ;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-tambien-en-otra-activ-lucrativa 1796 ;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-principal 1586 ;
+	iaest-dimension:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-secundaria <http://opendata.aragon.es/kos/iaest/personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-secundaria/210> ;
+	iaest-measure:personas-mano-obra-familiar-otros-que-solo-trabajan-en-la-explotacion 11573 ;
+	iaest-measure:personas-mano-obra-familiar-otros-que--trabajan-tambien-en-otra-activ-lucrativa 10842 ;
+	iaest-measure:personas-mano-obra-familiar-otros--trabajan-en-otra-actividad-como-principal 9655 ;
+	iaest-measure:personas-mano-obra-familiar-otros-que-trabajan-en-otra-actividad-como-secundaria 1187 ;
+	iaest-measure:personas-mano-obra-familiar-con-25-trabajando-en-explotacion 84604 ;
+	iaest-measure:personas-mano-obra-familiar-con-2499-y-50-trabajando-en-explotacion 15530 ;
+	iaest-measure:personas-mano-obra-familiar-con-4999-y-75-trabajando-en-explotacion 8532 ;
+	iaest-measure:personas-mano-obra-familiar-con-7499-y-100-trabajando-en-explotacion 6712 ;
+	iaest-measure:personas-mano-obra-familiar-con-100-trabajando-en-explotacion 21609 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

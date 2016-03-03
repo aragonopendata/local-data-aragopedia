@@ -12,19 +12,19 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010108TP> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-080101-010108>;
+<http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010108TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010108>;
 	rdfs:label "Cubo de datos para 01-080101-010108TP"@es ;
 	rdfs:comment "Cubo de datos para 01-080101-010108TP"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010108TP/8bf7d08f-e115-388b-adf8-0b5039512bd6> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010108TP>; 
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/menos-de-25-anos/59> ;
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010108TP/8bf7d08f-e115-388b-adf8-0b5039512bd6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010108TP>; 
+	iaest-measure:menos-de-25-anos 59 ;
 	iaest-measure:de-25-a-34-anos 833 ;
 	iaest-measure:de-35-a-44-anos 1944 ;
 	iaest-measure:de-45-a-54-anos 2784 ;
@@ -39,16 +39,16 @@
 	iaest-measure:el-titular-ha-realizado-trabajos-agricolas-o-ganaderos-para-la-explotacion 11431 ;
 	iaest-measure:el-titular-no-ha-realizado-trabajos-agricolas-o-ganaderos-para-la-explotacion 932 ;
 	iaest-measure:no-consta-si-el-titular-ha-realizado-actividades-complementarias 11431 ;
-	iaest-dimension:el-titular-no-ha-realizado-actividades-complementarias <http://opendata.aragon.es/kos/iaest/el-titular-no-ha-realizado-actividades-complementarias/692> ;
-	iaest-dimension:el-titular-ha-realizado-actividades-complementarias-como-actividad-principal <http://opendata.aragon.es/kos/iaest/el-titular-ha-realizado-actividades-complementarias-como-actividad-principal/88> ;
-	iaest-dimension:el-titular-ha-realizado-actividades-complementarias-como-actividad-secundaria <http://opendata.aragon.es/kos/iaest/el-titular-ha-realizado-actividades-complementarias-como-actividad-secundaria/152> ;
+	iaest-measure:el-titular-no-ha-realizado-actividades-complementarias 692 ;
+	iaest-measure:el-titular-ha-realizado-actividades-complementarias-como-actividad-principal 88 ;
+	iaest-measure:el-titular-ha-realizado-actividades-complementarias-como-actividad-secundaria 152 ;
 	iaest-measure:no-consta-si-la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion 12123 ;
-	iaest-dimension:la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion <http://opendata.aragon.es/kos/iaest/la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion/4> ;
-	iaest-dimension:la-otra-actividad-del-titular-no-esta-relacionada-con-la-explotacion <http://opendata.aragon.es/kos/iaest/la-otra-actividad-del-titular-no-esta-relacionada-con-la-explotacion/236> ;
+	iaest-measure:la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion 4 ;
+	iaest-measure:la-otra-actividad-del-titular-no-esta-relacionada-con-la-explotacion 236 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010108TP/f0c226af-098c-39f6-9629-c5b1d04e83e9> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010108TP>; 
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/menos-de-25-anos/28> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010108TP/f0c226af-098c-39f6-9629-c5b1d04e83e9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010108TP>; 
+	iaest-measure:menos-de-25-anos 28 ;
 	iaest-measure:de-25-a-34-anos 362 ;
 	iaest-measure:de-35-a-44-anos 1268 ;
 	iaest-measure:de-45-a-54-anos 2154 ;
@@ -63,16 +63,16 @@
 	iaest-measure:el-titular-ha-realizado-trabajos-agricolas-o-ganaderos-para-la-explotacion 8846 ;
 	iaest-measure:el-titular-no-ha-realizado-trabajos-agricolas-o-ganaderos-para-la-explotacion 642 ;
 	iaest-measure:no-consta-si-el-titular-ha-realizado-actividades-complementarias 8846 ;
-	iaest-dimension:el-titular-no-ha-realizado-actividades-complementarias <http://opendata.aragon.es/kos/iaest/el-titular-no-ha-realizado-actividades-complementarias/533> ;
-	iaest-dimension:el-titular-ha-realizado-actividades-complementarias-como-actividad-principal <http://opendata.aragon.es/kos/iaest/el-titular-ha-realizado-actividades-complementarias-como-actividad-principal/44> ;
-	iaest-dimension:el-titular-ha-realizado-actividades-complementarias-como-actividad-secundaria <http://opendata.aragon.es/kos/iaest/el-titular-ha-realizado-actividades-complementarias-como-actividad-secundaria/65> ;
+	iaest-measure:el-titular-no-ha-realizado-actividades-complementarias 533 ;
+	iaest-measure:el-titular-ha-realizado-actividades-complementarias-como-actividad-principal 44 ;
+	iaest-measure:el-titular-ha-realizado-actividades-complementarias-como-actividad-secundaria 65 ;
 	iaest-measure:no-consta-si-la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion 9379 ;
-	iaest-dimension:la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion <http://opendata.aragon.es/kos/iaest/la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion/8> ;
-	iaest-dimension:la-otra-actividad-del-titular-no-esta-relacionada-con-la-explotacion <http://opendata.aragon.es/kos/iaest/la-otra-actividad-del-titular-no-esta-relacionada-con-la-explotacion/101> ;
+	iaest-measure:la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion 8 ;
+	iaest-measure:la-otra-actividad-del-titular-no-esta-relacionada-con-la-explotacion 101 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010108TP/4c6ffac0-bd9b-310c-8ea7-ab9d3b5d6769> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010108TP>; 
-	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/menos-de-25-anos/69> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010108TP/4c6ffac0-bd9b-310c-8ea7-ab9d3b5d6769> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010108TP>; 
+	iaest-measure:menos-de-25-anos 69 ;
 	iaest-measure:de-25-a-34-anos 905 ;
 	iaest-measure:de-35-a-44-anos 2681 ;
 	iaest-measure:de-45-a-54-anos 4157 ;
@@ -87,10 +87,10 @@
 	iaest-measure:el-titular-ha-realizado-trabajos-agricolas-o-ganaderos-para-la-explotacion 18216 ;
 	iaest-measure:el-titular-no-ha-realizado-trabajos-agricolas-o-ganaderos-para-la-explotacion 987 ;
 	iaest-measure:no-consta-si-el-titular-ha-realizado-actividades-complementarias 18216 ;
-	iaest-dimension:el-titular-no-ha-realizado-actividades-complementarias <http://opendata.aragon.es/kos/iaest/el-titular-no-ha-realizado-actividades-complementarias/756> ;
-	iaest-dimension:el-titular-ha-realizado-actividades-complementarias-como-actividad-principal <http://opendata.aragon.es/kos/iaest/el-titular-ha-realizado-actividades-complementarias-como-actividad-principal/86> ;
-	iaest-dimension:el-titular-ha-realizado-actividades-complementarias-como-actividad-secundaria <http://opendata.aragon.es/kos/iaest/el-titular-ha-realizado-actividades-complementarias-como-actividad-secundaria/145> ;
+	iaest-measure:el-titular-no-ha-realizado-actividades-complementarias 756 ;
+	iaest-measure:el-titular-ha-realizado-actividades-complementarias-como-actividad-principal 86 ;
+	iaest-measure:el-titular-ha-realizado-actividades-complementarias-como-actividad-secundaria 145 ;
 	iaest-measure:no-consta-si-la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion 18972 ;
-	iaest-dimension:la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion <http://opendata.aragon.es/kos/iaest/la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion/8> ;
-	iaest-dimension:la-otra-actividad-del-titular-no-esta-relacionada-con-la-explotacion <http://opendata.aragon.es/kos/iaest/la-otra-actividad-del-titular-no-esta-relacionada-con-la-explotacion/223> ;
+	iaest-measure:la-otra-actividad-del-titular-esta-relacionada-con-la-explotacion 8 ;
+	iaest-measure:la-otra-actividad-del-titular-no-esta-relacionada-con-la-explotacion 223 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

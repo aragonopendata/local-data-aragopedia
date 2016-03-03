@@ -1,0 +1,60 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010089TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010089>;
+	rdfs:label "Cubo de datos para 01-080101-010089TP"@es ;
+	rdfs:comment "Cubo de datos para 01-080101-010089TP"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010089TP/f4bd7ec4-bb89-326d-98af-def02876951a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010089>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:unidades-trabajo-ano-totales 1440509 ;
+	iaest-measure:unidades-trabajo-ano-asalariados 5101161 ;
+	iaest-measure:unidades-trabajo-ano-asalariados-fijos 3582883 ;
+	iaest-measure:unidades-trabajo-ano-asalariados-eventuales 1518278 ;
+	iaest-measure:unidades-trabajo-ano-mano-obra-familiar 9303929 ;
+	iaest-measure:unidades-trabajo-ano-titular 6152068 ;
+	iaest-measure:unidades-trabajo-ano-jefe-explotacion 7759301 ;
+	iaest-measure:unidades-trabajo-ano-otros-miembros-familia 3151861 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010089TP/ee68af1a-5606-3987-8af5-1e6c42c353e3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010089>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:unidades-trabajo-ano-totales 859396 ;
+	iaest-measure:unidades-trabajo-ano-asalariados 1708547 ;
+	iaest-measure:unidades-trabajo-ano-asalariados-fijos 1426556 ;
+	iaest-measure:unidades-trabajo-ano-asalariados-eventuales 281991 ;
+	iaest-measure:unidades-trabajo-ano-mano-obra-familiar 6885413 ;
+	iaest-measure:unidades-trabajo-ano-titular 4366533 ;
+	iaest-measure:unidades-trabajo-ano-jefe-explotacion 5004749 ;
+	iaest-measure:unidades-trabajo-ano-otros-miembros-familia 251888 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010089TP/3589dcf8-c55c-3b31-afd9-9b9c2ffb44c0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010089>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:unidades-trabajo-ano-totales 19954626 ;
+	iaest-measure:unidades-trabajo-ano-asalariados 7250597 ;
+	iaest-measure:unidades-trabajo-ano-asalariados-fijos 4296539 ;
+	iaest-measure:unidades-trabajo-ano-asalariados-eventuales 2954058 ;
+	iaest-measure:unidades-trabajo-ano-mano-obra-familiar 12704029 ;
+	iaest-measure:unidades-trabajo-ano-titular 8019395 ;
+	iaest-measure:unidades-trabajo-ano-jefe-explotacion 9896502 ;
+	iaest-measure:unidades-trabajo-ano-otros-miembros-familia 4684634 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

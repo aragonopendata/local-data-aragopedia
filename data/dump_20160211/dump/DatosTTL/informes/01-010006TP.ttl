@@ -1,0 +1,480 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-010006TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>;
+	rdfs:label "Cubo de datos para 01-010006TP"@es ;
+	rdfs:comment "Cubo de datos para 01-010006TP"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/45dfb643-22f7-30b5-bbea-55637385fe6b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/gas> ;
+	iaest-measure:numero-hogares 1362 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/f1a90607-ab2f-3ca3-8f00-4123a4afb153> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/electricidad> ;
+	iaest-measure:numero-hogares 299 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/d28995e8-3dc6-3202-9d79-f39cfd584fbd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-petroleo> ;
+	iaest-measure:numero-hogares 9406 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/681e7c7c-8d53-3c56-8bcb-205ae0ef40a5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/madera> ;
+	iaest-measure:numero-hogares 107 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/99f8f450-11d1-30e7-9cfa-94ea054e288e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-carbon> ;
+	iaest-measure:numero-hogares 6 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/d26e8e63-52bb-32da-a31f-aab247045017> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/otros> ;
+	iaest-measure:numero-hogares 50 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/fdce35f4-faa8-36a4-87eb-26f4fe019c3f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/gas> ;
+	iaest-measure:numero-hogares 19629 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/cc19a0f2-2da6-3165-8631-2e1b248bbdd0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/electricidad> ;
+	iaest-measure:numero-hogares 3802 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/6af161bc-fd5a-3997-87bf-4bd77518be41> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-petroleo> ;
+	iaest-measure:numero-hogares 19721 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/0807743e-f11d-3643-9b8e-d36db30f7f37> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/madera> ;
+	iaest-measure:numero-hogares 1786 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/d34e8423-9d32-33e1-89e7-30a38887b0dd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-carbon> ;
+	iaest-measure:numero-hogares 97 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/9d9c6f33-0f04-3074-a36f-196f8faf9655> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/otros> ;
+	iaest-measure:numero-hogares 96 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/4cfa3191-18f8-3d15-bf16-8e596d9ddafe> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/gas> ;
+	iaest-measure:numero-hogares 3088 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/559b3592-ac22-3d2b-ac1d-fe22d3ce7656> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/electricidad> ;
+	iaest-measure:numero-hogares 5105 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/80e52d48-f26d-3298-81c1-370b02cd6ea3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-petroleo> ;
+	iaest-measure:numero-hogares 1239 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/67caee44-001b-312a-a35f-9df9a32d0bc9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/madera> ;
+	iaest-measure:numero-hogares 4287 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/90b03f20-9223-3912-8d0d-47549ec3bd85> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-carbon> ;
+	iaest-measure:numero-hogares 24 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/5c54d30b-dfe2-3e8f-9227-813bc440ee92> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/otros> ;
+	iaest-measure:numero-hogares 75 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/0375a811-c808-383d-9744-a63f74b18f2d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-ningun-medio> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/no-aplicable> ;
+	iaest-measure:numero-hogares 3607 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/e90f717e-b0a9-3d35-b81a-9b07b9fa91ae> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/gas> ;
+	iaest-measure:numero-hogares 736 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/a8def6ff-1b4d-3e6b-87fb-f238f6e4d175> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/electricidad> ;
+	iaest-measure:numero-hogares 163 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/dd770d1e-5f03-3683-a26e-6947c7698e9f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-petroleo> ;
+	iaest-measure:numero-hogares 3770 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/69e347c7-ced6-3ca4-bf04-9480f15f0d40> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/madera> ;
+	iaest-measure:numero-hogares 72 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/d03c519d-07d2-3143-a4e1-6b75394184ee> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-carbon> ;
+	iaest-measure:numero-hogares 37 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/9b8d5640-6287-37f1-a51d-7274873893ff> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/otros> ;
+	iaest-measure:numero-hogares 15 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/57c2fdc9-1d9b-3e04-892b-30961474766b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/gas> ;
+	iaest-measure:numero-hogares 4244 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/fa9c7d1e-01c8-3d80-ac8f-9cfdf2128d91> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/electricidad> ;
+	iaest-measure:numero-hogares 3888 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/21ae7909-1cbf-3507-a25b-8d03b6f28de4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-petroleo> ;
+	iaest-measure:numero-hogares 16195 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/f73e5b2c-626a-3678-9c58-be6bce804936> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/madera> ;
+	iaest-measure:numero-hogares 1794 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/f485fc15-9ce0-3bc8-ba8c-148320e5c9ab> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-carbon> ;
+	iaest-measure:numero-hogares 671 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/3fe5878b-94a3-3c5f-ae81-2a5ca286b9c7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/otros> ;
+	iaest-measure:numero-hogares 361 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/c9ec7808-1cf6-3d1e-8982-88ab6d903965> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/gas> ;
+	iaest-measure:numero-hogares 1668 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/a435592d-08bc-3e1a-93fe-ae13ea4a74ac> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/electricidad> ;
+	iaest-measure:numero-hogares 4066 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/8fd3f250-156d-3091-b530-413b4cdd8e8f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-petroleo> ;
+	iaest-measure:numero-hogares 626 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/542b682e-803c-3919-98e3-9457046492b7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/madera> ;
+	iaest-measure:numero-hogares 10365 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/8e770c94-1e66-39ea-8b9a-47746c981919> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-carbon> ;
+	iaest-measure:numero-hogares 263 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/1d22124c-0540-3cdb-80aa-b4fd8b2e60ba> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/otros> ;
+	iaest-measure:numero-hogares 266 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/378fafea-9cd5-37a8-b4b5-86f7df94d163> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-ningun-medio> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/no-aplicable> ;
+	iaest-measure:numero-hogares 1870 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/a92a40e9-03c9-3780-9722-963add0ea6bc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/gas> ;
+	iaest-measure:numero-hogares 19751 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/3414e9bb-2057-3c7f-b961-d35eb617117e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/electricidad> ;
+	iaest-measure:numero-hogares 2214 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/6c1aff22-5074-3e6e-a4cb-33f25d785538> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-petroleo> ;
+	iaest-measure:numero-hogares 60364 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/d92eba79-f266-33d7-8cd5-4011fcadfb49> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/madera> ;
+	iaest-measure:numero-hogares 370 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/e707449a-6e45-3f09-a251-5f61497576fd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-carbon> ;
+	iaest-measure:numero-hogares 9891 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/5e2120ad-84a5-3d5f-a974-e092aa269a73> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-colectiva> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/otros> ;
+	iaest-measure:numero-hogares 785 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/6b55c36b-7a4b-3a70-a91b-ba7f6f2ceffe> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/gas> ;
+	iaest-measure:numero-hogares 91124 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/d1a4a6f5-46ab-33da-b1c7-c5e611b5d0cc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/electricidad> ;
+	iaest-measure:numero-hogares 20292 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/f019ce0f-57c4-329c-bf85-e7359a17a02a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-petroleo> ;
+	iaest-measure:numero-hogares 39761 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/8e07ba93-ca0d-347d-8162-1515ec5a0fdc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/madera> ;
+	iaest-measure:numero-hogares 3256 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/a3579111-c5b7-3327-9dd9-f99bb593168e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-carbon> ;
+	iaest-measure:numero-hogares 776 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/ba0715ee-1f6c-3a5b-aad1-23789c9f16be> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/con-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/con-calefaccion-individual> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/otros> ;
+	iaest-measure:numero-hogares 461 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/5a9c3482-0c0c-3df0-ac02-c16359105905> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/gas> ;
+	iaest-measure:numero-hogares 12893 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/7a39de01-55a1-3305-87d7-3111f1e1908f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/electricidad> ;
+	iaest-measure:numero-hogares 31681 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/f6512d98-7738-3846-a805-9d66a63dd78e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-petroleo> ;
+	iaest-measure:numero-hogares 4120 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/e7b4feaf-f117-3ee6-bb92-dc2acec236b8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/madera> ;
+	iaest-measure:numero-hogares 8337 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/9f07af75-0fd9-3c53-b7c1-c9566f86f2e7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/derivados-del-carbon> ;
+	iaest-measure:numero-hogares 501 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/33a4461e-861c-3966-bf6e-34a1d60d4d62> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-instalacion-pero-con-aparatos-que-permiten-calentar-alguna-habitacion> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/otros> ;
+	iaest-measure:numero-hogares 342 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010006TP/9d044cef-9aad-3a27-bebb-e9cd338d9a4f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010006>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:calefaccion-agregado <http://opendata.aragon.es/kos/iaest/calefaccion-agregado/sin-calefaccion> ;
+	iaest-dimension:calefaccion-detalle <http://opendata.aragon.es/kos/iaest/calefaccion-detalle/sin-ningun-medio> ;
+	iaest-dimension:combustible-usado <http://opendata.aragon.es/kos/iaest/combustible-usado/no-aplicable> ;
+	iaest-measure:numero-hogares 11468 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

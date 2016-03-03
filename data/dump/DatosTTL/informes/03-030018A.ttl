@@ -12,317 +12,317 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/03-030018>;
+<http://opendata.aragon.es/recurso/iaest/cubo/03-030018A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030018>;
 	rdfs:label "Cubo de datos para 03-030018A"@es ;
 	rdfs:comment "Cubo de datos para 03-030018A"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/209731a9-1aa3-305d-b656-0faec4352fc2> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/90-o-mas> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/209731a9-1aa3-305d-b656-0faec4352fc2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 90-o-mas ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 6436 ;
 	iaest-measure:porcentaje 05344560564351050269262548631266011468052 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/6cfaf229-bbc0-3ce2-9fa8-0eeec380d652> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/90-o-mas> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/6cfaf229-bbc0-3ce2-9fa8-0eeec380d652> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 90-o-mas ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -2755 ;
 	iaest-measure:porcentaje -02287797444808443674925158713352682037676 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/899822a2-7b14-35cc-95ab-0977bdfccd72> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/85-a-90> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/899822a2-7b14-35cc-95ab-0977bdfccd72> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 85-a-90 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 12815 ;
 	iaest-measure:porcentaje 106417873884646844624921629443247260664 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/bf496d42-8cb4-3c78-bf6d-b2d64684f2fc> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/85-a-90> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/bf496d42-8cb4-3c78-bf6d-b2d64684f2fc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 85-a-90 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -6556 ;
 	iaest-measure:porcentaje -05444210543798242008279252459070846983304 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/ba0607c1-1e85-3215-97a1-ce9c66949cc1> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/80-a-84> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/ba0607c1-1e85-3215-97a1-ce9c66949cc1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 80-a-84 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 21798 ;
 	iaest-measure:porcentaje 181014187665823793923842503207483713456 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/aba7d346-a420-3bd0-833c-543fa8dfaf28> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/80-a-84> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/aba7d346-a420-3bd0-833c-543fa8dfaf28> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 80-a-84 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -13683 ;
 	iaest-measure:porcentaje -113625889064660380413796539654463696267 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/e0a556b5-635b-3c0b-88c9-bcb1a049c6cc> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/75-a-79> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/e0a556b5-635b-3c0b-88c9-bcb1a049c6cc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 75-a-79 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 31578 ;
 	iaest-measure:porcentaje 262228920915285061222456122868424658387 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/ecb72594-381b-311a-a06f-04395497248b> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/75-a-79> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/ecb72594-381b-311a-a06f-04395497248b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 75-a-79 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -24467 ;
 	iaest-measure:porcentaje -203178003927870023210141046241742545974 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/9d516d33-2dd6-37a1-8c08-c1929d668956> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/70-a-74> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/9d516d33-2dd6-37a1-8c08-c1929d668956> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 70-a-74 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 36383 ;
 	iaest-measure:porcentaje 30213043351893142005372794725194421262 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/491d6308-33cb-3fca-b771-2a34994a3c06> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/70-a-74> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/491d6308-33cb-3fca-b771-2a34994a3c06> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 70-a-74 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -31106 ;
 	iaest-measure:porcentaje -258309355057028852821132438974767794787 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/04f4a5d1-c3e9-31b5-b759-4422ab491271> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/65-a-69> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/04f4a5d1-c3e9-31b5-b759-4422ab491271> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 65-a-69 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 37276 ;
 	iaest-measure:porcentaje 30954605282279327196555432377108738888 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/5ef7a100-911c-3542-8382-672b3f568c63> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/65-a-69> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/5ef7a100-911c-3542-8382-672b3f568c63> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 65-a-69 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -33638 ;
 	iaest-measure:porcentaje -279335500720386309753656946641588088506 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/ef7586b6-c330-33aa-bf72-d2ba90d40172> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/60-a-64> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/ef7586b6-c330-33aa-bf72-d2ba90d40172> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 60-a-64 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 29128 ;
 	iaest-measure:porcentaje 241883716778150081173212424691604074023 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/6339048f-6fdd-356a-b817-37b98c9c391f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/60-a-64> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/6339048f-6fdd-356a-b817-37b98c9c391f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 60-a-64 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -27734 ;
 	iaest-measure:porcentaje -230307710832367974157438663361609015001 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/4034a432-e76a-3505-a830-fb0e71881258> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/55-a-59> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/4034a432-e76a-3505-a830-fb0e71881258> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 55-a-59 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 34469 ;
 	iaest-measure:porcentaje 286236261797104337680563686717072947937 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/2cb3d6c5-9275-34f4-8df8-79844a17d007> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/55-a-59> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/2cb3d6c5-9275-34f4-8df8-79844a17d007> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 55-a-59 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -34122 ;
 	iaest-measure:porcentaje -283354716558089709893997334363049787621 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/7bd87f5d-e6f1-3b91-ad21-22cf7e01f09f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/50-a-54> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/7bd87f5d-e6f1-3b91-ad21-22cf7e01f09f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 50-a-54 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 36737 ;
 	iaest-measure:porcentaje 30507010791262357635472071017218686032 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/e0203e42-84e8-37a2-a7a0-96f20adfba39> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/50-a-54> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/e0203e42-84e8-37a2-a7a0-96f20adfba39> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 50-a-54 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -36950 ;
 	iaest-measure:porcentaje -306838895047811229722267203115722690716 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/25c1e5b8-849e-33bf-b151-dd119ab53e91> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/45-a-49> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/25c1e5b8-849e-33bf-b151-dd119ab53e91> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 45-a-49 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 38697 ;
 	iaest-measure:porcentaje 321346271222331560394115668713643327811 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/7a98cf41-e3fa-3060-8295-acd0b6249c2f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/45-a-49> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/7a98cf41-e3fa-3060-8295-acd0b6249c2f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 45-a-49 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -39825 ;
 	iaest-measure:porcentaje -330713369290367583861685828527297866245 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/cf4366b8-0f5b-3083-874a-6c9a53b3ea7b> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/40-a-44> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/cf4366b8-0f5b-3083-874a-6c9a53b3ea7b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 40-a-44 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 43757 ;
 	iaest-measure:porcentaje 363365345889230743679492449438015636743 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/b39baf59-10f4-3654-93e4-7951f3b2676d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/40-a-44> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/b39baf59-10f4-3654-93e4-7951f3b2676d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 40-a-44 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -45369 ;
 	iaest-measure:porcentaje -376751659794970167287402996973131874292 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/2214ae17-fa1c-3908-9bcc-b31327a2d998> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/35-a-39> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/2214ae17-fa1c-3908-9bcc-b31327a2d998> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 35-a-39 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 45472 ;
 	iaest-measure:porcentaje 377606988785225229713963038161790045797 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/1d1b9428-27f7-381a-bab3-9df91defad41> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/35-a-39> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/1d1b9428-27f7-381a-bab3-9df91defad41> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 35-a-39 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -48409 ;
 	iaest-measure:porcentaje -401996321254925407838301300017023538156 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/5e378927-b698-39c1-a471-36bcdf661bde> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/30-a-34> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/5e378927-b698-39c1-a471-36bcdf661bde> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 30-a-34 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 44576 ;
 	iaest-measure:porcentaje 370166456986501579867382485685695660659 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/e8bd0ccb-28e2-3f3e-a389-f3202e0bc986> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/30-a-34> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/e8bd0ccb-28e2-3f3e-a389-f3202e0bc986> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 30-a-34 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -47743 ;
 	iaest-measure:porcentaje -396465747395606266322874237573855167059 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/df97d755-ad06-3381-a65e-8078be2acaee> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/25-a-29> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/df97d755-ad06-3381-a65e-8078be2acaee> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 25-a-29 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 45255 ;
 	iaest-measure:porcentaje 375804984990221845766744310608985936897 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/6ff0a85b-4b68-388c-bd69-c54a0620469a> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/25-a-29> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/6ff0a85b-4b68-388c-bd69-c54a0620469a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 25-a-29 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -49439 ;
 	iaest-measure:porcentaje -410549611157476032103901711903605253215 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/99481e8c-24d7-3b36-97bd-b546438a1b0b> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/20-a-24> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/99481e8c-24d7-3b36-97bd-b546438a1b0b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 20-a-24 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 40549 ;
 	iaest-measure:porcentaje 336725584717014818782360292804856275665 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/6070255f-ceba-38a5-9bd5-e35b26f497cb> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/20-a-24> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/6070255f-ceba-38a5-9bd5-e35b26f497cb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 20-a-24 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -42806 ;
 	iaest-measure:porcentaje -355468085018040798362418671084482422159 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/6aa69c2f-b901-3963-b21f-99e955a740d1> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/15-a-19> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/6aa69c2f-b901-3963-b21f-99e955a740d1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 15-a-19 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 30327 ;
 	iaest-measure:porcentaje 251840410557915322429964748819770555922 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/9c06beda-bad3-3f02-8024-ca082cd84d10> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/15-a-19> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/9c06beda-bad3-3f02-8024-ca082cd84d10> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 15-a-19 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -32446 ;
 	iaest-measure:porcentaje -269436936095298597011331033079641093991 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/ae5bd214-9ec9-3534-b460-ca7a73fdcecf> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/10-a-14> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/ae5bd214-9ec9-3534-b460-ca7a73fdcecf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 10-a-14 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 25984 ;
 	iaest-measure:porcentaje 215775422162985845550836021806737169027 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/0c76cfec-94f2-313e-a1a3-cfba7a2cf4c5> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/10-a-14> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/0c76cfec-94f2-313e-a1a3-cfba7a2cf4c5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 10-a-14 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -27313 ;
 	iaest-measure:porcentaje -226811657386762330646935970736122702341 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/5464e533-8b1a-3c81-813c-a771182107c5> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/05-a-09> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/5464e533-8b1a-3c81-813c-a771182107c5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 05-a-09 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 24226 ;
 	iaest-measure:porcentaje 201176700173972255784888911033328766043 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/53f8a99e-7900-3da4-8391-7d4e2d0bcf27> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/05-a-09> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/53f8a99e-7900-3da4-8391-7d4e2d0bcf27> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 05-a-09 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -25179 ;
 	iaest-measure:porcentaje -209090569375070066391798806691496119879 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/9a785080-6bac-3a53-a038-6c620ec0063c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/00-a-04> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/9a785080-6bac-3a53-a038-6c620ec0063c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 00-a-04 ;
+	iaest-measure:sexo mujeres ;
 	iaest-measure:personas 23906 ;
 	iaest-measure:porcentaje 198519367388713809411110142291866485636 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030018A/0c1552eb-593d-3f86-954f-7274c0da69d2> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030018A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:edad-grupos-quinquenales <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/00-a-04> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030018A/0c1552eb-593d-3f86-954f-7274c0da69d2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030018A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edad-grupos-quinquenales 00-a-04 ;
+	iaest-measure:sexo varones ;
 	iaest-measure:personas -25306 ;
 	iaest-measure:porcentaje -210145198324219512296392255535763962415 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

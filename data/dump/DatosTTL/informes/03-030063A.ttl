@@ -12,49 +12,49 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030063A> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/03-030063>;
+<http://opendata.aragon.es/recurso/iaest/cubo/03-030063A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030063>;
 	rdfs:label "Cubo de datos para 03-030063A"@es ;
 	rdfs:comment "Cubo de datos para 03-030063A"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030063A/48e0b357-13cc-3d93-b9c5-066f18290288> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030063A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063A/48e0b357-13cc-3d93-b9c5-066f18290288> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030063A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:sexo mujeres ;
 	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-34-anos> ;
 	iaest-measure:numero-hogares 6286 .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030063A/64efda54-a7f7-3b90-988a-2108e97a2e50> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030063A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063A/64efda54-a7f7-3b90-988a-2108e97a2e50> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030063A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:sexo mujeres ;
 	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/35-a-64-anos> ;
 	iaest-measure:numero-hogares 12937 .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030063A/70e54640-2a3e-396c-b337-73bab5b14a09> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030063A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063A/70e54640-2a3e-396c-b337-73bab5b14a09> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030063A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:sexo mujeres ;
 	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/mayores-de-64-anos> ;
 	iaest-measure:numero-hogares 38617 .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030063A/bb61d79c-b7a1-37fa-a652-36c28cded389> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030063A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063A/bb61d79c-b7a1-37fa-a652-36c28cded389> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030063A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:sexo varones ;
 	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/16-a-34-anos> ;
 	iaest-measure:numero-hogares 9689 .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030063A/da929f13-89f6-346f-99dd-dde9a2d02bf2> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030063A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063A/da929f13-89f6-346f-99dd-dde9a2d02bf2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030063A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:sexo varones ;
 	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/35-a-64-anos> ;
 	iaest-measure:numero-hogares 18518 .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030063A/ba20392f-1ce9-3fd8-8264-2d0da5a3d0f7> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030063A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063A/ba20392f-1ce9-3fd8-8264-2d0da5a3d0f7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030063A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:sexo varones ;
 	sdmx-measure:refPeriod <http://reference.data.gov.uk/id/year/mayores-de-64-anos> ;
 	iaest-measure:numero-hogares 13687 .

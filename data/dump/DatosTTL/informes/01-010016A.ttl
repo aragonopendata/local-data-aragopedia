@@ -12,61 +12,61 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010016A> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-010016>;
+<http://opendata.aragon.es/recurso/iaest/cubo/01-010016A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010016>;
 	rdfs:label "Cubo de datos para 01-010016A"@es ;
 	rdfs:comment "Cubo de datos para 01-010016A"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010016A/c6d3327e-ac78-3814-8e69-223df21e2c05> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010016A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+	dc:modify "2016-02-17"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010016A/c6d3327e-ac78-3814-8e69-223df21e2c05> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010016A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	iaest-dimension:plazas-garaje <http://opendata.aragon.es/kos/iaest/plazas-garaje/00> ;
 	iaest-measure:numero-de-edificios 180448 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010016A/aa0980e4-d085-3cf7-9652-a87f339bb1cf> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010016A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010016A/aa0980e4-d085-3cf7-9652-a87f339bb1cf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010016A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	iaest-dimension:plazas-garaje <http://opendata.aragon.es/kos/iaest/plazas-garaje/01> ;
 	iaest-measure:numero-de-edificios 56251 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010016A/d9c2a2bc-4913-30d5-8917-f72d60440f3b> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010016A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010016A/d9c2a2bc-4913-30d5-8917-f72d60440f3b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010016A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	iaest-dimension:plazas-garaje <http://opendata.aragon.es/kos/iaest/plazas-garaje/02> ;
 	iaest-measure:numero-de-edificios 22050 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010016A/460001c8-357e-3da3-ad9f-df26ac780a83> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010016A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010016A/460001c8-357e-3da3-ad9f-df26ac780a83> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010016A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	iaest-dimension:plazas-garaje <http://opendata.aragon.es/kos/iaest/plazas-garaje/03-a-05> ;
 	iaest-measure:numero-de-edificios 6041 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010016A/61f2a047-e472-3ee6-96d3-6762d3d7259e> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010016A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010016A/61f2a047-e472-3ee6-96d3-6762d3d7259e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010016A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	iaest-dimension:plazas-garaje <http://opendata.aragon.es/kos/iaest/plazas-garaje/06-a-10> ;
 	iaest-measure:numero-de-edificios 2392 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010016A/0a7c14df-73cd-3a2c-b28e-ba16642a4a25> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010016A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010016A/0a7c14df-73cd-3a2c-b28e-ba16642a4a25> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010016A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	iaest-dimension:plazas-garaje <http://opendata.aragon.es/kos/iaest/plazas-garaje/11-a-20> ;
 	iaest-measure:numero-de-edificios 2361 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010016A/2a1e9445-0c6b-3303-8021-db4f7d81335a> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010016A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010016A/2a1e9445-0c6b-3303-8021-db4f7d81335a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010016A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	iaest-dimension:plazas-garaje <http://opendata.aragon.es/kos/iaest/plazas-garaje/21-a-50> ;
 	iaest-measure:numero-de-edificios 2128 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010016A/353f292a-6a80-305c-9e10-1f03352df04e> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010016A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010016A/353f292a-6a80-305c-9e10-1f03352df04e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010016A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
 	iaest-dimension:plazas-garaje <http://opendata.aragon.es/kos/iaest/plazas-garaje/50-o-mas> ;
 	iaest-measure:numero-de-edificios 745 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

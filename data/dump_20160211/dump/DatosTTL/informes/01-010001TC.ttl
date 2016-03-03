@@ -1,0 +1,703 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-010001TC> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>;
+	rdfs:label "Cubo de datos para 01-010001TC"@es ;
+	rdfs:comment "Cubo de datos para 01-010001TC"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/188c25fa-035c-33f3-af0b-46149d27a84c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 9 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/23e29e2b-ce2c-3950-a22c-9287d34f9ee6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 13688 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/ed314c33-6a3d-3675-b683-7d0a6d9ed839> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 6230 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/854d1275-c39a-35b9-9abc-21ea21ca05be> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 14 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/2960b3ca-e65a-39cc-97ee-ba011da17bad> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 6849 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/bf7e39ee-df1f-35d3-843d-91f62fe10965> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 4400 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/ef9c77e2-f8f7-3974-b4a7-6c880f48991a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 3 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/bc8e9ec0-540a-30a0-9bcc-d6725218d344> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 2139 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/2ab7f0d6-cb2a-3e8f-b9c3-b0199e2c53de> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 2455 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/6f13fc56-a511-34b1-9cfd-37b74aa4bc4d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 11 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/1d3fabb3-96b9-3b83-88d9-0dc30618e3bd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 5560 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/f39f0a2d-7cc9-37ed-adb1-9c9d091e935b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 4458 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/a6bb7783-3401-3a21-855f-6e43fb10b12b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 19 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/c074a3f4-c3e1-36ce-b477-3670bf61fb8b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 6159 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/ae703191-e2b6-3e5b-82db-6ad6e7c1f323> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 11588 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/93e908a7-d6c1-3894-9823-fe1767932d23> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 46 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/1e183049-610f-3156-9afc-72164d2bf67c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 10577 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/0e931c19-892c-3b69-80e4-fb1d93a7a7f6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 21701 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/33c43f8f-0a57-312d-9aff-d204af2593f4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 15 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/6a826c93-f6cc-335d-92e1-9cbbbdcf0770> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 4254 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/a480fa31-775a-3d3f-a317-57c699d8be9e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 8222 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/3ec654bc-a980-3df8-a191-868cabee60bb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 10 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/35d37a66-f5e3-3fed-b0dc-570b95c30740> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 2923 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/55cb0747-3980-39af-a38b-51a1aadc6cd4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 7761 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/6e9e3366-9054-3e9a-a053-eca50e1b0374> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 5 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/4e7114cb-849f-3372-b5a4-5195d8054e1b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 2810 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/235cb16a-1a49-3789-8f2d-ded1a2329237> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 6601 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/767a3040-9c22-3ae8-8e94-d32c86200d98> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 7 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/ff73e9bb-c338-3d3d-8552-dea20e1af27c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 3207 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/23f583f9-08ed-3d17-996f-578f7c23e775> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 7435 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/b99b4231-6a30-3a16-9642-bdf21874a61a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 2 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/1f3e78ce-27cd-37af-9714-80d6f03d6cae> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 2964 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/99dcf136-a8bd-3f8e-92f3-dac8e4f89b62> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 7427 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/fef38cf3-3e19-3de7-8f73-9958163dddc4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 8 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/813a6ccf-baa9-3cde-9d47-ec8a26209978> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 2988 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/445ec135-271e-3d0d-87a6-c528d82dc482> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 5267 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/b30cab29-b5f3-33d3-90bb-80b03ff65212> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 10 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/119c006e-bbbc-3f96-b35b-8077881af4b3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 3730 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/2caacda8-4fbc-35e6-953f-9367847faab1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 5365 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/6dfc5324-f3e5-365b-8827-696a2a07f733> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 2 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/99ed8a15-aa7e-3fad-bf42-8b06d432d70c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 1860 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/f40a6e21-31b4-32cf-9b93-4cb48d5aad1a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 2896 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/fbb7a141-7a3a-3134-8c0f-c08a230e8704> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 18 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/74ae72b8-e3b3-31b1-8956-aae28818fb95> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 3261 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/9595629d-401b-398d-a43d-ccf778d92661> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 8065 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/aec9c805-3a35-3723-b251-2f825b51d823> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 14 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/eeec36ec-7648-3987-b12e-1fc58d755061> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 4595 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/b37a3f60-c836-31c5-83cf-fca91e0987e3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 8370 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/3a3c35a2-bee8-3ed9-8200-fabe05ed57c2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 295 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/f677013b-a30f-381c-a189-150295906387> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 63292 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/7e0f06f6-3d4a-3687-82e4-bb23c1095b34> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 241335 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/214ad807-3c41-327d-937b-60f42e9da1af> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 3 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/2d386937-82bd-3187-a77b-5b3bec964f7b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 2229 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/bb9d651d-ac7a-3afa-8a79-25c384621854> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 3717 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/4f0f3f24-f5d7-3296-a082-9a6b4532b951> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 3 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/e7b69eef-1809-31ea-90da-63851982cd9e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 2707 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/9740c1ea-99e2-348c-9662-3f368dd3682a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 4833 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/79f3b585-3e65-3f97-9a56-c40eaf7f9856> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 20 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/432823d7-60cb-3d28-a3b6-577e9cbf2d90> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 12208 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/7cb5cfe6-2e8e-3f99-b06b-aaae5de36529> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 15260 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/9d53db03-b16b-30d5-8e4a-b1e30c5d08cd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 3 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/f2124266-9d68-3c30-9006-f8c85a15bc7b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 2142 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/920cd79a-5f6f-315d-93e8-281f5b6e0f9f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 3776 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/2de6e6cc-6cbe-3653-bd04-d1aee7d9bfff> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 1 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/bf65c2c1-cb6d-36cd-885c-448e024c05ef> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 2181 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/bc98f830-3cfa-3156-96ad-31cad831f874> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 2348 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/f83b97e5-abdc-341f-ba3a-58c4b97c5862> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 3 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/ef55a387-f943-396f-ab2e-af54dd1953be> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 2459 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/1f96af06-8c70-3ead-b1e8-ecc9fe67a560> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 2904 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/0527f4aa-21fb-38a6-8169-f5e60ec815be> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 2 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/b3046ba9-8f89-3ff8-a5d2-de743a1765bf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 3582 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/aae3be23-a834-3edb-85e6-518f6fe6d06b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 2663 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/e5fca08d-f043-3b9c-a3ad-be739e49f688> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 4 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/2dd44dab-62a7-3703-9bed-f1901801e83d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 5765 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/ff78ae37-ed43-35b7-a3a8-949814311fdd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 5555 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/10f24d61-48e6-349f-8896-39c7f0c8f3a1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 5 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/f6d50d97-d930-389f-9360-6f44e05d3a6b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 4314 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/fb9accd5-ff66-3cea-ba8d-76c880791b2f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 3585 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/bc9e18f7-8257-351e-af29-61e6dd67d09f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 2 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/1a6d358e-295d-304e-84ce-02a94168a849> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 2702 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/49136ce5-8e36-3ebe-8c00-b3f93fb69a37> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 3953 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/36d8493c-92a5-3a08-b29a-63a7735f62cf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 10 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/210ae18b-a67f-34c7-b56e-a7332f1f5fd7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 5492 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/1f5abb23-8a92-38e8-8248-7d4d250e7025> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 9513 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/5fbeb6d2-7153-3bfe-9365-2777c834b660> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 20 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/b485e0bc-20e6-349c-95ff-3c7b821f792e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 9444 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/15e174ea-5cdc-3c8b-81cc-2096a530bb8c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 15497 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/716d0bbd-721d-3cf8-9dff-7e78a0dc29fe> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 2171 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/2a632e8c-9c21-3d0f-8839-9d3ec7a12a15> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 1503 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/0088e0f4-918b-3e46-94ed-1a4b90155ac6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 3 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/d7397edd-dad1-3200-a410-bc77bc1d2a16> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 3052 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/d76d9c6b-ecd0-3fdb-ae42-dfd780524b67> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 2018 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/54e2ca13-cdcb-3ce2-ad8c-9c3b4e90500e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/colectiva> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/colectiva> ;
+	iaest-measure:total-viviendas 5 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/a72ef151-1586-3bae-92b8-6a42345b87c4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 6898 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/b966bbda-8677-3e17-aa24-615428ac5d46> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 3207 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/32a891d7-0749-36aa-bf12-3f578517338d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-no-principal> ;
+	iaest-measure:total-viviendas 3038 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010001TC/4853754a-f050-392b-b0ed-a8f24206dfe7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010001>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-dimension:clase-vivienda-agregado <http://opendata.aragon.es/kos/iaest/clase-vivienda-agregado/familiar> ;
+	iaest-dimension:clase-vivienda-detalle <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle/familiar-principal> ;
+	iaest-measure:total-viviendas 3335 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

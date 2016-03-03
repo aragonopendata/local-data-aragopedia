@@ -1,0 +1,54 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-010061A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010061>;
+	rdfs:label "Cubo de datos para 01-010061A"@es ;
+	rdfs:comment "Cubo de datos para 01-010061A"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010061A/1981708c-75af-3c48-bb8d-ea0fc16f4e5e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010061>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:numero-total-de-explotaciones 80021 ;
+	iaest-measure:explotaciones-con-tierras 78244 ;
+	iaest-measure:explotaciones-con-tierras-con-sau 72065 ;
+	iaest-measure:explotaciones-con-tierras-sin-sau 6179 ;
+	iaest-measure:explotaciones-con-tierras-con-sau-5-hectareas 31268 ;
+	iaest-measure:explotaciones-con-tierras-con-sau--5-y--10-hectareas 9552 ;
+	iaest-measure:explotaciones-con-tierras-con-sau--10-y--20-hectareas 9794 ;
+	iaest-measure:explotaciones-con-tierras-con-sau--20-y--50-hectareas 10643 ;
+	iaest-measure:explotaciones-con-tierras-con-sau--50-y--100-hectareas 5835 ;
+	iaest-measure:explotaciones-con-tierras-con-sau--100-hectareas 4973 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010061A/6f013650-175a-365e-904b-ade71172af99> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010061>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1989> ;
+	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
+	iaest-measure:numero-total-de-explotaciones 100731 ;
+	iaest-measure:explotaciones-con-tierras 99649 ;
+	iaest-measure:explotaciones-con-tierras-con-sau 92460 ;
+	iaest-measure:explotaciones-con-tierras-sin-sau 7189 ;
+	iaest-measure:explotaciones-con-tierras-con-sau-5-hectareas 41657 ;
+	iaest-measure:explotaciones-con-tierras-con-sau--5-y--10-hectareas 14378 ;
+	iaest-measure:explotaciones-con-tierras-con-sau--10-y--20-hectareas 13707 ;
+	iaest-measure:explotaciones-con-tierras-con-sau--20-y--50-hectareas 12588 ;
+	iaest-measure:explotaciones-con-tierras-con-sau--50-y--100-hectareas 6011 ;
+	iaest-measure:explotaciones-con-tierras-con-sau--100-hectareas 4119 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

@@ -12,62 +12,62 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010088TC> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-080101-010088>;
+<http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010088TC> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010088>;
 	rdfs:label "Cubo de datos para 01-080101-010088TC"@es ;
 	rdfs:comment "Cubo de datos para 01-080101-010088TC"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010088TC/3ca5f94a-ae12-3055-8c7a-c4fde0046b1c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010088TC>; 
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010088TC/3ca5f94a-ae12-3055-8c7a-c4fde0046b1c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010088TC>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
 	iaest-measure:explotaciones 1 ;
-	iaest-dimension:superficie-hongos <http://opendata.aragon.es/kos/iaest/superficie-hongos/001> ;
-	iaest-dimension:cultivo-hongos <http://opendata.aragon.es/kos/iaest/cultivo-hongos/explotaciones-que--cultivan-hongos> ;
+	iaest-measure:superficie-hongos 001 ;
+	iaest-measure:cultivo-hongos explotaciones-que--cultivan-hongos ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010088TC/31a31bb3-057f-3e37-8bb2-e389520d37b0> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010088TC>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010088TC/31a31bb3-057f-3e37-8bb2-e389520d37b0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010088TC>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
 	iaest-measure:explotaciones 2 ;
-	iaest-dimension:superficie-hongos <http://opendata.aragon.es/kos/iaest/superficie-hongos/003> ;
-	iaest-dimension:cultivo-hongos <http://opendata.aragon.es/kos/iaest/cultivo-hongos/explotaciones-que--cultivan-hongos> ;
+	iaest-measure:superficie-hongos 003 ;
+	iaest-measure:cultivo-hongos explotaciones-que--cultivan-hongos ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010088TC/5f326efb-ccf0-31bc-94a4-c3d61f403a7b> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010088TC>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010088TC/5f326efb-ccf0-31bc-94a4-c3d61f403a7b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010088TC>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
 	iaest-measure:explotaciones 1 ;
-	iaest-dimension:superficie-hongos <http://opendata.aragon.es/kos/iaest/superficie-hongos/02> ;
-	iaest-dimension:cultivo-hongos <http://opendata.aragon.es/kos/iaest/cultivo-hongos/explotaciones-que--cultivan-hongos> ;
+	iaest-measure:superficie-hongos 02 ;
+	iaest-measure:cultivo-hongos explotaciones-que--cultivan-hongos ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010088TC/e4ba9e13-aa91-31cf-ad70-1a2aa7bcf692> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010088TC>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010088TC/e4ba9e13-aa91-31cf-ad70-1a2aa7bcf692> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010088TC>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
 	iaest-measure:explotaciones 2 ;
-	iaest-dimension:superficie-hongos <http://opendata.aragon.es/kos/iaest/superficie-hongos/022> ;
-	iaest-dimension:cultivo-hongos <http://opendata.aragon.es/kos/iaest/cultivo-hongos/explotaciones-que--cultivan-hongos> ;
+	iaest-measure:superficie-hongos 022 ;
+	iaest-measure:cultivo-hongos explotaciones-que--cultivan-hongos ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010088TC/b397c858-8aeb-3596-aa9b-820d4ad9d839> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010088TC>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010088TC/b397c858-8aeb-3596-aa9b-820d4ad9d839> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010088TC>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
 	iaest-measure:explotaciones 2 ;
-	iaest-dimension:superficie-hongos <http://opendata.aragon.es/kos/iaest/superficie-hongos/01> ;
-	iaest-dimension:cultivo-hongos <http://opendata.aragon.es/kos/iaest/cultivo-hongos/explotaciones-que--cultivan-hongos> ;
+	iaest-measure:superficie-hongos 01 ;
+	iaest-measure:cultivo-hongos explotaciones-que--cultivan-hongos ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010088TC/e242aff5-e505-369b-9585-acbcc9cdfdee> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010088TC>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010088TC/e242aff5-e505-369b-9585-acbcc9cdfdee> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010088TC>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
 	iaest-measure:explotaciones 1 ;
-	iaest-dimension:superficie-hongos <http://opendata.aragon.es/kos/iaest/superficie-hongos/022> ;
-	iaest-dimension:cultivo-hongos <http://opendata.aragon.es/kos/iaest/cultivo-hongos/explotaciones-que--cultivan-hongos> ;
+	iaest-measure:superficie-hongos 022 ;
+	iaest-measure:cultivo-hongos explotaciones-que--cultivan-hongos ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010088TC/5dcc63cd-e7a3-3506-9dca-8ac44b579b31> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010088TC>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010088TC/5dcc63cd-e7a3-3506-9dca-8ac44b579b31> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010088TC>; 
 	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
 	iaest-measure:explotaciones 1 ;
-	iaest-dimension:superficie-hongos <http://opendata.aragon.es/kos/iaest/superficie-hongos/018> ;
-	iaest-dimension:cultivo-hongos <http://opendata.aragon.es/kos/iaest/cultivo-hongos/explotaciones-que--cultivan-hongos> ;
+	iaest-measure:superficie-hongos 018 ;
+	iaest-measure:cultivo-hongos explotaciones-que--cultivan-hongos ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

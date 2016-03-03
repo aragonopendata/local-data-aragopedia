@@ -12,20 +12,20 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010049TP> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-010049>;
+<http://opendata.aragon.es/recurso/iaest/cubo/01-010049TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010049>;
 	rdfs:label "Cubo de datos para 01-010049TP"@es ;
 	rdfs:comment "Cubo de datos para 01-010049TP"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010049TP/7c18ccbb-724c-3e71-9882-7f44dd213c5c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010049TP>; 
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010049TP/7c18ccbb-724c-3e71-9882-7f44dd213c5c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010049TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1989> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:provincia huesca ;
 	iaest-measure:superficie-total-de-las-explotaciones 1423401 ;
 	iaest-measure:hectareas-en-tierras-labradas 487761 ;
 	iaest-measure:hectareas-en-tierras-para-pastos-permanentes 200125 ;
@@ -36,10 +36,10 @@
 	iaest-measure:hectareas-en-aparceria 49586 ;
 	iaest-measure:hectareas-en-otros-regimenes-de-tenencia-de-las-tierras 30679 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010049TP/30c28e6b-c11c-3934-a55f-3f053d7e3a20> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010049TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010049TP/30c28e6b-c11c-3934-a55f-3f053d7e3a20> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010049TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1989> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:provincia teruel ;
 	iaest-measure:superficie-total-de-las-explotaciones 1388969 ;
 	iaest-measure:hectareas-en-tierras-labradas 403889 ;
 	iaest-measure:hectareas-en-tierras-para-pastos-permanentes 356954 ;
@@ -50,10 +50,10 @@
 	iaest-measure:hectareas-en-aparceria 73643 ;
 	iaest-measure:hectareas-en-otros-regimenes-de-tenencia-de-las-tierras 343351 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010049TP/88fb6e9e-4399-3f39-9471-a261dc095e90> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010049TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010049TP/88fb6e9e-4399-3f39-9471-a261dc095e90> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010049TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1989> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:provincia zaragoza ;
 	iaest-measure:superficie-total-de-las-explotaciones 1630618 ;
 	iaest-measure:hectareas-en-tierras-labradas 756608 ;
 	iaest-measure:hectareas-en-tierras-para-pastos-permanentes 254864 ;
@@ -64,10 +64,10 @@
 	iaest-measure:hectareas-en-aparceria 84738 ;
 	iaest-measure:hectareas-en-otros-regimenes-de-tenencia-de-las-tierras 158478 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010049TP/329f06ff-46b7-38d1-b9f4-75d90f14692f> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010049TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010049TP/329f06ff-46b7-38d1-b9f4-75d90f14692f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010049TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:provincia huesca ;
 	iaest-measure:superficie-total-de-las-explotaciones 139490334 ;
 	iaest-measure:hectareas-en-tierras-labradas 519711 ;
 	iaest-measure:hectareas-en-tierras-para-pastos-permanentes 245477 ;
@@ -78,10 +78,10 @@
 	iaest-measure:hectareas-en-aparceria 52771 ;
 	iaest-measure:hectareas-en-otros-regimenes-de-tenencia-de-las-tierras 44535 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010049TP/2da09e3f-5c30-301d-a616-0bc93dd80bee> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010049TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010049TP/2da09e3f-5c30-301d-a616-0bc93dd80bee> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010049TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:provincia teruel ;
 	iaest-measure:superficie-total-de-las-explotaciones 128235525 ;
 	iaest-measure:hectareas-en-tierras-labradas 422400 ;
 	iaest-measure:hectareas-en-tierras-para-pastos-permanentes 319448 ;
@@ -92,10 +92,10 @@
 	iaest-measure:hectareas-en-aparceria 57366 ;
 	iaest-measure:hectareas-en-otros-regimenes-de-tenencia-de-las-tierras 83912 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-010049TP/8a008b10-fb3d-3995-8da3-3e7fa96bf438> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-010049TP>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010049TP/8a008b10-fb3d-3995-8da3-3e7fa96bf438> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-010049TP>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
-	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:provincia zaragoza ;
 	iaest-measure:superficie-total-de-las-explotaciones 1468913 ;
 	iaest-measure:hectareas-en-tierras-labradas 778094 ;
 	iaest-measure:hectareas-en-tierras-para-pastos-permanentes 177564 ;

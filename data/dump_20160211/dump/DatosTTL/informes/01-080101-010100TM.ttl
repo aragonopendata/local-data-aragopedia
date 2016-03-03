@@ -1,0 +1,1206 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010100TM> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>;
+	rdfs:label "Cubo de datos para 01-080101-010100TM"@es ;
+	rdfs:comment "Cubo de datos para 01-080101-010100TM"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/cf600961-b711-3c94-8860-d0a6b593e355> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre abiego ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/4272a3d6-c076-3edb-bdae-ae4dbc5dc9c1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre abizanda ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/58f56f5c-e147-32da-ba14-7b47cf855224> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre albalate-de-cinca ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/f7f31a5f-4015-3bfe-a187-6b5cdcaf2ab5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre albelda ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/ca45195e-7d47-3568-ab53-8f78d021cd49> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre albelda ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/f096c478-b223-3ca4-8f77-f27c97758141> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre albero-alto ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/87897cb8-e1c9-34cd-87d5-21bdabc07312> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre albero-alto ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otro-tipo-de-fuente-de-energia-renovable> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/abeed24d-6eac-3c3a-9073-d01f542bc6a1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre alcala-de-gurrea ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/ac759bc7-806d-3671-bec1-f18179490656> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre alcala-del-obispo ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/be25a04a-a7ce-3731-9761-1f6bdfbc454d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre alcubierre ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otro-tipo-de-fuente-de-energia-renovable> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/79d5a770-388f-3394-91f4-c9a01dcb70da> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre alcubierre ;
+	iaest-measure:explotaciones 3 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/f0803dc3-aa88-39c1-a28d-05b9153321ac> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre almudevar ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/b178fb69-ed5e-3c8b-8d44-47d3a1e43c8d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre almudevar ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/380d547f-b3a0-3909-a87a-3cd4011ed975> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre altorricon ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/f3e392c6-1b28-3d5b-8bea-a6941a480794> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre altorricon ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/fd98f367-b083-32dc-8132-1ede428c3307> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre aren ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/60cabc4f-3ada-3316-a1be-e7b8124d7d76> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre ayerbe ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/524ecc19-ff1d-34d9-bba7-3489633cf8bb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre baldellou ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/43a9ffd0-d056-3b2c-96fa-ce177d5c04cd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre barbastro ;
+	iaest-measure:explotaciones 3 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/7305b7ec-b021-3e54-835a-4dd08255e717> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre belver-de-cinca ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/1d8580a0-f61f-361c-9265-1bb2550147d2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre benabarre ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/e5c5e80d-8ed3-3b14-9124-8405f96748bb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre bierge ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/faa87cee-f9db-34ff-9f3a-5025f07dac2d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre binefar ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/d3b1e2d9-4e97-32a5-b513-ccbeca092244> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre capella ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/ddd52a89-a605-38d1-9220-67c86028bc57> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre castejon-del-puente ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/9658d641-87ac-3fc2-abb0-bdf7f28972a9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre castillazuelo ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/0ea2c8e4-ecd3-3577-9359-dbb8551b5ead> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre chalamera ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/cd7b1d10-9d4b-3d3a-9147-906cf49071a9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre estadilla ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/e87f4243-6c18-308b-8e26-561b91046b43> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre fraga ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/505774d1-825d-32cc-8fc4-3e780c12c61b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre fraga ;
+	iaest-measure:explotaciones 8 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/2cb25b52-89e2-39ee-921d-d6c0570aecfa> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre fueva-la ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otro-tipo-de-fuente-de-energia-renovable> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/485f9a3e-474a-36af-9fb7-8878150e22d6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre fueva-la ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/d2473195-ce0a-3838-aaee-873b56581adb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre granen ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/8d98d23c-658c-39cd-bc54-ab832da64884> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre granen ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/455b0b9b-d2eb-3597-beb9-95944f0521be> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre graus ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/b378637b-5988-3762-b08c-aeaa5b272f12> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre gurrea-de-gallego ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/27fb93a1-11cd-35a6-9ed4-14fac8ba1e35> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre huesca ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/8fc5ddcc-8353-38dd-bdc9-78ebbe0fa538> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre huesca ;
+	iaest-measure:explotaciones 3 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/663564fe-afce-35b6-8677-1b58b4dfddb5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre ilche ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/ed205d4a-ed6d-30dd-95e6-b7cb5d76b264> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre ilche ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/92387066-1e17-3217-bdd4-50abcf6dc86d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre jaca ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/be82b0df-2d83-349b-bb67-3e41a96f586b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre laluenga ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/09d44701-cbad-3c19-ab53-e45602a6409c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre lalueza ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/49e7d3e1-cdda-31fc-b209-6c09f6e7408c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre lanaja ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/a57130b4-cdcb-3e04-9bc2-b3349fcea816> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre lascuarre ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/293b82c5-e640-340f-8536-4636dd8727ea> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre laspuna ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/40a46ecd-b4c6-38d1-993b-5c3157180468> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre montanuy ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/0516dd02-4d9f-3b08-ac16-f42ee533c458> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre ontinena ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/00547d23-64ed-3fd8-806a-7083117b7027> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre penalba ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/4104ad2a-8bb3-3bbc-88f2-33d6513b3b25> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre peralta-de-alcofea ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/e4e3a79c-6201-3328-bef8-4d44dc0885f7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre peralta-de-calasanz ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/99a47da9-a638-30c1-8ee0-90baf2048a76> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre piraces ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/8667f0c2-6971-3c2c-84ca-b4b149d1d094> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre plan ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/259808c0-a0b5-35d1-b6b4-3d943eda6c12> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre polenino ;
+	iaest-measure:explotaciones 5 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/798179d0-a706-3104-b2c8-067ff0293fbd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre robres ;
+	iaest-measure:explotaciones 3 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/76b54ba0-701c-3122-b451-81a0577afc6d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre sabinanigo ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/f791a864-0845-3a2e-b790-57d6673ec6e0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre sallent-de-gallego ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/8f7b81d9-3978-34ff-acd3-0f8578676300> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre san-juan-de-plan ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/92883948-694c-3794-b0f9-c568f653209f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre santa-cruz-de-la-seros ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/488fb183-4bf8-3176-8b2d-b2cdfef8cbdb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre sena ;
+	iaest-measure:explotaciones 5 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/b66897b0-2953-38f6-8736-5e5b8aa69155> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre tardienta ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/5395f9e9-e61d-337a-8c6f-d5f21385cd5c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre tardienta ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/48202ccf-0f54-38c3-8b38-4a51676487fe> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre tella-sin ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/65f89969-949e-37c9-a7fc-631d4b0a91bd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre torralba-de-aragon ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/b46f4dc8-78b1-35db-99f7-a0d85966050b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre torres-de-barbues ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/7d3ef87a-9777-3ad6-8bbf-183770c6d3e8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre velilla-de-cinca ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/2cc95f4c-029b-3abb-8c0a-6591f01af0ab> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre villanueva-de-sigena ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otro-tipo-de-fuente-de-energia-renovable> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/ad55f43c-c378-32df-99dd-df027e4bbae9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre zaidin ;
+	iaest-measure:explotaciones 5 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/5d25e8c1-0344-373d-be05-87a0665b48d5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre puente-la-reina-de-jaca ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/3e351814-4ae2-3588-bfc2-8151c052a3f3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre san-miguel-del-cinca ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/5ba22040-e11d-3762-a79f-05323a7bdfd2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre sotonera-la ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/f65ba3a5-8921-3c99-ba04-0e9c718ba92a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre santa-maria-de-dulcis ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/ecdb7ffb-5c4b-3900-9be3-6b9b1803baf8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre ababuj ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/b66ae194-56e2-39c3-af44-c69c7ded1f78> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre aguaviva ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/5bcbc34c-2955-3a8c-abe2-87db3cfd1a82> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre albalate-del-arzobispo ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/2aeb90de-a185-3642-a978-4fa6fe54e18b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre albentosa ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/19df9475-ccce-33b6-aceb-fe55f4e9736b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre alcala-de-la-selva ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/10be6cd7-5058-328e-baa6-d232d1ba2907> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre alcaniz ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/212b8230-8341-3a62-bb4b-ef266812f9c9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre alcorisa ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/a129c30c-1790-3cb6-96ed-1175467141b7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre aliaga ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/56b0b2bb-3dfa-3774-ac70-131a2238ec71> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre allepuz ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/9d721559-2488-35f6-ae13-54a555272f54> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre andorra ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/0b07b436-15d7-3aa8-88e3-9d9d5d9ff37c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre arens-de-lledo ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/bcfd6338-6ce0-3691-b360-e07ae048a30d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre banon ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/4e886d01-c3b3-346c-9d59-eff5afb2471a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre berge ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/fc6111e0-07af-32b3-81da-a730d75689b4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre buena ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/55819b39-7fa5-3fd0-bdcd-50086d81b66d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre calamocha ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/47b98f3f-00c0-33ef-9e46-7850406a2bff> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre calanda ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/96b7e5b6-e313-3879-89e5-1e691141bee9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre cantavieja ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/2543f86d-8629-30e6-ad5f-ee34c3e56844> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre canada-vellida ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/470324b1-af59-3d9e-88cd-5ad940ada92d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre castelseras ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/d06e13a8-ae5c-3d20-b817-51784bd234f3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre castellote ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/39bf8745-1b5f-3363-b7dd-4384890ab3ac> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre cedrillas ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/2763fbaf-fcd0-3f71-baef-7966676e8fe2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre cerollera-la ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/0d67d462-a459-334d-a918-21dc12630502> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre cretas ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/38f39087-c075-36a8-aecc-3ff950ef4d23> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre cuevas-de-almuden ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/9b2648f3-2bc2-3223-8b92-51c71020a198> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre fortanete ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/550db58d-9b3a-3cf1-a8b2-e9a41a3a8f0d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre foz-calanda ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/bde56d30-bebb-3d39-bab7-a0571704125f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre fuentes-claras ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/5ead82d7-1e87-3972-98c1-c6aff3243fbc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre martin-del-rio ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/464a2ef7-83f3-3915-9f98-3fb17dcc377b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre mazaleon ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/af6c7021-27d8-3de4-b4d9-cdcb3cfd1072> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre mezquita-de-jarque ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/26654c10-1d11-3de4-91ee-da98c6d577f7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre mezquita-de-jarque ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/5b0d0eb6-64a5-31f6-b5ab-0496023e34f7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre molinos ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/9b1acbef-033e-3a6e-9dd0-835740fca2d8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre monreal-del-campo ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/a349ecf1-7de5-35bd-b76a-86312f796e84> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre mosqueruela ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/6142371e-6e68-3499-9051-a2367db49109> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre mosqueruela ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/3f281781-1b18-3e53-b32b-614866a3fdb4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre odon ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/dd77cd92-34f3-33fb-9952-1870bd5837c8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre ojos-negros ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/e15b4ebf-5614-33cc-876a-aded2c53ee2d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre penarroya-de-tastavins ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/319a0adb-91d8-3346-a28c-bfa1b22a2845> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre pobo-el ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/5cf13403-3117-39ad-8dd9-54810bdcbeda> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre portellada-la ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/c160d501-fefa-3274-8030-214ae8430468> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre puebla-de-valverde-la ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/4367a669-5034-3c8e-b349-ed14bcb36916> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre torrecilla-de-alcaniz ;
+	iaest-measure:explotaciones 3 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/9c0c571c-a82d-30f1-b8ad-90b9c6d96e21> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre torre-de-arcas ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/b55541cf-5400-39d3-80d1-0e19e4401565> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre torrelacarcel ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/7c4915d6-cb17-3bac-8390-514b86d09af4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre torres-de-albarracin ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/4eefe71b-3c89-37c3-a744-d273c634bb4c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre torrijo-del-campo ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/21787cd5-2c51-31bc-83e1-32f2c14fc2d7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre tronchon ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/a211c821-c3ef-3e73-9623-ae27ef32efdd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre valderrobres ;
+	iaest-measure:explotaciones 4 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/1531bdee-345c-3e40-8408-53ef6a9c33b8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre villarquemado ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/181fdc91-fe45-306b-94e8-1ce9cb2fc0c8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre villarquemado ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/d3a2d80b-0118-3374-951b-12518cd5858b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre ainzon ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/9a2771f8-85ba-3606-9102-a05972d5284a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre alagon ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/0b17a04d-3e2d-3928-96ca-bf5885e95836> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre alberite-de-san-juan ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/228de2f0-464b-3766-a697-08f245e294e3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre almolda-la ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/a53dac99-1603-35fc-842b-5289b8737bde> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre almonacid-de-la-sierra ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/f5c78965-761c-3cf0-8c3d-fe5a22f643a1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre almunia-de-dona-godina-la ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/a32fda27-30a2-3da4-837c-8a57ccae4bae> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre asin ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/f5f968e1-ad19-3b1b-a406-60a74b1545a2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre bardallur ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/7b83b487-c6ea-3344-b86f-107c73970898> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre belchite ;
+	iaest-measure:explotaciones 3 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/0122916f-bf11-3fa0-8692-2d74954c90c2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre biota ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/54db6aee-3f7f-3199-9a9c-7339a4b7f20e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre botorrita ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/5b71e38e-5aad-3103-883a-6f5cb1c9829c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre bureta ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/87a3167e-6fb2-337e-824c-b04150ebd5b2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre carinena ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/825cae9d-413d-3b29-97c6-820f0a67547a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre caspe ;
+	iaest-measure:explotaciones 5 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/20acbf7a-d74c-31dc-a784-42e68452f4f6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre cubel ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/250f76a0-7f18-39fa-b0bd-c886c4491e78> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre chiprana ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/4ff8d29a-dbbf-3744-9dc3-e18735d3d339> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre ejea-de-los-caballeros ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/ee6dfab2-8ec8-3dd9-b280-4de19efa0a5a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre ejea-de-los-caballeros ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otro-tipo-de-fuente-de-energia-renovable> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/26463d3c-494f-3545-a174-3b36db14ed8e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre ejea-de-los-caballeros ;
+	iaest-measure:explotaciones 7 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/35ebf6a1-dcfd-3486-a98c-44845b2bc26c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre fabara ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/f8f037c8-979d-310f-b89f-6a8ca13be809> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre fabara ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/431ebc45-6992-3e6c-a8ed-740e1115cab9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre frasno-el ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/f61a7a12-2ff7-3313-b1c3-a97e422339d2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre fuentes-de-ebro ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/a9d27ed3-a5f6-3d52-814e-90422e7070d4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre gallur ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/a9cb3304-5b68-3fb8-99a1-9601869f336a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre gelsa ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/da28b823-40ca-3105-9efe-df87ac601b8b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre jaulin ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/87e8c9a5-b236-3785-a0d0-9584192ceb9a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre lecinena ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/9f1982f5-e26e-3c86-8f20-38fdfbb8ab78> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre lecinena ;
+	iaest-measure:explotaciones 3 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/908a01e2-08a5-300c-aa49-ca19a4e85d80> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre luceni ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/1507e1b7-2c18-3f37-9803-09fcd2345147> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre luna ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/9926db99-02f0-31fe-a2ca-f22a22e6ae43> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre maella ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/bfceff8e-3e30-3cbf-ac64-e77b4173ef91> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre maella ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/8dee796b-f485-3da4-a39f-d0e6cc5c9489> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre magallon ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/5771599b-c204-3d62-b2fc-cc5fff808a7f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre mallen ;
+	iaest-measure:explotaciones 3 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/11347a36-ba37-3d51-85c4-c6cfffb6c6cf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre mallen ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/8cc90c7e-5063-3ace-ba3d-b997a2ff6888> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre mequinenza ;
+	iaest-measure:explotaciones 4 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/283e048f-9311-35d5-98f3-92f3de62df95> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre mesones-de-isuela ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/ae4ad3e6-e408-3555-bdf0-e363816268ef> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre monegrillo ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/f9651e87-39f0-38b9-b118-c83249d00af0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre monegrillo ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/37ae9550-870a-3c69-826b-a15b76f36ef9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre moneva ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/1cac6a07-f790-39c1-bac9-4f5a26b952e5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre monreal-de-ariza ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otro-tipo-de-fuente-de-energia-renovable> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/e3b3f1a6-ddc8-3f42-a601-64f857d98708> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre morata-de-jiloca ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/dc0b188c-c28a-33fd-a5c1-5e268cad0522> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre muela-la ;
+	iaest-measure:explotaciones 7 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/abd651c0-59d8-3c4f-8b1e-ceb5932be1e0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre navardun ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/4b456451-1a63-3b62-b774-f1548422fbac> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre paracuellos-de-la-ribera ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otro-tipo-de-fuente-de-energia-renovable> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/27f6b4b5-d547-3234-a902-92fff27feeb5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre perdiguera ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/abff6d5f-5715-3891-a521-bc2c0b715ab4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre pina-de-ebro ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/fe920259-7a92-34be-a80a-ecfa4885b8cc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre pintanos-los ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/ae7bc6d5-77d2-32be-ac8f-c10a1149c0a1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre pozuel-de-ariza ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/82f8b5b4-82af-335f-85db-c176afbb3c81> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre pozuelo-de-aragon ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/cb223c4b-d184-3a61-8737-db72752a653a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre romanos ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/5c79a5a4-a0d5-3985-a115-8d42a7ee2d37> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre rueda-de-jalon ;
+	iaest-measure:explotaciones 4 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/579f2311-cca7-342f-b2c1-8b29d52c6c26> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre sadaba ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/e34bb7c4-5910-3220-943b-fc9f4bb086a0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre sadaba ;
+	iaest-measure:explotaciones 3 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/b06ea3dc-561a-39e9-aca0-f40ada1ad1a6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre salvatierra-de-esca ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/b5a263e9-04f1-34e3-ac51-f96ae3fb619f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre sestrica ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/d52725ef-dab9-3f76-a0c5-e9b1fa0b8c75> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre sos-del-rey-catolico ;
+	iaest-measure:explotaciones 4 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/9d411884-efe3-3d5c-9344-469dc1ae1018> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre sos-del-rey-catolico ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/3176b61f-ae4e-3b13-b139-54d4e978a7d2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre tarazona ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/31a5042a-faf7-33aa-baea-7337d5ba9fd6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre tarazona ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/403de561-4734-3d02-8205-807f863c5eb8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre tauste ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/de57fef7-79fc-3c95-9dba-1ddddd0b3380> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre tauste ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/57ba683f-048c-3318-b963-e04e58d241e3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre tauste ;
+	iaest-measure:explotaciones 8 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/9b35c88e-4daa-3fc6-81cd-7196ced4efed> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre uncastillo ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/acf16786-71f4-3110-abd2-30c17ad2c68a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre urries ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/60933cd2-eed7-3fc0-8edf-42b22acae6fe> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre utebo ;
+	iaest-measure:explotaciones 2 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/aa6ad943-50fb-3ba6-ae7c-3f63313e6683> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre villanueva-de-gallego ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/6e055312-0839-325f-a445-be8f17496058> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre villarreal-de-huerva ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/6e8ef43f-a4a9-3dce-ac8f-31c3409d6962> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre zaragoza ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/f967cd23-3a11-35bb-8571-ca9a2eb425fe> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre zaragoza ;
+	iaest-measure:explotaciones 7 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/371660d8-640e-311c-bc08-797820d74408> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre zuera ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/3e209272-c462-352a-87cc-c6c4bd18fd93> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre biel ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/otra-energia-de-biomasa> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/6c689fe3-7a3e-3385-b9b4-1f6ab814a6d5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre biel ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/b5752dc5-2563-3f7a-94b1-681c1d94c8bb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre villamayor-de-gallego ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/eolica> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010100TM/5c195dc6-4960-3f1d-b88b-3126c1708b0f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010100>; 
+	iaest-measure:municipio-nombre villamayor-de-gallego ;
+	iaest-measure:explotaciones 1 ;
+	iaest-dimension:energia-renovable <http://opendata.aragon.es/kos/iaest/energia-renovable/solar> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

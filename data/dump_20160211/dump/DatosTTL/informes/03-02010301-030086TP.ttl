@@ -1,0 +1,402 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/03-02010301-030086TP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>;
+	rdfs:label "Cubo de datos para 03-02010301-030086TP"@es ;
+	rdfs:comment "Cubo de datos para 03-02010301-030086TP"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/c1ae18ba-a7d8-30a0-a465-96c1997dc7c8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/eso-egb-bachillerato-elemental> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 280591197945934 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/95dcbb61-8024-3370-8093-3b38c1ca3e0f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/bachillerato-superior> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 102816101777368 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/53369349-47cd-34bd-9c05-b1bfe5a1148a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/fp-grado-medio> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 70046625671902 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/d0381719-6ff8-36a9-9d45-89d51eae042a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/fp-grado-superior> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 66484468655287 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/e73fc031-9b87-3f5b-8d10-95f1e59ccc8d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/diplomatura> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 50037215196742 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/82cadfdb-68e4-345e-b1ba-5ee41f9953e0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/licenciatura-y-grado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 11332481047597 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/bda7caee-591f-3e4a-a066-1ee973f1fed7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/licenciatura-y-grado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 53622524810438 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/6b9878a9-084c-3b5e-82e6-8f08df16822c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/doctorado-y-master> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 6848180951908 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/bf94a979-354b-3c93-b7e6-56a836983c0a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/doctorado-y-master> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 6494636307584 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/11f45fda-5d8d-3807-9b27-4daf23d1d515> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/eso-egb-bachillerato-elemental> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 209336285684051 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/bd35f110-f027-357f-a68a-1db31e3f5d58> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/bachillerato-superior> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 56091519685624 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/1958d070-e038-3fcc-a2cd-16d0de60c6ac> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/fp-grado-medio> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 35143742406807 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/8b84e69e-2ca2-3890-b72c-cb24c02363c1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/fp-grado-superior> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 35575464750048 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/6b6c7b82-330a-31da-899d-fd277933bd3f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/diplomatura> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 26860158752449 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/fad0dc9d-61a8-32bf-aafe-f4319f3b8cdb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/licenciatura-y-grado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 4261469003807 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/2630e676-b4cb-33fc-a304-76da79b5d73f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/licenciatura-y-grado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 22624436461371 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/81a7f0a4-f358-398a-ba9b-94f2a63c8b71> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/doctorado-y-master> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 1956217564419 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/3079a38c-e97e-3f67-8ad5-befc508e6b61> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/doctorado-y-master> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 1126180371804 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/0bab6df4-ca49-302a-a341-d779f9419835> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/eso-egb-bachillerato-elemental> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 108543108756871 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/8d0b1be2-94ce-39e6-a3ad-a19d82371c28> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/bachillerato-superior> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 466024811567485 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/87893c80-d83c-34d9-bbd2-5bd263c8d46f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/fp-grado-medio> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 30989265652202 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/580bbc4c-0240-34a6-8bc3-8bba4394b6b2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/fp-grado-superior> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 314382948634788 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/117f484b-70ec-3469-b313-e8817808b557> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/diplomatura> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 257507190993284 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/391275f0-cfee-3640-ae95-5bb677ea4e36> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/licenciatura-y-grado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 53661886746669 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/b105185e-b38d-32bb-9ed0-ad3274869faa> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/licenciatura-y-grado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 315210038171409 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/4b7672a5-354d-3667-9912-db6d315d61fe> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/doctorado-y-master> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 40721840982104 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/45193377-954c-3098-a413-bfe0aa2608ee> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/doctorado-y-master> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas 38711979141388 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/22c06f05-4fbf-38d8-94c7-6b74b1ed5856> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/eso-egb-bachillerato-elemental> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 238533195287788 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/197a5dae-d014-3de4-b6a7-22e419985d3b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/bachillerato-superior> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 93412854328653 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/ae67d083-5a73-3724-92af-15bd84bf1e8f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/fp-grado-medio> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 50262379657856 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/4ba53836-a650-3370-8e68-e581e04e8ddd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/fp-grado-superior> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 44815032738836 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/ad1ea007-1663-3575-be6b-ac46798defb7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/diplomatura> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 90207932388216 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/6f49de6a-a589-3389-9392-cf84e011a422> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/licenciatura-y-grado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 12373696515487 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/e1690651-d29e-3a2d-99ee-24926b1469d8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/licenciatura-y-grado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 54326309310269 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/6c518553-806e-3e83-ba8a-f64db19d5905> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/doctorado-y-master> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 6956321182868 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/905a65db-0b4d-3890-9c3c-b9f1ddc44337> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/doctorado-y-master> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 3885449397979 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/bab5904f-c5b0-3086-aea5-701aed91809c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/eso-egb-bachillerato-elemental> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 175867740314646 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/3935e6c5-bdde-386f-9509-240a8fc8b603> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/bachillerato-superior> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 44563085648922 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/cfdb1818-1af9-3f63-b586-689eb442620c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/fp-grado-medio> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 28832717249809 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/e9e50a0c-d2a9-3e66-92d1-75cc09189deb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/fp-grado-superior> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 23870982952854 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/f5eb58d0-b1d6-37f6-9bd3-4a30aad6542e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/diplomatura> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 40579984301248 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/22625851-ba6d-3f4d-91b0-3b5136311ef7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/licenciatura-y-grado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 5065740289398 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/376f2277-2bf4-3b6a-85aa-48ee8dcabbf2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/licenciatura-y-grado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 27390877127865 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/9faae1c2-bc30-309a-8827-c928b19a7055> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/doctorado-y-master> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 2422629454631 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/93fa5bc4-7ea7-3546-a7da-8cbc5279f4c1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/doctorado-y-master> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 1340952245263 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/856ad5d0-0be7-3aa5-b8ae-ffca9009c7ce> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/eso-egb-bachillerato-elemental> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 106376849309354 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/c8b755c4-ce09-3aec-ab17-6ed42c94b551> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/bachillerato-superior> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 412842973909575 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/fcd2e7fd-14a6-308d-911a-ac2d52122923> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/fp-grado-medio> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 246464640428079 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/c8b3181f-eda1-3025-8818-9679be863ad9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/fp-grado-superior> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 217249655361409 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/7735d54e-7c3e-336d-b769-03de8ab0d484> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/diplomatura> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 370413681389715 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/13f133cf-73f3-3be6-a43f-257cac7f880e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/licenciatura-y-grado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 65881540647738 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/7c8f237c-daf1-36d6-9986-954eb9e43db2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/licenciatura-y-grado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 33556004066511 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/ca3236d3-76f0-3832-b194-61a1cb8b1d59> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/doctorado-y-master> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 44859910101938 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030086TP/ae707016-3777-30c7-9145-fc7623dbc30c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030086>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:nivel-estudios <http://opendata.aragon.es/kos/iaest/nivel-estudios/doctorado-y-master> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas 266316869841 ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

@@ -12,27 +12,27 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010110A> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/01-080101-010110>;
+<http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010110A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010110>;
 	rdfs:label "Cubo de datos para 01-080101-010110A"@es ;
 	rdfs:comment "Cubo de datos para 01-080101-010110A"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010110A/4272fb5b-671f-36da-b605-889897c68626> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010110A>; 
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010110A/4272fb5b-671f-36da-b605-889897c68626> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010110A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:personas 45227 ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
-	iaest-dimension:jefe-explotacion <http://opendata.aragon.es/kos/iaest/jefe-explotacion/1> ;
+	iaest-measure:sexo hombres ;
+	iaest-measure:jefe-explotacion 1 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/01-080101-010110A/11195cc0-7dff-37ac-a9bb-b70bc5e62090> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/01-080101-010110A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010110A/11195cc0-7dff-37ac-a9bb-b70bc5e62090> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/01-080101-010110A>; 
 	iaest-dimension:ccaa-nombre <http://opendata.aragon.es/kos/iaest/ccaa-nombre/aragon> ;
 	iaest-measure:personas 7547 ;
-	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
-	iaest-dimension:jefe-explotacion <http://opendata.aragon.es/kos/iaest/jefe-explotacion/1> ;
+	iaest-measure:sexo mujeres ;
+	iaest-measure:jefe-explotacion 1 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

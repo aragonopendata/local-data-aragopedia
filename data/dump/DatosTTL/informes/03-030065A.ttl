@@ -12,25 +12,25 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030065A> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/03-030065>;
+<http://opendata.aragon.es/recurso/iaest/cubo/03-030065A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030065>;
 	rdfs:label "Cubo de datos para 03-030065A"@es ;
 	rdfs:comment "Cubo de datos para 03-030065A"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030065A/759daf17-71ed-39b2-9952-16afffb04df4> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030065A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:segunda-residencia <http://opendata.aragon.es/kos/iaest/segunda-residencia/dispone-de-segunda-residencia> ;
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030065A/759daf17-71ed-39b2-9952-16afffb04df4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030065A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:segunda-residencia dispone-de-segunda-residencia ;
 	iaest-measure:numero-hogares 90379 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030065A/4e8bf900-e9d5-37fb-880d-22f54f91ccc3> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030065A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:segunda-residencia <http://opendata.aragon.es/kos/iaest/segunda-residencia/no-dispone-de-segunda-residencia> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030065A/4e8bf900-e9d5-37fb-880d-22f54f91ccc3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030065A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:segunda-residencia no-dispone-de-segunda-residencia ;
 	iaest-measure:numero-hogares 352864 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

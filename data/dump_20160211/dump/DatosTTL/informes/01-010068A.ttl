@@ -1,0 +1,192 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/cubo/01-010068A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010068>;
+	rdfs:label "Cubo de datos para 01-010068A"@es ;
+	rdfs:comment "Cubo de datos para 01-010068A"@es ;
+	dc:modify "2016-02-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010068A/771efcb7-45ee-3468-8751-5f5f05e422d7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010068>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
+	iaest-measure:salario-retribucion 6246964656 ;
+	iaest-dimension:salario-perceptores <http://opendata.aragon.es/kos/iaest/salario-perceptores/468533> ;
+	iaest-dimension:salario-medio-anual <http://opendata.aragon.es/kos/iaest/salario-medio-anual/13333> ;
+	iaest-measure:pension-retribucion 2078017291 ;
+	iaest-dimension:pension-perceptores <http://opendata.aragon.es/kos/iaest/pension-perceptores/287146> ;
+	iaest-dimension:pension-media-por-persona <http://opendata.aragon.es/kos/iaest/pension-media-por-persona/7237> ;
+	iaest-measure:desempleo-retribucion 129432984 ;
+	iaest-measure:desempleo-perceptores 62163 ;
+	iaest-dimension:desempleo-medio-por-percepcion <http://opendata.aragon.es/kos/iaest/desempleo-medio-por-percepcion/2082> ;
+	iaest-dimension:ccaa <http://opendata.aragon.es/kos/iaest/ccaa/aragon> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010068A/ae6d7620-2f24-384c-97ba-8f62f1a8fafe> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010068>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
+	iaest-measure:salario-retribucion 6831673103 ;
+	iaest-dimension:salario-perceptores <http://opendata.aragon.es/kos/iaest/salario-perceptores/490401> ;
+	iaest-dimension:salario-medio-anual <http://opendata.aragon.es/kos/iaest/salario-medio-anual/13931> ;
+	iaest-measure:pension-retribucion 2181018866 ;
+	iaest-dimension:pension-perceptores <http://opendata.aragon.es/kos/iaest/pension-perceptores/288646> ;
+	iaest-dimension:pension-media-por-persona <http://opendata.aragon.es/kos/iaest/pension-media-por-persona/7556> ;
+	iaest-measure:desempleo-retribucion 128720690 ;
+	iaest-measure:desempleo-perceptores 55700 ;
+	iaest-dimension:desempleo-medio-por-percepcion <http://opendata.aragon.es/kos/iaest/desempleo-medio-por-percepcion/2311> ;
+	iaest-dimension:ccaa <http://opendata.aragon.es/kos/iaest/ccaa/aragon> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010068A/fbff0ab8-b7a0-3029-af14-c2ffcadcc08a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010068>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2001> ;
+	iaest-measure:salario-retribucion 7381079290 ;
+	iaest-dimension:salario-perceptores <http://opendata.aragon.es/kos/iaest/salario-perceptores/506400> ;
+	iaest-dimension:salario-medio-anual <http://opendata.aragon.es/kos/iaest/salario-medio-anual/14576> ;
+	iaest-measure:pension-retribucion 2358109739 ;
+	iaest-dimension:pension-perceptores <http://opendata.aragon.es/kos/iaest/pension-perceptores/290655> ;
+	iaest-dimension:pension-media-por-persona <http://opendata.aragon.es/kos/iaest/pension-media-por-persona/8113> ;
+	iaest-measure:desempleo-retribucion 153695220 ;
+	iaest-measure:desempleo-perceptores 68133 ;
+	iaest-dimension:desempleo-medio-por-percepcion <http://opendata.aragon.es/kos/iaest/desempleo-medio-por-percepcion/2256> ;
+	iaest-dimension:ccaa <http://opendata.aragon.es/kos/iaest/ccaa/aragon> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010068A/b022bf23-726c-37c5-9fc5-089e2286198e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010068>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2002> ;
+	iaest-measure:salario-retribucion 7872301417 ;
+	iaest-dimension:salario-perceptores <http://opendata.aragon.es/kos/iaest/salario-perceptores/518304> ;
+	iaest-dimension:salario-medio-anual <http://opendata.aragon.es/kos/iaest/salario-medio-anual/15189> ;
+	iaest-measure:pension-retribucion 2450938892 ;
+	iaest-dimension:pension-perceptores <http://opendata.aragon.es/kos/iaest/pension-perceptores/291674> ;
+	iaest-dimension:pension-media-por-persona <http://opendata.aragon.es/kos/iaest/pension-media-por-persona/8403> ;
+	iaest-measure:desempleo-retribucion 170076954 ;
+	iaest-measure:desempleo-perceptores 65130 ;
+	iaest-dimension:desempleo-medio-por-percepcion <http://opendata.aragon.es/kos/iaest/desempleo-medio-por-percepcion/2611> ;
+	iaest-dimension:ccaa <http://opendata.aragon.es/kos/iaest/ccaa/aragon> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010068A/bda706e6-a51d-35be-8628-47bcaca16b3e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010068>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2003> ;
+	iaest-measure:salario-retribucion 8516067490 ;
+	iaest-dimension:salario-perceptores <http://opendata.aragon.es/kos/iaest/salario-perceptores/535687> ;
+	iaest-dimension:salario-medio-anual <http://opendata.aragon.es/kos/iaest/salario-medio-anual/15897> ;
+	iaest-measure:pension-retribucion 2601440250 ;
+	iaest-dimension:pension-perceptores <http://opendata.aragon.es/kos/iaest/pension-perceptores/289836> ;
+	iaest-dimension:pension-media-por-persona <http://opendata.aragon.es/kos/iaest/pension-media-por-persona/8976> ;
+	iaest-measure:desempleo-retribucion 175105654 ;
+	iaest-measure:desempleo-perceptores 67139 ;
+	iaest-dimension:desempleo-medio-por-percepcion <http://opendata.aragon.es/kos/iaest/desempleo-medio-por-percepcion/2608> ;
+	iaest-dimension:ccaa <http://opendata.aragon.es/kos/iaest/ccaa/aragon> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010068A/4befd217-041e-3cb9-976f-582f6a1e1322> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010068>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2004> ;
+	iaest-measure:salario-retribucion 8992628727 ;
+	iaest-dimension:salario-perceptores <http://opendata.aragon.es/kos/iaest/salario-perceptores/539066> ;
+	iaest-dimension:salario-medio-anual <http://opendata.aragon.es/kos/iaest/salario-medio-anual/16682> ;
+	iaest-measure:pension-retribucion 2711200242 ;
+	iaest-dimension:pension-perceptores <http://opendata.aragon.es/kos/iaest/pension-perceptores/284819> ;
+	iaest-dimension:pension-media-por-persona <http://opendata.aragon.es/kos/iaest/pension-media-por-persona/9519> ;
+	iaest-measure:desempleo-retribucion 179695412 ;
+	iaest-measure:desempleo-perceptores 72333 ;
+	iaest-dimension:desempleo-medio-por-percepcion <http://opendata.aragon.es/kos/iaest/desempleo-medio-por-percepcion/2484> ;
+	iaest-dimension:ccaa <http://opendata.aragon.es/kos/iaest/ccaa/aragon> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010068A/c0dc9e25-7d3e-3831-bbda-22ebad2a8928> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010068>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2005> ;
+	iaest-measure:salario-retribucion 9715643991 ;
+	iaest-dimension:salario-perceptores <http://opendata.aragon.es/kos/iaest/salario-perceptores/570683> ;
+	iaest-dimension:salario-medio-anual <http://opendata.aragon.es/kos/iaest/salario-medio-anual/17025> ;
+	iaest-measure:pension-retribucion 2909185296 ;
+	iaest-dimension:pension-perceptores <http://opendata.aragon.es/kos/iaest/pension-perceptores/287705> ;
+	iaest-dimension:pension-media-por-persona <http://opendata.aragon.es/kos/iaest/pension-media-por-persona/10112> ;
+	iaest-measure:desempleo-retribucion 193317897 ;
+	iaest-measure:desempleo-perceptores 67985 ;
+	iaest-dimension:desempleo-medio-por-percepcion <http://opendata.aragon.es/kos/iaest/desempleo-medio-por-percepcion/2844> ;
+	iaest-dimension:ccaa <http://opendata.aragon.es/kos/iaest/ccaa/aragon> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010068A/c84764f4-1ad3-3f65-99bb-06b413f69e34> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010068>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
+	iaest-measure:salario-retribucion 10620443746 ;
+	iaest-dimension:salario-perceptores <http://opendata.aragon.es/kos/iaest/salario-perceptores/592062> ;
+	iaest-dimension:salario-medio-anual <http://opendata.aragon.es/kos/iaest/salario-medio-anual/17938> ;
+	iaest-measure:pension-retribucion 3141940000 ;
+	iaest-dimension:pension-perceptores <http://opendata.aragon.es/kos/iaest/pension-perceptores/290555> ;
+	iaest-dimension:pension-media-por-persona <http://opendata.aragon.es/kos/iaest/pension-media-por-persona/10814> ;
+	iaest-measure:desempleo-retribucion 213090000 ;
+	iaest-measure:desempleo-perceptores 71836 ;
+	iaest-dimension:desempleo-medio-por-percepcion <http://opendata.aragon.es/kos/iaest/desempleo-medio-por-percepcion/2966> ;
+	iaest-dimension:ccaa <http://opendata.aragon.es/kos/iaest/ccaa/aragon> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010068A/53fb97e9-23a8-30ea-8b40-39c0afd67f9f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010068>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2007> ;
+	iaest-measure:salario-retribucion 11621337603 ;
+	iaest-dimension:salario-perceptores <http://opendata.aragon.es/kos/iaest/salario-perceptores/612120> ;
+	iaest-dimension:salario-medio-anual <http://opendata.aragon.es/kos/iaest/salario-medio-anual/18985> ;
+	iaest-measure:pension-retribucion 3278664000 ;
+	iaest-dimension:pension-perceptores <http://opendata.aragon.es/kos/iaest/pension-perceptores/297128> ;
+	iaest-dimension:pension-media-por-persona <http://opendata.aragon.es/kos/iaest/pension-media-por-persona/11035> ;
+	iaest-measure:desempleo-retribucion 226189000 ;
+	iaest-measure:desempleo-perceptores 75769 ;
+	iaest-dimension:desempleo-medio-por-percepcion <http://opendata.aragon.es/kos/iaest/desempleo-medio-por-percepcion/2985> ;
+	iaest-dimension:ccaa <http://opendata.aragon.es/kos/iaest/ccaa/aragon> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010068A/b9c94b8b-0c44-336b-8c53-726ddecbde1e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010068>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2008> ;
+	iaest-measure:salario-retribucion 12388667131 ;
+	iaest-dimension:salario-perceptores <http://opendata.aragon.es/kos/iaest/salario-perceptores/624119> ;
+	iaest-dimension:salario-medio-anual <http://opendata.aragon.es/kos/iaest/salario-medio-anual/19850> ;
+	iaest-measure:pension-retribucion 3587787000 ;
+	iaest-dimension:pension-perceptores <http://opendata.aragon.es/kos/iaest/pension-perceptores/306237> ;
+	iaest-dimension:pension-media-por-persona <http://opendata.aragon.es/kos/iaest/pension-media-por-persona/11716> ;
+	iaest-measure:desempleo-retribucion 322846000 ;
+	iaest-measure:desempleo-perceptores 104033 ;
+	iaest-dimension:desempleo-medio-por-percepcion <http://opendata.aragon.es/kos/iaest/desempleo-medio-por-percepcion/3103> ;
+	iaest-dimension:ccaa <http://opendata.aragon.es/kos/iaest/ccaa/aragon> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010068A/1a9050fd-c070-3f7c-b935-41bd6fcff25b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010068>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
+	iaest-measure:salario-retribucion 11728821864 ;
+	iaest-dimension:salario-perceptores <http://opendata.aragon.es/kos/iaest/salario-perceptores/595187> ;
+	iaest-dimension:salario-medio-anual <http://opendata.aragon.es/kos/iaest/salario-medio-anual/19706> ;
+	iaest-measure:pension-retribucion 3724293000 ;
+	iaest-dimension:pension-perceptores <http://opendata.aragon.es/kos/iaest/pension-perceptores/309144> ;
+	iaest-dimension:pension-media-por-persona <http://opendata.aragon.es/kos/iaest/pension-media-por-persona/12047> ;
+	iaest-measure:desempleo-retribucion 595478000 ;
+	iaest-measure:desempleo-perceptores 151329 ;
+	iaest-dimension:desempleo-medio-por-percepcion <http://opendata.aragon.es/kos/iaest/desempleo-medio-por-percepcion/3935> ;
+	iaest-dimension:ccaa <http://opendata.aragon.es/kos/iaest/ccaa/aragon> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010068A/f396ae34-5730-3a15-9c45-4f3de1b2c30d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dsd/01-010068>; 
+	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
+	iaest-measure:salario-retribucion 11517840379 ;
+	iaest-dimension:salario-perceptores <http://opendata.aragon.es/kos/iaest/salario-perceptores/584738> ;
+	iaest-dimension:salario-medio-anual <http://opendata.aragon.es/kos/iaest/salario-medio-anual/19697> ;
+	iaest-measure:pension-retribucion 3895721000 ;
+	iaest-dimension:pension-perceptores <http://opendata.aragon.es/kos/iaest/pension-perceptores/311319> ;
+	iaest-dimension:pension-media-por-persona <http://opendata.aragon.es/kos/iaest/pension-media-por-persona/12514> ;
+	iaest-measure:desempleo-retribucion 604868000 ;
+	iaest-measure:desempleo-perceptores 157975 ;
+	iaest-dimension:desempleo-medio-por-percepcion <http://opendata.aragon.es/kos/iaest/desempleo-medio-por-percepcion/3829> ;
+	iaest-dimension:ccaa <http://opendata.aragon.es/kos/iaest/ccaa/aragon> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

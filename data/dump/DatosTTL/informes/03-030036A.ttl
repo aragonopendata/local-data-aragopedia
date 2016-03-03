@@ -12,25 +12,25 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030036A> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/03-030036>;
+<http://opendata.aragon.es/recurso/iaest/cubo/03-030036A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030036>;
 	rdfs:label "Cubo de datos para 03-030036A"@es ;
 	rdfs:comment "Cubo de datos para 03-030036A"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030036A/10104dda-9b41-30f9-8b36-7296e561fabf> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030036A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:estudios-en-curso <http://opendata.aragon.es/kos/iaest/estudios-en-curso/con-estudios-en-curso> ;
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030036A/10104dda-9b41-30f9-8b36-7296e561fabf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030036A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:estudios-en-curso con-estudios-en-curso ;
 	iaest-measure:personas-residentes-viviendas-familiares 124866 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030036A/43992f53-2ca5-3756-8b25-bba66ca4f727> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030036A>; 
-	iaest-dimension:aragon <http://opendata.aragon.es/kos/iaest/aragon/aragon> ;
-	iaest-dimension:estudios-en-curso <http://opendata.aragon.es/kos/iaest/estudios-en-curso/sin-estudios-en-curso> ;
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030036A/43992f53-2ca5-3756-8b25-bba66ca4f727> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030036A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:estudios-en-curso sin-estudios-en-curso ;
 	iaest-measure:personas-residentes-viviendas-familiares 503252 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

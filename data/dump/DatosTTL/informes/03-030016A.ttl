@@ -12,21 +12,21 @@
 @prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix iaest-dimension: <http://alzir.dia.fi.upm.es/def/iaest/dimension#> .
-@prefix iaest-measure:    <http://alzir.dia.fi.upm.es/def/iaest/medida#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 #Observations
-<http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A> a qb:dataSet;
-	qb:structure <http://alzir.dia.fi.upm.es/standalone/iaest/dsd/03-030016>;
+<http://opendata.aragon.es/recurso/iaest/cubo/03-030016A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030016>;
 	rdfs:label "Cubo de datos para 03-030016A"@es ;
 	rdfs:comment "Cubo de datos para 03-030016A"@es ;
-	dc:modify "2016-02-11"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030016A/bda4a342-c4c1-3f26-8093-86f810bd7a31> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A>; 
+	dc:modify "2016-02-18"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/bda4a342-c4c1-3f26-8093-86f810bd7a31> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030016A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1998> ;
-	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
+	iaest-measure:tipo-de-nacionalidad extranjeros ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 17871954380508 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 770347330222913 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 509331259720062 ;
@@ -38,11 +38,11 @@
 	iaest-measure:indice-de-envejecimiento 284989122552574 ;
 	iaest-measure:tasa-de-masculinidad 114392886913031 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030016A/da42b0a1-ebd7-3320-908d-8053fc016d35> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/da42b0a1-ebd7-3320-908d-8053fc016d35> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030016A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/1999> ;
-	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
+	iaest-measure:tipo-de-nacionalidad extranjeros ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 179597864364421 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 772691128024537 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 477110076110417 ;
@@ -54,11 +54,11 @@
 	iaest-measure:indice-de-envejecimiento 265654648956357 ;
 	iaest-measure:tasa-de-masculinidad 116077565046637 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030016A/f6922e24-8ca7-3bdf-bb8e-c8317e6ab025> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/f6922e24-8ca7-3bdf-bb8e-c8317e6ab025> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030016A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2000> ;
-	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
+	iaest-measure:tipo-de-nacionalidad extranjeros ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 187858627858628 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 771476091476091 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 406652806652807 ;
@@ -70,11 +70,11 @@
 	iaest-measure:indice-de-envejecimiento 216467463479416 ;
 	iaest-measure:tasa-de-masculinidad 12330547818013 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030016A/f2258790-d8e8-3e29-b631-837b2d9b3cdb> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/f2258790-d8e8-3e29-b631-837b2d9b3cdb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030016A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2001> ;
-	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
+	iaest-measure:tipo-de-nacionalidad extranjeros ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 172450890544687 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 804558313742678 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 22990795712635 ;
@@ -86,11 +86,11 @@
 	iaest-measure:indice-de-envejecimiento 133317929759704 ;
 	iaest-measure:tasa-de-masculinidad 136496419148134 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030016A/6e561a72-1d2d-335c-811a-c223a76831ed> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/6e561a72-1d2d-335c-811a-c223a76831ed> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030016A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2002> ;
-	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
+	iaest-measure:tipo-de-nacionalidad extranjeros ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 184408614377004 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 798944807040684 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 166465785823119 ;
@@ -102,11 +102,11 @@
 	iaest-measure:indice-de-envejecimiento 902700702922679 ;
 	iaest-measure:tasa-de-masculinidad 137166280135915 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030016A/5bf97bf5-b270-3f7c-a9d6-780028642fc5> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/5bf97bf5-b270-3f7c-a9d6-780028642fc5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030016A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2003> ;
-	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
+	iaest-measure:tipo-de-nacionalidad extranjeros ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 205522166214295 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 779549567015639 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 149282667700659 ;
@@ -118,11 +118,11 @@
 	iaest-measure:indice-de-envejecimiento 726357990724 ;
 	iaest-measure:tasa-de-masculinidad 13221159257175 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030016A/873adf8b-2d58-3557-8672-896379b22220> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/873adf8b-2d58-3557-8672-896379b22220> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030016A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2004> ;
-	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
+	iaest-measure:tipo-de-nacionalidad extranjeros ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 213011799600232 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 771848604036366 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 151395963634019 ;
@@ -134,11 +134,11 @@
 	iaest-measure:indice-de-envejecimiento 710739799007144 ;
 	iaest-measure:tasa-de-masculinidad 127464726760729 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030016A/e6014a17-18d9-3d3a-8f48-4a87006be87e> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/e6014a17-18d9-3d3a-8f48-4a87006be87e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030016A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2005> ;
-	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
+	iaest-measure:tipo-de-nacionalidad extranjeros ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 210959441599207 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 773851809020321 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 151887493804725 ;
@@ -150,11 +150,11 @@
 	iaest-measure:indice-de-envejecimiento 719984337526308 ;
 	iaest-measure:tasa-de-masculinidad 128431256928556 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030016A/994b9a07-78e1-38af-a51f-590476c249ee> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/994b9a07-78e1-38af-a51f-590476c249ee> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030016A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2006> ;
-	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
+	iaest-measure:tipo-de-nacionalidad extranjeros ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 218771651749699 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 767655963781665 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 135723844686364 ;
@@ -166,11 +166,11 @@
 	iaest-measure:indice-de-envejecimiento 620390455531453 ;
 	iaest-measure:tasa-de-masculinidad 125549632864513 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030016A/0fb88605-10fa-30d0-b9e9-a33f843c21f3> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/0fb88605-10fa-30d0-b9e9-a33f843c21f3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030016A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2007> ;
-	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
+	iaest-measure:tipo-de-nacionalidad extranjeros ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 218449567538021 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 768359538278512 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 131908941834668 ;
@@ -182,11 +182,11 @@
 	iaest-measure:indice-de-envejecimiento 603841624963203 ;
 	iaest-measure:tasa-de-masculinidad 12331041662927 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030016A/613a3a2d-6cd5-3484-8d80-add3e6297c84> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/613a3a2d-6cd5-3484-8d80-add3e6297c84> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030016A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2008> ;
-	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
+	iaest-measure:tipo-de-nacionalidad extranjeros ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 215543733698319 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 772292952508845 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 121633137928363 ;
@@ -198,11 +198,11 @@
 	iaest-measure:indice-de-envejecimiento 564308392739472 ;
 	iaest-measure:tasa-de-masculinidad 126526463576934 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030016A/2ac8c516-5423-320a-88fd-a377211371ce> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/2ac8c516-5423-320a-88fd-a377211371ce> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030016A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2009> ;
-	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
+	iaest-measure:tipo-de-nacionalidad extranjeros ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 215524753395531 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 772328015894224 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 121472307102441 ;
@@ -214,11 +214,11 @@
 	iaest-measure:indice-de-envejecimiento 563611859838275 ;
 	iaest-measure:tasa-de-masculinidad 126060120556292 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030016A/fff2e5c6-acf1-338b-aeb7-bf65be762356> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/fff2e5c6-acf1-338b-aeb7-bf65be762356> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030016A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2010> ;
-	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
+	iaest-measure:tipo-de-nacionalidad extranjeros ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 218972071686907 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 767745513790832 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 132824145222606 ;
@@ -230,11 +230,11 @@
 	iaest-measure:indice-de-envejecimiento 606580301311311 ;
 	iaest-measure:tasa-de-masculinidad 121876682476606 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030016A/163d28fb-63cc-368c-8a0c-e0b1f303a11d> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/163d28fb-63cc-368c-8a0c-e0b1f303a11d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030016A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2011> ;
-	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
+	iaest-measure:tipo-de-nacionalidad extranjeros ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 219781182641814 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 765942532697014 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 142762846611719 ;
@@ -246,11 +246,11 @@
 	iaest-measure:indice-de-envejecimiento 649568106312292 ;
 	iaest-measure:tasa-de-masculinidad 118790977059237 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030016A/4e6880b2-73f9-3319-b90b-0959410d7908> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/4e6880b2-73f9-3319-b90b-0959410d7908> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030016A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2012> ;
-	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
+	iaest-measure:tipo-de-nacionalidad extranjeros ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 218588073548186 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 765838103875548 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 155738225762661 ;
@@ -262,11 +262,11 @@
 	iaest-measure:indice-de-envejecimiento 712473572938689 ;
 	iaest-measure:tasa-de-masculinidad 116507829306118 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030016A/b47ffdbd-0709-39fd-abae-ba0d0dc9ef25> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/b47ffdbd-0709-39fd-abae-ba0d0dc9ef25> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030016A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2013> ;
-	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
+	iaest-measure:tipo-de-nacionalidad extranjeros ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 218026754504673 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 765100516547367 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 168727289479594 ;
@@ -278,11 +278,11 @@
 	iaest-measure:indice-de-envejecimiento 77388341565199 ;
 	iaest-measure:tasa-de-masculinidad 114654074834052 ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
-<http://alzir.dia.fi.upm.es/standalone/iaest/observacion/03-030016A/431e4772-1664-3133-bb51-5fdae432021c> a qb:Observation ;
-	qb:dataSet <http://alzir.dia.fi.upm.es/standalone/iaest/cubo/03-030016A>; 
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/431e4772-1664-3133-bb51-5fdae432021c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/cubo/03-030016A>; 
 	sdmx-dimension:refPeriod <http://opendata.aragon.es/kos/iaest/ano/2014> ;
-	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
-	iaest-dimension:residencia-ccaa-nombre <http://opendata.aragon.es/kos/iaest/residencia-ccaa-nombre/aragon> ;
+	iaest-measure:tipo-de-nacionalidad extranjeros ;
+	iaest-measure:residencia-ccaa-nombre aragon ;
 	iaest-measure:-de-poblacion-de-0-a-19-anos 221790378674672 ;
 	iaest-measure:-de-poblacion-de-20-a-64-anos 761430265829486 ;
 	iaest-measure:-de-poblacion-de-65-y-mas-anos 16779355495842 ;

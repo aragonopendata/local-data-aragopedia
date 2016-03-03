@@ -5,7 +5,7 @@
 1. Crearemos una carpeta virtuoso_BulkLoad en el home por ejemplo /home/localidata/virtuoso_BulkLoad en caso de que no lo tengamos ya creado.
 2. Añadir el directorio recien creado /home/localidata/virtuoso_BulkLoad en la línea de DirsAllowed del fichero virtuoso.ini Normalmente se encuentra en  /etc/virtuoso-opensource-6.1/virtuoso.ini o en /usr/local/virtuoso-opensource/var/lib/virtuoso/db/virtuoso.iniencuentra en  /etc/virtuoso-opensource-6.1/virtuoso.ini o en /usr/local/virtuoso-opensource/var/lib/virtuoso/db/virtuoso.ini
 3. En el directorio recien creado crear un fichero llamado global.graph en el cual contendrá el grafo donde se cargarán los datos.
-4. Colocaremos el contenido del virtuoso.zip la carpeta virtuoso_BulkLoad comentada en el puto anterior
+4. Colocaremos en la carpeta virtuoso_BulkLoad comentada en el punto anterior, todos los ttl de las subcarpetas de la siguiente URL https://github.com/localidata/local-data-aragopedia/tree/master/data/dump/DatosTTL
 5. Entraremos en el conductor de virtuoso, por ejemplo http://localhost:8890/conductor/main_tabs.vspx
 6. Hacemos login y hacemos click en el enlace "Interactive SQL (ISQL)"
 7. Se nos despliega una nueva ventana en la cual copiaremos los siguientes comandos:

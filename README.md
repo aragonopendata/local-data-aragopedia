@@ -36,9 +36,9 @@ Para un correcto uso del código se necesita tener una credencial del https://co
 * Cubos que tienen un valor dado para alguna medida: http://opendata.aragon.es/recurso/iaest/cubosmedidavalor/{valor}
 * Cubos que tienen una dimensión dada: http://opendata.aragon.es/recurso/iaest/cubosdimensionpropiedad/{dimension}
 * Cubos que tienen una medida dada: http://opendata.aragon.es/recurso/iaest/cubosmedidapropiedad/{medida}
-* Cubos que tienen una comcarca para una dimensión específica http://alzir.dia.fi.upm.es/recurso/iaest/cubosComarca/{valor}
-* Cubos que tienen un municipio para una dimensión específica http://alzir.dia.fi.upm.es/recurso/iaest/cubosMunicipio/{valor}
-* Cubos que tienen una provincia para una dimensión específica http://alzir.dia.fi.upm.es/recurso/iaest/cubosProvincia/{valor}
-* Cubos que tienen una comunidad autónoma para una dimensión específica http://alzir.dia.fi.upm.es/recurso/iaest/cubosComunidadAutonoma/{valor}
+* Cubos que tienen una comcarca para una dimensión específica http://opendata.aragon.es/recurso/iaest/cubosComarca/{valor}
+* Cubos que tienen un municipio para una dimensión específica http://opendata.aragon.es/recurso/iaest/cubosMunicipio/{valor}
+* Cubos que tienen una provincia para una dimensión específica http://opendata.aragon.es/recurso/iaest/cubosProvincia/{valor}
+* Cubos que tienen una comunidad autónoma para una dimensión específica http://opendata.aragon.es/recurso/iaest/cubosComunidadAutonoma/{valor}
 
 

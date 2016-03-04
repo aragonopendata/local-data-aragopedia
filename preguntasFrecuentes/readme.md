@@ -1,4 +1,4 @@
-##### ¿Se paginan los valores de las codelist si accedo con este tipo de query http://alzir.dia.fi.upm.es/kos/iaest/ano-de-construccion?
+##### ¿Se paginan los valores de las codelist si accedo con este tipo de query http://opendata.aragon.es/kos/iaest/ano-de-construccion?
 
 > No se pagina el resultado ya que los codelist solo va a devolver un resultado y a través de hasTopConcept se puede obtener sus posibles valores.
 
@@ -12,7 +12,7 @@
 
 ##### ¿Como puedo obtener las entidades territoriales que cumplen más de un criterios?
 
-> Con una query en el punto sparql, en http://alzir.dia.fi.upm.es:8890/sparql
+> Con una query en el punto sparql, en http://opendata.aragon.es:8890/sparql
 
 ##### En una query sparql filtrando por una dimension del cubo de datos 01-010002TC me devuelve 6 resultados, cuando esperaba solo uno ¿Es normal?
 
@@ -31,12 +31,12 @@
 > 
 > Para saber los posibles valores de esas dimensiones entrarías en las siguientes URL:
 > 
-> http://alzir.dia.fi.upm.es/kos/iaest/regimen-de-tenencia-agregado
-> http://alzir.dia.fi.upm.es/kos/iaest/regimen-de-tenencia-detalle
+> http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado
+> http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle
 
 ##### ¿en todos los cubos tengo que filtrar por todas las dimensiones que tenga?
 
-> 	Simplificando si. Pero es algo más complicado que eso. Intento explicarlo con un ejemplo más sencillo.
+> Simplificando si. Pero es algo más complicado que eso. Intento explicarlo con un ejemplo más sencillo.
 > 
 > El siguiente cubo de datos:
 > 

@@ -4,11 +4,12 @@
 
 1. Crearemos una carpeta virtuoso_BulkLoad en el home por ejemplo /home/localidata/virtuoso_BulkLoad en caso de que no lo tengamos ya creado.
 2. Añadir el directorio recien creado /home/localidata/virtuoso_BulkLoad en la línea de DirsAllowed del fichero virtuoso.ini Normalmente se encuentra en  /etc/virtuoso-opensource-6.1/virtuoso.ini o en /usr/local/virtuoso-opensource/var/lib/virtuoso/db/virtuoso.iniencuentra en  /etc/virtuoso-opensource-6.1/virtuoso.ini o en /usr/local/virtuoso-opensource/var/lib/virtuoso/db/virtuoso.ini
-3. En el directorio recien creado crear un fichero llamado global.graph en el cual contendrá el grafo donde se cargarán los datos.
-4. Colocaremos en la carpeta virtuoso_BulkLoad comentada en el punto anterior, todos los ttl de las subcarpetas de la siguiente URL https://github.com/localidata/local-data-aragopedia/tree/master/data/dump/DatosTTL
-5. Entraremos en el conductor de virtuoso, por ejemplo http://localhost:8890/conductor/main_tabs.vspx
-6. Hacemos login y hacemos click en el enlace "Interactive SQL (ISQL)"
-7. Se nos despliega una nueva ventana en la cual copiaremos los siguientes comandos:
+3. Se reiniciará virtuoso
+4. En el directorio recien creado crear un fichero llamado global.graph en el cual contendrá el grafo donde se cargarán los datos.
+5. Colocaremos en la carpeta virtuoso_BulkLoad comentada en el punto anterior, todos los ttl de las subcarpetas de la siguiente URL https://github.com/localidata/local-data-aragopedia/tree/master/data/dump/DatosTTL
+6. Entraremos en el conductor de virtuoso, por ejemplo http://localhost:8890/conductor/main_tabs.vspx
+7. Hacemos login y hacemos click en el enlace "Interactive SQL (ISQL)"
+8. Se nos despliega una nueva ventana en la cual copiaremos los siguientes comandos:
  
    ld_dir_all('/home/localidata/virtuoso_BulkLoad','*.ttl','http://opendata.aragon.es:8890/datacube');
    rdf_loader_run();
@@ -16,7 +17,7 @@
 
    Teniendo en cuenta que se debe sustituir el path '/home/localidata/virtuoso_BulkLoad' por el path creado en los primeros pasos.
 
-7. Una vez esté listo el comando con nuestros datos, pulsaremos el botón Execute
+9. Una vez esté listo el comando con nuestros datos, pulsaremos el botón Execute
 
 ##Como actualizar los datos en virtuoso
 
@@ -24,7 +25,7 @@
 2. Haremos click en el menu linked data y despues en Graphs
 3. En la página recien cargada volvemos a pulsar en Graphs y una vez cargados todos los grafos pulsamos en delete de nuestro grafo http://opendata.aragon.es:8890/datacube
 4. Copiamos los nuevos datos a cargar en nuestro directorio virtuoso_BulkLoad, pero debemos de cambiar el nombre de la subcarpeta. Si antes se llamaba datacube1 ahora lo renombraremos a datacube2.
-5. El resto de pasos son iguales a la carga de datos a partir del punto 5.
+5. El resto de pasos son iguales a la carga de datos a partir del punto 6.
  
 ##Como desplegar los linked data api en nuesto servidor
 

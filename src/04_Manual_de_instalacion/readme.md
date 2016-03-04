@@ -18,6 +18,17 @@
    Teniendo en cuenta que se debe sustituir el path '/home/localidata/virtuoso_BulkLoad' por el path creado en los primeros pasos.
 
 9. Una vez esté listo el comando con nuestros datos, pulsaremos el botón Execute
+10. Para comprobar que la carga se ha hecho correctamente se lanzará en el punto sparql, por ejemplo http://opendata.aragon.es:8890/sparql, la siguiente query:
+
+   select distinct ?graph where {
+
+   GRAPH ?graph {
+   ?x ?y ?z
+   }
+
+   }
+   
+   Y en el resultado deberá de estar el grafo que esté en el archivo global.graph
 
 ##Como actualizar los datos en virtuoso
 

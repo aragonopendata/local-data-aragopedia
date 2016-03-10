@@ -11,7 +11,6 @@ import org.apache.log4j.Logger;
 
 public class ConfigBean {
 	
-
 	private final static Logger log = Logger.getLogger(ConfigBean.class);
 
 	private String nameFile;
@@ -21,6 +20,8 @@ public class ConfigBean {
 	private ArrayList<String> letters = new ArrayList<String>();
 
 	private HashMap<String, DataBean> mapData = new HashMap<String, DataBean>();
+	
+	private ArrayList<DataBean> listDataConstant = new ArrayList<DataBean>();
 	
 	public String getNameFile() {
 		return nameFile;
@@ -39,6 +40,12 @@ public class ConfigBean {
 	}
 	public void setMapData(HashMap<String, DataBean> mapData) {
 		this.mapData = mapData;
+	}
+	public ArrayList<DataBean> getListDataConstant() {
+		return listDataConstant;
+	}
+	public void setListDataConstant(ArrayList<DataBean> listDataConstant) {
+		this.listDataConstant = listDataConstant;
 	}
 	public ArrayList<String> getLetters() {
 		return letters;
@@ -84,16 +91,28 @@ public class ConfigBean {
 		for (DataBean dataBean : dataArray) {
 			content=content+fieldSeparator+dataBean.getName()+fieldSeparator+csvSepartor;
 		}
+		for (DataBean dataBean : listDataConstant) {
+			content=content+fieldSeparator+dataBean.getName()+fieldSeparator+csvSepartor;
+		}
 		content=content.substring(0, content.length()-1)+System.getProperty("line.separator");
 		for (DataBean dataBean : dataArray) {
+			content=content+fieldSeparator+dataBean.getNormalizacion()+fieldSeparator+csvSepartor;
+		}
+		for (DataBean dataBean : listDataConstant) {
 			content=content+fieldSeparator+dataBean.getNormalizacion()+fieldSeparator+csvSepartor;
 		}
 		content=content.substring(0, content.length()-1)+System.getProperty("line.separator");
 		for (DataBean dataBean : dataArray) {
 			content=content+fieldSeparator+dataBean.getDimensionMesureEntry()+fieldSeparator+csvSepartor;
 		}
+		for (DataBean dataBean : listDataConstant) {
+			content=content+fieldSeparator+dataBean.getDimensionMesureEntry()+fieldSeparator+csvSepartor;
+		}
 		content=content.substring(0, content.length()-1)+System.getProperty("line.separator");
 		for (DataBean dataBean : dataArray) {
+			content=content+fieldSeparator+dataBean.getType()+fieldSeparator+csvSepartor;
+		}
+		for (DataBean dataBean : listDataConstant) {
 			content=content+fieldSeparator+dataBean.getType()+fieldSeparator+csvSepartor;
 		}
 		content=content.substring(0, content.length()-1)+System.getProperty("line.separator");
@@ -107,8 +126,11 @@ public class ConfigBean {
 				content=content+fieldSeparator+fieldSeparator+csvSepartor;
 			}
 		}
+		for (DataBean dataBean : listDataConstant) {
+			content=content+fieldSeparator+dataBean.getConstant()+fieldSeparator+csvSepartor;
+		}
 		content=content.substring(0, content.length()-1)+System.getProperty("line.separator");
-		
+
 		String nameFile=GenerateConfig.configDirectoryString+File.separator+getNameFile();
 		File file = new File(nameFile);
 		try {
@@ -116,11 +138,11 @@ public class ConfigBean {
 		} catch (Exception e) {
 			log.error("Error to generate config file "+getNameFile(), e);
 		}
-		if(Constants.publicDrive){
+		if(Prop.publicDrive){
 			GoogleDriveAPI api = new GoogleDriveAPI();
 			api.init();
-			api.createSpreadsheetFromFile(Constants.idParentFolder,
-					Constants.emailUserFile, "csv", getNameFile().substring(0, getNameFile().length()-4), file,
+			api.createSpreadsheetFromFile(Prop.idParentFolder,
+					Prop.emailUserFile, "csv", getNameFile().substring(0, getNameFile().length()-4), file,
 			"text/csv");
 		}
 		return content;

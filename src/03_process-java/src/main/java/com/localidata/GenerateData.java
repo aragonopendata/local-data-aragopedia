@@ -15,6 +15,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
@@ -25,7 +26,6 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
-
 
 public class GenerateData {
 
@@ -44,6 +44,8 @@ public class GenerateData {
 	String[] extensionsConfig = new String[] { "xlsx", "csv" };
 	HashMap<String,ConfigBean> mapconfig = new HashMap<String,ConfigBean>();
 	private String formatConfig = "xlsx";
+	private HashSet<String> dsdSet = new HashSet<String>();
+	private HashSet<String> propertiesSet = new HashSet<String>();
 
 	public GenerateData(String input, String output, String config) {
 		this.inputDirectoryString = input;
@@ -51,17 +53,19 @@ public class GenerateData {
 		this.configDirectoryString = config;
 	}
 
-
 	public static void main(String[] args) {
 		if ((log == null) || (log.getLevel() == null))
 			PropertyConfigurator.configure("log4j.properties");
-		
+		if (args.length == 3) {
 			log.info("Start process");
+			Prop.loadConf();
 			GenerateData app = new GenerateData(args[0], args[1], args[2]);
+//			App app = new App("DatosDescarga-UTF8", "DatosSalida");
 			app.backup();
 			app.extractConfig();
 			app.extractInformation();
 			log.info("Finish process");
+		}
 
 	}
 	
@@ -188,12 +192,17 @@ public class GenerateData {
 				dataBean.setNormalizacion(cellNormalization.getStringCellValue());
 				dataBean.setDimensionMesure(cellDimMesure.getStringCellValue());
 				dataBean.setType(cellType.getStringCellValue());
-				if(cellSkosfile!=null){
+				if(cellSkosfile!=null && !dataBean.getType().equals(Constants.constante)){
 					HashMap<String, SkosBean> mapSkos = processSkos(cellSkosfile.getStringCellValue());
 					dataBean.setMapSkos(mapSkos);
+					configBean.getMapData().put(Utils.urlify(dataBean.getName()), dataBean);
+				}else if(dataBean.getType()!=null && dataBean.getType().equals(Constants.constante)){
+					dataBean.setConstant(cellSkosfile.getStringCellValue()+"");
+					configBean.getListDataConstant().add(dataBean);
+				}else{
+					configBean.getMapData().put(Utils.urlify(dataBean.getName()), dataBean);
 				}
-				
-				configBean.getMapData().put(Utils.urlify(dataBean.getName()), dataBean);
+
 				columnReaded++;
 			}
 		}
@@ -268,18 +277,19 @@ public class GenerateData {
 						.hasNext();) {
 					String keyData = (String) iterator2.next();
 					DataBean dataBean = configBean.getMapData().get(keyData);
-					if(dataBean!=null && !kosCreated.contains(dataBean.getName())){
-						String suject = Constants.host+"/"+Constants.kosName+"/"+Constants.datasetName+"/"+Utils.urlify(dataBean.getName());
+					if(dataBean!=null && !kosCreated.contains(dataBean.getName()) && dataBean.getMapSkos().size()>0){
+						String suject = Prop.host+"/"+Prop.kosName+"/"+Prop.datasetName+"/"+Utils.urlify(dataBean.getName());
 						resultIni.append("<"+suject+"> "+"a skos:ConceptScheme.\n");
 						resultIni.append("<"+suject+"> skos:notation \""+Utils.urlify(dataBean.getName())+"\".\n");
 						resultIni.append("<"+suject+"> rdfs:label \""+dataBean.getName()+"\".\n");
 												
 						for (Iterator iterator3 = dataBean.getMapSkos().keySet().iterator(); iterator3
 								.hasNext();) {
+//							resultIni.append(resultFin);
 							String keySkos = (String) iterator3.next();
 							SkosBean skosBean = dataBean.getMapSkos().get(keySkos);
 							if(skosBean!=null){
-								resultIni.append("<"+suject+"> skos:narrower <"+skosBean.getURI()+">.\n");
+								resultIni.append("<"+suject+"> skos:hasTopConcept <"+skosBean.getURI()+">.\n");
 								resultFin.append("<"+skosBean.getURI()+"> a skos:Concept.\n");
 								resultFin.append("<"+skosBean.getURI()+"> skos:inScheme <"+suject+">.\n");
 								resultFin.append("<"+skosBean.getURI()+"> skos:notation \""+skosBean.getId()+"\".\n");
@@ -295,6 +305,7 @@ public class GenerateData {
 						resultIni.append(resultFin);
 						kosCreated.add(dataBean.getName());
 					}
+					//escribir en fichero
 					Utils.stringToFileAppend(resultIni.toString(), kosFile);
 					resultIni.setLength(0);
 					resultFin.setLength(0);
@@ -326,21 +337,25 @@ public class GenerateData {
 		log.info("Finaliza de hacerse el backup");
 	}
 	
-
+	/**
+	 * Starting process method
+	 */
+	@SuppressWarnings("unchecked")
 	private void extractInformation() {
+		// Getting input files
 		File inputDirectoryFile = new File(inputDirectoryString);
 		File propertiesFile = new File(outputDirectoryString + File.separator + "DatosTTL" + File.separator +"codelists"+ File.separator + "properties.ttl");
 		File dsdFile = new File(outputDirectoryString + File.separator + "DatosTTL" + File.separator + "dataStructures" + File.separator + "dsd.ttl");
 		File errorReportFile = new File(outputDirectoryString+ File.separator + "errorReport.txt");
 		
 		TransformToRDF.propertiesContent.append(TransformToRDF.addPrefix());
-		TransformToRDF.dtdContent.append(TransformToRDF.addPrefix());
+		TransformToRDF.dsdContent.append(TransformToRDF.addPrefix());
 		
 		Collection<File> listCSV = FileUtils.listFiles(inputDirectoryFile,
 				extensions, true);
 		String properties="";
 		int numfile=1;
-
+		// Transforming input files
 		for (File file : listCSV) {
 			try {
 				String fileName = "";
@@ -357,7 +372,7 @@ public class GenerateData {
 				log.info("Init file " + fileName+fileLetter +". Size "+FileUtils.sizeOf(file)+" "+numfile+"/"+listCSV.size());
 				List<String> csvLines = FileUtils.readLines(file, "UTF-8");
 				TransformToRDF transformToRDF = new TransformToRDF(csvLines,outputDirectoryFile,propertiesFile,dsdFile,errorReportFile,configBean);
-				transformToRDF.initTransformation(fileName+fileLetter,numfile,fileName);
+				transformToRDF.initTransformation(fileName+fileLetter,numfile,fileName,dsdSet,propertiesSet);
 				properties+=transformToRDF.getRdfProperties();
 
 				log.info("End file " + outputDirectoryFile.getName()+" "+numfile+"/"+listCSV.size());
@@ -371,7 +386,7 @@ public class GenerateData {
 			Utils.stringToFile(TransformToRDF.errorsReport,
 					errorReportFile);
 			Utils.stringToFile(TransformToRDF.propertiesContent.toString(), propertiesFile);
-			Utils.stringToFile(TransformToRDF.dtdContent.toString(), dsdFile);
+			Utils.stringToFile(TransformToRDF.dsdContent.toString(), dsdFile);
 		} catch (Exception e) {
 			log.error(e);
 		}

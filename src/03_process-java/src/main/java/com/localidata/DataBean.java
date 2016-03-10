@@ -8,7 +8,6 @@ import org.apache.log4j.Logger;
 
 
 public class DataBean {
-	
 
 	private final static Logger log = Logger.getLogger(DataBean.class);
 
@@ -23,6 +22,7 @@ public class DataBean {
 	private String dimensionMesureSDMX;
 
 	private String type;
+	private String constant;
 
 	private HashMap<String, SkosBean> mapSkos = new HashMap<String, SkosBean>();
 	
@@ -95,6 +95,18 @@ public class DataBean {
 	}
 	public String getDimensionMesureEntry() {
 		return dimensionMesureEntry;
+	}
+	public String getNameNormalized() {
+		return nameNormalized;
+	}
+	public void setNameNormalized(String nameNormalized) {
+		this.nameNormalized = nameNormalized;
+	}
+	public String getConstant() {
+		return constant;
+	}
+	public void setConstant(String constant) {
+		this.constant = constant;
 	}
 	@Override
 	public String toString() {

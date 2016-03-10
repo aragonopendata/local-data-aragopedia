@@ -41,18 +41,10 @@ import com.google.api.services.drive.model.User;
 
 public class GoogleDriveAPI {
 
-
-	private static String domainPermission = "";
-
-	private static String p12File = "";
-
-	private static String acountId = "";
-
 	private final static Logger log = Logger.getLogger(GoogleDriveAPI.class);
 
-	private static String APPLICATION_NAME = "";
-
-	private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
+	private static final JsonFactory JSON_FACTORY = JacksonFactory
+			.getDefaultInstance();
 
 	private static HttpTransport HTTP_TRANSPORT;
 
@@ -74,11 +66,10 @@ public class GoogleDriveAPI {
 		}
 	}
 
-
 	public void init() {
 
 		try {
-			boolean resultConf = loadConf();
+			boolean resultConf = Prop.loadConf();
 			if (resultConf)
 				this.service = getDriveService();
 			else
@@ -87,7 +78,6 @@ public class GoogleDriveAPI {
 			log.error("Error init method", e);
 		}
 	}
-
 
 	private static boolean loadConf() {
 
@@ -99,17 +89,16 @@ public class GoogleDriveAPI {
 			InputStream input = new FileInputStream("system.properties");
 			prop.load(input);
 
-			domainPermission = prop.getProperty("domainPermission");
-			p12File = prop.getProperty("p12File");
-			acountId = prop.getProperty("acountId");
-			APPLICATION_NAME = prop.getProperty("APPLICATION_NAME");
+			Prop.domainPermission = prop.getProperty("domainPermission");
+			Prop.p12File = prop.getProperty("p12File");
+			Prop.acountId = prop.getProperty("acountId");
+			Prop.APPLICATION_NAME = prop.getProperty("APPLICATION_NAME");
 			conf = true;
 		} catch (IOException io) {
 			log.error("Error loading configuration", io);
 		}
 		return conf;
 	}
-
 
 	private static Drive getDriveService() throws IOException {
 		Credential credential = null;
@@ -119,9 +108,8 @@ public class GoogleDriveAPI {
 			e.printStackTrace();
 		}
 		return new Drive.Builder(HTTP_TRANSPORT, JSON_FACTORY, credential)
-				.setApplicationName(APPLICATION_NAME).build();
+				.setApplicationName(Prop.APPLICATION_NAME).build();
 	}
-
 
 	private static GoogleCredential authorize() throws IOException,
 			GeneralSecurityException {
@@ -130,11 +118,10 @@ public class GoogleDriveAPI {
 		GoogleCredential credential = new GoogleCredential.Builder()
 				.setTransport(httpTransport).setJsonFactory(jsonFactory)
 
-				.setServiceAccountId(acountId)
+				.setServiceAccountId(Prop.acountId)
 				.setServiceAccountScopes(SCOPES)
-
 				.setServiceAccountPrivateKeyFromP12File(
-						new java.io.File(p12File)).build();
+						new java.io.File(Prop.p12File)).build();
 		return credential;
 	}
 
@@ -179,7 +166,6 @@ public class GoogleDriveAPI {
 		return resultado;
 	}
 	
-
 	public boolean createSpreadsheetFromFolder(String folderOrigin, String idParentFolder,
 			String emailUserOwner, String extensionFile, String mimeType) {
 		
@@ -201,7 +187,6 @@ public class GoogleDriveAPI {
 		return true;
 	}
 	
-
 	public boolean createSpreadsheetFromFile(String idParentFolder,
 			String emailUserOwner, String extensionFile, String nameFile,
 			java.io.File fileOrigin, String mimeType) {
@@ -209,7 +194,6 @@ public class GoogleDriveAPI {
 		boolean result = true;
 		Permission newPermission = createPermission();
 		File body = new File();
-
 		body.setTitle(nameFile);
 		body.setMimeType("application/vnd.google-apps.spreadsheet");
 		body.setEditable(true);
@@ -217,10 +201,8 @@ public class GoogleDriveAPI {
 		body.setPermissions(Arrays.asList(newPermission));
 		body.setUserPermission(newPermission);
 		body.setWritersCanShare(true);
-
 		body.setFileExtension(extensionFile);
 		User user = new User();
-
 		user.setEmailAddress(emailUserOwner);
 		user.setIsAuthenticatedUser(true);
 		List<User> list = new ArrayList<User>();
@@ -230,25 +212,22 @@ public class GoogleDriveAPI {
 		body.setParents(Arrays.asList(new ParentReference()
 				.setId(idParentFolder)));
 
-
 		FileContent mediaContent = new FileContent(mimeType, fileOrigin);
 		String fileId = "";
 		try {
 			File file = service.files().insert(body, mediaContent).execute();
 			fileId = file.getId();
-			log.info("File ID: " + file.getId());
 			insertPermission(newPermission, fileId);
 
 		} catch (IOException e) {
 			log.error("Error create spreadsheet from file ", e);
 			result = false;
 		}
+		log.info("create Spreadsheet in google Drive from "+nameFile);
 		return result;
 	}
 
-
 	public List<File> listOwnerFiles() {
-
 		FileList result;
 		List<File> files = null;
 		try {
@@ -257,7 +236,6 @@ public class GoogleDriveAPI {
 		} catch (IOException e) {
 			log.error("Error list files", e);
 		}
-
 		return files;
 	}
 
@@ -270,7 +248,6 @@ public class GoogleDriveAPI {
 			dateLastChange = formatFullDate.parse(stringDateLastChange);
 		} catch (ParseException e1) {
 			log.error("Error parse date in list", e1);
-		}
 		FileList result;
 		List<File> files = null;
 		try {
@@ -296,7 +273,7 @@ public class GoogleDriveAPI {
 		return files;
 	}
 	
-
+	/**/
 	public void downloadFilesAfterDate(String path, String stringDateLastChange){
 		
 		List<File> files = listOwnerFilesAfterDate(stringDateLastChange);
@@ -333,8 +310,6 @@ public class GoogleDriveAPI {
 		
 	}
 	
-	
-
 	public String getDownloadUrl(String fileId){
 		try {
 			return service.files().get(fileId).execute().getDownloadUrl() ;
@@ -344,34 +319,29 @@ public class GoogleDriveAPI {
 		return null;
 	}
 	
-
 	private Permission createPermission() {
 
 		Permission newPermission = new Permission();
-		newPermission.setDomain(domainPermission);
-		newPermission.setValue(domainPermission);
+		newPermission.setDomain(Prop.domainPermission);
+		newPermission.setValue(Prop.domainPermission);
 		newPermission.setType("domain");
 		newPermission.setRole("writer");
 		return newPermission;
 
 	}
 
-
 	private void insertPermission(Permission newPermission, String fileId) {
 		try {
 			Permission permission = service.permissions()
 					.insert(fileId, newPermission).execute();
-			log.info("permission ID: " + permission.getId());
 		} catch (IOException e) {
 			log.error("Error insert permission ", e);
 		}
 	}
 
-
 	public static void main(String[] args) {
 		if ((log == null) || (log.getLevel() == null))
 			PropertyConfigurator.configure("log4j.properties");
-
 		int modo = new Integer(args[0]);
 		GoogleDriveAPI api = new GoogleDriveAPI();
 		api.init();
@@ -409,10 +379,10 @@ public class GoogleDriveAPI {
 			api.listOwnerFilesAfterDate(date);
 			break;
 		case 4:
-			api.downloadAllFiles("D:\\");
+			api.downloadAllFiles("D:\\pruebaDrive");
 			break;
 		case 5:
-			api.downloadFilesAfterDate("D:\\", "2016-02-10 14:53:48");
+			api.downloadFilesAfterDate("D:\\pruebaDrive", "2016-02-10 14:53:48");
 			break;
 		default:
 			break;

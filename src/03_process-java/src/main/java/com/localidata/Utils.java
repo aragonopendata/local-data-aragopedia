@@ -16,6 +16,8 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.UUID;
 
 import javax.xml.bind.DatatypeConverter;
@@ -25,7 +27,6 @@ import org.apache.log4j.Logger;
 
 
 public class Utils {
-
 
 	private final static Logger log = Logger.getLogger(Utils.class);
 
@@ -41,12 +42,12 @@ public class Utils {
 
 	private static String comunidadAragon = null;
 
-
 	public static String weakClean(String chain) {
-		return chain.replace(new String(Character.toChars(0)), "");
+		chain=chain.replace(new String(Character.toChars(0)), "");
+		chain=chain.replace("\"", "");
+		return chain;
 	}
 	
-
 	public static String urlify(String chain) {
 
 		String chainToURI = chain.trim().toLowerCase();
@@ -140,7 +141,6 @@ public class Utils {
 		return chainToURI;
 	}
 
-
 	public static String genUUIDHash(String id) {
 
 		String hash;
@@ -163,14 +163,12 @@ public class Utils {
 		return uuid.toString();
 	}
 	
-
 	public static boolean validValue(String value) {
 		if ((value != null) && (!value.equals("")))
 			return true;
 		return false;
 	}
 	
-
 	public static String getUrlRefArea(String header, String cleanCell, String fileName) {
 
 		String valueCell = cleanCell;
@@ -192,7 +190,6 @@ public class Utils {
 			cadidateUrl = "http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/";
 			ttl = getComunidadAragon();
 		}
-
 		if (valueCell.contains("Torla-Ordesa")) {
 			TransformToRDF.insertError(fileName+". ERROR. Column "+header+". "+valueCell+" instead of Torla");
 			cadidateUrl += "Torla";
@@ -218,7 +215,6 @@ public class Utils {
 		return "<"+cadidateUrl+">";
 	}
 	
-
 	private static String getComarcasAragon() {
 		if (comarcasAragon == null) {
 			String url = "http://opendata.aragon.es/recurso/territorio/Comarca";
@@ -248,7 +244,6 @@ public class Utils {
 		return comarcasAragon;
 	}
 	
-
 	private static String getMunicipiosAragon() {
 		if (municipiosAragon == null) {
 			String url = "http://opendata.aragon.es/recurso/territorio/Municipio";
@@ -277,7 +272,6 @@ public class Utils {
 		}
 		return municipiosAragon;
 	}
-	
 
 	private static String getProvinciasAragon() {
 		if (provinciasAragon == null) {
@@ -307,7 +301,6 @@ public class Utils {
 		}
 		return provinciasAragon;
 	}
-	
 
 	private static String getComunidadAragon() {
 		if (comunidadAragon == null) {
@@ -337,7 +330,6 @@ public class Utils {
 		}
 		return comunidadAragon;
 	}
-	
 
 	public static String processURLGet(String url, String urlParameters,
 			Map<String, String> headers) {
@@ -347,8 +339,10 @@ public class Utils {
 		try {
 			URL targetUrl = null;
 			if ((urlParameters == null) || (urlParameters.equals(""))) {
+				// log.info("URL: " + url);
 				targetUrl = new URL(url);
 			} else {
+				// log.info("URL: " + url + "?" + urlParameters);
 				targetUrl = new URL(url + "?" + urlParameters);
 			}
 
@@ -401,6 +395,38 @@ public class Utils {
 
 	}
 	
+	public static String processURLGet(String URI) throws IOException {
+
+		log.info("processURLGet: " + URI);
+
+		StringBuilder content = new StringBuilder();
+
+
+		try {
+
+			URL url = new URL(URI);
+
+
+			HttpURLConnection httpConnection = (HttpURLConnection) url.openConnection();
+			httpConnection.setRequestMethod("GET");
+			httpConnection.setConnectTimeout(10000);
+
+			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(httpConnection.getInputStream()));
+
+			String line;
+
+			while ((line = bufferedReader.readLine()) != null) {
+				content.append(line + "\n");
+			}
+			bufferedReader.close();
+		} catch (Exception e) {
+			log.error("Error in processURLGet", e);
+			return "";
+		}
+		return content.toString();
+
+	}
+	
 
 	public static void stringToFile(String string, File file) throws Exception {
 
@@ -424,6 +450,45 @@ public class Utils {
 			log.error("Error writing file", e);
 		}
 		
+	}
+	
+	public static boolean isInteger(String cell) {
+		boolean resultado = false;
+
+		String pattern = "\\d+";
+		Pattern r = Pattern.compile(pattern);
+		Matcher m = r.matcher(cell);
+		if (m.find()) {
+			resultado = true;
+		}
+
+		return resultado;
+	}
+	
+	public static boolean isDouble(String cell) {
+		boolean resultado = false;
+
+		String pattern = "^\\d+(\\.\\d+)?";
+		Pattern r = Pattern.compile(pattern);
+		Matcher m = r.matcher(cell);
+		if (m.find()) {
+			resultado = true;
+		}
+
+		return resultado;
+	}
+	
+	public static boolean isString(String cell) {
+		boolean resultado = false;
+
+		String pattern = "(([a-z]|[A-Z]| )+)";
+		Pattern r = Pattern.compile(pattern);
+		Matcher m = r.matcher(cell);
+		if (m.find()) {
+			resultado = true;
+		}
+
+		return resultado;
 	}
 
 }

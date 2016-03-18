@@ -8,7 +8,6 @@ import java.util.Iterator;
 
 import org.apache.log4j.Logger;
 
-
 public class ConfigBean {
 	
 	private final static Logger log = Logger.getLogger(ConfigBean.class);
@@ -47,6 +46,7 @@ public class ConfigBean {
 	public void setListDataConstant(ArrayList<DataBean> listDataConstant) {
 		this.listDataConstant = listDataConstant;
 	}
+
 	public ArrayList<String> getLetters() {
 		return letters;
 	}

@@ -15,6 +15,7 @@ import org.apache.log4j.Logger;
 
 
 public class TransformToRDF {
+
 	private final static Logger log = Logger.getLogger(GenerateData.class);
 
 	private List<String> csvLines = null;
@@ -24,6 +25,10 @@ public class TransformToRDF {
 	private String rdfProperties = "";
 
 	protected static String errorsReport = "";
+	
+	private static HashSet<String> errorsSet = new HashSet<String>();
+	
+	protected static StringBuffer errorsContent = new StringBuffer();
 
 	private ArrayList<String> cleanHeader = new ArrayList<String>();
 
@@ -41,7 +46,6 @@ public class TransformToRDF {
 	
 	private HashSet<String> dsdSet = new HashSet<String>();
 	
-	protected static StringBuffer dsdContent = new StringBuffer();
 	
 	private HashSet<String> propertiesSet = new HashSet<String>();
 	
@@ -62,9 +66,9 @@ public class TransformToRDF {
 
 
 	public void initTransformation(String fileName, int numfile, String id, HashSet<String> dsdSet, HashSet<String> propertiesSet) {
-
+		log.debug("Init initTransformation");
 		if (this.csvLines != null) {
-			log.debug("Strat file " + fileName);
+			log.debug("Start file " + fileName);
 			this.dsdSet=dsdSet;
 			this.propertiesSet=propertiesSet;
 			StringBuffer lineAux = new StringBuffer();
@@ -81,10 +85,13 @@ public class TransformToRDF {
 					log.info("\tProcesed 50%");
 				} else if (h == (int) (csvLines.size() * 0.25))
 					log.info("\tProcesed 25%");
-				String line = csvLines.get(h);
+				String dirtyLine = csvLines.get(h);
+				String line = Utils.weakClean(dirtyLine);
+				if(!Utils.v(line))
+					continue;
 				if (cabecera) {
 					dsd=addHeader(line, csvLines.get(h + 2),
-							id, numfile);
+							id, numfile, configBean.getLetters());
 					log.debug("Insert header");
 					lineAux.append("#Observations\n");
 					lineAux.append(addCubeLink(fileName,dsd));
@@ -100,10 +107,11 @@ public class TransformToRDF {
 			log.debug("Insert observations");	
 			
 		}
-
+		log.debug("End initTransformation");
 	}
-	
+
 	public static StringBuffer addPrefix() {
+		log.debug("Init addPrefix");
 		StringBuffer result = new StringBuffer();
 
 		result.append("@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> ."
@@ -140,11 +148,12 @@ public class TransformToRDF {
 		result.append("@prefix dc: <http://purl.org/dc/elements/1.1/> .\n");
 		
 		result.append("\n");
-
+		log.debug("End addPrefix");
 		return result;
 	}
 	
 	private  StringBuffer addCubeLink(String fileName, String dsd) {
+		log.debug("Init addCubeLink");
 		StringBuffer result = new StringBuffer();
 		String url = Prop.host+"/"+Prop.eldaName+"/"+Prop.datasetName;
 		cubo=url+"/dataset/"+fileName;
@@ -154,14 +163,15 @@ public class TransformToRDF {
 		result.append("\trdfs:comment \"Cubo de datos para "+fileName+"\"@es ;\n");
 		SimpleDateFormat formatFullDate = new SimpleDateFormat("yyyy-MM-dd");
 		String fecha = formatFullDate.format(new Date());
-		result.append("\tdc:modified \""+fecha+"\"^^<http://www.w3.org/2001/XMLSchema#date>.\n");
-		
+		result.append("\tdc:modified \""+fecha+"\"^^xsd:date.\n");
+		log.debug("End addCubeLink");
 		return result;
 	}
 
-	private String addHeader(String headerLine, String nextLine,
-			String fileName, int numfile) {
 
+	private String addHeader(String headerLine, String nextLine,
+			String fileName, int numfile, ArrayList<String> lettersList) {
+		log.debug("Init addHeader "+headerLine+" "+nextLine+" "+fileName+" "+numfile);
 		String resultado = "";
 		boolean year = false;
 		String aux = "";
@@ -171,17 +181,21 @@ public class TransformToRDF {
 		aux = aux+"\trdfs:label \"Estructura de los cubos de datos que se corresponden con los informes "
 				+ fileName + "\"@es ;" + "\n";
 		String notation = "\"DSD-" + fileName+ "\"";
-		aux = aux+"\tskos:notation "+notation+" ." + "\n";
-		aux = aux+"\n";
-		if(!dsdSet.contains(resultado+" "+notation)){
-			dsdSet.add(resultado+" "+notation);
-			dsdContent.append(aux);
+		aux = aux+"\tskos:notation "+notation+" ;" + "\n";
+		String letters="";
+		for (String letter : lettersList) {
+			letters+=letter+" ";
 		}
+		aux = aux+"\trdfs:comment \"Esta estructura afecta a las areas: "+letters+"\" ." + "\n";
+		aux = aux+"\n";
+		insertDsd(aux, resultado+" "+notation);
 
+		headerLine = Utils.weakClean(headerLine);
 		String[] cells = headerLine.split("\t");
 
 		int col = 1;
 		int numCell = 1;
+
 		for (int h = 0; h < cells.length; h++) {
 			String cell = cells[h];
 			String cleanCell = Utils.weakClean(cell);
@@ -204,16 +218,14 @@ public class TransformToRDF {
 					if (!dataBean.getName().toLowerCase().contains("año")) {
 						aux = "<"+ resultado + "> qb:component _:node" + numfile + "egmfx" + col + " ." + "\n";
 						if(!dsdSet.contains(resultado+" "+dataBean.getDimensionMesure()+" "+dataBean.getNormalizacion())){
-							dsdContent.append(aux);
+							Utils.stringToFileAppend(aux, dsdFile);
 						}
+
 						if(!dataBean.getType().contains(Constants.URIType)){
 							aux = "_:node" + numfile + "egmfx"
 									+ col + " "+dataBean.getDimensionMesure()+" "+dataBean.getNormalizacion() + " ." + "\n";
 							aux = aux + "\n";
-							if(!dsdSet.contains(resultado+" "+dataBean.getDimensionMesure()+" "+dataBean.getNormalizacion())){
-								dsdSet.add(resultado+" "+dataBean.getDimensionMesure()+" "+dataBean.getNormalizacion());
-								dsdContent.append(aux);
-							}
+							insertDsd(aux, resultado+" "+dataBean.getDimensionMesure()+" "+dataBean.getNormalizacion());
 							
 							if(noRepetido){
 								String coded = dataBean.getDimensionMesure().equals(Constants.mesure) ? "" : ", qb:CodedProperty ";
@@ -248,16 +260,15 @@ public class TransformToRDF {
 									propertiesContent.append(" ." + "\n");
 								}
 								propertiesContent.append("" + "\n");
+								Utils.stringToFileAppend(propertiesContent.toString(), propertiesFile);
+								propertiesContent.setLength(0);
 							}
 							
 						}else{
 							aux = "_:node" + numfile + "egmfx" + col
 									+ " "+dataBean.getDimensionMesure()+" "+dataBean.getDimensionMesureSDMX()+":refArea ." + "\n";
 							aux = aux + "\n";
-							if(!dsdSet.contains(resultado+" "+dataBean.getDimensionMesure()+" "+dataBean.getDimensionMesureSDMX()+":refArea")){
-								dsdSet.add(resultado+" "+dataBean.getDimensionMesure()+" "+dataBean.getDimensionMesureSDMX()+":refArea");
-								dsdContent.append(aux);
-							}
+							insertDsd(aux, resultado+" "+dataBean.getDimensionMesure()+" "+dataBean.getDimensionMesureSDMX()+":refArea");
 						}
 					}else{
 						year = true;
@@ -266,10 +277,7 @@ public class TransformToRDF {
 						aux = aux + "_:node" + numfile + "egmfx" + col
 								+ " "+dataBean.getDimensionMesure()+" "+dataBean.getDimensionMesureSDMX()+":refPeriod ." + "\n";
 						aux = aux + "\n";
-						if(!dsdSet.contains(resultado+" "+dataBean.getDimensionMesure()+" "+dataBean.getDimensionMesureSDMX()+":refPeriod")){
-							dsdSet.add(resultado+" "+dataBean.getDimensionMesure()+" "+dataBean.getDimensionMesureSDMX()+":refPeriod");
-							dsdContent.append(aux);
-						}
+						insertDsd(aux, resultado+" "+dataBean.getDimensionMesure()+" "+dataBean.getDimensionMesureSDMX()+":refPeriod");
 					}
 					col++;
 				}
@@ -293,10 +301,8 @@ public class TransformToRDF {
 			aux = aux + "_:node" + numfile + "egmfx" + col
 					+ " qb:dimension sdmx-dimension:refPeriod ." + "\n";
 			aux = aux + "\n";
-			if(!dsdSet.contains(resultado+" qb:dimension sdmx-dimension:refPeriod")){
-				dsdSet.add(resultado+" qb:dimension sdmx-dimension:refPeriod");
-				dsdContent.append(aux);
-			}
+			insertDsd(aux, resultado+" qb:dimension sdmx-dimension:refPeriod");
+
 		}
 		if(configBean.getListDataConstant().size()>0){
 			for (DataBean data : configBean.getListDataConstant()) {
@@ -305,24 +311,32 @@ public class TransformToRDF {
 				aux = aux + "_:node" + numfile + "egmfx" + col
 						+ " "+data.getDimensionMesure()+" "+data.getNormalizacion()+" ." + "\n";
 				aux = aux + "\n";
-				if(!dsdSet.contains(resultado+" "+data.getDimensionMesure()+" "+data.getNormalizacion())){
-					dsdSet.add(resultado+" "+data.getDimensionMesure()+" "+data.getNormalizacion());
-					dsdContent.append(aux);
-				}
+				insertDsd(aux, resultado+" "+data.getDimensionMesure()+" "+data.getNormalizacion());
+
 			}
 		}
 		
-
+		log.debug("End addHeader");
 		return resultado;
 	}
 
+	/**
+	 * Method to insert observation RDF
+	 * 
+	 * @param line
+	 *            String with header line
+	 * @param fileName
+	 *            String file name
+	 * @return String with observation RDF
+	 */
 	private StringBuffer addObservation(String line, String fileName) {
-
+		log.debug("Init addObservation "+line+" "+fileName);
 		StringBuffer result = new StringBuffer();
 		String endResult = "";
 		boolean year=false;
 		String cleanLine = Utils.weakClean(line);
 		if (cleanLine.equals("")) {
+			log.debug("End addObservation");
 			return result;
 		}
 		String id = Utils.genUUIDHash(cleanLine);
@@ -346,7 +360,7 @@ public class TransformToRDF {
 						} else {
 							
 							if(!dataBean.getType().contains(Constants.URIType)){
-								if (!cell.toLowerCase().contains("año")) {
+								if (!dataBean.getType().equals("xsd:date")){
 									if(dataBean.getType().equals(Constants.skosType)){
 										if(dataBean.getMapSkos().get(normalizedCell)==null){
 											TransformToRDF.insertError(fileName + ". ERROR. Column "
@@ -361,13 +375,15 @@ public class TransformToRDF {
 										}
 									}else{
 										result.append("\t"+dataBean.getNormalizacion()
-												+ " "+normalizedCell+" ;"
+												+ " \""+normalizedCell+"\"^^"+dataBean.getType()+";"
 												+ "\n");
 									}
 								}else{
-									year=true;
-									result.append("\t"+dataBean.getDimensionMesureSDMX()+":refPeriod <http://reference.data.gov.uk/id/year/"
-											+ normalizedCell + "> ;" + "\n");
+									if(dataBean.getType().equals("xsd:date")){
+										year=true;
+										result.append("\t"+dataBean.getNormalizacion()+" <http://reference.data.gov.uk/id/year/"
+												+ normalizedCell + "> ;" + "\n");
+									}
 								}
 							}else{
 								String pattern = "([0-9]+)(-)(.*)";
@@ -418,29 +434,45 @@ public class TransformToRDF {
 		endResult = (result.toString()).substring(0, result.length()-2);
 		endResult = endResult+"." + "\n";
 		result = new StringBuffer(endResult);
-		
+		log.debug("End addObservation");
 		return result;
 	}
+
 
 	public String getRdfFinal() {
 		return rdfFinal;
 	}
 
+
 	public void setRdfFinal(String rdfFinal) {
 		this.rdfFinal = rdfFinal;
 	}
 
+
 	public String getRdfProperties() {
 		return rdfProperties;
 	}
+
 
 	public void setRdfProperties(String rdfProperties) {
 		this.rdfProperties = rdfProperties;
 	}
 
 	protected static void insertError(String error) {
-		if (!errorsReport.contains(error)) {
-			errorsReport=errorsReport+error+"\n";
+		log.debug("Init insertError "+error);
+		if(!errorsSet.contains(error)){
+			errorsSet.add(error);
+			Utils.stringToFileAppend(error+"\n", errorReportFile);
 		}
+		log.debug("End insertError");
+	}
+	
+	protected void insertDsd(String aux, String search) {
+		log.debug("Init insertDsd "+aux+" "+search);
+		if(!dsdSet.contains(search)){
+			dsdSet.add(search);
+			Utils.stringToFileAppend(aux, dsdFile);
+		}
+		log.debug("End insertDsd");
 	}
 }

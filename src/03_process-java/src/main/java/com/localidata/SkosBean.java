@@ -1,5 +1,6 @@
 package com.localidata;
 
+
 public class SkosBean {
 	
 

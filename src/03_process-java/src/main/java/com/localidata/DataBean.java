@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 
 
 public class DataBean {
+	
 
 	private final static Logger log = Logger.getLogger(DataBean.class);
 
@@ -75,6 +76,7 @@ public class DataBean {
 		else
 			this.type = type;
 	}
+
 	public HashMap<String, SkosBean> getMapSkos() {
 		return mapSkos;
 	}
@@ -148,9 +150,7 @@ public class DataBean {
 	}
 	
 	public String generateSkosMapping(){
-
 		String nameFile ="mapping-"+Utils.urlify(getName());
-
 		return nameFile+".xlsx";
 	}
 	

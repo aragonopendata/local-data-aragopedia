@@ -14,7 +14,9 @@ import org.apache.log4j.PropertyConfigurator;
 
 public class GenerateConfig {
 
+
 	private final static Logger log = Logger.getLogger(GenerateConfig.class);
+
 	protected String inputDirectoryString = "D:\\trabajo\\gitOpenDataAragon2\\doc\\iaest\\DatosPrueba2";
 
 	protected static String configDirectoryString = "";
@@ -29,11 +31,13 @@ public class GenerateConfig {
 
 	protected ArrayList<DataBean> listConstants = new ArrayList<DataBean>();
 
+
 	public GenerateConfig(String input, String dimension, String config) {
 		inputDirectoryString = input;
 		dimensionDirectoryString = dimension;
 		configDirectoryString = config;
 	}
+
 
 	public void generateAllConfig() {
 
@@ -181,9 +185,6 @@ public class GenerateConfig {
 				log.error("Error to read lines", e);
 			}
 			configExtrated.put(configBean.getId(), configBean);
-			if (Prop.addDataConstant) {
-				createDataConstant(configBean);
-			}
 			log.info("Finaliza tratamiento para " + id + letters);
 		}
 
@@ -207,40 +208,6 @@ public class GenerateConfig {
 					+ configBean.getId() + letters + ".csv");
 		}
 		generateSkosMapping();
-	}
-
-	private void createDataConstant(ConfigBean configBean) {
-
-		if (listConstants.size() == 0) {
-			File file = new File("ColumnsConstants.txt");
-			try {
-				List<String> csvLines = FileUtils.readLines(file, "UTF-8");
-				for (String line : csvLines) {
-					String[] cells = line.split("\t");
-					DataBean data = new DataBean();
-					if (cells.length == 5) {
-						data.setName(cells[0]);
-						data.setNormalizacion(cells[1]);
-						data.setDimensionMesure(cells[2]);
-						data.setType(cells[3]);
-						data.setConstant(cells[4]);
-						listConstants.add(data);
-						if (configBean.getListDataConstant().size() < listConstants
-								.size())
-							configBean.getListDataConstant().add(data);
-					}
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-
-		} else {
-			for (DataBean data : listConstants) {
-				if (configBean.getListDataConstant().size() < listConstants
-						.size())
-					configBean.getListDataConstant().add(data);
-			}
-		}
 	}
 
 	private void extractSkosConcept(List<String> csvLines,
@@ -285,8 +252,10 @@ public class GenerateConfig {
 						} else {
 							dataBean = skosData.get(i);
 						}
-						dataBean.getMapSkos().put(skosBean.getId(), skosBean);
-						skosExtrated.put(dataBean.getName(), dataBean);
+						if(dataBean.getMapSkos().get(skosBean.getId())==null){
+							dataBean.getMapSkos().put(skosBean.getId(), skosBean);
+							skosExtrated.put(dataBean.getName(), dataBean);
+						}
 					} catch (ArrayIndexOutOfBoundsException e) {
 						log.error(
 								"ERROR al extraer los skos debido a incoherencia de columnas",
@@ -305,6 +274,7 @@ public class GenerateConfig {
 		}
 	}
 
+
 	private HashSet<String> extractDimensions(String directoryString) {
 		HashSet<String> result = new HashSet<String>();
 		File dimensionDirectoryFile = new File(directoryString);
@@ -315,6 +285,7 @@ public class GenerateConfig {
 		}
 		return result;
 	}
+
 
 	private boolean contains(HashSet<String> set, String busqueda) {
 		boolean result = false;
@@ -328,21 +299,22 @@ public class GenerateConfig {
 		return result;
 	}
 
+
 	public void generateSkosMapping() {
 		String filedSeparator = "\"";
 		String csvSeparator = ",";
 
 		for (String key : GenerateConfig.skosExtrated.keySet()) {
-			String content = "";
+			StringBuffer content = new StringBuffer();
 			DataBean data = GenerateConfig.skosExtrated.get(key);
 
 			for (String skosName : data.getMapSkos().keySet()) {
 				SkosBean skosBean = data.getMapSkos().get(skosName);
 				if (Utils.v(skosBean.getId()))
-					content = content + filedSeparator + skosBean.getLabel()
+					content.append(filedSeparator + skosBean.getLabel()
 							+ filedSeparator + csvSeparator + filedSeparator
 							+ skosBean.getURI() + filedSeparator
-							+ System.getProperty("line.separator");
+							+ System.getProperty("line.separator"));
 			}
 			String nameFile = "mapping-" + Utils.urlify(data.getName());
 			String pathFile = configDirectoryString + File.separator + nameFile
@@ -350,7 +322,7 @@ public class GenerateConfig {
 			log.info("comienza a escribirse el archivo " + nameFile + ".csv");
 			File file = new File(pathFile);
 			try {
-				Utils.stringToFile(content, file);
+				Utils.stringToFile(content.toString(), file);
 				if (Prop.publicDrive) {
 					GoogleDriveAPI api = new GoogleDriveAPI();
 					api.init();
@@ -380,12 +352,7 @@ public class GenerateConfig {
 					args[2]);
 			config.generateAllConfig();
 			log.info("Finish process");
-		} else {
-			log.info("Se deben de pasar dos parámetros: ");
-			log.info("\tEl directorio donde están los archivos de entrada");
-			log.info("\tEl directorio donde están las dimensiones");
-			log.info("\tEl directorio donde se va a escribir la configuración resultante");
-		}
+		} 
 
 	}
 

@@ -27,7 +27,6 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-
 public class Utils {
 
 
@@ -44,6 +43,16 @@ public class Utils {
 	private static String provinciasAragon = null;
 
 	private static String comunidadAragon = null;
+
+
+	public static String prefLabelClean(String chain) {
+		if(Utils.v(chain) && chain.length()>=2)
+			if(chain.charAt(chain.length()-2)==',' && chain.charAt(chain.length()-1)=='¿'){
+				chain = chain.substring(0, chain.length()-2);
+			}
+		return chain;
+	}
+	
 
 	public static String weakClean(String chain) {
 		chain=chain.replace(new String(Character.toChars(0)), "");
@@ -385,6 +394,7 @@ public class Utils {
 		return comunidadAragon;
 	}
 	
+
 	public static String processURLGet(String url, String urlParameters,
 			Map<String, String> headers) {
 
@@ -525,10 +535,13 @@ public class Utils {
 	public static boolean isDouble(String cell) {
 		boolean resultado = false;
 		
+
 		String pattern = "^-?[0-9]+[,|.]+[0-9]*$";
+
 		Pattern r = Pattern.compile(pattern);
 		Matcher m = r.matcher(cell);
 		if (m.find()) {
+
 			resultado = true;
 		}
 
@@ -552,4 +565,14 @@ public class Utils {
 		return isInteger(string) && string.length()==4;
 	}
 	
+
+	public static void main(String[] args) {
+
+		if ((log == null) || (log.getLevel() == null))
+			PropertyConfigurator.configure("log4j.properties");
+		String s = "Cedida gratis o a bajo precio por otro hogar, la empresa,¿";
+		log.info(Utils.prefLabelClean(s));
+		String s2 = "Cedida gratis o a bajo precio por otro hogar,¿ la empresa";
+		log.info(Utils.prefLabelClean(s2));
+	}
 }

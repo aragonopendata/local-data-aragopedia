@@ -23,8 +23,6 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-import com.sun.corba.se.impl.javax.rmi.CORBA.Util;
-
 
 public class GenerateData {
 
@@ -65,7 +63,7 @@ public class GenerateData {
 			app.extractConfig();
 			app.extractInformation();
 			log.info("Finish process");
-		}
+		} 
 
 	}
 
@@ -201,6 +199,8 @@ public class GenerateData {
 		Row rowDimMesure = sheet.getRow(2);
 		Row rowType = sheet.getRow(3);
 		Row rowSkosfile = sheet.getRow(4);
+		Row rowConstant = sheet.getRow(5);
+		Row rowConstantValue = sheet.getRow(6);
 		boolean cont = true;
 		int columnReaded = 0;
 		while (cont) {
@@ -211,6 +211,13 @@ public class GenerateData {
 			Cell cellSkosfile = null;
 			if (rowSkosfile != null)
 				cellSkosfile = rowSkosfile.getCell(columnReaded);
+			Cell cellConstant = null;
+			if (rowConstant != null)
+				cellConstant = rowConstant.getCell(columnReaded);
+			Cell cellConstantValue = null;
+			if (rowConstantValue != null)
+				cellConstantValue = rowConstantValue.getCell(columnReaded);
+				
 			DataBean dataBean = new DataBean();
 			if (cellName == null) {
 				cont = false;
@@ -226,20 +233,21 @@ public class GenerateData {
 					type = "xsd:string";
 				}
 				dataBean.setType(type);
-				if (cellSkosfile != null
-						&& !dataBean.getType().equals(Constants.constante)) {
+				if (cellSkosfile != null) {
 					HashMap<String, SkosBean> mapSkos = processSkos(cellSkosfile
 							.getStringCellValue());
 					dataBean.setMapSkos(mapSkos);
 					configBean.getMapData().put(
 							Utils.urlify(dataBean.getName()), dataBean);
-				} else if (dataBean.getType() != null
-						&& dataBean.getType().equals(Constants.constante)) {
-					dataBean.setConstant(cellSkosfile.getStringCellValue() + "");
-					configBean.getListDataConstant().add(dataBean);
 				} else {
 					configBean.getMapData().put(
 							Utils.urlify(dataBean.getName()), dataBean);
+				}
+				if (Prop.addDataConstant && cellConstant != null && cellConstant.getStringCellValue().equals(Constants.constante)){
+					if(cellConstantValue!=null){
+						dataBean.setConstant(cellConstantValue.getStringCellValue() + "");
+						configBean.getListDataConstant().add(dataBean);
+					}
 				}
 
 				columnReaded++;
@@ -362,7 +370,7 @@ public class GenerateData {
 										+ "> skos:notation \""
 										+ skosBean.getId() + "\".\n");
 								resultFin.append("<" + skosBean.getURI()
-										+ "> skos:prefLabel \"" + label
+										+ "> skos:prefLabel \"" + Utils.prefLabelClean(label)
 										+ "\".\n");
 
 								resultFin.append("\n");
@@ -409,9 +417,7 @@ public class GenerateData {
 		log.debug("End backup");
 	}
 
-	/**
-	 * Starting process method
-	 */
+
 	private void extractInformation() {
 		log.debug("Init extractInformation");
 		// Getting input files

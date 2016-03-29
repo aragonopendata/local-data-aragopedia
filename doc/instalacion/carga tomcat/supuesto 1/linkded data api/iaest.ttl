@@ -103,7 +103,8 @@ OpenData:iaest a api:API
 		OpenData:CubosDimensionValor,
 		OpenData:CubosMedidaValor,
 		OpenData:CubosDimensionPropiedad,
-		OpenData:CubosMedidaPropiedad
+		OpenData:CubosMedidaPropiedad,
+		OpenData:CubosRefArea
 	; api:viewer 					
 		#api:labelledDescribeViewer		
 		OpenData:vistaObservacion,
@@ -286,7 +287,7 @@ OpenData:CubosAll a api:ListEndpoint
 OpenData:CubosId a api:ListEndpoint 
 	; rdfs:label "Todas las observaciones del cubo" 	
 	; api:uriTemplate "dataset/{idCubo}" 
-	; api:variable [api:name "uriITEM"; api:value "http://opendata.aragon.es/recurso/iaest/cubo/{idCubo}"]	
+	; api:variable [api:name "uriITEM"; api:value "http://opendata.aragon.es/recurso/iaest/dataset/{idCubo}"]	
 	; api:selector [
 	    api:select """
 			select distinct ?item where{					
@@ -428,6 +429,29 @@ OpenData:CubosMedidaPropiedad a api:ListEndpoint
 							FILTER (?med = IRI(?uriITEM)).
 						}
 					}
+				}
+			}
+			""" ; 	
+		] ;
+	.
+	
+OpenData:CubosRefArea a api:ListEndpoint 
+	; rdfs:label "Cubos que tienen un area específica" 	
+	; api:uriTemplate "/cubosarea/{valor}" 
+	; api:variable [api:name "uriITEMA"; api:value "http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/{valor}"]	
+	; api:variable [api:name "uriITEMM"; api:value "http://opendata.aragon.es/recurso/territorio/Municipio/{valor}"]	
+	; api:variable [api:name "uriITEMC"; api:value "http://opendata.aragon.es/recurso/territorio/Comarca/{valor}"]	
+	; api:variable [api:name "uriITEMP"; api:value "http://opendata.aragon.es/recurso/territorio/Provincia/{valor}"]	
+	; api:defaultViewer OpenData:vistaDsd
+	; api:selector [
+	    api:select """
+			select distinct ?item where{
+				graph <http://opendata.aragon.es:8890/datacube>
+				{
+					?observacion qb:DataSet ?item.
+					?observacion sdmx-dimension:refArea ?val.
+					
+					FILTER (?val = IRI(?uriITEMA) || ?val = IRI(?uriITEMM) || ?val = IRI(?uriITEMC) || ?val = IRI(?uriITEMP)).
 				}
 			}
 			""" ; 	

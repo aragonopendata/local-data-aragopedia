@@ -19,6 +19,8 @@ Para un correcto uso del código se necesita tener una credencial del https://co
 
 ## URLs de la API:
 
+La documentación correspondiente usando Swagger se está subiendo a http://opendata.aragon.es/doc/
+
 * Todas las observaciones: http://opendata.aragon.es/recurso/iaest/observacion
 * Observación específica: http://opendata.aragon.es/recurso/iaest/observacion/{idCubo}/{idObservation}
 * Todos los dsd (Data Structure Definitions): http://opendata.aragon.es/recurso/iaest/dsd

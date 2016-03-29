@@ -23,22 +23,26 @@ public class EldaTest
 	
 	String searched ="http://opendata.aragon.es/";
 	String replacement="http://alzir.dia.fi.upm.es/";
+//	String replacement="http://localhost:8080/";
 	
     public EldaTest(  )
     {
     	dsdAll();
     	propertyAll();
+    	dimensionAll();
+    	medidaAll();
     	cubosAll();
     	dsdId();
     	cubosId();
-    	observacionAll();
+    	codelistId();
+//    	observacionAll();
     }
     
     public void observacionAll(){
     	log.info("Start test observacionAll");
     	boolean result=true;
-    	String URI="http://alzir.dia.fi.upm.es/recurso/iaest/observacion.json";
-    	result=testJSONURI(URI);
+    	String URI=replacement+"recurso/iaest/observacion.json";
+    	result=testJSONURI(URI,"observacionAll");
 		if(result){
 			log.info("Test observacionAll OK");
 		}else{
@@ -55,8 +59,8 @@ public class EldaTest
     public void dsdAll(){
     	log.info("Start test dsdAll");
     	boolean result=true;
-    	String URI="http://alzir.dia.fi.upm.es/recurso/iaest/dsd.json";
-    	result=testJSONURI(URI);
+    	String URI=replacement+"recurso/iaest/dsd.json";
+    	result=testJSONURI(URI,"dsdAll");
 		if(result){
 			log.info("Test dsdAll OK");
 		}else{
@@ -67,12 +71,12 @@ public class EldaTest
     
     public void dsdId(){
     	log.info("Start test dsdId");
-    	String URI="http://alzir.dia.fi.upm.es/recurso/iaest/dsd.json";
+    	String URI=replacement+"recurso/iaest/dsd.json";
     	ArrayList<String> listDsd = getDataJSONURI(URI,"_about",null);
     	boolean globalResult=true;
     	for (String uriDsd : listDsd) {
     		boolean result=true;
-        	result=testJSONURI(uriDsd);
+        	result=testJSONURI(uriDsd,"dsdId");
     		if(!result){
     			globalResult=false;
     			log.error("Test dsdId "+uriDsd+" KO");
@@ -89,8 +93,8 @@ public class EldaTest
     public void propertyAll(){
     	log.info("Start test propertyAll");
     	boolean result=true;
-    	String URI="http://alzir.dia.fi.upm.es/recurso/iaest/property.json";
-    	result=testJSONURI(URI);
+    	String URI=replacement+"recurso/iaest/property.json";
+    	result=testJSONURI(URI,"propertyAll");
 		if(result){
 			log.info("Test propertyAll OK");
 		}else{
@@ -99,21 +103,37 @@ public class EldaTest
 		log.info("End test propertyAll");
     }
     
-    public void dimensionId(){
-    	log.info("Start test dimensionId");
-    	log.info("End test dimensionId");
+    public void dimensionAll(){
+    	log.info("Start test dimensionAll");
+    	boolean result=true;
+    	String URI=replacement+"recurso/iaest/dimension.json";
+    	result=testJSONURI(URI,"dimensionAll");
+		if(result){
+			log.info("Test dimensionAll OK");
+		}else{
+			log.error("Test dimensionAll KO");
+		}
+		log.info("End test dimensionAll");
     }
     
-    public void medidaId(){
-    	log.info("Start test medidaId");
-    	log.info("End test medidaId");
+    public void medidaAll(){
+    	log.info("Start test medidaAll");
+    	boolean result=true;
+    	String URI=replacement+"recurso/iaest/medida.json";
+    	result=testJSONURI(URI,"medidaAll");
+		if(result){
+			log.info("Test medidaAll OK");
+		}else{
+			log.error("Test medidaAll KO");
+		}
+    	log.info("End test medidaAll");
     }
     
     public void cubosAll(){
     	log.info("Start test cubosAll");
     	boolean result=true;
-    	String URI="http://alzir.dia.fi.upm.es/recurso/iaest/dataset.json";
-    	result=testJSONURI(URI);
+    	String URI=replacement+"recurso/iaest/dataset.json";
+    	result=testJSONURI(URI,"cubosAll");
 		if(result){
 			log.info("Test cubosAll OK");
 		}else{
@@ -124,12 +144,12 @@ public class EldaTest
     
     public void cubosId(){
     	log.info("Start test cubosId");
-    	String URI="http://alzir.dia.fi.upm.es/recurso/iaest/dataset.json";
+    	String URI=replacement+"recurso/iaest/dataset.json";
     	ArrayList<String> listCubos = getDataJSONURI(URI,"_about",null);
     	boolean globalResult=true;
     	for (String uriCubo : listCubos) {
     		boolean result=true;
-        	result=testJSONURI(uriCubo);
+        	result=testJSONURI(uriCubo,"cubosId");
     		if(!result){
     			globalResult=false;
     			log.error("Test dsdId "+uriCubo+" KO");
@@ -175,6 +195,22 @@ public class EldaTest
     
     public void codelistId(){
     	log.info("Start test codelistId");
+    	String URI=replacement+"recurso/iaest/dimension.json";
+    	ArrayList<String> listCubos = getDataJSONURI(URI,"qb:codeList",null);
+    	boolean globalResult=true;
+    	for (String uriCubo : listCubos) {
+    		boolean result=true;
+        	result=testJSONURI(uriCubo,"codelistId");
+    		if(!result){
+    			globalResult=false;
+    			log.error("Test codelistId "+uriCubo+" KO");
+    		}
+		}
+    	if(globalResult){
+			log.info("Test codelistId OK");
+		}else{
+			log.error("Test codelistId KO");
+		}
     	log.info("End test codelistId");
     }
     
@@ -184,7 +220,7 @@ public class EldaTest
     }
     
     
-    private boolean testJSONURI(String URI) {
+    private boolean testJSONURI(String URI, String test) {
         String content=null;
         String next=null;
         JSONParser parser=new JSONParser();
@@ -199,6 +235,10 @@ public class EldaTest
             parser.parse(content);
             
             JSONObject json=(JSONObject) parser.parse(content);
+            if(!validateJSON(json,test)){
+            	log.error("Error in URI "+URI);
+                return false;
+            }
         	JSONObject result = (JSONObject)json.get("result");
 //        	JSONArray items = (JSONArray) result.get("items");
 //        	for(int h=0;h<items.size();h++){
@@ -210,7 +250,7 @@ public class EldaTest
 //			}
         	next = (String) result.get("next");
         	if(next!=null){
-        		testJSONURI(next);
+        		testJSONURI(next,test);
         	}
         } catch (ParseException e) {    
             log.error("Error in URI "+next,e);
@@ -219,7 +259,9 @@ public class EldaTest
         
         return true;
     }
-    //	http://alzir.dia.fi.upm.es/recurso/iaest/dsd.json
+    
+
+	//	http://alzir.dia.fi.upm.es/recurso/iaest/dsd.json
     private ArrayList<String> getDataJSONURI(String URI, String search, ArrayList<String> listResult) {
     	if(listResult==null){
     		listResult = new ArrayList<String>();
@@ -241,7 +283,7 @@ public class EldaTest
         	for(int h=0;h<items.size();h++){
         		JSONObject item=(JSONObject) items.get(h);
 				String about=(String)item.get(search);
-				if(Utils.validValue(about)){
+				if(Utils.v(about)){
 					listResult.add(replaceURI(about)+".json");
 				}
 			}
@@ -264,6 +306,32 @@ public class EldaTest
     	}
     	return source;
     }
+    
+    private boolean validateJSON(JSONObject json, String test) {
+		
+//    	JSONObject result = (JSONObject)json.get("result");
+//    	JSONArray items = (JSONArray) result.get("items");
+//    	for(int h=0;h<items.size();h++){
+//    		JSONObject item=(JSONObject) items.get(h);
+//    	
+//	    	switch (test) {
+//			case "codelistId":
+//	    		if(item.get("_about")!=null){        		
+//	    			if(item.get("hasTopConcept")!=null)
+//	    				if(item.get("notation")!=null)
+//	    					return true;
+//	    		}else{
+//	    			return false;
+//	    		}
+//	    		break;
+//			case "dsdId":
+//				break;
+//				
+//			}
+//    	}
+		return true;
+		
+	}
     
     /**
 	 * Main's class

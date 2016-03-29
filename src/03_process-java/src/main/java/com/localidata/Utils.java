@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -14,19 +13,22 @@ import java.net.URLEncoder;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.UUID;
 
 import javax.xml.bind.DatatypeConverter;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 
 public class Utils {
+
 
 	private final static Logger log = Logger.getLogger(Utils.class);
 
@@ -42,19 +44,48 @@ public class Utils {
 
 	private static String comunidadAragon = null;
 
+
+	public static String prefLabelClean(String chain) {
+		if(Utils.v(chain) && chain.length()>=2)
+			if(chain.charAt(chain.length()-2)==',' && chain.charAt(chain.length()-1)=='¿'){
+				chain = chain.substring(0, chain.length()-2);
+			}
+		return chain;
+	}
+	
+
+	public static String nameDataBeanClean(String chain) {
+		String chainToURI = chain.replace("á", "a");
+		chainToURI = chainToURI.replace("á", "a");
+		chainToURI = chainToURI.replace("é", "e");
+		chainToURI = chainToURI.replace("í", "i");
+		chainToURI = chainToURI.replace("ó", "o");
+		chainToURI = chainToURI.replace("ú", "u");
+		chainToURI = chainToURI.replace("ñ", "n");
+
+		chainToURI = chainToURI.replace("ü", "u");
+		return chainToURI;
+	}
+	
+
 	public static String weakClean(String chain) {
 		chain=chain.replace(new String(Character.toChars(0)), "");
+		chain = chain.replace("", "");
 		chain=chain.replace("\"", "");
 		return chain;
 	}
 	
-	public static String urlify(String chain) {
 
+	public static String urlify(String chain) {
+		
+	
 		String chainToURI = chain.trim().toLowerCase();
+		
 		chainToURI = chainToURI.replace(" - ", "-");
-		chainToURI = chainToURI.replace(" ", "-");
 		chainToURI = chainToURI.replace("\\", "");
 		chainToURI = chainToURI.replace("/", "");
+		chainToURI = chainToURI.replace("_", "");
+		chainToURI = chainToURI.replace(" ", "-");
 		chainToURI = chainToURI.replaceAll("\\s+", "_");
 		chainToURI = chainToURI.replaceAll("&", "");
 		chainToURI = chainToURI.replaceAll("'", "");
@@ -65,16 +96,22 @@ public class Utils {
 		chainToURI = chainToURI.replace(";", "");
 		chainToURI = chainToURI.replace(",", "");
 		chainToURI = chainToURI.replace("\\", "");
-		chainToURI = chainToURI.replace("_", "");
 		chainToURI = chainToURI.replace(".", "");
 		chainToURI = chainToURI.replace(":", "");
 		chainToURI = chainToURI.replace("|", "");
 		chainToURI = chainToURI.replace("=", "");
 		chainToURI = chainToURI.replace(">", "");
 		chainToURI = chainToURI.replace("<", "");
-		chainToURI = chainToURI.replace("%", "");
 		chainToURI = chainToURI.replace("+", "");
 		chainToURI = chainToURI.replace("\"", "");
+		chainToURI = chainToURI.replace("%", "");
+		chainToURI = chainToURI.replace("*", "");
+		chainToURI = chainToURI.replace("", "");
+		if(chainToURI.length()>0){
+			while(chainToURI.charAt(0)=='-')
+				chainToURI = chainToURI.substring(1, chainToURI.length());
+		}
+		
 
 		chainToURI = chainToURI.replace("!", "");
 		chainToURI = chainToURI.replace("¡", "");
@@ -94,6 +131,7 @@ public class Utils {
 		chainToURI = chainToURI.replace("ª", "");
 		chainToURI = chainToURI.replace(new String(Character.toChars(0)), "");
 		chainToURI = chainToURI.replace(new String(Character.toChars(13)), "");
+		
 
 		try {
 			chainToURI = URLEncoder.encode(chainToURI, "UTF-8");
@@ -141,12 +179,13 @@ public class Utils {
 		return chainToURI;
 	}
 
+
 	public static String genUUIDHash(String id) {
 
 		String hash;
 		UUID uuid = null;
 
-		if (!Utils.validValue(id)) {
+		if (!Utils.v(id)) {
 			log.error("Invalid ID generating a UUID");
 			return null;
 		}
@@ -163,12 +202,45 @@ public class Utils {
 		return uuid.toString();
 	}
 	
-	public static boolean validValue(String value) {
-		if ((value != null) && (!value.equals("")))
+	public static boolean v(Object c) {
+
+		if (c == null)
+			return false;
+
+		if (c instanceof StringBuffer) {
+			if (((StringBuffer) c).length() <= 0)
+				return false;
 			return true;
-		return false;
+		}
+
+		if (c instanceof List) {
+			if (((List<?>) c).size() == 0)
+				return false;
+			return true;
+		}
+
+		if (c instanceof String) {
+			if (c.equals(""))
+				return false;
+			return true;
+		}
+
+		if (Float.class.isInstance(c)) {
+			if ((float) c == -1)
+				return false;
+			return true;
+		}
+
+		if (Integer.class.isInstance(c)) {
+			if ((int) c == -1)
+				return false;
+			return true;
+		}
+
+		return true;
 	}
 	
+
 	public static String getUrlRefArea(String header, String cleanCell, String fileName) {
 
 		String valueCell = cleanCell;
@@ -186,10 +258,11 @@ public class Utils {
 		} else if (header.contains("provincia")) {
 			cadidateUrl = "http://opendata.aragon.es/recurso/territorio/Provincia/";
 			ttl = getProvinciasAragon();
-		} else if (header.contains("comunidad") || header.contains("aragon")) {
+		} else if (header.contains("comunidad") || header.contains("aragon") || header.contains("ccaa")) {
 			cadidateUrl = "http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/";
 			ttl = getComunidadAragon();
 		}
+		/* Casos puntuales que se salen de la forma estandar de crear la url */
 		if (valueCell.contains("Torla-Ordesa")) {
 			TransformToRDF.insertError(fileName+". ERROR. Column "+header+". "+valueCell+" instead of Torla");
 			cadidateUrl += "Torla";
@@ -215,6 +288,7 @@ public class Utils {
 		return "<"+cadidateUrl+">";
 	}
 	
+
 	private static String getComarcasAragon() {
 		if (comarcasAragon == null) {
 			String url = "http://opendata.aragon.es/recurso/territorio/Comarca";
@@ -244,6 +318,7 @@ public class Utils {
 		return comarcasAragon;
 	}
 	
+
 	private static String getMunicipiosAragon() {
 		if (municipiosAragon == null) {
 			String url = "http://opendata.aragon.es/recurso/territorio/Municipio";
@@ -272,6 +347,7 @@ public class Utils {
 		}
 		return municipiosAragon;
 	}
+	
 
 	private static String getProvinciasAragon() {
 		if (provinciasAragon == null) {
@@ -301,6 +377,7 @@ public class Utils {
 		}
 		return provinciasAragon;
 	}
+	
 
 	private static String getComunidadAragon() {
 		if (comunidadAragon == null) {
@@ -330,6 +407,7 @@ public class Utils {
 		}
 		return comunidadAragon;
 	}
+	
 
 	public static String processURLGet(String url, String urlParameters,
 			Map<String, String> headers) {
@@ -401,11 +479,9 @@ public class Utils {
 
 		StringBuilder content = new StringBuilder();
 
-
 		try {
 
 			URL url = new URL(URI);
-
 
 			HttpURLConnection httpConnection = (HttpURLConnection) url.openConnection();
 			httpConnection.setRequestMethod("GET");
@@ -455,7 +531,7 @@ public class Utils {
 	public static boolean isInteger(String cell) {
 		boolean resultado = false;
 
-		String pattern = "\\d+";
+		String pattern = "^-?[0-9]+$";
 		Pattern r = Pattern.compile(pattern);
 		Matcher m = r.matcher(cell);
 		if (m.find()) {
@@ -467,8 +543,8 @@ public class Utils {
 	
 	public static boolean isDouble(String cell) {
 		boolean resultado = false;
-
-		String pattern = "^\\d+(\\.\\d+)?";
+		
+		String pattern = "^-?[0-9]+[,|.]+[0-9]*$";
 		Pattern r = Pattern.compile(pattern);
 		Matcher m = r.matcher(cell);
 		if (m.find()) {
@@ -491,4 +567,19 @@ public class Utils {
 		return resultado;
 	}
 
+	public static boolean isDate(String string) {
+		return (isInteger(string) && string.length()==4) ||  
+				(isInteger(string) && string.length()==2);
+	}
+	
+
+	public static void main(String[] args) {
+
+		if ((log == null) || (log.getLevel() == null))
+			PropertyConfigurator.configure("log4j.properties");
+		String s = "Cedida gratis o a bajo precio por otro hogar, la empresa,¿";
+		log.info(Utils.prefLabelClean(s));
+		String s2 = "Cedida gratis o a bajo precio por otro hogar,¿ la empresa";
+		log.info(Utils.prefLabelClean(s2));
+	}
 }

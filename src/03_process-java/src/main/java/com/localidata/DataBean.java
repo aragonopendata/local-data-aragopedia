@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 
 
 public class DataBean {
+	
 
 	private final static Logger log = Logger.getLogger(DataBean.class);
 
@@ -16,15 +17,31 @@ public class DataBean {
 	private String nameNormalized;
 
 	private String normalizacion;
+
 	private String dimensionMesureEntry;
+
 	private String dimensionMesure;
+
 	private String dimensionMesureProperty;
+
 	private String dimensionMesureSDMX;
 
 	private String type;
+
 	private String constant;
 
-	private HashMap<String, SkosBean> mapSkos = new HashMap<String, SkosBean>();
+	private String idConfig;
+	
+	private boolean writeSkos;
+	
+	private String kosName;
+
+	private HashMap<String, SkosBean> mapSkos;
+	
+	public DataBean(){
+		writeSkos=true;
+		mapSkos = new HashMap<String, SkosBean>();
+	}
 	
 	public String getName() {
 		return name;
@@ -75,6 +92,7 @@ public class DataBean {
 		else
 			this.type = type;
 	}
+
 	public HashMap<String, SkosBean> getMapSkos() {
 		return mapSkos;
 	}
@@ -107,28 +125,41 @@ public class DataBean {
 	}
 	public void setConstant(String constant) {
 		this.constant = constant;
+	}	
+	public String getIdConfig() {
+		return idConfig;
 	}
+	public void setIdConfig(String idConfig) {
+		this.idConfig = idConfig;
+	}	
+	public boolean isWriteSkos() {
+		return writeSkos;
+	}
+	public void setWriteSkos(boolean writeSkos) {
+		this.writeSkos = writeSkos;
+	}
+	public String getKosName() {
+		return kosName;
+	}
+	public void setKosName(String kosName) {
+		this.kosName = kosName;
+	}
+
 	@Override
 	public String toString() {
 		final int maxLen = 20;
-		return "DataBean [dimension="
-				+ Constants.dimension
-				+ ", mesure="
-				+ Constants.mesure
-				+ ", dimensionProperty="
-				+ Constants.dimensionProperty
-				+ ", mesureProperty="
-				+ Constants.mesureProperty
-				+ ", name="
+		return "DataBean [name="
 				+ name
 				+ ", normalizacion="
 				+ normalizacion
-				+ ", DimensionMesure="
-				+ dimensionMesure
-				+ ", DimensionMesureProperty="
-				+ dimensionMesureProperty
+				+ ", dimensionMesureEntry="
+				+ dimensionMesureEntry
 				+ ", type="
 				+ type
+				+ ", constant="
+				+ constant
+				+ ", idConfig="
+				+ idConfig
 				+ ", mapSkos="
 				+ (mapSkos != null ? toString(mapSkos.entrySet(), maxLen)
 						: null) + "]";
@@ -148,10 +179,72 @@ public class DataBean {
 	}
 	
 	public String generateSkosMapping(){
-
 		String nameFile ="mapping-"+Utils.urlify(getName());
-
 		return nameFile+".xlsx";
 	}
 	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result
+				+ ((idConfig == null) ? 0 : idConfig.hashCode());
+		result = prime * result
+				+ ((nameNormalized == null) ? 0 : nameNormalized.hashCode());
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		DataBean other = (DataBean) obj;
+		if (idConfig == null) {
+			if (other.idConfig != null)
+				return false;
+		} else if (!idConfig.equals(other.idConfig))
+			return false;
+		if (nameNormalized == null) {
+			if (other.nameNormalized != null)
+				return false;
+		} else if (!nameNormalized.equals(other.nameNormalized))
+			return false;
+		return true;
+	}
+	@SuppressWarnings("unchecked")
+	public HashMap<String, SkosBean> mergeSkos(DataBean data){
+		log.debug("init mergeSkos "+data);
+		HashMap<String, SkosBean> mapSkos = null;
+		mapSkos = (HashMap<String, SkosBean>) this.mapSkos.clone();
+		if(this.equals(data)){
+			return null;
+		}
+		for (Iterator<SkosBean> itMapSkosSource = this.mapSkos.values().iterator(); itMapSkosSource.hasNext();) {
+			SkosBean skosSource = itMapSkosSource.next();
+			boolean continua=false;
+			
+			for (Iterator<SkosBean> itMapSkosTarget = data.getMapSkos().values().iterator(); itMapSkosTarget.hasNext();) {
+				SkosBean skosTarget = itMapSkosTarget.next();
+				if(!this.mapSkos.values().contains(skosTarget)){
+					if(skosTarget.getId().equals(skosSource.getId())){
+						continua=true;
+						continue;
+					}else if(skosTarget.getId().startsWith(skosSource.getId())){
+						skosTarget.setParent(skosSource);
+						skosSource.getSons().add(skosTarget);
+						mapSkos.put(skosTarget.getId(), skosTarget);
+						continua=true;
+						continue;
+					}
+				}
+			}
+			if(!continua)
+				return null;
+		}
+		log.debug("end mergeSkos "+data);
+		return mapSkos;
+	}
 }

@@ -6,10 +6,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 
@@ -40,9 +40,10 @@ public class GenerateData {
 
 	String[] extensionsConfig = new String[] { "xlsx", "csv" };
 	HashMap<String, ConfigBean> mapconfig = new HashMap<String, ConfigBean>();
+	ArrayList<DataBean> dataWithSkos = new ArrayList<DataBean>();
 	private String formatConfig = "xlsx";
-	private HashSet<String> dsdSet = new HashSet<String>();
-	private HashSet<String> propertiesSet = new HashSet<String>();
+	private ArrayList<String> dsdSet = new ArrayList<String>();
+	private ArrayList<String> propertiesSet = new ArrayList<String>();
 
 
 	public GenerateData(String input, String output, String config) {
@@ -62,8 +63,14 @@ public class GenerateData {
 			app.backup();
 			app.extractConfig();
 			app.extractInformation();
+			app.createSkos();
 			log.info("Finish process");
-		} 
+		} else {
+			log.info("Se deben de pasar dos parámetros: ");
+			log.info("\tEl directorio donde están los archivos de entrada");
+			log.info("\tEl directorio donde se van a escribir los archivos ttl");
+			log.info("\tEl directorio donde están los excel de configuación");
+		}
 
 	}
 
@@ -113,7 +120,7 @@ public class GenerateData {
 
 				configBean.setId(id);
 				if (formatConfig.equals("csv")) {
-					readCsv(file, configBean);
+//					readCsv(file, configBean);
 				} else {
 					readXlsx(file, configBean);
 				}
@@ -122,47 +129,29 @@ public class GenerateData {
 						areasReportFile);
 			}
 		}
-		log.info("Finaliza de extraerse la configuración");
-		log.debug("End extractConfig");
-	}
-
-	private void readCsv(File file, ConfigBean configBean) {
-		log.debug("Init readCsv");
-		List<String> csvLines;
-		try {
-			csvLines = FileUtils.readLines(file, "UTF-8");
-
-			String[] cellsName = csvLines.get(0).split(",");
-			String[] cellsNormalization = csvLines.get(1).split(",");
-			String[] cellsDimMesure = csvLines.get(2).split(",");
-			String[] cellsType = csvLines.get(3).split(",");
-			String[] cellsSkosfile = csvLines.get(4).split(",");
-
-			boolean cont = true;
-			int columnReaded = 0;
-			while (cont && columnReaded < cellsName.length) {
-				DataBean dataBean = new DataBean();
-				if (cellsName[columnReaded] == null) {
-					cont = false;
-				} else {
-					dataBean.setName(removeStartEndCaracter(cellsName[columnReaded]));
-					dataBean.setNormalizacion(removeStartEndCaracter(cellsNormalization[columnReaded]));
-					dataBean.setDimensionMesure(removeStartEndCaracter(cellsDimMesure[columnReaded]));
-					dataBean.setType(removeStartEndCaracter(cellsType[columnReaded]));
-					if (Utils
-							.v(removeStartEndCaracter(cellsSkosfile[columnReaded]))) {
-						HashMap<String, SkosBean> mapSkos = processSkos(removeStartEndCaracter(cellsSkosfile[columnReaded]));
-						dataBean.setMapSkos(mapSkos);
-					}
-					configBean.getMapData().put(
-							Utils.urlify(dataBean.getName()), dataBean);
-					columnReaded++;
+		
+		ArrayList<DataBean> dataWithSkosRemove = new ArrayList<DataBean>();
+		for (Iterator<DataBean> it1 = dataWithSkos.iterator(); it1.hasNext();) {
+			DataBean data1 = (DataBean) it1.next();
+			for (Iterator<DataBean> it2 = dataWithSkos.iterator(); it2.hasNext();) {
+				DataBean data2 = (DataBean) it2.next();
+				HashMap<String, SkosBean> mapSkos = data1.mergeSkos(data2);
+				if(mapSkos!=null){
+					log.info("Kos "+data1.getName()+" is parent of "+data2.getName());
+					dataWithSkosRemove.add(data2);
+					data2.setWriteSkos(false);
+					data1.setMapSkos(mapSkos);
+					data2.setMapSkos(mapSkos);
+					mapconfig.get(data1.getIdConfig()).getMapData().get(data1.getNameNormalized()).setMapSkos(mapSkos);
+					mapconfig.get(data2.getIdConfig()).getMapData().get(data2.getNameNormalized()).setMapSkos(mapSkos);
 				}
 			}
-		} catch (IOException e) {
-			log.error("Error read csv ", e);
 		}
-		log.debug("End readCsv");
+		if(dataWithSkosRemove.size()>0)
+			dataWithSkos.removeAll(dataWithSkosRemove);
+		
+		log.info("Finaliza de extraerse la configuración");
+		log.debug("End extractConfig");
 	}
 
 	private String removeStartEndCaracter(String csvLine) {
@@ -195,16 +184,19 @@ public class GenerateData {
 
 		Sheet sheet = wb.getSheetAt(0);
 		Row rowName = sheet.getRow(0);
-		Row rowNormalization = sheet.getRow(1);
-		Row rowDimMesure = sheet.getRow(2);
-		Row rowType = sheet.getRow(3);
-		Row rowSkosfile = sheet.getRow(4);
-		Row rowConstant = sheet.getRow(5);
-		Row rowConstantValue = sheet.getRow(6);
+		Row rowNameNormalized = sheet.getRow(1);
+		Row rowNormalization = sheet.getRow(2);
+		Row rowDimMesure = sheet.getRow(3);
+		Row rowType = sheet.getRow(4);
+		Row rowSkosfile = sheet.getRow(5);
+		Row rowConstant = sheet.getRow(6);
+		Row rowConstantValue = sheet.getRow(7);
+		Row rowKosName = sheet.getRow(8);
 		boolean cont = true;
 		int columnReaded = 0;
 		while (cont) {
 			Cell cellName = rowName.getCell(columnReaded);
+			Cell cellNameNormalized = rowNameNormalized.getCell(columnReaded);
 			Cell cellNormalization = rowNormalization.getCell(columnReaded);
 			Cell cellDimMesure = rowDimMesure.getCell(columnReaded);
 			Cell cellType = rowType.getCell(columnReaded);
@@ -217,15 +209,22 @@ public class GenerateData {
 			Cell cellConstantValue = null;
 			if (rowConstantValue != null)
 				cellConstantValue = rowConstantValue.getCell(columnReaded);
-				
+			Cell cellKosName= null;
+			if (rowKosName != null)
+				cellKosName = rowKosName.getCell(columnReaded);
+			
 			DataBean dataBean = new DataBean();
 			if (cellName == null) {
-				cont = false;
+				if(rowName.getCell((columnReaded+1))==null)					
+					cont = false;
+				else
+					columnReaded++;
 			} else {
 				dataBean.setName(cellName.getStringCellValue());
-				dataBean.setNormalizacion(cellNormalization
-						.getStringCellValue());
+				dataBean.setNameNormalized(cellNameNormalized.getStringCellValue());
+				dataBean.setNormalizacion(cellNormalization.getStringCellValue());
 				dataBean.setDimensionMesure(cellDimMesure.getStringCellValue());
+				dataBean.setIdConfig(configBean.getId());
 				String type="";
 				if(cellType!=null){
 					type=cellType.getStringCellValue();
@@ -233,15 +232,16 @@ public class GenerateData {
 					type = "xsd:string";
 				}
 				dataBean.setType(type);
-				if (cellSkosfile != null) {
+				if (cellSkosfile != null && !cellSkosfile.getStringCellValue().equals("")) {
 					HashMap<String, SkosBean> mapSkos = processSkos(cellSkosfile
 							.getStringCellValue());
 					dataBean.setMapSkos(mapSkos);
 					configBean.getMapData().put(
-							Utils.urlify(dataBean.getName()), dataBean);
+							dataBean.getNameNormalized(), dataBean);
+					dataWithSkos.add(dataBean);
 				} else {
 					configBean.getMapData().put(
-							Utils.urlify(dataBean.getName()), dataBean);
+							dataBean.getNameNormalized(), dataBean);
 				}
 				if (Prop.addDataConstant && cellConstant != null && cellConstant.getStringCellValue().equals(Constants.constante)){
 					if(cellConstantValue!=null){
@@ -249,7 +249,12 @@ public class GenerateData {
 						configBean.getListDataConstant().add(dataBean);
 					}
 				}
-
+				if(cellKosName!=null){
+					dataBean.setKosName(cellKosName.getStringCellValue());
+				}else{
+					dataBean.setKosName(dataBean.getNameNormalized());
+				}
+				
 				columnReaded++;
 			}
 		}
@@ -322,70 +327,75 @@ public class GenerateData {
 				+ "kos.ttl");
 		StringBuffer resultIni = new StringBuffer();
 		StringBuffer resultFin = new StringBuffer();
-		HashSet<String> kosCreated = new HashSet<String>();
+		ArrayList<String> kosCreated = new ArrayList<String>();
 		resultIni.append(TransformToRDF.addPrefix());
-		for (Iterator<String> iterator = mapconfig.keySet().iterator(); iterator
-				.hasNext();) {
-			String keyConfig = iterator.next();
-			ConfigBean configBean = mapconfig.get(keyConfig);
-			if (configBean != null) {
-				for (Iterator<String> iterator2 = configBean.getMapData().keySet()
-						.iterator(); iterator2.hasNext();) {
-					String keyData = iterator2.next();
-					DataBean dataBean = configBean.getMapData().get(keyData);
-					if (dataBean != null
-							&& !kosCreated.contains(dataBean.getName())
-							&& dataBean.getMapSkos().size() > 0) {
-						String suject = Prop.host + "/" + Prop.kosName + "/"
-								+ Prop.datasetName + "/"
-								+ Utils.urlify(dataBean.getName());
-						resultIni.append("<" + suject + "> "
-								+ "a skos:ConceptScheme.\n");
-						resultIni.append("<" + suject + "> skos:notation \""
-								+ Utils.urlify(dataBean.getName()) + "\".\n");
-						resultIni.append("<" + suject + "> rdfs:label \""
-								+ dataBean.getName() + "\".\n");
 
-						for (Iterator<String> iterator3 = dataBean.getMapSkos()
-								.keySet().iterator(); iterator3.hasNext();) {
-							// resultIni.append(resultFin);
-							String keySkos = iterator3.next();
-							SkosBean skosBean = dataBean.getMapSkos().get(
-									keySkos);
-							if (skosBean != null) {
-								resultIni.append("<" + suject
-										+ "> skos:hasTopConcept <"
-										+ skosBean.getURI() + ">.\n");
-								resultFin.append("<" + skosBean.getURI()
-										+ "> a skos:Concept.\n");
-								resultFin
-										.append("<" + skosBean.getURI()
-												+ "> skos:inScheme <" + suject
-												+ ">.\n");
-								String label = skosBean.getId();
-								if (skosBean.getLabel() != null
-										&& !skosBean.getLabel().equals(""))
-									label = skosBean.getLabel();
-								resultFin.append("<" + skosBean.getURI()
-										+ "> skos:notation \""
-										+ skosBean.getId() + "\".\n");
-								resultFin.append("<" + skosBean.getURI()
-										+ "> skos:prefLabel \"" + Utils.prefLabelClean(label)
-										+ "\".\n");
+		for (Iterator<DataBean> itDataBean = dataWithSkos.iterator(); itDataBean.hasNext();) {
 
-								resultFin.append("\n");
-							}
+			DataBean dataBean = itDataBean.next();
+			if (dataBean != null
+					&& !kosCreated.contains(dataBean.getNameNormalized())
+					&& dataBean.getMapSkos().size() > 0) {
+				String suject = Prop.host + "/" + Prop.kosName + "/"
+						+ Prop.datasetName + "/"
+						+ dataBean.getKosName();
+				resultIni.append("<" + suject + "> "
+						+ "a skos:ConceptScheme;\n");
+				resultIni.append("\tskos:notation \""
+						+ dataBean.getNameNormalized() + "\";\n");
+				resultIni.append("\trdfs:label \""
+						+ dataBean.getName() + "\";\n");
+
+				for (Iterator<String> iterator3 = dataBean.getMapSkos()
+						.keySet().iterator(); iterator3.hasNext();) {
+					// resultIni.append(resultFin);
+					String keySkos = iterator3.next();
+					SkosBean skosBean = dataBean.getMapSkos().get(
+							keySkos);
+					if (skosBean != null) {
+						String sujectKos = suject + "/" + Utils.urlify(skosBean.getId());
+						if(skosBean.getParent()==null){
+							resultIni.append("\tskos:hasTopConcept <"
+								+ sujectKos + ">;\n");
 						}
-						resultIni.append("\n");
-						resultIni.append(resultFin);
-						kosCreated.add(dataBean.getName());
+						resultFin.append("<" + sujectKos
+								+ "> a skos:Concept;\n");
+						resultFin
+								.append("\tskos:inScheme <" + suject
+										+ ">;\n");
+						String label = skosBean.getId();
+						if (skosBean.getLabel() != null
+								&& !skosBean.getLabel().equals(""))
+							label = skosBean.getLabel();
+						resultFin.append("\tskos:notation \""
+								+ skosBean.getId() + "\";\n");
+						resultFin.append("\tskos:prefLabel \"" + Utils.prefLabelClean(label)
+								+ "\"");
+						if(skosBean.getSons().size()>0){
+							resultFin.append(";\n");
+							for (Iterator<SkosBean> itSons = skosBean.getSons().iterator(); itSons.hasNext();) {
+								SkosBean son = itSons.next();
+								resultFin.append("\tskos:narrower <" + suject + "/" + son.getId() + ">");
+								if(itSons.hasNext()){
+									resultFin.append(";\n");
+								}else{
+									resultFin.append(".\n");
+								}
+							}
+						}else{
+							resultFin.append(".\n");
+						}
+
+						resultFin.append("\n");
 					}
-					// escribir en fichero
-					Utils.stringToFileAppend(resultIni.toString(), kosFile);
-					resultIni.setLength(0);
-					resultFin.setLength(0);
 				}
+				resultIni.append("\n");
+				resultIni.append(resultFin);
+				kosCreated.add(dataBean.getNameNormalized());
 			}
+			Utils.stringToFileAppend(resultIni.toString(), kosFile);
+			resultIni.setLength(0);
+			resultFin.setLength(0);
 		}
 
 		log.info("end to create skos");
@@ -420,7 +430,6 @@ public class GenerateData {
 
 	private void extractInformation() {
 		log.debug("Init extractInformation");
-		// Getting input files
 		File inputDirectoryFile = new File(inputDirectoryString);
 		File propertiesFile = new File(outputDirectoryString + File.separator
 				+ "DatosTTL" + File.separator + "codelists" + File.separator
@@ -479,8 +488,7 @@ public class GenerateData {
 				log.error("Error al extraer la información ", e);
 			}
 		}
-
-		createSkos();
+		
 		log.debug("End extractInformation");
 	}
 }

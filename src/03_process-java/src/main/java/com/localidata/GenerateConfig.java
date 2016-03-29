@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
@@ -41,7 +40,7 @@ public class GenerateConfig {
 
 	public void generateAllConfig() {
 
-		HashSet<String> dimension = extractDimensions(dimensionDirectoryString);
+		ArrayList<String> dimension = extractDimensions(dimensionDirectoryString);
 		HashMap<String, ConfigBean> configExtrated = new HashMap<String, ConfigBean>();
 		File inputDirectoryFile = new File(inputDirectoryString);
 		Collection<File> listCSV = FileUtils.listFiles(inputDirectoryFile,
@@ -71,6 +70,7 @@ public class GenerateConfig {
 				configBean = new ConfigBean();
 				configBean.setId(id);
 			}
+
 			configBean.getLetters().add(letters);
 			try {
 				List<String> csvLines = FileUtils.readLines(file, "UTF-8");
@@ -120,26 +120,46 @@ public class GenerateConfig {
 								dataBean.setType("URI-Comunidad");
 							} else {
 								if (name.toLowerCase().contains("año")) {
-									dataBean.setNormalizacion("sdmx-dimension:refPeriod");
-									if (cellsFisrtLine.length > 0
-											&& cellsFisrtLine.length > h) {
-										if (Utils.isDate(cellsFisrtLine[h])) {
-											dataBean.setType("xsd:date");
-										} else {
-											dataBean.setNormalizacion(Prop.datasetName
-													+ "-dimension:"
-													+ Utils.urlify(name));
-											dataBean.setType("skos:Concept");
-											skosData.add(dataBean);
+									String type = "";
+									for (int j = 1; j < csvLines.size(); j++) {
+										String line = Utils.weakClean(csvLines.get(j));
+										if (Utils.v(line)) {
+											String[] cellsLine = line.split("\t");
+											if (cellsLine.length > 0
+													&& cellsLine.length > h) {
+												String cell = cellsLine[h];
+									
+												if (Utils.isDate(cell) && !type.equals("xsd:int")) {
+													type="xsd:date";
+												}else if (Utils.isInteger(cell)){
+													type="xsd:int";
+												}else{
+													log.info("La celda '"+cell+"' de la columna '"+name+"' no es un año");
+													break;
+												}
+											}
 										}
-									} else
+									}
+									if(type.equals("xsd:date")){
+										dataBean.setNormalizacion("sdmx-dimension:refPeriod");
+										dataBean.setType("xsd:date");
+									}else if(type.equals("xsd:int")){
+										dataBean.setDimensionMesure("medida");
+										dataBean.setNormalizacion(Prop.datasetName
+												+ "-measure:" + Utils.urlify(name));
+										dataBean.setType("xsd:int");
+									}else{
+										dataBean.setNormalizacion(Prop.datasetName
+												+ "-dimension:"
+												+ Utils.urlify(name));
 										dataBean.setType("xsd:string");
-								} else {
+									}
+								} else{
 									dataBean.setNormalizacion(Prop.datasetName
 											+ "-dimension:"
 											+ Utils.urlify(name));
 									dataBean.setType("skos:Concept");
-									skosData.add(dataBean);
+									skosData.add(dataBean);										
 								}
 							}
 						} else {
@@ -210,6 +230,7 @@ public class GenerateConfig {
 		generateSkosMapping();
 	}
 
+
 	private void extractSkosConcept(List<String> csvLines,
 			ArrayList<DataBean> skosData) {
 		String headerLine = Utils.weakClean(csvLines.get(0));
@@ -275,8 +296,8 @@ public class GenerateConfig {
 	}
 
 
-	private HashSet<String> extractDimensions(String directoryString) {
-		HashSet<String> result = new HashSet<String>();
+	private ArrayList<String> extractDimensions(String directoryString) {
+		ArrayList<String> result = new ArrayList<String>();
 		File dimensionDirectoryFile = new File(directoryString);
 		Collection<File> listCSV = FileUtils.listFiles(dimensionDirectoryFile,
 				extensions, true);
@@ -287,7 +308,7 @@ public class GenerateConfig {
 	}
 
 
-	private boolean contains(HashSet<String> set, String busqueda) {
+	private boolean contains(ArrayList<String> set, String busqueda) {
 		boolean result = false;
 		for (String setString : set) {
 			if (setString
@@ -352,7 +373,12 @@ public class GenerateConfig {
 					args[2]);
 			config.generateAllConfig();
 			log.info("Finish process");
-		} 
+		} else {
+			log.info("Se deben de pasar dos parámetros: ");
+			log.info("\tEl directorio donde están los archivos de entrada");
+			log.info("\tEl directorio donde están las dimensiones");
+			log.info("\tEl directorio donde se va a escribir la configuración resultante");
+		}
 
 	}
 

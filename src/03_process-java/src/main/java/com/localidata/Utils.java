@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -17,15 +16,16 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.UUID;
 
 import javax.xml.bind.DatatypeConverter;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+
 
 public class Utils {
 
@@ -51,6 +51,20 @@ public class Utils {
 				chain = chain.substring(0, chain.length()-2);
 			}
 		return chain;
+	}
+	
+
+	public static String nameDataBeanClean(String chain) {
+		String chainToURI = chain.replace("á", "a");
+		chainToURI = chainToURI.replace("á", "a");
+		chainToURI = chainToURI.replace("é", "e");
+		chainToURI = chainToURI.replace("í", "i");
+		chainToURI = chainToURI.replace("ó", "o");
+		chainToURI = chainToURI.replace("ú", "u");
+		chainToURI = chainToURI.replace("ñ", "n");
+
+		chainToURI = chainToURI.replace("ü", "u");
+		return chainToURI;
 	}
 	
 
@@ -200,7 +214,7 @@ public class Utils {
 		}
 
 		if (c instanceof List) {
-			if (((List) c).size() == 0)
+			if (((List<?>) c).size() == 0)
 				return false;
 			return true;
 		}
@@ -465,22 +479,17 @@ public class Utils {
 
 		StringBuilder content = new StringBuilder();
 
-
 		try {
 
 			URL url = new URL(URI);
-
 
 			HttpURLConnection httpConnection = (HttpURLConnection) url.openConnection();
 			httpConnection.setRequestMethod("GET");
 			httpConnection.setConnectTimeout(10000);
 
-
-
 			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(httpConnection.getInputStream()));
 
 			String line;
-
 
 			while ((line = bufferedReader.readLine()) != null) {
 				content.append(line + "\n");
@@ -535,13 +544,10 @@ public class Utils {
 	public static boolean isDouble(String cell) {
 		boolean resultado = false;
 		
-
 		String pattern = "^-?[0-9]+[,|.]+[0-9]*$";
-
 		Pattern r = Pattern.compile(pattern);
 		Matcher m = r.matcher(cell);
 		if (m.find()) {
-
 			resultado = true;
 		}
 
@@ -562,7 +568,8 @@ public class Utils {
 	}
 
 	public static boolean isDate(String string) {
-		return isInteger(string) && string.length()==4;
+		return (isInteger(string) && string.length()==4) ||  
+				(isInteger(string) && string.length()==2);
 	}
 	
 

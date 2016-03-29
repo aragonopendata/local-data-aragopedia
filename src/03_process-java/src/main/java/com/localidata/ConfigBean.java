@@ -8,8 +8,10 @@ import java.util.Iterator;
 
 import org.apache.log4j.Logger;
 
+
 public class ConfigBean {
 	
+
 	private final static Logger log = Logger.getLogger(ConfigBean.class);
 
 	private String nameFile;
@@ -93,6 +95,13 @@ public class ConfigBean {
 		}
 		for (DataBean dataBean : listDataConstant) {
 			content=content+fieldSeparator+dataBean.getName()+fieldSeparator+csvSepartor;
+		}
+		content=content.substring(0, content.length()-1)+System.getProperty("line.separator");
+		for (DataBean dataBean : dataArray) {
+			content=content+fieldSeparator+dataBean.getNameNormalized()+fieldSeparator+csvSepartor;
+		}
+		for (DataBean dataBean : listDataConstant) {
+			content=content+fieldSeparator+dataBean.getNameNormalized()+fieldSeparator+csvSepartor;
 		}
 		content=content.substring(0, content.length()-1)+System.getProperty("line.separator");
 		for (DataBean dataBean : dataArray) {

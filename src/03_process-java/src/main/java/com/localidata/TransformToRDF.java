@@ -1,16 +1,13 @@
 package com.localidata;
 
 import java.io.File;
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 
 
@@ -27,7 +24,7 @@ public class TransformToRDF {
 
 	protected static String errorsReport = "";
 
-	private static HashSet<String> errorsSet = new HashSet<String>();
+	private static ArrayList<String> errorsSet = new ArrayList<String>();
 
 	protected static StringBuffer errorsContent = new StringBuffer();
 
@@ -45,13 +42,14 @@ public class TransformToRDF {
 
 	private ConfigBean configBean;
 
-	private HashSet<String> dsdSet = new HashSet<String>();
+	private ArrayList<String> dsdSet = new ArrayList<String>();
 
-	private HashSet<String> propertiesSet = new HashSet<String>();
+	private ArrayList<String> propertiesSet = new ArrayList<String>();
 
 	protected static StringBuffer propertiesContent = new StringBuffer();
 
 	String cubo = "";
+
 
 	public TransformToRDF(List<String> csvLines, File outputDirectoryFile,
 			File propertiesFile, File dsdFile, File errorReportFile,
@@ -60,13 +58,13 @@ public class TransformToRDF {
 		this.outputDirectoryFile = outputDirectoryFile;
 		this.propertiesFile = propertiesFile;
 		this.dsdFile = dsdFile;
-		this.errorReportFile = errorReportFile;
+		TransformToRDF.errorReportFile = errorReportFile;
 		this.configBean = configBean;
 	}
 
 
 	public void initTransformation(String fileName, int numfile, String id,
-			HashSet<String> dsdSet, HashSet<String> propertiesSet) {
+			ArrayList<String> dsdSet, ArrayList<String> propertiesSet) {
 		log.debug("Init initTransformation");
 		if (this.csvLines != null) {
 			log.debug("Start file " + fileName);
@@ -198,13 +196,10 @@ public class TransformToRDF {
 				+ letters + "\" ." + "\n";
 		aux = aux + "\n";
 		insertDsd(aux, resultado + " " + notation);
-
 		headerLine = Utils.weakClean(headerLine);
 		String[] cells = headerLine.split("\t");
 
 		int col = 1;
-		int numCell = 1;
-
 		for (int h = 0; h < cells.length; h++) {
 			String cell = cells[h];
 			String cleanCell = Utils.weakClean(cell);
@@ -223,17 +218,14 @@ public class TransformToRDF {
 					} else {
 						noRepetido = false;
 					}
-
-					if (!dataBean.getName().toLowerCase().contains("año")) {
+					if (!dataBean.getNormalizacion().contains("sdmx-dimension:refPeriod")) {
 						aux = "<" + resultado + "> qb:component _:node"
 								+ numfile + "egmfx" + col + " ." + "\n";
 						if (!dsdSet.contains(resultado + " "
 								+ dataBean.getDimensionMesure() + " "
 								+ dataBean.getNormalizacion())) {
-
 							Utils.stringToFileAppend(aux, dsdFile);
 						}
-
 						if (!dataBean.getType().contains(Constants.URIType)) {
 							aux = "_:node" + numfile + "egmfx" + col + " "
 									+ dataBean.getDimensionMesure() + " "
@@ -244,8 +236,6 @@ public class TransformToRDF {
 									resultado + " "
 											+ dataBean.getDimensionMesure()
 											+ " " + dataBean.getNormalizacion());
-
-
 							if (noRepetido) {
 								String coded = dataBean.getDimensionMesure()
 										.equals(Constants.mesure) ? ""
@@ -321,7 +311,6 @@ public class TransformToRDF {
 											+ " "
 											+ dataBean.getDimensionMesureSDMX()
 											+ ":refArea");
-
 						}
 					} else {
 						year = true;
@@ -338,7 +327,6 @@ public class TransformToRDF {
 										+ " "
 										+ dataBean.getDimensionMesureSDMX()
 										+ ":refPeriod");
-
 					}
 					col++;
 				}
@@ -365,7 +353,6 @@ public class TransformToRDF {
 					+ " qb:dimension sdmx-dimension:refPeriod ." + "\n";
 			aux = aux + "\n";
 			insertDsd(aux, resultado + " qb:dimension sdmx-dimension:refPeriod");
-
 		}
 		if (configBean.getListDataConstant().size() > 0) {
 			for (DataBean data : configBean.getListDataConstant()) {
@@ -377,7 +364,6 @@ public class TransformToRDF {
 				aux = aux + "\n";
 				insertDsd(aux, resultado + " " + data.getDimensionMesure()
 						+ " " + data.getNormalizacion());
-
 			}
 		}
 
@@ -406,8 +392,15 @@ public class TransformToRDF {
 		int col = 1;
 		for (String cell : cells) {
 			String normalizedCell = Utils.urlify(cell);
+			if(normalizedHeader.size()<=col - 1){
+				TransformToRDF.insertError(fileName + ". ERROR. "
+						+ "COLUMN NAME MISSING  ");
+				log.error(fileName + ". ERROR. "
+						+ "COLUMN NAME MISSING  ");
+				continue;
+			}
 			String header = normalizedHeader.get(col - 1);
-			String headerclean = cleanHeader.get(col - 1);
+			cleanHeader.get(col - 1);
 			DataBean dataBean = configBean.getMapData().get(header);
 			try {
 				if (dataBean != null) {

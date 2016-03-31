@@ -28,6 +28,21 @@ done
 
 ls ../InformesErroresHTML > ../InformesErroresHTML.txt
 
+mkdir ../InformesErroresHTML/MaximoNumeroExcedido
+mkdir ../InformesErroresHTML/RutaAccesoNoEncontrada
+for f in `ls ../InformesErroresHTML/*.csv`; do
+ if grep -q "S.e. .h.a. .e.x.c.e.d.i.d.o. .e.l. .n." $f; then
+  mv $f ../InformesErroresHTML/MaximoNumeroExcedido
+ fi
+ if grep -q "R.u.t.a. .d.e. .a.c.c.e.s.o. .n.o. .e.n.c.o.n.t.r.a.d.a." $f; then
+  mv $f ../InformesErroresHTML/RutaAccesoNoEncontrada
+ fi
+done
+
+ls ../InformesErroresHTML/MaximoNumeroExcedido > ../InformesErroresMaximoNumeroExcedido.txt
+ls ../InformesErroresHTML/RutaAccesoNoEncontrada > ../InformesErroresRutaAccesoNoEncontrada.txt
+
+
 cd ../../src/01_extraction-scripts
 pwd
 

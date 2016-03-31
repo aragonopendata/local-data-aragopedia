@@ -499,6 +499,7 @@ Rústico superficie
 Año
 Comarca código
 Comarca nombre
+Municipio nombre
 Urbano superficie
 % Urbana
 Rústico superficie
@@ -535,9 +536,6 @@ Urbano bienes inmuebles
 Urbano valor catastral total
 Urbano valor catastral construcción
 Urbano valor catastral suelo
-Urbano parcelas edificadas con suelo y construcción mismo propietario
-Urbano parcelas edificadas en copropiedad
-Urbano parcelas edificadas otros tipos
 
 
 ==> 01-010020TC.csv <==
@@ -550,9 +548,6 @@ Urbano bienes inmuebles
 Urbano valor catastral total
 Urbano valor catastral construcción
 Urbano valor catastral suelo
-Urbano parcelas edificadas con suelo y construcción mismo propietario
-Urbano parcelas edificadas en copropiedad
-Urbano parcelas edificadas otros tipos
 
 
 ==> 01-010020TM.csv <==
@@ -565,11 +560,6 @@ Urbano bienes inmuebles
 Urbano valor catastral total
 Urbano valor catastral construcción
 Urbano valor catastral suelo
-Urbano parcelas edificadas con suelo y construcción mismo propietario
-Urbano parcelas edificadas en copropiedad
-Urbano parcelas edificadas otros tipos
-Urbano año última revisión
-Titulares urbano
 
 
 ==> 01-010020TP.csv <==
@@ -587,80 +577,8 @@ Urbano parcelas edificadas en copropiedad
 Urbano parcelas edificadas otros tipos
 
 
-==> 01-010021A.csv <==
-Año
-CCAA código
-CCAA nombre
-Urbano solares total
-Urbano solares de 0 a 100 m2
-Urbano solares de 100 a 500 m2
-Urbano solares de 500 a 1000 m2
-Urbano solares de 1000 a 10000 m2
-Urbano solares de más de 10000 m2
-Urbano parcelas edificadas total
-Urbano parcelas edificadas de 0 a 100 m2
-Urbano parcelas edificadas de 100 a 500 m2
-Urbano parcelas edificadas de 500 a 1000 m2
-Urbano parcelas edificadas de 1000 a 10000 m2
-Urbano parcelas edificadas de más de 10000 m2
-
-
-==> 01-010021TC.csv <==
-Año
-Comarca código
-Comarca nombre
-Urbano solares total
-Urbano solares de 0 a 100 m2
-Urbano solares de 100 a 500 m2
-Urbano solares de 500 a 1000 m2
-Urbano solares de 1000 a 10000 m2
-Urbano solares de más de 10000 m2
-Urbano parcelas edificadas total
-Urbano parcelas edificadas de 0 a 100 m2
-Urbano parcelas edificadas de 100 a 500 m2
-Urbano parcelas edificadas de 500 a 1000 m2
-Urbano parcelas edificadas de 1000 a 10000 m2
-Urbano parcelas edificadas de más de 10000 m2
-
-
-==> 01-010021TM.csv <==
-Año
-Municipio código
-Municipio nombre
-Urbano solares total
-Urbano solares de 0 a 100 m2
-Urbano solares de 100 a 500 m2
-Urbano solares de 500 a 1000 m2
-Urbano solares de 1000 a 10000 m2
-Urbano solares de más de 10000 m2
-Urbano parcelas edificadas total
-Urbano parcelas edificadas de 0 a 100 m2
-Urbano parcelas edificadas de 100 a 500 m2
-Urbano parcelas edificadas de 500 a 1000 m2
-Urbano parcelas edificadas de 1000 a 10000 m2
-Urbano parcelas edificadas de más de 10000 m2
-
-
-==> 01-010021TP.csv <==
-Año
-Provincia código
-Provincia nombre
-Urbano solares total
-Urbano solares de 0 a 100 m2
-Urbano solares de 100 a 500 m2
-Urbano solares de 500 a 1000 m2
-Urbano solares de 1000 a 10000 m2
-Urbano solares de más de 10000 m2
-Urbano parcelas edificadas total
-Urbano parcelas edificadas de 0 a 100 m2
-Urbano parcelas edificadas de 100 a 500 m2
-Urbano parcelas edificadas de 500 a 1000 m2
-Urbano parcelas edificadas de 1000 a 10000 m2
-Urbano parcelas edificadas de más de 10000 m2
-
-
 ==> 01-010022A.csv <==
-Catastro (diciembre de    CAST (Año AS CHARACTER ( 30 ))  )
+Fuente y fecha
 CCAA código
 CCAA nombre
 Total edificios
@@ -1917,6 +1835,18 @@ Hectáreas de SAU en otros regímenes de tenencia de las tierras
 Año
 Código del municipio
 Nombre del municipio
+Superficie total de las explotaciones
+Superficie Agrícola Utilizada (SAU)
+Hectáreas de SAU en propiedad
+Hectáreas de SAU en arrendamiento
+Hectáreas de SAU en aparcería
+Hectáreas de SAU en otros regímenes de tenencia de las tierras
+
+
+==> 01-010050TP.csv <==
+Año
+Código de la provincia
+Provincia
 Superficie total de las explotaciones
 Superficie Agrícola Utilizada (SAU)
 Hectáreas de SAU en propiedad
@@ -4015,38 +3945,6 @@ Explotaciones
 Cursos jefe explotación
 
 
-==> 01-080101-010088A.csv <==
-CCAA código
-CCAA nombre
-Explotaciones
-Superficie hongos
-Cultivo hongos
-
-
-==> 01-080101-010088TC.csv <==
-Comarca codigo
-Comarca nombre
-Explotaciones
-Superficie hongos
-Cultivo hongos
-
-
-==> 01-080101-010088TM.csv <==
-Municipio código
-Municipio nombre
-Explotaciones
-Superficie hongos
-Cultivo hongos
-
-
-==> 01-080101-010088TP.csv <==
-Provincia codigo
-Provincia nombre
-Explotaciones
-Superficie hongos
-Cultivo hongos
-
-
 ==> 01-080101-010089A.csv <==
 CCAA código
 CCAA nombre
@@ -4163,38 +4061,6 @@ Número total de explotaciones
 Producción estándar total (euros)
 
 
-==> 01-080101-010092A.csv <==
-CCAA código
-CCAA nombre
-Número total de explotaciones
-OTE (3 dígitos)
-OTE (3 dígitos) código
-
-
-==> 01-080101-010092TC.csv <==
-Comarca codigo
-Comarca nombre
-Número total de explotaciones
-OTE (3 dígitos)
-OTE (3 dígitos) código
-
-
-==> 01-080101-010092TM.csv <==
-Municipio código
-Municipio nombre
-Número total de explotaciones
-OTE (3 dígitos)
-OTE (3 dígitos) código
-
-
-==> 01-080101-010092TP.csv <==
-Provincia codigo
-Provincia nombre
-Número total de explotaciones
-OTE (3 dígitos)
-OTE (3 dígitos) código
-
-
 ==> 01-080101-010093A.csv <==
 CCAA código
 CCAA nombre
@@ -4233,682 +4099,6 @@ Especie ganadería descripción
 Subespecie ganadería código
 Especie ganadería código
 Número de cabezas
-
-
-==> 01-080101-010094A.csv <==
-CCAA código
-CCAA nombre
-Superficie
-SecanoRegadío
-Grupo cultivo descripción
-Cultivo código
-Cultivo descripción
-
-
-==> 01-080101-010094TC.csv <==
-Comarca codigo
-Comarca nombre
-Superficie
-SecanoRegadío
-Grupo cultivo descripción
-Cultivo código
-Cultivo descripción
-
-
-==> 01-080101-010094TM.csv <==
-Municipio código
-Municipio nombre
-Superficie
-SecanoRegadío
-Grupo cultivo descripción
-Cultivo código
-Cultivo descripción
-
-
-==> 01-080101-010094TP.csv <==
-Provincia codigo
-Provincia nombre
-Superficie
-SecanoRegadío
-Grupo cultivo descripción
-Cultivo código
-Cultivo descripción
-
-
-==> 01-080101-010095A.csv <==
-CCAA código
-CCAA nombre
-Superficie
-SecanoRegadío
-Grupo cultivo descripción
-Cultivo código
-Cultivo descripción
-
-
-==> 01-080101-010095TC.csv <==
-Comarca codigo
-Comarca nombre
-Superficie
-SecanoRegadío
-Grupo cultivo descripción
-Cultivo código
-Cultivo descripción
-
-
-==> 01-080101-010095TM.csv <==
-Municipio código
-Municipio nombre
-Superficie
-SecanoRegadío
-Grupo cultivo descripción
-Cultivo código
-Cultivo descripción
-
-
-==> 01-080101-010095TP.csv <==
-Provincia codigo
-Provincia nombre
-Superficie
-SecanoRegadío
-Grupo cultivo descripción
-Cultivo código
-Cultivo descripción
-
-
-==> 01-080101-010096A.csv <==
-CCAA código
-CCAA nombre
-Superficie propiedad titular
-Superficie arrendamiento
-Superficie aparcería u otros
-
-
-==> 01-080101-010096TC.csv <==
-Comarca codigo
-Comarca nombre
-Superficie propiedad titular
-Superficie arrendamiento
-Superficie aparcería u otros
-
-
-==> 01-080101-010096TM.csv <==
-Municipio código
-Municipio nombre
-Superficie propiedad titular
-Superficie arrendamiento
-Superficie aparcería u otros
-
-
-==> 01-080101-010096TP.csv <==
-Provincia codigo
-Provincia nombre
-Superficie propiedad titular
-Superficie arrendamiento
-Superficie aparcería u otros
-
-
-==> 01-080101-010097A.csv <==
-CCAA código
-CCAA nombre
-Superficie
-Grupo cultivo descripción
-Cultivo detalle descripción
-Cultivo detalle código
-
-
-==> 01-080101-010097TC.csv <==
-Comarca codigo
-Comarca nombre
-Superficie
-Grupo cultivo descripción
-Cultivo detalle descripción
-Cultivo detalle código
-
-
-==> 01-080101-010097TM.csv <==
-Municipio código
-Municipio nombre
-Superficie
-Grupo cultivo descripción
-Cultivo detalle descripción
-Cultivo detalle código
-
-
-==> 01-080101-010097TP.csv <==
-Provincia codigo
-Provincia nombre
-Superficie
-Grupo cultivo descripción
-Cultivo detalle descripción
-Cultivo detalle código
-
-
-==> 01-080101-010099A.csv <==
-CCAA código
-CCAA nombre
-Superficie energías renovables en retirada
-Otros cultivos para renovables
-
-
-==> 01-080101-010099TC.csv <==
-Comarca codigo
-Comarca nombre
-Superficie energías renovables en retirada
-Otros cultivos para renovables
-
-
-==> 01-080101-010099TM.csv <==
-Municipio código
-Municipio nombre
-Superficie energías renovables en retirada
-Otros cultivos para renovables
-
-
-==> 01-080101-010099TP.csv <==
-Provincia codigo
-Provincia nombre
-Superficie energías renovables en retirada
-Otros cultivos para renovables
-
-
-==> 01-080101-010100A.csv <==
-CCAA código
-CCAA nombre
-Explotaciones
-Energía renovable
-
-
-==> 01-080101-010100TC.csv <==
-Comarca codigo
-Comarca nombre
-Explotaciones
-Energía renovable
-
-
-==> 01-080101-010100TM.csv <==
-Municipio código
-Municipio nombre
-Explotaciones
-Energía renovable
-
-
-==> 01-080101-010100TP.csv <==
-Provincia codigo
-Provincia nombre
-Explotaciones
-Energía renovable
-
-
-==> 01-080101-010101A.csv <==
-CCAA código
-CCAA nombre
-Explotaciones
-Actividades desarrollo rural
-
-
-==> 01-080101-010101TC.csv <==
-Comarca codigo
-Comarca nombre
-Explotaciones
-Actividades desarrollo rural
-
-
-==> 01-080101-010101TM.csv <==
-Municipio código
-Municipio nombre
-Explotaciones
-Actividades desarrollo rural
-
-
-==> 01-080101-010101TP.csv <==
-Provincia codigo
-Provincia nombre
-Explotaciones
-Actividades desarrollo rural
-
-
-==> 01-080101-010102A.csv <==
-CCAA código
-CCAA nombre
-Explotaciones
-Porcentaje actividades desarrollo rural
-
-
-==> 01-080101-010102TC.csv <==
-Comarca codigo
-Comarca nombre
-Explotaciones
-Porcentaje actividades desarrollo rural
-
-
-==> 01-080101-010102TM.csv <==
-Municipio código
-Municipio nombre
-Explotaciones
-Porcentaje actividades desarrollo rural
-
-
-==> 01-080101-010102TP.csv <==
-Provincia codigo
-Provincia nombre
-Explotaciones
-Porcentaje actividades desarrollo rural
-
-
-==> 01-080101-010103A.csv <==
-CCAA código
-CCAA nombre
-Medidas modernización
-Medidas asesoramiento
-Medidas aumento valor añadido
-Medidas cumplimiento normas
-Medidas participación programas calidad
-Ayudas Natura 2000
-Medidas marco del agua
-Pagos agricultura ecológica
-Pagos otras ayudas
-Ayudas relativas bienestar animales
-Diversificación actividades no agrícolas
-Fomento actividades turísticas
-Identificador
-
-
-==> 01-080101-010103TC.csv <==
-Comarca codigo
-Comarca nombre
-Medidas modernización
-Medidas asesoramiento
-Medidas aumento valor añadido
-Medidas cumplimiento normas
-Medidas participación programas calidad
-Ayudas Natura 2000
-Medidas marco del agua
-Pagos agricultura ecológica
-Pagos otras ayudas
-Ayudas relativas bienestar animales
-Diversificación actividades no agrícolas
-Fomento actividades turísticas
-Identificador
-
-
-==> 01-080101-010103TM.csv <==
-Municipio código
-Municipio nombre
-Medidas modernización
-Medidas asesoramiento
-Medidas aumento valor añadido
-Medidas cumplimiento normas
-Medidas participación programas calidad
-Ayudas Natura 2000
-Medidas marco del agua
-Pagos agricultura ecológica
-Pagos otras ayudas
-Ayudas relativas bienestar animales
-Diversificación actividades no agrícolas
-Fomento actividades turísticas
-Identificador
-
-
-==> 01-080101-010103TP.csv <==
-Provincia codigo
-Provincia codigo
-Medidas modernización
-Medidas asesoramiento
-Medidas aumento valor añadido
-Medidas cumplimiento normas
-Medidas participación programas calidad
-Ayudas Natura 2000
-Medidas marco del agua
-Pagos agricultura ecológica
-Pagos otras ayudas
-Ayudas relativas bienestar animales
-Diversificación actividades no agrícolas
-Fomento actividades turísticas
-Identificador
-
-
-==> 01-080101-010105A.csv <==
-CCAA código
-CCAA nombre
-Tipo personal código
-Tipo personal
-Tiempo trabajo código
-Jornadas trabajo
-Sexo
-Personas
-
-
-==> 01-080101-010105TC.csv <==
-Comarca codigo
-Comarca nombre
-Tipo personal código
-Tipo personal
-Tiempo trabajo código
-Jornadas trabajo
-Sexo
-Personas
-
-
-==> 01-080101-010105TM.csv <==
-Municipio código
-Municipio nombre
-Tipo personal código
-Tipo personal
-Tiempo trabajo código
-Jornadas trabajo
-Sexo
-Personas
-
-
-==> 01-080101-010105TP.csv <==
-Provincia codigo
-Provincia nombre
-Tipo personal código
-Tipo personal
-Tiempo trabajo código
-Jornadas trabajo
-Sexo
-Personas
-
-
-==> 01-080101-010106A.csv <==
-CCAA código
-CCAA nombre
-Titular explotación es persona física
-Titular explotación es persona física mujer
-Titular explotación es persona física hombre
-Titular persona física y jefe explotación
-El jefe de explotación no es el titular
-El jefe de la explotación no es el titular hombre
-El jefe de la explotación no es el titular mujer
-Cónyuges del titular cuando éste es persona física
-
-
-==> 01-080101-010106TC.csv <==
-Comarca codigo
-Comarca nombre
-Titular explotación es persona física
-Titular explotación es persona física mujer
-Titular explotación es persona física hombre
-Titular persona física y jefe explotación
-El jefe de explotación no es el titular
-El jefe de la explotación no es el titular hombre
-El jefe de la explotación no es el titular mujer
-Cónyuges del titular cuando éste es persona física
-
-
-==> 01-080101-010106TM.csv <==
-Municipio código
-Municipio nombre
-Titular explotación es persona física
-Titular explotación es persona física mujer
-Titular explotación es persona física hombre
-Titular persona física y jefe explotación
-El jefe de explotación no es el titular
-El jefe de la explotación no es el titular hombre
-El jefe de la explotación no es el titular mujer
-Cónyuges del titular cuando éste es persona física
-
-
-==> 01-080101-010106TP.csv <==
-Provincia codigo
-Provincia nombre
-Titular explotación es persona física
-Titular explotación es persona física mujer
-Titular explotación es persona física hombre
-Titular persona física y jefe explotación
-El jefe de explotación no es el titular
-El jefe de la explotación no es el titular hombre
-El jefe de la explotación no es el titular mujer
-Cónyuges del titular cuando éste es persona física
-
-
-==> 01-080101-010107A.csv <==
-CCAA nombre
-CCAA código
-Menos de 25 años
-De 25 a 34 años
-De 35 a 44 años
-De 45 a 54 años
-De 55 a 64 años
-De 65 años o más
-Jornadas
-0% del tiempo anual trabajado por una persona a tiempo completo
->0% a <25% del tiempo anual trabajado por una persona a tiempo completo
->=25% a <50% del tiempo anual trabajado por una persona a tiempo completo
->=50% al 75% del tiempo anual trabajado por una persona a tiempo completo
->=75% a <100% del tiempo anual trabajado por una persona a tiempo completo
-100% del tiempo anual trabajado por una persona a tiempo completo
-El titular ha realizado trabajos agrícolas o ganaderos para la explotación
-El titular no ha realizado trabajos agrícolas o ganaderos para la explotación
-No consta si el titular ha realizado actividades complementarias
-El titular no ha realizado actividades complementarias
-El titular ha realizado actividades complementarias como actividad principal
-El titular ha realizado actividades complementarias como actividad secundaria
-No consta si la otra actividad del titular está relacionada con la explotación
-La otra actividad del titular está relacionada con la explotación
-La otra actividad del titular no está relacionada con la explotación
-
-
-==> 01-080101-010107TC.csv <==
-Comarca codigo
-Comarca nombre
-Menos de 25 años
-De 25 a 34 años
-De 35 a 44 años
-De 45 a 54 años
-De 55 a 64 años
-De 65 años o más
-Jornadas
-0% del tiempo anual trabajado por una persona a tiempo completo
->0% a <25% del tiempo anual trabajado por una persona a tiempo completo
->=25% a <50% del tiempo anual trabajado por una persona a tiempo completo
->=50% al 75% del tiempo anual trabajado por una persona a tiempo completo
->=75% a <100% del tiempo anual trabajado por una persona a tiempo completo
-100% del tiempo anual trabajado por una persona a tiempo completo
-El titular ha realizado trabajos agrícolas o ganaderos para la explotación
-El titular no ha realizado trabajos agrícolas o ganaderos para la explotación
-No consta si el titular ha realizado actividades complementarias
-El titular no ha realizado actividades complementarias
-El titular ha realizado actividades complementarias como actividad principal
-El titular ha realizado actividades complementarias como actividad secundaria
-No consta si la otra actividad del titular está relacionada con la explotación
-La otra actividad del titular está relacionada con la explotación
-La otra actividad del titular no está relacionada con la explotación
-
-
-==> 01-080101-010107TM.csv <==
-Municipio código
-Municipio nombre
-Menos de 25 años
-De 25 a 34 años
-De 35 a 44 años
-De 45 a 54 años
-De 55 a 64 años
-De 65 años o más
-Jornadas
-0% del tiempo anual trabajado por una persona a tiempo completo
->0% a <25% del tiempo anual trabajado por una persona a tiempo completo
->=25% a <50% del tiempo anual trabajado por una persona a tiempo completo
->=50% al 75% del tiempo anual trabajado por una persona a tiempo completo
->=75% a <100% del tiempo anual trabajado por una persona a tiempo completo
-100% del tiempo anual trabajado por una persona a tiempo completo
-El titular ha realizado trabajos agrícolas o ganaderos para la explotación
-El titular no ha realizado trabajos agrícolas o ganaderos para la explotación
-No consta si el titular ha realizado actividades complementarias
-El titular no ha realizado actividades complementarias
-El titular ha realizado actividades complementarias como actividad principal
-El titular ha realizado actividades complementarias como actividad secundaria
-No consta si la otra actividad del titular está relacionada con la explotación
-La otra actividad del titular está relacionada con la explotación
-La otra actividad del titular no está relacionada con la explotación
-
-
-==> 01-080101-010107TP.csv <==
-Provincia codigo
-Provincia nombre
-Menos de 25 años
-De 25 a 34 años
-De 35 a 44 años
-De 45 a 54 años
-De 55 a 64 años
-De 65 años o más
-Jornadas
-0% del tiempo anual trabajado por una persona a tiempo completo
->0% a <25% del tiempo anual trabajado por una persona a tiempo completo
->=25% a <50% del tiempo anual trabajado por una persona a tiempo completo
->=50% al 75% del tiempo anual trabajado por una persona a tiempo completo
->=75% a <100% del tiempo anual trabajado por una persona a tiempo completo
-100% del tiempo anual trabajado por una persona a tiempo completo
-El titular ha realizado trabajos agrícolas o ganaderos para la explotación
-El titular no ha realizado trabajos agrícolas o ganaderos para la explotación
-No consta si el titular ha realizado actividades complementarias
-El titular no ha realizado actividades complementarias
-El titular ha realizado actividades complementarias como actividad principal
-El titular ha realizado actividades complementarias como actividad secundaria
-No consta si la otra actividad del titular está relacionada con la explotación
-La otra actividad del titular está relacionada con la explotación
-La otra actividad del titular no está relacionada con la explotación
-
-
-==> 01-080101-010108A.csv <==
-CCAA código
-CCAA nombre
-Menos de 25 años
-De 25 a 34 años
-De 35 a 44 años
-De 45 a 54 años
-De 55 a 64 años
-De 65 años o más
-Jornadas
-0% del tiempo anual trabajado por una persona a tiempo completo
->0% a <25% del tiempo anual trabajado por una persona a tiempo completo
->=25% a <50% del tiempo anual trabajado por una persona a tiempo completo
->=50% al 75% del tiempo anual trabajado por una persona a tiempo completo
->=75% a <100% del tiempo anual trabajado por una persona a tiempo completo
-100% del tiempo anual trabajado por una persona a tiempo completo
-El titular ha realizado trabajos agrícolas o ganaderos para la explotación
-El titular no ha realizado trabajos agrícolas o ganaderos para la explotación
-No consta si el titular ha realizado actividades complementarias
-El titular no ha realizado actividades complementarias
-El titular ha realizado actividades complementarias como actividad principal
-El titular ha realizado actividades complementarias como actividad secundaria
-No consta si la otra actividad del titular está relacionada con la explotación
-La otra actividad del titular está relacionada con la explotación
-La otra actividad del titular no está relacionada con la explotación
-
-
-==> 01-080101-010108TC.csv <==
-Comarca codigo
-Comarca nombre
-Menos de 25 años
-De 25 a 34 años
-De 35 a 44 años
-De 45 a 54 años
-De 55 a 64 años
-De 65 años o más
-Jornadas
-0% del tiempo anual trabajado por una persona a tiempo completo
->0% a <25% del tiempo anual trabajado por una persona a tiempo completo
->=25% a <50% del tiempo anual trabajado por una persona a tiempo completo
->=50% al 75% del tiempo anual trabajado por una persona a tiempo completo
->=75% a <100% del tiempo anual trabajado por una persona a tiempo completo
-100% del tiempo anual trabajado por una persona a tiempo completo
-El titular ha realizado trabajos agrícolas o ganaderos para la explotación
-El titular no ha realizado trabajos agrícolas o ganaderos para la explotación
-No consta si el titular ha realizado actividades complementarias
-El titular no ha realizado actividades complementarias
-El titular ha realizado actividades complementarias como actividad principal
-El titular ha realizado actividades complementarias como actividad secundaria
-No consta si la otra actividad del titular está relacionada con la explotación
-La otra actividad del titular está relacionada con la explotación
-La otra actividad del titular no está relacionada con la explotación
-
-
-==> 01-080101-010108TM.csv <==
-Municipio código
-Municipio nombre
-Menos de 25 años
-De 25 a 34 años
-De 35 a 44 años
-De 45 a 54 años
-De 55 a 64 años
-De 65 años o más
-Jornadas
-0% del tiempo anual trabajado por una persona a tiempo completo
->0% a <25% del tiempo anual trabajado por una persona a tiempo completo
->=25% a <50% del tiempo anual trabajado por una persona a tiempo completo
->=50% al 75% del tiempo anual trabajado por una persona a tiempo completo
->=75% a <100% del tiempo anual trabajado por una persona a tiempo completo
-100% del tiempo anual trabajado por una persona a tiempo completo
-El titular ha realizado trabajos agrícolas o ganaderos para la explotación
-El titular no ha realizado trabajos agrícolas o ganaderos para la explotación
-No consta si el titular ha realizado actividades complementarias
-El titular no ha realizado actividades complementarias
-El titular ha realizado actividades complementarias como actividad principal
-El titular ha realizado actividades complementarias como actividad secundaria
-No consta si la otra actividad del titular está relacionada con la explotación
-La otra actividad del titular está relacionada con la explotación
-La otra actividad del titular no está relacionada con la explotación
-
-
-==> 01-080101-010108TP.csv <==
-Provincia codigo
-Provincia codigo
-Menos de 25 años
-De 25 a 34 años
-De 35 a 44 años
-De 45 a 54 años
-De 55 a 64 años
-De 65 años o más
-Jornadas
-0% del tiempo anual trabajado por una persona a tiempo completo
->0% a <25% del tiempo anual trabajado por una persona a tiempo completo
->=25% a <50% del tiempo anual trabajado por una persona a tiempo completo
->=50% al 75% del tiempo anual trabajado por una persona a tiempo completo
->=75% a <100% del tiempo anual trabajado por una persona a tiempo completo
-100% del tiempo anual trabajado por una persona a tiempo completo
-El titular ha realizado trabajos agrícolas o ganaderos para la explotación
-El titular no ha realizado trabajos agrícolas o ganaderos para la explotación
-No consta si el titular ha realizado actividades complementarias
-El titular no ha realizado actividades complementarias
-El titular ha realizado actividades complementarias como actividad principal
-El titular ha realizado actividades complementarias como actividad secundaria
-No consta si la otra actividad del titular está relacionada con la explotación
-La otra actividad del titular está relacionada con la explotación
-La otra actividad del titular no está relacionada con la explotación
-
-
-==> 01-080101-010109A.csv <==
-CCAA código
-CCAA nombre
-SAU
-Superficie riego
-Porcentaje de SAU regable
-
-
-==> 01-080101-010109TC.csv <==
-Comarca codigo
-Comarca nombre
-SAU
-Superficie riego
-Porcentaje de SAU regable
-
-
-==> 01-080101-010109TM.csv <==
-Municipio código
-Municipio nombre
-SAU
-Superficie riego
-Porcentaje de SAU regable
-
-
-==> 01-080101-010109TP.csv <==
-Provincia codigo
-Provincia nombre
-SAU
-Superficie riego
-Porcentaje de SAU regable
 
 
 ==> 01-080101-010110A.csv <==
@@ -6531,16 +5721,6 @@ Sexo
 Personas
 
 
-==> 03-030004TM.csv <==
-Año
-Residencia provincia código
-Residencia municipio código
-Residencia municipio nombre
-Edad (grupos quinquenales)
-Sexo
-Personas
-
-
 ==> 03-030004TP.csv <==
 Año
 Residencia provincia código
@@ -6757,6 +5937,29 @@ Sexo
 Personas
 
 
+==> 03-030008TP.csv <==
+Año
+Residencia provincia código
+Residencia provincia nombre
+Relación lugar de residencia y nacimiento
+Nacimiento CCAA código
+Nacimiento CCAA nombre
+Edad (grandes grupos)
+Sexo
+Personas
+
+
+==> 03-030012A.csv <==
+Año
+Residencia CCAA nombre
+Tipo de nacionalidad
+Nacionalidad área código
+Nacionalidad área nombre
+Nacionalidad continente nombre
+Sexo
+Personas
+
+
 ==> 03-030012TC.csv <==
 Año
 Residencia comarca código
@@ -6782,6 +5985,17 @@ Sexo
 Personas
 
 
+==> 03-030012TP.csv <==
+Año
+Residencia provincia nombre
+Tipo de nacionalidad
+Nacionalidad área código
+Nacionalidad área nombre
+Nacionalidad continente nombre
+Sexo
+Personas
+
+
 ==> 03-030013A.csv <==
 Año
 Nacionalidad área código
@@ -6793,6 +6007,193 @@ Sexo
 Extranjeros
 
 
+==> 03-030013TP.csv <==
+Año
+Residencia provincia código
+Residencia provincia nombre
+Nacionalidad área código
+Nacionalidad área nombre
+Nacionalidad país código
+Nacionalidad país nombre
+Edad (grandes grupos)
+Sexo
+Extranjeros
+
+
+==> 03-030014A.csv <==
+Año
+Residencia CCAA nombre
+Edad (grupos quinquenales)
+Sexo
+Extranjeros
+
+
+==> 03-030014TC.csv <==
+Año
+Residencia comarca código
+Residencia comarca nombre
+Edad (grupos quinquenales)
+Sexo
+Extranjeros
+
+
+==> 03-030014TP.csv <==
+Año
+Residencia provincia nombre
+Edad (grupos quinquenales)
+Sexo
+Personas
+Extranjeros
+
+
+==> 03-030015A.csv <==
+Año
+Residencia CCAA nombre
+Relación lugar de residencia y nacimiento
+Sexo
+Extranjeros
+
+
+==> 03-030015TC.csv <==
+Año
+Residencia comarca código
+Residencia comarca nombre
+Relación lugar de residencia y nacimiento
+Sexo
+Extranjeros
+
+
+==> 03-030015TP.csv <==
+Año
+Residencia provincia código
+Residencia provincia nombre
+Relación lugar de residencia y nacimiento
+Sexo
+Extranjeros
+
+
+==> 03-030016A.csv <==
+Año
+Tipo de nacionalidad
+Residencia CCAA código
+Residencia CCAA nombre
+% de población de 0 a 19 años
+% de población de 20 a 64 años
+% de población de 65 y más años
+% de población menor de 15
+% de población menor de 25
+% de población menor de 35
+% de población menor de 45
+Edad media de la población
+Índice de envejecimiento
+Tasa de masculinidad
+
+
+==> 03-030016TC.csv <==
+Año
+Tipo de nacionalidad
+Residencia comarca código
+Residencia comarca nombre
+Edad media de la población
+Índice de envejecimiento
+% de población de 0 a 19 años
+% de población de 20 a 64 años
+% de población de 65 y más años
+% de población menor de 15
+% de población menor de 25
+% de población menor de 35
+% de población menor de 45
+Tasa de masculinidad
+Personas
+
+
+==> 03-030016TM.csv <==
+Año
+Tipo de nacionalidad
+Residencia provincia código
+Residencia municipio código
+Residencia municipio nombre
+Edad media de la población
+Índice de envejecimiento
+% de población de 0 a 19 años
+% de población de 20 a 64 años
+% de población de 65 y más años
+% de población menor de 15
+% de población menor de 25
+% de población menor de 35
+% de población menor de 45
+Tasa de masculinidad
+Personas
+
+
+==> 03-030016TP.csv <==
+Año
+Tipo de nacionalidad
+Residencia provincia código
+Residencia provincia nombre
+Índice de envejecimiento
+% de población de 0 a 19 años
+% de población de 20 a 64 años
+% de población de 65 y más años
+% de población menor de 15
+% de población menor de 25
+% de población menor de 35
+% de población menor de 45
+Edad media de la población
+Tasa de masculinidad
+
+
+==> 03-030018A.csv <==
+Aragón
+Edad (grupos quinquenales)
+Sexo
+Personas
+Porcentaje
+
+
+==> 03-030018TC.csv <==
+Comarca código
+Comarca nombre
+Edad (grupos quinquenales)
+Sexo
+Personas
+
+
+==> 03-030018TM.csv <==
+Municipio código
+Municipio nombre
+Edad (grupos quinquenales)
+Sexo
+Personas
+
+
+==> 03-030018TP.csv <==
+Provincia código
+Provincia nombre
+Edad (grupos quinquenales)
+Sexo
+Personas
+
+
+==> 03-030025A.csv <==
+Tipo nacionalidad
+Continente nacionalidad
+Area nacionalidad código
+Area nacionalidad nombre
+Personas
+Aragón
+
+
+==> 03-030025TC.csv <==
+Comarca código
+Comarca nombre
+Tipo nacionalidad
+Continente nacionalidad
+Area nacionalidad código
+Area nacionalidad nombre
+Personas
+
+
 ==> 03-030025TM.csv <==
 Municipio código
 Municipio nombre
@@ -6801,6 +6202,26 @@ Continente nacionalidad
 Area nacionalidad código
 Area nacionalidad nombre
 Personas
+
+
+==> 03-030025TP.csv <==
+Provincia código
+Provincia nombre
+Tipo nacionalidad
+Continente nacionalidad
+Area nacionalidad código
+Area nacionalidad nombre
+Personas
+
+
+==> 03-030026A.csv <==
+Continente
+Area nacionalidad código
+Área
+Nacionalidad código
+Nacionalidad nombre
+Personas
+Aragón
 
 
 ==> 03-030026TC.csv <==
@@ -6814,10 +6235,155 @@ Nacionalidad nombre
 Personas
 
 
+==> 03-030026TP.csv <==
+Provincia código
+Provincia nombre
+Continente
+Area nacionalidad código
+Área
+Nacionalidad código
+Nacionalidad nombre
+Personas
+
+
+==> 03-030027A.csv <==
+Aragón
+Edad (grandes grupos)
+Sexo
+Personas
+
+
+==> 03-030027TC.csv <==
+Comarca código
+Comarca nombre
+Edad (grandes grupos)
+Sexo
+Personas
+
+
+==> 03-030027TP.csv <==
+Provincia código
+Provincia nombre
+Edad (grandes grupos)
+Sexo
+Personas
+
+
+==> 03-030028A.csv <==
+Lugar de residencia
+Lugar de nacimiento
+Personas
+
+
+==> 03-030028TC.csv <==
+Comarca código
+Comarca nombre
+Lugar de nacimiento
+Lugar de nacimiento
+
+
+==> 03-030028TP.csv <==
+Provincia código
+Provincia nombre
+Lugar de nacimiento
+Lugar de nacimiento
+
+
+==> 03-030029A.csv <==
+Continente
+Area nacionalidad código
+Area nacionalidad
+Aragón
+Nivel estudios (agregado)
+Grado de formación
+
+
+==> 03-030029TC.csv <==
+Comarca código
+Comarca nombre
+Continente
+Area nacionalidad código
+Area nacionalidad
+Nivel estudios (agregado)
+Grado de formación
+
+
+==> 03-030029TP.csv <==
+Provincia código
+Provincia nombre
+Continente
+Area nacionalidad código
+Area nacionalidad
+Nivel estudios (agregado)
+Grado de formación
+
+
 ==> 03-030030A.csv <==
 Estado civil
 Personas residentes viviendas familiares
 Aragón
+
+
+==> 03-030030TC.csv <==
+Comarca código
+Comarca nombre
+Estado civil
+Personas residentes viviendas familiares
+
+
+==> 03-030030TM.csv <==
+Municipio código
+Municipio nombre
+Estado civil
+Personas residentes viviendas familiares
+
+
+==> 03-030030TP.csv <==
+Provincia código
+Provincia nombre
+Estado civil
+Personas residentes viviendas familiares
+
+
+==> 03-030031A.csv <==
+Edad
+Sexo
+Estado civil
+Personas residentes viviendas familiares
+Aragón
+
+
+==> 03-030031TC.csv <==
+Comarca código
+Comarca nombre
+Edad
+Sexo
+Estado civil
+Personas residentes viviendas familiares
+
+
+==> 03-030031TP.csv <==
+Provincia código
+Provincia nombre
+Edad
+Sexo
+Estado civil
+Personas residentes viviendas familiares
+
+
+==> 03-030032A.csv <==
+Nivel estudios (agregado)
+Personas residentes viviendas familiares
+Aragón
+Nivel estudios (detalle)
+
+
+==> 03-030032TC.csv <==
+Comarca código
+Comarca nombre
+Nivel estudios (agregado)
+Personas residentes viviendas familiares
+Nivel estudios (detalle)
 
 
 ==> 03-030032TM.csv <==
@@ -6826,6 +6392,23 @@ Municipio nombre
 Nivel estudios (agregado)
 Personas residentes viviendas familiares
 Nivel estudios (detalle)
+
+
+==> 03-030032TP.csv <==
+Provincia código
+Provincia nombre
+Nivel estudios (agregado)
+Personas residentes viviendas familiares
+Nivel estudios (detalle)
+
+
+==> 03-030033A.csv <==
+Aragón
+Sexo
+Edad
+Nivel estudios (agregado)
+Nivel estudios (detalle)
+Personas residentes viviendas familiares
 
 
 ==> 03-030033TC.csv <==
@@ -6837,10 +6420,153 @@ Nivel estudios (agregado)
 Personas residentes viviendas familiares
 
 
+==> 03-030033TP.csv <==
+Provincia código
+Provincia nombre
+Sexo
+Edad
+Nivel estudios (agregado)
+Personas residentes viviendas familiares
+
+
+==> 03-030034A.csv <==
+Aragón
+Tipo estudios
+Personas residentes viviendas familiares
+
+
+==> 03-030034TC.csv <==
+Comarca código
+Comarca nombre
+Tipo estudios
+Personas residentes viviendas familiares
+
+
+==> 03-030034TP.csv <==
+Provincia código
+Provincia nombre
+Tipo estudios
+Personas residentes viviendas familiares
+
+
+==> 03-030035A.csv <==
+Aragón
+Tipo estudios
+Edad
+Sexo
+Personas residentes viviendas familiares
+
+
+==> 03-030035TC.csv <==
+Comarca código
+Comarca nombre
+Tipo estudios
+Edad
+Sexo
+Personas residentes viviendas familiares
+
+
+==> 03-030035TP.csv <==
+Provincia código
+Provincia nombre
+Tipo estudios
+Edad
+Sexo
+Personas residentes viviendas familiares
+
+
+==> 03-030036A.csv <==
+Aragón
+Estudios en curso
+Personas residentes viviendas familiares
+
+
 ==> 03-030036TC.csv <==
 Comarca código
 Comarca nombre
 Estudios en curso
+Personas residentes viviendas familiares
+
+
+==> 03-030036TM.csv <==
+Municipio código
+Municipio nombre
+Estudios en curso
+Personas residentes viviendas familiares
+
+
+==> 03-030036TP.csv <==
+Provincia código
+Provincia nombre
+Estudios en curso
+Personas residentes viviendas familiares
+
+
+==> 03-030039A.csv <==
+Situación preferente
+Personas residentes viviendas familiares
+Aragón
+
+
+==> 03-030039TC.csv <==
+Comarca código
+Comarca nombre
+Situación preferente
+Personas residentes viviendas familiares
+
+
+==> 03-030039TM.csv <==
+Municipio código
+Municipio nombre
+Situación preferente
+Personas residentes viviendas familiares
+
+
+==> 03-030039TP.csv <==
+Provincia código
+Provincia nombre
+Situación preferente
+Personas residentes viviendas familiares
+
+
+==> 03-030040A.csv <==
+Aragón
+Situación preferente
+Edad
+Sexo
+Personas residentes viviendas familiares
+
+
+==> 03-030040TC.csv <==
+Comarca código
+Comarca nombre
+Situación preferente
+Edad
+Sexo
+Personas residentes viviendas familiares
+
+
+==> 03-030040TP.csv <==
+Provincia código
+Provincia nombre
+Situación preferente
+Edad
+Sexo
+Personas residentes viviendas familiares
+
+
+==> 03-030041A.csv <==
+Aragón
+Nivel estudios (agregado)
+Situación preferente
+Personas residentes viviendas familiares
+
+
+==> 03-030041TC.csv <==
+Comarca código
+Comarca nombre
+Nivel estudios (agregado)
+Situación preferente
 Personas residentes viviendas familiares
 
 
@@ -6849,6 +6575,169 @@ Provincia código
 Provincia nombre
 Nivel estudios (agregado)
 Situación preferente
+Personas residentes viviendas familiares
+
+
+==> 03-030042A.csv <==
+Aragón
+Sexo
+Sector actividad código
+Sector actividad descripción
+Personas residentes viviendas familiares
+
+
+==> 03-030042TC.csv <==
+Comarca código
+Comarca nombre
+Sexo
+Sector actividad código
+Sector actividad descripción
+Personas residentes viviendas familiares
+
+
+==> 03-030042TM.csv <==
+Municipio código
+Municipio nombre
+Sexo
+Sector actividad código
+Sector actividad descripción
+Personas residentes viviendas familiares
+
+
+==> 03-030042TP.csv <==
+Provincia código
+Provincia nombre
+Sexo
+Sector actividad código
+Sector actividad descripción
+Personas residentes viviendas familiares
+
+
+==> 03-030043A.csv <==
+Aragón
+Sexo
+Sector actividad
+Rama actividad código
+Rama actividad descripción
+Personas residentes viviendas familiares
+
+
+==> 03-030043TC.csv <==
+Comarca código
+Comarca nombre
+Sexo
+Sector actividad
+Rama actividad código
+Rama actividad descripción
+Personas residentes viviendas familiares
+
+
+==> 03-030043TM.csv <==
+Municipio código
+Municipio nombre
+Sexo
+Sector actividad
+Rama actividad código
+Rama actividad descripción
+Personas residentes viviendas familiares
+
+
+==> 03-030043TP.csv <==
+Provincia código
+Provincia nombre
+Sexo
+Sector actividad
+Rama actividad código
+Rama actividad descripción
+Personas residentes viviendas familiares
+
+
+==> 03-030044A.csv <==
+Aragón
+Sexo
+Edad
+Sector actividad
+Rama actividad código
+Rama actividad descripción
+Personas residentes viviendas familiares
+
+
+==> 03-030045A.csv <==
+Aragón
+Situación profesional código
+Situación profesional
+Sexo
+Personas residentes viviendas familiares
+
+
+==> 03-030045TC.csv <==
+Comarca código
+Comarca nombre
+Situación profesional código
+Situación profesional
+Sexo
+Personas residentes viviendas familiares
+
+
+==> 03-030045TM.csv <==
+Municipio código
+Municipio nombre
+Situación profesional código
+Situación profesional
+Sexo
+Personas residentes viviendas familiares
+
+
+==> 03-030045TP.csv <==
+Provincia código
+Provincia nombre
+Situación profesional código
+Situación profesional
+Sexo
+Personas residentes viviendas familiares
+
+
+==> 03-030046A.csv <==
+Aragón
+Situación profesional código
+Situación profesional
+Sexo
+Edad
+Personas residentes viviendas familiares
+
+
+==> 03-030047A.csv <==
+Aragón
+Condición socioeconómica código
+Condición socioeconómica
+Sexo
+Personas residentes viviendas familiares
+
+
+==> 03-030047TC.csv <==
+Comarca código
+Comarca nombre
+Condición socioeconómica código
+Condición socioeconómica
+Sexo
+Personas residentes viviendas familiares
+
+
+==> 03-030047TM.csv <==
+Municipio código
+Municipio nombre
+Condición socioeconómica código
+Condición socioeconómica
+Sexo
+Personas residentes viviendas familiares
+
+
+==> 03-030047TP.csv <==
+Provincia código
+Provincia nombre
+Condición socioeconómica código
+Condición socioeconómica
+Sexo
 Personas residentes viviendas familiares
 
 
@@ -6875,8 +6764,23 @@ Horas trabajadas
 Personas residentes viviendas familiares
 
 
+==> 03-030049TP.csv <==
+Provincia código
+Provincia nombre
+Sexo
+Horas trabajadas
+Personas residentes viviendas familiares
+
+
 ==> 03-030050A.csv <==
 Aragón
+Horas trabajadas
+Personas residentes viviendas familiares
+
+
+==> 03-030050TC.csv <==
+Comarca código
+Comarca nombre
 Horas trabajadas
 Personas residentes viviendas familiares
 
@@ -6888,6 +6792,78 @@ Horas trabajadas
 Personas residentes viviendas familiares
 
 
+==> 03-030051A.csv <==
+Aragón
+Sector actividad código
+Sector actividad descripción
+Horas trabajadas
+Personas residentes viviendas familiares
+
+
+==> 03-030052A.csv <==
+Aragón
+Horas trabajadas
+Situación profesional código
+Situación profesional
+Personas residentes viviendas familiares
+
+
+==> 03-030053A.csv <==
+Aragón
+Horas trabajadas
+Ocupacion (1 dígito) código
+Ocupación (1 dígito) descripción
+Personas residentes viviendas familiares
+
+
+==> 03-030054A.csv <==
+Aragón
+Lugar trabajo o estudio
+Personas residentes viviendas familiares
+Situación preferente
+
+
+==> 03-030054TC.csv <==
+Comarca código
+Comarca nombre
+Lugar trabajo o estudio
+Personas residentes viviendas familiares
+Situación preferente
+
+
+==> 03-030054TM.csv <==
+Municipio código
+Municipio nombre
+Lugar trabajo o estudio
+Personas residentes viviendas familiares
+Situación preferente
+
+
+==> 03-030054TP.csv <==
+Provincia código
+Provincia nombre
+Lugar trabajo o estudio
+Personas residentes viviendas familiares
+Situación preferente
+
+
+==> 03-030055A.csv <==
+Aragón
+Lugar trabajo o estudio
+Número de viajes diarios
+Personas residentes viviendas familiares
+Situación preferente
+
+
+==> 03-030055TC.csv <==
+Comarca código
+Comarca nombre
+Lugar trabajo o estudio
+Número de viajes diarios
+Personas residentes viviendas familiares
+Situación preferente
+
+
 ==> 03-030055TP.csv <==
 Provincia código
 Provincia nombre
@@ -6897,12 +6873,74 @@ Personas residentes viviendas familiares
 Situación preferente
 
 
+==> 03-030056A.csv <==
+Aragón
+Situación preferente
+Lugar trabajo o estudio
+Tiempo desplazamiento
+Personas residentes viviendas familiares
+
+
+==> 03-030056TC.csv <==
+Comarca código
+Comarca nombre
+Situación preferente
+Lugar trabajo o estudio
+Tiempo desplazamiento
+Personas residentes viviendas familiares
+
+
+==> 03-030056TP.csv <==
+Provincia código
+Provincia nombre
+Situación preferente
+Lugar trabajo o estudio
+Tiempo desplazamiento
+Personas residentes viviendas familiares
+
+
+==> 03-030057A.csv <==
+Aragón
+Municipio trabajo código
+Municipio trabajo nombre
+Personas residentes viviendas familiares
+
+
+==> 03-030057TC.csv <==
+Comarca código
+Comarca nombre
+Municipio trabajo código
+Municipio trabajo nombre
+Personas residentes viviendas familiares
+
+
+==> 03-030057TM.csv <==
+Municipio residencia código
+Municipio residencia nombre
+Municipio trabajo código
+Municipio trabajo nombre
+Personas residentes viviendas familiares
+
+
 ==> 03-030057TP.csv <==
 Provincia código
 Provincia nombre
 Municipio trabajo código
 Municipio trabajo nombre
 Personas residentes viviendas familiares
+
+
+==> 03-030058A.csv <==
+Aragón
+Estructura hogar
+Número hogares
+
+
+==> 03-030058TC.csv <==
+Comarca código
+Comarca nombre
+Estructura hogar
+Número hogares
 
 
 ==> 03-030058TM.csv <==
@@ -6919,11 +6957,54 @@ Estructura hogar
 Número hogares
 
 
+==> 03-030059A.csv <==
+Aragón
+Tipo hogar 1
+Tipo de hogar 2
+Número hogares
+
+
+==> 03-030059TC.csv <==
+Comarca código
+Comarca nombre
+Tipo hogar 1
+Tipo de hogar 2
+Número hogares
+
+
+==> 03-030059TM.csv <==
+Municipio código
+Municipio nombre
+Tipo hogar 1
+Tipo de hogar 2
+Número hogares
+
+
 ==> 03-030059TP.csv <==
 Provincia código
 Provincia nombre
 Tipo hogar 1
 Tipo de hogar 2
+Número hogares
+
+
+==> 03-030060A.csv <==
+Aragón
+Número de personas en el hogar
+Número hogares
+
+
+==> 03-030060TC.csv <==
+Comarca código
+Comarca nombre
+Número de personas en el hogar
+Número hogares
+
+
+==> 03-030060TM.csv <==
+Municipio código
+Municipio nombre
+Número de personas en el hogar
 Número hogares
 
 
@@ -6934,9 +7015,60 @@ Número de personas en el hogar
 Número hogares
 
 
+==> 03-030061A.csv <==
+Aragón
+Tamaño medio
+
+
+==> 03-030061TC.csv <==
+Comarca código
+Comarca nombre
+Tamaño medio
+
+
+==> 03-030061TM.csv <==
+Municipio código
+Municipio nombre
+Tamaño medio
+
+
+==> 03-030061TP.csv <==
+Provincia código
+Provincia nombre
+Tamaño medio
+
+
 ==> 03-030062A.csv <==
 Aragón
 Núcleos en el hogar
+Número hogares
+
+
+==> 03-030062TC.csv <==
+Comarca código
+Comarca nombre
+Núcleos en el hogar
+Número hogares
+
+
+==> 03-030062TM.csv <==
+Municipio código
+Municipio nombre
+Núcleos en el hogar
+Número hogares
+
+
+==> 03-030062TP.csv <==
+Provincia código
+Provincia nombre
+Núcleos en el hogar
+Número hogares
+
+
+==> 03-030063A.csv <==
+Aragón
+Sexo
+Edad
 Número hogares
 
 
@@ -6945,6 +7077,29 @@ Comarca código
 Comarca nombre
 Sexo
 Edad
+Número hogares
+
+
+==> 03-030063TM.csv <==
+Municipio código
+Municipio nombre
+Sexo
+Edad
+Número hogares
+
+
+==> 03-030063TP.csv <==
+Provincia código
+Provincia nombre
+Sexo
+Edad
+Número hogares
+
+
+==> 03-030064A.csv <==
+Aragón
+Edad
+Estado civil
 Número hogares
 
 
@@ -6957,6 +7112,49 @@ Estado civil
 Número hogares
 
 
+==> 03-030064TP.csv <==
+Provincia código
+Provincia nombre
+Edad
+Estado civil código
+Estado civil
+Número hogares
+
+
+==> 03-030065A.csv <==
+Aragón
+Segunda residencia
+Número hogares
+
+
+==> 03-030065TC.csv <==
+Comarca código
+Comarca nombre
+Segunda residencia
+Número hogares
+
+
+==> 03-030065TM.csv <==
+Municipio código
+Municipio nombre
+Segunda residencia
+Número hogares
+
+
+==> 03-030065TP.csv <==
+Provincia código
+Provincia nombre
+Segunda residencia
+Número hogares
+
+
+==> 03-030066A.csv <==
+Aragón
+CCAA 2 residencia código
+CCAA 2 residencia nombre
+Número hogares
+
+
 ==> 03-030066TC.csv <==
 Comarca código
 Comarca nombre
@@ -6965,9 +7163,52 @@ CCAA 2 residencia nombre
 Número hogares
 
 
+==> 03-030066TM.csv <==
+Municipio código
+Municipio nombre
+CCAA 2 residencia código
+CCAA 2 residencia nombre
+Número hogares
+
+
+==> 03-030066TP.csv <==
+Provincia código
+Provincia nombre
+CCAA 2 residencia código
+CCAA 2 residencia nombre
+Número hogares
+
+
+==> 03-030067A.csv <==
+Aragón
+Municipio 2 residencia código
+Municipio 2 residencia nombre
+Número hogares
+
+
+==> 03-030068A.csv <==
+Aragón
+Vehículos en el hogar
+Número hogares
+
+
 ==> 03-030068TC.csv <==
 Comarca código
 Comarca nombre
+Vehículos en el hogar
+Número hogares
+
+
+==> 03-030068TM.csv <==
+Municipio código
+Municipio nombre
+Vehículos en el hogar
+Número hogares
+
+
+==> 03-030068TP.csv <==
+Provincia código
+Provincia nombre
 Vehículos en el hogar
 Número hogares
 
@@ -6983,6 +7224,18 @@ Sexo
 Extranjeros
 
 
+==> 03-030070TC.csv <==
+Año
+Residencia comarca código
+Residencia comarca nombre
+Nacionalidad área código
+Nacionalidad área nombre
+Nacionalidad país código
+Nacionalidad país nombre
+Sexo
+Extrenjeros
+
+
 ==> 03-030070TP.csv <==
 Año
 Residencia provincia código
@@ -6992,6 +7245,41 @@ Nacionalidad área nombre
 Nacionalidad país código
 Nacionalidad país nombre
 Sexo
+Extranjeros
+
+
+==> 03-030071A.csv <==
+Año
+Residencia CCAA nombre
+Nacionalidad área código
+Nacionalidad área nombre
+Nacionalidad país código
+Nacionalidad país nombre
+Edad (grandes grupos)
+Extranjeros
+
+
+==> 03-030071TC.csv <==
+Año
+Residencia comarca código
+Residencia comarca nombre
+Nacionalidad área código
+Nacionalidad área nombre
+Nacionalidad país código
+Nacionalidad país nombre
+Edad (grandes grupos)
+Extranjeros
+
+
+==> 03-030071TP.csv <==
+Año
+Residencia provincia código
+Residencia provincia nombre
+Nacionalidad área código
+Nacionalidad área nombre
+Nacionalidad país código
+Nacionalidad país nombre
+Edad (grandes grupos)
 Extranjeros
 
 
@@ -7005,8 +7293,70 @@ Sexo
 Personas
 
 
+==> 03-030072TP.csv <==
+Año
+Residencia provincia código
+Residencia provincia nombre
+Nacimiento provincia código
+Provincia de nacimiento
+Edad (grandes grupos)
+Sexo
+Personas
+
+
+==> 03-030073A.csv <==
+Aragón
+Ocupacion (1 dígito) código
+Ocupación (1 dígito) descripción
+Sexo
+Personas residentes viviendas familiares
+
+
+==> 03-030073TC.csv <==
+Comarca código
+Comarca nombre
+Ocupacion (1 dígito) código
+Ocupación (1 dígito) descripción
+Sexo
+Personas residentes viviendas familiares
+
+
+==> 03-030073TM.csv <==
+Municipio código
+Municipio nombre
+Ocupacion (1 dígito) código
+Ocupación (1 dígito) descripción
+Sexo
+Personas residentes viviendas familiares
+
+
+==> 03-030073TP.csv <==
+Provincia código
+Provincia nombre
+Ocupacion (1 dígito) código
+Ocupación (1 dígito) descripción
+Sexo
+Personas residentes viviendas familiares
+
+
 ==> 03-030074A.csv <==
 Aragón
+Municipio estudio código
+Municipio estudio nombre
+Personas residentes viviendas familiares
+
+
+==> 03-030074TC.csv <==
+Comarca código
+Comarca nombre
+Municipio estudio código
+Municipio estudio nombre
+Personas residentes viviendas familiares
+
+
+==> 03-030074TM.csv <==
+Municipio residencia código
+Municipio residencia nombre
 Municipio estudio código
 Municipio estudio nombre
 Personas residentes viviendas familiares
@@ -7020,6 +7370,24 @@ Municipio estudio nombre
 Personas residentes viviendas familiares
 
 
+==> 03-030075A.csv <==
+Año
+Inscripción provincia código
+Inscripción provincia nombre
+Edad (grandes grupos)
+Sexo
+Personas
+
+
+==> 03-030075TC.csv <==
+Año
+Inscripción comarca código
+Inscripción comarca nombre
+Edad (grandes grupos)
+Sexo
+Personas
+
+
 ==> 03-030075TM.csv <==
 Año
 Inscripción provincia código
@@ -7031,11 +7399,80 @@ Sexo
 Personas
 
 
+==> 03-030075TP.csv <==
+Año
+Inscripción provincia código
+Inscripción provincia nombre
+Edad (grandes grupos)
+Sexo
+Personas
+
+
+==> 03-030076A.csv <==
+Año
+Residencia área código
+Residencia continente nombre
+Residencia área nombre
+Sexo
+Personas
+
+
 ==> 03-030076TC.csv <==
 Año
 Residencia área código
 Residencia continente nombre
 Residencia área nombre
+Inscripción comarca código
+Inscripción comarca nombre
+Sexo
+Personas
+
+
+==> 03-030076TM.csv <==
+Año
+Residencia área código
+Residencia continente nombre
+Residencia área nombre
+Inscripción provincia código
+Inscripción provincia nombre
+Inscripción municipio código
+Inscripción municipio nombre
+Inscripcion municipio estrato
+Sexo
+Personas
+
+
+==> 03-030076TP.csv <==
+Año
+Residencia área código
+Residencia continente nombre
+Residencia área nombre
+Inscripción provincia código
+Inscripción provincia nombre
+Sexo
+Personas
+
+
+==> 03-030077A.csv <==
+Año
+Residencia continente código
+Residencia continente nombre
+Residencia área código
+Residencia área nombre
+Residencia país código
+Residencia país nombre
+Sexo
+Personas
+
+
+==> 03-030077TC.csv <==
+Año
+Residencia continente código
+Residencia continente nombre
+Residencia área código
+Residencia área nombre
+Residencia país código
+Residencia país nombre
 Inscripción comarca código
 Inscripción comarca nombre
 Sexo
@@ -7054,6 +7491,20 @@ Inscripción provincia nombre
 Inscripción municipio código
 Inscripción municipio nombre
 Inscripcion municipio estrato
+Sexo
+Personas
+
+
+==> 03-030077TP.csv <==
+Año
+Residencia continente código
+Residencia continente nombre
+Residencia área código
+Residencia área nombre
+Residencia país código
+Residencia país nombre
+Inscripción provincia nombre
+Inscripción provincia código
 Sexo
 Personas
 
@@ -7105,6 +7556,41 @@ Nivel de estudios Código
 Nivel de estudios Nombre
 
 
+==> 04-040001TM.csv <==
+Municipio código
+Municipio nombre
+Municipio montaña
+Municipio zona desfavorecida
+Municipio superficie medida
+
+
+==> 04-040002A.csv <==
+Aragón
+Agua corriente
+Número de edificios
+
+
+==> 04-040002TC.csv <==
+Comarca código
+Comarca nombre
+Agua corriente
+Número de edificios
+
+
+==> 04-040002TM.csv <==
+Municipio código
+Municipio nombre
+Agua corriente
+Número de edificios
+
+
+==> 04-040002TP.csv <==
+Provincia código
+Provincia nombre
+Agua corriente
+Número de edificios
+
+
 ==> 04-040003A.csv <==
 Año
 CCAA código
@@ -7132,10 +7618,50 @@ Superficie Agrícola Utilizada (SAU)
 % superficie regada sobre SAU
 
 
+==> 04-040003TP.csv <==
+Año
+Provincia código
+Provincia nombre
+Superficie regada (has)
+Superficie Agrícola Utilizada (SAU)
+% superficie regada sobre SAU
+
+
 ==> 04-040004A.csv <==
 Aragón
 Contaminación
 Ruidos exteriores
+Número hogares
+
+
+==> 04-040004TC.csv <==
+Comarca código
+Comarca nombre
+Contaminación
+Ruidos exteriores
+Número hogares
+
+
+==> 04-040004TM.csv <==
+Municipio código
+Municipio nombre
+Contaminación
+Ruidos exteriores
+Número hogares
+
+
+==> 04-040004TP.csv <==
+Provincia código
+Provincia nombre
+Contaminación
+Ruidos exteriores
+Número hogares
+
+
+==> 04-040008A.csv <==
+Aragón
+Año de construcción
+Combustible
 Número hogares
 
 
@@ -7155,10 +7681,52 @@ Combustible
 Número hogares
 
 
+==> 04-040009A.csv <==
+CCAA código
+CCAA nombre
+Corine Land Cover 2000 nivel 1 código
+Corine Land Cover 2000 nivel 1 descripción
+Superficie (has)
+Año
+
+
+==> 04-040009TC.csv <==
+Comarca código
+Comarca nombre
+Corine Land Cover 2000 nivel 1 descripción
+Superficie (has)
+Año
+
+
 ==> 04-040009TM.csv <==
 Municipio código
 Municipio nombre
 Corine Land Cover 2000 nivel 1 descripción
+Superficie (has)
+Año
+
+
+==> 04-040009TP.csv <==
+Provincia código
+Provincia nombre
+Corine Land Cover 2000 nivel 1 descripción
+Superficie (has)
+Año
+
+
+==> 04-040010A.csv <==
+CCAA código
+CCAA nombre
+Corine Land Cover 2000 nivel 2 código
+Corine Land Cover 2000 nivel 2 descripción
+Superficie (has)
+Año
+
+
+==> 04-040010TC.csv <==
+Comarca código
+Comarca nombre
+Corine Land Cover 2000 nivel 2 descripción
 Superficie (has)
 Año
 
@@ -7179,10 +7747,42 @@ Superficie (has)
 Año
 
 
+==> 04-040011A.csv <==
+CCAA código
+CCAA nombre
+Corine Land Cover 2000 nivel 3 código
+Corine Land Cover 2000 nivel 3 descripción
+Superficie (has)
+Año
+
+
 ==> 04-040011TC.csv <==
 Comarca código
 Comarca nombre
 Corine Land Cover 2000 nivel 3 descripción
+Superficie (has)
+Año
+
+
+==> 04-040011TM.csv <==
+Municipio código
+Municipio nombre
+Corine Land Cover 2000 nivel 3 descripción
+Superficie (has)
+
+
+==> 04-040011TP.csv <==
+Provincia código
+Provincia nombre
+Corine Land Cover 2000 nivel 3 descripción
+Superficie (has)
+
+
+==> 04-040012A.csv <==
+CCAA código
+CCAA nombre
+Corine Land Cover 2000 nivel 5 código
+Corine Land Cover 2000 nivel 5 descripción
 Superficie (has)
 Año
 
@@ -7195,9 +7795,36 @@ Superficie (has)
 Año
 
 
+==> 04-040012TM.csv <==
+Municipio código
+Municipio nombre
+Corine Land Cover 2000 nivel 5 descripción
+Superficie (has)
+Año
+
+
+==> 04-040012TP.csv <==
+Provincia código
+Provincia nombre
+Corine Land Cover 2000 nivel 5 descripción
+Superficie (has)
+Año
+
+
 ==> 04-040013A.csv <==
 CCAA código
 CCAA nombre
+Espacios Naturales Protegidos
+Superficie de Espacios Naturales Protegidos
+Lugares de Importancia Comunitaria
+Superficie Lugares de Importacia Comunitaria
+Zonas de especial Protección para las Aves
+Superficie Zonas de Especial Protección para las Aves
+
+
+==> 04-040013TC.csv <==
+Comarca código
+Comarca nombre
 Espacios Naturales Protegidos
 Superficie de Espacios Naturales Protegidos
 Lugares de Importancia Comunitaria
@@ -7228,12 +7855,50 @@ Zonas de especial Protección para las Aves
 Superficie Zonas de Especial Protección para las Aves
 
 
+==> 04-040014A.csv <==
+Año
+CCAA código
+CCAA nombre
+Contenedores de vidrio
+Kg vidrio doméstico
+
+
+==> 04-040014TC.csv <==
+Año
+Comarca código
+Comarca nombre
+Contenedores de vidrio
+Kg vidrio doméstico
+
+
+==> 04-040014TM.csv <==
+Año
+Municipio código
+Municipio nombre
+Contenedores de vidrio
+Kg vidrio doméstico
+
+
 ==> 04-040014TP.csv <==
 Año
 Provincia código
 Provincia nombre
 Contenedores de vidrio
 Kg vidrio doméstico
+
+
+==> 04-040015A.csv <==
+Año
+CCAA código
+CCAA nombre
+Contenedores de papel y cartón
+
+
+==> 04-040015TC.csv <==
+Año
+Comarca código
+Comarca nombre
+Contenedores de papel y cartón
 
 
 ==> 04-040015TM.csv <==
@@ -7258,10 +7923,42 @@ Contenedores de pilas
 Kg recogidos de pilas
 
 
+==> 04-040016TC.csv <==
+Año
+Comarca código
+Comarca nombre
+Contenedores de pilas
+Kg recogidos de pilas
+
+
+==> 04-040016TM.csv <==
+Año
+Municipio código
+Municipio nombre
+Contenedores de pilas
+Kg recogidos de pilas
+
+
+==> 04-040016TP.csv <==
+Año
+Provincia código
+Provincia nombre
+Contenedores de pilas
+Kg recogidos de pilas
+
+
 ==> 04-040017A.csv <==
 Año
 CCAA código
 CCAA nombre
+Incendios
+Superficie forestal afectada
+
+
+==> 04-040017TC.csv <==
+Año
+Comarca código
+Comarca nombre
 Incendios
 Superficie forestal afectada
 
@@ -7274,10 +7971,48 @@ Incendios
 Superficie forestal afectada
 
 
+==> 04-040017TP.csv <==
+Año
+Provincia código
+Provincia nombre
+Incendios
+Superficie forestal afectada
+
+
+==> 04-040018A.csv <==
+Año
+CCAA código
+CCAA nombre
+Superficie total agricultura ecológica
+Superficie calificada agricultura ecológica
+Superficie calificada en reconversión
+Superficie calificada primer año prácticas
+
+
+==> 04-040018TC.csv <==
+Año
+Comarca código
+Comarca nombre
+Superficie total agricultura ecológica
+Superficie calificada agricultura ecológica
+Superficie calificada en reconversión
+Superficie calificada primer año prácticas
+
+
 ==> 04-040018TM.csv <==
 Año
 Municipio código
 Municipio nombre
+Superficie total agricultura ecológica
+Superficie calificada agricultura ecológica
+Superficie calificada en reconversión
+Superficie calificada primer año prácticas
+
+
+==> 04-040018TP.csv <==
+Año
+Provincia código
+Provincia nombre
 Superficie total agricultura ecológica
 Superficie calificada agricultura ecológica
 Superficie calificada en reconversión
@@ -7292,12 +8027,35 @@ Depuradoras
 Habitantes equivalentes
 
 
+==> 04-040019TC.csv <==
+Año
+Comarca código
+Comarca nombre
+Depuradoras
+Habitantes equivalentes
+
+
+==> 04-040019TM.csv <==
+Año
+Municipio código
+Municipio nombre
+Depuradoras
+Habitantes equivalentes
+
+
 ==> 04-040019TP.csv <==
 Año
 Provincia código
 Provincia nombre
 Depuradoras
 Habitantes equivalentes
+
+
+==> 04-040020A.csv <==
+Año
+CCAA código
+CCAA nombre
+Fuentes Mineromedicinales
 
 
 ==> 04-040020TC.csv <==
@@ -7307,11 +8065,34 @@ Comarca nombre
 Fuentes Mineromedicinales
 
 
+==> 04-040020TM.csv <==
+Año
+Municipio código
+Municipio nombre
+Fuentes Mineromedicinales
+
+
 ==> 04-040020TP.csv <==
 Año
 Provincia código
 Provincia nombre
 Fuentes Mineromedicinales
+
+
+==> 05-050001A.csv <==
+Mes y año
+Sexo
+Régimen
+Afiliaciones en alta
+
+
+==> 05-050001TC.csv <==
+Mes y año
+Comarca nombre
+Comarca código
+Sexo
+Régimen
+Afiliaciones en alta
 
 
 ==> 05-050001TM.csv <==
@@ -7323,10 +8104,106 @@ Régimen
 Afiliaciones en alta
 
 
+==> 05-050001TP.csv <==
+Mes y año
+Dirección provincial (código)
+Dirección provincial nombre
+Sexo
+Régimen
+Afiliaciones en alta
+
+
+==> 05-050002A.csv <==
+Mes y año
+Edad
+Sexo
+Afiliaciones en alta
+
+
+==> 05-050002TC.csv <==
+Mes y año
+Comarca código
+Comarca nombre
+Sexo
+Afiliaciones en alta
+
+
+==> 05-050002TP.csv <==
+Mes y año
+Provincia código
+Provincia nombre
+Edad (Grupos Quinquenales 2010)
+Sexo
+Afiliaciones en alta
+
+
+==> 05-050003A.csv <==
+Mes (código)
+Mes y año
+Sexo
+Nacionalidad
+Afiliaciones en alta
+
+
+==> 05-050003TC.csv <==
+Mes (código)
+Mes y año
+Comarca código
+Comarca nombre
+Sexo
+Nacionalidad
+Afiliaciones en alta
+
+
+==> 05-050003TM.csv <==
+Mes (código)
+Mes y año
+Municipio nombre
+Municipio código
+Sexo
+Nacionalidad
+Afiliaciones en alta
+
+
+==> 05-050003TP.csv <==
+Mes (código)
+Mes y año
+Provincia código
+Provincia nombre
+Sexo
+Nacionalidad
+Afiliaciones en alta
+
+
 ==> 05-050004A.csv <==
 Mes y año
 Sector de actividad
 Sexo
+Afiliaciones en alta
+
+
+==> 05-050004TC.csv <==
+Mes y año
+Comarca código
+Comarca nombre
+Sector de actividad
+Afiliaciones en alta
+Sexo
+
+
+==> 05-050004TP.csv <==
+Mes y año
+Sexo
+Provincia código
+Provincia nombre
+Sector de actividad
+Afiliaciones en alta
+
+
+==> 05-050005A.csv <==
+Mes y año
+División (2 dígitos) código
+División (2 dígitos) descripción
 Afiliaciones en alta
 
 
@@ -7339,12 +8216,43 @@ División (2 dígitos) descripción
 Afiliaciones en alta
 
 
+==> 05-050006A.csv <==
+Mes y año
+Edad
+Sexo
+Afiliaciones en alta
+
+
+==> 05-050006TC.csv <==
+Mes y año
+Comarca código
+Comarca nombre
+Sexo
+Afiliaciones en alta
+
+
 ==> 05-050006TP.csv <==
 Mes y año
 Provincia código
 Provincia nombre
 Edad (Grupos Quinquenales 2010)
 Sexo
+Afiliaciones en alta
+
+
+==> 05-050007A.csv <==
+Mes y año
+Sector de actividad
+Sexo
+Afiliaciones en alta
+
+
+==> 05-050007TP.csv <==
+Mes y año
+Sexo
+Provincia código
+Provincia nombre
+Sector de actividad
 Afiliaciones en alta
 
 
@@ -7358,6 +8266,39 @@ Sexo
 Afiliaciones en alta
 
 
+==> 05-050009TM.csv <==
+Mes y año
+Municipio código
+Municipio nombre
+Cod temporalidad
+Temporalidad
+Sexo
+Afiliaciones en alta
+
+
+==> 05-050009TP.csv <==
+Mes y año
+Dirección provincial (código)
+Dirección provincial nombre
+Cod temporalidad
+Temporalidad
+Sexo
+Afiliaciones en alta
+
+
+==> 05-050101A.csv <==
+Mes y año
+Número Empresas
+Aragón
+
+
+==> 05-050101TP.csv <==
+Mes y año
+Dirección provincial (código)
+Provincia
+Número Empresas
+
+
 ==> 05-050102A.csv <==
 Mes y año
 Sector código
@@ -7367,10 +8308,36 @@ Régimen
 Aragón
 
 
+==> 05-050102TP.csv <==
+Mes y año
+Dirección provincial (código)
+Sector código
+Sector descripción
+Número Empresas
+Régimen
+Aragón
+Dirección provincial nombre
+
+
+==> 05-050103TP.csv <==
+Mes y año
+Dirección provincial (código)
+Dirección provincial nombre
+Número Empresas
+Estrato
+
+
 ==> 05-050104A.csv <==
 Mes y año
 Cuentas cotización con trabajadores
 Territorio
+
+
+==> 05-050104TC.csv <==
+Mes y año
+Codcom
+Comarca nombre
+Cuentas cotización con trabajadores
 
 
 ==> 05-050104TM.csv <==
@@ -7378,6 +8345,30 @@ Mes y año
 Codmun
 Municipio
 Cuentas cotización con trabajadores
+
+
+==> 05-050105A.csv <==
+Mes y año
+Sector código
+Sector descripción
+Cuentas cotización con trabajadores
+Territorio
+
+
+==> 05-050105TP.csv <==
+Mes y año
+Dirección provincial (código)
+Dirección provincial nombre
+Sector código
+Sector descripción
+Cuentas cotización con trabajadores
+
+
+==> 05-050201A.csv <==
+Mes y año
+Aragón
+Sexo
+N parados
 
 
 ==> 05-050201TC.csv <==
@@ -7388,6 +8379,14 @@ Sexo
 N parados
 
 
+==> 05-050201TP.csv <==
+Mes y año
+Provincia código
+Provincia nombre
+N parados
+Sexo
+
+
 ==> 05-050202A.csv <==
 Mes y año
 Aragón
@@ -7396,21 +8395,30 @@ Sexo
 N parados
 
 
-==> 05-050204A.csv <==
+==> 05-050202TP.csv <==
 Mes y año
-Aragón
-Grupos 1 duración demanda código
-Grupos 1 duración demanda descripción
+Provincia código
+Provincia nombre
+Edad (grupos quinquenales)
 Sexo
 N parados
 
 
-==> 05-050204TC.csv <==
+==> 05-050203A.csv <==
 Mes y año
-Comarca código
-Comarca nombre
-Grupos 1 duración demanda código
-Grupos 1 duración demanda descripción
+Aragón
+Sector código
+Sector descripcion
+Sexo
+N parados
+
+
+==> 05-050203TP.csv <==
+Mes y año
+Provincia código
+Provincia nombre
+Sector código
+Sector descripción
 Sexo
 N parados
 
@@ -7423,6 +8431,130 @@ Grupos 1 duración demanda código
 Grupos 1 duración demanda descripción
 Sexo
 N parados
+
+
+==> 05-050205TC.csv <==
+Mes y año
+Comarca código
+Comarca nombre
+Nivel formativo grupo IAEST código
+Nivel formativo grupo IAEST descripción
+Sexo
+N parados
+
+
+==> 05-050205TP.csv <==
+Mes y año
+Provincia código
+Provincia nombre
+Nivel formativo grupo IAEST código
+Nivel formativo grupo IAEST descripción
+Sexo
+N parados
+
+
+==> 05-050206A.csv <==
+Mes y año
+Aragón
+Orden nacionalidad
+UE25-UE27-UE28
+UE25
+UE27
+UE28
+Sexo
+N parados
+
+
+==> 05-050206TC.csv <==
+Mes y año
+Comarca código
+Comarca nombre
+Orden nacionalidad
+UE25-UE27-UE28
+UE25
+UE27
+UE28
+Sexo
+N parados
+
+
+==> 05-050207A.csv <==
+Mes y año
+Aragón
+Orden nacionalidad
+UE25-UE27-UE28
+UE25
+UE27
+UE28
+Codsect
+Sector
+Sector código
+Sector descripción
+Sexo
+N parados
+
+
+==> 05-050207TP.csv <==
+Mes y año
+Provincia código
+Provincia nombre
+Orden nacionalidad
+UE25-UE27-UE28
+UE25
+UE27
+UE28
+Codsect
+Sector
+Sexo
+N parados
+Sector código
+Sector descripción
+
+
+==> 05-050301A.csv <==
+Mes y año
+Mes (código)
+Sexo
+Número de contratos
+Año
+CCAA nombre
+
+
+==> 05-050301TC.csv <==
+Mes y año
+Mes (código)
+Sexo
+Número de contratos
+Comarca código
+Comarca nombre
+
+
+==> 05-050301TP.csv <==
+Mes y año
+Mes (código)
+Sexo
+Número de contratos
+Provincia código
+Provincia nombre
+
+
+==> 05-050302A.csv <==
+Mes y año
+Mes (código)
+Sexo
+Edad (grupos quinquenales)
+Número de contratos
+CCAA nombre
+
+
+==> 05-050302TP.csv <==
+Mes y año
+Mes (código)
+Provincia código
+Provincia nombre
+Sexo
+Edad (grupos quinquenales)
+Número de contratos
 
 
 ==> 05-050303A.csv <==
@@ -7446,11 +8578,61 @@ Nivel formativo grupo IAEST código
 Número de contratos
 
 
+==> 05-050303TP.csv <==
+Mes y año
+Mes (código)
+Provincia código
+Provincia nombre
+Sexo
+Nivel formativo grupo IAEST descripción
+Nivel formativo grupo IAEST código
+Número de contratos
+Nivel formativo código
+
+
+==> 05-050304A.csv <==
+Mes y año
+Mes (código)
+Sexo
+UE28
+UE28-UE27-UE25
+Orden nac
+UE27
+UE25
+Número de contratos
+CCAA nombre
+
+
+==> 05-050304TC.csv <==
+Mes y año
+Mes (código)
+Sexo
+ue28-UE27-UE25
+Orden nac
+UE28
+UE27
+UE25
+Comarca código
+Comarca nombre
+Número de contratos
+
+
 ==> 05-050305TC.csv <==
 Mes y año
 Mes (código)
 Comarca código
 Comarca nombre
+Sector código
+Sector descripción
+Sexo
+Número de contratos
+
+
+==> 05-050305TP.csv <==
+Mes y año
+Mes (código)
+Provincia código
+Provincia nombre
 Sector código
 Sector descripción
 Sexo
@@ -7484,6 +8666,67 @@ Sexo
 Número de contratos
 
 
+==> 05-050307TP.csv <==
+Mes y año
+Mes (código)
+Mes nombre
+Año
+AÑO-CNO
+Provincia código
+Provincia nombre
+Grandes grupos CNO
+Ocupación (1 dígito) descripción
+Sexo
+Número de contratos
+
+
+==> 05-050308A.csv <==
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Sexo
+Número de contratos
+Número trabajadores (CC)
+CCAA nombre
+
+
+==> 05-050308TC.csv <==
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Comarca código
+Comarca nombre
+Sexo
+Número de contratos
+Número trabajadores (CC)
+
+
+==> 05-050308TP.csv <==
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Provincia código
+Provincia nombre
+Sexo
+Número de contratos
+Número trabajadores (CC)
+
+
+==> 05-050309TC.csv <==
+Año
+Mes (código)
+Mes y año
+Mes nombre
+Comarca código
+Comarca nombre
+Temporalidad
+Sexo
+Número de contratos
+
+
 ==> 05-050309TP.csv <==
 Mes y año
 Mes (código)
@@ -7492,6 +8735,19 @@ Provincia nombre
 Sexo
 Número de contratos
 Temporalidad
+
+
+==> 05-050310A.csv <==
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Sexo
+Número de contratos
+Temporalidad
+Modalidad
+Grupo de tipo de contrato
+CCAA nombre
 
 
 ==> 05-050310TC.csv <==
@@ -7520,36 +8776,123 @@ Sexo
 Número de contratos
 
 
-==> 05-050316TP.csv <==
+==> 05-050311TP.csv <==
 Mes y año
 Mes (código)
 Mes nombre
 Año
 Provincia código
 Provincia nombre
-Sector código
-Sector descripción
 Sexo
-Temporalidad
-Días duración contrato
 Número de contratos
-Duración contrato
-Duración contrato  1.00  Número de contratos
+Grupo de tipo de jornada
 
 
-==> 05-050317A.csv <==
+==> 05-050312A.csv <==
+Mes y año
+Mes (código)
+Sexo
+Número de contratos
+Temporalidad
+Bonificado o no
+Mes nombre
+Año
+CCAA nombre
+
+
+==> 05-050312TC.csv <==
+Mes y año
+Mes (código)
+Año
+Mes nombre
+Comarca código
+Comarca nombre
+Sexo
+Número de contratos
+Temporalidad
+Bonificado o no
+
+
+==> 05-050312TP.csv <==
 Mes y año
 Mes (código)
 Mes nombre
 Año
-CIF
 Sexo
-Temporalidad
-Días duración contrato
+Provincia código
+Provincia nombre
 Número de contratos
-Duración contrato
-Duración contrato  1.00  Número de contratos
+Temporalidad
+Bonificado o no
+
+
+==> 05-050313A.csv <==
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Sexo
+Número de contratos
+Sector código
+Sector descripción
 CCAA nombre
+
+
+==> 05-050314TC.csv <==
+El resultado de consulta no contenía ninguna fila
+
+==> 05-050315A.csv <==
+El resultado de consulta no contenía ninguna fila
+
+==> 05-050315TC.csv <==
+El resultado de consulta no contenía ninguna fila
+
+==> 05-050315TP.csv <==
+El resultado de consulta no contenía ninguna fila
+
+==> 05-050316A.csv <==
+El resultado de consulta no contenía ninguna fila
+
+==> 05-050317TC.csv <==
+El resultado de consulta no contenía ninguna fila
+
+==> 05-0709-070901TP.csv <==
+Año
+Dirección Provincial Código
+Dirección Provincial Nombre
+Sexo
+N Accidentes
+Grupo Grado Código
+Grupo Grado Código
+
+
+==> 05-0709-070902A.csv <==
+Año
+Sexo
+N Accidentes
+Grupo Grado Código
+Grupo Grado Código
+CCAA
+
+
+==> 05-0709-070902TM.csv <==
+Año
+Sexo
+N Accidentes
+Código
+Municipio
+Municipio Código
+Municipio Nombre
+Grupo Grado Código
+Grupo Grado Código
+
+
+==> 05-0709-070903A.csv <==
+CCAA
+Año
+Sexo
+Edad (grupos quinquenales)
+N Accidentes
 
 
 ==> 05-0709-070903TC.csv <==
@@ -7561,19 +8904,18 @@ Comarca Código
 Comarca Nombre
 
 
-==> 05-0709-070903TM.csv <==
+==> 05-0709-070903TP.csv <==
 Año
+Dirección Provincial Código
+Dirección Provincial Nombre
 Sexo
 Edad (grupos quinquenales)
 N Accidentes
-Código
-Municipio
 
 
 ==> 05-0709-070904TC.csv <==
 Año
 Temporalidad
-Orden
 Sector Código
 Sector Descripción
 N Accidentes
@@ -7581,9 +8923,35 @@ Comarca Código
 Comarca Nombre
 
 
-==> 05-0709-070905ATC.csv <==
+==> 05-0709-070904TP.csv <==
 Año
-Comarca Código
+Dirección Provincial Código
+Dirección Provincial Nombre
+Temporalidad
+Sector Código
+Sector Descripción
+N Accidentes
+
+
+==> 05-0709-070905ATP.csv <==
+Año
+Dirección Provincial Código
+Dirección Provincial Nombre
+N Accidentes
+División (2 dígitos) Código
+División (2 dígitos) Descripción
+
+
+==> 05-0709-070905BA.csv <==
+Año
+N Accidentes
+División (2 dígitos) Código
+División (2 dígitos) Descripción
+CCAA
+
+
+==> 05-0709-070905BTC.csv <==
+Año
 N Accidentes
 División (2 dígitos) Código
 División (2 dígitos) Descripción
@@ -7591,7 +8959,7 @@ Comarca Código
 Comarca Nombre
 
 
-==> 05-0709-070905ATP.csv <==
+==> 05-0709-070905BTP.csv <==
 Año
 Dirección Provincial Código
 Dirección Provincial Nombre
@@ -7609,6 +8977,81 @@ Sexo
 CCAA
 
 
+==> 05-0709-070906BA.csv <==
+Año
+N Accidentes
+Grupo
+Descripción Ocupación
+Sexo
+CCAA
+
+
+==> 05-0709-070906BTM.csv <==
+Año
+N Accidentes
+Grupo
+Descripción ocupación
+Sexo
+Código
+Municipio
+
+
+==> 05-0709-070908A.csv <==
+Año
+Grupo Antigüedad
+N Accidentes
+Temporalidad
+CCAA
+
+
+==> 05-0709-070908TM.csv <==
+Año
+Grupo Antigüedad
+N Accidentes
+Temporalidad
+Código
+Municipio
+
+
+==> 05-0709-070908TP.csv <==
+Año
+Dirección Provincial Código
+Dirección Provincial Nombre
+Grupo Antigüedad
+N Accidentes
+Temporalidad
+
+
+==> 05-0709-070909TC.csv <==
+Año
+Comarca Código
+Comarca Nombre
+N Accidentes
+Tamaño Centro
+Grupo Grado Código
+Grupo Grado Código
+
+
+==> 05-0709-070909TP.csv <==
+Año
+Dirección Provincial Código
+Dirección Provincial Nombre
+N Accidentes
+Tamaño Centro
+Grupo Grado Código
+Grupo Grado Código
+
+
+==> 05-0709-070910A.csv <==
+CCAA
+Año
+N Accidentes
+Grupo Grado Código
+Grupo Grado Código
+Régimen Código (2 dígitos)
+Régimen (2 dígitos)
+
+
 ==> 05-0709-070910TM.csv <==
 Año
 N Accidentes
@@ -7620,6 +9063,25 @@ Régimen Código (2 dígitos)
 Régimen (2 dígitos)
 
 
+==> 05-0709-070910TP.csv <==
+Año
+Dirección Provincial Código
+Dirección Provincial Nombre
+N Accidentes
+Grupo Grado Código
+Grupo Grado Código
+Régimen Código (2 dígitos)
+Régimen (2 dígitos)
+
+
+==> 05-0709-070921AA.csv <==
+Año
+N Accidentes
+División (2 dígitos) Código
+División (2 dígitos) Descripción
+CCAA
+
+
 ==> 05-0709-070921ATC.csv <==
 Año
 N Accidentes
@@ -7628,15 +9090,6 @@ División (2 dígitos) Descripción
 Comarca Código
 Comarca Nombre
 Comarca Código
-
-
-==> 05-0709-070921ATP.csv <==
-Año
-Dirección Provincial Código
-Dirección Provincial Nombre
-N Accidentes
-División (2 dígitos) Código
-División (2 dígitos) Descripción
 
 
 ==> 05-0709-070921BA.csv <==
@@ -7657,26 +9110,79 @@ Comarca Nombre
 Comarca Código
 
 
-==> 05-0709-070953TP.csv <==
+==> 05-0709-070952A.csv <==
+Año
+Sexo
+N Accidentes
+Grupo Grado Código
+Grupo Grado Código
+CCAA Código
+CCAA Nombre
+
+
+==> 05-0709-070952TM.csv <==
 Año
 Dirección Provincial Código
 Dirección Provincial Nombre
+Sexo
+N Accidentes
+Código
+Municipio
+Grupo Grado Código
+Grupo Grado Código
+
+
+==> 05-0709-070952TP.csv <==
+Año
+Dirección Provincial Código
+Dirección Provincial Nombre
+Sexo
 N Accidentes
 Grupo Grado Código
 Grupo Grado Código
-Régimen Código (2 dígitos)
-Régimen (2 dígitos)
 
 
-==> 05-0709-070954TC.csv <==
+==> 05-0709-070954A.csv <==
 Año
 Temporalidad
-Orden
 Sector Código
 Sector Descripción
 N Accidentes
+CCAA Código
+CCAA Nombre
+
+
+==> 05-0709-070955TC.csv <==
+Año
+N Accidentes
+Grupo
+Descripción Ocupación
+Sexo
 Comarca Código
 Comarca Nombre
+
+
+==> 05-0709-070955TP.csv <==
+Año
+Dirección Provincial Código
+N Accidentes
+Grupo
+Descripción Ocupación
+Sexo
+Dirección Provincial Nombre
+
+
+==> 915-150001A.csv <==
+CCAA nombre
+CCAA código
+Año
+Censo electoral
+Participación
+Abstención
+Votos nulos
+Votos blancos
+Votos a candidaturas
+% Participación
 
 
 ==> 915-150001TC.csv <==
@@ -7707,25 +9213,7 @@ Votos a candidaturas
 % Participación
 
 
-==> 915-150003TP.csv <==
-Provincia código
-Provincia nombre
-Año
-Votos
-Siglas
-Diputados
-
-
-==> 915-150004TP.csv <==
-Provincia código
-Provincia nombre
-Año
-Votos
-Siglas
-Diputados
-
-
-==> 915-150005TP.csv <==
+==> 915-150001TP.csv <==
 Provincia código
 Provincia nombre
 Año
@@ -7739,7 +9227,68 @@ Votos a candidaturas
 % Participación
 
 
-==> 915-150007A.csv <==
+==> 915-150002A.csv <==
+CCAA nombre
+CCAA código
+Año
+Votos
+Siglas
+Diputados
+
+
+==> 915-150003TC.csv <==
+Comarca código
+Comarca nombre
+Año
+Orden
+Votos
+Siglas
+
+
+==> 915-150003TM.csv <==
+Municipio código
+Municipio nombre
+Año
+Votos
+Siglas
+
+
+==> 915-150003TP.csv <==
+Provincia código
+Provincia nombre
+Año
+Votos
+Siglas
+Diputados
+
+
+==> 915-150004TC.csv <==
+Comarca código
+Comarca nombre
+Año
+Orden
+Votos
+Siglas
+
+
+==> 915-150004TM.csv <==
+Municipio código
+Municipio nombre
+Año
+Votos
+Siglas
+
+
+==> 915-150004TP.csv <==
+Provincia código
+Provincia nombre
+Año
+Votos
+Siglas
+Diputados
+
+
+==> 915-150005A.csv <==
 CCAA nombre
 CCAA código
 Año
@@ -7752,13 +9301,115 @@ Votos a candidaturas
 % Participación
 
 
-==> 915-150009TC.csv <==
+==> 915-150006TC.csv <==
 Comarca código
 Comarca nombre
 Año
 Orden
+Votos
+Siglas
+
+
+==> 915-150006TM.csv <==
+Municipio código
+Municipio nombre
+Año
+Votos
+Siglas
+
+
+==> 915-150006TP.csv <==
+Provincia código
+Provincia nombre
+Año
+Votos
+Siglas
+
+
+==> 915-150007TC.csv <==
+Comarca código
+Comarca nombre
+Año
+Población
+Censo electoral
+Participación
+Abstención
+Votos nulos
+Votos blancos
+Votos a candidaturas
+% Participación
+
+
+==> 915-150007TM.csv <==
+Municipio código
+Municipio nombre
+Año
+Población
+Censo electoral
+Participación
+Abstención
+Votos nulos
+Votos blancos
+Votos a candidaturas
+% Participación
+
+
+==> 915-150007TP.csv <==
+Provincia código
+Provincia nombre
+Año
+Población
+Censo electoral
+Participación
+Abstención
+Votos nulos
+Votos blancos
+Votos a candidaturas
+% Participación
+
+
+==> 915-150008TM.csv <==
+Municipio código
+Municipio nombre
+Año
+Orden
+Siglas
+Votos
+
+
+==> 915-150008TP.csv <==
+Provincia código
+Provincia nombre
+Año
+Orden
+Siglas
+Votos
+
+
+==> 915-150009A.csv <==
+CCAA código
+CCAA nombre
+Año
+Siglas agrupada
+Votos
+Concejales
+
+
+==> 915-150009TM.csv <==
+Municipio código
+Municipio nombre
+Año
+Orden
 Siglas
 Concejales
+
+
+==> 915-150010TP.csv <==
+Provincia código
+Provincia nombre
+Año
+Siglas
+Diputados
 
 
 ==> 915-150011TM.csv <==
@@ -7773,4 +9424,62 @@ Votos nulos
 Votos blancos
 Votos a candidaturas
 % Participación
+
+
+==> 915-150011TP.csv <==
+Provincia código
+Provincia nombre
+Año
+Población
+Censo electoral
+Participación
+Abstención
+Votos nulos
+Votos blancos
+Votos a candidaturas
+% Participación
+
+
+==> 915-150012A.csv <==
+CCAA nombre
+CCAA código
+Año
+Votos
+Siglas
+Diputados
+
+
+==> 915-150013TM.csv <==
+Municipio código
+Municipio nombre
+Año
+Votos
+Siglas
+
+
+==> 915-150013TP.csv <==
+Provincia código
+Provincia nombre
+Año
+Votos
+Siglas
+Diputados
+
+
+==> 915-150014TC.csv <==
+Comarca código
+Comarca nombre
+Año
+Orden
+Votos
+Siglas
+
+
+==> 915-150014TP.csv <==
+Provincia código
+Provincia nombre
+Año
+Votos
+Siglas
+Diputados
 

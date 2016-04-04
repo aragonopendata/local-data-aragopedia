@@ -1,4 +1,4 @@
-package com.localidata;
+package com.localidata.process;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,6 +11,16 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
+import com.localidata.process.bean.ConfigBean;
+import com.localidata.process.bean.DataBean;
+import com.localidata.process.bean.SkosBean;
+import com.localidata.util.Prop;
+import com.localidata.util.Utils;
+
+/**
+ * 
+ * @author Localidata
+ */
 public class GenerateConfig {
 
 
@@ -18,18 +28,14 @@ public class GenerateConfig {
 
 	protected String inputDirectoryString = "D:\\trabajo\\gitOpenDataAragon2\\doc\\iaest\\DatosPrueba2";
 
-	protected static String configDirectoryString = "";
+	public static String configDirectoryString = "";
 
 	protected String dimensionDirectoryString = "D:\\trabajo\\gitOpenDataAragon2\\doc\\iaest\\DimensionesFinales\\PosiblesDimensionesMenos20Valores";
 
 	protected String[] extensions = new String[] { "csv", "txt" };
-
-	protected static HashMap<String, DataBean> skosExtrated = new HashMap<String, DataBean>();
-
+	public static HashMap<String, DataBean> skosExtrated = new HashMap<String, DataBean>();
 	public static final String errorFileString = "errores.txt";
-
 	protected ArrayList<DataBean> listConstants = new ArrayList<DataBean>();
-
 
 	public GenerateConfig(String input, String dimension, String config) {
 		inputDirectoryString = input;
@@ -37,9 +43,8 @@ public class GenerateConfig {
 		configDirectoryString = config;
 	}
 
-
 	public void generateAllConfig() {
-
+		log.debug("Init generateAllConfig");
 		ArrayList<String> dimension = extractDimensions(dimensionDirectoryString);
 		HashMap<String, ConfigBean> configExtrated = new HashMap<String, ConfigBean>();
 		File inputDirectoryFile = new File(inputDirectoryString);
@@ -70,14 +75,11 @@ public class GenerateConfig {
 				configBean = new ConfigBean();
 				configBean.setId(id);
 			}
-
 			configBean.getLetters().add(letters);
 			try {
 				List<String> csvLines = FileUtils.readLines(file, "UTF-8");
 				String headerLine = Utils.weakClean(csvLines.get(0));
-				String fisrtLine = Utils.weakClean(csvLines.get(2));
 				String[] cells = headerLine.split("\t");
-				String[] cellsFisrtLine = fisrtLine.split("\t");
 				for (int h = 0; h < cells.length; h++) {
 					String name = cells[h];
 					DataBean dataBean = null;
@@ -122,44 +124,53 @@ public class GenerateConfig {
 								if (name.toLowerCase().contains("año")) {
 									String type = "";
 									for (int j = 1; j < csvLines.size(); j++) {
-										String line = Utils.weakClean(csvLines.get(j));
+										String line = Utils.weakClean(csvLines
+												.get(j));
 										if (Utils.v(line)) {
-											String[] cellsLine = line.split("\t");
+											String[] cellsLine = line
+													.split("\t");
 											if (cellsLine.length > 0
 													&& cellsLine.length > h) {
 												String cell = cellsLine[h];
-									
-												if (Utils.isDate(cell) && !type.equals("xsd:int")) {
-													type="xsd:date";
-												}else if (Utils.isInteger(cell)){
-													type="xsd:int";
-												}else{
-													log.info("La celda '"+cell+"' de la columna '"+name+"' no es un año");
+
+												if (Utils.isDate(cell)
+														&& !type.equals("xsd:int")) {
+													type = "xsd:date";
+												} else if (Utils
+														.isInteger(cell)) {
+													type = "xsd:int";
+												} else {
+													log.info("La celda '"
+															+ cell
+															+ "' de la columna '"
+															+ name
+															+ "' no es un año");
 													break;
 												}
 											}
 										}
 									}
-									if(type.equals("xsd:date")){
+									if (type.equals("xsd:date")) {
 										dataBean.setNormalizacion("sdmx-dimension:refPeriod");
 										dataBean.setType("xsd:date");
-									}else if(type.equals("xsd:int")){
+									} else if (type.equals("xsd:int")) {
 										dataBean.setDimensionMesure("medida");
 										dataBean.setNormalizacion(Prop.datasetName
-												+ "-measure:" + Utils.urlify(name));
+												+ "-measure:"
+												+ Utils.urlify(name));
 										dataBean.setType("xsd:int");
-									}else{
+									} else {
 										dataBean.setNormalizacion(Prop.datasetName
 												+ "-dimension:"
 												+ Utils.urlify(name));
 										dataBean.setType("xsd:string");
 									}
-								} else{
+								} else {
 									dataBean.setNormalizacion(Prop.datasetName
 											+ "-dimension:"
 											+ Utils.urlify(name));
 									dataBean.setType("skos:Concept");
-									skosData.add(dataBean);										
+									skosData.add(dataBean);
 								}
 							}
 						} else {
@@ -189,10 +200,10 @@ public class GenerateConfig {
 									}
 								}
 							}
-							if(type.equals(""))
+							if (type.equals(""))
 								type = "xsd:string";
 							dataBean.setType(type);
-							
+
 						}
 					}
 					configBean.getMapData().put(dataBean.getName(), dataBean);
@@ -228,11 +239,12 @@ public class GenerateConfig {
 					+ configBean.getId() + letters + ".csv");
 		}
 		generateSkosMapping();
+		log.debug("End generateAllConfig");
 	}
-
 
 	private void extractSkosConcept(List<String> csvLines,
 			ArrayList<DataBean> skosData) {
+		log.debug("Init extractSkosConcept");
 		String headerLine = Utils.weakClean(csvLines.get(0));
 		String[] cells = headerLine.split("\t");
 		int[] posColumn = new int[skosData.size()];
@@ -273,8 +285,9 @@ public class GenerateConfig {
 						} else {
 							dataBean = skosData.get(i);
 						}
-						if(dataBean.getMapSkos().get(skosBean.getId())==null){
-							dataBean.getMapSkos().put(skosBean.getId(), skosBean);
+						if (dataBean.getMapSkos().get(skosBean.getId()) == null) {
+							dataBean.getMapSkos().put(skosBean.getId(),
+									skosBean);
 							skosExtrated.put(dataBean.getName(), dataBean);
 						}
 					} catch (ArrayIndexOutOfBoundsException e) {
@@ -293,10 +306,11 @@ public class GenerateConfig {
 				}
 			}
 		}
+		log.debug("End extractSkosConcept");
 	}
 
-
 	private ArrayList<String> extractDimensions(String directoryString) {
+		log.debug("Init extractDimensions");
 		ArrayList<String> result = new ArrayList<String>();
 		File dimensionDirectoryFile = new File(directoryString);
 		Collection<File> listCSV = FileUtils.listFiles(dimensionDirectoryFile,
@@ -304,9 +318,9 @@ public class GenerateConfig {
 		for (File file : listCSV) {
 			result.add(Utils.dimensionWeakClean(file.getName()));
 		}
+		log.debug("End extractDimensions");
 		return result;
 	}
-
 
 	private boolean contains(ArrayList<String> set, String busqueda) {
 		boolean result = false;
@@ -320,8 +334,8 @@ public class GenerateConfig {
 		return result;
 	}
 
-
 	public void generateSkosMapping() {
+		log.debug("Init generateSkosMapping");
 		String filedSeparator = "\"";
 		String csvSeparator = ",";
 
@@ -344,7 +358,7 @@ public class GenerateConfig {
 			File file = new File(pathFile);
 			try {
 				Utils.stringToFile(content.toString(), file);
-				if (Prop.publicDrive) {
+				if (Prop.publishDrive) {
 					GoogleDriveAPI api = new GoogleDriveAPI();
 					api.init();
 					api.createSpreadsheetFromFile(Prop.idParentFolder,
@@ -358,27 +372,21 @@ public class GenerateConfig {
 			}
 
 		}
-
+		log.debug("End generateSkosMapping");
 	}
-
 
 	public static void main(String[] args) {
 
 		if ((log == null) || (log.getLevel() == null))
 			PropertyConfigurator.configure("log4j.properties");
-		if (args.length == 3) {
+		if (args.length == 4) {
 			log.info("Start process");
 			Prop.loadConf();
-			GenerateConfig config = new GenerateConfig(args[0], args[1],
-					args[2]);
+			GenerateConfig config = new GenerateConfig(args[1], args[2],
+					args[3]);
 			config.generateAllConfig();
 			log.info("Finish process");
-		} else {
-			log.info("Se deben de pasar dos parámetros: ");
-			log.info("\tEl directorio donde están los archivos de entrada");
-			log.info("\tEl directorio donde están las dimensiones");
-			log.info("\tEl directorio donde se va a escribir la configuración resultante");
-		}
+		} 
 
 	}
 

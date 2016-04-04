@@ -1,4 +1,4 @@
-package com.localidata;
+package com.localidata.process;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -10,46 +10,36 @@ import java.util.regex.Pattern;
 
 import org.apache.log4j.Logger;
 
+import com.localidata.process.bean.ConfigBean;
+import com.localidata.process.bean.DataBean;
+import com.localidata.util.Constants;
+import com.localidata.util.Prop;
+import com.localidata.util.Utils;
 
+/**
+ * 
+ * @author Localidata
+ *
+ */
 public class TransformToRDF {
 
-
 	private final static Logger log = Logger.getLogger(GenerateData.class);
-
 	private List<String> csvLines = null;
-
 	private String rdfFinal = "";
-
 	private String rdfProperties = "";
-
 	protected static String errorsReport = "";
-
-	private static ArrayList<String> errorsSet = new ArrayList<String>();
-
-	protected static StringBuffer errorsContent = new StringBuffer();
-
+	private static ArrayList<String> errorsList = new ArrayList<String>();
 	private ArrayList<String> cleanHeader = new ArrayList<String>();
-
 	private ArrayList<String> normalizedHeader = new ArrayList<String>();
-
 	private File outputDirectoryFile;
-
 	private File propertiesFile;
-
 	private File dsdFile;
-
 	protected static File errorReportFile;
-
 	private ConfigBean configBean;
-
-	private ArrayList<String> dsdSet = new ArrayList<String>();
-
-	private ArrayList<String> propertiesSet = new ArrayList<String>();
-
+	private ArrayList<String> dsdList = new ArrayList<String>();
+	private ArrayList<String> propertiesList = new ArrayList<String>();
 	protected static StringBuffer propertiesContent = new StringBuffer();
-
 	String cubo = "";
-
 
 	public TransformToRDF(List<String> csvLines, File outputDirectoryFile,
 			File propertiesFile, File dsdFile, File errorReportFile,
@@ -62,14 +52,13 @@ public class TransformToRDF {
 		this.configBean = configBean;
 	}
 
-
 	public void initTransformation(String fileName, int numfile, String id,
-			ArrayList<String> dsdSet, ArrayList<String> propertiesSet) {
+			ArrayList<String> dsdList, ArrayList<String> propertiesList) {
 		log.debug("Init initTransformation");
-		if (this.csvLines != null) {
+		if (this.csvLines != null && this.csvLines.size()>2) {
 			log.debug("Start file " + fileName);
-			this.dsdSet = dsdSet;
-			this.propertiesSet = propertiesSet;
+			this.dsdList = dsdList;
+			this.propertiesList = propertiesList;
 			StringBuffer lineAux = new StringBuffer();
 			lineAux.append(addPrefix());
 			log.debug("Insert prefix");
@@ -109,7 +98,6 @@ public class TransformToRDF {
 		}
 		log.debug("End initTransformation");
 	}
-
 
 	public static StringBuffer addPrefix() {
 		log.debug("Init addPrefix");
@@ -152,7 +140,6 @@ public class TransformToRDF {
 		log.debug("End addPrefix");
 		return result;
 	}
-
 	private StringBuffer addCubeLink(String fileName, String dsd) {
 		log.debug("Init addCubeLink");
 		StringBuffer result = new StringBuffer();
@@ -170,7 +157,6 @@ public class TransformToRDF {
 		log.debug("End addCubeLink");
 		return result;
 	}
-
 
 	private String addHeader(String headerLine, String nextLine,
 			String fileName, int numfile, ArrayList<String> lettersList) {
@@ -193,7 +179,7 @@ public class TransformToRDF {
 			letters += letter + " ";
 		}
 		aux = aux + "\trdfs:comment \"Esta estructura afecta a las areas: "
-				+ letters + "\" ." + "\n";
+				+ letters + "\"^^xsd:string ." + "\n";
 		aux = aux + "\n";
 		insertDsd(aux, resultado + " " + notation);
 		headerLine = Utils.weakClean(headerLine);
@@ -213,15 +199,15 @@ public class TransformToRDF {
 				if (dataBean.getNormalizacion() != null) {
 
 					boolean noRepetido = true;
-					if (!propertiesSet.contains(dataBean.getNormalizacion())) {
-						propertiesSet.add(dataBean.getNormalizacion());
+					if (!propertiesList.contains(dataBean.getNormalizacion())) {
+						propertiesList.add(dataBean.getNormalizacion());
 					} else {
 						noRepetido = false;
 					}
 					if (!dataBean.getNormalizacion().contains("sdmx-dimension:refPeriod")) {
 						aux = "<" + resultado + "> qb:component _:node"
 								+ numfile + "egmfx" + col + " ." + "\n";
-						if (!dsdSet.contains(resultado + " "
+						if (!dsdList.contains(resultado + " "
 								+ dataBean.getDimensionMesure() + " "
 								+ dataBean.getNormalizacion())) {
 							Utils.stringToFileAppend(aux, dsdFile);
@@ -255,9 +241,9 @@ public class TransformToRDF {
 								propertiesContent.append("\trdfs:range "
 										+ dataBean.getType());
 								if (dataBean.getType().equals(
-										Constants.skosType)) {
-									propertiesContent.append(" ;" + "\n");
+										Constants.skosType)) {									
 									if (dataBean.getMapSkos().keySet().size() > 0) {
+										propertiesContent.append(" ;" + "\n");
 										String key = dataBean.getMapSkos()
 												.keySet().iterator().next();
 										String codeList = dataBean.getMapSkos()
@@ -269,6 +255,7 @@ public class TransformToRDF {
 														+ codeList + "> ."
 														+ "\n");
 									} else {
+										propertiesContent.append(" ." + "\n");
 										if (cleanCell.equals("")) {
 											TransformToRDF
 													.insertError(fileName
@@ -370,7 +357,6 @@ public class TransformToRDF {
 		log.debug("End addHeader");
 		return resultado;
 	}
-
 
 	private StringBuffer addObservation(String line, String fileName) {
 		log.debug("Init addObservation " + line + " " + fileName);
@@ -526,39 +512,35 @@ public class TransformToRDF {
 		return result;
 	}
 
-
 	public String getRdfFinal() {
 		return rdfFinal;
 	}
-
 
 	public void setRdfFinal(String rdfFinal) {
 		this.rdfFinal = rdfFinal;
 	}
 
-
 	public String getRdfProperties() {
 		return rdfProperties;
 	}
 
-
 	public void setRdfProperties(String rdfProperties) {
 		this.rdfProperties = rdfProperties;
 	}
-
-	protected static void insertError(String error) {
+	
+	public static void insertError(String error) {
 		log.debug("Init insertError " + error);
-		if (!errorsSet.contains(error)) {
-			errorsSet.add(error);
+		if (!errorsList.contains(error)) {
+			errorsList.add(error);
 			Utils.stringToFileAppend(error + "\n", errorReportFile);
 		}
 		log.debug("End insertError");
 	}
-
+	
 	protected void insertDsd(String aux, String search) {
 		log.debug("Init insertDsd " + aux + " " + search);
-		if (!dsdSet.contains(search)) {
-			dsdSet.add(search);
+		if (!dsdList.contains(search)) {
+			dsdList.add(search);
 			Utils.stringToFileAppend(aux, dsdFile);
 		}
 		log.debug("End insertDsd");

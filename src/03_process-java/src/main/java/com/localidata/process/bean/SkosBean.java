@@ -1,60 +1,69 @@
-package com.localidata;
+package com.localidata.process.bean;
 
 import java.util.ArrayList;
 
-
+/**
+ * 
+ * @author Localidata
+ *
+ */
 public class SkosBean {
-	
 
 	private String id;
-
 	private SkosBean parent;
-
 	private ArrayList<SkosBean> sons;
-
 	private String URI;
-
 	private String label;
-	
-	public SkosBean(){
+
+	public SkosBean() {
 		sons = new ArrayList<SkosBean>();
 	}
-	
+
 	public String getId() {
 		return id;
 	}
+
 	public void setId(String id) {
 		this.id = id;
 	}
+
 	public String getURI() {
 		return URI;
 	}
+
 	public void setURI(String uRI) {
 		URI = uRI;
 	}
+
 	public String getLabel() {
 		return label;
 	}
+
 	public void setLabel(String label) {
 		this.label = label;
 	}
+
 	public SkosBean getParent() {
 		return parent;
 	}
+
 	public void setParent(SkosBean parent) {
 		this.parent = parent;
 	}
+
 	public ArrayList<SkosBean> getSons() {
 		return sons;
 	}
+
 	public void setSons(ArrayList<SkosBean> sons) {
 		this.sons = sons;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "SkosBean [id=" + id + ", URI=" + URI + "]";
 	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -63,6 +72,7 @@ public class SkosBean {
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -84,5 +94,5 @@ public class SkosBean {
 			return false;
 		return true;
 	}
-	
+
 }

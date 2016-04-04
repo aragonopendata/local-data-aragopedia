@@ -1,4 +1,4 @@
-package com.localidata;
+package com.localidata.process;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -23,28 +23,29 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
+import com.localidata.process.bean.ConfigBean;
+import com.localidata.process.bean.DataBean;
+import com.localidata.process.bean.SkosBean;
+import com.localidata.util.Constants;
+import com.localidata.util.Prop;
+import com.localidata.util.Utils;
 
+/**
+ * 
+ * @author Localidata
+ */
 public class GenerateData {
-
 	private final static Logger log = Logger.getLogger(GenerateData.class);
-
-	String inputDirectoryString = "";
-
-	String outputDirectoryString = "";
-
-	String configDirectoryString = "";
-
-	static String propertiesFileString = "";
-
-	String[] extensions = new String[] { "csv" };
-
-	String[] extensionsConfig = new String[] { "xlsx", "csv" };
-	HashMap<String, ConfigBean> mapconfig = new HashMap<String, ConfigBean>();
-	ArrayList<DataBean> dataWithSkos = new ArrayList<DataBean>();
-	private String formatConfig = "xlsx";
-	private ArrayList<String> dsdSet = new ArrayList<String>();
-	private ArrayList<String> propertiesSet = new ArrayList<String>();
-
+	private String inputDirectoryString = "";
+	private String outputDirectoryString = "";
+	private String configDirectoryString = "";
+	private String[] extensions = new String[] { "csv" };
+	private String[] extensionsConfig = new String[] { "xlsx", "csv" };
+	private HashMap<String, ConfigBean> mapconfig = new HashMap<String, ConfigBean>();
+	private ArrayList<DataBean> dataWithSkos = new ArrayList<DataBean>();
+	private ArrayList<DataBean> dataWithSkosHierarchical = new ArrayList<DataBean>();
+	private ArrayList<String> dsdList = new ArrayList<String>();
+	private ArrayList<String> propertiesList = new ArrayList<String>();
 
 	public GenerateData(String input, String output, String config) {
 		this.inputDirectoryString = input;
@@ -52,30 +53,8 @@ public class GenerateData {
 		this.configDirectoryString = config;
 	}
 
-
-	public static void main(String[] args) {
-		if ((log == null) || (log.getLevel() == null))
-			PropertyConfigurator.configure("log4j.properties");
-		if (args.length == 3) {
-			log.info("Start process");
-			Prop.loadConf();
-			GenerateData app = new GenerateData(args[0], args[1], args[2]);
-			app.backup();
-			app.extractConfig();
-			app.extractInformation();
-			app.createSkos();
-			log.info("Finish process");
-		} else {
-			log.info("Se deben de pasar dos parámetros: ");
-			log.info("\tEl directorio donde están los archivos de entrada");
-			log.info("\tEl directorio donde se van a escribir los archivos ttl");
-			log.info("\tEl directorio donde están los excel de configuación");
-		}
-
-	}
-
-	private void extractConfig() {
-		log.debug("Init extractConfig");
+	private void readConfig() {
+		log.debug("Init readConfig");
 		log.info("Comienza a extraerse la configuración");
 		File configDirectoryFile = new File(configDirectoryString);
 		File areasReportFile = new File(outputDirectoryString + File.separator
@@ -119,26 +98,24 @@ public class GenerateData {
 				}
 
 				configBean.setId(id);
-				if (formatConfig.equals("csv")) {
-//					readCsv(file, configBean);
-				} else {
-					readXlsx(file, configBean);
-				}
+				 if (Prop.formatConfig.equals("csv")) {
+					 readCsv(file, configBean);
+				 } else {
+					 readXlsxFile(file, configBean);
+				 }
 				mapconfig.put(id, configBean);
 				Utils.stringToFileAppend(id + " " + areas + "\n",
 						areasReportFile);
 			}
 		}
-		
-		ArrayList<DataBean> dataWithSkosRemove = new ArrayList<DataBean>();
-		for (Iterator<DataBean> it1 = dataWithSkos.iterator(); it1.hasNext();) {
+
+		for (Iterator<DataBean> it1 = dataWithSkosHierarchical.iterator(); it1.hasNext();) {
 			DataBean data1 = (DataBean) it1.next();
-			for (Iterator<DataBean> it2 = dataWithSkos.iterator(); it2.hasNext();) {
-				DataBean data2 = (DataBean) it2.next();
+			if(data1.getRelationKos()!=null){
+				DataBean data2 = mapconfig.get(data1.getIdConfig()).getMapData().get(data1.getRelationKos());
 				HashMap<String, SkosBean> mapSkos = data1.mergeSkos(data2);
 				if(mapSkos!=null){
 					log.info("Kos "+data1.getName()+" is parent of "+data2.getName());
-					dataWithSkosRemove.add(data2);
 					data2.setWriteSkos(false);
 					data1.setMapSkos(mapSkos);
 					data2.setMapSkos(mapSkos);
@@ -147,13 +124,95 @@ public class GenerateData {
 				}
 			}
 		}
-		if(dataWithSkosRemove.size()>0)
-			dataWithSkos.removeAll(dataWithSkosRemove);
-		
 		log.info("Finaliza de extraerse la configuración");
-		log.debug("End extractConfig");
+		log.debug("End readConfig");
 	}
 
+	private void readCsv(File file, ConfigBean configBean) {
+		log.debug("Init readCsv");
+		List<String> csvLines;
+		try {
+			csvLines = FileUtils.readLines(file, "UTF-8");
+
+			String[] cellsName = csvLines.get(0).split(",");
+			String[] cellsNameNormalized = csvLines.get(1).split(",");
+			String[] cellsNormalization = csvLines.get(2).split(",");
+			String[] cellsDimMesure = csvLines.get(3).split(",");
+			String[] cellsType = csvLines.get(4).split(",");
+			String[] cellsSkosfile = csvLines.get(5).split(",");
+			String[] cellsConstant=null;
+			String[] cellsConstantValue=null;
+			String[] cellsRelationKos=null;
+			String[] cellsKosName=null;
+
+			if(csvLines.size()==7)
+				cellsConstant = csvLines.get(6).split(",");
+			if(csvLines.size()==8)
+				cellsConstantValue = csvLines.get(7).split(",");
+			if(csvLines.size()==9)
+				cellsRelationKos = csvLines.get(9).split(",");
+			if(csvLines.size()==10)
+				cellsKosName = csvLines.get(10).split(",");
+			
+			
+			int columnReaded = 0;
+			while (columnReaded < cellsName.length) {
+				
+				DataBean dataBean = new DataBean();
+				if (cellsName[columnReaded] == null) {
+						columnReaded++;
+				} else {
+					dataBean.setName(removeStartEndCaracter(cellsName[columnReaded]));
+					dataBean.setNameNormalized(removeStartEndCaracter(cellsNameNormalized[columnReaded]));
+					dataBean.setNormalizacion(removeStartEndCaracter(cellsNormalization[columnReaded]));
+					dataBean.setDimensionMesure(removeStartEndCaracter(cellsDimMesure[columnReaded]));
+					dataBean.setIdConfig(configBean.getId());
+					String type = "";
+					if (Utils.v(removeStartEndCaracter(cellsType[columnReaded]))) {
+						type = removeStartEndCaracter(cellsType[columnReaded]);
+					} else {
+						type = "xsd:string";
+					}
+					dataBean.setType(type);
+					if (Utils.v(removeStartEndCaracter(cellsSkosfile[columnReaded]))) {
+						HashMap<String, SkosBean> mapSkos = readMappingFileCSV(removeStartEndCaracter(cellsSkosfile[columnReaded]));
+						dataBean.setMapSkos(mapSkos);
+						configBean.getMapData().put(dataBean.getNameNormalized(),
+								dataBean);
+						dataWithSkos.add(dataBean);
+					} else {
+						configBean.getMapData().put(dataBean.getNameNormalized(),
+								dataBean);
+					}
+					if (Prop.addDataConstant 
+							&& cellsConstant!=null
+							&& Utils.v(removeStartEndCaracter(cellsConstant[columnReaded]))
+							&& removeStartEndCaracter(cellsConstant[columnReaded]).equals(
+									Constants.constante)) {
+						if (Utils.v(removeStartEndCaracter(cellsConstantValue[columnReaded]))) {
+							dataBean.setConstant(removeStartEndCaracter(cellsConstantValue[columnReaded]) + "");
+							configBean.getListDataConstant().add(dataBean);
+						}
+					}
+					if (cellsRelationKos!=null && Utils.v(removeStartEndCaracter(cellsRelationKos[columnReaded]))) {
+						dataBean.setRelationKos(removeStartEndCaracter(cellsRelationKos[columnReaded]));
+						dataWithSkosHierarchical.add(dataBean);
+					}
+					if (cellsKosName!=null && Utils.v(removeStartEndCaracter(cellsKosName[columnReaded]))) {
+						dataBean.setKosName(removeStartEndCaracter(cellsKosName[columnReaded]));
+					} else {
+						dataBean.setKosName(dataBean.getNameNormalized());
+					}
+
+					columnReaded++;
+				}
+			}
+		} catch (IOException e) {
+			log.error("Error read csv ", e);
+		}
+		log.debug("End readCsv");
+	}
+	
 	private String removeStartEndCaracter(String csvLine) {
 		log.debug("Init removeStartEndCaracter");
 		String line = csvLine;
@@ -167,8 +226,8 @@ public class GenerateData {
 		return line;
 	}
 
-	private void readXlsx(File file, ConfigBean configBean) {
-		log.debug("Init readXlsx");
+	private void readXlsxFile(File file, ConfigBean configBean) {
+		log.debug("Init readXlsxFile");
 		InputStream inp = null;
 		Workbook wb = null;
 		try {
@@ -191,7 +250,8 @@ public class GenerateData {
 		Row rowSkosfile = sheet.getRow(5);
 		Row rowConstant = sheet.getRow(6);
 		Row rowConstantValue = sheet.getRow(7);
-		Row rowKosName = sheet.getRow(8);
+		Row rowRelationKos = sheet.getRow(8);
+		Row rowKosName = sheet.getRow(9);
 		boolean cont = true;
 		int columnReaded = 0;
 		while (cont) {
@@ -209,62 +269,77 @@ public class GenerateData {
 			Cell cellConstantValue = null;
 			if (rowConstantValue != null)
 				cellConstantValue = rowConstantValue.getCell(columnReaded);
-			Cell cellKosName= null;
+			Cell cellRelationKos = null;
+			if (rowRelationKos != null)
+				cellRelationKos = rowRelationKos.getCell(columnReaded);
+			Cell cellKosName = null;
 			if (rowKosName != null)
 				cellKosName = rowKosName.getCell(columnReaded);
 			
+
 			DataBean dataBean = new DataBean();
 			if (cellName == null) {
-				if(rowName.getCell((columnReaded+1))==null)					
+				if (rowName.getCell((columnReaded + 1)) == null)
 					cont = false;
 				else
 					columnReaded++;
 			} else {
 				dataBean.setName(cellName.getStringCellValue());
-				dataBean.setNameNormalized(cellNameNormalized.getStringCellValue());
-				dataBean.setNormalizacion(cellNormalization.getStringCellValue());
+				dataBean.setNameNormalized(cellNameNormalized
+						.getStringCellValue());
+				dataBean.setNormalizacion(cellNormalization
+						.getStringCellValue());
 				dataBean.setDimensionMesure(cellDimMesure.getStringCellValue());
 				dataBean.setIdConfig(configBean.getId());
-				String type="";
-				if(cellType!=null){
-					type=cellType.getStringCellValue();
-				}else{
+				String type = "";
+				if (cellType != null) {
+					type = cellType.getStringCellValue();
+				} else {
 					type = "xsd:string";
 				}
 				dataBean.setType(type);
-				if (cellSkosfile != null && !cellSkosfile.getStringCellValue().equals("")) {
-					HashMap<String, SkosBean> mapSkos = processSkos(cellSkosfile
+				if (cellSkosfile != null
+						&& !cellSkosfile.getStringCellValue().equals("")) {
+					HashMap<String, SkosBean> mapSkos = readMappingFile(cellSkosfile
 							.getStringCellValue());
 					dataBean.setMapSkos(mapSkos);
-					configBean.getMapData().put(
-							dataBean.getNameNormalized(), dataBean);
+					configBean.getMapData().put(dataBean.getNameNormalized(),
+							dataBean);	
 					dataWithSkos.add(dataBean);
 				} else {
-					configBean.getMapData().put(
-							dataBean.getNameNormalized(), dataBean);
+					configBean.getMapData().put(dataBean.getNameNormalized(),
+							dataBean);
 				}
-				if (Prop.addDataConstant && cellConstant != null && cellConstant.getStringCellValue().equals(Constants.constante)){
-					if(cellConstantValue!=null){
-						dataBean.setConstant(cellConstantValue.getStringCellValue() + "");
+				if (Prop.addDataConstant
+						&& cellConstant != null
+						&& cellConstant.getStringCellValue().equals(
+								Constants.constante)) {
+					if (cellConstantValue != null) {
+						dataBean.setConstant(cellConstantValue
+								.getStringCellValue() + "");
 						configBean.getListDataConstant().add(dataBean);
 					}
 				}
-				if(cellKosName!=null){
+				if (cellRelationKos != null) {
+					dataBean.setRelationKos(cellRelationKos.getStringCellValue());
+					dataWithSkosHierarchical.add(dataBean);
+				}
+				if (cellKosName != null) {
 					dataBean.setKosName(cellKosName.getStringCellValue());
-				}else{
+				} else {
 					dataBean.setKosName(dataBean.getNameNormalized());
 				}
-				
+
 				columnReaded++;
 			}
 		}
-		log.debug("End readXlsx");
+		log.debug("End readXlsxFile");
 	}
 
-	private HashMap<String, SkosBean> processSkos(String skosPath) {
-		log.debug("Init processSkos");
+	private HashMap<String, SkosBean> readMappingFile(String skosPath) {
+		log.debug("Init readSkosFile");
 		HashMap<String, SkosBean> mapSkos = new HashMap<String, SkosBean>();
-		
+
 		File skosMappingg = new File(configDirectoryString + File.separator
 				+ skosPath);
 		InputStream inp = null;
@@ -303,8 +378,9 @@ public class GenerateData {
 					uriCell = d.intValue() + "";
 				} else {
 					uriCell = cellUri.getStringCellValue();
-					String id = uriCell.substring(uriCell.lastIndexOf("/")+1, uriCell.length()); 
-					if(!idCell.equals(id)){
+					String id = uriCell.substring(uriCell.lastIndexOf("/") + 1,
+							uriCell.length());
+					if (!idCell.equals(id)) {
 						skosBeanExtra.setId(id);
 						skosBeanExtra.setLabel(id);
 						skosBeanExtra.setURI(uriCell);
@@ -315,11 +391,53 @@ public class GenerateData {
 				mapSkos.put(idCell, skosBean);
 			}
 		}
-		log.debug("End processSkos");
+		log.debug("End readSkosFile");
+		return mapSkos;
+	}
+	
+	private HashMap<String, SkosBean> readMappingFileCSV(String skosPath) {
+		log.debug("Init readMappingFileCSV");
+		HashMap<String, SkosBean> mapSkos = new HashMap<String, SkosBean>();
+		
+		if(skosPath.endsWith("xlsx"))
+			skosPath=skosPath.replace("xlsx", "csv");
+		File skosMappingg = new File(configDirectoryString + File.separator
+				+ skosPath);
+		List<String> csvLines;
+		try {
+			csvLines = FileUtils.readLines(skosMappingg, "UTF-8");
+
+			for (String line : csvLines) {
+				String[] cells = line.split("\",\"");
+				String cellId = removeStartEndCaracter(cells[0]);
+				String cellUri = removeStartEndCaracter(cells[1]);
+				
+				SkosBean skosBean = new SkosBean();
+				SkosBean skosBeanExtra = new SkosBean();
+				skosBean.setLabel(cellId);
+				cellId = Utils.urlify(cellId);
+				skosBean.setId(cellId);
+
+				String id = cellUri.substring(cellUri.lastIndexOf("/") + 1,
+						cellUri.length());
+				if (!cellId.equals(id)) {
+					skosBeanExtra.setId(id);
+					skosBeanExtra.setLabel(id);
+					skosBeanExtra.setURI(cellUri);
+					mapSkos.put(id, skosBeanExtra);
+				}
+				skosBean.setURI(cellUri);
+				mapSkos.put(cellId, skosBean);
+			}
+		} catch (IOException e) {
+			log.error("Error read csv ", e);
+		}
+		
+		log.debug("End readMappingFileCSV");
 		return mapSkos;
 	}
 
-	private void createSkos() {
+	private void writeSkosTTL() {
 		log.debug("Init createSkos");
 		log.info("Init to create skos");
 		File kosFile = new File(outputDirectoryString + File.separator
@@ -330,59 +448,58 @@ public class GenerateData {
 		ArrayList<String> kosCreated = new ArrayList<String>();
 		resultIni.append(TransformToRDF.addPrefix());
 
-		for (Iterator<DataBean> itDataBean = dataWithSkos.iterator(); itDataBean.hasNext();) {
+		for (Iterator<DataBean> itDataBean = dataWithSkos.iterator(); itDataBean
+				.hasNext();) {
 
 			DataBean dataBean = itDataBean.next();
 			if (dataBean != null
 					&& !kosCreated.contains(dataBean.getNameNormalized())
 					&& dataBean.getMapSkos().size() > 0) {
 				String suject = Prop.host + "/" + Prop.kosName + "/"
-						+ Prop.datasetName + "/"
-						+ dataBean.getKosName();
+						+ Prop.datasetName + "/" + dataBean.getKosName();
 				resultIni.append("<" + suject + "> "
 						+ "a skos:ConceptScheme;\n");
 				resultIni.append("\tskos:notation \""
 						+ dataBean.getNameNormalized() + "\";\n");
-				resultIni.append("\trdfs:label \""
-						+ dataBean.getName() + "\";\n");
+				resultIni.append("\trdfs:label \"" + dataBean.getName()
+						+ "\";\n");
 
 				for (Iterator<String> iterator3 = dataBean.getMapSkos()
 						.keySet().iterator(); iterator3.hasNext();) {
-					// resultIni.append(resultFin);
 					String keySkos = iterator3.next();
-					SkosBean skosBean = dataBean.getMapSkos().get(
-							keySkos);
+					SkosBean skosBean = dataBean.getMapSkos().get(keySkos);
 					if (skosBean != null) {
-						String sujectKos = suject + "/" + Utils.urlify(skosBean.getId());
-						if(skosBean.getParent()==null){
+						String sujectKos = suject + "/"
+								+ Utils.urlify(skosBean.getId());
+						if (skosBean.getParent() == null) {
 							resultIni.append("\tskos:hasTopConcept <"
-								+ sujectKos + ">;\n");
+									+ sujectKos + ">;\n");
 						}
 						resultFin.append("<" + sujectKos
 								+ "> a skos:Concept;\n");
-						resultFin
-								.append("\tskos:inScheme <" + suject
-										+ ">;\n");
+						resultFin.append("\tskos:inScheme <" + suject + ">;\n");
 						String label = skosBean.getId();
 						if (skosBean.getLabel() != null
 								&& !skosBean.getLabel().equals(""))
 							label = skosBean.getLabel();
 						resultFin.append("\tskos:notation \""
 								+ skosBean.getId() + "\";\n");
-						resultFin.append("\tskos:prefLabel \"" + Utils.prefLabelClean(label)
-								+ "\"");
-						if(skosBean.getSons().size()>0){
+						resultFin.append("\tskos:prefLabel \""
+								+ Utils.prefLabelClean(label) + "\"");
+						if (skosBean.getSons().size() > 0) {
 							resultFin.append(";\n");
-							for (Iterator<SkosBean> itSons = skosBean.getSons().iterator(); itSons.hasNext();) {
+							for (Iterator<SkosBean> itSons = skosBean.getSons()
+									.iterator(); itSons.hasNext();) {
 								SkosBean son = itSons.next();
-								resultFin.append("\tskos:narrower <" + suject + "/" + son.getId() + ">");
-								if(itSons.hasNext()){
+								resultFin.append("\tskos:narrower <" + suject
+										+ "/" + son.getId() + ">");
+								if (itSons.hasNext()) {
 									resultFin.append(";\n");
-								}else{
+								} else {
 									resultFin.append(".\n");
 								}
 							}
-						}else{
+						} else {
 							resultFin.append(".\n");
 						}
 
@@ -402,33 +519,7 @@ public class GenerateData {
 		log.debug("End createSkos");
 	}
 
-	private void backup() {
-		log.debug("Init backup");
-		log.info("Comienza a hacerse el backup");
-		File outputDirectoryFile = new File(outputDirectoryString);
-		if (outputDirectoryFile.exists()) {
-			SimpleDateFormat formatFullDate = new SimpleDateFormat("yyyyMMdd");
-			String copy = outputDirectoryString + "_"
-					+ formatFullDate.format(new Date());
-			File copyDirectoryFile = new File(copy);
-			int aux = 1;
-			while (copyDirectoryFile.exists()) {
-				copyDirectoryFile = new File(copy + "_" + aux++);
-			}
-
-			try {
-				FileUtils.moveDirectoryToDirectory(outputDirectoryFile,
-						copyDirectoryFile, true);
-			} catch (IOException e) {
-				log.error("Error haciendo backup", e);
-			}
-		}
-		log.info("Finaliza de hacerse el backup");
-		log.debug("End backup");
-	}
-
-
-	private void extractInformation() {
+	private void writeInformationTTL() {
 		log.debug("Init extractInformation");
 		File inputDirectoryFile = new File(inputDirectoryString);
 		File propertiesFile = new File(outputDirectoryString + File.separator
@@ -464,31 +555,73 @@ public class GenerateData {
 							file.getName().length() - 4);
 				}
 				ConfigBean configBean = mapconfig.get(fileName);
-				if(configBean!=null){
+				if (configBean != null) {
 					File outputDirectoryFile = new File(outputDirectoryString
 							+ File.separator + "DatosTTL" + File.separator
-							+ "informes" + File.separator + fileName + fileLetter
-							+ ".ttl");
+							+ "informes" + File.separator + fileName
+							+ fileLetter + ".ttl");
 					log.info("Init file " + fileName + fileLetter + ". Size "
 							+ FileUtils.sizeOf(file) + " " + numfile + "/"
 							+ listCSV.size());
 					List<String> csvLines = FileUtils.readLines(file, "UTF-8");
-					TransformToRDF transformToRDF = new TransformToRDF(csvLines,
-							outputDirectoryFile, propertiesFile, dsdFile,
-							errorReportFile, configBean);
+					TransformToRDF transformToRDF = new TransformToRDF(
+							csvLines, outputDirectoryFile, propertiesFile,
+							dsdFile, errorReportFile, configBean);
 					transformToRDF.initTransformation(fileName + fileLetter,
-							numfile, fileName, dsdSet, propertiesSet);
+							numfile, fileName, dsdList, propertiesList);
 					log.info("End file " + outputDirectoryFile.getName() + " "
 							+ numfile + "/" + listCSV.size());
-				}else{
-					log.error("Error al extraer la configuración de "+fileName);
+				} else {
+					log.error("Error al extraer la configuración de "
+							+ fileName);
 				}
 				numfile++;
 			} catch (Exception e) {
 				log.error("Error al extraer la información ", e);
 			}
 		}
-		
+
 		log.debug("End extractInformation");
+	}
+
+	private void backup() {
+		log.debug("Init backup");
+		log.info("Comienza a hacerse el backup");
+		File outputDirectoryFile = new File(outputDirectoryString);
+		if (outputDirectoryFile.exists()) {
+			SimpleDateFormat formatFullDate = new SimpleDateFormat("yyyyMMdd");
+			String copy = outputDirectoryString + "_"
+					+ formatFullDate.format(new Date());
+			File copyDirectoryFile = new File(copy);
+			int aux = 1;
+			while (copyDirectoryFile.exists()) {
+				copyDirectoryFile = new File(copy + "_" + aux++);
+			}
+
+			try {
+				FileUtils.moveDirectoryToDirectory(outputDirectoryFile,
+						copyDirectoryFile, true);
+			} catch (IOException e) {
+				log.error("Error haciendo backup", e);
+			}
+		}
+		log.info("Finaliza de hacerse el backup");
+		log.debug("End backup");
+	}
+
+	public static void main(String[] args) {
+		if ((log == null) || (log.getLevel() == null))
+			PropertyConfigurator.configure("log4j.properties");
+		if (args.length == 4) {
+			log.info("Start process");
+			Prop.loadConf();
+			GenerateData app = new GenerateData(args[1], args[2], args[3]);
+			app.backup();
+			app.readConfig();
+			app.writeInformationTTL();
+			app.writeSkosTTL();
+			log.info("Finish process");
+		} 
+
 	}
 }

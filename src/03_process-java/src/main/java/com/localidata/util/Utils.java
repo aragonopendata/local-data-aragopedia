@@ -1,4 +1,4 @@
-package com.localidata;
+package com.localidata.util;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -26,24 +26,21 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
+import com.localidata.process.TransformToRDF;
 
+/**
+ * @author Localidata
+ *
+ */
 public class Utils {
 
-
 	private final static Logger log = Logger.getLogger(Utils.class);
-
 	private static final int defaultReadTimeOut = 60000;
-
 	private static final int defaultTimeOut = 10000;
-
 	private static String comarcasAragon = null;
-
 	private static String municipiosAragon = null;
-
 	private static String provinciasAragon = null;
-
 	private static String comunidadAragon = null;
-
 
 	public static String prefLabelClean(String chain) {
 		if(Utils.v(chain) && chain.length()>=2)
@@ -53,7 +50,6 @@ public class Utils {
 		return chain;
 	}
 	
-
 	public static String nameDataBeanClean(String chain) {
 		String chainToURI = chain.replace("á", "a");
 		chainToURI = chainToURI.replace("á", "a");
@@ -67,7 +63,6 @@ public class Utils {
 		return chainToURI;
 	}
 	
-
 	public static String weakClean(String chain) {
 		chain=chain.replace(new String(Character.toChars(0)), "");
 		chain = chain.replace("", "");
@@ -75,7 +70,6 @@ public class Utils {
 		return chain;
 	}
 	
-
 	public static String urlify(String chain) {
 		
 	
@@ -105,7 +99,6 @@ public class Utils {
 		chainToURI = chainToURI.replace("+", "");
 		chainToURI = chainToURI.replace("\"", "");
 		chainToURI = chainToURI.replace("%", "");
-		chainToURI = chainToURI.replace("*", "");
 		chainToURI = chainToURI.replace("", "");
 		if(chainToURI.length()>0){
 			while(chainToURI.charAt(0)=='-')
@@ -179,7 +172,6 @@ public class Utils {
 		return chainToURI;
 	}
 
-
 	public static String genUUIDHash(String id) {
 
 		String hash;
@@ -240,7 +232,6 @@ public class Utils {
 		return true;
 	}
 	
-
 	public static String getUrlRefArea(String header, String cleanCell, String fileName) {
 
 		String valueCell = cleanCell;
@@ -262,7 +253,6 @@ public class Utils {
 			cadidateUrl = "http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/";
 			ttl = getComunidadAragon();
 		}
-		/* Casos puntuales que se salen de la forma estandar de crear la url */
 		if (valueCell.contains("Torla-Ordesa")) {
 			TransformToRDF.insertError(fileName+". ERROR. Column "+header+". "+valueCell+" instead of Torla");
 			cadidateUrl += "Torla";
@@ -288,7 +278,6 @@ public class Utils {
 		return "<"+cadidateUrl+">";
 	}
 	
-
 	private static String getComarcasAragon() {
 		if (comarcasAragon == null) {
 			String url = "http://opendata.aragon.es/recurso/territorio/Comarca";
@@ -318,7 +307,6 @@ public class Utils {
 		return comarcasAragon;
 	}
 	
-
 	private static String getMunicipiosAragon() {
 		if (municipiosAragon == null) {
 			String url = "http://opendata.aragon.es/recurso/territorio/Municipio";
@@ -348,7 +336,6 @@ public class Utils {
 		return municipiosAragon;
 	}
 	
-
 	private static String getProvinciasAragon() {
 		if (provinciasAragon == null) {
 			String url = "http://opendata.aragon.es/recurso/territorio/Provincia";
@@ -378,7 +365,6 @@ public class Utils {
 		return provinciasAragon;
 	}
 	
-
 	private static String getComunidadAragon() {
 		if (comunidadAragon == null) {
 			String url = "http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma";
@@ -408,7 +394,6 @@ public class Utils {
 		return comunidadAragon;
 	}
 	
-
 	public static String processURLGet(String url, String urlParameters,
 			Map<String, String> headers) {
 
@@ -480,7 +465,6 @@ public class Utils {
 		StringBuilder content = new StringBuilder();
 
 		try {
-
 			URL url = new URL(URI);
 
 			HttpURLConnection httpConnection = (HttpURLConnection) url.openConnection();
@@ -503,7 +487,6 @@ public class Utils {
 
 	}
 	
-
 	public static void stringToFile(String string, File file) throws Exception {
 
 		try {
@@ -572,7 +555,6 @@ public class Utils {
 				(isInteger(string) && string.length()==2);
 	}
 	
-
 	public static void main(String[] args) {
 
 		if ((log == null) || (log.getLevel() == null))

@@ -1,4 +1,4 @@
-package com.localidata;
+package com.localidata.util;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -7,20 +7,19 @@ import java.util.Properties;
 
 import org.apache.log4j.Logger;
 
+/**
+ * 
+ * @author Localidata
+ *
+ */
 public class Prop {
 	
-
 	private final static Logger log = Logger.getLogger(Prop.class);
-
 	public static String domainPermission = "";
-
 	public static String p12File = "";
-
 	public static String acountId = "";
-
 	public static String APPLICATION_NAME = "";
-	
-	public static boolean publicDrive = true;
+	public static boolean publishDrive = true;
 	public static String emailUserFile = "";
 	public static String idParentFolder = "";
 	public static String kosName = "";
@@ -29,6 +28,8 @@ public class Prop {
 	public static String eldaName = "";
 	public static String datasetName = "";
 	public static boolean addDataConstant;
+	
+	public static String formatConfig = "";
 	
 	public static boolean loadConf() {
 
@@ -45,7 +46,7 @@ public class Prop {
 			acountId = prop.getProperty("acountId");
 			APPLICATION_NAME = prop.getProperty("APPLICATION_NAME");
 			
-			publicDrive = Boolean.valueOf(prop.getProperty("publicDrive"));
+			publishDrive = Boolean.valueOf(prop.getProperty("publicDrive"));
 			emailUserFile = prop.getProperty("emailUserFile");
 			idParentFolder = prop.getProperty("idParentFolder");
 			kosName = prop.getProperty("kosName");
@@ -54,6 +55,7 @@ public class Prop {
 			eldaName = prop.getProperty("eldaName");
 			datasetName = prop.getProperty("datasetName");
 			addDataConstant = Boolean.valueOf(prop.getProperty("addDataConstant"));
+			formatConfig = prop.getProperty("formatConfig");
 			
 			conf = true;
 		} catch (IOException io) {

@@ -572,9 +572,6 @@ Urbano bienes inmuebles
 Urbano valor catastral total
 Urbano valor catastral construcción
 Urbano valor catastral suelo
-Urbano parcelas edificadas con suelo y construcción mismo propietario
-Urbano parcelas edificadas en copropiedad
-Urbano parcelas edificadas otros tipos
 
 
 ==> 01-010022A.csv <==
@@ -795,7 +792,6 @@ Año
 Municipio código
 Municipio nombre
 Rústico año última renovación
-Titulares rústico
 Rústico parcelas
 Rústico subparcelas
 Rústico superficie
@@ -8207,6 +8203,15 @@ División (2 dígitos) descripción
 Afiliaciones en alta
 
 
+==> 05-050005TC.csv <==
+Mes y año
+Comarca código
+Comarca nombre
+División (2 dígitos) código
+División (2 dígitos) descripción
+Afiliaciones en alta
+
+
 ==> 05-050005TP.csv <==
 Mes y año
 Provincia código
@@ -8247,12 +8252,29 @@ Sexo
 Afiliaciones en alta
 
 
+==> 05-050007TC.csv <==
+Mes y año
+Comarca código
+Comarca nombre
+Sector de actividad
+Afiliaciones en alta
+Sexo
+
+
 ==> 05-050007TP.csv <==
 Mes y año
 Sexo
 Provincia código
 Provincia nombre
 Sector de actividad
+Afiliaciones en alta
+
+
+==> 05-050009A.csv <==
+Mes y año
+Cod temporalidad
+Temporalidad
+Sexo
 Afiliaciones en alta
 
 
@@ -8319,6 +8341,13 @@ Aragón
 Dirección provincial nombre
 
 
+==> 05-050103A.csv <==
+Mes y año
+Número Empresas
+Estrato
+Territorio
+
+
 ==> 05-050103TP.csv <==
 Mes y año
 Dirección provincial (código)
@@ -8347,12 +8376,28 @@ Municipio
 Cuentas cotización con trabajadores
 
 
+==> 05-050104TP.csv <==
+Mes y año
+Dirección provincial (código)
+Dirección provincial nombre
+Cuentas cotización con trabajadores
+
+
 ==> 05-050105A.csv <==
 Mes y año
 Sector código
 Sector descripción
 Cuentas cotización con trabajadores
 Territorio
+
+
+==> 05-050105TC.csv <==
+Mes y año
+Codcom
+Comarca nombre
+Sector código
+Sector descripción
+Cuentas cotización con trabajadores
 
 
 ==> 05-050105TP.csv <==
@@ -8413,6 +8458,16 @@ Sexo
 N parados
 
 
+==> 05-050203TC.csv <==
+Mes y año
+Comarca código
+Comarca nombre
+Sector código
+Sector descripción
+Sexo
+N demandantes
+
+
 ==> 05-050203TP.csv <==
 Mes y año
 Provincia código
@@ -8423,12 +8478,40 @@ Sexo
 N parados
 
 
+==> 05-050204A.csv <==
+Mes y año
+Aragón
+Grupos 1 duración demanda código
+Grupos 1 duración demanda descripción
+Sexo
+N parados
+
+
+==> 05-050204TC.csv <==
+Mes y año
+Comarca código
+Comarca nombre
+Grupos 1 duración demanda código
+Grupos 1 duración demanda descripción
+Sexo
+N parados
+
+
 ==> 05-050204TP.csv <==
 Mes y año
 Provincia código
 Provincia nombre
 Grupos 1 duración demanda código
 Grupos 1 duración demanda descripción
+Sexo
+N parados
+
+
+==> 05-050205A.csv <==
+Mes y año
+Aragón
+Nivel formativo grupo IAEST código
+Nivel formativo grupo IAEST descripción
 Sexo
 N parados
 
@@ -8456,7 +8539,6 @@ N parados
 ==> 05-050206A.csv <==
 Mes y año
 Aragón
-Orden nacionalidad
 UE25-UE27-UE28
 UE25
 UE27
@@ -8469,7 +8551,18 @@ N parados
 Mes y año
 Comarca código
 Comarca nombre
-Orden nacionalidad
+UE25-UE27-UE28
+UE25
+UE27
+UE28
+Sexo
+N parados
+
+
+==> 05-050206TP.csv <==
+Mes y año
+Provincia código
+Provincia nombre
 UE25-UE27-UE28
 UE25
 UE27
@@ -8481,13 +8574,10 @@ N parados
 ==> 05-050207A.csv <==
 Mes y año
 Aragón
-Orden nacionalidad
 UE25-UE27-UE28
 UE25
 UE27
 UE28
-Codsect
-Sector
 Sector código
 Sector descripción
 Sexo
@@ -8498,13 +8588,10 @@ N parados
 Mes y año
 Provincia código
 Provincia nombre
-Orden nacionalidad
 UE25-UE27-UE28
 UE25
 UE27
 UE28
-Codsect
-Sector
 Sexo
 N parados
 Sector código
@@ -8594,9 +8681,8 @@ Nivel formativo código
 Mes y año
 Mes (código)
 Sexo
-UE28
 UE28-UE27-UE25
-Orden nac
+UE28
 UE27
 UE25
 Número de contratos
@@ -8607,14 +8693,38 @@ CCAA nombre
 Mes y año
 Mes (código)
 Sexo
-ue28-UE27-UE25
-Orden nac
+UE28-UE27-UE25
 UE28
 UE27
 UE25
 Comarca código
 Comarca nombre
 Número de contratos
+
+
+==> 05-050304TP.csv <==
+Mes y año
+Mes (código)
+Sexo
+UE28-UE27-UE25
+UE25
+UE27
+UE28
+Número de contratos
+Provincia código
+Provincia nombre
+
+
+==> 05-050305A.csv <==
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Sector código
+Sector descripción
+Sexo
+Número de contratos
+CCAA nombre
 
 
 ==> 05-050305TC.csv <==
@@ -8637,6 +8747,31 @@ Sector código
 Sector descripción
 Sexo
 Número de contratos
+
+
+==> 05-050306A.csv <==
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Sección (1 letra) código
+Sección (1 letra) descripción
+Sexo
+Número de contratos
+CNAE año
+CCAA nombre
+
+
+==> 05-050306TP.csv <==
+Mes y año
+Mes (código)
+Sección (1 letra) código
+Sección (1 letra) descripción
+Sexo
+Número de contratos
+Provincia código
+Provincia nombre
+Clasificación
 
 
 ==> 05-050307A.csv <==
@@ -8715,6 +8850,17 @@ Número de contratos
 Número trabajadores (CC)
 
 
+==> 05-050309A.csv <==
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Sexo
+Número de contratos
+Temporalidad
+CCAA nombre
+
+
 ==> 05-050309TC.csv <==
 Año
 Mes (código)
@@ -8762,6 +8908,31 @@ Temporalidad
 Modalidad
 Grupo de tipo de contrato
 Número de contratos
+
+
+==> 05-050310TP.csv <==
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Sexo
+Provincia código
+Provincia nombre
+Temporalidad
+Modalidad
+Grupo de tipo de contrato
+Número de contratos
+
+
+==> 05-050311A.csv <==
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Sexo
+Número de contratos
+Grupo de tipo de jornada
+CCAA nombre
 
 
 ==> 05-050311TC.csv <==
@@ -8838,23 +9009,259 @@ Sector descripción
 CCAA nombre
 
 
+==> 05-050313TC.csv <==
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Sexo
+Comarca código
+Comarca nombre
+Sector código
+Sector descripción
+Número de contratos
+
+
+==> 05-050313TP.csv <==
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Sexo
+Provincia código
+Número de contratos
+Sector código
+Sector descripción
+Provincia nombre
+
+
+==> 05-050314A.csv <==
+Mes y año
+Año
+Mes (código)
+Mes nombre
+Sexo
+Temporalidad
+Días duración contrato
+Duración contrato  1.00  Número de contratos
+Número de contratos
+Duración contrato
+CCAA nombre
+
+
 ==> 05-050314TC.csv <==
-El resultado de consulta no contenía ninguna fila
+Mes nombre
+Año
+Mes y año
+Mes (código)
+Comarca código
+Comarca nombre
+Sexo
+Temporalidad
+Días duración contrato
+Número de contratos
+Duración contrato
+Duración contrato  1.00  Número de contratos
+
+
+==> 05-050314TP.csv <==
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Provincia código
+Provincia nombre
+Sexo
+Temporalidad
+Días duración contrato
+Número de contratos
+Duración contrato
+Duración contrato  1.00  Número de contratos
+
 
 ==> 05-050315A.csv <==
-El resultado de consulta no contenía ninguna fila
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Sexo
+Temporalidad
+Modalidad
+ordenmodalidad
+Grupo de tipo de contrato
+Grupo de tipo de contrato
+Días duración contrato
+Número de contratos
+Duración contrato
+Duración contrato  1.00  Número de contratos
+CCAA nombre
+
 
 ==> 05-050315TC.csv <==
-El resultado de consulta no contenía ninguna fila
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Comarca código
+Comarca nombre
+Sexo
+Temporalidad
+Modalidad
+ordenmodalidad
+Grupo de tipo de contrato
+Grupo de tipo de contrato
+Días duración contrato
+Número de contratos
+Duración contrato
+Duración contrato  1.00  Número de contratos
+
 
 ==> 05-050315TP.csv <==
-El resultado de consulta no contenía ninguna fila
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Provincia código
+Provincia nombre
+Sexo
+Temporalidad
+Modalidad
+ordenmodalidad
+Grupo de tipo de contrato
+Grupo de tipo de contrato
+Días duración contrato
+Número de contratos
+Duración contrato
+Duración contrato  1.00  Número de contratos
+
 
 ==> 05-050316A.csv <==
-El resultado de consulta no contenía ninguna fila
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Sector código
+Sexo
+Temporalidad
+Duración contrato  1.00  Número de contratos
+Días duración contrato
+Número de contratos
+Duración contrato
+Sector descripción
+CCAA nombre
+
+
+==> 05-050316TC.csv <==
+Mes y año
+Mes (código)
+Año
+Mes nombre
+Comarca código
+Comarca nombre
+Sexo
+Temporalidad
+Días duración contrato
+Sector código
+Sector descripción
+Número de contratos
+Duración contrato
+Duración contrato  1.00  Número de contratos
+
+
+==> 05-050316TP.csv <==
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Provincia código
+Provincia nombre
+Sector código
+Sector descripción
+Sexo
+Temporalidad
+Días duración contrato
+Número de contratos
+Duración contrato
+Duración contrato  1.00  Número de contratos
+
+
+==> 05-050317A.csv <==
+Mes y año
+Mes (código)
+Mes nombre
+Año
+CIF
+Sexo
+Temporalidad
+Días duración contrato
+Número de contratos
+Duración contrato
+Duración contrato  1.00  Número de contratos
+CCAA nombre
+
 
 ==> 05-050317TC.csv <==
-El resultado de consulta no contenía ninguna fila
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Sexo
+Temporalidad
+Comarca código
+Comarca nombre
+CIF
+Días duración contrato
+Número de contratos
+Duración contrato
+Duración contrato  1.00  Número de contratos
+
+
+==> 05-050317TP.csv <==
+Mes y año
+Mes (código)
+Mes nombre
+Año
+Provincia código
+Provincia nombre
+CIF
+Sexo
+Temporalidad
+Días duración contrato
+Número de contratos
+Duración contrato
+Duración contrato  1.00  Número de contratos
+
+
+==> 05-0709-070901A.csv <==
+Año
+Sexo
+N Accidentes
+Grupo Grado Código
+Grupo Grado Código
+CCAA
+
+
+==> 05-0709-070901TC.csv <==
+Año
+Sexo
+Comarca Código
+Comarca Nombre
+N Accidentes
+Grupo Grado Código
+Grupo Grado Código
+
+
+==> 05-0709-070901TM.csv <==
+Año
+Sexo
+N Accidentes
+Código
+Municipio
+Municipio Código
+Municipio Nombre
+Grupo Grado Código
+Grupo Grado Código
+
 
 ==> 05-0709-070901TP.csv <==
 Año
@@ -8875,6 +9282,16 @@ Grupo Grado Código
 CCAA
 
 
+==> 05-0709-070902TC.csv <==
+Año
+Sexo
+Comarca Código
+Comarca Nombre
+N Accidentes
+Grupo Grado Código
+Grupo Grado Código
+
+
 ==> 05-0709-070902TM.csv <==
 Año
 Sexo
@@ -8883,6 +9300,16 @@ Código
 Municipio
 Municipio Código
 Municipio Nombre
+Grupo Grado Código
+Grupo Grado Código
+
+
+==> 05-0709-070902TP.csv <==
+Año
+Dirección Provincial Código
+Dirección Provincial Nombre
+Sexo
+N Accidentes
 Grupo Grado Código
 Grupo Grado Código
 
@@ -8904,6 +9331,15 @@ Comarca Código
 Comarca Nombre
 
 
+==> 05-0709-070903TM.csv <==
+Año
+Sexo
+Edad (grupos quinquenales)
+N Accidentes
+Código
+Municipio
+
+
 ==> 05-0709-070903TP.csv <==
 Año
 Dirección Provincial Código
@@ -8911,6 +9347,15 @@ Dirección Provincial Nombre
 Sexo
 Edad (grupos quinquenales)
 N Accidentes
+
+
+==> 05-0709-070904A.csv <==
+Año
+N Accidentes
+CCAA
+Temporalidad
+Sector Código
+Sector Descripción
 
 
 ==> 05-0709-070904TC.csv <==
@@ -8923,6 +9368,16 @@ Comarca Código
 Comarca Nombre
 
 
+==> 05-0709-070904TM.csv <==
+Año
+N Accidentes
+Código
+Municipio
+Temporalidad
+Sector Código
+Sector Descripción
+
+
 ==> 05-0709-070904TP.csv <==
 Año
 Dirección Provincial Código
@@ -8931,6 +9386,24 @@ Temporalidad
 Sector Código
 Sector Descripción
 N Accidentes
+
+
+==> 05-0709-070905AA.csv <==
+Año
+División (2 dígitos) Descripción
+CCAA
+N Accidentes
+División (2 dígitos) Código
+
+
+==> 05-0709-070905ATC.csv <==
+Año
+Comarca Código
+N Accidentes
+División (2 dígitos) Código
+División (2 dígitos) Descripción
+Comarca Código
+Comarca Nombre
 
 
 ==> 05-0709-070905ATP.csv <==
@@ -8977,6 +9450,36 @@ Sexo
 CCAA
 
 
+==> 05-0709-070906ATC.csv <==
+Año
+N Accidentes
+Grupo
+Descripción Ocupación
+Sexo
+Comarca Código
+Comarca Nombre
+
+
+==> 05-0709-070906ATM.csv <==
+Año
+N Accidentes
+Grupo
+Descripción Ocupación
+Sexo
+Código
+Municipio
+
+
+==> 05-0709-070906ATP.csv <==
+Año
+Dirección Provincial Código
+Dirección Provincial Nombre
+N Accidentes
+Grupo
+Descripción Ocupación
+Sexo
+
+
 ==> 05-0709-070906BA.csv <==
 Año
 N Accidentes
@@ -8984,6 +9487,16 @@ Grupo
 Descripción Ocupación
 Sexo
 CCAA
+
+
+==> 05-0709-070906BTC.csv <==
+Año
+N Accidentes
+Grupo
+Descripción Ocupación
+Sexo
+Comarca Código
+Comarca Nombre
 
 
 ==> 05-0709-070906BTM.csv <==
@@ -8996,12 +9509,31 @@ Código
 Municipio
 
 
+==> 05-0709-070906BTP.csv <==
+Año
+Dirección Provincial Código
+N Accidentes
+Grupo
+Descripción Ocupación
+Sexo
+Dirección Provincial Nombre
+
+
 ==> 05-0709-070908A.csv <==
 Año
 Grupo Antigüedad
 N Accidentes
 Temporalidad
 CCAA
+
+
+==> 05-0709-070908TC.csv <==
+Año
+Grupo Antigüedad
+N Accidentes
+Temporalidad
+Comarca Código
+Comarca Nombre
 
 
 ==> 05-0709-070908TM.csv <==
@@ -9022,6 +9554,15 @@ N Accidentes
 Temporalidad
 
 
+==> 05-0709-070909A.csv <==
+Año
+N Accidentes
+Tamaño Centro
+Grupo Grado Código
+Grupo Grado Código
+CCAA
+
+
 ==> 05-0709-070909TC.csv <==
 Año
 Comarca Código
@@ -9030,6 +9571,16 @@ N Accidentes
 Tamaño Centro
 Grupo Grado Código
 Grupo Grado Código
+
+
+==> 05-0709-070909TM.csv <==
+Año
+N Accidentes
+Tamaño Centro
+Grupo Grado Código
+Grupo Grado Código
+Código
+Municipio
 
 
 ==> 05-0709-070909TP.csv <==
@@ -9045,6 +9596,17 @@ Grupo Grado Código
 ==> 05-0709-070910A.csv <==
 CCAA
 Año
+N Accidentes
+Grupo Grado Código
+Grupo Grado Código
+Régimen Código (2 dígitos)
+Régimen (2 dígitos)
+
+
+==> 05-0709-070910TC.csv <==
+Año
+Comarca Código
+Comarca Nombre
 N Accidentes
 Grupo Grado Código
 Grupo Grado Código
@@ -9092,6 +9654,15 @@ Comarca Nombre
 Comarca Código
 
 
+==> 05-0709-070921ATP.csv <==
+Año
+Dirección Provincial Código
+Dirección Provincial Nombre
+N Accidentes
+División (2 dígitos) Código
+División (2 dígitos) Descripción
+
+
 ==> 05-0709-070921BA.csv <==
 Año
 N Accidentes
@@ -9110,6 +9681,15 @@ Comarca Nombre
 Comarca Código
 
 
+==> 05-0709-070921BTP.csv <==
+Año
+Dirección Provincial Código
+Dirección Provincial Nombre
+N Accidentes
+División (2 dígitos) Código
+División (2 dígitos) Descripción
+
+
 ==> 05-0709-070952A.csv <==
 Año
 Sexo
@@ -9118,6 +9698,16 @@ Grupo Grado Código
 Grupo Grado Código
 CCAA Código
 CCAA Nombre
+
+
+==> 05-0709-070952TC.csv <==
+Año
+Sexo
+Comarca Código
+Comarca Nombre
+N Accidentes
+Grupo Grado Código
+Grupo Grado Código
 
 
 ==> 05-0709-070952TM.csv <==
@@ -9142,12 +9732,75 @@ Grupo Grado Código
 Grupo Grado Código
 
 
+==> 05-0709-070953A.csv <==
+Año
+N Accidentes
+Grupo Grado Código
+Grupo Grado Código
+Régimen Código (2 dígitos)
+Régimen (2 dígitos)
+CCAA Código
+CCAA Nombre
+
+
+==> 05-0709-070953TC.csv <==
+Año
+Comarca Código
+Comarca Nombre
+N Accidentes
+Grupo Grado Código
+Grupo Grado Código
+Régimen Código (2 dígitos)
+Régimen (2 dígitos)
+
+
+==> 05-0709-070953TP.csv <==
+Año
+Dirección Provincial Código
+Dirección Provincial Nombre
+N Accidentes
+Grupo Grado Código
+Grupo Grado Código
+Régimen Código (2 dígitos)
+Régimen (2 dígitos)
+
+
 ==> 05-0709-070954A.csv <==
 Año
 Temporalidad
 Sector Código
 Sector Descripción
 N Accidentes
+CCAA Código
+CCAA Nombre
+
+
+==> 05-0709-070954TC.csv <==
+Año
+Temporalidad
+Sector Código
+Sector Descripción
+N Accidentes
+Comarca Código
+Comarca Nombre
+
+
+==> 05-0709-070954TP.csv <==
+Año
+Dirección Provincial Código
+Dirección Provincial Nombre
+Temporalidad
+Sector Código
+Sector Descripción
+N Accidentes
+
+
+==> 05-0709-070955A.csv <==
+Año
+N Accidentes
+Grupo
+Descripción Ocupación
+Sexo
 CCAA Código
 CCAA Nombre
 
@@ -9301,6 +9954,56 @@ Votos a candidaturas
 % Participación
 
 
+==> 915-150005TC.csv <==
+Comarca código
+Comarca nombre
+Año
+Población
+Censo electoral
+Participación
+Abstención
+Votos nulos
+Votos blancos
+Votos a candidaturas
+% Participación
+
+
+==> 915-150005TM.csv <==
+Municipio código
+Municipio nombre
+Año
+Población
+Censo electoral
+Participación
+Abstención
+Votos nulos
+Votos blancos
+Votos a candidaturas
+% Participación
+
+
+==> 915-150005TP.csv <==
+Provincia código
+Provincia nombre
+Año
+Población
+Censo electoral
+Participación
+Abstención
+Votos nulos
+Votos blancos
+Votos a candidaturas
+% Participación
+
+
+==> 915-150006A.csv <==
+CCAA nombre
+CCAA código
+Año
+Votos
+Siglas
+
+
 ==> 915-150006TC.csv <==
 Comarca código
 Comarca nombre
@@ -9324,6 +10027,19 @@ Provincia nombre
 Año
 Votos
 Siglas
+
+
+==> 915-150007A.csv <==
+CCAA nombre
+CCAA código
+Año
+Censo electoral
+Participación
+Abstención
+Votos nulos
+Votos blancos
+Votos a candidaturas
+% Participación
 
 
 ==> 915-150007TC.csv <==
@@ -9368,6 +10084,23 @@ Votos a candidaturas
 % Participación
 
 
+==> 915-150008A.csv <==
+CCAA código
+CCAA nombre
+Año
+Siglas
+Votos
+
+
+==> 915-150008TC.csv <==
+Comarca código
+Comarca nombre
+Año
+Orden
+Siglas
+Votos
+
+
 ==> 915-150008TM.csv <==
 Municipio código
 Municipio nombre
@@ -9395,6 +10128,15 @@ Votos
 Concejales
 
 
+==> 915-150009TC.csv <==
+Comarca código
+Comarca nombre
+Año
+Orden
+Siglas
+Concejales
+
+
 ==> 915-150009TM.csv <==
 Municipio código
 Municipio nombre
@@ -9404,12 +10146,57 @@ Siglas
 Concejales
 
 
+==> 915-150009TP.csv <==
+Provincia código
+Provincia nombre
+Año
+Orden
+Siglas
+Concejales
+
+
+==> 915-150010A.csv <==
+CCAA nombre
+CCAA código
+Año
+Votos
+Siglas
+Diputados
+
+
 ==> 915-150010TP.csv <==
 Provincia código
 Provincia nombre
 Año
 Siglas
 Diputados
+
+
+==> 915-150011A.csv <==
+CCAA nombre
+CCAA código
+Año
+Censo electoral
+Participación
+Abstención
+Votos nulos
+Votos blancos
+Votos a candidaturas
+% Participación
+
+
+==> 915-150011TC.csv <==
+Comarca código
+Comarca nombre
+Año
+Población
+Censo electoral
+Participación
+Abstención
+Votos nulos
+Votos blancos
+Votos a candidaturas
+% Participación
 
 
 ==> 915-150011TM.csv <==
@@ -9449,6 +10236,15 @@ Siglas
 Diputados
 
 
+==> 915-150013TC.csv <==
+Comarca código
+Comarca nombre
+Año
+Orden
+Votos
+Siglas
+
+
 ==> 915-150013TM.csv <==
 Municipio código
 Municipio nombre
@@ -9471,6 +10267,14 @@ Comarca código
 Comarca nombre
 Año
 Orden
+Votos
+Siglas
+
+
+==> 915-150014TM.csv <==
+Municipio código
+Municipio nombre
+Año
 Votos
 Siglas
 

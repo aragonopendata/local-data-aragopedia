@@ -105,7 +105,7 @@ OpenData:iaest a api:API
 		OpenData:CubosDimensionPropiedad,
 		OpenData:CubosMedidaPropiedad,
 		OpenData:CubosRefArea,
-		OpenData:CubosRefAreaComarcas,
+		OpenData:CubosRefAreaComarca,
 		OpenData:CubosRefAreaMunicipio,
 		OpenData:CubosRefAreaProvincia,
 		OpenData:CubosRefAreaComunidad
@@ -463,9 +463,9 @@ OpenData:CubosRefArea a api:ListEndpoint
 	.
 
 
-OpenData:CubosRefAreaComarcas a api:ListEndpoint 
+OpenData:CubosRefAreaComarca a api:ListEndpoint 
 	; rdfs:label "Cubos que tienen comarcas" 	
-	; api:uriTemplate "/cubosareacomarcas" 
+	; api:uriTemplate "/cubosareacomarca" 
 	; api:defaultViewer OpenData:vistaDsd
 	; api:selector [
 	    api:select """

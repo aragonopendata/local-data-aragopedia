@@ -1,6 +1,6 @@
 #*********************************************************
 #							Prefijo
-#********************************************************* 
+#*********************************************************
 @prefix spec:               <http://education.data.gov.uk/api-config#> .
 @prefix api:                <http://purl.org/linked-data/api/vocab#> .
 @prefix dct:				<http://purl.org/dc/terms/> .
@@ -104,7 +104,11 @@ OpenData:iaest a api:API
 		OpenData:CubosMedidaValor,
 		OpenData:CubosDimensionPropiedad,
 		OpenData:CubosMedidaPropiedad,
-		OpenData:CubosRefArea
+		OpenData:CubosRefArea,
+		OpenData:CubosRefAreaComarcas,
+		OpenData:CubosRefAreaMunicipio,
+		OpenData:CubosRefAreaProvincia,
+		OpenData:CubosRefAreaComunidad
 	; api:viewer 					
 		#api:labelledDescribeViewer		
 		OpenData:vistaObservacion,
@@ -453,6 +457,67 @@ OpenData:CubosRefArea a api:ListEndpoint
 					
 					FILTER (?val = IRI(?uriITEMA) || ?val = IRI(?uriITEMM) || ?val = IRI(?uriITEMC) || ?val = IRI(?uriITEMP)).
 				}
+			}
+			""" ; 	
+		] ;
+	.
+
+
+OpenData:CubosRefAreaComarcas a api:ListEndpoint 
+	; rdfs:label "Cubos que tienen comarcas" 	
+	; api:uriTemplate "/cubosareacomarcas" 
+	; api:defaultViewer OpenData:vistaDsd
+	; api:selector [
+	    api:select """
+			select distinct ?item where{
+				?observacion qb:DataSet ?item.
+				?observacion sdmx-dimension:refArea ?val.
+				?val a <http://opendata.aragon.es/def/Aragopedia#Comarca>.
+			}
+			""" ; 	
+		] ;
+	.
+	
+OpenData:CubosRefAreaMunicipio a api:ListEndpoint 
+	; rdfs:label "Cubos que tienen municipios" 	
+	; api:uriTemplate "/cubosareamunicipio" 
+	; api:defaultViewer OpenData:vistaDsd
+	; api:selector [
+	    api:select """
+			select distinct ?item where{
+				?observacion qb:DataSet ?item.
+				?observacion sdmx-dimension:refArea ?val.
+				?val a <http://dbpedia.org/ontology/Municipality>.
+			}
+			""" ; 	
+		] ;
+	.
+	
+OpenData:CubosRefAreaProvincia a api:ListEndpoint 
+	; rdfs:label "Cubos que tienen provincias" 	
+	; api:uriTemplate "/cubosareaprovincia" 
+	; api:defaultViewer OpenData:vistaDsd
+	; api:selector [
+	    api:select """
+			select distinct ?item where{
+				?observacion qb:DataSet ?item.
+				?observacion sdmx-dimension:refArea ?val.
+				?val a <http://dbpedia.org/ontology/Province>.
+			}
+			""" ; 	
+		] ;
+	.
+	
+OpenData:CubosRefAreaComunidad a api:ListEndpoint 
+	; rdfs:label "Cubos que tienen provincias" 	
+	; api:uriTemplate "/cubosareacomunidad" 
+	; api:defaultViewer OpenData:vistaDsd
+	; api:selector [
+	    api:select """
+			select distinct ?item where{
+				?observacion qb:DataSet ?item.
+				?observacion sdmx-dimension:refArea ?val.
+				?val a <http://opendata.aragon.es/def/Aragopedia#ComunidadAutonoma>.
 			}
 			""" ; 	
 		] ;

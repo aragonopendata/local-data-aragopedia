@@ -58,4 +58,11 @@
  2. Una vez desplegados los war visualizamos que en los logs no hay errores (/var/log/tomcat7)
  3. Si el host del servidor es diferente de http://opendata.aragon.es habrá que editar el fichero /var/lib/tomcat7/webapps/kos/WEB-INF/localidata.properties y /var/lib/tomcat7/webapps/recurso/WEB-INF/localidata.properties cambiando la variable urlRecurso por el host del actual servidor y si existe seguridad 3scale habrá que poner la variable seguridad3Scale a true y en localidataKey3Scale la key identificativa
  4. Editar los ficheros /var/lib/tomcat7/webapps/doc/api.json y /var/lib/tomcat7/webapps/doc/index.html y en donde aparezca alzir.dia.fi.upm.es sustituirlo por el host del servidor 
-  
+
+Si el despliegue se ha hecho correctamente las siguientes urls deberian de cargar bien:
+
+http://preopendata.aragon.es/recurso/iaest/dsd
+http://preopendata.aragon.es/recurso/iaest/observacion.json
+http://preopendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado.json
+http://preopendata.aragon.es/recurso/iaest/cubosdimension/clase-vivienda-agregado/colectiva.json
+http://preopendata.aragon.es/doc

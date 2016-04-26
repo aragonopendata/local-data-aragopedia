@@ -2,7 +2,6 @@ package com.localidata;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -11,31 +10,28 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import com.localidata.util.Utils;
+
 
 
 public class EldaTest
 {
 	
-	/**
-	 * Log class
-	 */
 	private final static Logger log = Logger.getLogger(EldaTest.class);
 	
 	String searched ="http://opendata.aragon.es/";
 	String replacement="http://alzir.dia.fi.upm.es/";
-//	String replacement="http://localhost:8080/";
 	
-    public EldaTest(  )
-    {
+	
+    
+    public void run(){
     	dsdAll();
     	propertyAll();
     	dimensionAll();
     	medidaAll();
     	cubosAll();
     	dsdId();
-    	cubosId();
     	codelistId();
-//    	observacionAll();
     }
     
     public void observacionAll(){
@@ -71,7 +67,7 @@ public class EldaTest
     
     public void dsdId(){
     	log.info("Start test dsdId");
-    	String URI=replacement+"recurso/iaest/dsd.json";
+    	String URI=replacement+"recurso/iaest/dsd.json?_view=all";
     	ArrayList<String> listDsd = getDataJSONURI(URI,"_about",null);
     	boolean globalResult=true;
     	for (String uriDsd : listDsd) {
@@ -240,17 +236,9 @@ public class EldaTest
                 return false;
             }
         	JSONObject result = (JSONObject)json.get("result");
-//        	JSONArray items = (JSONArray) result.get("items");
-//        	for(int h=0;h<items.size();h++){
-//        		JSONObject item=(JSONObject) items.get(h);
-//				String about=(String)item.get(search);
-//				if(Utils.validValue(about)){
-//					listResult.add(replaceURI(about)+".json");
-//				}
-//			}
         	next = (String) result.get("next");
         	if(next!=null){
-        		testJSONURI(next,test);
+        		testJSONURI(replaceURI(next),test);
         	}
         } catch (ParseException e) {    
             log.error("Error in URI "+next,e);
@@ -261,7 +249,6 @@ public class EldaTest
     }
     
 
-	//	http://alzir.dia.fi.upm.es/recurso/iaest/dsd.json
     private ArrayList<String> getDataJSONURI(String URI, String search, ArrayList<String> listResult) {
     	if(listResult==null){
     		listResult = new ArrayList<String>();
@@ -289,7 +276,7 @@ public class EldaTest
 			}
         	next = (String) result.get("next");
         	if(next!=null){
-        		getDataJSONURI(next,search,listResult);
+        		getDataJSONURI(replaceURI(next),search,listResult);
         	}
         	
         	
@@ -309,36 +296,14 @@ public class EldaTest
     
     private boolean validateJSON(JSONObject json, String test) {
 		
-//    	JSONObject result = (JSONObject)json.get("result");
-//    	JSONArray items = (JSONArray) result.get("items");
-//    	for(int h=0;h<items.size();h++){
-//    		JSONObject item=(JSONObject) items.get(h);
-//    	
-//	    	switch (test) {
-//			case "codelistId":
-//	    		if(item.get("_about")!=null){        		
-//	    			if(item.get("hasTopConcept")!=null)
-//	    				if(item.get("notation")!=null)
-//	    					return true;
-//	    		}else{
-//	    			return false;
-//	    		}
-//	    		break;
-//			case "dsdId":
-//				break;
-//				
-//			}
-//    	}
 		return true;
 		
 	}
     
-    /**
-	 * Main's class
-	 */
 	public static void main(String[] args) {
 		if ((log == null) || (log.getLevel() == null))
 			PropertyConfigurator.configure("log4j.properties");
 		EldaTest test = new EldaTest();
+		test.run();
 	}
 }

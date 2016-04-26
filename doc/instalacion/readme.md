@@ -1,28 +1,23 @@
-#Manual de instalación
+# Manual de instalación
 
-##Como carga en Virtuoso de los datos
+## Instalación del proceso de generacion de cubo de datos y carga en virtuoso
 
-1. Crearemos una carpeta virtuoso_BulkLoad en el home por ejemplo /home/localidata/virtuoso_BulkLoad en caso de que no lo tengamos ya creado.
-2. Añadir el directorio recien creado /home/localidata/virtuoso_BulkLoad en la línea de DirsAllowed del fichero virtuoso.ini Normalmente se encuentra en  /etc/virtuoso-opensource-6.1/virtuoso.ini o en /usr/local/virtuoso-opensource/var/lib/virtuoso/db/virtuoso.iniencuentra en  /etc/virtuoso-opensource-6.1/virtuoso.ini o en /usr/local/virtuoso-opensource/var/lib/virtuoso/db/virtuoso.ini
-3. Se reiniciará virtuoso
-4. En el directorio recien creado crear un fichero llamado global.graph en el cual contendrá el grafo donde se cargarán los datos.
-5. Colocaremos en la carpeta virtuoso_BulkLoad comentada en el punto anterior, todos los ttl de las subcarpetas de la siguiente URL https://github.com/localidata/local-data-aragopedia/tree/master/data/dump/DatosTTL
-6. Entraremos en el conductor de virtuoso, por ejemplo http://localhost:8890/conductor/main_tabs.vspx
-7. Hacemos login y hacemos click en el enlace "Interactive SQL (ISQL)"
-8. Se nos despliega una nueva ventana en la cual copiaremos los siguientes comandos:
- 
-   ld_dir_all('/home/localidata/virtuoso_BulkLoad','*.ttl','http://opendata.aragon.es:8890/datacube');
-   rdf_loader_run();
-   select * from DB.DBA.load_list;	
-   
-	DB.DBA.RDF_OBJ_FT_RULE_ADD (null, null, 'All');
-	DB.DBA.VT_INC_INDEX_DB_DBA_RDF_OBJ ();
-	DB.DBA.VT_INDEX_DB_DBA_RDF_OBJ ();
+1. Descomprimiremos el zip doc/instalacion/datacube.zip en el directorio home del usuario
+2. A los archivos .sh les daremos permisos con el comando: sudo chmod 755 *.sh
+3. Editaremos el archivo datacube/app/KBManager/props/3cixty.properties En user pondremos el usuario de virtuoso en password la contraseña de virtuoso y en virtuoso_path donde está instalado virtuoso.
+4. Para comprobar que la instalación se ha hecho bien generaremos todos los datos como pone se especifica más adelante.
 
-   Teniendo en cuenta que se debe sustituir el path '/home/localidata/virtuoso_BulkLoad' por el path creado en los primeros pasos.
+## Instalación del proceso de actualización de datos y carga en virtuoso
 
-9. Una vez esté listo el comando con nuestros datos, pulsaremos el botón Execute
-10. Para comprobar que la carga se ha hecho correctamente se lanzará en el punto sparql, por ejemplo http://opendata.aragon.es:8890/sparql, la siguiente query:
+1. Ejecutamos el comando crontab -e
+2. Insertamos en la ultima linea lo siguiente:
+00 00 * * * ~/datacube/UpdateRDFandLoad.sh
+3. Comprobaremos que a las 00:00 de cada día se ejecuta el script viendo el log datacube/datacube.log
+
+## Como generar todos los datos e insertarlos en virtuoso
+
+1. Ejecutaremos el script home/datacube/GenerateAllRDFandLoad.sh
+2. Para comprobar que la carga se ha hecho correctamente se lanzará en el punto sparql, por ejemplo http://opendata.aragon.es:8890/sparql, la siguiente query:
 
    select distinct ?graph where {
 
@@ -32,17 +27,9 @@
 
    }
    
-   Y en el resultado deberá de estar el grafo que esté en el archivo global.graph
-
-##Como actualizar los datos en virtuoso
-
-1. Primero debemos borrar los datos viejos, para ello entraremos en el conductor de virtuoso por ejemplo http://localhost:8890/conductor/main_tabs.vspx
-2. Haremos click en el menu linked data y despues en Graphs
-3. En la página recien cargada volvemos a pulsar en Graphs y una vez cargados todos los grafos pulsamos en delete de nuestro grafo http://opendata.aragon.es:8890/datacube
-4. Copiamos los nuevos datos a cargar en nuestro directorio virtuoso_BulkLoad, pero debemos de cambiar el nombre de la subcarpeta. Si antes se llamaba datacube1 ahora lo renombraremos a datacube2.
-5. El resto de pasos son iguales a la carga de datos a partir del punto 6.
+   Y en el resultado deberán de haber grafos que empiecen por "http://opendata.aragon.es/graph/datacube"
  
-##Como desplegar los linked data api en nuesto servidor
+## Como desplegar los linked data api en nuesto servidor
 
 * Supuesto 1, En el servidor ya hay un linked data API 
 
@@ -58,4 +45,11 @@
  2. Una vez desplegados los war visualizamos que en los logs no hay errores (/var/log/tomcat7)
  3. Si el host del servidor es diferente de http://opendata.aragon.es habrá que editar el fichero /var/lib/tomcat7/webapps/kos/WEB-INF/localidata.properties y /var/lib/tomcat7/webapps/recurso/WEB-INF/localidata.properties cambiando la variable urlRecurso por el host del actual servidor y si existe seguridad 3scale habrá que poner la variable seguridad3Scale a true y en localidataKey3Scale la key identificativa
  4. Editar los ficheros /var/lib/tomcat7/webapps/doc/api.json y /var/lib/tomcat7/webapps/doc/index.html y en donde aparezca alzir.dia.fi.upm.es sustituirlo por el host del servidor 
-  
+
+Si el despliegue se ha hecho correctamente las siguientes urls deberian de cargar bien:
+
+http://preopendata.aragon.es/recurso/iaest/dsd
+http://preopendata.aragon.es/recurso/iaest/observacion.json
+http://preopendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado.json
+http://preopendata.aragon.es/recurso/iaest/cubosdimension/clase-vivienda-agregado/colectiva.json
+http://preopendata.aragon.es/doc

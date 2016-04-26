@@ -129,10 +129,7 @@ OpenData:ObservacionAll a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{			
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?item a qb:Observation .							
-				}
 			}
 			""" ; 	
 		] ;
@@ -145,11 +142,8 @@ OpenData:ObservacionId a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{					
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?item a qb:Observation .
 					FILTER (?item = IRI(?uriITEM))	.
-				}
 			}
 			""" ; 	
 		] ;
@@ -162,10 +156,7 @@ OpenData:DsdAll a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{					
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?item a qb:DataStructureDefinition.								
-				}
 			}
 			""" ; 	
 		] ;
@@ -178,12 +169,9 @@ OpenData:DsdId a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{					
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?dsd qb:component ?nodo.
 					?nodo ?prop ?item
 					FILTER (?dsd = IRI(?uriITEM))	.
-				}
 			}
 			""" ; 	
 		] ;
@@ -196,10 +184,7 @@ OpenData:PropertyAll a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{					
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?item a rdf:Property.
-				}
 			}
 			""" ; 	
 		] ;
@@ -213,11 +198,8 @@ OpenData:DimensionId a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{					
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?item a qb:DimensionProperty.
 					FILTER (?item = IRI(?uriITEM))	.
-				}
 			}
 			""" ; 	
 		] ;
@@ -230,10 +212,7 @@ OpenData:DimensionAll a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{					
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?item a qb:DimensionProperty.
-				}
 			}
 			""" ; 	
 		] ;
@@ -247,11 +226,8 @@ OpenData:MedidaId a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{					
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?item a qb:MeasureProperty.
 					FILTER (?item = IRI(?uriITEM))	.
-				}
 			}
 			""" ; 	
 		] ;
@@ -264,10 +240,7 @@ OpenData:MedidaAll a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{					
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?item a qb:MeasureProperty.
-				}
 			}
 			""" ; 	
 		] ;
@@ -279,10 +252,7 @@ OpenData:CubosAll a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{					
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?item a qb:DataSet.
-				}
 			}
 			""" ; 	
 		] ;
@@ -295,12 +265,9 @@ OpenData:CubosId a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{					
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?cubo a qb:DataSet.
 					?item qb:DataSet ?cubo.
 					FILTER (?cubo = IRI(?uriITEM))	.
-				}
 			}
 			""" ; 	
 		] ;
@@ -314,15 +281,12 @@ OpenData:CubosDimension a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{				
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?observacion qb:DataSet ?item.
 					?observacion ?dim ?val.
 					?dim a qb:DimensionProperty.
 					?dim qb:codeList ?codeList.
 					
 					FILTER (?dim = IRI(?uriITEM) && ?val = IRI(CONCAT(STR(?codeList), CONCAT("/",?valor))) ).
-				}
 			}
 			""" ; 	
 		] ;
@@ -336,15 +300,12 @@ OpenData:CubosMedida a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?observacion qb:DataSet ?item.
 					?observacion ?med ?val.
 					?med a qb:MeasureProperty.
 					?med rdfs:label ?labelMedida.
 					
 					FILTER (?med = IRI(?uriITEM) && str(?val) = ?valor).
-				}
 			}
 			""" ; 	
 		] ;
@@ -357,15 +318,12 @@ OpenData:CubosDimensionValor a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{				
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?observacion qb:DataSet ?item.
 					?observacion ?dim ?val.		
 					?dim a qb:DimensionProperty.
 					?dim qb:codeList ?codeList.
 					
 					FILTER (?val = IRI(CONCAT(STR(?codeList), CONCAT("/",?valor))) ).
-				}
 			}
 			""" ; 	
 		] ;
@@ -378,14 +336,11 @@ OpenData:CubosMedidaValor a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{				
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?observacion qb:DataSet ?item.
 					?observacion ?med ?val.
 					?med a qb:MeasureProperty.
 					
 					FILTER ((str(?val) = ?valor)).
-				}
 			}
 			""" ; 	
 		] ;
@@ -399,8 +354,6 @@ OpenData:CubosDimensionPropiedad a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?observacion qb:DataSet ?item.
 					?observacion ?dim ?val.
 					{
@@ -409,7 +362,6 @@ OpenData:CubosDimensionPropiedad a api:ListEndpoint
 							FILTER (?dim = IRI(?uriITEM)).
 						}
 					}
-				}
 			}
 			""" ; 	
 		] ;
@@ -423,8 +375,6 @@ OpenData:CubosMedidaPropiedad a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{				
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?observacion qb:DataSet ?item.
 					?observacion ?med ?val.
 					{
@@ -433,7 +383,6 @@ OpenData:CubosMedidaPropiedad a api:ListEndpoint
 							FILTER (?med = IRI(?uriITEM)).
 						}
 					}
-				}
 			}
 			""" ; 	
 		] ;
@@ -450,13 +399,10 @@ OpenData:CubosRefArea a api:ListEndpoint
 	; api:selector [
 	    api:select """
 			select distinct ?item where{
-				graph <http://opendata.aragon.es:8890/datacube>
-				{
 					?observacion qb:DataSet ?item.
 					?observacion sdmx-dimension:refArea ?val.
 					
 					FILTER (?val = IRI(?uriITEMA) || ?val = IRI(?uriITEMM) || ?val = IRI(?uriITEMC) || ?val = IRI(?uriITEMP)).
-				}
 			}
 			""" ; 	
 		] ;

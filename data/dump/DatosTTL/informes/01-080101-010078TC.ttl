@@ -1,0 +1,288 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010078>;
+	rdfs:label "Cubo de datos para 01-080101-010078TC"@es ;
+	rdfs:comment "Cubo de datos para 01-080101-010078TC"@es ;
+	dc:modified "2016-04-21"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/e5faf856-a4f4-377e-9b70-766914409c6d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:explotaciones "699"^^xsd:int;
+	iaest-measure:superficie-total "140029,04"^^xsd:double;
+	iaest-measure:sau "70291,29"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "21444,48"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/6cf7d6f7-47db-3473-9079-d8a13860f334> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:explotaciones "435"^^xsd:int;
+	iaest-measure:superficie-total "79503,26"^^xsd:double;
+	iaest-measure:sau "41740,69"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "7541,73"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/a84973f9-c08c-3ee9-8cf9-9c255c73d436> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:explotaciones "812"^^xsd:int;
+	iaest-measure:superficie-total "145834,16"^^xsd:double;
+	iaest-measure:sau "72504,54"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "10289,93"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/a33fef8e-aa2d-3828-8644-035f69c27e3b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:explotaciones "1586"^^xsd:int;
+	iaest-measure:superficie-total "130200,7"^^xsd:double;
+	iaest-measure:sau "83829,31"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "28033,5"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/6043f530-4ca4-3952-b1c5-89d7d9943a68> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:explotaciones "3491"^^xsd:int;
+	iaest-measure:superficie-total "190650,39"^^xsd:double;
+	iaest-measure:sau "162632,84"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "141449,58"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/cfc2f41b-1216-3e33-89f4-597c2b5db3ad> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:explotaciones "2547"^^xsd:int;
+	iaest-measure:superficie-total "166182,59"^^xsd:double;
+	iaest-measure:sau "141534,92"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "120446,34"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/b85fe834-bcc6-3879-807d-6042535cb076> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:explotaciones "2087"^^xsd:int;
+	iaest-measure:superficie-total "79328,32"^^xsd:double;
+	iaest-measure:sau "65368,75"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "52213,68"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/2c9faf4f-c838-3b7f-a265-f4d734c00cf0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:explotaciones "1584"^^xsd:int;
+	iaest-measure:superficie-total "48936,31"^^xsd:double;
+	iaest-measure:sau "44951,77"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "38195,91"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/5d5bf738-2f9a-328b-b9fd-41a4f3f0965f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:explotaciones "2112"^^xsd:int;
+	iaest-measure:superficie-total "52926,83"^^xsd:double;
+	iaest-measure:sau "46822,13"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "39367,91"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/87bda8a2-1c9d-3858-9c9d-0122844678fb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:explotaciones "3299"^^xsd:int;
+	iaest-measure:superficie-total "204206,69"^^xsd:double;
+	iaest-measure:sau "193862,67"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "171270,72"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/e33017a4-8317-3352-921a-3bc85a95b065> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:explotaciones "2405"^^xsd:int;
+	iaest-measure:superficie-total "95458,24"^^xsd:double;
+	iaest-measure:sau "75016,48"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "61822,28"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/4e1960c1-9fec-3f29-b545-0b488c7d438d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:explotaciones "822"^^xsd:int;
+	iaest-measure:superficie-total "27974,69"^^xsd:double;
+	iaest-measure:sau "15802,39"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "13427,92"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/1e7bba4f-614b-3038-831b-b689949de4dc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:explotaciones "1774"^^xsd:int;
+	iaest-measure:superficie-total "45385,06"^^xsd:double;
+	iaest-measure:sau "42502,58"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "34656,2"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/dd259a41-ccec-3db9-8378-203ec1ef4fbe> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:explotaciones "685"^^xsd:int;
+	iaest-measure:superficie-total "34787,3"^^xsd:double;
+	iaest-measure:sau "25423,59"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "8123,1"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/6be88416-0389-37ab-ba40-9fef363390e5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:explotaciones "1107"^^xsd:int;
+	iaest-measure:superficie-total "29737,22"^^xsd:double;
+	iaest-measure:sau "27867,32"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "24459,48"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/fa5b4050-d347-37bc-902f-f9f4418f459f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:explotaciones "2515"^^xsd:int;
+	iaest-measure:superficie-total "70448,32"^^xsd:double;
+	iaest-measure:sau "58390,36"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "49314,11"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/4797a208-f022-39d9-a4fb-6fa8e5dc1d4c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:explotaciones "2609"^^xsd:int;
+	iaest-measure:superficie-total "137270,03"^^xsd:double;
+	iaest-measure:sau "107808,7"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "90427,06"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/312947a0-e445-3db5-831e-e61555eacbdc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:explotaciones "1079"^^xsd:int;
+	iaest-measure:superficie-total "59749,22"^^xsd:double;
+	iaest-measure:sau "56095"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "48630,29"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/6255f6c0-ee77-38d7-97c4-f14c0bc42da9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:explotaciones "1617"^^xsd:int;
+	iaest-measure:superficie-total "51546,16"^^xsd:double;
+	iaest-measure:sau "44264,03"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "34830,52"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/569f957c-6965-3713-ae23-ea0408dd06b1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:explotaciones "3355"^^xsd:int;
+	iaest-measure:superficie-total "123129,3"^^xsd:double;
+	iaest-measure:sau "106127,29"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "73419,25"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/3ddb661d-4889-3eaf-b3f6-9d5165581129> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:explotaciones "1976"^^xsd:int;
+	iaest-measure:superficie-total "48954,04"^^xsd:double;
+	iaest-measure:sau "45374,46"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "41749,18"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/4d713777-6f9e-3a7d-bde8-1dd7d04e3310> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:explotaciones "1130"^^xsd:int;
+	iaest-measure:superficie-total "77931,93"^^xsd:double;
+	iaest-measure:sau "73978,72"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "62676,77"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/750b33e9-46c2-3a63-885a-4745daf69ff1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:explotaciones "856"^^xsd:int;
+	iaest-measure:superficie-total "68007,62"^^xsd:double;
+	iaest-measure:sau "55322,45"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "45976,24"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/ab3358e4-37e9-3d55-8ab9-91e9ede1b44b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:explotaciones "1227"^^xsd:int;
+	iaest-measure:superficie-total "68711,02"^^xsd:double;
+	iaest-measure:sau "61870,94"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "53668,79"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/9eb1b0c3-2df0-3783-ae58-de3b887f6e4b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:explotaciones "1894"^^xsd:int;
+	iaest-measure:superficie-total "132581,69"^^xsd:double;
+	iaest-measure:sau "114433,87"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "84013,4"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/2c6a7995-1744-3365-8f13-bba2f538a1d5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:explotaciones "635"^^xsd:int;
+	iaest-measure:superficie-total "90729,62"^^xsd:double;
+	iaest-measure:sau "62909,14"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "28210,9"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/06f292f4-6df7-387c-b402-32218c8a60fc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:explotaciones "757"^^xsd:int;
+	iaest-measure:superficie-total "30158,67"^^xsd:double;
+	iaest-measure:sau "24490,55"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "18376,37"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/4bd9cbbc-70f1-3d9e-ac44-7769f92b3aa4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:explotaciones "2145"^^xsd:int;
+	iaest-measure:superficie-total "77614,79"^^xsd:double;
+	iaest-measure:sau "66939,14"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "45624,36"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/f62cfb20-d03f-3fed-b760-9720b38f120a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:explotaciones "2147"^^xsd:int;
+	iaest-measure:superficie-total "195327,8"^^xsd:double;
+	iaest-measure:sau "157715,47"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "99157,27"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/b0b19c33-40c8-3bdd-93d5-1d03f6cfe5b8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:explotaciones "596"^^xsd:int;
+	iaest-measure:superficie-total "75447,69"^^xsd:double;
+	iaest-measure:sau "51067,31"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "9334,28"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/8d7768c6-2d68-3f9a-a30b-0b3e10d714cc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:explotaciones "363"^^xsd:int;
+	iaest-measure:superficie-total "74883,92"^^xsd:double;
+	iaest-measure:sau "42162,86"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "14471"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/e5eb1fad-8890-33fe-bdb6-514dcb5daf6b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:explotaciones "798"^^xsd:int;
+	iaest-measure:superficie-total "150365,81"^^xsd:double;
+	iaest-measure:sau "79461,48"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "16652,89"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TC/00e32f91-075e-3789-ad1f-f2074c758406> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:explotaciones "1630"^^xsd:int;
+	iaest-measure:superficie-total "40708,41"^^xsd:double;
+	iaest-measure:sau "27132,65"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "22113,66"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

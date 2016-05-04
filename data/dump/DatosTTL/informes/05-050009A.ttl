@@ -1,0 +1,1075 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/05-050009A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/05-050009>;
+	rdfs:label "Afiliaciones en alta. Trabajadores por cuenta ajena Según temporalidad y sexo"@es ;
+	dct:identifier  05-050009A ;
+	rdfs:comment "Cubo de datos para 05-050009A"@es ;
+	dc:modified "2016-05-04"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/836dae5f-b89a-3035-b729-6f7d12a07a92> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "150617"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/4df3a710-5969-34cd-b513-65e7452ff1df> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "113883"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/e74c384f-f2bd-3ed3-b39f-9af7c61cd2b2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "56696"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/0db6208e-d0bb-3849-bd53-1ead062ec7b7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "51661"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/8327d50d-7d45-320b-93ae-9e714be37d74> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14602"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/ce8b8032-87c2-3b98-9893-83a420376ff8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "20627"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/826cc2a6-c57c-35fb-81aa-265946369756> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "149440"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/ee50a853-1fc8-3df4-84b6-668f280deb6c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "112066"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/57239539-cbe2-3b18-bf6f-669c73ba5d56> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "61488"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/ee0b56ba-7ff7-3919-a984-0a6cf3188910> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "53053"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/b2ec5bcb-04d3-39cf-a6bd-2007702669d7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14552"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/eb8012cf-10e5-3b68-8983-1bbf7c51b01f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "20510"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/ea381531-aed2-395f-857e-418462878fd6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "147485"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/c0b6b076-50e1-3961-95b8-2933f3c8ec7d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "113874"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/3981c688-9c8c-333f-b302-3659b5754b92> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "59855"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/99bfd7b2-4d1f-319c-9b15-00f47d2f9c24> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "52381"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/efbc22de-0af5-3ced-8672-5b07e32cac10> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14553"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/ed3338c1-9890-3747-b17e-757989ceec7f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "20666"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/4107461a-4056-3e39-9314-09b68db878b8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "146660"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/1c58666e-ecf6-3291-b48c-293ac038e937> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "114626"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/7f16970b-228d-3e0f-90cc-3a222ee47a44> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "55421"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/b6ffee70-771e-3ec6-b233-bd98641708f6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "52829"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/bf25c21f-3b0f-3355-901b-c0178316dccb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14798"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/d5eddd69-c65c-3697-b27b-f5bbcf81afd1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2010"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "21498"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/b1503972-0992-3280-a5af-6c09ccd93846> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "145873"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/d79840db-7446-33ff-bfb1-3905af06bfa7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "114182"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/c73b9d3c-64d7-37ef-8aab-755dd1a7af90> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "55637"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/95f311e8-b5d2-3409-84d3-7a9310f8fa98> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "48863"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/68406cae-4950-3395-9da3-2338736d7ea6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14881"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/374b549d-f32e-33b6-84b1-1601da5f2b54> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "22424"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/ecdab0e4-9f94-3a06-acc1-555fa21acf5e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "144880"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/9181208b-009e-3557-9830-8feec21882d8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "111570"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/6900eab1-7a0a-389b-9b50-d7a5b40a8f5e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "57509"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/019a4eeb-926e-338b-acd7-4f709e229b7d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "50096"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/a5997834-da86-3d0d-971c-72461c2d530e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14842"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/b487f18a-5436-3459-a0d0-cce99ec0da33> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "22028"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/ebfa3f57-8134-39e2-83d1-ac2d755ada0b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "143840"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/441c54c1-8663-36b1-a626-2400fb8196df> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "113953"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/2c39c2d8-45e0-34c8-a219-34f5650fd75c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "56268"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/aa4f327a-e910-3f45-b701-0177f463ad5c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "50219"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/af88e298-3c89-3ab3-999f-38b8a6870c01> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14499"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/5010e8d0-9281-30f3-a330-39cdc8238c56> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "22547"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/25fb4982-0b59-395c-80d7-dc7c34db4bd2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "141757"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/ec720ef9-172e-3b3c-8103-c267a973640c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "113219"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/e8a49cba-08f8-3e50-815e-381638954d72> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "50660"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/2229ef00-fea3-36ba-81ce-5ce8a5abaff6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "48872"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/89a167be-0113-3300-b7ef-ce781d53f0ba> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "15068"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/fbf2f2f1-3a4b-3ccd-a157-d72249e74e48> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2011"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "23231"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/9c350221-45f6-34df-817a-cec01d034857> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "142122"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/fae4897b-9dae-3309-b6f8-582d8e34d2ff> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "115535"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/235fd085-ef8b-3630-af20-d590226640e3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "52831"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/1889d382-a0c8-3581-8c56-86c8cbc3514d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "47324"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/83efd464-02f7-3bf7-bb43-f7de5d25938d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "21155"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/d6683de6-872b-3c8a-a673-fe24369874d8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "24779"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/e684a5b3-ce3d-372a-a49d-04d6a620603e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "141734"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/ee5e4b4c-4bf7-32ac-96e8-e5ebf18b8d99> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "117204"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/d85b6146-c710-3ed8-95f8-bd57c92da98a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "62561"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/0a78d521-562d-3d54-9ab6-3153939653dc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "53339"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/b2a6c236-5070-38ab-b3dc-2b8beb7986e5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "20911"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/6100b224-fc03-3087-968a-592a8e3141d8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "24506"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/67cc9b6b-57b9-3786-9bbf-880fb4a75090> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "139952"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/fb2202ce-342a-3522-8acf-5815b31e8d8a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "122496"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/463531d7-f52f-360b-8739-69cd5e329931> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "57377"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/ba6f8fad-f354-3990-b78b-639b9793ee01> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "52978"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/ffbbdcf0-c555-32f0-880c-bd13afac742e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "20778"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/9f28e153-7eed-3975-adda-40c663f76321> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "24505"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/1e6ea451-7b5c-3c99-a07a-0c5bd7bb8cc5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "137851"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/a18f3a64-fc1d-3c2f-b69f-c69d55ed6305> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "123118"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/1e7c0027-2ddb-35c0-9cb6-ab20ab596227> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "49488"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/8a531168-b736-3008-8a5b-32ec406bf0e5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "50873"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/2c46c8ee-8968-3e9c-8bb5-fbc635267e9b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "19410"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/5c94a320-2977-3b22-8db4-db4c66f72d43> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2012"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "23822"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/8b14c52b-798c-3602-b2ea-3be2a6c7cc2a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "136666"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/c50fe9fa-867a-3611-8fe6-63043020e75d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "122627"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/8a0431ab-5fe7-3957-96ba-c76b20646915> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "48092"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/01940bc8-253d-39b0-91bb-5f10083c1a96> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "47935"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/4cc6afac-9b73-36fb-85d4-a2a399e410d7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "18346"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/e8aebf92-d385-3c8c-8011-6600f0ece26b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "23383"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/2def6610-8a1b-3d54-bba6-1839010507d9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "135911"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/e673a28d-8840-365f-aeac-1d5be42281bc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "119403"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/435a6018-d4e8-325d-9ca2-733d47aa9e2d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "60560"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/5a08d244-ef09-3345-bc40-a54ff42d8150> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "54304"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/9530cf05-b7a8-38c3-bbe2-1d1d488256ec> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "17371"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/63329006-6755-3c2d-9032-36aa37b2761b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "22931"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/6fc862e3-e8a1-3ae2-a681-f60724b2f9e2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "133818"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/d8382434-81b5-355a-9845-fd8764137529> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "120013"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/a48810cf-056f-3d2b-bfe2-55c543455fb9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "55359"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/f5641934-c662-379d-a114-ea3af1bf2125> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "51592"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/0e8fab53-bf1f-3480-b816-dc843d3a4f23> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "17128"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/97418fe1-22cc-334b-a850-60176635b42a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "22796"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/2be9ac54-11ac-3e83-905a-6bb07a2126c8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "132705"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/6aa5135c-c37a-3f91-b0cd-a924e07453e2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "120540"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/d08c1699-8c7d-38df-8b3d-4cd04739394f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "49890"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/f816f518-4af1-3c45-94ca-d4a10160e107> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "51567"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/3afe30e9-1423-3479-b8cd-2fa4e226d0d0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "17545"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/80a4e32e-396e-3017-861b-042410bc9ff8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2013"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "23471"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/25cfe5c7-c2a6-38cb-a7f9-138008688c65> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "132815"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/99f28ff9-8cb8-3f4b-bd95-37e3087230db> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "120704"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/4b710cc6-fb1d-3b3e-bba0-5a6ec33285f2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "51786"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/7d7711dd-3d8f-3087-bea1-7863e0d0fa04> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "50478"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/d0e2ce66-2255-3b7c-8c62-64b36aaf45ae> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "17218"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/774bdd33-1647-31e6-8d9d-6440184d0896> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "23375"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/d51ca0f9-5d20-3203-b5b6-15172d5495c8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "133488"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/eac471bb-fc68-390a-8cec-265b13c5bb70> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "118133"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/bdc86bb2-41f6-33a5-9425-012111784751> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "65599"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/6170e4a8-9c14-3fe1-8e29-832b62df37b1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "57464"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/51407099-a1a2-3e11-90c8-d7750a810a0f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "16723"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/56250ac9-55f4-3677-b174-ecf58b9a5743> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "23178"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/d705090f-f9f9-331e-8fe3-20074554af85> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "132494"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/2a46e158-c550-35bf-b4ba-c1a1097f6e4d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "119564"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/c3bc27a3-986f-312e-a03f-9586e0e4d906> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "57363"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/80490394-6919-3c08-b517-345c9286eadf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "53673"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/111da737-8202-3486-9647-bc71d215d336> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "16872"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/617b09b5-8f8e-3807-a4d5-3def83733c1c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "23187"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/fb604861-eb31-3311-b04c-6bb2915e71e2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "133511"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/e27c44a1-b33a-3c3d-affb-411ef4e3ed2d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "121030"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/f0a39714-2cbf-3cc1-96fc-52abbd82ad34> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "52294"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/8c9fedab-a735-3d24-a4e9-34ab01520f12> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "54523"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/b9059c21-bd65-3bf1-b723-0f9502c9777f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "17234"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/00353f50-8d4e-3e5e-a53e-72b510167388> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2014"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "23766"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/c62950d8-6c69-3014-92ac-4cef0620268a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "134814"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/53cc4fd1-7253-35d1-89c3-0a90d6b7b5af> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "121345"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/79fa97c4-3018-355e-8816-7e39e7e755ed> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "55315"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/baecb3db-1981-3a30-b603-4908fbe1527b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "53449"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/e84106d2-a9b0-3fcf-bd33-a7ba20cea5fa> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "17096"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/1866a277-4ec8-3013-8613-3bc96019b79c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "23707"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/c80f4d3a-3d4f-3889-8048-6ea926e99cd7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "136064"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/d251b0c4-664e-3f8a-afaf-179523aada86> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "118825"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/9561b402-dad0-3be5-977e-368b8b398fb3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "68958"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/606428d7-e3c3-3da3-8e60-65aa46e5f95b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "60012"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/d95d146f-4f10-329b-9437-5550ebd6933e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "16350"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/c0580a04-5fb8-31f0-8636-ce18af917a19> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Junio 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "23240"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/917ea56d-ef4a-3b5a-99f6-d2932e7c4265> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "136212"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/a3d98fef-0208-3900-84ba-070dc14d267f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "120772"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/a71f0dfc-a182-34d2-9bc8-be46278a6182> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "61931"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/07c1e39c-f40f-39d9-9263-544ee462f700> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "56643"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/3f2d3987-e430-3aea-99fe-49ad5bfcfcde> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "16644"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/b8b393c7-202b-3701-8e19-86be39b5014a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "23656"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/450ed6cc-dc40-326c-bb5c-55364b035a43> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "136858"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/b838d181-5ef0-31c5-8085-056773ec4cd9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "121956"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/c8a2636a-44b3-3cfd-a396-6d33a0f24687> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "57007"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/eadf0fd0-128c-3ca6-94e8-05eec8daf796> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "58184"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/7ced1242-578a-32f5-aed5-8256ae76ccfb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "17196"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/26192509-4eed-39f8-b509-c64a966469a6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2015"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "24372"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/381b91a3-ee49-33b1-b9a8-13784168b269> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2016"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "138447"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/f8e41521-715d-32fe-9eb9-61081116111b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2016"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "122950"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/80c71cb1-99af-37a6-8ca5-e649d4878ddb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2016"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "58311"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/43b5aa5f-ebe5-3e2e-9cdb-949806981da9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2016"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/temporal> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "57106"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/d33b9e24-d9c3-3705-9009-c4b7cde238f7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2016"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "17243"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050009A/7da38a29-af17-3434-8101-2c03c48ec254> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050009A>; 
+	iaest-dimension:mes-y-ano "Marzo 2016"^^xsd:string;
+	iaest-dimension:temporalidad <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "24467"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

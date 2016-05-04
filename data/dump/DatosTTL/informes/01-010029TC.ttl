@@ -1,0 +1,552 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010029>;
+	rdfs:label "Cubo de datos para 01-010029TC"@es ;
+	rdfs:comment "Cubo de datos para 01-010029TC"@es ;
+	dc:modified "2016-04-21"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/504dc3d9-852a-3b81-97a7-e5eaacd6bfe3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:urbana---numero-de-recibos "34143"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "647849,64"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "647849,64"^^xsd:double;
+	iaest-measure:cuota-euros "4393237,38"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/500bd019-dd0d-3504-be4d-6108e4c7a4f4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:urbana---numero-de-recibos "17966"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "318595,48"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "293791,8"^^xsd:double;
+	iaest-measure:cuota-euros "2054551,52"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/3d87e1e1-ecde-363f-9d9e-921afd7769bc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:urbana---numero-de-recibos "7383"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "156832,89"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "156832,89"^^xsd:double;
+	iaest-measure:cuota-euros "971120"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/aa6cd87b-e2c4-3510-b23b-e798a0b7945b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:urbana---numero-de-recibos "15549"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "343951,67"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "343951,67"^^xsd:double;
+	iaest-measure:cuota-euros "2295679,5"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/52557098-54c3-33db-b844-a38bf99b1965> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:urbana---numero-de-recibos "25310"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "406664,05"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "404735,77"^^xsd:double;
+	iaest-measure:cuota-euros "2516510"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/1812191b-bb47-3685-b8e1-c5d19005ccf0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:urbana---numero-de-recibos "55923"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "1445570,12"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "918002,5"^^xsd:double;
+	iaest-measure:cuota-euros "7439979"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/4b3e0f45-b8a0-3370-b91d-9cbd86735d8f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:urbana---numero-de-recibos "19381"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "320556,92"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "320556,92"^^xsd:double;
+	iaest-measure:cuota-euros "1987925"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/a42e30c6-f59b-309c-bc42-1758237d11d0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:urbana---numero-de-recibos "16221"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "266364,64"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "241481,41"^^xsd:double;
+	iaest-measure:cuota-euros "1844557,8"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/c29948a5-3769-36f5-932a-3ff8c1a9f57b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:urbana---numero-de-recibos "15546"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "260273,61"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "227951,27"^^xsd:double;
+	iaest-measure:cuota-euros "1536038"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/f8e92b90-64bc-3a82-b1b9-944aa7b5b9df> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:urbana---numero-de-recibos "17519"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "282757,18"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "269053,01"^^xsd:double;
+	iaest-measure:cuota-euros "1434258,73"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/b00e321b-fae6-3012-badd-b3516cce02b9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:urbana---numero-de-recibos "15026"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "339745,01"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "304623,02"^^xsd:double;
+	iaest-measure:cuota-euros "1968227,34"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/f80fcc87-d35a-39b3-82e7-d363c19a1f5a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:urbana---numero-de-recibos "13926"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "154577,3"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "154577,3"^^xsd:double;
+	iaest-measure:cuota-euros "1030560"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/254577f1-d576-3755-828e-254fa97b68d0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:urbana---numero-de-recibos "11858"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "157514,34"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "154993,88"^^xsd:double;
+	iaest-measure:cuota-euros "913380"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/cc59bd95-ccaf-35ca-8b4d-12ede9cd6b3b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:urbana---numero-de-recibos "8282"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "74027,48"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "74027,48"^^xsd:double;
+	iaest-measure:cuota-euros "366480"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/e4af1075-7aea-30e7-b4dc-4ef39c11b005> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:urbana---numero-de-recibos "15148"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "445987,49"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "401894,01"^^xsd:double;
+	iaest-measure:cuota-euros "2233660"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/116dbecd-6fee-369e-9c5a-8c95e8ff3bc1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:urbana---numero-de-recibos "18009"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "280642,54"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "280642,54"^^xsd:double;
+	iaest-measure:cuota-euros "1472140"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/50fc15a9-05a0-3e11-82f1-01cc140b896c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:urbana---numero-de-recibos "433013"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "16385339,33"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "16033356,54"^^xsd:double;
+	iaest-measure:cuota-euros "65497488"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/c6636727-8257-384d-a5ba-5ae47fe4fb5d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:urbana---numero-de-recibos "7527"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "163023,13"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "148571,9"^^xsd:double;
+	iaest-measure:cuota-euros "729460"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/e1cf3f02-edbd-38ad-8230-9faadca7a8fc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:urbana---numero-de-recibos "11032"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "199631,52"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "199631,52"^^xsd:double;
+	iaest-measure:cuota-euros "1035130"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/e3e76124-d867-36d0-89b6-f7b063fb8483> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:urbana---numero-de-recibos "41095"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "556685,14"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "556685,14"^^xsd:double;
+	iaest-measure:cuota-euros "2885100"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/a0c0cd79-419e-3efa-82a2-de6e5b5dfa78> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:urbana---numero-de-recibos "9145"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "115152,55"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "115152,55"^^xsd:double;
+	iaest-measure:cuota-euros "680320"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/856bb2c2-5533-3acb-a7c9-07eb286483a1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:urbana---numero-de-recibos "6317"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "53138,15"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "53138,15"^^xsd:double;
+	iaest-measure:cuota-euros "274960"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/f6f85050-d9a7-3461-9b03-3123681b9671> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:urbana---numero-de-recibos "7614"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "87549,43"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "79949,42"^^xsd:double;
+	iaest-measure:cuota-euros "438030"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/fdf76feb-ee90-381e-acb6-6d0afc6593b1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:urbana---numero-de-recibos "9487"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "91534,48"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "91534,48"^^xsd:double;
+	iaest-measure:cuota-euros "410250"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/6edc54ea-74a7-3f6c-91a7-a910818710a4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:urbana---numero-de-recibos "17438"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "195051,88"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "195051,88"^^xsd:double;
+	iaest-measure:cuota-euros "912760"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/63f36375-4cce-3031-a088-29bf5e3e3395> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:urbana---numero-de-recibos "11584"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "88043,53"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "88043,53"^^xsd:double;
+	iaest-measure:cuota-euros "521420"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/9e7d2b4c-31b6-3987-be1a-e259d33a49d8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:urbana---numero-de-recibos "9960"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "170149,31"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "170149,31"^^xsd:double;
+	iaest-measure:cuota-euros "977770"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/0eb28f03-3ef1-37e8-813a-5004ee31205c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:urbana---numero-de-recibos "23434"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "331913,97"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "320062,34"^^xsd:double;
+	iaest-measure:cuota-euros "1882270"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/ea0cbac0-6e85-32ca-87dd-d353621d446b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:urbana---numero-de-recibos "38206"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "870118,12"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "870118,12"^^xsd:double;
+	iaest-measure:cuota-euros "4063970"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/89c16bc7-f7fe-3a27-a26e-bee31236bf16> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:urbana---numero-de-recibos "5549"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "43774,94"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "43774,94"^^xsd:double;
+	iaest-measure:cuota-euros "218490"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/2da3af1b-b873-363e-8382-76a7713af87d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:urbana---numero-de-recibos "7751"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "82297,92"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "65575,23"^^xsd:double;
+	iaest-measure:cuota-euros "327420"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/0459b550-03bf-3d11-a009-c125877d2925> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:urbana---numero-de-recibos "13764"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "135254,64"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "135254,64"^^xsd:double;
+	iaest-measure:cuota-euros "761650"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/f4fe2015-bd67-37da-bded-2c9056db6a26> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:urbana---numero-de-recibos "9317"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "110886,82"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "103283,82"^^xsd:double;
+	iaest-measure:cuota-euros "582070"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/1792a84b-55ae-3dd0-b9c9-6aba2603b000> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:urbana---numero-de-recibos "33750"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "658586"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "658586"^^xsd:double;
+	iaest-measure:cuota-euros "4475945"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/045cfe5f-ab5f-38e1-99a4-e8ed292ccd17> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:urbana---numero-de-recibos "17984"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "324243"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "303242"^^xsd:double;
+	iaest-measure:cuota-euros "2146037"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/ae0ce64a-3f0b-363a-93b0-22e7ad1bc891> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:urbana---numero-de-recibos "7068"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "151919"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "151919"^^xsd:double;
+	iaest-measure:cuota-euros "941296"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/41a0f56e-7301-3f90-af15-92b477e79d44> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:urbana---numero-de-recibos "15218"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "344553"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "344553"^^xsd:double;
+	iaest-measure:cuota-euros "2306416"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/39aee225-ab85-3b4a-9788-5a80861bdba5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:urbana---numero-de-recibos "25335"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "401896"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "400171"^^xsd:double;
+	iaest-measure:cuota-euros "2507476"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/0f3f185b-3d8b-31a7-a2b9-d32516d4ba0c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:urbana---numero-de-recibos "55071"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "1460612"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "978619"^^xsd:double;
+	iaest-measure:cuota-euros "8015568"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/1f851596-8e6f-3405-86dd-4cde3fe4218a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:urbana---numero-de-recibos "18713"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "425389"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "322825"^^xsd:double;
+	iaest-measure:cuota-euros "2012151"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/c0081b94-078a-3558-b0b3-062c65f88b93> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:urbana---numero-de-recibos "16108"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "272081"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "250948"^^xsd:double;
+	iaest-measure:cuota-euros "2028995"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/3d2aa614-cd7b-3d2a-9220-7476d995f7a3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:urbana---numero-de-recibos "14208"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "253690"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "220415"^^xsd:double;
+	iaest-measure:cuota-euros "1507146"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/03e61952-c32a-38c4-8c0f-6c3277659d48> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:urbana---numero-de-recibos "15472"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "270057"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "257718"^^xsd:double;
+	iaest-measure:cuota-euros "1391234"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/3c9eed75-62ea-3c2e-a2fe-eadb682344ed> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:urbana---numero-de-recibos "15208"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "346700"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "315224"^^xsd:double;
+	iaest-measure:cuota-euros "2113219"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/c919ab3b-cace-3bf7-8f46-08ec85176d2c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:urbana---numero-de-recibos "14006"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "160953"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "160953"^^xsd:double;
+	iaest-measure:cuota-euros "1100955"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/78a066a8-12e6-306e-8782-0fe9a510fef8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:urbana---numero-de-recibos "12080"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "161800"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "159678"^^xsd:double;
+	iaest-measure:cuota-euros "962303"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/a260d62f-9d72-3072-af9c-d008240cdc1f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:urbana---numero-de-recibos "8430"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "75824"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "75204"^^xsd:double;
+	iaest-measure:cuota-euros "372126"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/f1b8fae5-0f5f-35e7-ac45-ba2430a089d8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:urbana---numero-de-recibos "15453"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "458388"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "420452"^^xsd:double;
+	iaest-measure:cuota-euros "2340353"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/d86041fb-c285-3f42-b8bf-49fb31e23582> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:urbana---numero-de-recibos "18287"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "290595"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "290595"^^xsd:double;
+	iaest-measure:cuota-euros "1553057"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/e052ba0a-d97f-3e22-a0b6-a5b0d213b078> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:urbana---numero-de-recibos "439338"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "17055879"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "16741135"^^xsd:double;
+	iaest-measure:cuota-euros "68397402"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/51fcf9db-ac2c-31d5-a065-5ea638b68ffe> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:urbana---numero-de-recibos "7551"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "167042"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "154500"^^xsd:double;
+	iaest-measure:cuota-euros "760309"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/f525b3f7-5ad0-3dc4-8e13-a77a0c9aabf3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:urbana---numero-de-recibos "11214"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "204214"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "204214"^^xsd:double;
+	iaest-measure:cuota-euros "1070933"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/dfb10c51-f37c-308f-9883-8d7800314e3d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:urbana---numero-de-recibos "41319"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "587786"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "587786"^^xsd:double;
+	iaest-measure:cuota-euros "3054976"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/e22d56a3-b267-3ce1-9df4-4856de0661a2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:urbana---numero-de-recibos "9221"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "118292"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "118292"^^xsd:double;
+	iaest-measure:cuota-euros "720462"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/605f30f1-343a-3115-8944-15cf26a8e6e7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:urbana---numero-de-recibos "6332"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "54295"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "54295"^^xsd:double;
+	iaest-measure:cuota-euros "280961"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/584bf53f-321d-3f54-931e-b47c3ea1f7d6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:urbana---numero-de-recibos "7466"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "88868"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "82171"^^xsd:double;
+	iaest-measure:cuota-euros "449460"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/56c0ff7d-3d6b-3b96-9594-069b4bff9c9d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:urbana---numero-de-recibos "9548"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "92756"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "92756"^^xsd:double;
+	iaest-measure:cuota-euros "415795"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/68e70310-65a9-3141-b91d-547d3f79c90b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:urbana---numero-de-recibos "17131"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "201701"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "201701"^^xsd:double;
+	iaest-measure:cuota-euros "958913"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/883a8c45-b6dc-364b-9a6c-4408c420aa4e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:urbana---numero-de-recibos "11306"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "89562"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "89562"^^xsd:double;
+	iaest-measure:cuota-euros "527500"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/5e8f3378-bb90-3d99-b41c-15c37ce28ecf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:urbana---numero-de-recibos "9819"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "173966"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "173966"^^xsd:double;
+	iaest-measure:cuota-euros "998474"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/3427d034-5209-3f53-ab7f-556c598dae17> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:urbana---numero-de-recibos "23662"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "348009"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "338793"^^xsd:double;
+	iaest-measure:cuota-euros "1996430"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/56f70c0a-daad-35ec-b260-34f637f54f0d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:urbana---numero-de-recibos "38098"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "906939"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "906939"^^xsd:double;
+	iaest-measure:cuota-euros "4262558"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/a51125ef-1969-30c2-81a8-4d869e451033> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:urbana---numero-de-recibos "5388"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "45048"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "45048"^^xsd:double;
+	iaest-measure:cuota-euros "226463"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/1a8e9bf7-a722-37f3-8598-c7234160aed5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:urbana---numero-de-recibos "7641"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "84388"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "69239"^^xsd:double;
+	iaest-measure:cuota-euros "349086"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/3195b4b0-0c69-33e8-a133-e32aeb5c5689> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:urbana---numero-de-recibos "13760"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "141735"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "141735"^^xsd:double;
+	iaest-measure:cuota-euros "797381"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010029TC/5b0397fb-d8af-3973-b08b-0cc4725904a6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010029TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:urbana---numero-de-recibos "9153"^^xsd:int;
+	iaest-measure:urbana---base-imponible-miles-de-euros "114540"^^xsd:double;
+	iaest-measure:urbana---base-liquidable-miles-de-euros "107472"^^xsd:double;
+	iaest-measure:cuota-euros "608557"^^xsd:double.

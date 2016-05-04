@@ -1,0 +1,55 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010048A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010048>;
+	rdfs:label "Cubo de datos para 01-010048A"@es ;
+	rdfs:comment "Cubo de datos para 01-010048A"@es ;
+	dc:modified "2016-04-21"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010048A/152695b7-fca4-3dfc-8fd8-015e09a28ec9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010048A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:superficie-total-regada "377685,19"^^xsd:double;
+	iaest-measure:superficie-regada-por-aspersion "78208,69"^^xsd:double;
+	iaest-measure:superficie-regada-por-riego-localizado-goteo-microaspersion-etc "30432,92"^^xsd:double;
+	iaest-measure:superficie-regada-por-gravedad "266015,55"^^xsd:double;
+	iaest-measure:superficie-regada-por-otros-metodos "3028,03"^^xsd:double;
+	iaest-measure:superficie-regada-con-aguas-subterraneas-de-pozo-o-sondeo "24304,61"^^xsd:double;
+	iaest-measure:superficie-regada-con-aguas-superficiales "351172"^^xsd:double;
+	iaest-measure:superficie-regada-con-aguas-depuradas "2208,58"^^xsd:double;
+	iaest-measure:superficie-regada-con-concesion-integrada-en-una-comunidad-de-regantes "348452,15"^^xsd:double;
+	iaest-measure:superficie-regada-con-concesion-individual "29233,04"^^xsd:double;
+	iaest-measure:superficie-regada-con-agua-suficiente "332383,37"^^xsd:double;
+	iaest-measure:superficie-regada-con-agua-insuficiente "45301,82"^^xsd:double;
+	iaest-measure:superficie-no-regada-disponiendo-la-explotacion-de-instalaciones-y-agua "28640,47"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010048A/b9fd4210-eef1-302f-a917-a8dd54fcdb28> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010048A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1989> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:superficie-total-regada "322591,73"^^xsd:double;
+	iaest-measure:superficie-regada-por-aspersion "49809,86"^^xsd:double;
+	iaest-measure:superficie-regada-por-riego-localizado-goteo-microaspersion-etc "9476,08"^^xsd:double;
+	iaest-measure:superficie-regada-por-gravedad "259798,87"^^xsd:double;
+	iaest-measure:superficie-regada-por-otros-metodos "3506,92"^^xsd:double;
+	iaest-measure:superficie-regada-con-aguas-subterraneas-de-pozo-o-sondeo "16158,7"^^xsd:double;
+	iaest-measure:superficie-regada-con-aguas-superficiales "306433,03"^^xsd:double;
+	iaest-measure:superficie-regada-con-agua-suficiente "270865,33"^^xsd:double;
+	iaest-measure:superficie-regada-con-agua-insuficiente "51726,4"^^xsd:double;
+	iaest-measure:superficie-no-regada-disponiendo-la-explotacion-de-instalaciones-y-agua "6871,26"^^xsd:double.

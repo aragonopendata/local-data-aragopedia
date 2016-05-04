@@ -1,0 +1,80 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/03-030041A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030041>;
+	rdfs:label "Cubo de datos para 03-030041A"@es ;
+	rdfs:comment "Cubo de datos para 03-030041A"@es ;
+	dc:modified "2016-04-21"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030041A/d49773c2-d021-331c-acdd-504924e15919> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030041A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:nivel-estudios-agregado <http://opendata.aragon.es/kos/iaest/nivel-estudios-agregado/analfabetos-sin-estudios> ;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/ocupados> ;
+	iaest-measure:personas-residentes-viviendas-familiares "14860"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030041A/a41a7084-713d-354f-83a5-f2214d5593b0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030041A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:nivel-estudios-agregado <http://opendata.aragon.es/kos/iaest/nivel-estudios-agregado/analfabetos-sin-estudios> ;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/parados> ;
+	iaest-measure:personas-residentes-viviendas-familiares "2645"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030041A/fac15d97-f2ba-3141-9bca-c4cb779910ac> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030041A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:nivel-estudios-agregado <http://opendata.aragon.es/kos/iaest/nivel-estudios-agregado/primer-grado> ;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/ocupados> ;
+	iaest-measure:personas-residentes-viviendas-familiares "72655"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030041A/b920fc59-cabe-3ac5-a29d-668003a65cf0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030041A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:nivel-estudios-agregado <http://opendata.aragon.es/kos/iaest/nivel-estudios-agregado/primer-grado> ;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/parados> ;
+	iaest-measure:personas-residentes-viviendas-familiares "9525"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030041A/dea9f6a9-bbf9-3b4c-a1d9-6816cda8c914> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030041A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:nivel-estudios-agregado <http://opendata.aragon.es/kos/iaest/nivel-estudios-agregado/segundo-grado> ;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/ocupados> ;
+	iaest-measure:personas-residentes-viviendas-familiares "299370"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030041A/da718dcb-8518-3b62-8f1f-f086aaaf4171> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030041A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:nivel-estudios-agregado <http://opendata.aragon.es/kos/iaest/nivel-estudios-agregado/segundo-grado> ;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/parados> ;
+	iaest-measure:personas-residentes-viviendas-familiares "33762"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030041A/d0db744a-5004-3f64-91e8-d88623ed6b10> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030041A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:nivel-estudios-agregado <http://opendata.aragon.es/kos/iaest/nivel-estudios-agregado/tercer-grado> ;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/ocupados> ;
+	iaest-measure:personas-residentes-viviendas-familiares "108884"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030041A/813fbac9-9649-321a-b3b3-6d56077cbc92> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030041A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:nivel-estudios-agregado <http://opendata.aragon.es/kos/iaest/nivel-estudios-agregado/tercer-grado> ;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/parados> ;
+	iaest-measure:personas-residentes-viviendas-familiares "9934"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

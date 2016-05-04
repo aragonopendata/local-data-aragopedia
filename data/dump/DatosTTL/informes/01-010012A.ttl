@@ -1,0 +1,138 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010012A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010012>;
+	rdfs:label "Cubo de datos para 01-010012A"@es ;
+	rdfs:comment "Cubo de datos para 01-010012A"@es ;
+	dc:modified "2016-04-21"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/0ef79977-b6d3-3159-82c6-7377ee6ae0d5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion " Antes de 1900"^^xsd:string;
+	iaest-measure:numero-de-edificios "60541"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/b8ddb6dd-fb54-3193-a856-2283d1f6208c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "1900 - 1920"^^xsd:string;
+	iaest-measure:numero-de-edificios "19173"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/4a162395-f3e8-3a48-800a-417beb5d14b5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "1921 - 1940"^^xsd:string;
+	iaest-measure:numero-de-edificios "18972"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/a7a91489-23bc-384b-af3a-dfa85ab93ae9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "1941 - 1950"^^xsd:string;
+	iaest-measure:numero-de-edificios "19381"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/6928bfcc-2ca2-3aff-90af-32f92fa02f37> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "1951 - 1960"^^xsd:string;
+	iaest-measure:numero-de-edificios "29531"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/fd2c7ccf-6470-3c10-9241-192f27c9508f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "1961 - 1970"^^xsd:string;
+	iaest-measure:numero-de-edificios "26995"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/d0ece153-ff1b-32cc-87be-abfbd90d4320> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "1971 - 1980"^^xsd:string;
+	iaest-measure:numero-de-edificios "33335"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/88e4984d-dfa6-3930-b384-ae9456f80988> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "1981 - 1990"^^xsd:string;
+	iaest-measure:numero-de-edificios "29347"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/9bd8287a-4137-37c1-b270-9c8e1a050607> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "1991"^^xsd:string;
+	iaest-measure:numero-de-edificios "3084"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/6a7bcfef-7dcd-3c1b-b9d2-0a460bb96ef1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "1992"^^xsd:string;
+	iaest-measure:numero-de-edificios "2746"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/af1907e6-7450-388e-8774-4da23bd03e81> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "1993"^^xsd:string;
+	iaest-measure:numero-de-edificios "2736"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/7ddaad76-54c0-3402-9e72-cb2221e5bae6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "1994"^^xsd:string;
+	iaest-measure:numero-de-edificios "2676"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/1bd43ae0-47b4-35df-9340-6e328a462051> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "1995"^^xsd:string;
+	iaest-measure:numero-de-edificios "2797"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/458a78c6-f552-3ce0-95a7-beec34868f74> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "1996"^^xsd:string;
+	iaest-measure:numero-de-edificios "3265"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/5d0a353e-f56d-3a90-9d98-6ed0db459ea9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "1997"^^xsd:string;
+	iaest-measure:numero-de-edificios "2988"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/f3de3092-dc55-33ca-bef6-683d666d6eb0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "1998"^^xsd:string;
+	iaest-measure:numero-de-edificios "3750"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/709620d9-92a4-3867-adc4-a2090017d1a9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "1999"^^xsd:string;
+	iaest-measure:numero-de-edificios "3277"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/69fff17a-017a-363f-8b09-8afbcdbb59a7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "2000"^^xsd:string;
+	iaest-measure:numero-de-edificios "3718"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010012A/124df1ff-451e-32c1-a131-081357fe4da3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010012A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:ano-de-construccion "2001"^^xsd:string;
+	iaest-measure:numero-de-edificios "4104"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

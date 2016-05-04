@@ -1,0 +1,84 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/03-030002A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030002>;
+	rdfs:label "Cubo de datos para 03-030002A"@es ;
+	rdfs:comment "Cubo de datos para 03-030002A"@es ;
+	dc:modified "2016-04-21"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030002A/f6de371b-91db-3b44-9e26-30132be6b2d0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030002A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1900> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:poblacion "928117"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030002A/84d5ebae-864d-3df6-afe0-2885789c0dfc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030002A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1910> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:poblacion "980393"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030002A/280e906e-4011-3aba-be0c-ddead72beebc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030002A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1920> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:poblacion "1028255"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030002A/9dc92a69-7a75-325e-a733-9cb62c88bf82> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030002A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1930> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:poblacion "1051604"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030002A/8eb9e8ca-cf6d-3aaf-8784-d75b477fbd60> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030002A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1940> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:poblacion "1067661"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030002A/d9a8c89c-b466-310a-a0fa-2d4345cea066> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030002A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1950> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:poblacion "1090343"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030002A/e9de97ec-5520-3bb4-af0f-1d62590518b1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030002A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1960> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:poblacion "1098887"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030002A/c045a556-999f-3f94-9d5a-fb0587703229> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030002A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1970> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:poblacion "1153055"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030002A/417ab81c-f644-3057-a89c-bd0ae5f6a4ef> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030002A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1981> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:poblacion "1196952"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030002A/a4be7612-219b-3011-b67b-44179fe69460> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030002A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1991> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:poblacion "1188817"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030002A/dbdf1c61-84d9-3dd9-9274-fc0d725271df> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030002A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:poblacion "1204215"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030002A/1820551c-1846-3a50-b4ba-cf75490e5f6f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030002A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:poblacion "1344544"^^xsd:int.

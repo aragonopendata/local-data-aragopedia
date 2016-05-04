@@ -1,0 +1,276 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/02-020002A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/02-020002>;
+	rdfs:label "Cubo de datos para 02-020002A"@es ;
+	rdfs:comment "Cubo de datos para 02-020002A"@es ;
+	dc:modified "2016-04-21"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/3011fcc5-918c-33b0-a917-f16943f6961a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1900> ;
+	iaest-measure:superficie-km2 "15636,2"^^xsd:double;
+	iaest-measure:poblacion "255100"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "16,3147056190123"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/9136396a-1231-31e6-acd2-eb06d455f011> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1910> ;
+	iaest-measure:superficie-km2 "15636,2"^^xsd:double;
+	iaest-measure:poblacion "264984"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "16,9468285133217"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/f9795004-b4f2-3341-b4c9-0a14ff526447> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1920> ;
+	iaest-measure:superficie-km2 "15636,2"^^xsd:double;
+	iaest-measure:poblacion "265603"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "16,9864161369131"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/955c8a22-1de2-3169-99ca-474943909b1c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1930> ;
+	iaest-measure:superficie-km2 "15636,2"^^xsd:double;
+	iaest-measure:poblacion "257777"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "16,4859108990675"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/b8d146f8-f65b-3a45-a213-02f77800cd9b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1940> ;
+	iaest-measure:superficie-km2 "15636,2"^^xsd:double;
+	iaest-measure:poblacion "247135"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "15,8053107532521"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/bcdb64f6-b6e6-3312-932a-9f001cf1119a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1950> ;
+	iaest-measure:superficie-km2 "15636,2"^^xsd:double;
+	iaest-measure:poblacion "237681"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "15,2006881467364"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/85fb08ef-8388-39a2-bb1b-5111e424703a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1960> ;
+	iaest-measure:superficie-km2 "15636,2"^^xsd:double;
+	iaest-measure:poblacion "234014"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "14,966168250598"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/fcaf2383-228d-3c68-85a8-149655831b41> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1970> ;
+	iaest-measure:superficie-km2 "15636,2"^^xsd:double;
+	iaest-measure:poblacion "221761"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "14,1825379567926"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/1a41444a-30bd-3543-be63-78f8659cb079> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1981> ;
+	iaest-measure:superficie-km2 "15636,2"^^xsd:double;
+	iaest-measure:poblacion "214907"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "13,7441961601924"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/2c1123cd-9091-354d-a4b0-e7e7cba8c6bb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1991> ;
+	iaest-measure:superficie-km2 "15636,2"^^xsd:double;
+	iaest-measure:poblacion "207810"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "13,2903135032808"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/3b9d9d8a-1bd4-3ea0-ac95-aa79432a2701> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	iaest-measure:superficie-km2 "15636,2"^^xsd:double;
+	iaest-measure:poblacion "206502"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "13,2066614650618"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/592777b2-2d5c-38b1-a521-a450c843445b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:superficie-km2 "15636,2"^^xsd:double;
+	iaest-measure:poblacion "225971"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "14,4517849605403"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/5645cc44-cf88-3fa1-95a9-467c553989a4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1900> ;
+	iaest-measure:superficie-km2 "14809,6"^^xsd:double;
+	iaest-measure:poblacion "251994"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "17,015584485739"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/8550c3f3-c59f-3650-a2f7-481a9a0f6a82> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1910> ;
+	iaest-measure:superficie-km2 "14809,6"^^xsd:double;
+	iaest-measure:poblacion "265908"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "17,95511019879"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/cb1b444f-cca1-3d8e-af9a-3e50262348e2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1920> ;
+	iaest-measure:superficie-km2 "14809,6"^^xsd:double;
+	iaest-measure:poblacion "264062"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "17,8304613223855"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/030a6146-ca8a-3673-ae82-3eacd3381bba> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1930> ;
+	iaest-measure:superficie-km2 "14809,6"^^xsd:double;
+	iaest-measure:poblacion "263700"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "17,8060177182368"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/f3a85670-15b8-3c9c-8c8e-dfbc8318d5b3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1940> ;
+	iaest-measure:superficie-km2 "14809,6"^^xsd:double;
+	iaest-measure:poblacion "245960"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "16,6081460674157"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/dd910b20-3a0c-3d0b-bf7b-459bb9b75851> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1950> ;
+	iaest-measure:superficie-km2 "14809,6"^^xsd:double;
+	iaest-measure:poblacion "243269"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "16,4264396067416"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/089dde5c-dbe9-37d4-ac50-4fcd1192d3e5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1960> ;
+	iaest-measure:superficie-km2 "14809,6"^^xsd:double;
+	iaest-measure:poblacion "223758"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "15,1089833621435"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/a3bed2d4-b2f0-3193-891d-ee027f7e790a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1970> ;
+	iaest-measure:superficie-km2 "14809,6"^^xsd:double;
+	iaest-measure:poblacion "173861"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "11,739749891962"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/0f615742-efce-31bc-827f-8205846a5624> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1981> ;
+	iaest-measure:superficie-km2 "14809,6"^^xsd:double;
+	iaest-measure:poblacion "153457"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "10,3619949222126"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/38c7294d-deee-34c4-b950-562cd51c618b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1991> ;
+	iaest-measure:superficie-km2 "14809,6"^^xsd:double;
+	iaest-measure:poblacion "143680"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "9,70181503889369"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/03e10431-a4df-3952-8c3e-bcc257274323> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	iaest-measure:superficie-km2 "14809,6"^^xsd:double;
+	iaest-measure:poblacion "135858"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "9,1736441227312"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/70d43865-c8c7-35c5-9d69-7fc43e953b94> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:superficie-km2 "14809,6"^^xsd:double;
+	iaest-measure:poblacion "143178"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "9,66791810717373"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/fe477aa0-b39d-3c77-93ca-b64ead5fceed> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1900> ;
+	iaest-measure:superficie-km2 "17274,5"^^xsd:double;
+	iaest-measure:poblacion "421023"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "24,3725143998379"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/6dafa3d2-5f05-3902-92e4-593ebf985b32> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1910> ;
+	iaest-measure:superficie-km2 "17274,5"^^xsd:double;
+	iaest-measure:poblacion "449501"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "26,021071521607"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/f54ba5be-6a42-343a-93b4-7293d76f19e2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1920> ;
+	iaest-measure:superficie-km2 "17274,5"^^xsd:double;
+	iaest-measure:poblacion "498590"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "28,8627746099742"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/c7192da4-69d5-3d11-80f0-6a2d7c0274cf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1930> ;
+	iaest-measure:superficie-km2 "17274,5"^^xsd:double;
+	iaest-measure:poblacion "530127"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "30,6884135575559"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/0a72bb67-b184-35e8-826e-dbe7a29c5047> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1940> ;
+	iaest-measure:superficie-km2 "17274,5"^^xsd:double;
+	iaest-measure:poblacion "574566"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "33,2609337462734"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/61de5633-8632-3da1-93f3-bfbd03a3e36b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1950> ;
+	iaest-measure:superficie-km2 "17274,5"^^xsd:double;
+	iaest-measure:poblacion "609393"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "35,2770268314568"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/853c882d-dd0d-3a2a-92a4-2c583be06c12> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1960> ;
+	iaest-measure:superficie-km2 "17274,5"^^xsd:double;
+	iaest-measure:poblacion "641115"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "37,1133752062288"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/d7bf8b47-82ca-3f13-868a-76281128f7c6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1970> ;
+	iaest-measure:superficie-km2 "17274,5"^^xsd:double;
+	iaest-measure:poblacion "757433"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "43,8468841355756"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/c3b94adf-e067-3aca-924e-7078b75c8e0d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1981> ;
+	iaest-measure:superficie-km2 "17274,5"^^xsd:double;
+	iaest-measure:poblacion "828588"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "47,9659613881733"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/b0803521-0530-34a0-934d-c06b62705b21> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1991> ;
+	iaest-measure:superficie-km2 "17274,5"^^xsd:double;
+	iaest-measure:poblacion "837327"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "48,471851573128"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/6028f2a8-9a8a-3676-b5a6-7c2124a0e71e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	iaest-measure:superficie-km2 "17274,5"^^xsd:double;
+	iaest-measure:poblacion "861855"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "49,8917479521839"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/02-020002A/fbae68c1-e4b5-3f90-9ef4-55f0280d5502> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/02-020002A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:superficie-km2 "17274,5"^^xsd:double;
+	iaest-measure:poblacion "975395"^^xsd:int;
+	iaest-measure:densidad-de-poblacion-habkm2 "56,4644418072882"^^xsd:double.

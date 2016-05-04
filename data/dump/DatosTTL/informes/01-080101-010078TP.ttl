@@ -1,0 +1,48 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TP> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010078>;
+	rdfs:label "Cubo de datos para 01-080101-010078TP"@es ;
+	rdfs:comment "Cubo de datos para 01-080101-010078TP"@es ;
+	dc:modified "2016-04-21"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TP/d20c1b05-776f-3bfa-8807-f96f2ef06c84> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:explotaciones "16280"^^xsd:int;
+	iaest-measure:superficie-total "1058808,22"^^xsd:double;
+	iaest-measure:sau "763502,52"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "486589,89"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TP/52655696-c7bc-368d-895a-15cd370ba466> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:explotaciones "11821"^^xsd:int;
+	iaest-measure:superficie-total "935826,02"^^xsd:double;
+	iaest-measure:sau "681634,92"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "383930,37"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010078TP/b06cedf1-d19c-3b05-9539-f2c9460de7c5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010078TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:explotaciones "24673"^^xsd:int;
+	iaest-measure:superficie-total "1050072,6"^^xsd:double;
+	iaest-measure:sau "900558,25"^^xsd:double;
+	iaest-measure:superficie-tierras-labradas "740868,84"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

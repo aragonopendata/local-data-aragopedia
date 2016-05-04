@@ -1,0 +1,264 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010027A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010027>;
+	rdfs:label "Cubo de datos para 01-010027A"@es ;
+	rdfs:comment "Cubo de datos para 01-010027A"@es ;
+	dc:modified "2016-04-21"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010027A/1612e980-1d2c-36f8-9a99-c120de2ec5a4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010027A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edificios-nueva-planta-total "3940"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-residencial "3051"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-no-residencial "889"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-total "2645503"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-residencial "1970647"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-no-residencial "674856"^^xsd:int;
+	iaest-measure:viviendas-nueva-planta "10741"^^xsd:int;
+	iaest-measure:edificios-rehabilitacion "990"^^xsd:int;
+	iaest-measure:viviendas-rehabilitacion "474"^^xsd:int;
+	iaest-measure:edificios-demolicion "468"^^xsd:int;
+	iaest-measure:viviendas-demolicion "697"^^xsd:int;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010027A/3d8849a6-8c6a-3883-9428-9d4830d133e9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010027A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edificios-nueva-planta-total "4018"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-residencial "3015"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-no-residencial "1003"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-total "2770494"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-residencial "1903837"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-no-residencial "866657"^^xsd:int;
+	iaest-measure:viviendas-nueva-planta "11392"^^xsd:int;
+	iaest-measure:edificios-rehabilitacion "858"^^xsd:int;
+	iaest-measure:viviendas-rehabilitacion "379"^^xsd:int;
+	iaest-measure:edificios-demolicion "437"^^xsd:int;
+	iaest-measure:viviendas-demolicion "642"^^xsd:int;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010027A/df2a54fa-552b-3c70-8273-19f325bca498> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010027A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edificios-nueva-planta-total "4307"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-residencial "3608"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-no-residencial "699"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-total "3094119"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-residencial "2229687"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-no-residencial "864432"^^xsd:int;
+	iaest-measure:viviendas-nueva-planta "12828"^^xsd:int;
+	iaest-measure:edificios-rehabilitacion "946"^^xsd:int;
+	iaest-measure:viviendas-rehabilitacion "350"^^xsd:int;
+	iaest-measure:edificios-demolicion "431"^^xsd:int;
+	iaest-measure:viviendas-demolicion "620"^^xsd:int;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010027A/1ab45c06-e1c4-37d3-ab30-6ab2d3a8f8f1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010027A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edificios-nueva-planta-total "4363"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-residencial "3384"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-no-residencial "979"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-total "2991560"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-residencial "2043489"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-no-residencial "948071"^^xsd:int;
+	iaest-measure:viviendas-nueva-planta "11314"^^xsd:int;
+	iaest-measure:edificios-rehabilitacion "944"^^xsd:int;
+	iaest-measure:viviendas-rehabilitacion "483"^^xsd:int;
+	iaest-measure:edificios-demolicion "504"^^xsd:int;
+	iaest-measure:viviendas-demolicion "751"^^xsd:int;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010027A/fa4d9fac-7ee7-3b2c-a764-01e531da77bd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010027A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edificios-nueva-planta-total "4997"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-residencial "3794"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-no-residencial "1203"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-total "3198092"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-residencial "2262850"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-no-residencial "935242"^^xsd:int;
+	iaest-measure:viviendas-nueva-planta "13183"^^xsd:int;
+	iaest-measure:edificios-rehabilitacion "1140"^^xsd:int;
+	iaest-measure:viviendas-rehabilitacion "390"^^xsd:int;
+	iaest-measure:edificios-demolicion "715"^^xsd:int;
+	iaest-measure:viviendas-demolicion "781"^^xsd:int;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010027A/8f64781a-b4c2-313a-82b3-f1246649f4c7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010027A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edificios-nueva-planta-total "5043"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-residencial "3825"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-no-residencial "1218"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-total "3866641"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-residencial "2423362"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-no-residencial "1443279"^^xsd:int;
+	iaest-measure:viviendas-nueva-planta "14443"^^xsd:int;
+	iaest-measure:edificios-rehabilitacion "1141"^^xsd:int;
+	iaest-measure:viviendas-rehabilitacion "598"^^xsd:int;
+	iaest-measure:edificios-demolicion "767"^^xsd:int;
+	iaest-measure:viviendas-demolicion "870"^^xsd:int;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010027A/584971ef-e789-3ab5-9b16-ebf73d5999ee> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010027A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edificios-nueva-planta-total "6141"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-residencial "4774"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-no-residencial "1367"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-total "4753041"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-residencial "3395125"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-no-residencial "1357916"^^xsd:int;
+	iaest-measure:viviendas-nueva-planta "20441"^^xsd:int;
+	iaest-measure:edificios-rehabilitacion "1212"^^xsd:int;
+	iaest-measure:viviendas-rehabilitacion "634"^^xsd:int;
+	iaest-measure:edificios-demolicion "964"^^xsd:int;
+	iaest-measure:viviendas-demolicion "937"^^xsd:int;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010027A/96f90b1e-e232-3433-a713-dbae8cb21ece> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010027A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edificios-nueva-planta-total "6575"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-residencial "4639"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-no-residencial "1936"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-total "4707477"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-residencial "3188196"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-no-residencial "1519281"^^xsd:int;
+	iaest-measure:viviendas-nueva-planta "18424"^^xsd:int;
+	iaest-measure:edificios-rehabilitacion "1311"^^xsd:int;
+	iaest-measure:viviendas-rehabilitacion "541"^^xsd:int;
+	iaest-measure:edificios-demolicion "817"^^xsd:int;
+	iaest-measure:viviendas-demolicion "858"^^xsd:int;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010027A/9ce77125-4b33-39a2-8615-531e1635aa0a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010027A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edificios-nueva-planta-total "3219"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-residencial "2110"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-no-residencial "1109"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-total "2930307"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-residencial "1493448"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-no-residencial "1436859"^^xsd:int;
+	iaest-measure:viviendas-nueva-planta "8570"^^xsd:int;
+	iaest-measure:edificios-rehabilitacion "1509"^^xsd:int;
+	iaest-measure:viviendas-rehabilitacion "442"^^xsd:int;
+	iaest-measure:edificios-demolicion "476"^^xsd:int;
+	iaest-measure:viviendas-demolicion "562"^^xsd:int;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010027A/a9143688-b698-32be-bd41-efab83786e83> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010027A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edificios-nueva-planta-total "1537"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-residencial "960"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-no-residencial "577"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-total "1587842"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-residencial "969359"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-no-residencial "618483"^^xsd:int;
+	iaest-measure:viviendas-nueva-planta "5222"^^xsd:int;
+	iaest-measure:edificios-rehabilitacion "1348"^^xsd:int;
+	iaest-measure:viviendas-rehabilitacion "376"^^xsd:int;
+	iaest-measure:edificios-demolicion "266"^^xsd:int;
+	iaest-measure:viviendas-demolicion "249"^^xsd:int;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010027A/1bdb1bda-6809-3436-9fe3-c945c13ca059> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010027A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edificios-nueva-planta-total "1138"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-residencial "713"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-no-residencial "425"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-total "1048326"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-residencial "567765"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-no-residencial "480561"^^xsd:int;
+	iaest-measure:viviendas-nueva-planta "3073"^^xsd:int;
+	iaest-measure:edificios-rehabilitacion "1365"^^xsd:int;
+	iaest-measure:viviendas-rehabilitacion "257"^^xsd:int;
+	iaest-measure:edificios-demolicion "282"^^xsd:int;
+	iaest-measure:viviendas-demolicion "210"^^xsd:int;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010027A/276e1fab-39b0-39ac-867c-ba786ef4e091> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010027A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edificios-nueva-planta-total "1117"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-residencial "688"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-no-residencial "429"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-total "920067"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-residencial "490306"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-no-residencial "429761"^^xsd:int;
+	iaest-measure:viviendas-nueva-planta "2625"^^xsd:int;
+	iaest-measure:edificios-rehabilitacion "1588"^^xsd:int;
+	iaest-measure:viviendas-rehabilitacion "319"^^xsd:int;
+	iaest-measure:edificios-demolicion "233"^^xsd:int;
+	iaest-measure:viviendas-demolicion "274"^^xsd:int;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010027A/9fcff313-4124-331f-9e6a-299b18efef87> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010027A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edificios-nueva-planta-total "892"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-residencial "465"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-no-residencial "427"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-total "616625"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-residencial "269985"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-no-residencial "346640"^^xsd:int;
+	iaest-measure:viviendas-nueva-planta "1300"^^xsd:int;
+	iaest-measure:edificios-rehabilitacion "1324"^^xsd:int;
+	iaest-measure:viviendas-rehabilitacion "166"^^xsd:int;
+	iaest-measure:edificios-demolicion "270"^^xsd:int;
+	iaest-measure:viviendas-demolicion "274"^^xsd:int;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010027A/8c8b983c-73e4-3ec4-b770-0c2314b4c8f6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010027A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edificios-nueva-planta-total "801"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-residencial "340"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-no-residencial "461"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-total "667006"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-residencial "340630"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-no-residencial "326376"^^xsd:int;
+	iaest-measure:viviendas-nueva-planta "1786"^^xsd:int;
+	iaest-measure:edificios-rehabilitacion "1089"^^xsd:int;
+	iaest-measure:viviendas-rehabilitacion "95"^^xsd:int;
+	iaest-measure:edificios-demolicion "204"^^xsd:int;
+	iaest-measure:viviendas-demolicion "173"^^xsd:int;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010027A/aae6af4d-aebd-372c-a8f0-d56ba0d0af85> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010027A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:edificios-nueva-planta-total "786"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-residencial "278"^^xsd:int;
+	iaest-measure:edificios-nueva-planta-no-residencial "508"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-total "654673"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-residencial "203288"^^xsd:int;
+	iaest-measure:superficie-nueva-planta-no-residencial "451385"^^xsd:int;
+	iaest-measure:viviendas-nueva-planta "1007"^^xsd:int;
+	iaest-measure:edificios-rehabilitacion "1137"^^xsd:int;
+	iaest-measure:viviendas-rehabilitacion "142"^^xsd:int;
+	iaest-measure:edificios-demolicion "194"^^xsd:int;
+	iaest-measure:viviendas-demolicion "209"^^xsd:int;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> .

@@ -1,0 +1,180 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010055TP> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010055>;
+	rdfs:label "Cubo de datos para 01-010055TP"@es ;
+	rdfs:comment "Cubo de datos para 01-010055TP"@es ;
+	dc:modified "2016-04-21"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010055TP/60c377cf-4609-3c98-8319-9ab33d575d45> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010055TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1989> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:personas-que-son-mano-de-obra-familiar "31528"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-solo-trabajan-en-la-explotacion "22659"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-tambien-en-otra-activ-lucrativa "8869"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-principal "7676"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-secundaria "1193"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-solo-trabajan-en-la-explotacion "15622"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-tambien-en-otra-activ-lucrativa "6645"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-principal "5756"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-secundaria "889"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-solo-trabajan-en-la-explotacion "3587"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-tambien-en-otra-activ-lucrativa "321"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-principal "274"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-secundaria "47"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que-solo-trabajan-en-la-explotacion "3450"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que--trabajan-tambien-en-otra-activ-lucrativa "1903"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros--trabajan-en-otra-actividad-como-principal "1646"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que-trabajan-en-otra-actividad-como-secundaria "257"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-25-trabajando-en-explotacion "16115"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-2499-y-50-trabajando-en-explotacion "3922"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-4999-y-75-trabajando-en-explotacion "2037"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-7499-y-100-trabajando-en-explotacion "1969"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-100-trabajando-en-explotacion "7485"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010055TP/b0f5dbc2-6ac6-37d3-b1ae-59e664b8f515> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010055TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1989> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:personas-que-son-mano-de-obra-familiar "35099"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-solo-trabajan-en-la-explotacion "25915"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-tambien-en-otra-activ-lucrativa "9184"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-principal "8077"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-secundaria "1107"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-solo-trabajan-en-la-explotacion "17553"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-tambien-en-otra-activ-lucrativa "7082"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-principal "6208"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-secundaria "874"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-solo-trabajan-en-la-explotacion "5851"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-tambien-en-otra-activ-lucrativa "460"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-principal "412"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-secundaria "48"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que-solo-trabajan-en-la-explotacion "2511"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que--trabajan-tambien-en-otra-activ-lucrativa "1642"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros--trabajan-en-otra-actividad-como-principal "1457"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que-trabajan-en-otra-actividad-como-secundaria "185"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-25-trabajando-en-explotacion "21018"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-2499-y-50-trabajando-en-explotacion "3875"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-4999-y-75-trabajando-en-explotacion "2279"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-7499-y-100-trabajando-en-explotacion "1664"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-100-trabajando-en-explotacion "6263"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010055TP/7a9136d4-27f8-3295-98df-9869a3c3d5ef> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010055TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1989> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:personas-que-son-mano-de-obra-familiar "70360"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-solo-trabajan-en-la-explotacion "43156"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-tambien-en-otra-activ-lucrativa "27204"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-principal "24080"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-secundaria "3124"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-solo-trabajan-en-la-explotacion "31678"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-tambien-en-otra-activ-lucrativa "18892"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-principal "16628"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-secundaria "2264"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-solo-trabajan-en-la-explotacion "5866"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-tambien-en-otra-activ-lucrativa "1015"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-principal "900"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-secundaria "115"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que-solo-trabajan-en-la-explotacion "5612"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que--trabajan-tambien-en-otra-activ-lucrativa "7297"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros--trabajan-en-otra-actividad-como-principal "6552"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que-trabajan-en-otra-actividad-como-secundaria "745"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-25-trabajando-en-explotacion "47471"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-2499-y-50-trabajando-en-explotacion "7733"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-4999-y-75-trabajando-en-explotacion "4216"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-7499-y-100-trabajando-en-explotacion "3079"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-100-trabajando-en-explotacion "7861"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010055TP/4610382b-2f1c-37a4-9fe6-762cf33687dd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010055TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:personas-que-son-mano-de-obra-familiar "28062"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-solo-trabajan-en-la-explotacion "18673"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-tambien-en-otra-activ-lucrativa "9389"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-principal "7950"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-secundaria "1439"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-solo-trabajan-en-la-explotacion "13113"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-tambien-en-otra-activ-lucrativa "6198"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-principal "5045"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-secundaria "1153"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-solo-trabajan-en-la-explotacion "2788"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-tambien-en-otra-activ-lucrativa "886"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-principal "784"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-secundaria "102"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que-solo-trabajan-en-la-explotacion "2772"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que--trabajan-tambien-en-otra-activ-lucrativa "2305"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros--trabajan-en-otra-actividad-como-principal "2121"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que-trabajan-en-otra-actividad-como-secundaria "184"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-25-trabajando-en-explotacion "14801"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-2499-y-50-trabajando-en-explotacion "3794"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-4999-y-75-trabajando-en-explotacion "1744"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-7499-y-100-trabajando-en-explotacion "2157"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-100-trabajando-en-explotacion "5171"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010055TP/9b192ca4-6c61-3747-9387-c5346ccabcb1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010055TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:personas-que-son-mano-de-obra-familiar "25395"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-solo-trabajan-en-la-explotacion "16637"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-tambien-en-otra-activ-lucrativa "8758"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-principal "7939"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-secundaria "819"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-solo-trabajan-en-la-explotacion "11214"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-tambien-en-otra-activ-lucrativa "5565"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-principal "4998"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-secundaria "567"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-solo-trabajan-en-la-explotacion "3654"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-tambien-en-otra-activ-lucrativa "1214"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-principal "1090"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-secundaria "124"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que-solo-trabajan-en-la-explotacion "1769"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que--trabajan-tambien-en-otra-activ-lucrativa "1979"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros--trabajan-en-otra-actividad-como-principal "1851"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que-trabajan-en-otra-actividad-como-secundaria "128"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-25-trabajando-en-explotacion "15134"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-2499-y-50-trabajando-en-explotacion "3279"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-4999-y-75-trabajando-en-explotacion "1377"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-7499-y-100-trabajando-en-explotacion "1220"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-100-trabajando-en-explotacion "4111"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010055TP/2c295155-db14-380a-ac7e-a42c37687683> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010055TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:personas-que-son-mano-de-obra-familiar "57904"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-solo-trabajan-en-la-explotacion "33213"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-tambien-en-otra-activ-lucrativa "24691"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-principal "22960"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-secundaria "1731"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-solo-trabajan-en-la-explotacion "23699"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-tambien-en-otra-activ-lucrativa "14755"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-principal "13426"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-secundaria "1329"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-solo-trabajan-en-la-explotacion "4804"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-tambien-en-otra-activ-lucrativa "2456"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-principal "2302"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-secundaria "154"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que-solo-trabajan-en-la-explotacion "4710"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que--trabajan-tambien-en-otra-activ-lucrativa "7480"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros--trabajan-en-otra-actividad-como-principal "7232"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-que-trabajan-en-otra-actividad-como-secundaria "248"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-25-trabajando-en-explotacion "39611"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-2499-y-50-trabajando-en-explotacion "6247"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-4999-y-75-trabajando-en-explotacion "2348"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-7499-y-100-trabajando-en-explotacion "2116"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-con-100-trabajando-en-explotacion "6154"^^xsd:int.

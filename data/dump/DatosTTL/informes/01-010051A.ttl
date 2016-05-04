@@ -1,0 +1,68 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010051A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010051>;
+	rdfs:label "Cubo de datos para 01-010051A"@es ;
+	rdfs:comment "Cubo de datos para 01-010051A"@es ;
+	dc:modified "2016-04-21"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010051A/7e7f35ae-8cee-357e-a8b3-462f52f38613> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010051A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:hectareas-en-tierras-labradas-con-cultivos-herbaceos "1517620"^^xsd:int;
+	iaest-measure:hectareas-en-tierras-labradas-con-cultivos-frutales "111473"^^xsd:int;
+	iaest-measure:hectareas-en-tierras-labradas-con-cultivo-olivar "51414"^^xsd:int;
+	iaest-measure:hectareas-en-tierras-labradas-con-cultivo-vinedo "39326"^^xsd:int;
+	iaest-measure:hectareas-en-tierras-labradas-con-otros-cultivos "375"^^xsd:int;
+	iaest-measure:hectareas-en-tierras-labradas-de-secano "1348227,12"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-regadio "371978,38"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-secano-cultivos-herbaceos "1199780,98"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-secano-cultivos-frutales "73032,32"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-secano-cultivo-olivar "41989,07"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-secano-cultivo-vinedo "33344,76"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-secano-otros-cultivos "79,99"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-regadio-cultivos-herbaceos "317838,23"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-regadio-cultivos-frutales "38447,66"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-regadio-cultivo-olivar "9414,74"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-regadio-cultivo-vinedo "5978,14"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-regadio-otros-cultivos "299,61"^^xsd:double;
+	iaest-measure:numero-total-de-parcelas "1524077"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010051A/94a2825c-f90f-3525-bff3-16c88443d531> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010051A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1989> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:hectareas-en-tierras-labradas-con-cultivos-herbaceos "1446332"^^xsd:int;
+	iaest-measure:hectareas-en-tierras-labradas-con-cultivos-frutales "107059"^^xsd:int;
+	iaest-measure:hectareas-en-tierras-labradas-con-cultivo-olivar "40648"^^xsd:int;
+	iaest-measure:hectareas-en-tierras-labradas-con-cultivo-vinedo "53853"^^xsd:int;
+	iaest-measure:hectareas-en-tierras-labradas-con-otros-cultivos "381"^^xsd:int;
+	iaest-measure:hectareas-en-tierras-labradas-de-secano "1333393"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-regadio "314863"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-secano-cultivos-herbaceos "1175131"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-secano-cultivos-frutales "70711"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-secano-cultivo-olivar "36091"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-secano-cultivo-vinedo "51332"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-secano-otros-cultivos "172"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-regadio-cultivos-herbaceos "271236"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-regadio-cultivos-frutales "36365"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-regadio-cultivo-olivar "4562"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-regadio-cultivo-vinedo "2522"^^xsd:double;
+	iaest-measure:hectareas-en-tierras-labradas-de-regadio-otros-cultivos "206"^^xsd:double;
+	iaest-measure:numero-total-de-parcelas "1115960"^^xsd:int.

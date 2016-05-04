@@ -1,0 +1,56 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010046A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010046>;
+	rdfs:label "Cubo de datos para 01-010046A"@es ;
+	rdfs:comment "Cubo de datos para 01-010046A"@es ;
+	dc:modified "2016-04-21"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010046A/b0c6a357-2006-3ba6-93b0-460bd7fd81af> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010046A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:unidades-ganaderas "1706109"^^xsd:int;
+	iaest-measure:ganado-bovino-cabezas "334586"^^xsd:int;
+	iaest-measure:ganado-bovino-vacas-lecheras-cabezas "14896"^^xsd:int;
+	iaest-measure:ganado-bovino-resto-bovino-cabezas "319690"^^xsd:int;
+	iaest-measure:ganado-ovino-cabezas "2862149"^^xsd:int;
+	iaest-measure:ganado-caprino-cabezas "78612"^^xsd:int;
+	iaest-measure:ganado-porcino-cabezas "3669060"^^xsd:int;
+	iaest-measure:ganado-porcino-cerdas-madres-cabezas "326944"^^xsd:int;
+	iaest-measure:ganado-porcino-resto-porcino-cabezas "3342116"^^xsd:int;
+	iaest-measure:ganado-equino-cabezas "3191"^^xsd:int;
+	iaest-measure:miles-de-aves "20546,09"^^xsd:double;
+	iaest-measure:conejas-madres-cabezas "179599"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010046A/fc33a194-a56d-3e58-a4e2-3e450af5ca47> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010046A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1989> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:unidades-ganaderas "921307"^^xsd:int;
+	iaest-measure:ganado-bovino-cabezas "180070"^^xsd:int;
+	iaest-measure:ganado-bovino-vacas-lecheras-cabezas "21285"^^xsd:int;
+	iaest-measure:ganado-bovino-resto-bovino-cabezas "158785"^^xsd:int;
+	iaest-measure:ganado-ovino-cabezas "2407543"^^xsd:int;
+	iaest-measure:ganado-caprino-cabezas "71319"^^xsd:int;
+	iaest-measure:ganado-porcino-cabezas "1516657"^^xsd:int;
+	iaest-measure:ganado-porcino-cerdas-madres-cabezas "156417"^^xsd:int;
+	iaest-measure:ganado-porcino-resto-porcino-cabezas "1360240"^^xsd:int;
+	iaest-measure:ganado-equino-cabezas "4271"^^xsd:int;
+	iaest-measure:miles-de-aves "14314"^^xsd:double;
+	iaest-measure:conejas-madres-cabezas "96022"^^xsd:int.

@@ -1,0 +1,213 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010018>;
+	rdfs:label "Cubo de datos para 01-010018TP"@es ;
+	rdfs:comment "Cubo de datos para 01-010018TP"@es ;
+	dc:modified "2016-04-21"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/d752fd06-fe9a-3bf3-a016-9af66a08c835> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/no-aplicable> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/inactivo> ;
+	iaest-measure:numero-de-locales "3188"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/97e19c7f-f935-3c2e-8244-64e11f9f62e5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/equipamientos-de-saludambulatorio-centro-de-salud-hospital> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "425"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/01b443b7-bf68-3d13-a9c6-f9b8c251b8ea> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/equipamientos-educativoscolegio-facultad-guarderia-escuela> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "405"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/154325e5-e74a-3348-ba7a-e2bf0ac14f75> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/equipamientos-de-bienestar-socialclub-de-ancianos-centro-de-servicios-sociales-centro-de-dia> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "622"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/30819a23-d481-3425-ac44-abfed60f9154> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/equipamientos-culturales-o-deportivosteatro-cine-museo-sala-de-exposiciones-polideportivo> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "528"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/09732755-f3cf-3d4e-aad4-cd252c82a055> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/local-comercial> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "6321"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/9d2a15c5-353c-39c5-b77f-4e6b2c57350b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/oficinasincluye-tambien-el-resto-de-servicios> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "3301"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/6ccdc58e-1372-3db0-8111-7d5d5b70ef3f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/local-industrial> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "1195"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/d436c19a-d969-3b60-932f-a0919be3b57b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/local-agrario> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "183"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/a8dbea90-2283-3c54-b741-d0911ae47ce4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/no-aplicable> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/inactivo> ;
+	iaest-measure:numero-de-locales "1283"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/dafea0f5-64f4-3c6b-8050-27612d175267> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/equipamientos-de-saludambulatorio-centro-de-salud-hospital> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "311"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/b863953e-b29e-36e0-ba91-1d1077c5b62a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/equipamientos-educativoscolegio-facultad-guarderia-escuela> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "312"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/be3a8491-22e2-3b47-bc90-751a28a8e837> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/equipamientos-de-bienestar-socialclub-de-ancianos-centro-de-servicios-sociales-centro-de-dia> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "215"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/793a8f59-b468-3d71-b052-2f9e16df186a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/equipamientos-culturales-o-deportivosteatro-cine-museo-sala-de-exposiciones-polideportivo> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "373"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/01745858-6d45-31e2-bc0a-f4293753bdb0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/local-comercial> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "2988"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/378b27ae-7e9b-313e-8013-8658fc84a69d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/oficinasincluye-tambien-el-resto-de-servicios> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "2469"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/5606e940-efb0-39fb-8085-15011c1c70c4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/local-industrial> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "501"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/3daaf001-7e15-3b66-b194-13c3a8d4d387> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/local-agrario> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "91"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/f6dab949-31af-3479-b646-e08d13179108> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/no-aplicable> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/inactivo> ;
+	iaest-measure:numero-de-locales "10719"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/d5e78dae-a37a-3a71-a96f-7a28f21722d3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/equipamientos-de-saludambulatorio-centro-de-salud-hospital> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "1063"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/c702bfb0-db4f-3696-afa7-379f2bbabde9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/equipamientos-educativoscolegio-facultad-guarderia-escuela> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "934"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/20324dd1-597f-36da-a9cb-a3f27e0ccbdb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/equipamientos-de-bienestar-socialclub-de-ancianos-centro-de-servicios-sociales-centro-de-dia> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "732"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/3906e218-f296-3836-a88a-f9049fd1c4e6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/equipamientos-culturales-o-deportivosteatro-cine-museo-sala-de-exposiciones-polideportivo> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "858"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/c09f5506-583d-3545-b3f4-5be679e03292> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/local-comercial> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "20314"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/8401c8ca-3a3d-3063-b236-21bac9e02056> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/oficinasincluye-tambien-el-resto-de-servicios> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "11438"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/fbc1f9b4-f4c7-3b55-955f-35b2c5c3b664> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/local-industrial> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "5789"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010018TP/f58facf1-5ccf-3efd-8021-f36f9e7ae582> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010018TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-local <http://opendata.aragon.es/kos/iaest/tipo-local/local-agrario> ;
+	iaest-dimension:actividad-del-local <http://opendata.aragon.es/kos/iaest/actividad-del-local/activo> ;
+	iaest-measure:numero-de-locales "369"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

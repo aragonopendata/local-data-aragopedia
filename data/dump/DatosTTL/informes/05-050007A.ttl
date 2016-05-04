@@ -1,0 +1,1425 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/05-050007A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/05-050007>;
+	rdfs:label "Afiliaciones en alta. Trabajadores por cuenta propia Según sector de actividad y sexo"@es ;
+	dct:identifier  05-050007A ;
+	rdfs:comment "Cubo de datos para 05-050007A"@es ;
+	dc:modified "2016-05-04"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/9e323972-005d-3bfe-a089-30937a4117f2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2016"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14351"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/fbcc01e4-b8d7-37b4-8d39-a1f863c5dbdf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2016"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4685"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/155680c4-2c53-3f75-8e70-0bed1d83be84> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2016"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6617"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/5172d660-f722-3488-97eb-0f6815a80149> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2016"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2612"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/84dc0c43-b51b-39fe-b82d-be8f2affb0ad> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2016"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "11243"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/1b9f5882-6fba-3baf-beb1-d87a7fe14600> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2016"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1044"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/cfe50e9a-5948-32fa-b67e-467f7491b468> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2016"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "36967"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/76c9b078-5607-3d98-ac83-328f23feca31> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2016"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "27860"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/923e15e9-a5d5-3b72-9532-2fa92ec71962> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14382"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/46ca8ca7-0190-34b7-bbd1-4257faee8c42> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4721"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/e6241113-d094-3b43-9a1b-11b095170b09> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6579"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/05b3d8e1-0e35-3c8e-9db5-44470ef863a0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2619"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/bfbd30d0-e61f-3531-8f96-183c8e41e646> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "11416"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/c5bc98be-8d14-3b05-bc7f-d09a85b2b5fe> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1055"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/33af66c7-e938-3579-bf98-87f5872ab76d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "37201"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/a03177e9-1c33-34da-80e1-ea156a45d726> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "28030"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/fbdf6183-cbdf-3e41-b7c9-11d096988cf6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14433"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/ccb659b0-fd4a-3205-ac59-652c756f4a77> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4736"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/100838a2-7863-35e2-a24e-32cb2ab9922a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6396"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/b52775fa-125f-3fd4-bc1d-0f0b5ec1b1cf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2550"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/06eb2793-f590-3f3a-a4e0-fa3bbf2397e7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "11503"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/05165f94-6d81-3a21-9b6a-05f7d959eb46> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1046"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/56057d7c-bbe5-3a57-9454-d1aca3bfe4eb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "37231"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/0bbf6208-bd92-3dc2-b290-a7bc43b07354> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "27813"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/4eecbe4a-fad8-3e50-96a0-4647c5d5379f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14505"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/5bddb681-2a5f-336c-b97b-d67818486eae> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4766"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/6b4df2c7-e112-349c-8765-0c94543a1b67> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6323"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/778a9d99-a1cd-3c24-953a-089cca93c00b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2511"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/0e6ee3f5-fda6-3fcd-b60d-ad6d74f198cd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "11608"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/f05a57a4-8f44-3377-b605-20b1f59eef14> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1052"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/5ab222b4-c621-3df4-a4fd-48b2136bd468> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "37481"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/41767dd3-ee02-3b38-a1ef-b03b88811a50> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "28085"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/93b1e7ea-255f-3d9e-87bb-b413266a9c0d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14461"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/1cc9f625-6a63-301f-917e-f0bee73758b7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4709"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/7fdbb4fc-2c2b-3907-b68a-8bd58ca768ad> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6249"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/be3e5a56-9165-3b6d-9106-9b6962dda10b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2458"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/8230cb80-6887-30a0-a7e5-2c448a6c05d9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "11384"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/52656163-30ec-3fa5-9653-f3c576783eed> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1050"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/6a8a91e2-933e-351f-9439-eb438897fd02> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "37148"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/6b143718-d63a-3657-a802-b4dd98ea3e82> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2015"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "27666"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/c521bdac-8051-3602-a9c3-f85a34b6992e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14526"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/04f26cd4-c587-3464-9dd9-903020ed7596> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4702"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/e2475282-ce80-30c5-878a-8f32a42b94b4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6282"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/5ab08ed3-68d0-30e4-846f-05bd76633f2f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2480"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/1b0a15da-674b-3671-81a4-d4980b2b76b8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "11403"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/4a33ceb1-1af0-3155-8319-69026f8cf26c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1059"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/467684f7-d459-34b1-8994-540b458064e1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "37241"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/88c018c8-7739-36d2-b21e-2a36790494c5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "27998"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/5a3cbc13-9357-35da-87c7-baa278ae7ffd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14564"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/3bb6a268-27c6-3cc2-b400-ef8c709a9191> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4728"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/626e127c-2cc3-3560-b7d7-a253a3a7745c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6220"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/0f4b917e-f2ef-331b-be27-ba20d00dfe08> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2426"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/0c460f23-1d79-30a0-9a01-86f8294ccc3a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "11557"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/591b37ea-7e4f-329f-bba5-70e8f6f68c0a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1057"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/cea0a5ed-c302-3c81-a010-ccffcd2935d9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "37053"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/f6784eb2-97f9-3931-b1a6-ec4117758144> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "27617"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/9e584f0b-591d-3133-b8de-6c11518321dc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14594"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/24fc1021-b50a-3b4c-bfc6-3ad9f0d46d69> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4736"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/30e27bff-b1c6-3866-96b9-22ca5a697da5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6196"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/d114be88-5375-3113-bb9e-528761b77bc1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2420"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/364104e5-4ceb-31e7-949d-2e5c2173cd25> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "11570"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/41060ace-6171-39ed-9a88-cf6afba88653> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1062"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/b9f889cb-6c21-3de9-b648-44158647ef34> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "37048"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/a25de293-4dc8-3586-9b63-dcf634135008> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "27536"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/1a206257-79ec-3597-b132-1cbe89b50afa> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14512"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/83ce021c-49af-31bb-a860-99dc3ab0b755> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4697"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/569f3acc-121a-36f0-bacc-907bf8222678> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6101"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/c34a8992-5006-30ce-a94b-0e2bbc3aa2b6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2354"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/9cfd9487-6a79-37c4-a57b-ecc33b0ca8ab> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "11438"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/69752a28-510f-33b4-95dc-eedf21c46816> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1068"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/eb2bcc7d-a506-3a61-b207-4192911898bf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "36445"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/7fbe4fce-92de-3bc3-b9dd-6b6d868996b4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2014"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "26926"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/caa9a359-6bf8-321c-8b5c-64fcc8fa553a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14466"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/eb6a8a30-2859-3239-a645-6f66c82ec8c4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4685"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/c365f057-4b56-39ff-b94f-420209920fc8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6020"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/f9858ea7-a87f-33c9-b9ee-96b436b54754> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2337"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/64540b85-622f-31e0-86c8-38bdb071bfba> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "11546"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/e3ccb1cf-9a66-33df-9ef8-1fccd22c44ef> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1079"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/bb6a1680-48ca-3d72-9c74-d3e96c04e529> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "36587"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/06b1dbb3-4cef-30e2-b666-a44b27177ad6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "26988"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/daca44aa-6e71-3598-9cee-13c107c54e32> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14498"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/06ed5688-7a5c-3576-9333-c14bdc5b36db> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4711"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/ca0b39a1-655d-3587-8009-68e47bd9be02> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "5998"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/806155cb-22e3-39ad-93e0-0f9d7f09bfb1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2331"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/b204d77c-be8a-3642-9e15-0a1efc7946f5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "11636"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/de7a37a9-c077-395c-a36e-50d2b22c8bf6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1074"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/6b43d892-60e6-394a-a80d-5de1b703b41b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "36375"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/715fcd7a-4b13-3978-9a6d-bff32a655c59> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "26626"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/e7d24795-f938-3f78-8908-58e010de1e53> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14528"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/8a918ecd-61fe-32dd-b6c0-6ba895fa5c68> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4735"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/715c06ce-c747-37a8-928c-b4a0dad159c5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "5983"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/372b050a-d776-3bc2-b185-076e7678798a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2323"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/79363869-817c-392c-9d14-7dcd64d7c98a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "11744"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/fe9c111d-fadb-3c0f-9fbf-5c3f81dc451d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1075"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/de3ba0e9-80b1-33c6-944c-5cba79a70480> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "36127"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/7eac3c5e-5688-3d05-8e09-3f599a50b5d9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "26569"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/e0216067-9924-38ed-a9e8-1d536de247a4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14585"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/4e65261f-31a4-3f15-88e6-0e1583007595> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4697"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/91254a91-ef7c-39c8-98f7-574df5567fa5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6021"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/3f257040-264c-3c96-8e31-d2871a673af9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2301"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/8931dab3-fb5b-3b9f-a224-ee88001b1dd5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "11643"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/071ea1bc-85bb-37af-9df8-b6cc0b62c336> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1118"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/fc6ec1d5-21e6-3c10-84ae-cd1c607fb27f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "35697"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/c6f1ad73-17b1-3723-ab05-a53763a84595> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2013"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "26179"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/dc3b21c5-84fd-34ce-a45e-271f7bd24d1b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14577"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/e3a504b3-0f82-3f17-b380-e2c54a2ba1db> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4668"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/2370fa4d-c453-3d91-8cee-e24ec3d24e73> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6107"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/d18dc4cc-c792-31a2-b86a-a1346510bcd3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2335"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/e52c1192-887e-37ba-af0b-cf4c77f00cc9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "11911"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/3231804a-ffd7-3794-a9a4-cd917dbb5096> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1143"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/eda75b1c-6a1f-3fbd-83cd-3814b0892ae4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "35812"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/51158ae4-9902-36e3-b672-fb432a26aee0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "26296"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/2db317b4-c655-362e-a3df-a8d10f66df00> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14633"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/4c64708e-a410-3c6d-9ca6-bab76fd015f8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4718"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/eda4f6f1-1f41-3e4d-8f43-15f307959577> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6167"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/1c2d24a7-b4f8-3734-a432-eb4af178a04b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2340"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/5d7b2b9c-f00f-383a-8d65-9379eff1e981> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "12284"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/6b469812-b01e-317d-ae61-2612d7cf1c6a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1175"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/17579776-9dab-3970-822a-9e1b667fe123> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "35931"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/0bf7ed78-79f9-3e0b-a524-677f944c8ab0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "26213"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/dbae008f-b8f8-3407-acb8-ff8bbc140778> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14726"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/1a866efb-2970-33a6-a1b9-a69f2c256021> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4728"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/17b3dab8-bdee-335e-bf1f-3f6d4d02da88> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6193"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/0521dca5-e693-3ca7-9291-2f7d0afe3b86> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2335"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/fb9c3054-4568-3343-9849-ec0c6d0c0b9f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "12444"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/fbdb6965-6a21-3b08-beac-9b295d175ced> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1197"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/a97ba403-b8c6-3f04-ae9b-bb6d083deaa9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "35997"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/7e1d8953-f69f-3f89-ae95-950d0b67ed3b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "26323"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/b6bb5b9b-49c3-34ee-b6c8-3cc4aff87863> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14741"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/5e95edf7-2c6b-3296-989c-6b2304b4706f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4707"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/e8ec43f3-5760-31bc-b96c-62a589d5593a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6252"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/215d86aa-d831-3aa3-b427-7f5688f2c893> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2373"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/485030fd-d0d3-39b2-84e7-21c3dc413c9e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "12493"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/a3a865e2-b2ee-3136-a90d-2a9c04c8413b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1230"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/c5fbf0a8-90ba-33b8-804a-4b2b96cf61c0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "35694"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/c36cfebe-f8e6-367e-b2d6-42c8727043af> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2012"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "26148"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/1342da77-6cb6-3a9a-9bdf-f87db2d6e06b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14842"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/42dbddb1-3123-321b-bf56-2f78f96d1672> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4709"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/14928edc-1be5-326b-a300-529c6af5933c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6326"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/dcbf81aa-30aa-36f8-9093-f8336622aec1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2447"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/da2cb116-de87-3fcd-8199-77625d53a218> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "12745"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/c6fb9537-aeaf-32d7-bc98-577c11365e64> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1265"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/3ed59919-de29-3c5e-a709-69d208176e6d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "35843"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/453f7db8-60d2-3ea7-9f21-96d7b866db61> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "26284"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/df302675-3eb0-3231-bee1-df85513ea352> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14893"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/0801e520-6abd-3256-8905-46f6f1697bbe> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4736"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/3fddbd2c-ee7d-3455-bc99-757efa3f504f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6352"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/22498120-d0aa-3848-8a13-5224f0cf0cfe> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2460"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/6ee81e37-158d-332e-b3ba-244abe21cefb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "13006"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/d129aeed-3a6e-3b09-9385-120c151121fa> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1288"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/784a43a2-918b-3d92-9ef0-160ad823a7fd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "35829"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/92b47543-ed66-31bd-939a-1fb2e01b9542> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "26210"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/02435f1a-ac1b-32c0-bd1b-732dfdc6da76> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "15035"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/41b49127-c7a8-3b28-9a3a-a22303a634a8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4778"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/20e51b9c-4ed6-3a87-ae6a-7eb13db544f2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6418"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/b1b80baa-4199-3b16-b6c8-13e39e9ce763> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2471"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/c2318983-1178-314b-abae-31cc3ce8712c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "13265"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/2814cab0-1e7e-3c0c-9ed2-04815b440899> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1326"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/aaff498c-72ab-3226-85fd-575a2d31821d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "35888"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/090dc3df-b281-3eb1-bcb2-6601da4ee713> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "26344"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/b933e244-626c-3330-ae82-a09e7aff8717> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "15114"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/0b8031e8-7e9b-3cad-80c5-95c0d3706d21> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4796"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/edbe2aa5-13bc-305b-bbeb-099748689018> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6421"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/f76152b6-4a5f-3f16-b689-62cce6e71c54> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2466"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/04ae7d01-9b66-3174-88a9-393d96a54ac6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "13261"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/54b9ae17-9227-3480-8f7a-aeeacc4106ed> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1329"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/24a38a22-a825-3906-af3a-205d96d0c6bc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "35724"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/0c5a3fd6-61c8-37a3-be54-c6bc283e712a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2011"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "26200"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/b1cc574b-6e20-3aba-9965-c289e6e51d76> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "15224"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/2f4ea1d6-47ec-31f7-9d5d-275fae8dcab7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4777"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/58f16e8e-7c0f-3d82-a48d-0edb48d48140> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6519"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/8c979867-50e0-3dee-be96-953bdeec0f1d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2509"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/fbf6a90d-85d7-3a22-9da8-c5a69dcf1bfc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "13523"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/751f9a00-07b2-3d86-826d-459ac58d44cf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1341"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/79e3647d-fff0-3195-b073-2421a6f360ae> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "35913"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/3fdb732b-6b79-3e14-9e08-7b4994c8224f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Diciembre 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "26378"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/c87c09f0-f04f-3eac-8228-16c38922bdb5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "15305"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/ed594c2c-92bb-33f8-850c-dec8dbb2e566> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4786"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/c66d9b62-3785-38e9-a170-d12aef0b9d06> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6560"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/ce600249-2fd3-36be-8a9f-c466d1c773cd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2516"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/ff8e2893-3805-3073-a8e3-35c053aef644> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "13871"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/0ba2cdf4-44a1-3fac-a5a4-f6e857dd1c8a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1373"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/03206f24-5dd3-38b3-b6f5-3e3fcef3598f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "35824"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/7edc239f-e383-3be2-885d-3bf1d2880643> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Septiembre 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "26271"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/07165b4c-3187-33fb-a70b-2cb6c41a9208> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "15459"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/7b3f7341-481d-3fe5-bd7b-3b7a0abc1841> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4795"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/f3fcddc4-be03-3b05-95af-63e286db44e9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6601"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/67536ffd-a813-3b46-8714-6012894e0e97> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2500"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/c8279a8c-2a1f-33b7-b436-df31374f1f53> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14210"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/734d4bbf-181a-3f22-b2f3-16b2147ee394> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1390"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/da776264-0300-34fd-8273-e7ce9358926c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "36068"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/cacf5e5f-bf93-3a5c-82ef-958f8c0685cd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Junio 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "26393"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/e3682544-1725-3648-883f-f9f48e31deed> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "15573"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/4005442a-6a62-3cc0-9c7f-6458753e4b8e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/agricultura-ganaderia-y-pesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "4810"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/babe91ae-de41-3895-9987-06cfdcee8f3a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "6665"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/5ff30939-9cc3-3e3f-8d68-ef7c8121c108> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/industria-y-energia> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "2517"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/355d0775-ea76-3f51-baff-858a347e0ec1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "14364"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/93acf9fe-8205-3154-a373-2f471614a84f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/construccion> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "1416"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/1848f716-448c-374e-9a4d-2b5d29fb093e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:afiliaciones-en-alta "35914"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-050007A/e3cf4449-1275-38fc-808a-4469f7fd9572> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-050007A>; 
+	iaest-dimension:mes-y-ano "Marzo 2010"^^xsd:string;
+	iaest-dimension:sector-de-actividad <http://opendata.aragon.es/kos/iaest/sector-de-actividad/servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:afiliaciones-en-alta "26263"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

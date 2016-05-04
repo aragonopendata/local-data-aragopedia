@@ -1,0 +1,235 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010023A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010023>;
+	rdfs:label "Cubo de datos para 01-010023A"@es ;
+	rdfs:comment "Cubo de datos para 01-010023A"@es ;
+	dc:modified "2016-04-21"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010023A/ecec0c47-1422-3cbd-b075-db1c201c22f4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010023A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:residencial "654681"^^xsd:int;
+	iaest-measure:bi-sin-definir "391150"^^xsd:int;
+	iaest-measure:total-bienes-inmuebles "1045831"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010023A/cc5e31cb-4be0-3a08-9597-7e8f20191077> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010023A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:residencial "670685"^^xsd:int;
+	iaest-measure:bi-sin-definir "394371"^^xsd:int;
+	iaest-measure:total-bienes-inmuebles "1065056"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010023A/ed0254ec-9e8d-3e36-9710-84914a047c67> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010023A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:residencial "682488"^^xsd:int;
+	iaest-measure:bi-sin-definir "401602"^^xsd:int;
+	iaest-measure:total-bienes-inmuebles "1084090"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010023A/bdbae829-a282-3d85-8a0d-e6157b4b2b58> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010023A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:residencial "696957"^^xsd:int;
+	iaest-measure:bi-almacen-estacionamiento "175630"^^xsd:int;
+	iaest-measure:bi-comercial "30033"^^xsd:int;
+	iaest-measure:bi-ocio-hosteleria "2221"^^xsd:int;
+	iaest-measure:bi-industrial "116391"^^xsd:int;
+	iaest-measure:bi-cultural "1480"^^xsd:int;
+	iaest-measure:bi-deportivo "1500"^^xsd:int;
+	iaest-measure:bi-oficinas "5989"^^xsd:int;
+	iaest-measure:bi-edificios-singulares "907"^^xsd:int;
+	iaest-measure:bi-religioso "2509"^^xsd:int;
+	iaest-measure:bi-espectaculos "202"^^xsd:int;
+	iaest-measure:bi-sin-definir "408464"^^xsd:int;
+	iaest-measure:bi-suelo-vacante "70848"^^xsd:int;
+	iaest-measure:bi-sanidad-benefic "754"^^xsd:int;
+	iaest-measure:total-bienes-inmuebles "1105421"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010023A/4bcc1a58-90f2-3134-8fb6-0c4ddac3045e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010023A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:residencial "706601"^^xsd:int;
+	iaest-measure:bi-almacen-estacionamiento "180725"^^xsd:int;
+	iaest-measure:bi-comercial "30395"^^xsd:int;
+	iaest-measure:bi-ocio-hosteleria "2289"^^xsd:int;
+	iaest-measure:bi-industrial "114706"^^xsd:int;
+	iaest-measure:bi-cultural "1475"^^xsd:int;
+	iaest-measure:bi-deportivo "1558"^^xsd:int;
+	iaest-measure:bi-oficinas "6320"^^xsd:int;
+	iaest-measure:bi-edificios-singulares "920"^^xsd:int;
+	iaest-measure:bi-religioso "2488"^^xsd:int;
+	iaest-measure:bi-espectaculos "199"^^xsd:int;
+	iaest-measure:bi-sin-definir "415473"^^xsd:int;
+	iaest-measure:bi-suelo-vacante "73629"^^xsd:int;
+	iaest-measure:bi-sanidad-benefic "769"^^xsd:int;
+	iaest-measure:total-bienes-inmuebles "1122074"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010023A/fc97a313-0190-37ed-b679-8c41cc6e9c74> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010023A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:residencial "721263"^^xsd:int;
+	iaest-measure:bi-almacen-estacionamiento "192280"^^xsd:int;
+	iaest-measure:bi-comercial "31025"^^xsd:int;
+	iaest-measure:bi-ocio-hosteleria "2304"^^xsd:int;
+	iaest-measure:bi-industrial "114171"^^xsd:int;
+	iaest-measure:bi-cultural "1491"^^xsd:int;
+	iaest-measure:bi-deportivo "1589"^^xsd:int;
+	iaest-measure:bi-oficinas "6681"^^xsd:int;
+	iaest-measure:bi-edificios-singulares "922"^^xsd:int;
+	iaest-measure:bi-religioso "2475"^^xsd:int;
+	iaest-measure:bi-espectaculos "192"^^xsd:int;
+	iaest-measure:bi-sin-definir "431166"^^xsd:int;
+	iaest-measure:bi-suelo-vacante "77250"^^xsd:int;
+	iaest-measure:bi-sanidad-benefic "786"^^xsd:int;
+	iaest-measure:total-bienes-inmuebles "1152429"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010023A/55ac41fa-9d76-30a8-8b7d-9b26aac9b52c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010023A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:residencial "743187"^^xsd:int;
+	iaest-measure:bi-almacen-estacionamiento "208736"^^xsd:int;
+	iaest-measure:bi-comercial "31602"^^xsd:int;
+	iaest-measure:bi-ocio-hosteleria "2333"^^xsd:int;
+	iaest-measure:bi-industrial "111956"^^xsd:int;
+	iaest-measure:bi-cultural "1505"^^xsd:int;
+	iaest-measure:bi-deportivo "1609"^^xsd:int;
+	iaest-measure:bi-oficinas "7276"^^xsd:int;
+	iaest-measure:bi-edificios-singulares "932"^^xsd:int;
+	iaest-measure:bi-religioso "2447"^^xsd:int;
+	iaest-measure:bi-espectaculos "188"^^xsd:int;
+	iaest-measure:bi-sin-definir "448878"^^xsd:int;
+	iaest-measure:bi-suelo-vacante "79474"^^xsd:int;
+	iaest-measure:bi-sanidad-benefic "820"^^xsd:int;
+	iaest-measure:total-bienes-inmuebles "1192065"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010023A/11246c27-fee0-3227-b834-ae0e2ea9dd36> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010023A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:residencial "771033"^^xsd:int;
+	iaest-measure:bi-almacen-estacionamiento "233074"^^xsd:int;
+	iaest-measure:bi-comercial "32582"^^xsd:int;
+	iaest-measure:bi-ocio-hosteleria "2306"^^xsd:int;
+	iaest-measure:bi-industrial "106733"^^xsd:int;
+	iaest-measure:bi-cultural "1571"^^xsd:int;
+	iaest-measure:bi-deportivo "1712"^^xsd:int;
+	iaest-measure:bi-oficinas "7865"^^xsd:int;
+	iaest-measure:bi-edificios-singulares "980"^^xsd:int;
+	iaest-measure:bi-religioso "2440"^^xsd:int;
+	iaest-measure:bi-espectaculos "193"^^xsd:int;
+	iaest-measure:bi-sin-definir "470808"^^xsd:int;
+	iaest-measure:bi-suelo-vacante "80493"^^xsd:int;
+	iaest-measure:bi-sanidad-benefic "859"^^xsd:int;
+	iaest-measure:total-bienes-inmuebles "1241841"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010023A/b4b9fef9-6853-3930-9bf8-ffffaa6801a2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010023A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:residencial "773578"^^xsd:int;
+	iaest-measure:bi-almacen-estacionamiento "235560"^^xsd:int;
+	iaest-measure:bi-comercial "32664"^^xsd:int;
+	iaest-measure:bi-ocio-hosteleria "2301"^^xsd:int;
+	iaest-measure:bi-industrial "106664"^^xsd:int;
+	iaest-measure:bi-cultural "1571"^^xsd:int;
+	iaest-measure:bi-deportivo "1710"^^xsd:int;
+	iaest-measure:bi-oficinas "7879"^^xsd:int;
+	iaest-measure:bi-edificios-singulares "967"^^xsd:int;
+	iaest-measure:bi-religioso "2436"^^xsd:int;
+	iaest-measure:bi-espectaculos "187"^^xsd:int;
+	iaest-measure:bi-sin-definir "475102"^^xsd:int;
+	iaest-measure:bi-suelo-vacante "82307"^^xsd:int;
+	iaest-measure:bi-sanidad-benefic "856"^^xsd:int;
+	iaest-measure:total-bienes-inmuebles "1248680"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010023A/5e6115fc-6ebc-3f88-84ff-63a2c2716d97> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010023A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:residencial "781070"^^xsd:int;
+	iaest-measure:bi-almacen-estacionamiento "243696"^^xsd:int;
+	iaest-measure:bi-comercial "32919"^^xsd:int;
+	iaest-measure:bi-ocio-hosteleria "2372"^^xsd:int;
+	iaest-measure:bi-industrial "106544"^^xsd:int;
+	iaest-measure:bi-cultural "1587"^^xsd:int;
+	iaest-measure:bi-deportivo "1748"^^xsd:int;
+	iaest-measure:bi-oficinas "8085"^^xsd:int;
+	iaest-measure:bi-edificios-singulares "987"^^xsd:int;
+	iaest-measure:bi-religioso "2441"^^xsd:int;
+	iaest-measure:bi-espectaculos "187"^^xsd:int;
+	iaest-measure:bi-sin-definir "485104"^^xsd:int;
+	iaest-measure:bi-suelo-vacante "83685"^^xsd:int;
+	iaest-measure:bi-sanidad-benefic "853"^^xsd:int;
+	iaest-measure:total-bienes-inmuebles "1266174"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010023A/99bb0dfd-2a0c-3f40-8414-d9460fb7fc25> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010023A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:residencial "781945"^^xsd:int;
+	iaest-measure:bi-almacen-estacionamiento "253268"^^xsd:int;
+	iaest-measure:bi-comercial "40564"^^xsd:int;
+	iaest-measure:bi-ocio-hosteleria "2203"^^xsd:int;
+	iaest-measure:bi-industrial "92826"^^xsd:int;
+	iaest-measure:bi-cultural "1596"^^xsd:int;
+	iaest-measure:bi-deportivo "1747"^^xsd:int;
+	iaest-measure:bi-oficinas "8242"^^xsd:int;
+	iaest-measure:bi-edificios-singulares "987"^^xsd:int;
+	iaest-measure:bi-religioso "2426"^^xsd:int;
+	iaest-measure:bi-espectaculos "177"^^xsd:int;
+	iaest-measure:bi-sin-definir "488829"^^xsd:int;
+	iaest-measure:bi-suelo-vacante "83928"^^xsd:int;
+	iaest-measure:bi-sanidad-benefic "865"^^xsd:int;
+	iaest-measure:total-bienes-inmuebles "1270774"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010023A/1c32eed7-7f2a-35a2-a79c-59244ef62d1c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010023A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:residencial "788594"^^xsd:int;
+	iaest-measure:bi-almacen-estacionamiento "259104"^^xsd:int;
+	iaest-measure:bi-comercial "40784"^^xsd:int;
+	iaest-measure:bi-ocio-hosteleria "2250"^^xsd:int;
+	iaest-measure:bi-industrial "92246"^^xsd:int;
+	iaest-measure:bi-cultural "1620"^^xsd:int;
+	iaest-measure:bi-deportivo "1803"^^xsd:int;
+	iaest-measure:bi-oficinas "8241"^^xsd:int;
+	iaest-measure:bi-edificios-singulares "1002"^^xsd:int;
+	iaest-measure:bi-religioso "2439"^^xsd:int;
+	iaest-measure:bi-espectaculos "180"^^xsd:int;
+	iaest-measure:bi-sin-definir "495638"^^xsd:int;
+	iaest-measure:bi-suelo-vacante "85089"^^xsd:int;
+	iaest-measure:bi-sanidad-benefic "880"^^xsd:int;
+	iaest-measure:total-bienes-inmuebles "1284232"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010023A/6816bbdb-7cce-3ad4-8240-e240d656283f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010023A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:residencial "794890"^^xsd:int;
+	iaest-measure:bi-almacen-estacionamiento "264063"^^xsd:int;
+	iaest-measure:bi-comercial "40915"^^xsd:int;
+	iaest-measure:bi-ocio-hosteleria "2387"^^xsd:int;
+	iaest-measure:bi-industrial "92428"^^xsd:int;
+	iaest-measure:bi-cultural "1661"^^xsd:int;
+	iaest-measure:bi-deportivo "2281"^^xsd:int;
+	iaest-measure:bi-oficinas "8378"^^xsd:int;
+	iaest-measure:bi-edificios-singulares "1015"^^xsd:int;
+	iaest-measure:bi-religioso "2504"^^xsd:int;
+	iaest-measure:bi-espectaculos "182"^^xsd:int;
+	iaest-measure:bi-sin-definir "499842"^^xsd:int;
+	iaest-measure:bi-suelo-vacante "83106"^^xsd:int;
+	iaest-measure:bi-sanidad-benefic "922"^^xsd:int;
+	iaest-measure:total-bienes-inmuebles "1294732"^^xsd:int.

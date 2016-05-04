@@ -1,0 +1,171 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030101>;
+	rdfs:label "Cubo de datos para 03-02010301-030101TP"@es ;
+	rdfs:comment "Cubo de datos para 03-02010301-030101TP"@es ;
+	dc:modified "2016-04-21"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/d5b802d6-8bb1-3d7c-93e9-2249f929b356> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-hogares "22316,6910893541"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/853c3b81-473b-3361-b316-74b1dda7a8ee> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-hogares "13856,9070573292"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/211143d0-d7ff-3213-b734-44d0f080f954> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-hogares "100346,15150834"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/f565496a-102a-318e-9880-19a5267fb24b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-hogares "27306,0709540492"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/58f8d38d-92be-349c-8fa1-b2177325079a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-hogares "17333,5652033531"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/1b8b50ec-1186-3452-b762-e6500c6d60cf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-hogares "123414,573965443"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/59c90374-1c7d-3f43-b974-af22fc8cad63> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-hogares "19409,4161415089"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/5a45b2fc-f360-36a2-8ef7-a762c1f5affb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-hogares "11262,6072315691"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/10983081-eee3-3c3f-ad54-b96655b7dcf3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-hogares "84158,6602604628"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/2d3bd60c-1797-3e0b-9c5e-02b1d0ec116a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-hogares "14719,7226868211"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/219a49c0-6df9-3ed3-9f94-996dd909265d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-hogares "10532,2735309577"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/f6851b2e-1c39-3a60-9f63-31542971cb6f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-hogares "67284,399051209"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/08bde7de-55ec-38da-95bc-9cbe191ff8cd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-hogares "3977,7365277186"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/ecf509a6-0325-3b48-a2b8-3b969f3f81ff> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-hogares "2325,6596132016"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/96bfa4dd-6cd8-3c80-a642-6de3828c9637> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-hogares "13804,0082653874"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/644591b7-82d0-3378-8aac-fb60f07e0bdf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-hogares "1066,4832430873"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/cf7a37c9-06cb-3a77-acde-61294c72ef05> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-hogares "699,3883727833"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/9f51f672-ae13-3266-88ea-b9ddd542172c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-hogares "3528,777713301"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/fa0312ef-0190-3a70-b7a9-ccf43dfb9cb0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7,59386773797626"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-hogares "383,8257237392"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/e7322f0e-8c6e-39ba-9ca8-513b7112c1ed> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7,58187351621636"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-hogares "98,2617174031"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TP/b5e5c421-e252-3140-8780-c2cdf0150471> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TP>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7,61375196501329"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-hogares "1045,2789011131"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

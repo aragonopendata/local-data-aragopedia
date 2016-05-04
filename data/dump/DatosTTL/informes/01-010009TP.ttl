@@ -1,0 +1,234 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010009>;
+	rdfs:label "Cubo de datos para 01-010009TP"@es ;
+	rdfs:comment "Cubo de datos para 01-010009TP"@es ;
+	dc:modified "2016-04-21"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/290d079d-7d34-3b1e-b89e-d4a95666777f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/otro-tipo> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificios-principalmente-con-locales-compartidos-con-alguna-vivienda> ;
+	iaest-measure:numero-de-edificios "358"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/d3ff8fe3-4bac-3e53-8507-5b0cf2530f4d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/otro-tipo> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/locales> ;
+	iaest-measure:numero-de-edificios "5275"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/c2d2023c-e489-3da5-85c7-8d0c00069eb3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificio-solo-con-una-vivienda-familiar> ;
+	iaest-measure:numero-de-edificios "48166"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/e07815e5-2c24-3268-9b85-45b9b0959033> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificio-solo-con-varias-viviendas-familiares> ;
+	iaest-measure:numero-de-edificios "7115"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/55a8fc86-a4ab-3ad6-8446-77d6d8cdd975> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificio-principalmente-con-viviendas-familiares-compartido-con-locales> ;
+	iaest-measure:numero-de-edificios "5154"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/6356f87f-bfde-38e8-9a52-15e13622b797> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificios-principalmente-con-vivienda-colectiva-hotel-albergue-pension> ;
+	iaest-measure:numero-de-edificios "20"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/26053f83-dd09-3a11-80a9-a01012039719> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificios-principalmente-con-vivienda-colectiva-convento-cuartel-prision> ;
+	iaest-measure:numero-de-edificios "70"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/b642b98b-6846-3509-afb5-680a0e8df665> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificios-principalmente-con-vivienda-colectiva-instituciones-de-ensenanza> ;
+	iaest-measure:numero-de-edificios "5"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/1a3ed2f4-a829-318e-978f-242786cff67f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificios-principalmente-con-vivienda-colectiva-hospitales-instituciones-para-discapacitados> ;
+	iaest-measure:numero-de-edificios "21"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/413ff88d-5825-31cf-b060-775877916fcc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/alojamientos> ;
+	iaest-measure:numero-de-edificios "10"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/8bcb8f41-7a51-30a3-a056-5c26bd9f107e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/otro-tipo> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificios-principalmente-con-locales-compartidos-con-alguna-vivienda> ;
+	iaest-measure:numero-de-edificios "148"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/379870ce-3e20-3e94-8689-eb59e5742ce5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/otro-tipo> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/locales> ;
+	iaest-measure:numero-de-edificios "3095"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/a42ad8e2-fa9f-3dcf-9e26-fe58ebada53b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificio-solo-con-una-vivienda-familiar> ;
+	iaest-measure:numero-de-edificios "60140"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/3565f801-f5a4-32c4-813d-35d011cb72d0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificio-solo-con-varias-viviendas-familiares> ;
+	iaest-measure:numero-de-edificios "6266"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/e8633535-eccb-3dac-b452-ca679caac062> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificio-principalmente-con-viviendas-familiares-compartido-con-locales> ;
+	iaest-measure:numero-de-edificios "3083"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/c968ccf4-0d79-37ab-bae3-f4f2a690c4d7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificios-principalmente-con-vivienda-colectiva-hotel-albergue-pension> ;
+	iaest-measure:numero-de-edificios "8"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/4d393e37-dc7b-384d-987b-b4dccff33453> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificios-principalmente-con-vivienda-colectiva-convento-cuartel-prision> ;
+	iaest-measure:numero-de-edificios "34"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/d9890cb7-9169-3f94-8eb8-273296ba2df4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificios-principalmente-con-vivienda-colectiva-instituciones-de-ensenanza> ;
+	iaest-measure:numero-de-edificios "1"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/2ccb0b21-0b83-390c-8dde-c7cab26735f0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificios-principalmente-con-vivienda-colectiva-hospitales-instituciones-para-discapacitados> ;
+	iaest-measure:numero-de-edificios "6"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/43c245b6-8994-3703-a846-6cbfa1b7acc9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/alojamientos> ;
+	iaest-measure:numero-de-edificios "1"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/82bc6510-99ec-3d82-beb8-d2b0546a67f1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/otro-tipo> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificios-principalmente-con-locales-compartidos-con-alguna-vivienda> ;
+	iaest-measure:numero-de-edificios "590"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/a46a5415-ab69-3a15-98ad-9871b2b0132b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/otro-tipo> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/locales> ;
+	iaest-measure:numero-de-edificios "9895"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/280a31cc-8a44-3573-a800-e15c449a01d0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificio-solo-con-una-vivienda-familiar> ;
+	iaest-measure:numero-de-edificios "108415"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/b62d65a3-c521-31c3-a3db-6f21d82a14ea> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificio-solo-con-varias-viviendas-familiares> ;
+	iaest-measure:numero-de-edificios "17852"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/298517ac-5c28-37a7-9b32-20abafd969f3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificio-principalmente-con-viviendas-familiares-compartido-con-locales> ;
+	iaest-measure:numero-de-edificios "15693"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/c317f976-115d-3634-a28e-00e78377cc23> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificios-principalmente-con-vivienda-colectiva-hotel-albergue-pension> ;
+	iaest-measure:numero-de-edificios "40"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/48d92150-32d3-3315-8709-7eaf0c7ff7be> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificios-principalmente-con-vivienda-colectiva-convento-cuartel-prision> ;
+	iaest-measure:numero-de-edificios "227"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/584675f9-b04e-37a8-a4a1-731d4c6640a7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificios-principalmente-con-vivienda-colectiva-instituciones-de-ensenanza> ;
+	iaest-measure:numero-de-edificios "21"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/b8db9ac6-25e2-385c-8052-185d2e8cbcdd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/edificios-principalmente-con-vivienda-colectiva-hospitales-instituciones-para-discapacitados> ;
+	iaest-measure:numero-de-edificios "79"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010009TP/ce4fe8a6-715f-3946-9ccb-61c19cf17607> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010009TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-edificio-agregado <http://opendata.aragon.es/kos/iaest/tipo-edificio-agregado/principalmente-vivienda> ;
+	iaest-dimension:tipo-edificio-detalle <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle/alojamientos> ;
+	iaest-measure:numero-de-edificios "27"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

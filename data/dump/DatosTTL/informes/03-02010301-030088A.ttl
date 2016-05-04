@@ -1,0 +1,120 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030088A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030088>;
+	rdfs:label "Cubo de datos para 03-02010301-030088A"@es ;
+	rdfs:comment "Cubo de datos para 03-02010301-030088A"@es ;
+	dc:modified "2016-04-21"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030088A/9193ea25-5353-3f96-9f80-b354b7f735f1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030088A>; 
+	iaest-dimension:tipo-de-estudios-realizados <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados/educacion-magisterio-educacion-infantil-pedagogia-> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas "9768,5984656148"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030088A/607850a0-44ea-3341-b475-de5adea6aa66> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030088A>; 
+	iaest-dimension:tipo-de-estudios-realizados <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados/artes-y-humanidades-historia-lenguas-imagen-y-sonido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas "9544,008042381"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030088A/8ca1c3a6-b538-38c8-8816-5e4900affc91> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030088A>; 
+	iaest-dimension:tipo-de-estudios-realizados <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados/derecho-y-ciencias-sociales-administracion-psicologia-economia-periodismo-> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas "32409,1464151479"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030088A/3cb48c2b-af88-3ac3-8939-d71de75d83df> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030088A>; 
+	iaest-dimension:tipo-de-estudios-realizados <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados/ciencias-biologia-quimica-fisica-matematicas--e-informatica-incluida-ingenieria-informatica> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas "18607,1133391099"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030088A/cfc0c936-4f27-3516-94f5-7d2666680b46> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030088A>; 
+	iaest-dimension:tipo-de-estudios-realizados <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados/arquitectura-construccion-formacion-tecnica-e-industrias-mecanica-metal-electronica-diseno-confeccion-alimentacion-etc-incluidas-ingenierias-de-estos-campos> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas "70804,5808266276"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030088A/45a1a170-9ff4-336a-860e-aa6c4e6bd36c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030088A>; 
+	iaest-dimension:tipo-de-estudios-realizados <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados/agricultura-ganaderia-pesca-y-veterinaria-incluida-ingenieria-agronoma-o-similar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas "9291,4324115919"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030088A/6b1458a8-c3f9-37b5-9219-fbe86a155de8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030088A>; 
+	iaest-dimension:tipo-de-estudios-realizados <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados/salud-y-servicios-sociales-medicina-enfermeria-farmacia-trabajo-social-> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas "10417,4978480336"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030088A/2a6d4bb6-c231-3587-8d1d-fb93cba74052> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030088A>; 
+	iaest-dimension:tipo-de-estudios-realizados <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados/otros-servicios-turismo-hosteleria-peluqueria-ensenanza-nautica-militar-> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas "11407,8569658758"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030088A/7fea482f-df11-3ba4-b3a1-ddc3dcb4032c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030088A>; 
+	iaest-dimension:tipo-de-estudios-realizados <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados/educacion-magisterio-educacion-infantil-pedagogia-> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas "26564,4330875077"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030088A/031f814b-72e8-3879-b4e5-8da124ee1cc3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030088A>; 
+	iaest-dimension:tipo-de-estudios-realizados <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados/artes-y-humanidades-historia-lenguas-imagen-y-sonido> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas "14617,9540945918"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030088A/62d88c54-0e87-37f1-933a-471b9aa7fb94> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030088A>; 
+	iaest-dimension:tipo-de-estudios-realizados <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados/derecho-y-ciencias-sociales-administracion-psicologia-economia-periodismo-> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas "52267,5116214302"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030088A/7dddcae3-aa96-3c87-b748-77320871c7a1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030088A>; 
+	iaest-dimension:tipo-de-estudios-realizados <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados/ciencias-biologia-quimica-fisica-matematicas--e-informatica-incluida-ingenieria-informatica> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas "11779,0988317647"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030088A/79756a47-bf3e-319a-9f25-6ecc1005ccf3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030088A>; 
+	iaest-dimension:tipo-de-estudios-realizados <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados/arquitectura-construccion-formacion-tecnica-e-industrias-mecanica-metal-electronica-diseno-confeccion-alimentacion-etc-incluidas-ingenierias-de-estos-campos> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas "11924,664490034"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030088A/c91d1240-6232-3e2c-9c02-46010fd09b87> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030088A>; 
+	iaest-dimension:tipo-de-estudios-realizados <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados/agricultura-ganaderia-pesca-y-veterinaria-incluida-ingenieria-agronoma-o-similar> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas "3542,2620418232"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030088A/f76cc510-7a3d-31dc-b55b-45bd7b762f1a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030088A>; 
+	iaest-dimension:tipo-de-estudios-realizados <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados/salud-y-servicios-sociales-medicina-enfermeria-farmacia-trabajo-social-> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas "34517,4253010112"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030088A/d4528082-5ea3-3a47-ae46-b76d791732f2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030088A>; 
+	iaest-dimension:tipo-de-estudios-realizados <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados/otros-servicios-turismo-hosteleria-peluqueria-ensenanza-nautica-militar-> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas "14725,866570904"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

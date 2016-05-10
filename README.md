@@ -4,7 +4,7 @@ Repositorio en el que se incluye el código fuente y los datos correspondientes 
 
 Para un correcto uso del código se necesita tener una credencial del https://console.developers.google.com
 
-## Pasos a realizar para la descarga masiva de datos:
+## Pasos a realizar para la descarga masiva de datos: 
 
 * Se deben utilizar los scripts que se encuentra en la carpeta src/01_extraction-scripts, en el orden que se indica. Ojo, que hay que tener cuidado con las cookies, que deben ser actualizadas cada vez que se haga un proceso de extracción masiva.
 

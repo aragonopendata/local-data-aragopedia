@@ -54,6 +54,11 @@ import org.apache.log4j.PropertyConfigurator;
 import com.localidata.bean.ConfigBean;
 import com.localidata.process.TransformToRDF;
 
+/**
+ * 
+ * @author Localidata
+ *
+ */
 public class Utils {
 
 	private final static Logger log = Logger.getLogger(Utils.class);
@@ -843,6 +848,32 @@ public class Utils {
 
 		for (String line : list) {
 			line = line.replaceAll(string, "");
+			result.add(line);
+		}
+
+		return result;
+	}
+	
+	public static List<String> removeFisrtChar(List<String> list, char c) {
+
+		List<String> result = new ArrayList<>();
+
+		for (String line : list) {
+			if(line.charAt(0)==c)
+				line = line.substring(1, line.length());
+			result.add(line);
+		}
+
+		return result;
+	}
+	
+	public static List<String> removeLastChar(List<String> list, char c) {
+
+		List<String> result = new ArrayList<>();
+
+		for (String line : list) {
+			if(line.charAt(line.length()-1)==c)
+				line = line.substring(0, line.length()-2);
 			result.add(line);
 		}
 

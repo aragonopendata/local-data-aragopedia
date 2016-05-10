@@ -13,6 +13,11 @@ import com.localidata.generic.Prop;
 import com.localidata.transform.GenerateConfig;
 import com.localidata.util.Utils;
 
+/**
+ * 
+ * @author Localidata
+ *
+ */
 public class ConfigBean {
 
 	private final static Logger log = Logger.getLogger(ConfigBean.class);

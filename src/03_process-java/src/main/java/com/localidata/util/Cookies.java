@@ -1,5 +1,9 @@
 package com.localidata.util;
 
+import java.net.*;
+import java.io.*;
+import java.util.*;
+import java.text.*;
 
 
 public class Cookies {
@@ -31,6 +35,7 @@ public class Cookies {
 	String domain = getDomainFromHost(conn.getURL().getHost());
 	
 	
+	Map domainStore; 
 	
 	if (store.containsKey(domain)) {
 	    domainStore = (Map)store.get(domain);
@@ -133,6 +138,5 @@ public class Cookies {
 	return store.toString();
     }
     
-
     
 }

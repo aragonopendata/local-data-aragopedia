@@ -20,6 +20,8 @@ import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
 import com.google.api.client.http.FileContent;
 import com.google.api.client.http.GenericUrl;
+import com.google.api.client.http.HttpRequest;
+import com.google.api.client.http.HttpRequestInitializer;
 import com.google.api.client.http.HttpResponse;
 import com.google.api.client.http.HttpTransport;
 import com.google.api.client.http.javanet.NetHttpTransport;
@@ -28,6 +30,8 @@ import com.google.api.client.json.jackson2.JacksonFactory;
 import com.google.api.client.util.DateTime;
 import com.google.api.services.drive.Drive;
 import com.google.api.services.drive.DriveScopes;
+import com.google.api.services.drive.model.ChildList;
+import com.google.api.services.drive.model.ChildReference;
 import com.google.api.services.drive.model.File;
 import com.google.api.services.drive.model.FileList;
 import com.google.api.services.drive.model.ParentReference;
@@ -35,6 +39,11 @@ import com.google.api.services.drive.model.Permission;
 import com.google.api.services.drive.model.User;
 import com.localidata.util.Utils;
 
+/**
+ * 
+ * @author Localidata
+ *
+ */
 public class GoogleDriveAPI {
 
 	private final static Logger log = Logger.getLogger(GoogleDriveAPI.class);
@@ -85,12 +94,27 @@ public class GoogleDriveAPI {
 	private static GoogleCredential authorize() throws IOException,
 			GeneralSecurityException {
 		HttpTransport httpTransport = new NetHttpTransport();
+		httpTransport.createRequestFactory(new HttpRequestInitializer() {
+
+            @Override
+            public void initialize(HttpRequest httpRequest) throws IOException {
+
+                httpRequest.setConnectTimeout(300 * 60000);  // 300 minutes connect timeout
+                httpRequest.setReadTimeout(300 * 60000);  // 300 minutes read timeout
+
+            }
+        });
 		JacksonFactory jsonFactory = new JacksonFactory();
 		GoogleCredential credential = new GoogleCredential.Builder()
 				.setTransport(httpTransport)
 				.setJsonFactory(jsonFactory)
+				// Account id is the email in credetials p12 (Google developers
+				// console -> permisos - Dirección de correo)
 				.setServiceAccountId(Prop.acountId)
 				.setServiceAccountScopes(SCOPES)
+				// File get in Google developers console -> Administrador de las
+				// apis -> credenciales -> Nuevas credeciales -> Clave de cuenta
+				// de servicio -> p12
 				.setServiceAccountPrivateKeyFromP12File(
 						new java.io.File(Prop.p12File)).build();
 		return credential;
@@ -197,22 +221,72 @@ public class GoogleDriveAPI {
 		log.info("create Spreadsheet in google Drive from " + nameFile);
 		return result;
 	}
+	
+	public boolean updateFile(String name, java.io.File fileContent, String newMimeType){
+		
+		File file = searchFile(name);
+		FileContent mediaContent = new FileContent(newMimeType, fileContent);
+		File updatedFile = null;
+		try {
+			updatedFile = drive.files().update(file.getId(), file, mediaContent).execute();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return (updatedFile!=null);
+	}
+	
+	public List<ChildReference> listFolderFiles(String folderId) {
+		List<ChildReference> result = new ArrayList<ChildReference>();
+		try {
+			com.google.api.services.drive.Drive.Children.List request = drive.children().list(folderId);
+			
+			 do {
+			      try {
+			        ChildList children = request.execute();
 
+			        result.addAll(children.getItems());
+			        request.setPageToken(children.getNextPageToken());
+			      } catch (IOException e) {
+			        System.out.println("An error occurred: " + e);
+			        request.setPageToken(null);
+			      }
+			    } while (request.getPageToken() != null &&
+			             request.getPageToken().length() > 0);
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return result;
+		
+	}
+	
 	public List<File> listOwnerFiles() {
 		log.debug("init listOwnerFiles()");
-		FileList result;
-		List<File> files = new ArrayList<>();
-		com.google.api.services.drive.Drive.Files.List request = null;
-
+		List<File> result = new ArrayList<File>();
 		try {
-			request = drive.files().list().setMaxResults(1000);
-			result = request.execute();
-			files.addAll(result.getItems());
+			
+			com.google.api.services.drive.Drive.Files.List request = drive.files().list();
+			
+			do {
+			      try {
+			        FileList files = request.execute();
+
+			        result.addAll(files.getItems());
+			        request.setPageToken(files.getNextPageToken());
+			      } catch (IOException e) {
+			        System.out.println("An error occurred: " + e);
+			        request.setPageToken(null);
+			      }
+			    } while (request.getPageToken() != null &&
+			             request.getPageToken().length() > 0);
+			
 		} catch (IOException e) {
 			log.error("Error list files", e);
 		}
 		log.debug("end listOwnerFiles()");
-		return files;
+		return result;
 	}
 
 	public List<File> listOwnerFilesAfterDate(String stringDateLastChange) {
@@ -305,10 +379,33 @@ public class GoogleDriveAPI {
 
 	}
 	
-	public void downloadAllFiles(String path) {
+	
+	public void downloadFolderFiles(String path, String folderId) throws IOException{
+		
+		List<ChildReference> list = listFolderFiles(folderId);
+		FileUtils.deleteDirectory(new java.io.File(path));
+		for (ChildReference child : list) {
+			File file = drive.files().get(child.getId()).execute();
+			if(file.getShared()){
+				String downloadUrl = file
+						.getExportLinks()
+						.get("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+				
+				HttpResponse resp = drive.getRequestFactory()
+						.buildGetRequest(new GenericUrl(downloadUrl)).execute();
+				InputStream input = resp.getContent();
+				
+				java.io.File f = new java.io.File(path + java.io.File.separator
+						+ file.getTitle() + "."+Prop.formatConfig);
+				FileUtils.copyInputStreamToFile(input, f);
+			}
+		}
+	}
+	
+	public void downloadAllFiles(String path) throws IOException{
 		log.debug("init downloadAllFiles()");
 		List<File> files = listOwnerFiles();
-		try {
+//		try {
 			FileUtils.deleteDirectory(new java.io.File(path));
 			for (File file : files) {
 				if(file.getShared()){
@@ -326,9 +423,6 @@ public class GoogleDriveAPI {
 				}
 			
 			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 		log.debug("end downloadAllFiles()");
 	}
 	
@@ -352,9 +446,14 @@ public class GoogleDriveAPI {
 			HttpResponse resp = drive.getRequestFactory()
 					.buildGetRequest(new GenericUrl(downloadUrl)).execute();
 			InputStream input = resp.getContent();
-			
-			java.io.File f = new java.io.File(path + java.io.File.separator
-					+ file.getTitle() + "."+format);
+			java.io.File f=null;
+			if(Utils.v(path)){
+				f = new java.io.File(path + java.io.File.separator
+						+ file.getTitle() + "."+format);
+			}else{
+				f = new java.io.File(file.getTitle() + "."+format);
+			}
+			 
 			FileUtils.copyInputStreamToFile(input, f);
 			return f;
 		} catch (IOException e) {
@@ -424,6 +523,37 @@ public class GoogleDriveAPI {
 	public static void main(String[] args) {
 		if ((log == null) || (log.getLevel() == null))
 			PropertyConfigurator.configure("log4j.properties");
+		if (args.length == 0) {
+			log.info("Es necesario pasar argumentos.");
+			log.info("El primer argumento será la función de la api que se desea usar:");
+			log.info("\t1 Para subir un archivo suelto");
+			log.info("\t2 Para subir los archivos de un directorio");
+			log.info("\t3 Para sacar un listado de los archivos editados dada una fecha");
+			log.info("");
+			log.info("Para subir un archivo suelto los argumentos necesarios son:");
+			log.info("");
+			log.info("Primer argumento: 1");
+			log.info("Segundo argumento: Path del fichero a subir");
+			log.info("Tercer argmento: Id de la carpeta de Google Drive donde será subido el fichero");
+			log.info("Cuarto argumento: Email del propietario del fichero");
+			log.info("Quinto argumento: Extension del fichero");
+			log.info("Sexto argumento: Nombre que tendrá el fichero en Google Drive");
+			log.info("Septimo argumento: Mimetype del fichero que se va a subir");
+			log.info("");
+			log.info("Para subir los archivos de un directorio los argumentos necesarios son:");
+			log.info("");
+			log.info("Primer argumento: 2");
+			log.info("Segundo argumento: Path del directorio donde están los ficheros a subir");
+			log.info("Tercer argmento: Id de la carpeta de Google Drive donde será subido el fichero");
+			log.info("Cuarto argumento: Email del propietario del fichero");
+			log.info("Quinto argumento: Extension del fichero");
+			log.info("Sexto argumento: Mimetype del fichero que se va a subir");
+			log.info("");
+			log.info("Para sacar un listado de los archivos editados dada una fecha los argumentos necesarios son:");
+			log.info("");
+			log.info("Primer argumento: 3");
+			log.info("Segundo argumento: Fecha con el formato siguiente 2016-01-25 14:53:48");
+		}
 		int modo = new Integer(args[0]);
 		GoogleDriveAPI api = new GoogleDriveAPI();
 		api.init();
@@ -461,7 +591,11 @@ public class GoogleDriveAPI {
 			api.listOwnerFilesAfterDate(date);
 			break;
 		case 4:
-			api.downloadAllFiles(args[1]);
+			try {
+				api.downloadAllFiles(args[1]);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 			break;
 		case 5:
 			api.downloadFilesAfterDate(args[1], args[2]);
@@ -469,8 +603,5 @@ public class GoogleDriveAPI {
 		default:
 			break;
 		}
-
-
-
 	}
 }

@@ -2,10 +2,39 @@
 
 ## Instalación del proceso de generacion de cubo de datos y carga en virtuoso
 
-1. Descomprimiremos el zip doc/instalacion/datacube.zip en el directorio home del usuario
-2. A los archivos .sh les daremos permisos con el comando: sudo chmod 755 *.sh
-3. Editaremos el archivo datacube/app/KBManager/props/3cixty.properties En user pondremos el usuario de virtuoso en password la contraseña de virtuoso y en virtuoso_path donde está instalado virtuoso.
-4. Para comprobar que la instalación se ha hecho bien generaremos todos los datos como pone se especifica más adelante.
+1. Comprobaremos que tenemos java 8 instalado ejecutando el comando java -version
+2. Comprobaremos que tenemos git instalado ejecutando el comando git -version
+3. Descomprimiremos el zip doc/instalacion/datacube.zip en el directorio home del usuario
+4. A los archivos .sh les daremos permisos con el comando: sudo chmod 755 *.sh
+5. Editaremos el archivo datacube/app/KBManager/props/3cixty.properties En user pondremos el usuario de virtuoso en password la contraseña de virtuoso y en virtuoso_path donde está instalado virtuoso.
+6. Editaremos el archivo datacube/system.properties en emailDestination pondremos los correos electrónicos separados por comas de quien se va a encargar del mantenimiento de los datos y de su configuración
+7. Descargaremos el proyecto del git
+7.1. En el directorio datacube ejecutamos el comando git clone  http://github.com/aragonopendata/local-data-aragopedia.git
+7.2. Se descargará un directorio local-data-aragopedia, entramos en el y editamos el fichero readme.md
+7.3. Añadiremos un espacio en blanco al final de la primera linea
+7.4. Ejecutaremos los siguientes comandos en el directorio local-data-aragopedia:
+7.4.1. Para este paso vamos a necesitar un usuario de github que pueda hacer commit en el repositorio http://github.com/aragonopendata/local-data-aragopedia.git
+7.4.1. git config --global user.name "<user github>"
+7.4.2. git config --global user.email "<email user github>"
+7.4.3. git add .
+7.4.4. git commit -m "Actualización  automatica $(date)"
+7.4.5. git push origin master
+7.4.6. insert user github
+7.4.7. insert password github
+8. Editaremos los archivos GenerateAllRDFandLoad.sh y UpdateRDFandLoad.sh poniendo el mismo usuario y correo de github que en los pasos 7.4
+9. Ejecutaremos el script home/datacube/GenerateAllRDFandLoad.sh
+10. Para comprobar que la carga se ha hecho correctamente se lanzará en el punto sparql, por ejemplo http://opendata.aragon.es:8890/sparql, la siguiente query:
+
+   select distinct ?graph where {
+
+   GRAPH ?graph {
+   ?x ?y ?z
+   }
+
+   }
+   
+   Y en el resultado deberán de haber grafos que empiecen por "http://opendata.aragon.es/graph/datacube"
+
 
 ## Instalación del proceso de actualización de datos y carga en virtuoso
 
@@ -13,11 +42,7 @@
 2. Insertamos en la ultima linea lo siguiente:
 00 00 * * * ~/datacube/UpdateRDFandLoad.sh
 3. Comprobaremos que a las 00:00 de cada día se ejecuta el script viendo el log datacube/datacube.log
-
-## Como generar todos los datos e insertarlos en virtuoso
-
-1. Ejecutaremos el script home/datacube/GenerateAllRDFandLoad.sh
-2. Para comprobar que la carga se ha hecho correctamente se lanzará en el punto sparql, por ejemplo http://opendata.aragon.es:8890/sparql, la siguiente query:
+4. Para comprobar que la carga se ha hecho correctamente se lanzará en el punto sparql, por ejemplo http://opendata.aragon.es:8890/sparql, la siguiente query:
 
    select distinct ?graph where {
 

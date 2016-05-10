@@ -1,13 +1,16 @@
 package com.localidata.process;
 
 import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 
 import com.localidata.bean.ConfigBean;
@@ -16,6 +19,11 @@ import com.localidata.generic.Constants;
 import com.localidata.generic.Prop;
 import com.localidata.util.Utils;
 
+/**
+ * 
+ * @author Localidata
+ *
+ */
 public class TransformToRDF {
 
 	private final static Logger log = Logger.getLogger(GenerateRDF.class);
@@ -27,38 +35,44 @@ public class TransformToRDF {
 	private ArrayList<String> cleanHeader = new ArrayList<String>();
 	private ArrayList<String> normalizedHeader = new ArrayList<String>();
 	private File outputDirectoryFile;
-	private File propertiesFile;
-	private File dsdFile;
+	private static File propertiesFile;
+	private static File dsdFile;
 	protected static File errorReportFile;
 	private ConfigBean configBean;
-	private ArrayList<String> dsdList = new ArrayList<String>();
-	private ArrayList<String> propertiesList = new ArrayList<String>();
+	private static ArrayList<String> dsdList = new ArrayList<String>();
+	private static ArrayList<String> propertiesList = new ArrayList<String>();
 	protected static StringBuffer propertiesContent = new StringBuffer();
 	String cubo = "";
+	private static String specsTtlFileString;
+	private static String decription;
+	private static ArrayList<String> viewsSpecsTtl = new ArrayList<>();
 
 	public TransformToRDF(List<String> csvLines, File outputDirectoryFile,
 			File propertiesFile, File dsdFile, File errorReportFile,
-			ConfigBean configBean) {
+			ConfigBean configBean, String specsTtl) {
 		this.csvLines = csvLines;
 		this.outputDirectoryFile = outputDirectoryFile;
 		this.propertiesFile = propertiesFile;
 		this.dsdFile = dsdFile;
 		TransformToRDF.errorReportFile = errorReportFile;
 		this.configBean = configBean;
+		this.specsTtlFileString = specsTtl;
+		
 	}
 	
 	public void initTransformation(String fileName, int numfile, String id,
 			ArrayList<String> dsdList, ArrayList<String> propertiesList) {
-		initTransformation(fileName,numfile,id,dsdList,propertiesList,false);
+		initTransformation(fileName,numfile,id,dsdList,propertiesList,"");
 	}
 	
 	public void initTransformation(String fileName, int numfile, String id,
-			ArrayList<String> dsdList, ArrayList<String> propertiesList, boolean update) {
+			ArrayList<String> dsdList, ArrayList<String> propertiesList, String decription) {
 		log.debug("Init initTransformation");
 		if (this.csvLines != null && this.csvLines.size()>2) {
 			log.debug("Start file " + fileName);
 			this.dsdList = dsdList;
 			this.propertiesList = propertiesList;
+			this.decription = decription;
 			StringBuffer lineAux = new StringBuffer();
 			lineAux.append(addPrefix());
 			log.debug("Insert prefix");
@@ -80,7 +94,7 @@ public class TransformToRDF {
 				if (cabecera) {
 					dsd = Prop.host + "/" + Prop.eldaName + "/" + Prop.datasetName
 							+ "/dsd/" + id;
-					addHeader(line, csvLines.get(h + 2), id, numfile, configBean.getLetters(),update);
+					addHeader(line, csvLines.get(h + 2), id, numfile, configBean.getLetters());
 					
 					log.debug("Insert header");
 					lineAux.append("#Observations\n");
@@ -137,7 +151,9 @@ public class TransformToRDF {
 		result.append("@prefix " + Prop.datasetName + "-measure:    <"
 				+ Prop.host + "/def/" + Prop.datasetName + "/medida#> ." + "\n");
 		result.append("@prefix dc: <http://purl.org/dc/elements/1.1/> .\n");
-
+		result.append("@prefix dct: <http://purl.org/dc/terms/> .\n");
+		
+		
 		result.append("\n");
 		log.debug("End addPrefix");
 		return result;
@@ -149,8 +165,8 @@ public class TransformToRDF {
 		cubo = url + "/dataset/" + fileName;
 		result.append("<" + cubo + "> a qb:DataSet;\n");
 		result.append("\tqb:structure <" + dsd + ">;\n");
-		result.append("\trdfs:label \"Cubo de datos para " + fileName
-				+ "\"@es ;\n");
+		result.append("\trdfs:label \"" + decription + "\"@es ;\n");
+		result.append("\tdct:identifier  \"" + fileName+ "\" ;\n");
 		result.append("\trdfs:comment \"Cubo de datos para " + fileName
 				+ "\"@es ;\n");
 		SimpleDateFormat formatFullDate = new SimpleDateFormat("yyyy-MM-dd");
@@ -161,203 +177,18 @@ public class TransformToRDF {
 	}
 
 	private void addHeader(String headerLine, String nextLine,
-			String fileName, int numfile, ArrayList<String> lettersList, boolean update) {
+			String fileName, int numfile, ArrayList<String> lettersList) {
 		log.debug("Init addHeader " + headerLine + " " + nextLine + " "
-				+ fileName + " " + numfile);
-		String resultado = "";
-		boolean year = false;
-		String aux = "";
-
-		resultado = Prop.host + "/" + Prop.eldaName + "/" + Prop.datasetName
-				+ "/dsd/" + fileName;
-		aux = "<" + resultado + "> a qb:DataStructureDefinition ;" + "\n";
-		aux = aux
-				+ "\trdfs:label \"Estructura de los cubos de datos que se corresponden con los informes "
-				+ fileName + "\"@es ;" + "\n";
-		String notation = "\"DSD-" + fileName + "\"";
-		aux = aux + "\tskos:notation " + notation + " ;" + "\n";
-		String letters = "";
-		for (String letter : lettersList) {
-			letters += letter + " ";
-		}
-		aux = aux + "\trdfs:comment \"Esta estructura afecta a las areas: "
-				+ letters + "\"^^xsd:string ." + "\n";
-		aux = aux + "\n";
-		if(!update)
-			insertDsd(aux, resultado + " " + notation);
 		headerLine = Utils.weakClean(headerLine);
 		String[] cells = headerLine.split("\t");
 
-		int col = 1;
 		for (int h = 0; h < cells.length; h++) {
 			String cell = cells[h];
 			String cleanCell = Utils.weakClean(cell);
 			String normalizedCell = Utils.urlify(cell);
-
-			DataBean dataBean = configBean.getMapData().get(normalizedCell);
+			
 			cleanHeader.add(cleanCell);
 			normalizedHeader.add(normalizedCell);
-			if(!update){
-				if (dataBean != null) {
-					if (dataBean.getNormalizacion() != null) {
-	
-						boolean noRepetido = true;
-						if (!propertiesList.contains(dataBean.getNormalizacion())) {
-							propertiesList.add(dataBean.getNormalizacion());
-						} else {
-							noRepetido = false;
-						}
-						if (!dataBean.getNormalizacion().contains("sdmx-dimension:refPeriod")) {
-							aux = "<" + resultado + "> qb:component _:node"
-									+ numfile + "egmfx" + col + " ." + "\n";
-							if (!dsdList.contains(resultado + " "
-									+ dataBean.getDimensionMesure() + " "
-									+ dataBean.getNormalizacion())) {
-								Utils.stringToFileAppend(aux, dsdFile);
-							}
-							if (!dataBean.getType().contains(Constants.URIType)) {
-								aux = "_:node" + numfile + "egmfx" + col + " "
-										+ dataBean.getDimensionMesure() + " "
-										+ dataBean.getNormalizacion() + " ." + "\n";
-								aux = aux + "\n";
-								insertDsd(
-										aux,
-										resultado + " "
-												+ dataBean.getDimensionMesure()
-												+ " " + dataBean.getNormalizacion());
-								if (noRepetido) {
-									String coded = dataBean.getDimensionMesure()
-											.equals(Constants.mesure) ? ""
-											: ", qb:CodedProperty ";
-									propertiesContent.append(dataBean
-											.getNormalizacion()
-											+ " a "
-											+ dataBean.getDimensionMesureProperty()
-											+ " , rdf:Property"
-											+ coded
-											+ ";"
-											+ "\n");
-									propertiesContent.append("\trdfs:label \""
-											+ cleanCell + "\"@es ;" + "\n");
-									propertiesContent.append("\trdfs:comment \""
-											+ cleanCell + "\"@es ;" + "\n");
-									propertiesContent.append("\trdfs:range "
-											+ dataBean.getType());
-									if (dataBean.getType().equals(
-											Constants.skosType)) {									
-										if (dataBean.getMapSkos().keySet().size() > 0) {
-											propertiesContent.append(" ;" + "\n");
-											String key = dataBean.getMapSkos()
-													.keySet().iterator().next();
-											String codeList = dataBean.getMapSkos()
-													.get(key).getURI();
-											codeList = codeList.substring(0,
-													codeList.lastIndexOf("/"));
-											propertiesContent
-													.append("\tqb:codeList <"
-															+ codeList + "> ."
-															+ "\n");
-										} else {
-											propertiesContent.append(" ." + "\n");
-											if (cleanCell.equals("")) {
-												TransformToRDF
-														.insertError(fileName
-																+ ". ERROR. CELL EMPTY "
-																+ ". SKOS FOR THIS COLUMN NOT FOUND ");
-												log.error(fileName
-														+ ". ERROR. CELL EMPTY "
-														+ ". SKOS FOR THIS COLUMN NOT FOUND ");
-											}
-											TransformToRDF
-													.insertError(fileName
-															+ ". ERROR. Column "
-															+ cleanCell
-															+ ". SKOS FOR THIS COLUMN NOT FOUND ");
-											log.error(fileName
-													+ ". ERROR. Column "
-													+ cleanCell
-													+ ". SKOS FOR THIS COLUMN NOT FOUND ");
-										}
-									} else {
-										propertiesContent.append(" ." + "\n");
-									}
-									propertiesContent.append("" + "\n");
-									Utils.stringToFileAppend(
-											propertiesContent.toString(),
-											propertiesFile);
-									propertiesContent.setLength(0);
-								}
-	
-							} else {
-								aux = "_:node" + numfile + "egmfx" + col + " "
-										+ dataBean.getDimensionMesure() + " "
-										+ dataBean.getDimensionMesureSDMX()
-										+ ":refArea ." + "\n";
-								aux = aux + "\n";
-								insertDsd(
-										aux,
-										resultado + " "
-												+ dataBean.getDimensionMesure()
-												+ " "
-												+ dataBean.getDimensionMesureSDMX()
-												+ ":refArea");
-							}
-						} else {
-							year = true;
-							aux = "<" + resultado + "> qb:component _:node"
-									+ numfile + "egmfx" + col + " ." + "\n";
-							aux = aux + "_:node" + numfile + "egmfx" + col + " "
-									+ dataBean.getDimensionMesure() + " "
-									+ dataBean.getDimensionMesureSDMX()
-									+ ":refPeriod ." + "\n";
-							aux = aux + "\n";
-							insertDsd(
-									aux,
-									resultado + " " + dataBean.getDimensionMesure()
-											+ " "
-											+ dataBean.getDimensionMesureSDMX()
-											+ ":refPeriod");
-						}
-						col++;
-					}
-				} else {
-					if (normalizedCell.equals("")) {
-						TransformToRDF.insertError(fileName
-								+ ". ERROR. CELL EMPTY "
-								+ ". CONFIGURATION FOR THIS COLUMN NOT FOUND ");
-						log.error(fileName + ". ERROR. CELL EMPTY "
-								+ ". CONFIGURATION FOR THIS COLUMN NOT FOUND ");
-					}
-					TransformToRDF.insertError(fileName + ". ERROR. Column "
-							+ normalizedCell
-							+ ". CONFIGURATION FOR THIS COLUMN NOT FOUND ");
-					log.error(fileName + ". ERROR. Column " + normalizedCell
-							+ ". CONFIGURATION FOR THIS COLUMN NOT FOUND ");
-				}
-			}
-		}
-		
-		if(!update){
-			if (!year && cells.length > 1) {
-				aux = "<" + resultado + "> qb:component _:node" + numfile + "egmfx"
-						+ col + " ." + "\n";
-				aux = aux + "_:node" + numfile + "egmfx" + col
-						+ " qb:dimension sdmx-dimension:refPeriod ." + "\n";
-				aux = aux + "\n";
-				insertDsd(aux, resultado + " qb:dimension sdmx-dimension:refPeriod");
-			}
-			if (configBean.getListDataConstant().size() > 0) {
-				for (DataBean data : configBean.getListDataConstant()) {
-					aux = "<" + resultado + "> qb:component _:node" + numfile
-							+ "egmfx" + col + " ." + "\n";
-					aux = aux + "_:node" + numfile + "egmfx" + col + " "
-							+ data.getDimensionMesure() + " "
-							+ data.getNormalizacion() + " ." + "\n";
-					aux = aux + "\n";
-					insertDsd(aux, resultado + " " + data.getDimensionMesure()
-							+ " " + data.getNormalizacion());
-				}
-			}
 		}
 		log.debug("End addHeader");
 	}
@@ -518,7 +349,197 @@ public class TransformToRDF {
 		log.debug("End addObservation");
 		return result;
 	}
+	
+	public static void generateCommonData(HashMap<String, ConfigBean> mapconfig, HashMap<String, String> idDescription){
+		int numfile = 1;
+		
+		File specsTtlFile = new File(specsTtlFileString);
+		try {
+			List<String> specsLines = FileUtils.readLines(specsTtlFile, "UTF-8");
+			for(String line : specsLines){
+				if(line.contains(" api:label ")){
+					String[] column = line.split(" ");
+					viewsSpecsTtl.add(column[0]);
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		for(String keyConfig : mapconfig.keySet()){
+			ConfigBean config = mapconfig.get(keyConfig);
+			
+			boolean year = false;
+			String resultado = "";
+			String aux = "";
 
+			resultado = Prop.host + "/" + Prop.eldaName + "/" + Prop.datasetName
+					+ "/dsd/" + config.getId();
+			aux = "<" + resultado + "> a qb:DataStructureDefinition ;" + "\n";
+			String description = idDescription.get(config.getId()+config.getLetters().get(0))!=null ? idDescription.get(config.getId()+config.getLetters().get(0)) : "";
+			aux = aux
+					+ "\trdfs:label \"Estructura de los cubos de datos que se corresponden con los informes "
+					+ config.getId() + ", "+description+"\"@es ;" + "\n";
+			String notation = "\"DSD-" + config.getId() + "\"";
+			aux = aux + "\tskos:notation " + notation + " ;" + "\n";
+			String letters = "";
+			for (String letter : config.getLetters()) {
+				letters += letter + " ";
+			}
+			aux = aux + "\trdfs:comment \"Esta estructura afecta a las areas: "
+					+ letters + "\"^^xsd:string ." + "\n";
+			aux = aux + "\n";
+			insertDsd(aux, resultado + " " + notation);
+			
+			int col = 1;
+			for(String keyData : config.getMapData().keySet()){
+				 DataBean data = config.getMapData().get(keyData);
+				 
+				 boolean noRepetido = true;
+				 if(Utils.v(data.getNormalizacion())){
+					if (!propertiesList.contains(data.getNormalizacion())) {
+						propertiesList.add(data.getNormalizacion());
+						if(!viewsSpecsTtl.contains(data.getNormalizacion())){
+							insertViewTTL(data.getNormalizacion());
+						}
+						
+					} else {
+						noRepetido = false;
+					}
+					if (!data.getNormalizacion().contains("sdmx-dimension:refPeriod")) {
+						aux = "<" + resultado + "> qb:component _:node"
+								+ numfile + "egmfx" + col + " ." + "\n";
+						if (!dsdList.contains(resultado + " "
+								+ data.getDimensionMesure() + " "
+								+ data.getNormalizacion())) {
+							Utils.stringToFileAppend(aux, dsdFile);
+						}
+						if (!data.getType().contains(Constants.URIType)) {
+							aux = "_:node" + numfile + "egmfx" + col + " "
+									+ data.getDimensionMesure() + " "
+									+ data.getNormalizacion() + " ." + "\n";
+							aux = aux + "\n";
+							insertDsd(
+									aux,
+									resultado + " "
+											+ data.getDimensionMesure()
+											+ " " + data.getNormalizacion());
+							if (noRepetido) {
+								String coded = data.getDimensionMesure()
+										.equals(Constants.mesure) ? ""
+										: ", qb:CodedProperty ";
+								propertiesContent.append(data.getNormalizacion()+ " a "
+										+ data.getDimensionMesureProperty()+ " , rdf:Property"
+										+ coded + ";" + "\n");
+								propertiesContent.append("\trdfs:label \""
+										+ Utils.weakClean(data.getName()) + "\"@es ;" + "\n");
+								propertiesContent.append("\trdfs:comment \""
+										+ Utils.weakClean(data.getName()) + "\"@es ;" + "\n");
+								propertiesContent.append("\trdfs:range "
+										+ data.getType());
+								if (data.getType().equals(
+										Constants.skosType)) {									
+									if (data.getMapSkos().keySet().size() > 0) {
+										propertiesContent.append(" ;" + "\n");
+										String key = data.getMapSkos()
+												.keySet().iterator().next();
+										if(Utils.v(key)){
+											String codeList = data.getMapSkos()
+													.get(key).getURI();
+											if(Utils.v(codeList)){
+												codeList = codeList.substring(0,
+														codeList.lastIndexOf("/"));
+												propertiesContent
+														.append("\tqb:codeList <"
+																+ codeList + "> ."
+																+ "\n");
+											}
+										}
+									} else {
+										propertiesContent.append(" ." + "\n");
+										if (Utils.weakClean(data.getName()).equals("")) {
+											TransformToRDF
+													.insertError(config.getId()
+															+ ". ERROR. CELL EMPTY "
+															+ ". SKOS FOR THIS COLUMN NOT FOUND ");
+											log.error(config.getId()
+													+ ". ERROR. CELL EMPTY "
+													+ ". SKOS FOR THIS COLUMN NOT FOUND ");
+										}
+										TransformToRDF
+												.insertError(config.getId()
+														+ ". ERROR. Column "
+														+ Utils.weakClean(data.getName())
+														+ ". SKOS FOR THIS COLUMN NOT FOUND ");
+										log.error(config.getId()
+												+ ". ERROR. Column "
+												+ Utils.weakClean(data.getName())
+												+ ". SKOS FOR THIS COLUMN NOT FOUND ");
+									}
+								} else {
+									propertiesContent.append(" ." + "\n");
+								}
+								propertiesContent.append("" + "\n");
+								Utils.stringToFileAppend(
+										propertiesContent.toString(),
+										propertiesFile);
+								propertiesContent.setLength(0);
+							}
+
+						} else {
+							aux = "_:node" + numfile + "egmfx" + col + " "
+									+ data.getDimensionMesure() + " "
+									+ data.getDimensionMesureSDMX()
+									+ ":refArea ." + "\n";
+							aux = aux + "\n";
+							insertDsd(
+									aux,
+									resultado + " "
+											+ data.getDimensionMesure()
+											+ " "
+											+ data.getDimensionMesureSDMX()
+											+ ":refArea");
+						}
+					} else {
+						year = true;
+						aux = "<" + resultado + "> qb:component _:node"
+								+ numfile + "egmfx" + col + " ." + "\n";
+						aux = aux + "_:node" + numfile + "egmfx" + col + " "
+								+ data.getDimensionMesure() + " "
+								+ data.getDimensionMesureSDMX()
+								+ ":refPeriod ." + "\n";
+						aux = aux + "\n";
+						insertDsd(
+								aux,
+								resultado + " " + data.getDimensionMesure()
+										+ " "
+										+ data.getDimensionMesureSDMX()
+										+ ":refPeriod");
+					}
+					col++;
+				 }
+			}
+			if (!year) {
+				aux = "<" + resultado + "> qb:component _:node" + numfile + "egmfx"
+						+ col + " ." + "\n";
+				aux = aux + "_:node" + numfile + "egmfx" + col
+						+ " qb:dimension sdmx-dimension:refPeriod ." + "\n";
+				aux = aux + "\n";
+				insertDsd(aux, resultado + " qb:dimension sdmx-dimension:refPeriod");
+			}
+			numfile++;
+			
+		}
+	}
+	
+	private static void insertViewTTL(String view){
+		
+		File specsTtl = new File(specsTtlFileString);
+		String line = view+" api:label \""+view.replace(":","_")+"\".";
+		Utils.stringToFileAppend(line, specsTtl);
+		
+	}
+	
 	public String getRdfFinal() {
 		return rdfFinal;
 	}
@@ -544,7 +565,7 @@ public class TransformToRDF {
 		log.debug("End insertError");
 	}
 	
-	protected void insertDsd(String aux, String search) {
+	protected static void insertDsd(String aux, String search) {
 		log.debug("Init insertDsd " + aux + " " + search);
 		if (!dsdList.contains(search)) {
 			dsdList.add(search);

@@ -1,0 +1,62 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/04-040018A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/04-040018>;
+	rdfs:label "Agricultura ecológica"@es ;
+	dct:identifier  "04-040018A" ;
+	rdfs:comment "Cubo de datos para 04-040018A"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040018A/eda55433-c219-37dc-a06c-2d41e87f31ad> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040018A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:superficie-total-agricultura-ecologica "60888.3718"^^xsd:double;
+	iaest-measure:superficie-calificada-agricultura-ecologica "48095.6597"^^xsd:double;
+	iaest-measure:superficie-calificada-en-reconversion "4945.1546"^^xsd:double;
+	iaest-measure:superficie-calificada-primer-ano-practicas "3819.7692"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040018A/5f7e5ef7-0fd8-3d8b-a2cf-61aa463a627f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040018A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:superficie-total-agricultura-ecologica "60177.5098"^^xsd:double;
+	iaest-measure:superficie-calificada-agricultura-ecologica "49535.2941"^^xsd:double;
+	iaest-measure:superficie-calificada-en-reconversion "4385.2741"^^xsd:double;
+	iaest-measure:superficie-calificada-primer-ano-practicas "3529.5771"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040018A/5197de00-7472-394e-b59a-979265ff0046> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040018A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:superficie-total-agricultura-ecologica "56907.6633"^^xsd:double;
+	iaest-measure:superficie-calificada-agricultura-ecologica "36743.9792"^^xsd:double;
+	iaest-measure:superficie-calificada-en-reconversion "3193.5251"^^xsd:double;
+	iaest-measure:superficie-calificada-primer-ano-practicas "1740.5787"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040018A/b08af9ed-4c61-36c6-ad8a-c09f50e6bf77> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040018A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:superficie-total-agricultura-ecologica "52343.2"^^xsd:double;
+	iaest-measure:superficie-calificada-agricultura-ecologica "33944"^^xsd:double;
+	iaest-measure:superficie-calificada-en-reconversion "1690.2"^^xsd:double;
+	iaest-measure:superficie-calificada-primer-ano-practicas "1863.2"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040018A/3cc0b978-02df-334e-ac3a-8eea37b07cb7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040018A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .

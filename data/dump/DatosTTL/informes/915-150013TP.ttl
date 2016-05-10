@@ -1,0 +1,481 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/915-150013>;
+	rdfs:label "Senado 2008. Resultados"@es ;
+	dct:identifier  "915-150013TP" ;
+	rdfs:comment "Cubo de datos para 915-150013TP"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/54053285-02c9-3b54-83a1-ea92abb77a84> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "174511"^^xsd:int;
+	iaest-measure:siglas "PSOE"^^xsd:string;
+	iaest-measure:diputados "3"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/b778a2e3-f431-355b-b530-a31766f3ddf9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "137070"^^xsd:int;
+	iaest-measure:siglas "PP"^^xsd:string;
+	iaest-measure:diputados "1"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/521b8bd2-00ca-37b2-bce8-5491ca059c4b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "23949"^^xsd:int;
+	iaest-measure:siglas "PAR"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/512369ef-a045-33fb-8007-e725cfa304d6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "13996"^^xsd:int;
+	iaest-measure:siglas "CHA"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/a279c13a-e039-317f-a8a0-eb9bc9be2a09> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "10108"^^xsd:int;
+	iaest-measure:siglas "IU"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/f0243eb7-b7ac-393d-9a44-c369cb103b8e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "4638"^^xsd:int;
+	iaest-measure:siglas "UPyD"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/b1b4f1f8-0572-331e-a342-96a4489eb1b0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "2822"^^xsd:int;
+	iaest-measure:siglas "LV"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/2b65ff8e-b960-39eb-b403-af6cc5df0c63> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "275"^^xsd:int;
+	iaest-measure:siglas "C's"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/d41f4f38-d32b-3e07-af8e-18ba0c653874> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "478"^^xsd:int;
+	iaest-measure:siglas "PACMA"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/20505801-ada1-3d75-8afd-40b897987e17> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "305"^^xsd:int;
+	iaest-measure:siglas "PUM+J"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/4ca293fc-c3f9-3ac8-92f7-53230e5f3c5f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "222"^^xsd:int;
+	iaest-measure:siglas "pCUA"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/43d29c52-1bae-3115-8405-65a57baac8d2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "243"^^xsd:int;
+	iaest-measure:siglas "PSD-FIA"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/f7684ec6-494f-3f07-b53e-64be2da0b468> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "126"^^xsd:int;
+	iaest-measure:siglas "TA"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/94846fa5-b4c1-368a-b927-2b7236d701ae> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "244"^^xsd:int;
+	iaest-measure:siglas "FE de las JONS"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/586c956b-f92e-3570-a92f-0765fe32008f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "291"^^xsd:int;
+	iaest-measure:siglas "PFyV"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/a68e2ea3-56f9-3227-a1a1-0af3ffd068b6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "191"^^xsd:int;
+	iaest-measure:siglas "DN"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/ab30f0d6-fd53-31bf-b59d-6e4f00078d34> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "283"^^xsd:int;
+	iaest-measure:siglas "POSI"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/7d2afcb2-eaf0-3a78-ae7f-0ac5bc352622> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "77"^^xsd:int;
+	iaest-measure:siglas "AES"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/59c865a1-c0da-3725-9e14-87ec80d4681e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "82"^^xsd:int;
+	iaest-measure:siglas "PH"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/44e2c975-c602-350f-a159-28b201b052cb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "39"^^xsd:int;
+	iaest-measure:siglas "CTC"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/5b2947fe-b2ea-306f-badd-e780bef680dc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "107201"^^xsd:int;
+	iaest-measure:siglas "PSOE"^^xsd:string;
+	iaest-measure:diputados "3"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/be66a14b-b98d-38be-88f0-73f373bb496e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "95450"^^xsd:int;
+	iaest-measure:siglas "PP"^^xsd:string;
+	iaest-measure:diputados "1"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/dd14a17c-e9f7-3b2e-9325-dce70776af05> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "21913"^^xsd:int;
+	iaest-measure:siglas "PAR"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/acc90dca-585b-3de3-aba8-2ad9a46235ff> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "7786"^^xsd:int;
+	iaest-measure:siglas "CHA"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/b5faf2d4-baf8-3f38-a9ab-ec1bb2a93f7f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "6372"^^xsd:int;
+	iaest-measure:siglas "IU"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/194b8732-6342-3062-be0a-04247810e665> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "2364"^^xsd:int;
+	iaest-measure:siglas "UPyD"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/33e89821-0204-3f45-b73d-e58b9214afb3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "648"^^xsd:int;
+	iaest-measure:siglas "LV"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/3895631d-8bf5-326c-80c4-8b153de842a1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "158"^^xsd:int;
+	iaest-measure:siglas "C's"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/0303da40-435f-36d4-bc5f-4da6503fc5ae> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "327"^^xsd:int;
+	iaest-measure:siglas "PACMA"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/9be6c32c-1c5d-36ed-b558-a461214cace4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "269"^^xsd:int;
+	iaest-measure:siglas "PUM+J"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/ca402a67-aa84-31a6-978f-478a2799c9b5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "101"^^xsd:int;
+	iaest-measure:siglas "pCUA"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/e2f63695-52a2-32f6-ac6c-77244cc536de> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "89"^^xsd:int;
+	iaest-measure:siglas "PSD-FIA"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/9c5b8baa-65fe-307d-9422-64876429dcef> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "151"^^xsd:int;
+	iaest-measure:siglas "FE de las JONS"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/c9375c8b-694d-379b-84b2-65799ea88582> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "39"^^xsd:int;
+	iaest-measure:siglas "PFyV"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/646b0667-2252-3c41-952c-9d2021c203f1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "64"^^xsd:int;
+	iaest-measure:siglas "DN"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/eefb2808-5989-333f-b611-d6bed627c4fd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "70"^^xsd:int;
+	iaest-measure:siglas "POSI"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/2983b476-f6eb-3e1b-b996-82ecaabfbd22> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "359"^^xsd:int;
+	iaest-measure:siglas "AuN"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/f2e57574-a620-32db-8ded-131c70a4e2a1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "79"^^xsd:int;
+	iaest-measure:siglas "AES"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/c1739db6-121c-319d-9886-6bfc5f505708> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "44"^^xsd:int;
+	iaest-measure:siglas "MCE"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/4e40c928-acec-3aed-88d2-3d94bbd8cea5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "29"^^xsd:int;
+	iaest-measure:siglas "CTC"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/63978067-2b39-357a-9ae1-126a0b861962> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "114"^^xsd:int;
+	iaest-measure:siglas "PCPE"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/12810393-82f5-31c2-b5d0-b66c0d0f64f2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "711921"^^xsd:int;
+	iaest-measure:siglas "PSOE"^^xsd:string;
+	iaest-measure:diputados "3"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/f2fbeb9c-78ef-363f-8c03-ae3136832faf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "558106"^^xsd:int;
+	iaest-measure:siglas "PP"^^xsd:string;
+	iaest-measure:diputados "1"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/4f66638b-68ae-3159-8803-b45b67b9f3e4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "86876"^^xsd:int;
+	iaest-measure:siglas "PAR"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/d5e107e4-6fb1-3e0c-82a9-f5e46f3463d7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "85500"^^xsd:int;
+	iaest-measure:siglas "CHA"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/abb1e453-1cf1-3c2d-96d7-45f90614d6c9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "43893"^^xsd:int;
+	iaest-measure:siglas "IU"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/7bd3e890-fc82-3f2a-9508-0475589d642e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "18300"^^xsd:int;
+	iaest-measure:siglas "UPyD"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/79a6b0c1-9954-3dd4-a478-1dccb1f22915> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "7436"^^xsd:int;
+	iaest-measure:siglas "LV"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/c1b53cff-7be8-306f-a801-7b2e549edf1b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "2727"^^xsd:int;
+	iaest-measure:siglas "C's"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/ffb8907f-20eb-3e28-924e-c7fbcf3dc143> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "2095"^^xsd:int;
+	iaest-measure:siglas "PACMA"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/31e3da13-5497-387b-bdab-46f65a6ecc92> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "1223"^^xsd:int;
+	iaest-measure:siglas "PUM+J"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/03d35c0d-1e0e-30a7-b6e6-704dd5adb3ee> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "1292"^^xsd:int;
+	iaest-measure:siglas "pCUA"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/2cbbd91d-d0aa-3a3e-a5fd-db3a80f0de6d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "881"^^xsd:int;
+	iaest-measure:siglas "PSD-FIA"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/e4f63d48-61d5-3b5c-9c91-f08ed7c3349f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "802"^^xsd:int;
+	iaest-measure:siglas "TA"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/44c6eaf3-fcbd-3129-822e-04ca7c8f1dc4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "513"^^xsd:int;
+	iaest-measure:siglas "FE de las JONS"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/9c7244fe-a429-3103-b6cd-04ccaeac7597> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "472"^^xsd:int;
+	iaest-measure:siglas "PFyV"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/97209974-08f0-3a04-8e79-d70ff295e409> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "441"^^xsd:int;
+	iaest-measure:siglas "DN"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/44a06c0b-478f-3be9-86c8-57c240924f46> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "291"^^xsd:int;
+	iaest-measure:siglas "POSI"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/b3bf43f2-71be-3f89-b0a4-d9d3998c5f8b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "217"^^xsd:int;
+	iaest-measure:siglas "AuN"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/60edb7b8-7f7f-32eb-b560-19b33638ea00> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "538"^^xsd:int;
+	iaest-measure:siglas "FRENTE"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/3492aa36-9a12-3be2-aecf-ba96caa8609e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "305"^^xsd:int;
+	iaest-measure:siglas "AES"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/35ceff0c-be7c-3e3a-9c15-3edff951c864> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "348"^^xsd:int;
+	iaest-measure:siglas "FA"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/c4de5a20-6cfd-34ab-8c06-97931d04461e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "256"^^xsd:int;
+	iaest-measure:siglas "PH"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/950f382e-24f8-396c-b325-62e92a0d2120> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "263"^^xsd:int;
+	iaest-measure:siglas "MCE"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150013TP/2b2f0047-9a71-30fa-a511-3d43c034f19f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150013TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:votos "136"^^xsd:int;
+	iaest-measure:siglas "CTC"^^xsd:string;
+	iaest-measure:diputados "0"^^xsd:int.

@@ -1,0 +1,1412 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030063>;
+	rdfs:label "Hogares unipersonales por edad y sexo"@es ;
+	dct:identifier  "03-030063TC" ;
+	rdfs:comment "Cubo de datos para 03-030063TC"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/3c958208-b370-35e3-896c-0a197bab4258> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "126"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/e9705a5d-d4c6-32ea-b96a-32c8971efc9f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "218"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/f74c4ab2-566b-3871-8908-360a1483d1a5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "504"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/fdae098f-7834-398e-800f-0e765d496a18> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "214"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/2d9d4e1b-22b5-3184-a8c3-51674bcc4214> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "472"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/6979a397-5627-3f04-b5d8-dcd02dfde578> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "245"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/ff2ac842-8e11-3e25-a3f1-16408f74dad3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "87"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/24994d42-022e-34d8-9935-b3f4a1343a50> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "111"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/3a09b129-d221-3abd-850a-7952c92fabd2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "295"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/08928773-d1e7-3554-9e7a-09a57f7b06ee> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "119"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/0458bb6b-0bb4-390b-8790-e2cffa59fd38> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "262"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/1ee3d96f-6b5c-326f-8f0c-6c10cbf4d3b1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "158"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/898d57ca-957f-3f63-9a24-7bf676eb9b93> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "36"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/b22dd3e4-4203-31ba-aa14-210f6bf1a3e4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "66"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/4eadaac3-f4aa-301f-b633-11fdf4b193a3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "180"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/a8073bb9-02a8-3c51-a6aa-0755dcd5a42a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "82"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/a97c157b-3007-3cfe-8e9f-374e7ff14853> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "259"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/e3abdf4b-dadb-3ae4-bfbd-af61eebcf236> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "128"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/f41a4f6b-b532-35c5-8680-b9880694b405> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "101"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/ed7b2c82-6820-3cc4-ac1c-351897247727> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "127"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/34ebe3ea-4a7a-357a-a548-42d02e20d419> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "386"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/1dd2ab86-1709-3397-a405-4e4e1659f193> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "168"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/5f023b7e-5329-3828-892e-ae619c5c661c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "357"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/90526f32-d3c5-3e55-847b-3d35474390c4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "290"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/a427ce07-690e-38b4-b7c6-17906985b98f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "102"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/e4d612e8-54ad-3a69-b1c5-35c2f81dbeab> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "248"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/3b876fff-2ce5-3a1a-ba67-b69c423b99c0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "1038"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/521502bd-c72a-3605-a209-8a6cbde2a888> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "221"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/106c4c1b-d617-3c7f-a515-4d656c6ec681> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "596"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/74b08c0b-8361-3e6b-a566-3edfaab63dc8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "476"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/26d03acf-1a45-36ac-8c6a-ad6662b06f17> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "354"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/ef7838df-f8ff-3617-b7e2-0c112528dc01> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "681"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/0172d795-8d9d-39e1-9ac1-87c516989235> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "1782"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/a5f17b80-fb49-328b-9387-61af7be97336> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "467"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/4844cbac-2ee2-38de-947b-7c8fba6a3c9d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "1016"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/5590bce4-aa56-31ee-af7f-a549a0a399c5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "695"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/1971af82-3c36-345c-ad94-8b660de07065> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "121"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/6b48454f-2723-3117-a9ee-fd2775097af6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "208"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/97ba9480-c297-34d8-a6d8-1f595f48f44e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "775"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/cc8aa2c0-4562-30a4-a311-0912e0726193> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "155"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/48ff3b46-a34a-333e-9fd9-753fbae91a77> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "398"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/7c51062f-0128-3900-a953-b4a3d2b77c43> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "367"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/576d99e6-06cd-329a-b394-b52bc903e378> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "65"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/b80d1f09-8e5a-3164-8b28-e5ed304d5f29> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "163"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/3f4e7408-24a2-32af-8d67-92e6bd9af304> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "605"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/91c61fae-1a73-3e26-a649-7bfa43934a9d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "175"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/0c8b445d-e5a0-3e42-a158-eebe350cd462> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "305"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/51cac052-b27e-3a98-bf37-db488a42a2d4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "244"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/cba556b8-fc97-3784-9531-8cfa1824cee8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "47"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/f58bc47b-5710-33aa-94b1-557a2a77606f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "110"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/3df408bd-0a13-32b1-935d-e5804bb5f23b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "649"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/fe6f185c-3f85-3d22-9787-2c3b719a70e6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "113"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/3d2d2e12-8dda-3d4c-969d-550731493347> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "242"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/5cdfc4b0-335d-3ae1-b10e-9c7d4ad2cc07> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "281"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/3a1c4dfd-99cc-32b3-a73e-74d00bf9f369> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "58"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/b91f7a0f-1d76-380f-985d-06aa8e2079ff> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "150"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/29aa6bc9-fc66-3a78-9b0a-0620c38b7c37> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "659"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/6ab29ba6-e740-3638-9e5d-286276d33fcb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "123"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/db2c084a-dc64-37aa-9de8-412d2bcfc607> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "434"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/2c7dcdf6-7b31-38b6-93f2-113041cbbf72> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "360"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/54d69307-6b14-38ae-ab79-b8b56fc4facf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "56"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/083c335b-9b29-3ff6-bad4-126a9adffdbf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "122"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/5ad65be8-0b8c-3263-841f-2a4ace24294b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "495"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/aa626815-bd90-35e8-86d9-2a7477047a3f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "212"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/0d6f6f11-a292-3a2b-bf9b-4bb28cd46cdb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "255"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/9f2c73a8-6d4c-389b-9025-c4760b136e4f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "202"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/6c038e07-3b11-356c-8652-3de3eb5d1bff> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "64"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/04efa62c-2bf4-3a6a-ade0-3faaeb283340> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "126"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/59d20f97-bf34-3739-ac00-9e7c0d030caf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "545"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/61d0ec56-a89c-3fa0-92c3-2acf90ff8a04> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "92"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/1961bb7c-28f0-3f5c-b12c-3a366b5833d3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "227"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/bae9944a-4f21-3eeb-86e0-610055385815> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "211"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/71f5b834-4ade-35a0-9f49-9caa63cd80f9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "64"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/a79bc875-d11a-3e00-9ece-976e37031008> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "112"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/3a6738ee-50de-3c5e-a42e-8cc29fc000ea> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "560"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/9be868f9-7bd9-3814-8ea8-5bae7aa987ea> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "127"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/eae2f1fe-805a-355b-9b36-82b1167504fb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "263"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/33e63ed2-1d52-3d81-aeac-5cbb79fe6746> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "286"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/658e3c87-7d43-3789-9e39-55f1005b67dd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "22"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/fc17b739-178b-3e7f-8b11-84a79d7e2dfa> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "49"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/c9345b0c-fe0a-3eb3-a15e-8e8e42158901> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "251"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/54a775d1-edbd-3c00-ae64-618c50049066> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "47"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/47af72f2-f5cb-3a7f-8387-3912cf0eb7fb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "122"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/0244b98d-fd28-3114-807c-96a0fabbfc72> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "116"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/3b81af28-dd75-360e-a055-f401e56baddb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "74"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/e5fbe7fa-1505-345d-bef5-67d654d72df6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "141"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/6ab6abdc-8c9f-3014-a75d-cda9fc57614d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "713"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/602ad499-3549-349f-975f-e5eb4afdbd6b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "178"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/680d8b66-94af-314b-9487-dffba14c8f34> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "339"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/5b0f0419-ecfa-373f-a765-d904a4c9fcf7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "268"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/e40b5ebc-1d1c-3e1a-b14f-e2259a33b213> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "87"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/6fd3aeb9-ebc1-3cd4-ba3e-94f277a21a78> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "153"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/feb5e58e-fdbe-3fb9-99f9-1ba06b88c764> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "727"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/452c4e33-258d-3176-ad75-ce333d4631a3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "202"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/b7628cf9-c639-36b2-8797-7b5ef1de42f4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "392"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/f19a9050-e0b9-31a1-9a2f-0b6c75b37ab3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "355"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/0ba15836-7fa1-3e01-ab39-3c45bcd14cc0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "3837"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/a381d55c-819f-3667-b1be-2e21a9f4e4a6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "8291"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/a3ca1c88-9236-3ecb-a4ac-2d75faeff926> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "19547"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/11f4feb6-45d5-322f-a7ce-ffe75df877f5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "5301"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/323b9ff4-118c-332c-a5f4-0b6c5497fbd1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "8603"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/7c722b02-69f2-3917-80cc-21af8f756dbe> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "4816"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/1c3b45cb-5e47-37ad-a610-f6fbddd45bed> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "57"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/bdf5670a-7332-34ff-86e7-93e0a7d07f0a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "86"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/d47903e9-7278-3b23-9f27-ec7b9b78c0e0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "385"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/8eec2a78-5799-3641-aacd-77ab8a5e54cb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "95"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/af782117-f57a-31ce-9aba-7be8c37babf8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "190"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/1f7d274c-c5c1-3c24-9b01-af6cc5d7d844> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "193"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/e76581d1-9120-3fb0-9162-e39ba000023c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "54"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/32b01d6c-751f-394d-9047-6db597ad4ff7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "90"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/d6c3b34d-38a5-35c1-bc68-36cb7becfe12> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "512"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/4b8b0013-4579-3997-a250-5902d5095094> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "93"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/a8aaa034-811f-344e-830e-9574f6de59fc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "199"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/a4bd4942-2728-31a0-9694-ff3695cf94b5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "222"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/c5c1c23d-f88d-363f-aaf7-b9ba06928ce5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "163"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/aa452bd4-d9ac-36a8-8b36-57a3c46914ae> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "334"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/8639733d-54fd-334b-8e16-eec1d610227f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "1880"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/535581e5-f401-3d15-bd5d-a7d15d250436> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "271"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/6b5d6ad9-97c6-35a4-81ff-1632782d87be> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "682"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/f481f823-0a84-3089-88f0-ebefaf04d679> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "839"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/e63eb3c7-c749-3649-85e5-2ea71a78ae8c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "38"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/81d3400a-49cd-390c-9adf-cc765dfaff25> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "63"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/c3de9e32-de4f-3c1e-8ff3-512bcfe38e30> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "368"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/51a94ddc-7121-351d-ad93-8808cced160a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "89"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/36131057-2501-376b-b037-6ba66419c208> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "205"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/d192ff0a-f014-37e8-bb32-abccec293e12> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "164"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/a32ee0b8-5b09-3197-b2d1-c14df7da9913> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "18"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/7aa3340a-f2c9-320e-9efc-ef9aa3453516> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "43"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/c65b69bc-8c1f-3c21-90ef-9b6c46d31f15> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "309"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/2047f5b5-4cc6-32aa-889e-858b766e5634> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "32"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/24b795eb-601a-301e-b1c8-5c8b64f8eda8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "127"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/1f124162-9858-30ed-813d-f5f47781d820> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "161"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/1a3fe52f-ba68-38c5-b1f3-d39dadbb10b0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "14"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/c268d168-0e4a-352f-aa72-842579733108> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "62"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/9514ecbe-af9e-3792-93d5-16638d73c7a9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "378"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/d7e9685e-cbdf-302e-a40c-3acc40cece53> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "42"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/046321e6-a042-3388-8447-1c138a32f119> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "127"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/f6c3e065-bb04-3c1a-86fd-100de312d4b9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "167"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/db68ff0b-0718-3443-b4c0-062bdb7859cd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "25"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/4ca2f105-65d7-3fc3-ae73-79da24e46c06> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "62"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/cb8d2950-0f2a-3647-abb9-3f96558af736> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "307"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/fe520f1a-8c0e-364b-9637-b57e8ee129aa> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "59"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/b58ce9bf-4845-3027-9807-b4cd1a8553eb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "185"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/f9d40125-fbe4-3cd6-98b3-1f772f54fe3f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "147"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/a45f02cd-8d68-3e36-8b02-f3c5455d0abf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "53"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/aa8bd751-3d2c-3c36-bd57-145289c780a6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "132"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/12ead574-6c7f-3776-914b-56a36f1e16f4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "704"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/4f8f5e75-2401-35f2-b3a6-e6389a8f47e1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "85"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/3d657ea8-b08d-30b0-bece-4c60a0f21f21> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "285"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/61a870ac-a820-3eb3-ab30-c3f6adda3a11> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "400"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/0fbc7fe1-ece8-3862-8570-c02bf699102f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "25"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/4b4def79-9e68-3181-97dd-22b0bdbbecfc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "69"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/63808283-6ae1-3179-bbe8-c62becfe33e2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "381"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/204ae3ea-8143-3c96-8f81-9a55042f029a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "76"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/224e8965-90c1-3032-add9-48efe95038cf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "190"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/ce062984-a148-3aa2-acbb-54cf2664b76e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "168"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/79a2fa95-c537-32ef-84f8-27d66cdf74fc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "22"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/c6893c9d-bb05-3576-b53c-4569f25d45b0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "46"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/06f0ebe2-cb96-340c-bd28-204c622fc44e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "334"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/6c51cff6-bf32-3c3b-b3c1-a91b139e1e6d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "45"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/d245ab81-616d-3e91-8d3a-85e6cab16931> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "145"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/b76c50b5-39e9-3b3c-8bf5-ccb465c8e73e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "148"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/a0286cf2-b1c6-3548-950f-b5744947da85> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "108"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/d8a44286-cfa5-316e-9cdc-82548fe93467> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "157"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/2ed85c43-024e-3340-be7d-d23551084500> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "853"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/74d76e02-d826-39cb-9d93-89e7939a111a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "184"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/27330ef9-16f2-32b3-8b2c-f3878b515896> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "314"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/7e7a3279-2ce4-3db8-96dc-1d23f309808f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "333"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/db8dd4a4-1dfa-3984-a966-5e66b2544ed0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "270"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/72a2a3d6-5aa4-38ed-95f2-3cb198da30fa> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "479"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/6f78048d-cf3a-3274-b440-47eb5108bee8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "1344"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/12c4e9ae-ab05-3c5b-9767-f2ab274637ee> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "375"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/5cf96500-e321-30bb-9f2e-b856424f5129> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "642"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/3b7da051-35e0-3402-8d9e-5dcd904a8812> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "568"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/6628f180-4692-3820-8d53-ef9a019c3933> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "16"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/56c1a5ca-f6e6-3cb1-a97f-8d03e23c629e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "42"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/3aa2a9cc-b62d-315f-b75a-d292aa144cb1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "182"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/80d19e88-ae17-3ec8-a89a-d686201b028e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "37"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/7c743dc4-a287-393d-b995-b6985d5ceaa8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "103"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/8ceb16bd-a9a9-36b4-be6f-1ad5aed54e74> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "98"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/8228d76d-3eb2-39bc-af3e-125ffd3a1a01> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "26"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/30a400db-cf59-33c3-bfc0-9462f89f0f3d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "55"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/26f70609-5d56-3152-a6ec-55d23c0eaf54> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "253"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/4dc969cf-4da2-3959-ac98-b3728652ffb3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "44"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/454699da-f6db-3c34-9046-2acc63cf4a6a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "159"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/79481cd6-5676-3254-9c9d-5b11906f85a8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "138"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/5912bed2-19a9-3a77-b18d-3715ec036f55> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "64"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/0fc44ec7-0ab5-3e39-b441-c9b82001c81a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "94"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/c15232b5-6207-3fdb-8ea1-11e244603461> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "354"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/efc7cc6a-7757-3d13-bb8e-1ecc60b88c04> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "109"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/b62602ba-aed4-34c7-a68f-6804aefee3a3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "248"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/f0f79485-0fea-35dd-832e-0e74924a496d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "229"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/679214c9-1127-387e-bbab-bd103a0a6b0a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "32"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/26cb4eaf-2073-3d99-ab1b-6f4d5ea92ded> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "47"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/5b78ba8e-c2db-371d-80ec-a913416c77df> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "362"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/6d24cb79-ec25-30db-beaa-fde6be2228ab> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "16 a 34 años"^^xsd:string;
+	iaest-measure:numero-hogares "57"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/467c7889-8c85-3ea1-bb87-96a97996675c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "35 a 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "175"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030063TC/1ef8d81e-c228-3f6a-93a1-0d13bdf3a51c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030063TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:edad "Mayores de 64 años"^^xsd:string;
+	iaest-measure:numero-hogares "214"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

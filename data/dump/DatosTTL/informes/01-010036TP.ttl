@@ -1,0 +1,257 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010036>;
+	rdfs:label "Entidades de depósito. Oficinas"@es ;
+	dct:identifier  "01-010036TP" ;
+	rdfs:comment "Cubo de datos para 01-010036TP"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/bba669c0-108c-3ec9-b936-f2af6e23abcd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:total "369"^^xsd:int;
+	iaest-measure:bancos "86"^^xsd:string;
+	iaest-measure:cajas "157"^^xsd:string;
+	iaest-measure:cooperativas "126"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/f585fa99-eb49-3d2f-8d7c-752af1e6aadf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:total "225"^^xsd:int;
+	iaest-measure:bancos "47"^^xsd:string;
+	iaest-measure:cajas "114"^^xsd:string;
+	iaest-measure:cooperativas "64"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/9987e06d-7205-3d24-ba81-ec8dc89925fa> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:total "1052"^^xsd:int;
+	iaest-measure:bancos "278"^^xsd:string;
+	iaest-measure:cajas "537"^^xsd:string;
+	iaest-measure:cooperativas "237"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/4448b8f6-7223-35f5-b510-b36036f63d35> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:total "363"^^xsd:int;
+	iaest-measure:bancos "83"^^xsd:string;
+	iaest-measure:cajas "157"^^xsd:string;
+	iaest-measure:cooperativas "123"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/784bb3e3-de84-3267-b9e5-d40d890f68f3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:total "226"^^xsd:int;
+	iaest-measure:bancos "46"^^xsd:string;
+	iaest-measure:cajas "114"^^xsd:string;
+	iaest-measure:cooperativas "66"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/48ebc550-703a-33a5-810d-4e323c56b824> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:total "1070"^^xsd:int;
+	iaest-measure:bancos "278"^^xsd:string;
+	iaest-measure:cajas "544"^^xsd:string;
+	iaest-measure:cooperativas "248"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/d950deff-abda-3b32-a568-066ff1fa825b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:total "354"^^xsd:int;
+	iaest-measure:bancos "83"^^xsd:string;
+	iaest-measure:cajas "157"^^xsd:string;
+	iaest-measure:cooperativas "114"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/6f7a8731-46a4-33fb-9a0c-35a8d1b6df8e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:total "227"^^xsd:int;
+	iaest-measure:bancos "45"^^xsd:string;
+	iaest-measure:cajas "115"^^xsd:string;
+	iaest-measure:cooperativas "67"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/285942b8-a644-3072-b81c-fdaad281d10e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:total "1086"^^xsd:int;
+	iaest-measure:bancos "272"^^xsd:string;
+	iaest-measure:cajas "562"^^xsd:string;
+	iaest-measure:cooperativas "252"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/c8fa1a69-bc3f-316c-b7b0-27ad1520ceef> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:total "355"^^xsd:int;
+	iaest-measure:bancos "81"^^xsd:string;
+	iaest-measure:cajas "160"^^xsd:string;
+	iaest-measure:cooperativas "114"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/1822f253-ab8c-3c5c-91f4-7ea879d0007f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:total "228"^^xsd:int;
+	iaest-measure:bancos "43"^^xsd:string;
+	iaest-measure:cajas "117"^^xsd:string;
+	iaest-measure:cooperativas "68"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/13cc5d26-7a7f-36cc-951b-2f540c07ccbe> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:total "1123"^^xsd:int;
+	iaest-measure:bancos "277"^^xsd:string;
+	iaest-measure:cajas "587"^^xsd:string;
+	iaest-measure:cooperativas "259"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/0a2bd0bb-7b48-3846-a5db-6e0638ccc242> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:total "362"^^xsd:int;
+	iaest-measure:bancos "89"^^xsd:string;
+	iaest-measure:cajas "165"^^xsd:string;
+	iaest-measure:cooperativas "108"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/8e7f5f1e-208c-37a6-8f23-73a37f129cf1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:total "238"^^xsd:int;
+	iaest-measure:bancos "44"^^xsd:string;
+	iaest-measure:cajas "121"^^xsd:string;
+	iaest-measure:cooperativas "73"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/f15df57b-c138-3c1c-a819-28b128093c2a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:total "1187"^^xsd:int;
+	iaest-measure:bancos "287"^^xsd:string;
+	iaest-measure:cajas "624"^^xsd:string;
+	iaest-measure:cooperativas "276"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/5d48eef0-54a6-3cf4-a6d8-123e8f4ad5fb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:total "362"^^xsd:int;
+	iaest-measure:bancos "89"^^xsd:string;
+	iaest-measure:cajas "165"^^xsd:string;
+	iaest-measure:cooperativas "108"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/9576b038-1059-3861-b11e-239042c9e6fc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:total "238"^^xsd:int;
+	iaest-measure:bancos "44"^^xsd:string;
+	iaest-measure:cajas "121"^^xsd:string;
+	iaest-measure:cooperativas "73"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/9dc0946d-2db1-3b12-9a44-5e739c51bc94> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:total "1187"^^xsd:int;
+	iaest-measure:bancos "287"^^xsd:string;
+	iaest-measure:cajas "624"^^xsd:string;
+	iaest-measure:cooperativas "276"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/20cd8561-4148-321f-99dd-b30a82104c20> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:total "358"^^xsd:int;
+	iaest-measure:bancos "88"^^xsd:string;
+	iaest-measure:cajas "165"^^xsd:string;
+	iaest-measure:cooperativas "105"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/b1734da5-bd3a-3fd9-8ab8-7f5db6edb5f9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:total "236"^^xsd:int;
+	iaest-measure:bancos "42"^^xsd:string;
+	iaest-measure:cajas "121"^^xsd:string;
+	iaest-measure:cooperativas "73"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/0e6a63db-f9ea-3ca0-bcb0-ed41c23f5957> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:total "1202"^^xsd:int;
+	iaest-measure:bancos "288"^^xsd:string;
+	iaest-measure:cajas "633"^^xsd:string;
+	iaest-measure:cooperativas "281"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/90ef4e33-2a38-35b6-8461-0b688ba952da> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:total "347"^^xsd:int;
+	iaest-measure:bancos "84"^^xsd:string;
+	iaest-measure:cajas "163"^^xsd:string;
+	iaest-measure:cooperativas "100"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/5c93b909-91cc-3f3e-b80c-0554e6ee6128> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:total "235"^^xsd:int;
+	iaest-measure:bancos "40"^^xsd:string;
+	iaest-measure:cajas "121"^^xsd:string;
+	iaest-measure:cooperativas "74"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/a2a8365f-ca9e-3f01-af9c-53289596272a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:total "1153"^^xsd:int;
+	iaest-measure:bancos "274"^^xsd:string;
+	iaest-measure:cajas "620"^^xsd:string;
+	iaest-measure:cooperativas "259"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/3bf80704-68f9-373f-98c8-6d5af20bb444> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:total "332"^^xsd:int;
+	iaest-measure:bancos "83"^^xsd:string;
+	iaest-measure:cajas "159"^^xsd:string;
+	iaest-measure:cooperativas "90"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/4eda01e8-e743-3899-8937-d2e9ea53fb28> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:total "233"^^xsd:int;
+	iaest-measure:bancos "40"^^xsd:string;
+	iaest-measure:cajas "119"^^xsd:string;
+	iaest-measure:cooperativas "74"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/143de1fb-4add-3fcc-8ce4-bb070dd8fbf0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:total "1116"^^xsd:int;
+	iaest-measure:bancos "280"^^xsd:string;
+	iaest-measure:cajas "600"^^xsd:string;
+	iaest-measure:cooperativas "236"^^xsd:string.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/b6e21fee-f001-30a9-b045-7833289c250a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:total "324"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/f70ecd0f-1a1c-3673-8e59-cac129ac94cb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:total "228"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010036TP/9c6e9617-dc53-38f5-b099-3e4eca198adf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010036TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:total "1060"^^xsd:int.

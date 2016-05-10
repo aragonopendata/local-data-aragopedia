@@ -1,0 +1,292 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/03-030047A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030047>;
+	rdfs:label "Población ocupada según condición socioeconómica"@es ;
+	dct:identifier  "03-030047A" ;
+	rdfs:comment "Cubo de datos para 03-030047A"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/7caa416c-28f6-31b4-8688-44973110253f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/empresarios-agrarios-con-asalariados> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "316"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/363420b5-ac48-35c6-bf1f-51e0fc0a5ecf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/empresarios-agrarios-con-asalariados> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "2367"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/8cffaeb0-b33e-365c-b4ce-70ff68be31b4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/empresarios-agrarios-sin-asalariados> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "2317"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/4f36bd9b-6a45-3ed2-9c34-d835afb1369c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/empresarios-agrarios-sin-asalariados> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "18579"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/aab150b0-8bc0-3ec5-825e-ba9b12161bb1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/miembros-de-cooperativas-agrarias> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "25"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/5c7eae2c-db5f-3476-acd3-0a2bd4aebb6e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/miembros-de-cooperativas-agrarias> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "119"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/34a7a651-91bb-3be3-ab42-ade5bba05bfc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/directores-y-jefes-de-explotaciones-agrarias> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "26"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/1b9849dc-52f4-3bb6-a0c7-82c6b83b4d64> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/directores-y-jefes-de-explotaciones-agrarias> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "117"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/63d1828d-14ca-3fad-a753-40547d18d9df> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/resto-de-trabajadores-de-explotaciones-agrarias> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "1146"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/65551716-bf7d-36af-a2e9-55aafc688038> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/resto-de-trabajadores-de-explotaciones-agrarias> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "8277"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/8aca32e3-de45-3efe-925c-6ca2895d8f85> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/profesionales-tecnicos-y-asimilados-que-ejercen-su-actividad-por-cuenta-propia-con-o-sin-asalariados> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "4197"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/57b38036-4e63-3707-8e8f-f4e8949e85ac> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/profesionales-tecnicos-y-asimilados-que-ejercen-su-actividad-por-cuenta-propia-con-o-sin-asalariados> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "8981"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/6d45110b-ae5a-3933-8862-24fd241b1c09> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/empresarios-no-agrarios-con-asalariados> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "7480"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/bcbf7d7f-8ef2-3d49-be32-817768e6dd27> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/empresarios-no-agrarios-con-asalariados> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "21137"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/d523cbd4-5997-365f-819d-350b2264c240> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/empresarios-no-agrarios-sin-asalariados> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "12439"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/06d6467a-7781-3395-ac21-16be8eccc937> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/empresarios-no-agrarios-sin-asalariados> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "23638"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/7cdc84fc-2bca-3f4a-b789-08d4e55f1c2a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/miembros-de-cooperativas-no-agrarias> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "700"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/21a406c2-52d3-33ed-9f1c-4888e447dc44> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/miembros-de-cooperativas-no-agrarias> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "717"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/a8894db3-66b4-38b3-a2eb-c4fc6b238181> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/directores-y-gerentes-de-establecimientos-no-agrarios-altos-funcionarios-de-la-administracion-publica-comunidades-autonomas-y-corporaciones-locales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "3022"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/5e99a312-39c8-32d0-a942-cf9fecfdb57a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/directores-y-gerentes-de-establecimientos-no-agrarios-altos-funcionarios-de-la-administracion-publica-comunidades-autonomas-y-corporaciones-locales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "9704"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/c4638008-8808-3ac0-aa6b-e3f293827cd3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/profesionales-tecnicos-y-asimilados-que-ejercen-su-actividad-por-cuenta-ajena> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "35067"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/b42d8850-042b-3e68-9718-473c300936a3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/profesionales-tecnicos-y-asimilados-que-ejercen-su-actividad-por-cuenta-ajena> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "42637"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/eb08ffe7-265c-3135-a998-1dfaf9c4a832> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/profesionales-en-ocupaciones-exclusivas-de-la-administracion-publica> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "895"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/d3d4cac9-045c-39b4-a5af-198081468d49> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/profesionales-en-ocupaciones-exclusivas-de-la-administracion-publica> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "939"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/35a42a9a-2f92-379d-9e88-f51abb82ae7d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/resto-del-personal-administrativo-y-comercial> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "54760"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/cf040cc4-2ad4-3bd1-91f1-715ac3c6efc3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/resto-del-personal-administrativo-y-comercial> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "30622"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/66cb7271-cd26-36ed-a26f-ca70a73cd93d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/resto-del-personal-de-los-servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "39839"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/e8fcadfe-8d66-3dc0-ab6a-8e83df398c60> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/resto-del-personal-de-los-servicios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "18628"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/715d1b21-d9d1-3920-8693-b28775ea02df> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/contramaestres-y-capataces-de-establecimientos-no-agrarios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "251"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/b32344b0-e014-303f-b3bb-93ba07a31641> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/contramaestres-y-capataces-de-establecimientos-no-agrarios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "5864"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/e49f914c-5c17-3e7c-933b-c1ae4f1d3ce4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/operarios-cualificados-y-especializados-de-establecimientos-no-agrarios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "19062"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/d2863533-cd42-396c-be9c-045811d20b61> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/operarios-cualificados-y-especializados-de-establecimientos-no-agrarios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "98905"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/07b8676b-6270-3266-8a2c-f5f26dfb7a88> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/operarios-sin-especializacion-de-establecimientos-no-agrarios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "2325"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/59588b1a-8365-3e1b-bf32-6382319fcd61> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/operarios-sin-especializacion-de-establecimientos-no-agrarios> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "14356"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/67e5a462-7db5-3814-8a8a-add91ef416a4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/profesionales-de-las-fuerzas-armadas> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "556"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/f07c91a2-0b3e-31fe-abfb-2c1d6b9f195a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/profesionales-de-las-fuerzas-armadas> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "4644"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/b02f4758-8c9c-39f7-b36a-ee5c463116ee> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/no-clasificables-por-condicion-socioeconomica> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:personas-residentes-viviendas-familiares "678"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030047A/50732b56-05f9-33b7-8c99-bd383d9a4cdd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030047A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:condicion-socioeconomica <http://opendata.aragon.es/kos/iaest/condicion-socioeconomica/no-clasificables-por-condicion-socioeconomica> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-measure:personas-residentes-viviendas-familiares "437"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

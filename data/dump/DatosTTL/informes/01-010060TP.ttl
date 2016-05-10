@@ -1,0 +1,80 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010060TP> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010060>;
+	rdfs:label "Explotaciones cuyo titular es persona física"@es ;
+	dct:identifier  "01-010060TP" ;
+	rdfs:comment "Cubo de datos para 01-010060TP"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010060TP/26ad5a09-dc4e-3239-8672-6ad7a5df6263> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010060TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1989> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:numero-total-de-explotaciones "23425"^^xsd:int;
+	iaest-measure:explotaciones-cuyo-titular-es-persona-fisica "22267"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-el-titular-de-la-misma "21791"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-un-miembro-de-la-familia-no-titular "429"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-otra-persona "47"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010060TP/02902e25-03a7-394a-addc-e1fe07502cc1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010060TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1989> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:numero-total-de-explotaciones "25692"^^xsd:int;
+	iaest-measure:explotaciones-cuyo-titular-es-persona-fisica "24635"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-el-titular-de-la-misma "24264"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-un-miembro-de-la-familia-no-titular "345"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-otra-persona "26"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010060TP/e610c042-f038-3f49-b9fb-69153da024e6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010060TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1989> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:numero-total-de-explotaciones "51614"^^xsd:int;
+	iaest-measure:explotaciones-cuyo-titular-es-persona-fisica "50570"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-el-titular-de-la-misma "47973"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-un-miembro-de-la-familia-no-titular "2374"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-otra-persona "223"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010060TP/e3892d42-ccd1-30d3-b615-a43a1da0c28f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010060TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:numero-total-de-explotaciones "21318"^^xsd:int;
+	iaest-measure:explotaciones-cuyo-titular-es-persona-fisica "19311"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-el-titular-de-la-misma "18509"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-un-miembro-de-la-familia-no-titular "749"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-otra-persona "53"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010060TP/09a6f29e-bd75-37b0-8d29-558bfd0c819b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010060TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:numero-total-de-explotaciones "17926"^^xsd:int;
+	iaest-measure:explotaciones-cuyo-titular-es-persona-fisica "16779"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-el-titular-de-la-misma "15988"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-un-miembro-de-la-familia-no-titular "746"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-otra-persona "45"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010060TP/538e755a-67f4-3c8b-b6f9-de98f74dfaaf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010060TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:numero-total-de-explotaciones "40777"^^xsd:int;
+	iaest-measure:explotaciones-cuyo-titular-es-persona-fisica "38454"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-el-titular-de-la-misma "35811"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-un-miembro-de-la-familia-no-titular "2507"^^xsd:int;
+	iaest-measure:explotaciones-cuya-gestion-se-lleva-por-otra-persona "136"^^xsd:int.

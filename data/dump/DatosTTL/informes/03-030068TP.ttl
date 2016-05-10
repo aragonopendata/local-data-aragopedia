@@ -1,0 +1,98 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/03-030068TP> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030068>;
+	rdfs:label "Disponibilidad de vehículo"@es ;
+	dct:identifier  "03-030068TP" ;
+	rdfs:comment "Cubo de datos para 03-030068TP"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030068TP/b69977c0-3411-3e87-8f17-fc5337b9b484> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030068TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:vehiculos-en-el-hogar <http://opendata.aragon.es/kos/iaest/vehiculos-en-el-hogar/0> ;
+	iaest-measure:numero-hogares "18780"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030068TP/0f865c3b-a9a6-392f-b328-f271f36dabde> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030068TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:vehiculos-en-el-hogar <http://opendata.aragon.es/kos/iaest/vehiculos-en-el-hogar/1> ;
+	iaest-measure:numero-hogares "34267"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030068TP/6bb96b8b-dd48-3822-a3b8-8ba75fa55c28> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030068TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:vehiculos-en-el-hogar <http://opendata.aragon.es/kos/iaest/vehiculos-en-el-hogar/2> ;
+	iaest-measure:numero-hogares "16684"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030068TP/6eca4c1e-d700-39f3-a506-66a6c76fa389> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030068TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:vehiculos-en-el-hogar <http://opendata.aragon.es/kos/iaest/vehiculos-en-el-hogar/3-o-mas> ;
+	iaest-measure:numero-hogares "4055"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030068TP/3956c371-bf6f-35c0-8e3f-e25c85582a30> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030068TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:vehiculos-en-el-hogar <http://opendata.aragon.es/kos/iaest/vehiculos-en-el-hogar/0> ;
+	iaest-measure:numero-hogares "16401"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030068TP/995fe962-e522-3721-8729-eee5535020fe> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030068TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:vehiculos-en-el-hogar <http://opendata.aragon.es/kos/iaest/vehiculos-en-el-hogar/1> ;
+	iaest-measure:numero-hogares "21294"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030068TP/f3143bad-7d58-3e26-9cb1-4a7988e1e23a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030068TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:vehiculos-en-el-hogar <http://opendata.aragon.es/kos/iaest/vehiculos-en-el-hogar/2> ;
+	iaest-measure:numero-hogares "10998"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030068TP/e6d3f84d-e18e-38b6-a328-8debd1d20297> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030068TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:vehiculos-en-el-hogar <http://opendata.aragon.es/kos/iaest/vehiculos-en-el-hogar/3-o-mas> ;
+	iaest-measure:numero-hogares "2377"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030068TP/411e2653-e878-364e-8ea9-5e788d1dac52> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030068TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:vehiculos-en-el-hogar <http://opendata.aragon.es/kos/iaest/vehiculos-en-el-hogar/0> ;
+	iaest-measure:numero-hogares "111183"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030068TP/094b064c-eb90-3a67-bdbb-3beff52d8920> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030068TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:vehiculos-en-el-hogar <http://opendata.aragon.es/kos/iaest/vehiculos-en-el-hogar/1> ;
+	iaest-measure:numero-hogares "152127"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030068TP/7542ee7d-6108-3387-9b6c-c5e537f64aba> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030068TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:vehiculos-en-el-hogar <http://opendata.aragon.es/kos/iaest/vehiculos-en-el-hogar/2> ;
+	iaest-measure:numero-hogares "47029"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030068TP/29083709-98de-3b6d-b5a6-00d92db248ce> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030068TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:vehiculos-en-el-hogar <http://opendata.aragon.es/kos/iaest/vehiculos-en-el-hogar/3-o-mas> ;
+	iaest-measure:numero-hogares "8048"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

@@ -1,0 +1,96 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/03-030054A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030054>;
+	rdfs:label "Lugar de trabajo o estudio"@es ;
+	dct:identifier  "03-030054A" ;
+	rdfs:comment "Cubo de datos para 03-030054A"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030054A/40bf4e14-8813-3d8f-b641-d45cc353683b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030054A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:lugar-trabajo-o-estudio <http://opendata.aragon.es/kos/iaest/lugar-trabajo-o-estudio/en-mi-propio-domicilio> ;
+	iaest-measure:personas-residentes-viviendas-familiares "3502"^^xsd:int;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/estudiantes-que-no-trabajan> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030054A/9316d018-2536-38a7-a47f-4841b17f866d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030054A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:lugar-trabajo-o-estudio <http://opendata.aragon.es/kos/iaest/lugar-trabajo-o-estudio/en-mi-propio-domicilio> ;
+	iaest-measure:personas-residentes-viviendas-familiares "13770"^^xsd:int;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/trabajadores> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030054A/ed5a78d8-0d64-3f63-8e8c-1bd641a67c4c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030054A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:lugar-trabajo-o-estudio <http://opendata.aragon.es/kos/iaest/lugar-trabajo-o-estudio/en-varios-municipios-viajante-conductor> ;
+	iaest-measure:personas-residentes-viviendas-familiares "105"^^xsd:int;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/estudiantes-que-no-trabajan> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030054A/44fd6d10-d661-3a99-9923-753e39848e2b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030054A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:lugar-trabajo-o-estudio <http://opendata.aragon.es/kos/iaest/lugar-trabajo-o-estudio/en-varios-municipios-viajante-conductor> ;
+	iaest-measure:personas-residentes-viviendas-familiares "22477"^^xsd:int;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/trabajadores> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030054A/b1ab1beb-276c-341d-ba91-2c807ecb0fed> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030054A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:lugar-trabajo-o-estudio <http://opendata.aragon.es/kos/iaest/lugar-trabajo-o-estudio/en-este-municipio> ;
+	iaest-measure:personas-residentes-viviendas-familiares "52851"^^xsd:int;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/estudiantes-que-no-trabajan> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030054A/280ec612-f84c-31e7-bcfb-553184577bf7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030054A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:lugar-trabajo-o-estudio <http://opendata.aragon.es/kos/iaest/lugar-trabajo-o-estudio/en-este-municipio> ;
+	iaest-measure:personas-residentes-viviendas-familiares "360599"^^xsd:int;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/trabajadores> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030054A/093146fb-2934-3c03-aafd-3bbf972099c2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030054A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:lugar-trabajo-o-estudio <http://opendata.aragon.es/kos/iaest/lugar-trabajo-o-estudio/en-otro-municipio> ;
+	iaest-measure:personas-residentes-viviendas-familiares "25443"^^xsd:int;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/estudiantes-que-no-trabajan> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030054A/3633321a-6e30-320a-8afa-b8fa5d6531e7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030054A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:lugar-trabajo-o-estudio <http://opendata.aragon.es/kos/iaest/lugar-trabajo-o-estudio/en-otro-municipio> ;
+	iaest-measure:personas-residentes-viviendas-familiares "97685"^^xsd:int;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/trabajadores> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030054A/d290ddcc-2467-3446-96dd-30bd2728daf6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030054A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:lugar-trabajo-o-estudio <http://opendata.aragon.es/kos/iaest/lugar-trabajo-o-estudio/en-otro-pais> ;
+	iaest-measure:personas-residentes-viviendas-familiares "867"^^xsd:int;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/estudiantes-que-no-trabajan> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030054A/fb55a772-251c-3664-a0e3-5e92b9fbccac> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030054A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:lugar-trabajo-o-estudio <http://opendata.aragon.es/kos/iaest/lugar-trabajo-o-estudio/en-otro-pais> ;
+	iaest-measure:personas-residentes-viviendas-familiares "1238"^^xsd:int;
+	iaest-dimension:situacion-preferente <http://opendata.aragon.es/kos/iaest/situacion-preferente/trabajadores> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

@@ -1,0 +1,86 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030082A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030082>;
+	rdfs:label "Datos demográficos Por estado civil y sexo"@es ;
+	dct:identifier  "03-02010301-030082A" ;
+	rdfs:comment "Cubo de datos para 03-02010301-030082A"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082A/52292c0b-d8a2-3bd3-ba67-7d193bed52b1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030082A>; 
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/soltero> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas "201253.610920459"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082A/09c4e6a6-dc8d-309c-95ab-e519e4fea833> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030082A>; 
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/casado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas "319966.338898018"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082A/1a429227-dda1-3cca-a0fb-fc30a25e7885> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030082A>; 
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/viudo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas "16942.2301226628"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082A/9d0daf1b-2cee-32da-9c11-e99d4b45e600> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030082A>; 
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/separado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas "8040.4252634226"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082A/0330c96a-2bde-3036-8451-42e2ffabed39> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030082A>; 
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/divorciado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombre> ;
+	iaest-measure:personas "15804.5278766781"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082A/8bb06965-b2e3-3c0c-8aa5-f92608ab9011> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030082A>; 
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/soltero> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas "153483.73481123"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082A/3282393e-2e0d-3ad5-969f-246194a7aba1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030082A>; 
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/casado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas "314853.505981176"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082A/7b210727-3295-3e47-89fa-75ea9402d2c0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030082A>; 
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/viudo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas "73928.0713771715"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082A/f0c9f83f-032d-3793-9c2d-d99c30726a36> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030082A>; 
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/separado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas "8356.3707890886"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030082A/bc337fec-0363-302b-a786-02c5733c5474> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030082A>; 
+	iaest-dimension:estado-civil <http://opendata.aragon.es/kos/iaest/estado-civil/divorciado> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujer> ;
+	iaest-measure:personas "19493.1917041768"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

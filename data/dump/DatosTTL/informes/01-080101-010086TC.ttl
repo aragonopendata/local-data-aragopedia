@@ -1,0 +1,818 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010086>;
+	rdfs:label "Nº explotaciones según la formación agraria del jefe de la explotación. Censo 2009"@es ;
+	dct:identifier  "01-080101-010086TC" ;
+	rdfs:comment "Cubo de datos para 01-080101-010086TC"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/ad9d5cf2-4a54-32d4-ba79-d2b8e54e7161> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:explotaciones "53"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/c7e3bbac-14b0-3670-887c-cdcc27e7ba81> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:explotaciones "28"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/b7cd4a8e-754b-3d46-a6d7-b476b4204789> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:explotaciones "521"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/d3f8cbbf-4606-3bfe-81f5-c2f7498d796c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:explotaciones "97"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/b32dc481-7d46-3651-98ee-2bd09f6b893a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:explotaciones "35"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/cffa6f5e-19f3-3b20-a945-f3e3f2fc7e6e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:explotaciones "8"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/e82730b6-a983-3db1-8bad-eabcbd31f82c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:explotaciones "330"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/323b3220-024b-3ecb-90c0-06873c7b3b08> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:explotaciones "62"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/3c0001df-4b09-374f-a0e0-f51fd6ef2089> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:explotaciones "101"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/42490eee-f740-300f-98e4-f79a02d7c146> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:explotaciones "29"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/ebce81b2-0dbc-38c4-b0b3-05234ccb52d2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:explotaciones "584"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/5c99e24b-c614-37c9-929b-e66e460899a4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:explotaciones "98"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/f8db45d8-50c2-359e-a346-f80c5f2b9a1a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:explotaciones "153"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/7814dac5-5ed2-3155-966d-ccaa5f7be4ce> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:explotaciones "59"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/321f6cbb-cefa-364f-80d5-d42d472d8bed> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:explotaciones "1147"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/6e5d72b4-bb79-3354-8c8f-0c1d2007bf99> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:explotaciones "227"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/de00610a-5ed2-3372-b3da-9f38903cba84> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:explotaciones "322"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/bbad0315-07ba-38c1-a250-b89892ebe903> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:explotaciones "82"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/92b66b9b-55fa-3bcc-b3a5-394248439315> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:explotaciones "2474"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/4519f445-4f3c-34aa-ae88-21f433f6aac7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:explotaciones "613"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/7382056e-93df-36cd-9f58-e3b6651f0858> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:explotaciones "226"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/7094cc5d-6bd8-3793-91cb-99c799af20df> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:explotaciones "95"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/f8bbcc16-ae87-31b8-9e74-b4b8f06e96d6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:explotaciones "1916"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/d6c18c9c-3459-3580-aa1a-4bc74db1005c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:explotaciones "310"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/cfff5899-465f-340b-be7d-4208844977b0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:explotaciones "192"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/0e49ba62-6586-37dc-b36d-f387e21b3a68> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:explotaciones "62"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/8fbb466e-5fe8-3971-a687-3d7fc9131f4d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:explotaciones "1591"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/36110344-bab5-3a9a-b358-3a6c12220fbb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:explotaciones "242"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/5646f0d7-eeaa-3620-b64c-7818b1d68c09> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:explotaciones "146"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/c2297d9f-631e-329c-aaed-73e8ec0bc183> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:explotaciones "53"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/b6a84310-ec85-38bc-ade3-a39ff76c019f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:explotaciones "1156"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/bc92d154-5c52-3bc1-ae2f-6fd5b8416505> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:explotaciones "229"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/2eeeb1c1-ea31-34d4-b6c8-c8e9a6020f9b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:explotaciones "136"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/7dba681b-2001-3395-9b53-c625cd235591> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:explotaciones "61"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/206e8080-0951-3c89-b273-09c38e4715ed> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:explotaciones "1640"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/d10c2ace-3f83-344e-8f53-8e3ae0fbc087> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:explotaciones "275"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/c6576da4-a41b-3aad-9b29-7880fbeab5fc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:explotaciones "379"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/b215198c-d540-350a-99ba-6120dca79d5f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:explotaciones "80"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/57f11fc8-87b2-3886-8935-1ec62ab891c9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:explotaciones "2313"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/f1d2abb0-20ff-3c85-b1f2-d2d1df9be177> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:explotaciones "527"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/26468148-bb8d-3706-a241-78cbb26a2569> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:explotaciones "242"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/6b420d19-187c-3e93-9aad-cb91f5ef4551> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:explotaciones "61"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/7afe85ba-c60c-3120-b49f-fa70ea2435ac> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:explotaciones "1691"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/1a0ce7d2-40ae-32e6-b4f6-f8284dcf3c6c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:explotaciones "411"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/cf721231-2fe6-367c-8d8c-642c4e9d1604> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:explotaciones "24"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/7c3abe5a-98f6-3f37-9b66-b39cf09709f2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:explotaciones "4"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/85bb7d5a-87d4-398f-864f-37427f56215b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:explotaciones "733"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/3bd24847-55f2-37a9-a37c-fcb1617abc41> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:explotaciones "61"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/76f39064-475f-3e5d-8e3a-5c8f2c440bbe> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:explotaciones "85"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/f1898cf3-e652-30e7-a8bb-d75aa97e0ac2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:explotaciones "19"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/1abc128e-2807-36a3-b6ba-23ac71cf6f2f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:explotaciones "1475"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/b5eb6b8d-d443-38ff-8d51-25dfd2aac08a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:explotaciones "195"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/db08c896-921b-345e-b9da-4ac00acab8a7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:explotaciones "10"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/afb3a7cd-8072-36a7-9c05-5b6f73b41619> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:explotaciones "4"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/83cc4895-8e0c-36f6-8ca6-8ad24f05f155> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:explotaciones "612"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/f55a3aef-b3db-3418-a087-679695b4e041> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:explotaciones "59"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/958813c6-3570-3df6-bfbf-11e7bbd4de45> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:explotaciones "61"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/1ff30b07-ba42-3a8c-807b-2f038fbc6883> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:explotaciones "15"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/08b65219-3292-3e1c-9d51-9a00b005fffd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:explotaciones "924"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/acf7c2e6-b821-3126-81fd-f1b60e7bbc81> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:explotaciones "107"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/b6bb302a-562e-387d-8694-d193b67b692d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:explotaciones "111"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/d3f6864c-f0a4-3478-8976-322fc8b3050a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:explotaciones "51"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/74e1fb51-88d1-30a2-b221-3ed7503d7902> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:explotaciones "2004"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/d07717d3-cec0-3e99-b68d-adfcb0f7e61b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:explotaciones "349"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/6586e2c2-da74-39c9-9684-c4e0fff22734> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:explotaciones "182"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/805ca9e3-091c-3735-87b7-c9541b7243a6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:explotaciones "57"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/e8910bd9-d13a-32d4-afd5-7e1809cd2e86> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:explotaciones "2129"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/fc96d9dc-5eb1-3edf-8e1d-85c2f4defc5d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:explotaciones "241"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/baf7d458-5892-355b-a652-766469e509d8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:explotaciones "65"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/1e5ab1ed-c22d-30dc-aff7-09a7d154df6a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:explotaciones "15"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/6726ad5a-57d2-35c3-bb38-972c90d2f595> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:explotaciones "837"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/141ceae5-91bf-319e-8ebc-6e17b0a9893e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:explotaciones "162"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/9bdeef2b-75df-35d1-852b-6da24e96492b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:explotaciones "83"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/8b223159-d7a9-3b6d-b6aa-b941affac30a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:explotaciones "14"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/7f9f3c89-fdfd-3e34-84a7-77e3106ec5cc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:explotaciones "1309"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/146c424f-9826-3f5e-bef4-2e4e9bb35129> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:explotaciones "211"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/0098b5ff-2db8-3be1-9bf6-9622f401ccea> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:explotaciones "65"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/4baa8e2e-ea8b-3048-b828-7fb055145ec4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:explotaciones "44"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/7252bf2d-7d37-31f3-a4a1-9c57f10df801> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:explotaciones "2792"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/8bac04c3-4b32-3876-b830-b4ebdbc89e88> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:explotaciones "454"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/c48024c8-c5d3-3174-bb8e-ce752e9298e1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:explotaciones "79"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/03fbaa7f-1b86-30fa-9037-03864c8d9647> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:explotaciones "32"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/4e477532-42b3-3010-bd14-038e64360659> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:explotaciones "1676"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/936b75f6-844a-3a7c-8b61-49ad867a9f46> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:explotaciones "189"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/d430ef70-edea-3abd-9d2e-f53a61d31c61> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:explotaciones "35"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/98a68a77-7c04-3330-a11f-a867d899f124> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:explotaciones "9"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/5e846047-6c1d-3a39-964a-1397390ed73a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:explotaciones "991"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/c3febf99-d484-3bd0-8b0a-b1bac4bbf790> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:explotaciones "95"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/ab66a244-87b6-3327-a57e-b23252a39820> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:explotaciones "28"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/0a21eb0e-53bd-31ca-89a9-6b5d0179336e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:explotaciones "13"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/93136dd2-8a52-3c9a-8238-3a2fd1002a9a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:explotaciones "726"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/6abef661-cc38-3148-860b-32786f4b2d07> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:explotaciones "89"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/abb0c4a7-4c4d-3cf4-b2c4-35f36036a1f7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:explotaciones "95"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/6ea4e0f2-adba-3aaa-8577-8772178e1108> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:explotaciones "16"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/ee25acbf-386d-321b-8419-cecfe5013128> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:explotaciones "965"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/3f7f3070-d301-325b-9d45-b7501ab9f4a1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:explotaciones "151"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/f10c0ad9-6bc1-394f-8d03-df47ed012933> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:explotaciones "126"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/847e6a1f-ebf9-3db1-bda7-fa6896914bcc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:explotaciones "16"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/6a5a92cf-c8c1-3300-87ee-cd9019fdea77> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:explotaciones "1560"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/09d5aa2f-21c5-3bc7-8bd0-4bceaf067b03> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:explotaciones "192"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/d34dc6b9-fcaf-3d0b-a61d-d58b5f9b1c05> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:explotaciones "26"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/0899e916-7d3b-3fcb-9a59-d7cdf7b150bd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:explotaciones "13"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/92947ef0-59e4-3eef-b0ad-75db025db669> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:explotaciones "525"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/391e5292-e8f9-3d20-adfc-710593930ad2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:explotaciones "71"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/e84e0010-b93f-33da-af0b-1fccb46ff514> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:explotaciones "4"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/11bbcfe9-5925-3793-887b-234b9a73b581> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:explotaciones "7"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/55608382-33b6-3e5d-9e76-f3d72cc9462d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:explotaciones "699"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/e3cb1dd5-e83c-3639-a617-3312a8d464e2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:explotaciones "47"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/444423bb-b821-3bc2-a8e9-9cb0950a6dd9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:explotaciones "61"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/a73b4772-1848-3d07-b0c8-b3219d382ba1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:explotaciones "22"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/23e2d86d-2098-36d8-951d-d0c6949fa9b8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:explotaciones "1837"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/dc36a041-ebf1-3c6f-998e-e26736eea724> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:explotaciones "225"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/b18a31ef-e14e-35f3-8465-2bf2f9cff229> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:explotaciones "111"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/eeb7b263-c59e-3705-a97d-47c37b1152d9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:explotaciones "18"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/0c40c2cc-df34-3747-9125-31c6363eb2bf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:explotaciones "1800"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/23491597-9896-3304-824d-e4d194e65cf0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:explotaciones "218"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/9ef442dd-dc2b-35fc-bbc4-2bbaf0bb759d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:explotaciones "22"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/a24b710e-c83e-3c3a-82cd-2dbb27773cc7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:explotaciones "7"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/42c7a8de-3a31-3537-87be-b4afdba4defb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:explotaciones "510"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/c8a7f069-7a54-34c9-b444-66251023c89f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:explotaciones "57"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/9a623906-d91b-3265-beb2-8d4543625a82> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:explotaciones "19"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/3036d615-dcca-3bfb-92c1-d630b3656bb0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:explotaciones "10"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/758cae36-0542-3ca8-8422-a00ca25df658> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:explotaciones "322"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/918096c6-290f-3fd6-b5e3-481907867351> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:explotaciones "12"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/537162a4-5de0-384d-826f-2584fb29a7c3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:explotaciones "25"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/ad8f551a-fd16-31bb-8409-ce6dae6378bf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:explotaciones "8"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/727bf4e5-6520-36df-a93c-4ee51cee5044> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:explotaciones "720"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/3341f8dd-d528-3aa2-a684-464ffb296c2d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:explotaciones "45"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/52bf7453-9c53-3c2c-bee7-1331b816db77> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:explotaciones "53"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-profesionales-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/4becc896-7881-3bff-983a-4cb74b6afd21> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:explotaciones "11"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/estudios-universitarios-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/d0c24069-8880-37b4-a643-d62dcd317732> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:explotaciones "1405"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/experiencia-agraria-exclusivamente> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010086TC/ebc4f975-865a-3610-9430-6d773bdbfd63> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010086TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:explotaciones "161"^^xsd:int;
+	iaest-dimension:formacion-jefe-explotacion <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion/otra-formacion-agraria-o-cursos-agrarios> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

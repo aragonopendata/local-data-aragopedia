@@ -1,0 +1,236 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010074A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010074>;
+	rdfs:label "VAB y Empleo por sectores de actividad. Serie desde año 2008"@es ;
+	dct:identifier  "01-010074A" ;
+	rdfs:comment "Cubo de datos para 01-010074A"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/7eadb7c9-b8ac-30cc-9380-f8add4eb3b13> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "1427961.3"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/a-agricultura-ganaderia-silvicultura-y-pesca> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/44ff6377-61bf-3355-a8c4-7539a5a47d15> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "1743362"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/b-y-e-extractivas-energia-y-agua> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/cb7077be-a2aa-36f6-8c85-ed3267e1ebc0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "5387488.1"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/c-industria-manufacturera> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/ec02f6a1-447f-33f7-8c5e-0cb3be787b34> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "3040707"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/f-construccion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/de9a925e-c774-3eb7-9bdc-d4113f35fa24> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "7588165"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/gj-comercio-reparacion-transporte-hosteleria-informacion-y-comunicaciones> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/3aff9b65-f05c-3c72-b62a-be6d535dc670> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "5010648.2"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/kn-actividades-financieras-inmobiliarias-actividades-profesionales-cientificas-y-tecnicas-administrativas-y-servicios-auxiliares> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/44d1ecc3-8362-3f4d-8510-4cd475215dff> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "6541033.1"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/ou-administracion-publica-y-defensa-seguridad-social-obligatoria-educacion-actividades-sanitarias-y-de-servicios-sociales-otros-servicios> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/4cc51782-f6c8-36ba-b3e8-f818dcdc5bac> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "1333458.2"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/a-agricultura-ganaderia-silvicultura-y-pesca> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/70e32899-e876-38ef-ad42-5a890b474a15> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "1693632.1"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/b-y-e-extractivas-energia-y-agua> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/ff6a6d57-c733-3598-bd5b-fa6626df56a3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "5586072.8"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/c-industria-manufacturera> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/517e24d4-26b1-38a0-b663-1d500af225e6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "3350049.9"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/f-construccion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/a26d95e7-ffdc-37b5-8ce8-7932bec74e9c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "7520328.3"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/gj-comercio-reparacion-transporte-hosteleria-informacion-y-comunicaciones> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/536c2e1a-9630-34e7-b105-1d80def6ab5d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "4895045.4"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/kn-actividades-financieras-inmobiliarias-actividades-profesionales-cientificas-y-tecnicas-administrativas-y-servicios-auxiliares> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/4272ce5f-472b-3cdc-baf7-3d27e518a4b1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "6739158.9"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/ou-administracion-publica-y-defensa-seguridad-social-obligatoria-educacion-actividades-sanitarias-y-de-servicios-sociales-otros-servicios> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/a7920b1e-5649-3d5a-81fc-6e56d8b98447> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "1272564.1"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/a-agricultura-ganaderia-silvicultura-y-pesca> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/a838b570-e4af-30a2-bc34-8ac8bcc81fdd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "1453845"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/b-y-e-extractivas-energia-y-agua> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/a6010a65-2fd1-3d4e-a313-f080d4ecae56> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "5033801.7"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/c-industria-manufacturera> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/130fd23c-c011-3c0c-a535-79db5575c9d1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "3690612.2"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/f-construccion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/a2c31b3c-3a09-3685-a0bf-bf0bab74663b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "7413645.7"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/gj-comercio-reparacion-transporte-hosteleria-informacion-y-comunicaciones> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/02133e0d-65a0-3e4c-a629-1af1edfb3f96> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "4766789.4"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/kn-actividades-financieras-inmobiliarias-actividades-profesionales-cientificas-y-tecnicas-administrativas-y-servicios-auxiliares> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/45eed670-30cb-3221-b664-e12fe23df2ab> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "6742082.8"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/ou-administracion-publica-y-defensa-seguridad-social-obligatoria-educacion-actividades-sanitarias-y-de-servicios-sociales-otros-servicios> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/3ed37a3e-3eb2-3ec8-a22b-b7639c91b1db> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "1188340.2"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/a-agricultura-ganaderia-silvicultura-y-pesca> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/8ef6acc2-a190-3309-ba82-cb1782d68b5c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "1318759.7"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/b-y-e-extractivas-energia-y-agua> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/8f457b1f-9a89-3296-aea6-2a592d7614c1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "4729215.9"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/c-industria-manufacturera> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/403bd764-fa20-369c-9f40-f14d64263a3e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "4475231.1"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/f-construccion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/9c5eb1e5-2e13-3307-bd4b-187300fb5171> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "7380638.2"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/gj-comercio-reparacion-transporte-hosteleria-informacion-y-comunicaciones> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/14f58c3e-a44d-3051-be27-5ad7b2a89f20> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "5017430.4"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/kn-actividades-financieras-inmobiliarias-actividades-profesionales-cientificas-y-tecnicas-administrativas-y-servicios-auxiliares> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/4a638c67-e3f4-315b-8330-b3f928dfc16c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "6680571.5"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/ou-administracion-publica-y-defensa-seguridad-social-obligatoria-educacion-actividades-sanitarias-y-de-servicios-sociales-otros-servicios> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/5fef89b3-7832-3671-b2bd-0469988290ee> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "1197805.9"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/a-agricultura-ganaderia-silvicultura-y-pesca> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/65c02ffa-c51f-35aa-8bfa-f7caf095f176> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "1341900.8"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/b-y-e-extractivas-energia-y-agua> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/d93b9b98-79d3-398a-943a-2d2662cd7c08> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "5700011.9"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/c-industria-manufacturera> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/246e5a85-6afa-3db8-97e0-86864b554beb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "4678884.4"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/f-construccion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/b59ebe81-93a7-3f2f-873c-696dd96d13c7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "7322728.8"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/gj-comercio-reparacion-transporte-hosteleria-informacion-y-comunicaciones> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/76ee7f05-8ada-3b0d-98e2-737e91ea26cd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "5150752.3"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/kn-actividades-financieras-inmobiliarias-actividades-profesionales-cientificas-y-tecnicas-administrativas-y-servicios-auxiliares> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010074A/39633c84-f33d-3bce-a48d-82e9933dc0cb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010074A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea "No_aplicable" ;
+	iaest-measure:vab "6387289.1"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/ou-administracion-publica-y-defensa-seguridad-social-obligatoria-educacion-actividades-sanitarias-y-de-servicios-sociales-otros-servicios> .

@@ -1,0 +1,82 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/03-030042A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030042>;
+	rdfs:label "Población ocupada según sector de actividad y sexo"@es ;
+	dct:identifier  "03-030042A" ;
+	rdfs:comment "Cubo de datos para 03-030042A"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030042A/8a9bf6c3-b5a7-3471-a942-3bd34cfb7b23> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030042A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-dimension:sector-actividad-descripcion <http://opendata.aragon.es/kos/iaest/sector-actividad-descripcion/agricultura-ganaderia-y-pesca> ;
+	iaest-measure:personas-residentes-viviendas-familiares "4704"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030042A/dd300e0c-4f74-3473-bef9-5988e1b33365> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030042A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-dimension:sector-actividad-descripcion <http://opendata.aragon.es/kos/iaest/sector-actividad-descripcion/industria-y-energia> ;
+	iaest-measure:personas-residentes-viviendas-familiares "27472"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030042A/34cc3aa6-e792-3bbf-9403-828303bdf5ce> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030042A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-dimension:sector-actividad-descripcion <http://opendata.aragon.es/kos/iaest/sector-actividad-descripcion/construccion> ;
+	iaest-measure:personas-residentes-viviendas-familiares "3758"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030042A/db5bd1df-660a-3275-b0ca-7116bf1a6d1a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030042A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-dimension:sector-actividad-descripcion <http://opendata.aragon.es/kos/iaest/sector-actividad-descripcion/servicios> ;
+	iaest-measure:personas-residentes-viviendas-familiares "149167"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030042A/a2223dae-2228-394a-8eed-fd4aeeca9029> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030042A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-dimension:sector-actividad-descripcion <http://opendata.aragon.es/kos/iaest/sector-actividad-descripcion/agricultura-ganaderia-y-pesca> ;
+	iaest-measure:personas-residentes-viviendas-familiares "30734"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030042A/f9de3c51-23cc-3869-9e0f-1a3af2639a7d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030042A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-dimension:sector-actividad-descripcion <http://opendata.aragon.es/kos/iaest/sector-actividad-descripcion/industria-y-energia> ;
+	iaest-measure:personas-residentes-viviendas-familiares "86123"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030042A/c33784de-5950-379e-974d-e78d447d2f4d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030042A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-dimension:sector-actividad-descripcion <http://opendata.aragon.es/kos/iaest/sector-actividad-descripcion/construccion> ;
+	iaest-measure:personas-residentes-viviendas-familiares "45501"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030042A/2024b307-3172-3dce-947c-2737d34d30f9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030042A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/varones> ;
+	iaest-dimension:sector-actividad-descripcion <http://opendata.aragon.es/kos/iaest/sector-actividad-descripcion/servicios> ;
+	iaest-measure:personas-residentes-viviendas-familiares "148310"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

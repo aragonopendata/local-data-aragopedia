@@ -1,0 +1,116 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010084TP> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010084>;
+	rdfs:label "Nº explotaciones agrarias según personalidad jurídica del titular. Censo 2009"@es ;
+	dct:identifier  "01-080101-010084TP" ;
+	rdfs:comment "Cubo de datos para 01-080101-010084TP"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010084TP/2dc37539-ba78-3f89-adb0-b8d6bda8b9bb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010084TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:personalidad-juridica <http://opendata.aragon.es/kos/iaest/personalidad-juridica/entidad-publica> ;
+	iaest-measure:explotaciones "180"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010084TP/fa0015d5-0f60-3c32-8e97-50006bf67228> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010084TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:personalidad-juridica <http://opendata.aragon.es/kos/iaest/personalidad-juridica/otras-condiciones-juridicas> ;
+	iaest-measure:explotaciones "1123"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010084TP/44a26286-1e51-3ac6-9174-cc72e6e06e3d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010084TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:personalidad-juridica <http://opendata.aragon.es/kos/iaest/personalidad-juridica/persona-fisica> ;
+	iaest-measure:explotaciones "14135"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010084TP/a2d67efc-5f0b-38eb-a90f-10b0bc432955> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010084TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:personalidad-juridica <http://opendata.aragon.es/kos/iaest/personalidad-juridica/sociedad-cooperativa> ;
+	iaest-measure:explotaciones "62"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010084TP/5537869d-bbf1-36b5-83f1-136b430f7a81> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010084TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:personalidad-juridica <http://opendata.aragon.es/kos/iaest/personalidad-juridica/sociedad-mercantil> ;
+	iaest-measure:explotaciones "780"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010084TP/86f13a1a-7aee-3ccf-a8d6-3cb0ff6e60ed> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010084TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:personalidad-juridica <http://opendata.aragon.es/kos/iaest/personalidad-juridica/entidad-publica> ;
+	iaest-measure:explotaciones "163"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010084TP/b9cd44f5-34fe-3d6f-aa04-7fd26a8a7394> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010084TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:personalidad-juridica <http://opendata.aragon.es/kos/iaest/personalidad-juridica/otras-condiciones-juridicas> ;
+	iaest-measure:explotaciones "302"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010084TP/19723978-f8ba-3b83-9ae6-ba2f85dcf367> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010084TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:personalidad-juridica <http://opendata.aragon.es/kos/iaest/personalidad-juridica/persona-fisica> ;
+	iaest-measure:explotaciones "11084"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010084TP/f61613c9-e508-3860-ae1d-c2b45369fda8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010084TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:personalidad-juridica <http://opendata.aragon.es/kos/iaest/personalidad-juridica/sociedad-cooperativa> ;
+	iaest-measure:explotaciones "61"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010084TP/d255e8f4-f132-3c36-a3ef-3bc8e7966127> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010084TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:personalidad-juridica <http://opendata.aragon.es/kos/iaest/personalidad-juridica/sociedad-mercantil> ;
+	iaest-measure:explotaciones "211"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010084TP/f600eafd-f814-365b-bcbf-859f1dc55f90> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010084TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:personalidad-juridica <http://opendata.aragon.es/kos/iaest/personalidad-juridica/entidad-publica> ;
+	iaest-measure:explotaciones "90"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010084TP/086ddf18-697f-358e-82d6-f4a6711257f3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010084TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:personalidad-juridica <http://opendata.aragon.es/kos/iaest/personalidad-juridica/otras-condiciones-juridicas> ;
+	iaest-measure:explotaciones "1156"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010084TP/3a065f47-795a-33d3-92a7-2849e08c48eb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010084TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:personalidad-juridica <http://opendata.aragon.es/kos/iaest/personalidad-juridica/persona-fisica> ;
+	iaest-measure:explotaciones "22718"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010084TP/2fee53d1-2a22-399e-b31c-2e371e304f88> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010084TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:personalidad-juridica <http://opendata.aragon.es/kos/iaest/personalidad-juridica/sociedad-cooperativa> ;
+	iaest-measure:explotaciones "157"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010084TP/053375e6-9ac8-3394-a885-8b31369282b0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010084TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:personalidad-juridica <http://opendata.aragon.es/kos/iaest/personalidad-juridica/sociedad-mercantil> ;
+	iaest-measure:explotaciones "552"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

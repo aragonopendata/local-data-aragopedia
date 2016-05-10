@@ -1,0 +1,98 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010052TP> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010052>;
+	rdfs:label "Unidades de Trabajo-Año (UTA)"@es ;
+	dct:identifier  "01-010052TP" ;
+	rdfs:comment "Cubo de datos para 01-010052TP"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010052TP/683a8efa-0186-34ff-8d35-6960dd1f43b6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010052TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1989> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:unidades-de-trabajo-que-son-jefes-de-explotacion "10530"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados "2374"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados-fijos "1767"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados-eventuales "594"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-mano-de-obra-familiar "13323"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-titulares-explotacion "10192"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-conyuges "956"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-otros-diferentes "2166"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010052TP/7baa69a0-5faf-3dd5-af7d-23dbef63fb4d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010052TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1989> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:unidades-de-trabajo-que-son-jefes-de-explotacion "8970"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados "953"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados-fijos "561"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados-eventuales "381"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-mano-de-obra-familiar "11950"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-titulares-explotacion "8781"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-conyuges "1598"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-otros-diferentes "1539"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010052TP/2ead0794-bfa5-39b7-bc52-0b40495691ab> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010052TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1989> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:unidades-de-trabajo-que-son-jefes-de-explotacion "16130"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados "4707"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados-fijos "2612"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados-eventuales "2081"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-mano-de-obra-familiar "19286"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-titulares-explotacion "15123"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-conyuges "1039"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-otros-diferentes "3108"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010052TP/1651601d-a343-321c-b417-8ffd3eaf6416> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010052TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:unidades-de-trabajo-que-son-jefes-de-explotacion "9550.267"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados "4090.791"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados-fijos "2959.07"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados-eventuales "1131.721"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-mano-de-obra-familiar "10787.262"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-titulares-explotacion "8347.873"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-conyuges "1004.821"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-otros-diferentes "1434.568"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010052TP/0dfdf8c4-c626-3db9-98d8-06e376b31945> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010052TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:unidades-de-trabajo-que-son-jefes-de-explotacion "6893.735"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados "1620.079"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados-fijos "1193.061"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados-eventuales "427.018"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-mano-de-obra-familiar "8419.131"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-titulares-explotacion "6396.948"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-conyuges "1190.776"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-otros-diferentes "831.407"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010052TP/bcd59f41-8426-3f2a-9ddf-54c409e490cc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010052TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:unidades-de-trabajo-que-son-jefes-de-explotacion "13457.8"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados "6736.692"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados-fijos "4259.95"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-asalariados-eventuales "2476.742"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-son-mano-de-obra-familiar "14669.22"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-titulares-explotacion "11649.471"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-conyuges "1164.078"^^xsd:double;
+	iaest-measure:unidades-de-trabajo-que-siendo-mano-de-obra-familiar-son-otros-diferentes "1855.671"^^xsd:double.

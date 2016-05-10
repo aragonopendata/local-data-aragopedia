@@ -1,0 +1,62 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010089TP> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010089>;
+	rdfs:label "Unidades de trabajo Año (UTA) en la explotación. Censo 2009"@es ;
+	dct:identifier  "01-080101-010089TP" ;
+	rdfs:comment "Cubo de datos para 01-080101-010089TP"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010089TP/f4bd7ec4-bb89-326d-98af-def02876951a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010089TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:unidades-trabajo-ano-totales "14405.09"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-asalariados "5101.161"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-asalariados-fijos "3582.883"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-asalariados-eventuales "1518.278"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-mano-obra-familiar "9303.929"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-titular "6152.068"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-jefe-explotacion "7759.301"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-otros-miembros-familia "3151.861"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010089TP/ee68af1a-5606-3987-8af5-1e6c42c353e3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010089TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:unidades-trabajo-ano-totales "8593.96"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-asalariados "1708.547"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-asalariados-fijos "1426.556"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-asalariados-eventuales "281.991"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-mano-obra-familiar "6885.413"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-titular "4366.533"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-jefe-explotacion "5004.749"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-otros-miembros-familia "2518.88"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010089TP/3589dcf8-c55c-3b31-afd9-9b9c2ffb44c0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010089TP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:unidades-trabajo-ano-totales "19954.626"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-asalariados "7250.597"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-asalariados-fijos "4296.539"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-asalariados-eventuales "2954.058"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-mano-obra-familiar "12704.029"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-titular "8019.395"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-jefe-explotacion "9896.502"^^xsd:double;
+	iaest-measure:unidades-trabajo-ano-otros-miembros-familia "4684.634"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

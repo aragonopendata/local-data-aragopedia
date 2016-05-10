@@ -1,0 +1,2000 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/05-0709-070953>;
+	rdfs:label "Accidentes in itínere Accidentes según grado de lesión y régimen de Seguridad Social"@es ;
+	dct:identifier  "05-0709-070953TC" ;
+	rdfs:comment "Cubo de datos para 05-0709-070953TC"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b4781df3-cc71-3ec1-bf20-661658f22ce1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:n-accidentes "11"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/91d89bd0-e14a-3711-aa66-94f662b6909d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:n-accidentes "9"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/78f08401-dd2c-3bec-8bae-d670329ac102> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/aa0ced19-416e-3362-83e7-b724ee19e774> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:n-accidentes "6"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/e9dfbb52-90ca-3413-be0d-f2d2e39c9611> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:n-accidentes "23"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/4c0dd2c4-22b2-3ce9-bcc9-f542d14ce821> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-accidentes "66"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/2c9199bf-8d4c-3641-94c2-1f047cfba30f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-accidentes "20"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/6127af13-5d94-3406-b2a8-570c478583e1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:n-accidentes "13"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/59d94c72-4c71-3978-8a9b-8ec4ac96bd3a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:n-accidentes "18"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/d72436be-6a6f-353a-952e-443ffd7b83e9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-accidentes "8"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/cead9960-6717-3a74-b6c1-e7e37671f372> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-accidentes "25"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/d6782cd1-d522-365c-86fa-c5be71568173> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:n-accidentes "13"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/257b4750-8cdb-3fe9-a020-f101a4cb4c9e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/f346667a-f6db-3175-96d0-dc110eadde89> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/401a7135-e344-3659-a812-8b92918a60c2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-accidentes "38"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/ecad1457-b7a2-39ba-96e6-5485fb8a4761> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-accidentes "29"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b7f523bb-d119-3ec9-a30c-fb7f55a8b0f8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "1204"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/1b4921a8-eb2c-3df9-8365-47eed4a7d8bf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/trabajadores-autonomos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b1644c38-620b-3feb-b760-327de1f8915e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:n-accidentes "14"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/a1956ccf-88e4-3144-8828-19e419217794> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-accidentes "4"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/1ad722b1-dde7-3b57-aec2-5e6bd299cae4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/trabajadores-autonomos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/abc0c986-1f59-33f4-a468-c4e83a452292> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:n-accidentes "22"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/d08372cb-3c43-3629-b8b9-5ce0d7af7dc2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:n-accidentes "9"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/54d47c7a-20d3-3496-99e0-829cd3911155> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/7af33233-4170-3296-ab72-93383095edb1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/90a84561-e439-30cb-a378-6e6f4e324912> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:n-accidentes "8"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/a96ac178-ce75-31eb-a46a-7729a6239120> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:n-accidentes "4"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/18c36e16-273d-39bc-9b9a-7e32e2972d2e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/5e1d20bc-4fd3-3a55-85fc-74ee897d4310> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:n-accidentes "10"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/1310cab7-9a06-3c2f-91b4-8646b214fd82> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-accidentes "34"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/72e01a9f-b00f-3f4b-a4d2-27fabe591528> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/trabajadores-autonomos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b73f1ff9-da20-3514-a720-08b1fcb74bdf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/df5336f9-aae8-351d-8289-866aba2f0f04> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/8d22c4b3-551a-3eea-95dc-93692948b102> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/2f9c1987-37a7-31e5-bf36-1ea02100e0af> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea "Municipio_del_centro_de_trabajo_fuera_de_Aragón" ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/bb4c8c17-ed06-3a9e-942c-5017ac73a442> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:n-accidentes "15"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/befb34d3-8aaa-315c-9854-b2c37889dd16> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:n-accidentes "4"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/efe1b6f6-176f-302e-a16a-fa99c67f2a60> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/06e10281-ec7e-332e-8a28-f7759ab7ede9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:n-accidentes "10"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b4fcd2a4-f8c2-3e26-ac50-06dd047e2e2c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:n-accidentes "16"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/ee9c2b98-53ae-3d9e-a23a-f8b43171f0ca> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-accidentes "50"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/2992adf4-6d4b-3f7c-81ca-b22d10e77e5f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-accidentes "15"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/fbcb3025-1f07-3213-8e73-ce853cd16890> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:n-accidentes "15"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/709b629c-116f-3239-a267-2e32ec913612> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:n-accidentes "11"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b713c260-82b0-3a18-a17a-82532ee26f1b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/0c41539b-2a3d-3df2-8381-0c25d9b32d9b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-accidentes "20"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/04288b66-d34d-325b-958a-cc4684eec1a2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:n-accidentes "7"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/fe22f43b-d2f5-3862-bb5c-d7e830a8d6c9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:n-accidentes "7"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/7e75fff1-6ebd-30ce-80a9-fe0db658e637> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-accidentes "23"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/7de857d0-82d1-3312-bc45-bdc04972ac89> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-accidentes "29"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/18966694-45b7-364c-b5ec-e7aae79d0ebd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "1168"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/9331fba6-0284-3dca-b9a6-af3e54d57973> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "5"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/trabajadores-autonomos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/4ff211fa-e3f7-3b54-b040-10ca34cb5a18> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:n-accidentes "6"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/328116c4-33e0-33c8-b76d-08f565ca1512> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-accidentes "4"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/cadc4c54-fade-360d-8c93-0ab5b7fc3328> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:n-accidentes "32"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/ee31dcf5-78dc-3ca1-a155-a8203202143b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:n-accidentes "9"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/fe2694aa-a7bd-34d6-bf1f-98ed86bd9089> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/eb155079-d35e-32ab-95e4-4b5a3fa2eb0d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:n-accidentes "6"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/5f0149b5-7b2f-3225-99df-ae1da7b97e32> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/599b3162-4860-3cef-a17c-5102e9990a47> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/7e26356b-1013-3316-942c-17be288960bc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:n-accidentes "11"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b050fd77-a356-34b7-b684-9456ace37aee> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-accidentes "47"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/12ac0002-5d57-3bb6-b357-2c9eb07db4e2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b0318f9f-fbc4-3055-b095-0aaf5d2cb5d3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/6e8eb918-1cf4-35d1-9f4b-220e1b792a12> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/3d171fe7-c55c-3aea-bf71-e5a75938063f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea "Municipio_del_centro_de_trabajo_fuera_de_Aragón" ;
+	iaest-measure:n-accidentes "14"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/75c5a5d2-7696-31aa-98b4-bc8b44624dbf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:n-accidentes "17"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/6068bac7-2f4c-3875-8a7f-c63cc71ed5fc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:n-accidentes "13"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b65540ab-34c8-32e4-870a-eb87c32a42df> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:n-accidentes "5"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/bde255c4-d293-3681-8ed2-54dc92dd48ef> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:n-accidentes "7"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/c9bf5627-1ec5-322b-9b23-383552224797> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:n-accidentes "14"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/374aba7c-b95e-3d36-91be-d747726b3bb7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-accidentes "46"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/725f8b06-264b-3c73-b40c-c8a44a6c00da> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-accidentes "15"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/bee823c7-8d55-3f8f-9b6e-0f7e045df9e9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:n-accidentes "23"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/863175d5-4a42-3bc1-88ce-4d98da12afcc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:n-accidentes "7"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/1098e45f-cd19-3433-a9bf-0e3e4e0155d7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-accidentes "13"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/3a7ab4d8-b8fc-3cb7-b215-fc8b36b24e26> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-accidentes "20"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/22a447de-82e3-383a-8ef2-958e09034ca1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:n-accidentes "9"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/734f3637-3158-3f61-9a4a-21586812b5be> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/eba193f7-811e-3350-ad00-9a54dd128e3d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/e036791c-06c2-3809-8477-f16b11d7d82f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-accidentes "31"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/3702b8f4-79a9-3a2d-ab22-34c9ca9ba063> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-accidentes "18"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/0da491cc-8be6-3561-92fc-1c11348f8f94> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "1203"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/f09e0c29-631b-323f-8d54-cf5730838eea> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/trabajadores-autonomos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/a6518f7c-d0b3-37a2-af8f-f4544f00779f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:n-accidentes "8"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/f0d68cda-efad-3a06-a3a5-2b227576f7f4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-accidentes "7"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/696a6a0f-f5a9-3c24-a935-ac7a289a36a1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:n-accidentes "28"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/6c309a51-67dd-3dbc-ac45-8538d5e15a4e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/a2644140-ccf4-3d97-99e8-9d6ae1b56607> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/a725e1ac-07bb-317c-8a5d-fbd2dc752b28> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/430e9c39-4a97-3cbc-88c2-1d23d62260f6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:n-accidentes "4"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/ee7f456c-1727-3b2a-9fc5-cde4df947386> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:n-accidentes "4"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/8c5114d3-5088-31cd-896f-1926be6a016c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:n-accidentes "4"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/f73533f7-5ee3-3778-9501-942e3e11b091> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/17633562-d7dd-3ce9-9383-f0c16d3b943c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:n-accidentes "12"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/badec44c-2c25-35c1-85da-f54324608e03> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-accidentes "58"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/2388fc37-75c8-3c54-a114-fb0eb1d8e4ce> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/bc6fd33f-df4f-3b82-ac20-bd760870c6fe> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:n-accidentes "4"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/db330248-2e2f-36f9-b9a9-77f8a1ff93b5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/22f828fe-f05f-3bb2-9f9f-bc6613f1ca1c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea "Municipio_del_centro_de_trabajo_fuera_de_Aragón" ;
+	iaest-measure:n-accidentes "11"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/102a14f4-ddc5-309a-9eb2-4696da75b8b7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:n-accidentes "11"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/a714f2cb-9816-32ed-bc2c-db925a3f2568> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:n-accidentes "7"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/1465c089-b594-3889-beb4-2e3917f0046e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/73cd5a40-efa2-3fc9-a654-18bde29aaf7a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/70f863fd-54f7-31fb-96b9-3333c75c00a0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:n-accidentes "10"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/14466a09-a498-3263-99a2-a8c2752ce8bf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-accidentes "54"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/7e20c9bc-093a-3921-ab59-f57d0272cad5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-accidentes "12"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/a1c687bc-1d2e-3d05-b420-fd7f509e0da8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:n-accidentes "20"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/3f7bd98d-9410-3708-91a2-e2122f5d89db> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:n-accidentes "10"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/cccec827-f8aa-32d4-9685-43620c7a8cd4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-accidentes "8"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/5e0e521b-e0a4-3a5e-8172-052a3935a2ee> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-accidentes "15"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/81439615-6de5-31d2-87b3-aa68aff27894> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/1b2a224e-fb3e-35f4-986f-b247664e4f6f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:n-accidentes "5"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/c9b02a35-536f-35d2-a339-aa4383d53434> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:n-accidentes "6"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b6d1d31c-8127-3265-b1a3-c1a356c5f3c8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:n-accidentes "4"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/97dddaf0-d1a6-376b-9ae4-de74f1ce0ef0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-accidentes "26"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/e505b59f-e556-3582-9d0d-95878f0738d5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-accidentes "20"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/691b275c-20c0-39cb-ac7f-abf9281afb32> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "1039"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/2a9cf1a9-5c58-3a51-a526-6156b836cd0e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/trabajadores-autonomos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/f1eaad06-f2ab-3047-8b4b-8037b1549d4b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/3c86503c-bc2c-3820-ac7c-3be57f9a880f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:n-accidentes "7"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/e6087f27-f36c-32f7-9c08-dd2dd7aedf4e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-accidentes "5"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/29ed6737-40d5-3a9b-8e75-c7c8b1b2165f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/563c3889-e5ec-3126-95b4-862486996338> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:n-accidentes "16"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/adea295c-42dc-377d-8891-3463669404a4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/4244a61f-1202-383f-bf18-4f99b10a7900> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b9114d63-bf2e-3b8c-bafd-67655dd768f7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b6a74e1b-9c3c-3d95-8672-b277f0b2fe55> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:n-accidentes "6"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/edd23790-8392-3225-9534-de1364eb39bf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:n-accidentes "4"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/4e7177bd-3b5e-3582-9456-8b3bf13ff2be> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:n-accidentes "11"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/ead9b289-db82-33a3-93f6-a7b9419ebb02> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-accidentes "34"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/2efe70ce-1829-3c50-86d6-a2b06865bb84> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/d9ef1e86-df81-36f1-93be-8668be1e5bdc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/e32b6c8a-138f-3e79-97f6-1a6e531f6fda> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/e307ad67-74ad-3437-bc5a-552ad7f4ca89> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea "Municipio_del_centro_de_trabajo_fuera_de_Aragón" ;
+	iaest-measure:n-accidentes "9"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/5f683c85-331d-34c6-b4c7-9ce8a3de1409> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:n-accidentes "8"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/1931a26b-153f-3d06-9dae-5d3e45d1a534> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:n-accidentes "7"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/f2f2f4ea-46a3-38ee-94ca-2d770c614633> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:n-accidentes "5"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/96714ec6-8800-36db-99cb-46ee9e07336c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:n-accidentes "7"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/8e880741-fdb4-38ba-94d1-f38dd59b58b8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:n-accidentes "16"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/70f8f449-d0b8-3f0b-9912-139991e79f75> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-accidentes "53"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/27548611-b925-3dcd-8cf3-263ee606b5e0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-accidentes "13"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/8e389d81-7da1-3e96-b6b1-c6366e711d73> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:n-accidentes "12"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/8e9b16af-9c6d-3399-bf8e-12beaa5037c8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/83042679-3084-33da-a884-5d0d0fd284a4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:n-accidentes "9"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/a760dbaa-9175-372a-b40a-fb622a085c12> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/bd751d87-806b-3674-b743-ec0a8b09d9b3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-accidentes "9"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/eb059bd0-01f5-311f-83ae-c604af54303b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-accidentes "18"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/ab50e1da-73c7-3faa-ad5b-80b7b3a0d9c0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/f8c1be8e-b157-3a59-a9d8-c4a16ecc02aa> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:n-accidentes "9"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/1847c67e-791d-3143-8c63-9f3da3c9c30a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:n-accidentes "5"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/3a07a8bb-040d-3ccd-9305-d32683e4ce2b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-accidentes "45"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/d22e17f5-98df-30f0-bbac-aebfbed71454> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-accidentes "31"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/d7e53d95-8896-371e-a352-2c446f2ae02a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/a19b3646-dfb8-314d-98a9-e8c7c552f8b9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "1219"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/8e44cf8d-698c-345c-865b-77216272d640> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/trabajadores-autonomos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/03f8546b-3859-330c-8c9a-2fe3f4502685> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/6ebae70a-442e-3cb6-88d9-3ea931c218cb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:n-accidentes "16"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b33f4ae6-7825-3f97-9ef5-5dbdc22a7863> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-accidentes "6"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/984ceebf-c06b-31f7-be49-547925327025> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/6d8fd2e3-c28b-3aaa-9594-21a20720f203> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:n-accidentes "19"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/d355936f-a61f-30f3-aa82-3adc5fa006ab> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:n-accidentes "9"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/ab36a0fd-1311-33b9-96f8-58b72f0c5e4a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/422450ca-423b-3dd9-b729-0197cc2a82cf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/e988c43d-7a68-36db-b597-903f2d289d7a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/d1d5680e-91db-3c6b-b31d-b82222220ff1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/7a931816-cf64-3f3f-852f-3b2d10a5a201> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/89d59416-29f8-3353-af7a-a8f0cb86ad7c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:n-accidentes "14"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/0735f043-b431-3720-8ceb-8e6eb3b0475c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-accidentes "37"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/cc87371c-a8e3-38d3-9e43-48639493259d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/ccb7b940-aad6-308f-ae7d-14433a9162c0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:n-accidentes "6"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/a597f3f6-72d8-3dc7-b52a-479db103d858> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b9f6eee7-9ff6-3135-ac0b-98f471a7b5c5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/86b5c731-2752-3102-8f2d-a108f55221ce> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea "Municipio_del_centro_de_trabajo_fuera_de_Aragón" ;
+	iaest-measure:n-accidentes "13"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/8e919e4e-397b-3dfa-a74b-3defdc282727> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:n-accidentes "18"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/a7e42fb4-114d-3aa5-8b24-5d77d32b41fc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:n-accidentes "19"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/9bd5510d-5c33-3098-8d16-5046d5b49ff7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:n-accidentes "7"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/70081e6b-e535-3ebb-9d79-eabfd2f0a4d3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:n-accidentes "7"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/242478c6-fcd1-3daf-8e78-f9bac7904e51> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:n-accidentes "13"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/379412ed-d429-375c-bae8-106b3f9d49a2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-accidentes "68"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/05c99d37-f782-3882-ab4b-7a92ab3ff161> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/trabajadores-autonomos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/9892d6ea-936b-344c-a1b1-e4f3feab5147> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-accidentes "19"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/296bf5c6-44d6-3f8a-811c-31b21a7a4fe4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/3c9a2601-2517-3477-aa4f-516567a5180a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:n-accidentes "15"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/413b7cc7-d1e0-3746-b60f-7318e9ced553> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:n-accidentes "13"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/4f4b9bc2-f83b-3bd3-95bb-d975914d7197> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-accidentes "12"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/cdf153a9-ef54-3ee9-91cc-5d73baf62198> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-accidentes "17"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/e55749cb-8e01-3d27-a8a6-304aef76c8c3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/a93b3869-3448-30a5-9894-348b79b719f3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:n-accidentes "13"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/489e2ea1-c0d7-34b6-b18c-270f2ee5c53a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:n-accidentes "18"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/524b2610-5f93-3c6a-bdeb-2cb37116368f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/529e893b-0425-3a98-9f6c-1818cd2a8b0d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:n-accidentes "4"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/725b5b80-b4f4-3aa9-bbd7-12c90fdec7a2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-accidentes "90"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/a4895679-468c-318e-8025-a64c3b5c8ac2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-accidentes "34"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/5a05ec41-829a-3ec1-aae9-1ca875fc8ca7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/69bd4e17-85cb-32ab-94aa-ae39fd55dfd1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "1328"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/48025918-7464-321d-9572-9a6e54212a48> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:n-accidentes "8"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/a14f4980-5c8f-3626-99e6-1137b68022ab> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-accidentes "7"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/da4bd4f9-bcae-309f-9997-fbf1868f77ed> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-accidentes "4"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/279b873d-000e-3804-9fd0-5ea0a446e34d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:n-accidentes "25"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/5020fed2-9953-3d47-9002-5af8f13ba59c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:n-accidentes "7"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/8bcafae7-a07b-3863-96af-897c25ae3c94> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:n-accidentes "4"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/88929e95-3dbe-3673-964d-d06bc6cd8033> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/30380800-92ab-3607-b2d9-44252259648c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/6b905297-b9f7-3d8c-b87e-d06dbb3a8e12> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:n-accidentes "8"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/3fafab44-dda3-3a5c-807e-9e8de88d8f27> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/7bd481e1-3467-3a32-b6ea-7324b40bc6a6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:n-accidentes "4"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/5f087174-d293-364e-9b9a-a227f9ed04d6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-mineria-del-carbon> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/de5a5dfb-34bf-36c4-af7d-484c63766990> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:n-accidentes "19"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/bac430e9-b604-366f-b687-b23c8dc72e6e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/trabajadores-autonomos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/32747b2b-0d04-3227-beef-0bc7d289c3e8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-accidentes "65"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b2e050da-27b6-351d-947c-4f9db12c2ac8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/d48c1b2c-c431-38b7-8972-188074e95edb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/4f0c1955-50b9-370e-9c77-e5cfc3ed695d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:n-accidentes "11"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/1a8dc066-30de-3006-a4a1-4d8c9153a0ef> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/c5ce87e2-8ac5-3d65-89f6-e8a936457de4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea "Municipio_del_centro_de_trabajo_fuera_de_Aragón" ;
+	iaest-measure:n-accidentes "11"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/fd97fd36-fe3c-3eea-9057-48dc3723f3e0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:n-accidentes "16"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/44a43977-3aa0-3b1c-a541-a978632cd1b4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:n-accidentes "17"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/63861f7a-bb8d-3f8d-9e63-de9d55edb7d0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/beb164ef-581a-3446-a31b-fc0ce421480b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:n-accidentes "12"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/9b88e613-16d2-3b32-a99b-025a693d4fae> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:n-accidentes "16"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/d5ed0af7-fcd0-360a-ac72-9b02a7985dbf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b5daeed6-f099-350b-b900-149a814522d9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-accidentes "72"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/37cd7b60-a3e5-3464-af4b-7f383fa1a7e6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/68de5774-da10-3234-81fa-e1cb73927439> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-accidentes "14"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/c882b7a2-05f0-377e-907a-966260dffc11> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:n-accidentes "17"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/bdc649f4-7d9d-3bed-b84f-824d63b3972f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/trabajadores-autonomos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/68f10b84-0731-3ec2-afe0-e440be1607e2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:n-accidentes "16"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/329a7a73-db5e-3dc7-aaa0-1fb60cf790ca> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-accidentes "11"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/61ed205a-6a9a-35e2-86d5-ed9031d24c49> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/a85531d3-0a1f-3d96-b79b-d03ea5c1d301> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-accidentes "22"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/91873e2b-6d9a-309c-b216-51a870a8ab4b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:n-accidentes "11"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/aae11935-5e7a-3dfa-b682-a971ff1872ce> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:n-accidentes "7"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/c4699262-e504-32c5-b7dc-07b2c76b52cd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/35343aa9-5ce0-3223-843d-b167e7e00fb7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-accidentes "47"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b8d02ef9-4f98-38e7-91a2-aa4357560be7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/5c468a7b-d49f-3db8-b278-87fc6d7111c7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-accidentes "28"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/6397b532-dbe7-3fd0-8d5a-a00a463e8876> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-accidentes "8"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/06ca10cf-f0af-30f9-8002-96069f972271> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "1314"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/d02ed423-a7a3-3c70-be81-c7e28b47bb9e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/trabajadores-autonomos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/50e31662-d250-326f-994c-d197fbe624d4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/3da3a2eb-8a35-33ef-9894-85fcd47891bd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:n-accidentes "8"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/c7f19d2d-aea3-3582-a9a4-8256025833f8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/ccdeb331-c96c-3b84-8e5c-d6b40cd6af70> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:n-accidentes "20"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/697fa02e-41d6-3737-b769-aaab8f72073c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:n-accidentes "14"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/8ffafe06-834d-30a7-8d0e-42c5a9a53119> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/3e30863d-cb76-3068-97b7-7a9410fdf926> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:n-accidentes "6"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/c6b2b1bb-a1ed-35f7-869a-5e9f3751207e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/a5b1b109-0bb2-38a3-9a9d-fc2f6f7d95ee> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:n-accidentes "10"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/e088c873-beff-3f4c-a1bc-ec2ff2f9a8de> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/0d99fd38-5ed1-36c0-93a8-c434253b3f72> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:n-accidentes "12"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/38d2ea3d-3751-3bb3-acf1-b5c68e4c4bf4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-mineria-del-carbon> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/7a9aa674-5acb-3391-b647-ef4c6a8b603d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:n-accidentes "15"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/08ef6140-3fa8-308b-82b4-ac89b3084a6d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-accidentes "45"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/f76be6bd-96c1-3f80-a964-fd59296f733b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-accidentes "4"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/3fe4d81e-e61d-3fd7-a7c4-0da5adb62527> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/9efe87fc-02b6-3dd0-ae8b-305fa9a86f23> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/0a2e6a62-3fff-390b-9c97-40c375139485> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/7a54683f-ba47-3f67-8e25-fb068fb16a28> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea "Municipio_del_centro_de_trabajo_fuera_de_Aragón" ;
+	iaest-measure:n-accidentes "12"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/8fba4c50-dae3-3b98-bc69-9be1744e62ca> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea "Municipio_del_centro_de_trabajo_fuera_de_Aragón" ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/trabajadores-autonomos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/9e79c34d-4e01-394e-a431-ad1f6c30025b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea "Municipio_del_centro_de_trabajo_fuera_de_Aragón" ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/64bfbd44-5383-37b6-abd8-31689e7df06b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/74418ea0-5fea-309e-a110-76938808b5c2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/fb290c34-74d0-322d-a3a6-33cf95a3a7f1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/990ce77b-ee82-38e0-b548-f6ae40f7135e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-accidentes "5"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/8ab9a5c8-25d3-37b0-9e4d-8c4ec2c8c4ce> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "8"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/1921d1cf-4e4a-34e7-bdea-1e1f72f03c36> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/5e59af1f-091c-3fa4-b27d-960f01c8dd57> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "6"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/578978d6-ec30-3ce2-ab20-7263382208e1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/11a04eea-7258-3812-aa52-7c50ee030397> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/2c22775c-a9e1-39e2-b3b3-a8bdb95264cb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/7125ee85-a2fe-3fae-8e93-11316d682d06> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/8d0c4843-6e55-3186-95cb-d4d284d59309> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/trabajadores-autonomos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/d5e2f0cd-2267-32f0-94b0-9e6110d22b27> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/26fbdaca-9908-39ce-a337-e9f82845c13c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "6"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/0755b11c-ab9a-3b66-b869-161d6a002c49> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/9325b161-7493-33df-b2e1-989451edf884> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea "Municipio_del_centro_de_trabajo_fuera_de_Aragón" ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/2e30c84f-f096-345a-9539-9d971f427b12> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/c80b1b42-cfb1-31a9-915d-4aa88d83ec0b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "4"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/ee2df3a6-fb0e-3432-83d7-8f2c07ed5620> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/53507e3c-d000-3ab9-ab0f-85bd4f3c833f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/18222c35-5f50-3f74-b4f0-fcf940109e54> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-accidentes "4"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/cda4ab72-4607-3842-93c4-4c2c4c220564> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/9aa70d1a-5413-36d0-a306-f241d645d380> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/c57522f2-9163-3cae-8db7-95f48bf64953> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/82d6252f-bf41-368f-b909-dda69725470b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "6"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/8eac97d4-30e0-393e-b5fb-0140a3d3f051> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/935212c4-97ea-3b10-bf0c-41929940b745> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea "Municipio_del_centro_de_trabajo_fuera_de_Aragón" ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/2cbeb7d1-992d-35bc-98a9-73f274cee981> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/54e18a4f-e938-3652-9675-aba278d08173> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/8a1fe7d8-b805-3ff5-9c10-60e0e1e25382> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/5a310765-2b1c-3e85-bd4e-e6dc6c82f0e7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/13a38cde-f4b6-3cd8-a971-c41cfca4afa1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/9572dc42-5810-3631-b7f8-cb5c0acc579c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-accidentes "14"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/fcfa8d17-e90b-3a08-8984-470e1ad09cbf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "10"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/5010fb7c-f5de-3b98-892b-c852fc99a509> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/40a51f0f-dae3-371e-a81c-4c752a4ebebd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/cb02e796-8a63-3c57-84da-5efbdbf60f01> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/090c7ce0-7435-3225-9e6e-c2c50a8291f3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/486c6b3a-949f-3f79-a5d5-6e37890ccf56> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea "Municipio_del_centro_de_trabajo_fuera_de_Aragón" ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/158c60cf-bca5-3d49-8fdd-d3e9ae2c6ce3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/7ecac5a8-c126-34bc-982c-53193075d59c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/90fbe31e-c954-34de-bc94-c17c227460ce> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/415587a7-778b-3313-bcaa-aac6e9004203> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "8"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/3b23ad3f-de54-356e-b1fe-b61b91669a74> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/e896e6ed-b1c4-3aa0-9a77-8893d8401d5b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/1bc3113c-6474-3a17-9016-f4f5d1e58f83> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/e131d508-0211-3149-b0f0-76043e54559a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/c6a0e4b4-6628-3480-b5af-56985e9aa0ff> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/71982414-9411-336b-959c-074cbbd70491> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/92b7827f-0bc3-3f72-af6e-7fa3dd120229> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/44cb315e-b230-3fec-a662-65168021a597> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/7aa0bc08-98e6-3829-a233-7a88aa6a1e21> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/0e4c7bff-6eb8-3e8e-8987-c54df53174cf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/c25eb422-fb88-38b1-bbcd-ac981623bf49> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/472ba1d3-716e-323c-ad63-e160b3353415> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/55a307d4-f15b-3263-aead-2994dafd227f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea "Municipio_del_centro_de_trabajo_fuera_de_Aragón" ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/cb807cb0-229f-3ab1-bba1-7887c75d3dbb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-accidentes "2"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/bf864e58-20bc-307c-875e-ca87b6f5c886> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/81e1d2aa-5f9b-3632-afda-ecea157c5250> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/b872d1fc-3db8-3716-bb21-bd909021addf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/ba4e419a-e5dc-3949-a6b1-b159e706f850> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/8ca68083-d67e-3c18-a2a6-110aa37c64d2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/a5b9a2e3-2d06-34eb-aca1-7e0b54b3f2da> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea "Municipio_del_centro_de_trabajo_fuera_de_Aragón" ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/c0a3ac13-4921-365a-bd7d-a930642e538b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/especial-agrario-cuenta-ajena> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/5f11bc53-32f4-314b-a2c0-4be0c8464899> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/5b7b71a8-2bed-33fa-a88a-29d768594056> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/cb118168-3cd7-34b4-b280-5ab42d7ac751> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-accidentes "3"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070953TC/e2e8bf17-a9dd-30c4-8c78-a232eb6cbb54> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070953TC>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:regimen-2-digitos <http://opendata.aragon.es/kos/iaest/regimen-2-digitos/general> .

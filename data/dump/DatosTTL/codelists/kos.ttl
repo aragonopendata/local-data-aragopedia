@@ -15,6 +15,7 @@
 @prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
 @prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 
 <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados> a skos:ConceptScheme;
 	skos:notation "tipo-de-estudios-realizados";
@@ -976,6 +977,7 @@
 	skos:notation "grandes-grupos-cno";
 	rdfs:label "Grandes grupos CNO";
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno/99>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno/>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno/1>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno/2>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno/3>;
@@ -984,12 +986,18 @@
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno/6>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno/7>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno/8>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno/9>.
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno/9>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno/>.
 
 <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno/99> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno>;
 	skos:notation "99";
 	skos:prefLabel "99".
+
+<http://opendata.aragon.es/kos/iaest/grandes-grupos-cno/> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno>;
+	skos:notation "";
+	skos:prefLabel "?".
 
 <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno/1> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno>;
@@ -1035,6 +1043,11 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno>;
 	skos:notation "9";
 	skos:prefLabel "9".
+
+<http://opendata.aragon.es/kos/iaest/grandes-grupos-cno/> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno>;
+	skos:notation "?";
+	skos:prefLabel "?".
 
 <http://opendata.aragon.es/kos/iaest/mes-nombre> a skos:ConceptScheme;
 	skos:notation "mes-nombre";
@@ -3666,6 +3679,16 @@
 	skos:notation "aragon";
 	skos:prefLabel "Aragón".
 
+<http://opendata.aragon.es/kos/iaest/ratios> a skos:ConceptScheme;
+	skos:notation "ratios";
+	rdfs:label "RATIOS";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/ratios/>.
+
+<http://opendata.aragon.es/kos/iaest/ratios/> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/ratios>;
+	skos:notation "";
+	skos:prefLabel "".
+
 <http://opendata.aragon.es/kos/iaest/seccion-1-letra-descripcion> a skos:ConceptScheme;
 	skos:notation "seccion-1-letra-descripcion";
 	rdfs:label "Sección (1 letra) descripción";
@@ -5458,6 +5481,7 @@
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/palaos>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/suiza>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/iran>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/no-consta>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/armenia>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/vietnam>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/australia>;
@@ -5467,6 +5491,7 @@
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/yugoslavia>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/nicaragua>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/indonesia>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/extranjeros-no-comunitarios>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/bielorrusia>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/ucrania>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/singapur>;
@@ -5488,6 +5513,7 @@
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/luxemburgo>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/panama>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/kirgvistan>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/espanoles>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/paraguay>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/belgica>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/sri-lanka>;
@@ -5530,6 +5556,8 @@
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/malasia>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/somalia>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/etiopia>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/extranjeros-comunitarios-ue-27>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/extranjeros-comunitarios-ue-28>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/yemen>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/georgia>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/italia>;
@@ -5565,6 +5593,8 @@
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/chile>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/islas-cook>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/trinidad-y-tobago>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/extranjeros-comunitarios-ue-28>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/extranjeros-comunitarios-ue-27>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/letonia>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/lesotho>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/argelia>;
@@ -5596,6 +5626,7 @@
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/kazajstan>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/tuvalu>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/granada>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/no-comunitarios>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/bolivia>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/china>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/brunei>;
@@ -5710,6 +5741,11 @@
 	skos:notation "iran";
 	skos:prefLabel "Irán".
 
+<http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/no-consta> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre>;
+	skos:notation "no-consta";
+	skos:prefLabel "No consta".
+
 <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/armenia> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre>;
 	skos:notation "armenia";
@@ -5754,6 +5790,11 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre>;
 	skos:notation "indonesia";
 	skos:prefLabel "Indonesia".
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/extranjeros-no-comunitarios> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre>;
+	skos:notation "extranjeros-no-comunitarios";
+	skos:prefLabel "Extranjeros no comunitarios".
 
 <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/bielorrusia> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre>;
@@ -5859,6 +5900,11 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre>;
 	skos:notation "kirgvistan";
 	skos:prefLabel "Kirgvistan".
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/espanoles> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre>;
+	skos:notation "espanoles";
+	skos:prefLabel "Españoles".
 
 <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/paraguay> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre>;
@@ -6070,6 +6116,16 @@
 	skos:notation "etiopia";
 	skos:prefLabel "Etiopía".
 
+<http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/extranjeros-comunitarios-ue-27> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre>;
+	skos:notation "extranjeros-comunitarios-UE-27";
+	skos:prefLabel "extranjeros-comunitarios-UE-27".
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/extranjeros-comunitarios-ue-28> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre>;
+	skos:notation "extranjeros-comunitarios-UE-28";
+	skos:prefLabel "extranjeros-comunitarios-UE-28".
+
 <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/yemen> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre>;
 	skos:notation "yemen";
@@ -6245,6 +6301,16 @@
 	skos:notation "trinidad-y-tobago";
 	skos:prefLabel "Trinidad y Tobago".
 
+<http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/extranjeros-comunitarios-ue-28> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre>;
+	skos:notation "extranjeros-comunitarios-ue-28";
+	skos:prefLabel "Extranjeros comunitarios (UE-28)".
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/extranjeros-comunitarios-ue-27> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre>;
+	skos:notation "extranjeros-comunitarios-ue-27";
+	skos:prefLabel "Extranjeros comunitarios (UE-27)".
+
 <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/letonia> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre>;
 	skos:notation "letonia";
@@ -6399,6 +6465,11 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre>;
 	skos:notation "granada";
 	skos:prefLabel "Granada".
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/no-comunitarios> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre>;
+	skos:notation "no-comunitarios";
+	skos:prefLabel "no-comunitarios".
 
 <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre/bolivia> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-pais-nombre>;
@@ -9657,6 +9728,7 @@
 <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion> a skos:ConceptScheme;
 	skos:notation "corine-land-cover-2000-nivel-3-descripcion";
 	rdfs:label "Corine Land Cover 2000 nivel 3 descripción";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/zonas-en-construccion>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/bosques-de-coniferas>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/turberas-y-prados-turbosos>;
@@ -9690,8 +9762,12 @@
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/olivares>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/bosques-de-frondosas>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/espacios-con-vegetacion-escasa>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/tejido-urbano-continuo>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/laminas-de-agua>.
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/tejido-urbano-continuo>.
+
+<http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion>;
+	skos:notation "";
+	skos:prefLabel "".
 
 <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/zonas-en-construccion> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion>;
@@ -9862,11 +9938,6 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion>;
 	skos:notation "tejido-urbano-continuo";
 	skos:prefLabel "Tejido urbano continuo".
-
-<http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/laminas-de-agua> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion>;
-	skos:notation "laminas-de-agua";
-	skos:prefLabel "Láminas de agua".
 
 <http://opendata.aragon.es/kos/iaest/origen> a skos:ConceptScheme;
 	skos:notation "origen";
@@ -34590,6 +34661,120 @@
 	skos:notation "sin-clasificar";
 	skos:prefLabel "Sin clasificar".
 
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle> a skos:ConceptScheme;
+	skos:notation "regimen-de-tenencia-detalle";
+	rdfs:label "Régimen de tenencia (detalle)";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/agrario-ajena>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/general>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/en-propiedad-por-herencia-o-donacion>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/hogar-fijos>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/mineria>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/autonomos>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/en-alquiler>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/otra-forma>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/en-propiedad-por-compra-totalmente-pagada>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/cedida-gratis-o-a-bajo-precio-por-otro-hogar-la-empresa>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/en-propiedad-con-pagos-pendientes-hipotecas>.
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/agrario-ajena> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle>;
+	skos:notation "agrario-ajena";
+	skos:prefLabel "Agrario ajena".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/general> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle>;
+	skos:notation "general";
+	skos:prefLabel "General".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/en-propiedad-por-herencia-o-donacion> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle>;
+	skos:notation "en-propiedad-por-herencia-o-donacion";
+	skos:prefLabel "En propiedad, por herencia o donación".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/hogar-fijos> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle>;
+	skos:notation "hogar-fijos";
+	skos:prefLabel "Hogar Fijos".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/mineria> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle>;
+	skos:notation "mineria";
+	skos:prefLabel "Minería".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/autonomos> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle>;
+	skos:notation "autonomos";
+	skos:prefLabel "Autónomos".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/en-alquiler> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle>;
+	skos:notation "en-alquiler";
+	skos:prefLabel "En alquiler".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/otra-forma> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle>;
+	skos:notation "otra-forma";
+	skos:prefLabel "Otra forma".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/en-propiedad-por-compra-totalmente-pagada> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle>;
+	skos:notation "en-propiedad-por-compra-totalmente-pagada";
+	skos:prefLabel "En propiedad, por compra totalmente pagada".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/cedida-gratis-o-a-bajo-precio-por-otro-hogar-la-empresa> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle>;
+	skos:notation "cedida-gratis-o-a-bajo-precio-por-otro-hogar-la-empresa";
+	skos:prefLabel "Cedida gratis o a bajo precio por otro hogar, la empresa".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/en-propiedad-con-pagos-pendientes-hipotecas> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle>;
+	skos:notation "en-propiedad-con-pagos-pendientes-hipotecas";
+	skos:prefLabel "En propiedad, con pagos pendientes (hipotecas)".
+
+<http://opendata.aragon.es/kos/iaest/regtenen-orden> a skos:ConceptScheme;
+	skos:notation "regtenen-orden";
+	rdfs:label "REGTENEN ORDEN";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regtenen-orden/1>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regtenen-orden/2>.
+
+<http://opendata.aragon.es/kos/iaest/regtenen-orden/1> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regtenen-orden>;
+	skos:notation "1";
+	skos:prefLabel "1".
+
+<http://opendata.aragon.es/kos/iaest/regtenen-orden/2> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regtenen-orden>;
+	skos:notation "2";
+	skos:prefLabel "2".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado> a skos:ConceptScheme;
+	skos:notation "regimen-de-tenencia-agregado";
+	rdfs:label "Régimen de tenencia (agregado)";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado/en-propiedad>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado/en-alquiler>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado/otra-forma>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado/cedida-gratis-o-a-bajo-precio-por-otro-hogar-la-empresa>.
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado/en-propiedad> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado>;
+	skos:notation "en-propiedad";
+	skos:prefLabel "En propiedad".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado/en-alquiler> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado>;
+	skos:notation "en-alquiler";
+	skos:prefLabel "En alquiler".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado/otra-forma> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado>;
+	skos:notation "otra-forma";
+	skos:prefLabel "Otra forma".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado/cedida-gratis-o-a-bajo-precio-por-otro-hogar-la-empresa> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado>;
+	skos:notation "cedida-gratis-o-a-bajo-precio-por-otro-hogar-la-empresa";
+	skos:prefLabel "Cedida gratis o a bajo precio por otro hogar, la empresa".
+
 <http://opendata.aragon.es/kos/iaest/relacion-lugar-de-residencia-y-nacimiento-com> a skos:ConceptScheme;
 	skos:notation "relacion-lugar-de-residencia-y-nacimiento-com";
 	rdfs:label "Relación lugar de residencia y nacimiento com";
@@ -35223,90 +35408,6 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/pension-percepciones-por-persona>;
 	skos:notation "109";
 	skos:prefLabel "1,09".
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle> a skos:ConceptScheme;
-	skos:notation "regimen-de-tenencia-detalle";
-	rdfs:label "Régimen de tenencia (detalle)";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/en-propiedad-por-herencia-o-donacion>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/en-alquiler>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/otra-forma>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/en-propiedad-por-compra-totalmente-pagada>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/cedida-gratis-o-a-bajo-precio-por-otro-hogar-la-empresa>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/en-propiedad-con-pagos-pendientes-hipotecas>.
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/en-propiedad-por-herencia-o-donacion> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle>;
-	skos:notation "en-propiedad-por-herencia-o-donacion";
-	skos:prefLabel "En propiedad, por herencia o donación".
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/en-alquiler> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle>;
-	skos:notation "en-alquiler";
-	skos:prefLabel "En alquiler".
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/otra-forma> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle>;
-	skos:notation "otra-forma";
-	skos:prefLabel "Otra forma".
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/en-propiedad-por-compra-totalmente-pagada> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle>;
-	skos:notation "en-propiedad-por-compra-totalmente-pagada";
-	skos:prefLabel "En propiedad, por compra totalmente pagada".
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/cedida-gratis-o-a-bajo-precio-por-otro-hogar-la-empresa> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle>;
-	skos:notation "cedida-gratis-o-a-bajo-precio-por-otro-hogar-la-empresa";
-	skos:prefLabel "Cedida gratis o a bajo precio por otro hogar, la empresa".
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle/en-propiedad-con-pagos-pendientes-hipotecas> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-detalle>;
-	skos:notation "en-propiedad-con-pagos-pendientes-hipotecas";
-	skos:prefLabel "En propiedad, con pagos pendientes (hipotecas)".
-
-<http://opendata.aragon.es/kos/iaest/regtenen-orden> a skos:ConceptScheme;
-	skos:notation "regtenen-orden";
-	rdfs:label "REGTENEN ORDEN";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regtenen-orden/1>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regtenen-orden/2>.
-
-<http://opendata.aragon.es/kos/iaest/regtenen-orden/1> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regtenen-orden>;
-	skos:notation "1";
-	skos:prefLabel "1".
-
-<http://opendata.aragon.es/kos/iaest/regtenen-orden/2> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regtenen-orden>;
-	skos:notation "2";
-	skos:prefLabel "2".
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado> a skos:ConceptScheme;
-	skos:notation "regimen-de-tenencia-agregado";
-	rdfs:label "Régimen de tenencia (agregado)";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado/en-propiedad>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado/en-alquiler>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado/otra-forma>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado/cedida-gratis-o-a-bajo-precio-por-otro-hogar-la-empresa>.
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado/en-propiedad> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado>;
-	skos:notation "en-propiedad";
-	skos:prefLabel "En propiedad".
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado/en-alquiler> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado>;
-	skos:notation "en-alquiler";
-	skos:prefLabel "En alquiler".
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado/otra-forma> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado>;
-	skos:notation "otra-forma";
-	skos:prefLabel "Otra forma".
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado/cedida-gratis-o-a-bajo-precio-por-otro-hogar-la-empresa> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado>;
-	skos:notation "cedida-gratis-o-a-bajo-precio-por-otro-hogar-la-empresa";
-	skos:prefLabel "Cedida gratis o a bajo precio por otro hogar, la empresa".
 
 <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion> a skos:ConceptScheme;
 	skos:notation "descripcion-ocupacion";
@@ -36459,15 +36560,6 @@
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/codcom/17>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/codcom/18>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/codcom/19>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/codcom/1>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/codcom/2>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/codcom/3>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/codcom/4>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/codcom/5>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/codcom/6>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/codcom/7>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/codcom/8>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/codcom/9>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/codcom/20>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/codcom/21>.
 
@@ -36630,51 +36722,6 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/codcom>;
 	skos:notation "19";
 	skos:prefLabel "19".
-
-<http://opendata.aragon.es/kos/iaest/codcom/1> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/codcom>;
-	skos:notation "1";
-	skos:prefLabel "1".
-
-<http://opendata.aragon.es/kos/iaest/codcom/2> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/codcom>;
-	skos:notation "2";
-	skos:prefLabel "2".
-
-<http://opendata.aragon.es/kos/iaest/codcom/3> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/codcom>;
-	skos:notation "3";
-	skos:prefLabel "3".
-
-<http://opendata.aragon.es/kos/iaest/codcom/4> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/codcom>;
-	skos:notation "4";
-	skos:prefLabel "4".
-
-<http://opendata.aragon.es/kos/iaest/codcom/5> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/codcom>;
-	skos:notation "5";
-	skos:prefLabel "5".
-
-<http://opendata.aragon.es/kos/iaest/codcom/6> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/codcom>;
-	skos:notation "6";
-	skos:prefLabel "6".
-
-<http://opendata.aragon.es/kos/iaest/codcom/7> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/codcom>;
-	skos:notation "7";
-	skos:prefLabel "7".
-
-<http://opendata.aragon.es/kos/iaest/codcom/8> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/codcom>;
-	skos:notation "8";
-	skos:prefLabel "8".
-
-<http://opendata.aragon.es/kos/iaest/codcom/9> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/codcom>;
-	skos:notation "9";
-	skos:prefLabel "9".
 
 <http://opendata.aragon.es/kos/iaest/codcom/20> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/codcom>;
@@ -55345,16 +55392,6 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden>;
 	skos:notation "7";
 	skos:prefLabel "7".
-
-<http://opendata.aragon.es/kos/iaest/tasa-de-feminidad> a skos:ConceptScheme;
-	skos:notation "tasa-de-feminidad";
-	rdfs:label "Tasa de feminidad";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0>.
-
-<http://opendata.aragon.es/kos/iaest/tasa-de-feminidad/0> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/tasa-de-feminidad>;
-	skos:notation "0";
-	skos:prefLabel "0".
 
 <http://opendata.aragon.es/kos/iaest/residencia> a skos:ConceptScheme;
 	skos:notation "residencia";

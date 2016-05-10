@@ -1,0 +1,521 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010022>;
+	rdfs:label "Antigüedad de los edificios"@es ;
+	dct:identifier  "01-010022TC" ;
+	rdfs:comment "Cubo de datos para 01-010022TC"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/254506f0-76a1-3d1b-ad0c-6a89e3fe8380> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:total-edificios "44384"^^xsd:int;
+	iaest-measure:antes-de-1950 "6098"^^xsd:int;
+	iaest-measure:1950-1959 "468"^^xsd:int;
+	iaest-measure:1960-1969 "1245"^^xsd:int;
+	iaest-measure:1970-1979 "5995"^^xsd:int;
+	iaest-measure:1980-1989 "9548"^^xsd:int;
+	iaest-measure:1990-1999 "9843"^^xsd:int;
+	iaest-measure:2000-2009 "10001"^^xsd:int;
+	iaest-measure:2010-y-posterior "830"^^xsd:int;
+	iaest-measure:sin-definir "356"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/45d8f95c-d9cc-3fa0-b4d1-f2773625447d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:total-edificios "31506"^^xsd:int;
+	iaest-measure:antes-de-1950 "1994"^^xsd:int;
+	iaest-measure:1950-1959 "809"^^xsd:int;
+	iaest-measure:1960-1969 "1790"^^xsd:int;
+	iaest-measure:1970-1979 "3555"^^xsd:int;
+	iaest-measure:1980-1989 "3380"^^xsd:int;
+	iaest-measure:1990-1999 "5123"^^xsd:int;
+	iaest-measure:2000-2009 "13217"^^xsd:int;
+	iaest-measure:2010-y-posterior "408"^^xsd:int;
+	iaest-measure:sin-definir "1230"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/34518d2f-4f65-321d-86eb-087b19de178a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:total-edificios "11161"^^xsd:int;
+	iaest-measure:antes-de-1950 "3998"^^xsd:int;
+	iaest-measure:1950-1959 "233"^^xsd:int;
+	iaest-measure:1960-1969 "248"^^xsd:int;
+	iaest-measure:1970-1979 "687"^^xsd:int;
+	iaest-measure:1980-1989 "1188"^^xsd:int;
+	iaest-measure:1990-1999 "1024"^^xsd:int;
+	iaest-measure:2000-2009 "3072"^^xsd:int;
+	iaest-measure:2010-y-posterior "455"^^xsd:int;
+	iaest-measure:sin-definir "256"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/4fe1ed2b-b89d-38d6-a9d7-2c191021208d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:total-edificios "21081"^^xsd:int;
+	iaest-measure:antes-de-1950 "6588"^^xsd:int;
+	iaest-measure:1950-1959 "470"^^xsd:int;
+	iaest-measure:1960-1969 "453"^^xsd:int;
+	iaest-measure:1970-1979 "2208"^^xsd:int;
+	iaest-measure:1980-1989 "1846"^^xsd:int;
+	iaest-measure:1990-1999 "2491"^^xsd:int;
+	iaest-measure:2000-2009 "5777"^^xsd:int;
+	iaest-measure:2010-y-posterior "726"^^xsd:int;
+	iaest-measure:sin-definir "522"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/4a992744-6d2a-31f3-99dd-fdce07ae70e9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:total-edificios "35428"^^xsd:int;
+	iaest-measure:antes-de-1950 "7439"^^xsd:int;
+	iaest-measure:1950-1959 "1364"^^xsd:int;
+	iaest-measure:1960-1969 "4099"^^xsd:int;
+	iaest-measure:1970-1979 "3630"^^xsd:int;
+	iaest-measure:1980-1989 "3127"^^xsd:int;
+	iaest-measure:1990-1999 "2682"^^xsd:int;
+	iaest-measure:2000-2009 "5508"^^xsd:int;
+	iaest-measure:2010-y-posterior "697"^^xsd:int;
+	iaest-measure:sin-definir "6882"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/a358afa2-5ab9-3865-b1e6-663abf80472d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:total-edificios "71767"^^xsd:int;
+	iaest-measure:antes-de-1950 "10462"^^xsd:int;
+	iaest-measure:1950-1959 "2109"^^xsd:int;
+	iaest-measure:1960-1969 "4910"^^xsd:int;
+	iaest-measure:1970-1979 "11664"^^xsd:int;
+	iaest-measure:1980-1989 "11730"^^xsd:int;
+	iaest-measure:1990-1999 "11710"^^xsd:int;
+	iaest-measure:2000-2009 "14523"^^xsd:int;
+	iaest-measure:2010-y-posterior "2554"^^xsd:int;
+	iaest-measure:sin-definir "2105"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/5926b4ee-5ca4-349d-9ad0-2b68447097b3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:total-edificios "23120"^^xsd:int;
+	iaest-measure:antes-de-1950 "6411"^^xsd:int;
+	iaest-measure:1950-1959 "543"^^xsd:int;
+	iaest-measure:1960-1969 "1726"^^xsd:int;
+	iaest-measure:1970-1979 "3558"^^xsd:int;
+	iaest-measure:1980-1989 "3311"^^xsd:int;
+	iaest-measure:1990-1999 "2633"^^xsd:int;
+	iaest-measure:2000-2009 "4271"^^xsd:int;
+	iaest-measure:2010-y-posterior "565"^^xsd:int;
+	iaest-measure:sin-definir "102"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/64ec0f13-e2a6-3198-88e4-b934a84350c4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:total-edificios "19547"^^xsd:int;
+	iaest-measure:antes-de-1950 "3946"^^xsd:int;
+	iaest-measure:1950-1959 "860"^^xsd:int;
+	iaest-measure:1960-1969 "2764"^^xsd:int;
+	iaest-measure:1970-1979 "2895"^^xsd:int;
+	iaest-measure:1980-1989 "1753"^^xsd:int;
+	iaest-measure:1990-1999 "2619"^^xsd:int;
+	iaest-measure:2000-2009 "3982"^^xsd:int;
+	iaest-measure:2010-y-posterior "670"^^xsd:int;
+	iaest-measure:sin-definir "58"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/af2c804e-407c-343d-9eab-7511c9678ea7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:total-edificios "15560"^^xsd:int;
+	iaest-measure:antes-de-1950 "4314"^^xsd:int;
+	iaest-measure:1950-1959 "856"^^xsd:int;
+	iaest-measure:1960-1969 "1662"^^xsd:int;
+	iaest-measure:1970-1979 "2114"^^xsd:int;
+	iaest-measure:1980-1989 "1578"^^xsd:int;
+	iaest-measure:1990-1999 "1189"^^xsd:int;
+	iaest-measure:2000-2009 "2568"^^xsd:int;
+	iaest-measure:2010-y-posterior "577"^^xsd:int;
+	iaest-measure:sin-definir "702"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/25ddbd35-c508-398f-9eee-16e4d62c9fcf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:total-edificios "16498"^^xsd:int;
+	iaest-measure:antes-de-1950 "4610"^^xsd:int;
+	iaest-measure:1950-1959 "925"^^xsd:int;
+	iaest-measure:1960-1969 "1847"^^xsd:int;
+	iaest-measure:1970-1979 "1717"^^xsd:int;
+	iaest-measure:1980-1989 "1314"^^xsd:int;
+	iaest-measure:1990-1999 "872"^^xsd:int;
+	iaest-measure:2000-2009 "1256"^^xsd:int;
+	iaest-measure:2010-y-posterior "225"^^xsd:int;
+	iaest-measure:sin-definir "3732"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/d0f5c815-85fe-34ce-baf5-8affc4a2e86f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:total-edificios "17465"^^xsd:int;
+	iaest-measure:antes-de-1950 "3655"^^xsd:int;
+	iaest-measure:1950-1959 "607"^^xsd:int;
+	iaest-measure:1960-1969 "1513"^^xsd:int;
+	iaest-measure:1970-1979 "3271"^^xsd:int;
+	iaest-measure:1980-1989 "2487"^^xsd:int;
+	iaest-measure:1990-1999 "2021"^^xsd:int;
+	iaest-measure:2000-2009 "3557"^^xsd:int;
+	iaest-measure:2010-y-posterior "299"^^xsd:int;
+	iaest-measure:sin-definir "55"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/23891375-4de1-3c62-823d-c048f1bf1b99> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:total-edificios "16722"^^xsd:int;
+	iaest-measure:antes-de-1950 "6170"^^xsd:int;
+	iaest-measure:1950-1959 "470"^^xsd:int;
+	iaest-measure:1960-1969 "599"^^xsd:int;
+	iaest-measure:1970-1979 "2130"^^xsd:int;
+	iaest-measure:1980-1989 "2244"^^xsd:int;
+	iaest-measure:1990-1999 "2158"^^xsd:int;
+	iaest-measure:2000-2009 "2397"^^xsd:int;
+	iaest-measure:2010-y-posterior "530"^^xsd:int;
+	iaest-measure:sin-definir "24"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/26e0eb77-7a43-3f27-bfbb-a951e792bcda> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:total-edificios "14043"^^xsd:int;
+	iaest-measure:antes-de-1950 "5513"^^xsd:int;
+	iaest-measure:1950-1959 "743"^^xsd:int;
+	iaest-measure:1960-1969 "867"^^xsd:int;
+	iaest-measure:1970-1979 "1499"^^xsd:int;
+	iaest-measure:1980-1989 "1595"^^xsd:int;
+	iaest-measure:1990-1999 "1249"^^xsd:int;
+	iaest-measure:2000-2009 "2335"^^xsd:int;
+	iaest-measure:2010-y-posterior "168"^^xsd:int;
+	iaest-measure:sin-definir "74"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/c3ac843b-ad88-35bd-8a0e-3aeb858190da> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:total-edificios "9383"^^xsd:int;
+	iaest-measure:antes-de-1950 "3279"^^xsd:int;
+	iaest-measure:1950-1959 "324"^^xsd:int;
+	iaest-measure:1960-1969 "612"^^xsd:int;
+	iaest-measure:1970-1979 "1295"^^xsd:int;
+	iaest-measure:1980-1989 "2089"^^xsd:int;
+	iaest-measure:1990-1999 "836"^^xsd:int;
+	iaest-measure:2000-2009 "770"^^xsd:int;
+	iaest-measure:2010-y-posterior "52"^^xsd:int;
+	iaest-measure:sin-definir "126"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/19d6eba5-29ac-3e72-b6a4-32279eb8c4cc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:total-edificios "20507"^^xsd:int;
+	iaest-measure:antes-de-1950 "3526"^^xsd:int;
+	iaest-measure:1950-1959 "1224"^^xsd:int;
+	iaest-measure:1960-1969 "1320"^^xsd:int;
+	iaest-measure:1970-1979 "1772"^^xsd:int;
+	iaest-measure:1980-1989 "2936"^^xsd:int;
+	iaest-measure:1990-1999 "1925"^^xsd:int;
+	iaest-measure:2000-2009 "5954"^^xsd:int;
+	iaest-measure:2010-y-posterior "635"^^xsd:int;
+	iaest-measure:sin-definir "1215"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/eafe67e0-380d-3d26-820f-07a77cccb489> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:total-edificios "25167"^^xsd:int;
+	iaest-measure:antes-de-1950 "7018"^^xsd:int;
+	iaest-measure:1950-1959 "674"^^xsd:int;
+	iaest-measure:1960-1969 "1319"^^xsd:int;
+	iaest-measure:1970-1979 "2575"^^xsd:int;
+	iaest-measure:1980-1989 "3090"^^xsd:int;
+	iaest-measure:1990-1999 "2027"^^xsd:int;
+	iaest-measure:2000-2009 "7568"^^xsd:int;
+	iaest-measure:2010-y-posterior "736"^^xsd:int;
+	iaest-measure:sin-definir "160"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/1bef5817-c78b-35a2-90db-30d6ebf38df8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:total-edificios "560901"^^xsd:int;
+	iaest-measure:antes-de-1950 "27584"^^xsd:int;
+	iaest-measure:1950-1959 "26776"^^xsd:int;
+	iaest-measure:1960-1969 "83724"^^xsd:int;
+	iaest-measure:1970-1979 "122063"^^xsd:int;
+	iaest-measure:1980-1989 "91021"^^xsd:int;
+	iaest-measure:1990-1999 "66932"^^xsd:int;
+	iaest-measure:2000-2009 "117696"^^xsd:int;
+	iaest-measure:2010-y-posterior "23121"^^xsd:int;
+	iaest-measure:sin-definir "1984"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/95c6c483-323c-3c08-a1dc-2123a2b4144f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:total-edificios "7668"^^xsd:int;
+	iaest-measure:antes-de-1950 "3270"^^xsd:int;
+	iaest-measure:1950-1959 "792"^^xsd:int;
+	iaest-measure:1960-1969 "566"^^xsd:int;
+	iaest-measure:1970-1979 "787"^^xsd:int;
+	iaest-measure:1980-1989 "1014"^^xsd:int;
+	iaest-measure:1990-1999 "548"^^xsd:int;
+	iaest-measure:2000-2009 "594"^^xsd:int;
+	iaest-measure:2010-y-posterior "77"^^xsd:int;
+	iaest-measure:sin-definir "20"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/70cdac6a-9bd1-394a-aaab-bd058b0b2359> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:total-edificios "12810"^^xsd:int;
+	iaest-measure:antes-de-1950 "3156"^^xsd:int;
+	iaest-measure:1950-1959 "344"^^xsd:int;
+	iaest-measure:1960-1969 "1436"^^xsd:int;
+	iaest-measure:1970-1979 "2200"^^xsd:int;
+	iaest-measure:1980-1989 "2307"^^xsd:int;
+	iaest-measure:1990-1999 "1410"^^xsd:int;
+	iaest-measure:2000-2009 "1616"^^xsd:int;
+	iaest-measure:2010-y-posterior "230"^^xsd:int;
+	iaest-measure:sin-definir "111"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/7ce4af79-b61e-3431-b4e5-85f25a2c3414> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:total-edificios "50651"^^xsd:int;
+	iaest-measure:antes-de-1950 "20261"^^xsd:int;
+	iaest-measure:1950-1959 "2057"^^xsd:int;
+	iaest-measure:1960-1969 "2838"^^xsd:int;
+	iaest-measure:1970-1979 "6229"^^xsd:int;
+	iaest-measure:1980-1989 "4617"^^xsd:int;
+	iaest-measure:1990-1999 "5580"^^xsd:int;
+	iaest-measure:2000-2009 "7463"^^xsd:int;
+	iaest-measure:2010-y-posterior "1041"^^xsd:int;
+	iaest-measure:sin-definir "565"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/3495b631-127a-3d22-a017-af8a7f1c4a54> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:total-edificios "11092"^^xsd:int;
+	iaest-measure:antes-de-1950 "4627"^^xsd:int;
+	iaest-measure:1950-1959 "247"^^xsd:int;
+	iaest-measure:1960-1969 "344"^^xsd:int;
+	iaest-measure:1970-1979 "1788"^^xsd:int;
+	iaest-measure:1980-1989 "1484"^^xsd:int;
+	iaest-measure:1990-1999 "665"^^xsd:int;
+	iaest-measure:2000-2009 "1623"^^xsd:int;
+	iaest-measure:2010-y-posterior "241"^^xsd:int;
+	iaest-measure:sin-definir "73"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/cc0a5572-c65e-3952-b564-464f31061e21> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:total-edificios "6605"^^xsd:int;
+	iaest-measure:antes-de-1950 "3586"^^xsd:int;
+	iaest-measure:1950-1959 "556"^^xsd:int;
+	iaest-measure:1960-1969 "647"^^xsd:int;
+	iaest-measure:1970-1979 "504"^^xsd:int;
+	iaest-measure:1980-1989 "652"^^xsd:int;
+	iaest-measure:1990-1999 "278"^^xsd:int;
+	iaest-measure:2000-2009 "277"^^xsd:int;
+	iaest-measure:2010-y-posterior "42"^^xsd:int;
+	iaest-measure:sin-definir "63"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/0289ec1e-8085-3f74-a596-209622aafb5c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:total-edificios "7537"^^xsd:int;
+	iaest-measure:antes-de-1950 "4355"^^xsd:int;
+	iaest-measure:1950-1959 "235"^^xsd:int;
+	iaest-measure:1960-1969 "296"^^xsd:int;
+	iaest-measure:1970-1979 "560"^^xsd:int;
+	iaest-measure:1980-1989 "878"^^xsd:int;
+	iaest-measure:1990-1999 "614"^^xsd:int;
+	iaest-measure:2000-2009 "463"^^xsd:int;
+	iaest-measure:2010-y-posterior "106"^^xsd:int;
+	iaest-measure:sin-definir "30"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/b47a6def-f408-3860-b9de-eb1cfb7e014e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:total-edificios "13689"^^xsd:int;
+	iaest-measure:antes-de-1950 "6895"^^xsd:int;
+	iaest-measure:1950-1959 "430"^^xsd:int;
+	iaest-measure:1960-1969 "450"^^xsd:int;
+	iaest-measure:1970-1979 "923"^^xsd:int;
+	iaest-measure:1980-1989 "913"^^xsd:int;
+	iaest-measure:1990-1999 "484"^^xsd:int;
+	iaest-measure:2000-2009 "608"^^xsd:int;
+	iaest-measure:2010-y-posterior "142"^^xsd:int;
+	iaest-measure:sin-definir "2844"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/ca9bbe2c-8f95-3690-8b17-aee5a83b310b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:total-edificios "19405"^^xsd:int;
+	iaest-measure:antes-de-1950 "8515"^^xsd:int;
+	iaest-measure:1950-1959 "627"^^xsd:int;
+	iaest-measure:1960-1969 "1027"^^xsd:int;
+	iaest-measure:1970-1979 "2464"^^xsd:int;
+	iaest-measure:1980-1989 "2637"^^xsd:int;
+	iaest-measure:1990-1999 "1272"^^xsd:int;
+	iaest-measure:2000-2009 "2121"^^xsd:int;
+	iaest-measure:2010-y-posterior "305"^^xsd:int;
+	iaest-measure:sin-definir "437"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/8a0998f7-e601-306f-971e-7fca5557abf9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:total-edificios "15998"^^xsd:int;
+	iaest-measure:antes-de-1950 "4985"^^xsd:int;
+	iaest-measure:1950-1959 "682"^^xsd:int;
+	iaest-measure:1960-1969 "854"^^xsd:int;
+	iaest-measure:1970-1979 "1969"^^xsd:int;
+	iaest-measure:1980-1989 "2779"^^xsd:int;
+	iaest-measure:1990-1999 "472"^^xsd:int;
+	iaest-measure:2000-2009 "772"^^xsd:int;
+	iaest-measure:2010-y-posterior "144"^^xsd:int;
+	iaest-measure:sin-definir "3341"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/2718bc1b-b6b7-3d11-aa59-2e1316f7919a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:total-edificios "10934"^^xsd:int;
+	iaest-measure:antes-de-1950 "3521"^^xsd:int;
+	iaest-measure:1950-1959 "659"^^xsd:int;
+	iaest-measure:1960-1969 "595"^^xsd:int;
+	iaest-measure:1970-1979 "1850"^^xsd:int;
+	iaest-measure:1980-1989 "1977"^^xsd:int;
+	iaest-measure:1990-1999 "1023"^^xsd:int;
+	iaest-measure:2000-2009 "1005"^^xsd:int;
+	iaest-measure:2010-y-posterior "281"^^xsd:int;
+	iaest-measure:sin-definir "23"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/ff7433b0-ef0c-328e-9a69-40d026b25621> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:total-edificios "29289"^^xsd:int;
+	iaest-measure:antes-de-1950 "6721"^^xsd:int;
+	iaest-measure:1950-1959 "975"^^xsd:int;
+	iaest-measure:1960-1969 "1753"^^xsd:int;
+	iaest-measure:1970-1979 "4107"^^xsd:int;
+	iaest-measure:1980-1989 "3887"^^xsd:int;
+	iaest-measure:1990-1999 "4629"^^xsd:int;
+	iaest-measure:2000-2009 "5268"^^xsd:int;
+	iaest-measure:2010-y-posterior "828"^^xsd:int;
+	iaest-measure:sin-definir "1121"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/eb2887b7-ab27-3ddf-9962-b98ad60ec95d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:total-edificios "49479"^^xsd:int;
+	iaest-measure:antes-de-1950 "9584"^^xsd:int;
+	iaest-measure:1950-1959 "1613"^^xsd:int;
+	iaest-measure:1960-1969 "3452"^^xsd:int;
+	iaest-measure:1970-1979 "7332"^^xsd:int;
+	iaest-measure:1980-1989 "7875"^^xsd:int;
+	iaest-measure:1990-1999 "6442"^^xsd:int;
+	iaest-measure:2000-2009 "9810"^^xsd:int;
+	iaest-measure:2010-y-posterior "3228"^^xsd:int;
+	iaest-measure:sin-definir "143"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/095907b4-6d26-3626-9173-513ce84f876c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:total-edificios "6521"^^xsd:int;
+	iaest-measure:antes-de-1950 "3611"^^xsd:int;
+	iaest-measure:1950-1959 "197"^^xsd:int;
+	iaest-measure:1960-1969 "280"^^xsd:int;
+	iaest-measure:1970-1979 "721"^^xsd:int;
+	iaest-measure:1980-1989 "830"^^xsd:int;
+	iaest-measure:1990-1999 "264"^^xsd:int;
+	iaest-measure:2000-2009 "373"^^xsd:int;
+	iaest-measure:2010-y-posterior "234"^^xsd:int;
+	iaest-measure:sin-definir "11"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/a173a5ea-9313-3463-94fb-587792dab957> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:total-edificios "8981"^^xsd:int;
+	iaest-measure:antes-de-1950 "4886"^^xsd:int;
+	iaest-measure:1950-1959 "189"^^xsd:int;
+	iaest-measure:1960-1969 "377"^^xsd:int;
+	iaest-measure:1970-1979 "579"^^xsd:int;
+	iaest-measure:1980-1989 "1025"^^xsd:int;
+	iaest-measure:1990-1999 "494"^^xsd:int;
+	iaest-measure:2000-2009 "856"^^xsd:int;
+	iaest-measure:2010-y-posterior "194"^^xsd:int;
+	iaest-measure:sin-definir "381"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/c54de340-7ce7-318c-982d-e535a12a84f2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:total-edificios "18503"^^xsd:int;
+	iaest-measure:antes-de-1950 "8122"^^xsd:int;
+	iaest-measure:1950-1959 "282"^^xsd:int;
+	iaest-measure:1960-1969 "557"^^xsd:int;
+	iaest-measure:1970-1979 "1964"^^xsd:int;
+	iaest-measure:1980-1989 "1926"^^xsd:int;
+	iaest-measure:1990-1999 "1109"^^xsd:int;
+	iaest-measure:2000-2009 "3811"^^xsd:int;
+	iaest-measure:2010-y-posterior "649"^^xsd:int;
+	iaest-measure:sin-definir "83"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010022TC/744d0feb-970d-36a5-9469-c40c017dc7aa> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010022TC>; 
+	iaest-dimension:fuente-y-fecha <http://opendata.aragon.es/kos/iaest/fuente-y-fecha/catastro-diciembre-de-2015--------------------------> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:total-edificios "10164"^^xsd:int;
+	iaest-measure:antes-de-1950 "5259"^^xsd:int;
+	iaest-measure:1950-1959 "207"^^xsd:int;
+	iaest-measure:1960-1969 "333"^^xsd:int;
+	iaest-measure:1970-1979 "902"^^xsd:int;
+	iaest-measure:1980-1989 "1295"^^xsd:int;
+	iaest-measure:1990-1999 "762"^^xsd:int;
+	iaest-measure:2000-2009 "1085"^^xsd:int;
+	iaest-measure:2010-y-posterior "281"^^xsd:int;
+	iaest-measure:sin-definir "40"^^xsd:int.

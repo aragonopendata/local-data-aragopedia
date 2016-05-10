@@ -1,0 +1,59 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/915-150011A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/915-150011>;
+	rdfs:label "Senado. Participación"@es ;
+	dct:identifier  "915-150011A" ;
+	rdfs:comment "Cubo de datos para 915-150011A"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150011A/ae69a33d-e1c0-3eca-a5c2-045623ff0b5c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150011A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:censo-electoral "986381"^^xsd:int;
+	iaest-measure:participacion "727672"^^xsd:double;
+	iaest-measure:abstencion "258709"^^xsd:int;
+	iaest-measure:votos-nulos "23502"^^xsd:int;
+	iaest-measure:votos-blancos "34782"^^xsd:int;
+	iaest-measure:votos-a-candidaturas "669388"^^xsd:int;
+	iaest-measure:participacion "73.7718994992807"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150011A/642520df-6d80-3f8f-be19-fc39e6318024> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150011A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:censo-electoral "1018510"^^xsd:int;
+	iaest-measure:participacion "718923"^^xsd:double;
+	iaest-measure:abstencion "299587"^^xsd:int;
+	iaest-measure:votos-nulos "28686"^^xsd:int;
+	iaest-measure:votos-blancos "47654"^^xsd:int;
+	iaest-measure:votos-a-candidaturas "642583"^^xsd:int;
+	iaest-measure:participacion "70.5857576263365"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/915-150011A/52717aa2-e515-3567-9bac-baee631f1408> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/915-150011A>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:censo-electoral "1016420"^^xsd:int;
+	iaest-measure:participacion "773865"^^xsd:double;
+	iaest-measure:abstencion "242555"^^xsd:int;
+	iaest-measure:votos-nulos "18908"^^xsd:int;
+	iaest-measure:votos-blancos "17006"^^xsd:int;
+	iaest-measure:votos-a-candidaturas "737951"^^xsd:int;
+	iaest-measure:participacion "76.1363412762441"^^xsd:double.

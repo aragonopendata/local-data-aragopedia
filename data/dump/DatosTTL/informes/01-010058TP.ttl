@@ -1,0 +1,104 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010058TP> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010058>;
+	rdfs:label "Explotaciones agrarias Según tamaño"@es ;
+	dct:identifier  "01-010058TP" ;
+	rdfs:comment "Cubo de datos para 01-010058TP"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010058TP/12e10817-c0a2-36eb-9840-3c7d5a16eb7f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010058TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1989> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:numero-total-de-explotaciones "23425"^^xsd:int;
+	iaest-measure:explotaciones-sin-tierras "156"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--01-y-5-hectareas "6525"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie-5-y-10-hectareas "3544"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie-10-y-20-hectareas "4304"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--20-y-50-hectareas "4558"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--50-y-100-hectareas "2333"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--100-hectareas "2005"^^xsd:int;
+	iaest-measure:explotaciones-con-tierras "23269"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010058TP/349ed153-46f4-3205-b9ca-e75c779ca1ea> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010058TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1989> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:numero-total-de-explotaciones "25692"^^xsd:int;
+	iaest-measure:explotaciones-sin-tierras "224"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--01-y-5-hectareas "8939"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie-5-y-10-hectareas "4217"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie-10-y-20-hectareas "4021"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--20-y-50-hectareas "4066"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--50-y-100-hectareas "2083"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--100-hectareas "2142"^^xsd:int;
+	iaest-measure:explotaciones-con-tierras "25468"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010058TP/ec580711-f9c4-3fa6-a20d-13e740815728> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010058TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1989> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:numero-total-de-explotaciones "51614"^^xsd:int;
+	iaest-measure:explotaciones-sin-tierras "702"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--01-y-5-hectareas "25286"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie-5-y-10-hectareas "8479"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie-10-y-20-hectareas "6964"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--20-y-50-hectareas "5485"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--50-y-100-hectareas "2499"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--100-hectareas "2199"^^xsd:int;
+	iaest-measure:explotaciones-con-tierras "50912"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010058TP/9976e49a-4a60-3617-a023-d72fbd2b2787> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010058TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:numero-total-de-explotaciones "21318"^^xsd:int;
+	iaest-measure:explotaciones-sin-tierras "431"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--01-y-5-hectareas "6526"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie-5-y-10-hectareas "2817"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie-10-y-20-hectareas "3215"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--20-y-50-hectareas "3888"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--50-y-100-hectareas "2207"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--100-hectareas "2234"^^xsd:int;
+	iaest-measure:explotaciones-con-tierras "20887"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010058TP/f6bf1c39-7d6c-3bde-b522-6f1fc67c6446> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010058TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:numero-total-de-explotaciones "17926"^^xsd:int;
+	iaest-measure:explotaciones-sin-tierras "579"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--01-y-5-hectareas "6012"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie-5-y-10-hectareas "2170"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie-10-y-20-hectareas "2313"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--20-y-50-hectareas "3050"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--50-y-100-hectareas "1750"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--100-hectareas "2052"^^xsd:int;
+	iaest-measure:explotaciones-con-tierras "17347"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010058TP/cbae6702-c03e-382b-8013-99ad20dd1ef9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010058TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:numero-total-de-explotaciones "40777"^^xsd:int;
+	iaest-measure:explotaciones-sin-tierras "767"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--01-y-5-hectareas "19594"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie-5-y-10-hectareas "5664"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie-10-y-20-hectareas "5009"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--20-y-50-hectareas "4688"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--50-y-100-hectareas "2522"^^xsd:int;
+	iaest-measure:explotaciones-con-superficie--100-hectareas "2533"^^xsd:int;
+	iaest-measure:explotaciones-con-tierras "40010"^^xsd:int.

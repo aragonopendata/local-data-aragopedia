@@ -1,0 +1,1635 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030101>;
+	rdfs:label "Hogares y familias Según número de miembros"@es ;
+	dct:identifier  "03-02010301-030101TC" ;
+	rdfs:comment "Cubo de datos para 03-02010301-030101TC"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/2dc7bc2d-35e1-3452-b875-b7c01cefe53c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:n-hogares "2269.7025967246"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/38d1f24c-1334-38fb-8afe-e7eaef75440e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:n-hogares "1668.2590448489"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/d28e0ad9-24e1-369a-9290-976eb75377f5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:n-hogares "786.8213157912"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/508bb267-b419-3054-ad61-92b0c640800d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:n-hogares "1504.0740495788"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/4cfae3bd-90cd-3750-bff8-b3f2a2e8ebb7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:n-hogares "2729.8985045756"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/1e76a88b-dac6-3201-94dc-d5137c070600> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-hogares "6992.6794176015"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/d4fff00f-f9dd-355f-b637-939f146c37a8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-hogares "2632.5753392215"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/a25a0aa8-3ea5-349c-91ef-33db1dedc2db> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:n-hogares "1867.1784575633"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/1ac68651-0b7a-3d35-a3ae-f26ff101773d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:n-hogares "1583.3182341995"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/31547938-42c9-3159-a10d-fa785e145a4e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-hogares "1847.7578649078"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/0961530e-9ccb-3227-b92f-6cd22b0cd3db> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-hogares "1852.1056338463"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/25c8c2c4-7a3a-39a1-9896-650078e2a8e1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:n-hogares "1593.3129029074"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/97d93276-a7e2-33df-8be9-15de0d476862> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:n-hogares "1336.0392704777"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/a9e48b25-8da4-3bb5-b14c-eb56d41a8fb7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:n-hogares "603.1182592427"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/e2a20490-c58b-3fee-aac3-3f37f35db3b3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-hogares "2270.8224869235"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/dbbd1b14-5e83-3f98-aa11-e8202388741b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-hogares "2494.5535706084"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/c9ef8844-5942-3ce8-b216-060163cceb82> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-hogares "79230.9453121043"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/949cbfc3-279e-35f2-9a11-528d35da21af> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:n-hogares "936.5384373078"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/dadef142-1283-30cc-b98f-8265a98f4c72> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-hogares "1191.253188794"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/60143da0-b971-34c2-b435-265702a0027c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:n-hogares "4745.045637508"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/062118be-0318-3bca-b64b-72f4b2dc8247> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:n-hogares "1001.4145370166"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/baab2d8f-4a02-3f81-b77b-4b564f87d445> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:n-hogares "617.0795762454"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/200d09b0-6293-31bf-9c54-fbe1409152ea> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:n-hogares "716.3888862704"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/00c64709-86b7-3d2c-b1dd-3ae908570905> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:n-hogares "908.3489596993"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/749b02cf-127f-3283-be40-8593bd563b27> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:n-hogares "1604.1349574668"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/c19a3755-dba1-3a42-a6ab-778d350755f2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:n-hogares "787.0822693903"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/55d72741-88df-36df-979c-462aeebd693c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:n-hogares "968.387361859"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/9ea646d1-8788-3f86-88ae-28d97acf6dee> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:n-hogares "2738.7055719993"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/d053e258-c3a6-3aa1-88d5-acebfe9c21df> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-hogares "4008.6456246367"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/947c2379-cd93-33f6-bb70-c561b5fb3852> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:n-hogares "431.0818436949"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/e9becc36-6301-36af-8db1-4b45ac4e0e0e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:n-hogares "641.0211275322"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/38c1255a-bbcb-3f40-9425-577b9c60d73d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:n-hogares "1051.7039693019"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/1cbff2ed-ad24-39d7-9878-afd708c67ff2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "1 persona"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "1"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:n-hogares "909.7554451777"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/91af4ce4-63cd-3272-baa5-18886a9c7e6a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:n-hogares "2205.1887810031"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/8334b7e3-4817-3a2c-958c-6b141b1f8e18> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:n-hogares "1757.2908985434"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/244e9e65-25f4-3073-b514-cd34b7d1bbbb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:n-hogares "858.9377216133"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/15c488ec-8e15-3cf9-bbe5-ba4927e20b55> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:n-hogares "1678.0496895359"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/d393c7e7-2db7-33cf-a7d2-3ca77281296d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:n-hogares "3896.1959205903"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/e9f85001-fa23-3c77-8c81-34d6ddfcafd4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-hogares "8268.5232198497"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/ff98c4de-eea7-3f7b-9e53-be790068ec05> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-hogares "3098.4359553717"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/ae8ba73c-fa25-3409-8a8f-767e08c5dc77> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:n-hogares "3219.7099892143"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/bf6e0ad6-9c14-3e6d-a316-bde1c5e3ce8e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:n-hogares "2470.1864529004"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/daa60d22-5c6a-315d-bba0-f0213bba24ca> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-hogares "2307.0687030073"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/8a74c112-ee2e-3c6e-83d1-cd0465b02707> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-hogares "2408.5340154443"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/40818e65-13ce-3f4a-bee5-f51a5d876546> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:n-hogares "1852.7208212832"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/ba5b5a53-8dd4-33de-8698-fd617e056acb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:n-hogares "1718.3671075208"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/b40d3712-fd5e-34c2-8c19-ed0894aacd93> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:n-hogares "919.1386555494"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/eed1a127-20dc-39ed-92f9-85af14e5cc82> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-hogares "3299.8359832774"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/21e635f7-5fd6-3e20-88a3-a57b3ad4cf54> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-hogares "3436.6933041156"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/74c6c337-94f9-3204-b24b-4a0f66d875b1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-hogares "96505.6907896283"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/619fe207-c729-3e70-b7a1-9ee7cc21368d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:n-hogares "1182.3507763459"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/f732e9a9-991e-37e6-bf06-f3d32cea14e5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-hogares "1655.7965028062"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/5e2591ae-1d52-3ee1-b437-e68e83806b2c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:n-hogares "5040.8876183963"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/b725d251-2be3-3497-8923-e7f9a6ab3175> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:n-hogares "1278.9821195938"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/69c46b91-f3b6-33e9-b9a4-af588af63ec8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:n-hogares "755.6441427196"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/05645f13-3780-39f0-9703-01bc298c74a2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:n-hogares "1007.0086257637"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/befef591-5611-3507-a687-e6776f6ee707> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:n-hogares "906.415751182"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/d2040852-2196-356f-a643-829f180b7807> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:n-hogares "1744.0920142306"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/486170b3-5015-35b0-803f-c261af3fffe2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:n-hogares "1099.0986653203"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/fb58ea98-576f-3882-a31d-0d7874722d53> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:n-hogares "1497.2042287325"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/a3d4d55e-4f32-36b1-9d82-4372efc212cf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:n-hogares "3475.2682519128"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/8b9d85b1-7bc0-3205-b1a6-e7bbb7daeb36> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-hogares "5556.8940724362"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/fb458008-bdfe-36fc-a6f0-78686abaccea> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:n-hogares "454.8499621416"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/265be235-2a08-3355-aaa7-6eec6533ecd0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:n-hogares "559.3158370451"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/2932d880-6643-3b5b-b4f1-7dfbec7fbbdd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:n-hogares "908.1772063785"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/1c988de6-4142-31b2-87c1-7d97bea0c763> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "2 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "2"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:n-hogares "1031.6563393918"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/f8c3051f-6fea-3169-8572-2264297a092a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:n-hogares "1621.9837309954"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/33a80cae-8df7-37bf-b7e4-918709374742> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:n-hogares "1300.119072684"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/561c9d11-0ce9-36b3-8440-3a273671e086> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:n-hogares "640.882954375"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/4bb6645c-85e6-3cb2-92b4-d9e184a7ad3b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:n-hogares "1120.2102270316"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/3c47fc8c-8f62-366f-a760-c46a311061bd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:n-hogares "2746.0761931078"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/614d0dae-a988-3134-a947-c3e3ba559ce6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-hogares "5949.9252647599"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/5f587528-216c-342d-8446-60dcf7f2f1c1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-hogares "2017.0536453931"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/10e055a2-e168-3c55-b7ea-8d68121055cd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:n-hogares "1877.9883308972"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/bcc052fa-fb77-3836-a618-b29a6de00aa7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:n-hogares "1671.4559356029"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/a0897f12-24b2-3ae2-b1e0-751761c785e5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-hogares "1624.9876797761"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/d3a6b0fa-cb02-31ba-9c59-cda5aa7328c4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-hogares "2159.6574857532"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/f582ec11-ff66-3c95-90dc-67378f2c03ba> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:n-hogares "1205.6027423544"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/697d84d4-b0cb-33cd-a471-1cd099056942> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:n-hogares "1243.2488993383"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/38c91f16-f3bf-3f98-9280-43f7236a3f3d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:n-hogares "675.3121132559"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/3dabfe19-250e-3155-a9f2-9290f7bf8a65> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-hogares "2600.4213271568"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/d0aabe60-a47d-3a51-a8a3-9334f8530f3d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-hogares "2599.0405062648"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/2536d4fa-b7fe-34d4-8ea7-6442fc1270c8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-hogares "65215.0305938637"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/c28c0ebf-a116-3992-a2e7-5162e3aac645> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:n-hogares "797.447019604"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/8cf8cfa3-56b8-3a5e-9078-32fe72e64930> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-hogares "1252.0405652154"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/4d1896e5-1180-37aa-b4cd-0e74e0e13e23> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:n-hogares "3241.0237937761"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/df081666-ba17-317c-a2c8-121a37c1b4be> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:n-hogares "1068.1776058462"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/142b53ad-305d-374c-95c8-b0dd8c660a58> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:n-hogares "439.0878994342"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/5b1be525-ce62-3fb7-931b-ef5fc439ca4f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:n-hogares "556.9759184019"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/007d60ee-8869-3e94-9fa5-9893787363bf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:n-hogares "501.3028154857"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/1d1a0cc4-102d-36c9-b93e-ee64b727b0d9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:n-hogares "997.9106020939"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/47902392-beae-31b9-a494-14d2ed78243a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:n-hogares "726.3650632806"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/aed1d471-1492-389a-8951-ba3ad78394bb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:n-hogares "827.5728146734"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/be367ddc-a151-33a8-b864-a34e531ee327> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:n-hogares "2401.4423394313"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/ae868c2e-d056-38a1-a494-b7d15bbb9bf3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-hogares "3706.0050454105"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/5855eecb-e315-3e74-aa16-7b9a0376d115> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:n-hogares "265.4516779724"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/03fb3624-b26a-3fb7-87a9-11a2b682b46c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:n-hogares "426.0322436878"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/dd528916-05a5-37da-ab90-3d597f5994fc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:n-hogares "649.3572011391"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/f6ff0111-9901-34f5-8988-9c8e57cec200> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "3 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "3"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:n-hogares "705.4943254782"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/edf143bb-a537-35fd-a22f-7c5de20efb1d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:n-hogares "1139.9329371572"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/32b6d569-50af-3de8-b12e-e2139e2f5eff> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:n-hogares "798.6197152831"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/8d48df11-8b43-3902-97c8-a4024740966c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:n-hogares "506.8159202327"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/81f659a4-45a4-3470-96c8-7d518e04f478> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:n-hogares "688.2263597"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/5b97c57d-01cc-3fb8-b92e-24a7dd1c0cc5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:n-hogares "2296.0825507266"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/f8e86838-a72b-3c7e-830d-03d0e8f9e034> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-hogares "4525.5220812979"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/58f33118-6aeb-3b58-a0aa-8c9cf0773a68> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-hogares "1615.7616357724"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/f14d6a16-5784-32f8-adda-4a2c4f05b2e1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:n-hogares "1620.0205707197"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/0dfea090-e44f-3be8-bd3e-0fa32fe64d41> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:n-hogares "1262.6441108589"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/77e52104-bb6c-3063-916e-a73eb4ed3175> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-hogares "1477.0070771693"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/a7133071-7e5d-3ca7-9cbf-3264f6e206ef> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-hogares "1671.1257536103"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/0ed19544-d19c-3d27-843c-ea7b56fc94ca> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:n-hogares "980.7280344897"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/d56f88a4-e283-3a0e-8655-04d651ce1da8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:n-hogares "1178.6930504013"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/fe684012-4a84-37f9-a737-a50a64ac225b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:n-hogares "599.6352079601"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/e6f8abda-19a8-33f8-873f-98e368a49d34> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-hogares "1982.5938096285"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/d30cd845-99db-3859-8a01-41317594d220> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-hogares "2216.9373752805"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/8d5dfd95-b6f9-385f-b7b6-648ae9ec161e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-hogares "51782.1475936459"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/52aa84db-cc2a-3dc3-b950-58b508e9bd0e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:n-hogares "673.398967075"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/073bbf8c-6228-3b48-b72a-0262fcb121a0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-hogares "898.5802368372"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/7c0d2b90-0600-3a01-8335-2299c0447d34> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:n-hogares "2691.4122946511"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/6cca9072-bfa7-3dd8-bbd7-f78e3822e1b4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:n-hogares "724.9137496121"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/01b70270-b47a-3b21-ad06-1a7769c016f7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:n-hogares "331.9326052959"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/998b7755-9a35-3eee-a04c-b35ad4fa4ea6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:n-hogares "436.876348567"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/61ac17ea-96f6-3ea4-8c45-70b8a33fd3a8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:n-hogares "341.3901006247"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/b6700819-7c52-3fe3-b8ac-bd59d433ed47> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:n-hogares "983.2211464328"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/bdc1fcbb-e376-3d2a-befc-48c5fddb917d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:n-hogares "607.0141942696"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/35ba2a8b-2e00-39ff-a313-cc51fe173cf7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:n-hogares "937.4295299215"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/de60837b-ba8e-3106-ab20-c57c02cbd2c9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:n-hogares "2225.9628260649"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/e03d2e44-cdbc-3626-98c7-9e54560252b8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-hogares "3593.6843359622"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/231a05bf-e973-3291-aafc-523927956d8d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:n-hogares "235.4214895879"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/5381341c-d762-3a47-bb66-05deb70142c3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:n-hogares "323.6471194633"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/1d672d5e-21ae-3146-af99-cd6cac70d174> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:n-hogares "588.5420468239"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/9f9b3e34-494a-3309-b16e-017a8b8cae9a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "4 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "4"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:n-hogares "600.4744938646"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/bb19c1cc-81bd-3340-a88d-6af9dfebbc7c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:n-hogares "257.4253465735"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/df5ed07e-f8bd-3d50-8aae-8abcf7bdb34c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:n-hogares "340.1858868635"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/05830871-14a3-3546-8cc6-4438136371c9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:n-hogares "181.9482434089"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/24e6f7ce-3008-31e3-a74a-fd1c108ceffc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:n-hogares "211.3214400179"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/785f67fe-b7c5-3008-bc23-96422cb132b5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:n-hogares "734.5685120749"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/ad9e9ab8-588b-3e53-9e01-f99898cddf68> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-hogares "1068.7524472576"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/5b8adf5a-9031-3805-849b-6f6e95e9a66c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-hogares "352.823167081"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/fd9e801f-82ac-3f45-b7d6-2f9eb4f60b33> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:n-hogares "400.480844817"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/9785c139-6b92-37e0-8972-6afb1b51e137> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:n-hogares "272.5253390022"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/e46b8a7a-babe-3200-b25b-bee8a0b3a03d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-hogares "433.1241553507"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/639cddfd-cc66-3215-8211-a478af213759> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-hogares "616.0185664167"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/8cf81119-6413-3867-8b55-21b8f27d55dd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:n-hogares "267.2384807419"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/3d78dbd7-aa17-31dd-87cc-64ef6c12372f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:n-hogares "286.8010436818"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/845d68ab-1d4f-387a-8000-ebcf956c11d0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:n-hogares "75.0307507134"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/4dfeec83-f4a6-369f-a2b6-44b0c9db8923> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-hogares "298.4679593444"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/a68a8287-a992-307d-ac19-240a69ff44cd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-hogares "478.7976969587"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/4b1a11f9-7daf-3f98-a843-06dc0d4911cf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-hogares "9945.2891795144"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/efcbe1ba-396c-3c42-8a69-0f2131fcd07d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:n-hogares "142.501957384"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/2d28fd3d-f84f-38d9-aeb7-8dcd7d118a69> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-hogares "367.9607763052"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/c2537aab-f790-3b0f-9e8c-d0ff8ec5b191> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:n-hogares "704.3031737594"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/7a35e8c1-2e63-32a7-846a-92416b923129> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:n-hogares "222.0623529257"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/927b52b3-72a2-3486-a8a0-038266d6de4d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:n-hogares "60.5155808809"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/500a372c-613f-3fb3-ac5d-a23fb48cf82c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:n-hogares "117.4290187532"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/079e4c96-4edc-3c1c-b0e8-224de2d57b1f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:n-hogares "63.6018920323"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/9dbf62a5-2eb5-3d68-ad98-904bfd42165a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:n-hogares "145.2928272572"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/c5da7ad1-6ef7-3e49-893d-2f14203f9452> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:n-hogares "155.2903822548"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/28b787d3-342d-33b5-8908-8c3ab6491835> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:n-hogares "140.3742294704"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/9be44305-14f4-3f6d-8274-fd7bab20fd2f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:n-hogares "656.9225441459"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/446f19ad-7863-3d27-9b60-f156c0486647> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-hogares "664.2091924472"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/8933271c-c433-3063-8597-f1d223982717> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:n-hogares "45.9161034832"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/1fd88c50-8a58-3cb8-97c5-76e46c8f0964> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:n-hogares "83.9530389744"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/44aee68d-f74a-30eb-9da1-c786e4f578a8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:n-hogares "140.1991235097"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/9e370a4a-c043-351d-8748-f41d5ce386ba> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "5 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "5"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:n-hogares "176.0731529056"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/074694aa-81b2-35bd-b301-5cfabee6c0f7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:n-hogares "52.5180383451"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/6afa60a4-95af-3e8a-87fd-e8219a564978> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:n-hogares "22.7763564958"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/5b2a046c-1183-38d8-b513-d0be6ec79978> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:n-hogares "19.5952852553"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/ca8d7876-ed33-3bb5-9b7f-e9fb8ea8a1ec> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:n-hogares "100.1964641483"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/e89b4b7a-37e9-37cf-b915-2f038181ba35> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:n-hogares "64.8657793658"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/060a25e4-8f3f-32b2-8160-92c4ddc185f2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-hogares "218.0786769116"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/c425c03f-802f-3efe-89dd-30788ce4f0e1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-hogares "136.0358409531"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/9ecbfaec-b24a-388d-b50a-34c1a2db416a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:n-hogares "73.2114885614"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/245c9fc8-4594-379d-8ffa-4d4288b691c5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:n-hogares "85.4751755933"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/2dd3747d-25cd-343c-af49-b6aec3950ee4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-hogares "159.8212961545"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/b2d45234-a7bb-33eb-9796-76a6591b3565> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-hogares "236.3220268053"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/87aae59b-4a85-3f2c-b1a5-2cbaa5820c93> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:n-hogares "38.2981310061"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/7e2a99a7-f787-38c6-8f92-f8ab083f3982> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:n-hogares "26.1295300323"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/c0269925-3b55-3310-8a4b-db2f101b54ad> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:n-hogares "23.1878007338"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/35ca7e0e-79e3-3a58-954b-c2cdc4036c3d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-hogares "108.2059024871"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/b3af12bf-0560-3f6c-8a6d-98d931f9933a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-hogares "123.414009492"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/0f013447-62c0-31d7-be5a-ebe53bda745f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-hogares "2715.6356675985"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/7636658e-5bde-3632-8a17-ef037b68e0ef> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:n-hogares "39.0566427301"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/523d5858-4642-36c2-aab4-b8a1702c1c5b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-hogares "115.6619466067"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/343a1346-80a3-361d-a50d-051abbffccfe> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:n-hogares "182.854743452"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/b2df3fa4-d92f-3902-907a-8f96cdd6c30a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:n-hogares "19.3107411441"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/a0c8465f-fcca-3cec-a3a4-a3597a8106ab> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:n-hogares "8.7547066999"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/8e1c9467-75bb-3b49-9c9c-a95991637dd3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:n-hogares "17.3007547109"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/94a65114-a685-3fad-9047-b05d578c0cf3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:n-hogares "25.8547058162"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/9c48b9b3-4115-3514-bf5d-9e6e58a53f92> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:n-hogares "96.8517180166"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/9c94c43a-ad28-3927-ad6a-946d16fb78dc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:n-hogares "54.3769247121"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/a3b37154-308c-3ebf-af4c-a7545c72c03d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:n-hogares "41.0774538115"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/efca855c-f7be-352b-877b-b4791a36c864> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:n-hogares "89.3086272743"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/0536f83e-835b-34ce-89f4-18891e34043b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-hogares "286.2283297643"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/0c4392d0-7f1f-3093-ac10-c5159286c56d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:n-hogares "28.6074018893"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/b641d84d-3e30-3ae0-bf9c-bdccdf19277c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:n-hogares "10.4566585332"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/e9e2ba29-5cfe-38eb-bd95-8cc55ebad879> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:n-hogares "41.2286285146"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/035a0cbf-8b3d-32fe-aeeb-c08c1d707513> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "6 personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "6"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:n-hogares "33.9518755565"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/c88e6c15-4b3b-3d25-967d-96a01c028843> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7.21096053360185"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:n-hogares "24.3655808906"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/56e4ebe6-2d2b-3780-982f-ce1e02d194e7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7.3178847495405"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:n-hogares "27.3884745364"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/a2ab1338-23d8-3670-89d1-edf08679e5b4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7.52221319207099"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:n-hogares "10.372853229"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/ce2eb2df-a6c0-334b-aab5-414126f79e59> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7.486532593595"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:n-hogares "17.0860092196"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/baaac03f-0e0b-328e-a54e-6cdc50a567b3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "8.11542249487861"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:n-hogares "12.7709996327"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/4fc4129d-6c1e-3c7e-b75f-ad8cf3ff9e76> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7.25129200432073"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:n-hogares "99.0025665339"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/a010f8a2-99cb-3115-a9e0-8344278009a5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7.03745568405186"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:n-hogares "11.0440201393"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/564d84f1-7bf2-37e6-99a5-1df7a50bd173> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "8.23175701063218"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:n-hogares "127.5291165207"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/c251267e-47b8-3a35-b081-d0a2d8ab26da> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7.26973535673886"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:n-hogares "42.5861711823"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/d377ff6f-dac3-3c28-b18b-3c79562a20c9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:n-hogares "9.5050148787"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/685a788d-76ca-38af-b883-f867f618e67b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7.40901862563998"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:n-hogares "15.8949356346"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/08b0bbe2-f0de-3436-b0b3-2c2b780a6d2a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/31d4686f-7a58-3da0-9bc6-4dc02848716f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7.27007833335802"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:n-hogares "9.8211035303"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/7c3001aa-74f4-33de-a5fb-e69452329a91> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/acc65bb4-d76f-3489-853e-7957be2a938f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "8.1491299700315"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:n-hogares "60.7304368618"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/652c8aa2-d937-3af0-b6d7-eee0c4dfeaf5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7.50351538740819"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:n-hogares "37.3790829551"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/9bb477fb-3df1-360d-a215-0507b5d72721> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7.60292315525395"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:n-hogares "819.8281395572"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/0e3b168c-756a-3c98-934d-2cb3e2a273c4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/5be69594-25f7-3499-b1ac-374e76098513> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:n-hogares "62.1588573714"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/70588afa-045b-3c0f-850b-695929366cf5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "8.35879583378944"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:n-hogares "27.6255558213"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/ea6cfd08-b83f-3328-b60e-a80c19183e1a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:n-hogares "9.5936112799"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/3796b804-36fb-3d35-845b-7ec19e76fb36> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "10"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:n-hogares "1.4018282165"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/ca8f0fa1-958a-307a-a73d-94b43807d331> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:n-hogares "6.1624948845"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/40ae28d3-6658-38c8-922a-2ca54f551a2b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:n-hogares "3.020266861"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/5bc60ef6-f1df-3d61-a630-57a4b07e8fc3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:n-hogares "8.0443753507"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/3acc7311-b763-3c6d-bd37-896213560a3a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "8.13250958130595"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:n-hogares "16.6549052027"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/cbdf6c4a-32f3-3c0c-8477-92a6ac4e381f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/14096eec-87f1-3de5-a488-d7d0d3947896> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7.7494280392957"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:n-hogares "9.8107399387"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/27d9cdfb-4f47-3f40-8667-40b8642029fe> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7.60973702823618"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:n-hogares "36.2750590542"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/de1e96d8-d644-341a-be39-b5f387619e63> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:n-hogares "9.9556688925"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/44c4a97d-7b51-387a-971b-15bc9b857820> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "8"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:n-hogares "1.6074146751"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/425a3706-44a1-375e-a733-70691eb4acac> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7.84551347373383"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:n-hogares "7.238371576"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030101TC/b31f5205-03ed-3820-8db2-e06c780c2af5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030101TC>; 
+	iaest-measure:numero-de-miembros-del-hogar "7 o más personas"^^xsd:string;
+	iaest-measure:n-medio-de-miembros "7.44406854311755"^^xsd:double;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:n-hogares "2.5126878287"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

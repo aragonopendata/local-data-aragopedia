@@ -1,0 +1,296 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/03-030016A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-030016>;
+	rdfs:label "Indicadores de estructura demográfica"@es ;
+	dct:identifier  "03-030016A" ;
+	rdfs:comment "Cubo de datos para 03-030016A"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/bda4a342-c4c1-3f26-8093-86f810bd7a31> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1998> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "17.871954380508"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "77.0347330222913"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "5.09331259720062"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "11.8843960601348"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "25.2332814930016"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "57.3872472783826"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "79.9637117677553"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "34.0920165889062"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "28.4989122552574"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "114.392886913031"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/da42b0a1-ebd7-3320-908d-8053fc016d35> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "17.9597864364421"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "77.2691128024537"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "4.77110076110417"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "12.1663069408156"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "25.6503464727934"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "57.1168919686471"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "80.4725661706237"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "33.835113029649"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "26.5654648956357"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "116.077565046637"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/f6922e24-8ca7-3bdf-bb8e-c8317e6ab025> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "18.7858627858628"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "77.1476091476091"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "4.06652806652807"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "13.3305613305613"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "26.8856548856549"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "59.3929313929314"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "82.6195426195426"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "32.8379625779626"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "21.6467463479416"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "123.30547818013"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/f2258790-d8e8-3e29-b631-837b2d9b3cdb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "17.2450890544687"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "80.4558313742678"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "2.2990795712635"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "12.4995019325019"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "29.2744152687572"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "65.1113678925768"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "87.2933019882855"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "31.0730166952225"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "13.3317929759704"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "136.496419148134"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/6e561a72-1d2d-335c-811a-c223a76831ed> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "18.4408614377004"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "79.8944807040684"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "1.66465785823119"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "13.6333659290929"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "31.2532690514634"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "67.1480226502627"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "88.3201055192959"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "30.1861255770586"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "9.02700702922679"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "137.166280135915"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/5bf97bf5-b270-3f7c-a9d6-780028642fc5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "20.5522166214295"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "77.9549567015639"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "1.49282667700659"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "15.3677135840765"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "33.2412433759855"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "68.211192968851"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "88.6099263280341"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "29.5782441514799"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "7.26357990724"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "132.21159257175"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/873adf8b-2d58-3557-8672-896379b22220> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "21.3011799600232"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "77.1848604036366"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "1.51395963634019"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "15.9855567734864"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "33.0904636017796"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "67.1365013862918"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "87.7580759558966"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "29.6867044941647"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "7.10739799007144"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "127.464726760729"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/e6014a17-18d9-3d3a-8f48-4a87006be87e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "21.0959441599207"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "77.3851809020321"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "1.51887493804725"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "15.5088385924335"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "32.4735668263671"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "66.1810259375516"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "87.2707748224021"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "29.9518730381629"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "7.19984337526308"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "128.431256928556"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/994b9a07-78e1-38af-a51f-590476c249ee> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "21.8771651749699"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "76.7655963781665"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "1.35723844686364"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "15.9594157230854"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "32.7996127599396"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "65.6276990537296"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "87.1555888801359"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "29.8585861941326"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "6.20390455531453"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "125.549632864513"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/0fb88605-10fa-30d0-b9e9-a33f843c21f3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "21.8449567538021"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "76.8359538278512"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "1.31908941834668"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "15.8990064628147"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "32.6090800938877"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "64.8017748625446"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "86.39030899328"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "30.0803832674191"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "6.03841624963203"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "123.31041662927"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/613a3a2d-6cd5-3484-8d80-add3e6297c84> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "21.5543733698319"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "77.2292952508845"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "1.21633137928363"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "15.5760142550939"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "32.7447511814684"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "64.3357952637967"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "86.0050874157477"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "30.2041035043772"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "5.64308392739472"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "126.526463576934"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/2ac8c516-5423-320a-88fd-a377211371ce> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "21.5524753395531"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "77.2328015894224"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "1.21472307102441"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "15.9732307799556"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "32.4280519118382"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "63.4909200757532"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "85.4622454077542"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "30.343282715031"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "5.63611859838275"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "126.060120556292"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/fff2e5c6-acf1-338b-aeb7-bf65be762356> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "21.8972071686907"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "76.7745513790832"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "1.32824145222606"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "16.4542481772067"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "32.0210762280023"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "61.8640444634459"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "84.5094346163179"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "30.6425187479057"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "6.06580301311311"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "121.876682476606"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/163d28fb-63cc-368c-8a0c-e0b1f303a11d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "21.9781182641814"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "76.5942532697014"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "1.42762846611719"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "16.7197256897186"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "31.2255758120951"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "60.0234822685507"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "83.5145128597548"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "31.034840793724"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "6.49568106312292"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "118.790977059237"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/4e6880b2-73f9-3319-b90b-0959410d7908> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "21.8588073548186"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "76.5838103875548"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "1.55738225762661"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "16.7089324190837"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "30.4740888793895"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "58.3377139523196"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "82.6117346673522"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "31.4545956062873"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "7.12473572938689"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "116.507829306118"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/b47ffdbd-0709-39fd-abae-ba0d0dc9ef25> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "21.8026754504673"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "76.5100516547367"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "1.68727289479594"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "16.7109119911548"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "29.5457032127288"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "56.4902420344019"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "81.3184914743771"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "31.8876408700109"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "7.7388341565199"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "114.654074834052"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/431e4772-1664-3133-bb51-5fdae432021c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "22.1790378674672"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "76.1430265829486"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "1.6779355495842"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "16.9475511120344"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "29.4811399776186"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "55.1386776206016"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "80.499360052536"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "32.0374687564916"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "7.56541180735996"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "110.885478491889"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-030016A/3bdd6486-9294-32ee-9f4a-ae4727d7ace0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-030016A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-dimension:tipo-de-nacionalidad <http://opendata.aragon.es/kos/iaest/tipo-de-nacionalidad/extranjeros> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:de-poblacion-de-0-a-19-anos "21.7879486100312"^^xsd:double;
+	iaest-measure:de-poblacion-de-20-a-64-anos "76.3922872245565"^^xsd:double;
+	iaest-measure:de-poblacion-de-65-y-mas-anos "1.81976416541235"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-15 "16.6682122653959"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-25 "28.7181755277031"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-35 "53.243973948339"^^xsd:double;
+	iaest-measure:de-poblacion-menor-de-45 "79.0802023069844"^^xsd:double;
+	iaest-measure:edad-media-de-la-poblacion "32.5368090281989"^^xsd:double;
+	iaest-measure:indice-de-envejecimiento "8.35215925089218"^^xsd:double;
+	iaest-measure:tasa-de-masculinidad "109.465961389038"^^xsd:double.

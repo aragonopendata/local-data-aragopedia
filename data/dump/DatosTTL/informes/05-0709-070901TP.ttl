@@ -1,0 +1,1244 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/05-0709-070901>;
+	rdfs:label "Accidentes y Enfermedades profesionales Total accidentes por grado de lesión y sexo"@es ;
+	dct:identifier  "05-0709-070901TP" ;
+	rdfs:comment "Cubo de datos para 05-0709-070901TP"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/780932f0-bd6f-3b39-a93b-205d2302836b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "1785"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/8455413a-ece8-39bf-b569-1efd1cc44b67> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "777"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/c3df67d5-6caf-3b08-9456-261617d61ed6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "6775"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/eeb15ca6-0e12-39eb-af87-4d41fbaf815a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "654"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/0fe6cadd-40d3-3a26-b934-2eae3093bb6e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "272"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/2aa26ef6-b633-36ca-b237-83976b59bb94> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "3724"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/6dfd824b-d6e4-3b1f-9c66-8188b41418b4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "1622"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/bfff31f3-7bbc-3b41-8a7e-204f2839e847> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "854"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/3d20c0db-7b71-3f06-8537-862e805e74f4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "5939"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/f0cf8bfe-61d2-34d5-8dca-7d36dbd4a25b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "634"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/0c818f55-563f-3889-b776-32ca79fc2682> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "330"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/f211aa20-bcbb-38d5-a20a-b43b6f25a262> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "3388"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/84c09621-aa68-361c-a6d8-2c20e5fcd017> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "1530"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/543abef3-d43b-3ab4-ac79-24267205a453> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "838"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/055ee6d6-f1ef-3984-8a8d-b0af2b3288f4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "5812"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/61deb69c-0582-3e9d-bb5b-ef84f5030624> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "597"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/c6f768ac-0c3c-3de5-bd0c-48fabe0df879> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "323"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/51ec6a8b-f2f0-3d93-a3e4-1bdcab0d18c5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "3342"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/2e4b9eaf-c2a7-3750-bacf-bdf4b20230ac> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "1543"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/67f44118-cee6-38d6-9b2b-24dd71ca7278> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "870"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/9ce1db43-c1fd-35de-a280-d52b295165fd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "6247"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/e1596feb-8ce1-3aee-9d92-e8bbc3f48fb9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "512"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/2259e2f0-4948-3e9d-a1f4-d8bfb4559d5a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "271"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/5da8f0b0-2070-3659-83ef-2fbcdfae4d07> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "2976"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/5b3f2391-7f90-3ba4-b708-ee6f2f0c7124> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "1868"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/99eefb83-4eae-35e8-9fa2-c16a3c9cec05> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "1102"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/e0457dea-6aa7-3901-ae46-db66ae028aba> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "7628"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/55b41707-6dbe-30cf-b5ed-f950471a06ce> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "560"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/098a51c9-6911-37d4-94b9-bf5002edecba> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "355"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/92985d6e-7d68-3b73-a1b4-e20b07eccfa9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "3730"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/5de0b840-dfeb-3803-92cc-62383c9c6685> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "1898"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/ed5a1f82-6073-3778-b55b-ccbe3dcb49c6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "1293"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/6d2d34b6-e08f-376d-b415-3fdd1fb0e702> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "8663"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/3bc8cda9-7b32-308d-89c8-796c5142eac4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "646"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/2552cc8d-e0df-313d-90cd-3654e3b7f84f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "446"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/c41d2056-6845-30d4-8604-0b75d5d8a847> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "4009"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/71bd952b-0f4e-39bc-8bbd-6478bed07b13> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "2225"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/8fd7bbbd-7d54-32fa-9ca1-1beb38a055da> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "1333"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/90fc0541-4f98-34ad-9c22-c1fa16bfaa68> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "8983"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/fbf642fc-083b-30c4-9161-d25d763317ca> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "645"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/444d44ce-5bc7-3813-9e02-e3b2ea082c55> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "389"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/4f935a57-f2ca-3f07-8b79-902b2d908a9b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "4084"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/89e6155d-fa40-3273-a79b-f0f2b3f83287> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "2927"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/378f1552-f90a-3ac6-bed5-24691d4f4bda> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "1707"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/b9fb4280-c6c6-35ca-bb52-998bea8ae3dc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "12741"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/6171833d-4b9f-3f28-a2b7-04a3b36730c0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "760"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/17959c68-c2fb-38aa-88f2-7b02aa4a4b0d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "453"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/915ff0dd-0f56-38f8-9c07-3a5aa0100486> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "4291"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/e0a2d20e-e964-3d8f-86f7-43a3c23e5162> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "3221"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/0f65b5ad-264d-3e97-ab7b-f3027897505b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "1801"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/aac7a35d-7242-3c93-be6e-23ece49d09a9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "14220"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/b2f56d57-aecb-3dcd-96e1-3608ddb5076f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "728"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/1fd547b5-e185-3dce-8ff5-baa6148da88c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "430"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/fd9992ca-65f7-38e6-9f10-747a03c939f0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "4343"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/c479d9e4-d967-3a11-a08d-14e22dabe490> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "3134"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/0a201bfa-6057-3b1f-b8ed-a15c5143c833> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "1622"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/9b896e89-064b-3ddb-858f-51df74789a33> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "13438"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/90dbf702-e501-3b3e-8648-330fcfc71b44> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "633"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/a6fd424d-8e1d-3f39-b584-34ffac860cc2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "372"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/929d0078-d17d-360d-8ad8-9bb7f28cb44a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "3950"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/1e40bed6-e43f-381e-9edf-0e05f5524de0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "2858"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/c2260ac7-312b-395f-870c-106a1c88ca27> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "1601"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/4721aacf-395d-35f3-a647-be148b9c4652> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "12612"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/78908e30-1b04-3830-a38d-25f01cf8b4d7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "589"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/303a37e0-cbbe-3b8c-9bd2-ba8e71616424> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "334"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/8252ccb4-0597-3c06-8a88-2087a2754cf1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "3762"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/a33341ef-9e91-3233-bb4d-dab90c9ee2f8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "2600"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/43ea519d-be52-3776-bf84-e0f2c1b372a3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "1451"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/0fdccd24-a3ce-34fd-a35e-24784a17777f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "12277"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/f3c0eedf-76fa-3c56-bae0-9e7fad1d367c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "492"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/19917219-10a3-3142-9245-592319ac3d37> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "246"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/69b8f20d-e0ac-3b2a-b2a1-a618c3ee53fc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "3466"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/7c51cdec-aa36-311f-ab9c-61ee6559abab> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "2577"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/989d113c-da52-3807-81e7-372aada6c3d4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "1574"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/6ba4def5-9975-391a-88cf-5552fd6b4c91> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "12308"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/9cfdd940-0bc0-3379-8eae-8c2fc690f692> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "507"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/348701c4-3914-346c-8419-dfacd68ed367> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "280"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/817f3240-7a34-309b-a268-42fc7528e941> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "3302"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/b1c18a6a-985a-3147-92e2-4ec6b38c3f90> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "20"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/7f47d446-1ea8-3948-ba5c-9eb1c3e9a972> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "11"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/f6b3df14-0ce6-3170-9850-7874d7ce667c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "52"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/5c367a8c-1cf7-3283-a874-291253e0ca11> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "2"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/6aa9bb73-0f3d-3ac1-b780-7fb72ba097ba> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "12"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/1294630d-6fa7-3e29-ae4b-62491dc9b815> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "23"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/f400a888-1dc5-3349-8137-634d46f280d4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "16"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/629f05c4-da6b-3f82-bb4e-7333407adcc5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "42"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/475bd199-4bef-3257-bd4a-a980b23c44f5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "3"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/31914b85-ea5e-310b-bded-4be72d3bb19c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "4"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/046f7c96-4043-3bdc-a7f3-25e6694038ab> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "19"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/608c22b6-5c37-3bbe-9c9f-5e407fbc0f6f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "6"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/9e620201-70bf-3c92-adbd-e51f1259a1e3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "47"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/843e3ab1-f82b-315d-aa41-f77aeac16120> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "3"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/48ae1a6f-9c2a-34f9-aa1b-f15b18314152> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "2"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/c768e0ff-6278-3b73-bcfd-d05781a9ab2e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "10"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/3ab24f3f-b470-3e09-8db6-12b88615c3a4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "32"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/446782df-da2e-3894-9701-f992657bc67c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "7"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/459c9ac6-b0a5-38bc-bc82-107e1acd882b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "42"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/6cb5f528-8a8e-3d4b-abad-ea6e101aa68a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "2"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/d3c8ee8f-a896-3dd2-a69a-ee9f9b8ffdfa> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "3"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/9730f848-b015-3e55-b533-a437587c7284> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "9"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/ff5a75e8-de12-3317-842e-3acfe13e2eaf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "33"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/f0d44f01-37b7-3c3b-853c-951115603075> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "12"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/20a850e9-4bdf-35a6-898f-f2a4e8fdd816> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "44"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/13dfd343-d0ff-3ac7-b279-3cb5fe2bcc23> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "3"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/c1846b24-0346-3fb0-b975-4d46fef2332b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "1"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/b2f6506f-675b-344b-a113-2220406ac206> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "4"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/ac38f79f-6811-3068-925c-ef161bd404e2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "44"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/b5c47471-7acf-3ba4-aaf1-817119ad6864> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "14"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/2030de5d-0741-3590-9c94-f6760415d2f6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "67"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/795a8279-bc22-34f7-9811-c974723355d0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "6"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/674a2596-e132-30e9-9356-0047bdea248e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "1"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/f8077c9e-f71d-3b41-8c6a-e6b69de4acac> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "9"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/04e5d244-6c7c-31fd-bc3c-a00d5eaad931> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "32"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/f28abe7a-3371-3a39-83c8-bbaa505b06f7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "17"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/d913723e-93d7-3b4f-bcb3-0f774521dd09> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "79"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/f601a17c-66bf-358c-a2f3-eb06f6f4d4a0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "4"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/0e2e6e1b-4d24-38be-a73d-15ab1b8bb46b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "3"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/cc94a07d-618f-3829-818e-3f663eb554be> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "14"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/c3d03ae5-4c01-3aa8-addc-a0965fda04ed> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "32"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/36fcecee-a47b-3ebb-b3f7-7d5b7cdee233> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "15"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/c1bf777c-b01d-36b7-ac38-37aeac4fd23c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "85"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/9d0f2c54-21d8-3840-8a44-a66ec37953f2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "3"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/09b8d2e8-82d6-3cfc-8d11-4977c508b50a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "6"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/dd28c512-de5a-358a-a480-e377dfb5e642> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "45"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/42eb824b-c534-362a-94c7-548a20fdae9d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "19"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/ec130a6c-8599-3019-bcbb-ba17a15defde> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "117"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/e3581883-8522-3957-9723-a292480a35c4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "2"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/2dd49dcd-8a2d-34eb-a794-f506a5b0ad72> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "7"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/7fc21c37-d91e-37f8-a9c6-43f826bae1f8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "31"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/02fbc23c-5a52-382f-b308-c291d5ec40d9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "12"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/c5ddba70-3261-3054-a84a-c983aec51f19> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "114"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/4966b3e1-01cd-30ce-b1bc-f1d3410618b4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "2"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/465a1196-c702-3b52-931c-2679c413d2db> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "1"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/e4792a29-5228-3ee2-9350-7e3e1e77a05d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "8"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/a405ded5-a73f-37de-95df-ae19927872ad> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "43"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/2edc59b6-9751-34fc-b181-6d5c39d329e1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "28"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/80394d20-12fa-3859-a4b5-bd8e50b2e97a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "111"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/2eb5e4ff-d3bc-3c23-82b6-4c3e5a20c4be> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "6"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/5dd51717-363a-3f9d-8b7e-5d6184bb92cc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "1"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/75934c87-6993-3311-a90f-e95cd8cc169c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "9"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/29f709cf-c5e1-3e70-a6f9-3839fa42d9bd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "43"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/a6bf8fbc-70d1-3203-ae49-434ffea17eff> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "34"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/501def9b-6c96-3898-9b08-5bd81e3c983f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "124"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/2a9bbd7a-3969-3f57-8a05-f6449da219bb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "5"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/13cf9808-108a-3dfa-a65b-49b703c577f3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "3"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/ffd52dea-1b98-3239-956c-dbc5257836b1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "17"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/c934328c-c563-337e-9a17-40795bee33c0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "41"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/088e22b1-cdbe-3338-ac9b-7a624f0c0449> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "33"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/95664415-895e-3ac7-8f39-f276c37eab44> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "137"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/60afadfa-fa9e-38a8-9c50-e2b45ea1fe91> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "3"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/5d299ba9-69f8-35b2-bcf0-b36ca2696463> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "3"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/e91d8979-bbd3-3952-9a37-49343fc35029> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "11"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/67ef6231-c599-3c7f-ac03-3a933c3b2bb9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "5"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/ea2f2da9-8425-3271-a8ae-af1da8d9230a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "1"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/93e75863-d6d7-3b10-9927-ba0ef4eac9a7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "18"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/e3130dbc-7bd2-35a8-98e2-3784a5f5bee1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "5"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/7fc28ece-4b3e-344b-8380-bbf3bd620227> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "3"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/60c7d57e-4e27-36fe-9123-08f7fb36d865> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "3"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/00d8bac6-fca8-35ca-adab-28b9530b4bb3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "10"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/82d43e13-c064-3059-bc8a-2db25e6e7494> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "2"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/777cf6c4-13f2-31f5-837f-89cc66c28c13> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "3"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/524bbcca-9214-331f-aee5-0307f6a9ba4e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "2"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/fa8ecca8-8f7d-3fdd-a1aa-04908468c3ff> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "14"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/f31e1c34-f894-3468-99d0-7f6ee8da01f0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "2"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/cfdf105d-9d22-3af0-8b8d-8e1c8ea9b371> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "5"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/c7123977-93c0-3932-8dec-d73eaf808b09> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "5"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/11b291bb-05db-3d27-bf31-8742ec3da0a5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "8"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/32320520-0daf-371f-99b3-f3a8bf1b0d03> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "1"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/dfb10dff-4a1f-34f8-909d-58fbdf2db53e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "2"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/ba06c32f-1fa9-3b8a-a834-cc5227774063> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "10"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/10c6f937-8cde-334a-b347-85688a8cbbe1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "13"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/4bc877e1-a531-3b38-9f20-b471d35e5ced> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "2"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/12728f01-fa7b-3fc5-bcc9-2cb1fd48fc42> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "6"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/dd72b8c9-92a8-331a-abd6-092c9fe7b404> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "3"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/3def3b5c-27f8-3cf7-8f64-97f757e481dd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "21"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/27ce4d8a-5c66-32c0-b9a4-47e9e91b97c3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "1"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/e54a542e-7b19-3c13-8621-f6e5087bbed7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "8"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/301e1143-0c41-3036-86d6-7b70e2f79693> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "10"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/595695fa-666d-3994-9210-1e9c57aac488> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "25"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/3b6ae3b5-842e-3c11-9b21-e7db2914973e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "2"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/0ab79c68-f878-3b99-ad61-6dca498c686b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "6"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/fdb7883a-b2c3-331c-9849-9e37067285b4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "21"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/3c895d37-9238-3f79-8a7a-6cc55fa71997> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "1"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/88da39e5-a52b-3f9f-a091-7af10eebb88f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "6"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/6c7640ec-a9f5-3f82-8ed7-3c555ef6c0c4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "10"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/cd5ce604-8130-37d3-b437-90d13cc360e9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "22"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/34fa64c8-c6c3-36dc-95ac-c6cfcf2e6227> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "1"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/a13b55de-7aec-3d25-b4a6-2531a69b3005> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "5"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/16eb1836-5e45-3d50-95b4-78107a2989b5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "8"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/d626d8e1-4de3-3d35-9494-b9448db2c477> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "20"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/2bfc24a4-6afe-3c21-9593-3942af49c307> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "1"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/144f1bf6-b045-3d96-890f-65ab1bda9ead> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "5"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/34e945a6-c6ee-3716-844f-56186a296555> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "7"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/2db483f3-5367-35e9-a474-31f6a713326c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "22"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/fac0273c-252f-32a2-b049-f41c43dfb130> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "1"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/28ef1cd8-6e6b-3681-a1b5-b179c105bfab> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "10"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/1956b1a7-8962-315b-9adf-e35b382eede3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "9"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/3927ecd5-ab0b-3d1b-a15b-2affbb393cea> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "23"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/8fae54b6-af59-35c3-8400-6b6ba6fb047f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "2"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/f9e23da1-4835-311e-90dc-0a0b58aeb483> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "5"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/2daa44b7-455f-31de-b83b-4e33ed9564b6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "11"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/dc5e037c-4955-3ceb-bf28-d3af941b788d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	iaest-measure:n-accidentes "15"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070901TP/a13cc230-518d-3950-b9b8-40895a612238> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070901TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	iaest-measure:n-accidentes "1"^^xsd:int.

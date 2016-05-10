@@ -1,0 +1,226 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010066A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010066>;
+	rdfs:label "VAB y Empleo por sectores de actividad. Años 2000 a 2007"@es ;
+	dct:identifier  "01-010066A" ;
+	rdfs:comment "Cubo de datos para 01-010066A"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/4f2f700f-9f54-3a72-b662-8724cbc4dfa7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	iaest-measure:vab "1402955.2"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/agricultura> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/183d9f6c-671f-3965-b389-59dfd406f550> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	iaest-measure:vab "916093"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/energia> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/63c433e6-02ee-3317-afc2-bb010ff3b674> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	iaest-measure:vab "6098398"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/industria> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/73ad9636-3709-3b6d-921e-1162ddacf0c3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	iaest-measure:vab "3598841.9"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/construccion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/f5a31364-651c-3fc9-a242-f111c955e1b4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	iaest-measure:vab "17495826.5"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/servicios> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/15018e75-2c73-31c4-b544-0722fd86b00f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	iaest-measure:vab "1211409.9"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/agricultura> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/c6d717de-b1f9-33cc-9a9d-825fd7666502> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	iaest-measure:vab "790410.6"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/energia> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/c0e7293d-6c2a-39ad-a4e7-64fc3d926ebe> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	iaest-measure:vab "5590411"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/industria> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/241d6109-0369-3b0c-a0e6-09161bae673c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	iaest-measure:vab "3216258.4"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/construccion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/e60b6ec4-3b9b-3eac-be70-66c8e6485364> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	iaest-measure:vab "16144519.9"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/servicios> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/3beed45b-c0d9-30f4-be6f-fb8041c6d613> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	iaest-measure:vab "1180629.1"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/agricultura> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/3f16bbe5-641e-3e56-a260-ee2ea26dce4a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	iaest-measure:vab "804230.3"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/energia> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/6fea7647-b019-336f-bbc9-0f501acb4eb3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	iaest-measure:vab "5191701.8"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/industria> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/49c39dce-1813-30a5-93e5-31ed5faa1c67> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	iaest-measure:vab "2825180.1"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/construccion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/af3b9fd7-0f3e-3d14-9752-f0094ddbadcb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	iaest-measure:vab "15031484.8"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/servicios> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/94e5af7a-fdeb-3738-a9d4-01f53ccfec1c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	iaest-measure:vab "1335865.2"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/agricultura> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/08f65fc2-8635-30e2-8617-da33c6cfd709> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	iaest-measure:vab "758296"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/energia> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/72b04918-8d71-37ea-8e1d-8522598c1ed5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	iaest-measure:vab "4946087.6"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/industria> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/5204f72c-0334-3b9d-bdd1-aebcf0d19fbb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	iaest-measure:vab "2363877"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/construccion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/340d74ce-bad1-3b17-8574-46a2c676605c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	iaest-measure:vab "13949223.4"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/servicios> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/ce75fa1f-983c-38bb-a05f-081d76eda01c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	iaest-measure:vab "1340480.7"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/agricultura> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/fbdb9ad0-e716-3a9a-b2da-f542a96ac745> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	iaest-measure:vab "729750.7"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/energia> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/de4541a0-566a-3fd3-8ac6-ec5654cb4908> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	iaest-measure:vab "4798138.2"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/industria> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/bdf4eb4d-729b-332c-b611-c563d5afc865> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	iaest-measure:vab "2039959"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/construccion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/9c486d4b-7193-348d-b62c-1409333be748> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	iaest-measure:vab "13026914"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/servicios> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/c7c975ff-e53a-3b68-9c84-5963c3de8af2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	iaest-measure:vab "1254831.8"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/agricultura> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/bcae738c-dddc-314f-9bde-0a5ebda10de3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	iaest-measure:vab "699652.5"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/energia> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/588db4ff-0882-3f8e-a11f-bc4d0883a656> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	iaest-measure:vab "4614917.4"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/industria> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/c4d6444f-ce43-3461-9593-cf82a7dac78c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	iaest-measure:vab "1825062"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/construccion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/ee54b9c5-424d-3604-9b23-0446380d270d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	iaest-measure:vab "12186898"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/servicios> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/e475913c-e3c0-367e-9f5f-fa1156f565f4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	iaest-measure:vab "1238507.1"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/agricultura> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/3dc19d34-c063-3165-88d2-80fbd3b63bd3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	iaest-measure:vab "626028.3"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/energia> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/e1828c95-4b63-31bf-9eff-529a57e0c5f4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	iaest-measure:vab "4308192.2"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/industria> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/c596ad5d-dbbb-3cc2-b3e0-dce630d9d0a5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	iaest-measure:vab "1595109"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/construccion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/bb493dc0-24c6-3aff-82ba-2ab0d08a4428> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	iaest-measure:vab "11272980.2"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/servicios> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/a9eb5465-391f-345b-84d3-b23861e4635f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	iaest-measure:vab "1143930.1"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/agricultura> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/1f0d39c6-9700-3117-a5e1-a889a147e5ab> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	iaest-measure:vab "629239.2"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/energia> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/c8f69751-ed07-3555-ac55-b1ba01dcbf9a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	iaest-measure:vab "4143320.7"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/industria> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/09f20300-bb1c-3021-9263-9e2254d82b3e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	iaest-measure:vab "1402689.1"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/construccion> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010066A/9fddc059-b7e5-35a4-8b8c-3fde11bc67f2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010066A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	iaest-measure:vab "10402412.4"^^xsd:double;
+	iaest-dimension:sector-vab-descripcion <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion/servicios> .

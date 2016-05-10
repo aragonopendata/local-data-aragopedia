@@ -1,0 +1,46 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010050A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010050>;
+	rdfs:label "Superficie Agrícola Utilizada (SAU)"@es ;
+	dct:identifier  "01-010050A" ;
+	rdfs:comment "Cubo de datos para 01-010050A"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010050A/1d7e053a-4df1-3d6c-9a12-97df82623b02> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010050A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:superficie-total-de-las-explotaciones "4146171.59"^^xsd:double;
+	iaest-measure:superficie-agricola-utilizada-sau "2462700.86"^^xsd:double;
+	iaest-measure:hectareas-de-sau-en-propiedad "1557844"^^xsd:int;
+	iaest-measure:hectareas-de-sau-en-arrendamiento "651767"^^xsd:int;
+	iaest-measure:hectareas-de-sau-en-aparceria "196615"^^xsd:int;
+	iaest-measure:hectareas-de-sau-en-otros-regimenes-de-tenencia-de-las-tierras "56481"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010050A/8d45acfc-17b4-388b-8dcc-051835319d77> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010050A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1989> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:superficie-total-de-las-explotaciones "4442988"^^xsd:double;
+	iaest-measure:superficie-agricola-utilizada-sau "2460183"^^xsd:double;
+	iaest-measure:hectareas-de-sau-en-propiedad "1661583"^^xsd:int;
+	iaest-measure:hectareas-de-sau-en-arrendamiento "441557"^^xsd:int;
+	iaest-measure:hectareas-de-sau-en-aparceria "200571"^^xsd:int;
+	iaest-measure:hectareas-de-sau-en-otros-regimenes-de-tenencia-de-las-tierras "156503"^^xsd:int.

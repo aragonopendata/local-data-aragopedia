@@ -1,0 +1,56 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/04-040014A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/04-040014>;
+	rdfs:label "Reciclaje de residuos: vidrio"@es ;
+	dct:identifier  "04-040014A" ;
+	rdfs:comment "Cubo de datos para 04-040014A"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040014A/c7daecb1-e9de-3569-acbe-d8fdf05c4361> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040014A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:contenedores-de-vidrio "5435"^^xsd:int;
+	iaest-measure:kg-vidrio-domestico "23231250"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040014A/79dc64d5-374d-3b45-a4d2-3f41a43c3845> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040014A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:contenedores-de-vidrio "5587"^^xsd:int;
+	iaest-measure:kg-vidrio-domestico "23821770"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040014A/777f541f-e660-3590-8511-b01ed9bcf0d8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040014A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:contenedores-de-vidrio "5797"^^xsd:int;
+	iaest-measure:kg-vidrio-domestico "20469665"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040014A/0cdf9744-8a82-3ff0-ab4b-717d49125df1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040014A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:contenedores-de-vidrio "6287"^^xsd:int;
+	iaest-measure:kg-vidrio-domestico "16668158"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040014A/5edf49c1-2523-3c00-ad6b-53f007fd97e0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040014A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:contenedores-de-vidrio "6400"^^xsd:int;
+	iaest-measure:kg-vidrio-domestico "17676048"^^xsd:int.

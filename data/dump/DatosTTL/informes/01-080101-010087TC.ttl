@@ -1,0 +1,422 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010087>;
+	rdfs:label "Nº explotaciones agrarias según cursos realizados por el jefe de la explotación. Censo 2009"@es ;
+	dct:identifier  "01-080101-010087TC" ;
+	rdfs:comment "Cubo de datos para 01-080101-010087TC"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/ce695f4e-5608-3697-ac9a-1891198dc687> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:explotaciones "149"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/5644c51c-cd54-3aed-8be4-49549b2a5fca> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Jacetania> ;
+	iaest-measure:explotaciones "550"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/85ce8115-6fbd-3a04-a739-770b0fb86d35> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:explotaciones "85"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/7d55aeae-005c-3d2e-ac85-c879774c46b1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Alto_Gállego> ;
+	iaest-measure:explotaciones "350"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/5794254a-ff0a-3f5f-8704-0238871b8f96> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:explotaciones "229"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/edd50145-a06e-39c9-a5b0-d0c6dfafa138> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sobrarbe> ;
+	iaest-measure:explotaciones "583"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/55005c9b-81b1-3385-a36a-7c3d8cfd1384> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:explotaciones "335"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/0a965ff8-77bf-38a3-9017-6c57bbd8eede> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Ribagorza> ;
+	iaest-measure:explotaciones "1251"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/9e1fe549-24f4-3b51-a1f4-16661f02cdb0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:explotaciones "654"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/ab05d458-4c19-3b93-a26b-2f2a213a032c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinco_Villas> ;
+	iaest-measure:explotaciones "2837"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/5b300887-b027-347c-8625-dfd826089567> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:explotaciones "352"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/42646bbf-3605-308c-8156-a24f51ce3a7a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Hoya_de_Huesca/Plana_de_Uesca> ;
+	iaest-measure:explotaciones "2195"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/33311c8f-0321-3bf8-8c62-7c6c5b0b39ff> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:explotaciones "280"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/202484d7-b271-3bb9-baf6-6e468ddf392b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Somontano_de_Barbastro> ;
+	iaest-measure:explotaciones "1807"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/37f56aef-5004-354b-8554-1ed4c075055b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:explotaciones "230"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/35858b1f-4892-3083-87b7-ea715953302f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cinca_Medio> ;
+	iaest-measure:explotaciones "1354"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/7a5fa64f-fa47-3520-a610-482add0a4278> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:explotaciones "334"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/8bc2553b-9115-3b80-bb30-94a92629aed1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/La_Litera/La_Llitera> ;
+	iaest-measure:explotaciones "1778"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/449eebad-1c9f-38d4-8ea6-f0aba987029e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:explotaciones "491"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/112ab024-98fb-31f2-b96b-53b47a26820b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Los_Monegros> ;
+	iaest-measure:explotaciones "2808"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/d9277888-396a-384d-9d5d-d530c4af19a3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:explotaciones "458"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/2bb454f0-2e0a-3585-8d44-64f4aa67dff8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Cinca/Baix_Cinca> ;
+	iaest-measure:explotaciones "1947"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/22c49aff-4325-3c17-a1f8-5602acfe8844> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:explotaciones "44"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/98f3d81f-22b1-34ea-b3f8-57b5394717ba> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Tarazona_y_el_Moncayo> ;
+	iaest-measure:explotaciones "778"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/bfb92db2-f728-3361-87a6-43d29a8346ae> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:explotaciones "206"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/af64f53e-de50-3121-9eef-2fd932b5d514> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Borja> ;
+	iaest-measure:explotaciones "1568"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/e1deb3b1-6c99-3e94-bb07-ca3397d82a43> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:explotaciones "45"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/581f412b-7c3e-38dd-b130-00ffa9500c63> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Aranda> ;
+	iaest-measure:explotaciones "640"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/0a36518e-f5b4-31a1-8d4c-56ef1a70b343> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:explotaciones "115"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/2724fc4e-11a9-3ce7-95e8-df9ce5edcb88> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Alta_del_Ebro> ;
+	iaest-measure:explotaciones "992"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/5d0895e3-8180-3522-8b4a-2405ad986ca0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:explotaciones "269"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/244521b2-e814-3e3b-b68e-4477d96c3643> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Valdejalón> ;
+	iaest-measure:explotaciones "2246"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/37d29d04-238c-366b-9cc9-cb1f26bd59c4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:explotaciones "243"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/b1999e7b-55a4-347e-994c-79d3f4fb4984> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/D.C._Zaragoza> ;
+	iaest-measure:explotaciones "2366"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/96d49bb5-a406-320d-a1b8-7fa93bd4c900> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:explotaciones "152"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/81d9b7bf-14aa-39fc-bc35-f507e6afcfde> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Ribera_Baja_del_Ebro> ;
+	iaest-measure:explotaciones "927"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/b3281ed4-b9bd-3ef2-83f5-0a1c54fec765> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:explotaciones "207"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/b2fd1948-44a9-3405-a572-a51164ebaf7e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón-Caspe/Baix_Aragó-Casp> ;
+	iaest-measure:explotaciones "1410"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/101ca9db-45bd-3b0f-b055-3b7fb13df2b7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:explotaciones "283"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/9ccf0810-bfb8-37a8-99bf-db8d409c48cb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Calatayud> ;
+	iaest-measure:explotaciones "3072"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/35d4b28b-efb4-38b4-95a2-44210b6b4af4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:explotaciones "179"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/07b40c96-9c99-35e1-a894-e5015362a3bf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Cariñena> ;
+	iaest-measure:explotaciones "1797"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/d1b48ad7-f9cd-3050-8630-c2ef5f92e13e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:explotaciones "141"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/a933f159-e467-3337-9316-e904a730b238> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Belchite> ;
+	iaest-measure:explotaciones "989"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/26994199-7a0e-38b8-b72e-e084c0f33277> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:explotaciones "136"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/e0e7cc75-b4df-3379-9c81-f34aa94f72c2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Martín> ;
+	iaest-measure:explotaciones "720"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/0020a4f3-4262-3a99-b25c-73b4482b2e92> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:explotaciones "185"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/fcd5e601-292d-3f53-bc8d-65486bf21e7e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Campo_de_Daroca> ;
+	iaest-measure:explotaciones "1042"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/b6d549a6-515f-3a8e-92b8-df16baf6f994> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:explotaciones "325"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/6e3fb0d9-a662-3b66-968a-634d27194409> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Jiloca> ;
+	iaest-measure:explotaciones "1569"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/25667e1a-e21e-3ea0-bb96-c9226dd098bf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:explotaciones "104"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/5058be6f-4d08-3db5-9422-ca5189576137> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Cuencas_Mineras> ;
+	iaest-measure:explotaciones "531"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/da8f4f4d-e216-360b-bfc2-651b6561f47d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:explotaciones "52"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/5aed6793-7710-3f76-a2d0-428840c571ac> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Andorra-Sierra_de_Arcos> ;
+	iaest-measure:explotaciones "705"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/abb36cbf-3a78-35fb-a660-b3a058a9d177> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:explotaciones "270"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/3a8f1997-b5d9-306f-9dc3-ff917c7ac317> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Bajo_Aragón> ;
+	iaest-measure:explotaciones "1875"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/249bbf5e-8e80-32f3-996b-dde0b7dbcd41> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:explotaciones "345"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/28c512b8-398c-3b2d-8f09-685e4711688e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Comunidad_de_Teruel> ;
+	iaest-measure:explotaciones "1802"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/05e331b2-154f-3b79-a738-c2a5b418f4af> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:explotaciones "132"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/cf1e8ec6-2c63-3c7e-b889-6a7b533a667c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Maestrazgo> ;
+	iaest-measure:explotaciones "464"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/23961aab-ad5f-3f19-b86a-d8bfe824fc9a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:explotaciones "52"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/ed47c739-2715-3fde-89b9-0568f36fb87c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Sierra_de_Albarracín> ;
+	iaest-measure:explotaciones "311"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/d6263dcd-0b6d-3f1a-893f-17008832adf9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:explotaciones "70"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/bd8a322d-ba11-32e8-8de9-57d600b07508> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Gúdar-Javalambre> ;
+	iaest-measure:explotaciones "728"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/23f55aa8-53a3-3876-84c0-15d953ab316e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:explotaciones "251"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/01-080101-010087TC/60067d52-1433-33e6-a775-baae5b61eb3b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010087TC>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Comarca/Matarraña/Matarranya> ;
+	iaest-measure:explotaciones "1379"^^xsd:int;
+	iaest-dimension:cursos-jefe-explotacion <http://opendata.aragon.es/kos/iaest/cursos-jefe-explotacion/el-jefe-de-explotacion-no-ha-realizado-algun-curso-en-los-ultimos-12-meses> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

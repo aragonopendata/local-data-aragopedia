@@ -1,0 +1,236 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010026A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010026>;
+	rdfs:label "Licencias municipales de obra según tipo"@es ;
+	dct:identifier  "01-010026A" ;
+	rdfs:comment "Cubo de datos para 01-010026A"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026A/3f50742c-0f20-3341-ba2b-db595b6cec33> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010026A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:licencias-total "4071"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-total "2142"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-con-demolicion "118"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-sin-demolicion "2024"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-total "919"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-con-demolicion "586"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-sin-demolicion "333"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-locales "825"^^xsd:int;
+	iaest-measure:licencias-demolicion "185"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026A/50054dc0-df4c-3fbe-a6db-ac52d9bde6b0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010026A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:licencias-total "4093"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-total "2038"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-con-demolicion "117"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-sin-demolicion "1921"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-total "878"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-con-demolicion "480"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-sin-demolicion "398"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-locales "980"^^xsd:int;
+	iaest-measure:licencias-demolicion "197"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026A/96baf3d7-0a2c-32ae-92be-2c9a9ad3146e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010026A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:licencias-total "3921"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-total "1888"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-con-demolicion "96"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-sin-demolicion "1792"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-total "957"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-con-demolicion "515"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-sin-demolicion "442"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-locales "862"^^xsd:int;
+	iaest-measure:licencias-demolicion "214"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026A/80c2da47-0503-3ac0-9905-e50e418f49c8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010026A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:licencias-total "4059"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-total "2128"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-con-demolicion "109"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-sin-demolicion "2019"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-total "943"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-con-demolicion "492"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-sin-demolicion "451"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-locales "744"^^xsd:int;
+	iaest-measure:licencias-demolicion "244"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026A/cdcad4ca-b94d-36d5-9693-cd689a561c06> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010026A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:licencias-total "4449"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-total "2204"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-con-demolicion "154"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-sin-demolicion "2050"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-total "1107"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-con-demolicion "533"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-sin-demolicion "574"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-locales "832"^^xsd:int;
+	iaest-measure:licencias-demolicion "306"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026A/6abfbd57-e95b-3982-84e6-45a1c6b9ad06> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010026A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:licencias-total "4681"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-total "2305"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-con-demolicion "149"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-sin-demolicion "2156"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-total "1132"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-con-demolicion "565"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-sin-demolicion "567"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-locales "878"^^xsd:int;
+	iaest-measure:licencias-demolicion "366"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026A/f7e62440-3335-3d49-81ae-549ad1e2ce44> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010026A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:licencias-total "4923"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-total "2441"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-con-demolicion "173"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-sin-demolicion "2268"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-total "1198"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-con-demolicion "561"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-sin-demolicion "637"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-locales "827"^^xsd:int;
+	iaest-measure:licencias-demolicion "457"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026A/282fba08-f6c8-3f7c-863d-4edc7d486e8a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010026A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:licencias-total "4814"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-total "2239"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-con-demolicion "141"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-sin-demolicion "2098"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-total "1190"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-con-demolicion "545"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-sin-demolicion "645"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-locales "998"^^xsd:int;
+	iaest-measure:licencias-demolicion "387"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026A/c81c4a10-ce0b-3099-bb61-3aa1f62bad02> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010026A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:licencias-total "4355"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-total "1681"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-con-demolicion "101"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-sin-demolicion "1580"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-total "1440"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-con-demolicion "628"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-sin-demolicion "812"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-locales "1024"^^xsd:int;
+	iaest-measure:licencias-demolicion "210"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026A/974a4e1c-4b4d-3658-8623-35766cfce289> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010026A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:licencias-total "3302"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-total "1110"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-con-demolicion "78"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-sin-demolicion "1032"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-total "1317"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-con-demolicion "596"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-sin-demolicion "721"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-locales "756"^^xsd:int;
+	iaest-measure:licencias-demolicion "119"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026A/ff9c61be-b774-3ee4-ae27-48c240c41f65> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010026A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:licencias-total "3213"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-total "926"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-con-demolicion "54"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-sin-demolicion "872"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-total "1342"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-con-demolicion "688"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-sin-demolicion "654"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-locales "802"^^xsd:int;
+	iaest-measure:licencias-demolicion "143"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026A/b8dcc3ff-0546-34d1-b2d7-e34fbcd01e50> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010026A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:licencias-total "3228"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-total "802"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-con-demolicion "66"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-sin-demolicion "736"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-total "1500"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-con-demolicion "685"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-sin-demolicion "815"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-locales "800"^^xsd:int;
+	iaest-measure:licencias-demolicion "126"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026A/1f1af6ef-0cb8-302b-9845-29855ae5ed3e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010026A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:licencias-total "2886"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-total "659"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-con-demolicion "37"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-sin-demolicion "622"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-total "1184"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-con-demolicion "532"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-sin-demolicion "652"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-locales "882"^^xsd:int;
+	iaest-measure:licencias-demolicion "161"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026A/7cdb3c00-0fe9-3b9f-88af-0f793430810c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010026A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:licencias-total "2574"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-total "579"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-con-demolicion "44"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-sin-demolicion "535"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-total "1027"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-con-demolicion "418"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-sin-demolicion "609"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-locales "849"^^xsd:int;
+	iaest-measure:licencias-demolicion "119"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010026A/3987c86d-0d5f-3e70-9fb4-765f189f6368> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010026A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-dimension:estado-de-la-informacion <http://opendata.aragon.es/kos/iaest/estado-de-la-informacion/estimacion> ;
+	iaest-measure:licencias-total "2674"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-total "611"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-con-demolicion "39"^^xsd:int;
+	iaest-measure:licencias-nueva-planta-sin-demolicion "572"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-total "1092"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-con-demolicion "445"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-sin-demolicion "647"^^xsd:int;
+	iaest-measure:licencias-rehabilitacion-locales "852"^^xsd:int;
+	iaest-measure:licencias-demolicion "119"^^xsd:int.

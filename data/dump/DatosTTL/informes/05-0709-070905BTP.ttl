@@ -1,0 +1,986 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/05-0709-070905B>;
+	rdfs:label "Accidentes en jornada Ranking de actividades más accidentadas entre los hombres. Hasta 2008"@es ;
+	dct:identifier  "05-0709-070905BTP" ;
+	rdfs:comment "Cubo de datos para 05-0709-070905BTP"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/62a753ca-db41-3f3d-9fa8-946c48b7c667> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "3546"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/43b37530-b02e-3ae6-8000-acd40b83e105> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "1141"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/bc120210-6964-323e-bb49-1eec0842fb22> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "1003"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/fc04d894-9c9c-390f-9f87-073391f2bd9a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "786"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/f04e476e-5c8e-3cfb-a023-28f676b87fbd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "760"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/0aa27608-bc31-3a75-915e-8c627c09faf6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "709"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/e5f48dc6-0477-3118-b559-953bdc63ba91> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "623"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/bed6b05e-9cf3-3394-b6aa-5556268a4641> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "482"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/626ddd62-200c-3b6b-a0f7-869aa05d7c93> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "474"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/406601ac-d6e7-3f25-9558-0530242a2b89> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "456"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/e1b0a4d3-2637-3faa-9ea9-66ac0ec1021b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "364"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/9e09d8f5-dd69-3bdb-b486-27bb8c67e3b6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "321"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/09877660-2254-34cc-90fb-5e8e621f8e9e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "178"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/46d37ac1-127f-38f8-b0ac-21ffcd18e4ab> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "170"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/3394f290-b97a-36b3-bd76-0117c6fcc416> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "165"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/39d74f95-df54-3f66-89ba-3ee6726703f2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "161"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/0bfb754e-941a-3dd2-87a8-96bd24960a9f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "160"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/e0f3aef2-8cd6-3812-b8fc-a7b70995bd18> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "148"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-otros-productos-minerales-no-metalicos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/bde6e904-e28a-3477-98e4-82d68fb0a057> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "140"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/155003f8-009a-38c8-a296-c1b0d81543f6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "133"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/0d2242aa-3beb-3dd6-8fce-27f96da4bf7d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "126"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/a135222d-2429-306d-9e9d-771a037f440e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "103"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/8e931406-bf9c-3d23-8b96-f7a31897c3dd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "95"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-otros-productos-minerales-no-metalicos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/28b222e6-73fe-3add-92b1-e8b2e29eba64> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "94"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/f739db07-66b1-32f8-a774-b40086859a23> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "89"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/b8caad74-b0a6-3d25-8d63-dec0aeff4755> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "80"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/2bb2b2d2-13b0-39ef-919a-61d3fa813af9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "74"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/f350c465-7f80-3c03-8bfc-207a7cb0e224> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "64"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/industria-de-la-madera-y-del-corcho-excepto-muebles-cesteria-y-esparteria> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/d39b4bed-b42e-3c63-ac8b-02e8af43802f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "59"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/59832133-be0c-3ee2-8488-47aed6b53b36> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "58"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/ae2071bd-0951-326e-a548-be4330f20a91> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "4209"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/fc995548-5a3f-335d-bbbc-4ac107efe1de> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "1397"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/a9c83c8a-6630-3869-994e-26f80c0fb1ac> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "1243"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/f2574239-0210-3b9a-9afb-63eeebfe98e9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "902"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/38bcbaca-4bf3-3d9f-ab08-cca6c0eea9e1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "850"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/b4d0f342-bc70-3c2e-8f6d-81b790e25b99> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "815"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/975f72da-4634-3517-b998-b8926d8d5a45> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "699"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/97046d3e-5b9b-37cd-bfd1-e8753001a067> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "537"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/ebe687f2-19f8-3138-be55-e97cb19312dd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "464"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/f37e6f03-86e8-3324-9fce-889c60d0c255> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "449"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/ed468e26-3423-3157-a1ea-b9b889d8b759> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "374"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/f1897d81-1b00-3f2f-b106-e741db8be42c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "364"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/7a1dda93-6ed6-3593-b0b7-172be9a5a521> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "219"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/6391ad8b-c709-3a88-aee3-74f623190c16> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "183"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/6133d290-d134-347f-902b-1461df99dc55> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "176"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/ab4b67ad-1928-3297-9e88-df12e1c57219> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "158"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/c787b28d-fceb-31c1-adb0-a592316b225f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "151"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/37a25e87-417c-323a-bbd4-4a343712ad5f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "142"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/be131c25-20b2-3c7d-bb09-acf6fbae1682> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "131"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/b88b86ea-53d9-3116-83aa-92ef09399695> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "127"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/3c85d0f5-c8c2-361e-aefa-de23667eed40> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "122"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-otros-productos-minerales-no-metalicos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/494f5b4e-3304-312c-83e0-3f889a5efdf6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "119"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/8825b981-126e-3b67-ba2c-abbe6d8bd4e2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "104"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-otros-productos-minerales-no-metalicos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/aaea0350-384e-3754-b383-307c1b7333a1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "94"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/aa765a1b-659a-35fc-8c10-5bfe573c012f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "91"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/ad7a763b-1a99-3205-9c29-f892d296ab03> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "89"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/28de7d4c-7258-38df-8943-9a4f3bd1f12a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "82"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/5f6c2e27-ba85-38c9-80a5-121cb7678301> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "76"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/669d551c-f474-31f0-b4e3-eb8314b0bbf5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "71"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/5431bf27-e6c3-3d3b-8248-86c3ccb0c8c8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "61"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/e689036c-8c0a-39ba-97fc-fded9bfe2e3d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "3809"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/3582e5e1-9d7f-3921-83ff-d22e5f3fd3b4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "1261"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/cc7d1f31-ce49-345b-a0b4-721d9f1197dd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "1186"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/5702ec15-da32-33e6-816b-0a80e6c422e5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "917"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/1ca7a219-c668-3c48-a2ab-5ca6545232c9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "799"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/86e026ed-8766-3585-9ce7-692e5abf08fb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "741"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/d6a23834-1f99-33e7-bdbb-4875322d9a6e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "664"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/fca87b34-52c5-3281-b3d2-2cab89a0768c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "530"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/c323275a-4df6-3e5a-b5e7-137b77be6606> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "496"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/379c8531-2bca-3459-b574-d15ed79892b9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "422"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/b9016952-bbbc-3a0c-80be-369dd1e002b3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "406"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/610ed6b6-64a9-33ce-a6d2-08c8af7c21b4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "402"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/5f78e4d4-bd5e-3967-b1b0-b0f0d55c5881> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "191"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/984ef2ce-2146-357a-8bf8-962747b8318e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "177"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/d49f6c05-6635-3668-a778-83d54ff603f5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "162"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/5acc2e6d-6314-366d-96a1-2d03c6fef97e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "159"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/742e8082-abf5-3337-8f12-2a1fdf21fc39> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "150"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/2b687d17-a5de-366c-8cea-3a36567103d5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "148"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/67e8d7bb-9da1-3be6-afde-95c8a1ba4ec8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "121"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/af09a01f-4dc8-3df4-a455-2258f0f45ddd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "119"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/55b00dfc-d142-30aa-af26-30c4e60f56b2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "118"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-otros-productos-minerales-no-metalicos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/816a5b63-89ee-3fd4-9d06-9424cf7fb5b5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "116"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-otros-productos-minerales-no-metalicos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/9fddcf34-4090-327b-95f6-ca9a235400ba> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "97"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/5fb3ded5-c9d2-3a37-a522-ba83d9060314> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "91"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/0e14f1b7-8641-392e-bd89-5d8ec0a2d0b6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "83"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/be272836-e2cc-3c8a-8799-78341d2a6683> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "73"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/f7b0efaf-3243-33ff-a590-7fa25f3ac75f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "72"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/industria-de-la-madera-y-del-corcho-excepto-muebles-cesteria-y-esparteria> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/808e4198-4432-3e6e-b8a4-5cdb26af7916> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "67"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/4b80a428-1815-3ee6-a60e-1da04a81a6b9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "66"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/87a36453-6df6-3c66-8e52-4c1dc5491dda> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "56"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/8cd42497-7c6a-3494-9195-7f7e2634f86b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "3410"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/9c026c35-6782-38bb-a40d-66a013905ad8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "1143"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/391de4cf-c9b3-3392-ae52-f5bc8a916e1a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "1030"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/4d959797-b27d-35a1-a1a4-a4084ab6e436> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "868"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/89b05480-dea0-3f8d-89a7-5df9402bf04a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "778"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/6c40ec58-d963-3eb1-837e-c1efda9743ab> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "682"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/1f835b92-1518-3e9e-a6d5-9c6d27240b2e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "632"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/a3c9f475-9cdb-3c2a-8a46-1cb46ac94664> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "589"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/4911765f-18e6-3da1-baa8-e8e455e5e9a6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "473"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/a9c90565-c946-38a1-a1cd-bf600cc00873> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "434"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/a12912eb-872e-3010-a13e-981e1f85dba1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "389"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/6d267337-390e-380c-8231-ab5f3f75d64f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "345"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/866e28fb-f2fe-36a5-be1b-b6e2ec4a89e1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "172"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/05c27cca-38cd-30fb-a8a9-5ea3f30a3bfd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "159"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/42bc66c2-4614-3b46-9eb1-142bd1aa7ad9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "153"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/ed297ec1-cd91-388c-a2c3-ef25411ea549> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "143"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/578202a7-a0f1-3923-ad0b-3b6110ba81fd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "142"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/381ffa62-77c3-38c3-9d9f-9788a8e23d2c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "137"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/9c62a483-4dd6-3c44-b481-e7e65b990d30> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "120"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/380b2238-bd50-32f7-a1e2-9e22e65eaf1d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "114"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-otros-productos-minerales-no-metalicos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/004d93e9-b539-394d-a376-6986f3ff6129> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "112"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/0199661b-1dd7-3cbc-817b-db3504668b3a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "106"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/1e7a198e-190a-3630-803f-53dcef7ef9ae> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "101"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/e62c90d6-376d-32dc-8358-6e4171aca162> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "96"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/771e0746-0009-389a-82f3-e0f72272ac82> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "90"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-otros-productos-minerales-no-metalicos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/f1f47ad1-80ed-3624-b97a-fd063aa76a45> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "87"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/a7775a70-ca28-317a-aa81-89a232270d1c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "69"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/industria-de-la-madera-y-del-corcho-excepto-muebles-cesteria-y-esparteria> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/6e3f4787-5a79-32b7-84e8-4cd61c49aaf3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "69"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/216feb56-b11c-3729-b187-6d0e25c2d9ad> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "66"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/0a3f6896-b511-34ce-944a-fb7378428758> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "65"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/1a9b4af9-0654-3c14-a0d1-e6ccc5072bf8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "3175"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/c0b645b4-4be2-37fe-834b-945b83575379> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "1078"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/cca9b71d-6505-32da-8833-122d6d69886f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "918"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/776c5376-8624-3a96-ac58-8c58c1d94532> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "908"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/800cb487-70a2-31d5-b58e-9aed76a6a826> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "784"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/de6d547a-0503-3243-826a-3a48e25ff995> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "698"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/7bf92e7e-88b5-367d-978f-be022f5b7e49> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "650"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/298b5858-6b64-3e05-8e14-d8c6ab7a4918> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "491"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/4cf1389a-69d4-31b7-94b9-23b37c9a6f54> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "446"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/660778b4-ae1d-3676-8c20-3124502caa08> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "408"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/50a48c20-ef06-3bbc-887c-f336b7bf1bb2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "354"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/20ea5997-3bbe-39f1-9e83-16dacc29336e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "344"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/a71ed586-7f6c-3f5a-b963-b39316e7f878> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "163"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/8b43c6f4-ab8f-3789-8317-f32eb741ee0a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "158"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/0f1a6336-cd98-3b08-ab14-8574cc013799> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "154"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/29b290b7-7070-3732-b7ad-7e15f5084188> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "150"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/942a4467-410b-37bf-bc51-e798ef7ed321> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "147"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/f99b3173-2775-3446-8e18-cacb2a2da2b8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "125"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/dc326359-1a15-3b4a-b288-275a1e0bac85> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "114"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/b27828e2-7ab9-350c-8c21-23b0f5a05f1c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "105"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/12046818-a117-396b-a898-dd44d9f0c42c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "104"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-otros-productos-minerales-no-metalicos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/6af0ee9e-758e-3e83-ba35-31046e3a84af> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "104"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/d62f6c6f-94e0-333e-b823-87c1b0c6eea0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "101"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/df23a92c-41df-3dce-add1-179eef474da3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "99"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/cfa5d1d4-efe0-36eb-a182-55685a815381> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "88"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-otros-productos-minerales-no-metalicos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/7e88824f-95ad-3c99-be74-1ece5e7e68dd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "71"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/3df42fba-bf38-34fd-9a84-275c4084a71a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "67"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/industria-de-la-madera-y-del-corcho-excepto-muebles-cesteria-y-esparteria> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/a46c29df-efd9-3937-96b3-7b5f58e9bcfa> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "59"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/9a089df6-4c88-39b9-9bd7-c2d879fc36e5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "52"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/b98aa627-f599-3b4b-9589-c30725e6d868> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "41"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/e022db8e-7263-3ef9-b0f2-25613f73cbf0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "3237"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/c80fc8cf-ebf2-35b9-b054-e144ad0fb280> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "1060"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/f402fe0b-398c-3c81-97a3-d93bd9eb8321> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "940"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/964b7594-9d47-308d-9f10-5ca5224d2f9f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "935"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/296e4869-e865-3e2b-81db-4609d59a83a4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "788"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/f1af10b3-5dd4-3b13-b7f5-b1c06684f626> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "657"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/b16b76d2-1f59-3cf9-be78-285db805b0eb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "652"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/7f4f2f28-5305-3705-8a06-766ecc799d74> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "471"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/857f8aae-0eb1-3128-9042-74627c62334a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "457"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/47915be0-998d-3695-837f-b8553df5df37> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "398"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/6a499c63-e248-31dd-abe1-25ce2558d39e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "379"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/3783cb84-0a47-3ddc-913d-20838bd3a85e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-measure:n-accidentes "355"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/2dcf17ed-b7a0-3194-a20d-1dcd564f6162> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "164"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/4dd52b6f-10f9-37b4-abc6-bbdc7d0b21b8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "156"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/6b37fd33-d469-3604-8c0c-a0fb2d5252cc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "156"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/9959f091-8923-32d7-af7c-fafeb7e4d37d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "144"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/c189e46e-e282-3185-9dde-9525b1125ed0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "138"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/7102f5b9-1641-3333-a2e7-82e79d0fe11e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "131"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/b0d8da46-394f-3f3c-aa8f-115c43d359ad> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "116"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/dcebed95-9b00-32a9-b897-f516bcb51af1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "116"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-otros-productos-minerales-no-metalicos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/4086df43-df15-34f0-b8db-3d5066c86ce8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "116"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/90f3cf5c-65cf-321f-b0fd-37416f5fdd64> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "112"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-otros-productos-minerales-no-metalicos> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/fa7bd04d-3b94-3538-ad01-1e182393b004> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "108"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/fb548e81-1170-39b1-ba30-90adfea6c62f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "99"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/6d34fdd6-16b9-3ab9-977d-40453dac6720> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "96"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/5bf9b001-0e2a-3c6d-85f3-41b3c186facd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-measure:n-accidentes "91"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/b4c89f11-e6dc-39cb-bd53-871ca969c435> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "70"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/55825c13-1882-3965-a8a3-34e7c7ecf761> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "60"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/industria-de-la-madera-y-del-corcho-excepto-muebles-cesteria-y-esparteria> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/5619bef2-f5f7-3382-a00e-8aba30bf0386> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "58"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905BTP/8b5615cf-369a-36d3-92cb-bffafc0bc9ee> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905BTP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-measure:n-accidentes "56"^^xsd:int;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> .

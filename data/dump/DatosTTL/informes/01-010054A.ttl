@@ -1,0 +1,66 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010054A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010054>;
+	rdfs:label "Mano de obra familiar: titulares"@es ;
+	dct:identifier  "01-010054A" ;
+	rdfs:comment "Cubo de datos para 01-010054A"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010054A/d267f5ba-764a-3816-b842-2454dfbb2617> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010054A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1999> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:personas-que-son-mano-de-obra-familiar "111361"^^xsd:int;
+	iaest-measure:personas-que-son-mano-de-obra-familiar-y-titulares-explotacion "74544"^^xsd:int;
+	iaest-measure:personas-que-son-mano-de-obra-familiar-y-conyuges "15802"^^xsd:int;
+	iaest-measure:personas-que-son-mano-de-obra-familiar-distinta-a-las-anteriores-otros "21015"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-son-titulares-35-anos "6798"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-son-titulares-de-35-a-54-anos "26800"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-son-titulares-de-55-a-64-anos "17807"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-son-titulares-de-mas-de-65-anos "23139"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuge-35-anos "1025"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuge-de-35-a-54-anos "7919"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuge-de-55-a-64-anos "4104"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuge-de-mas-de-65-anos "2754"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-otra-relacion-con-35-anos "9159"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-de-35-a-54-anos "6576"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-de-55-a-64-anos "2192"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-de-mas-de-65-anos "3088"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010054A/95be586d-c72b-3b99-ba44-ff5294e9d1ce> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010054A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/1989> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:personas-que-son-mano-de-obra-familiar "136987"^^xsd:int;
+	iaest-measure:personas-que-son-mano-de-obra-familiar-y-titulares-explotacion "97472"^^xsd:int;
+	iaest-measure:personas-que-son-mano-de-obra-familiar-y-conyuges "17100"^^xsd:int;
+	iaest-measure:personas-que-son-mano-de-obra-familiar-distinta-a-las-anteriores-otros "22415"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-son-titulares-35-anos "7311"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-son-titulares-de-35-a-54-anos "33586"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-son-titulares-de-55-a-64-anos "30368"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-son-titulares-de-mas-de-65-anos "26207"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuge-35-anos "1446"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuge-de-35-a-54-anos "8970"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuge-de-55-a-64-anos "5247"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-conyuge-de-mas-de-65-anos "1437"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-otra-relacion-con-35-anos "12775"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-de-35-a-54-anos "5958"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-de-55-a-64-anos "2294"^^xsd:int;
+	iaest-measure:personas-mano-obra-familiar-otros-de-mas-de-65-anos "1388"^^xsd:int.

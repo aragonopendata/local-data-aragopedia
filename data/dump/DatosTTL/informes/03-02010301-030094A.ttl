@@ -1,0 +1,68 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030094A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030094>;
+	rdfs:label "Tamaño de la vivienda"@es ;
+	dct:identifier  "03-02010301-030094A" ;
+	rdfs:comment "Cubo de datos para 03-02010301-030094A"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030094A/f1383142-9250-3972-9d36-8255bff09256> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030094A>; 
+	iaest-dimension:n-de-habitaciones-de-la-vivienda <http://opendata.aragon.es/kos/iaest/n-de-habitaciones-de-la-vivienda/1-habitacion> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-habitaciones "1766.7461376869"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030094A/548c1cd3-1683-3ae7-b3b2-852a89c9e072> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030094A>; 
+	iaest-dimension:n-de-habitaciones-de-la-vivienda <http://opendata.aragon.es/kos/iaest/n-de-habitaciones-de-la-vivienda/2-habitaciones> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-habitaciones "10872.1209357118"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030094A/cd52b8f5-fc62-3a23-8dac-816277c9188e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030094A>; 
+	iaest-dimension:n-de-habitaciones-de-la-vivienda <http://opendata.aragon.es/kos/iaest/n-de-habitaciones-de-la-vivienda/3-habitaciones> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-habitaciones "35347.0374615328"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030094A/d3172a1b-5873-3f7a-bf41-f47a4d2fe526> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030094A>; 
+	iaest-dimension:n-de-habitaciones-de-la-vivienda <http://opendata.aragon.es/kos/iaest/n-de-habitaciones-de-la-vivienda/4--habitaciones> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-habitaciones "103462.687241226"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030094A/9d1056d8-42d7-3023-917b-6d9b419b68dc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030094A>; 
+	iaest-dimension:n-de-habitaciones-de-la-vivienda <http://opendata.aragon.es/kos/iaest/n-de-habitaciones-de-la-vivienda/5--habitaciones> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-habitaciones "212241.989394852"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030094A/3e706a63-dd97-3770-8993-54b1207645a7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030094A>; 
+	iaest-dimension:n-de-habitaciones-de-la-vivienda <http://opendata.aragon.es/kos/iaest/n-de-habitaciones-de-la-vivienda/6--habitaciones> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-habitaciones "115421.774516913"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-02010301-030094A/b592b0dd-8ee2-3962-94d7-cd48e47ca7d1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-02010301-030094A>; 
+	iaest-dimension:n-de-habitaciones-de-la-vivienda <http://opendata.aragon.es/kos/iaest/n-de-habitaciones-de-la-vivienda/7-y-mas-habitaciones> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-habitaciones "59758.1030702093"^^xsd:double;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

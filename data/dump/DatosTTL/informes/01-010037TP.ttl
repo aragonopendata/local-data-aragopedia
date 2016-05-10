@@ -1,0 +1,2126 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010037>;
+	rdfs:label "Parque de vehículos"@es ;
+	dct:identifier  "01-010037TP" ;
+	rdfs:comment "Cubo de datos para 01-010037TP"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/5be9725e-ea73-3388-a0c6-50fae5e1d624> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "294"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/00e995e4-63cb-390b-b9b7-433f64a7c28b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "27570"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/76f9edfa-d11c-32c5-bc49-4d78b95c308a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "6480"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/1c74096d-6fb0-3017-964a-f627267d68b6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "3838"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/8e937dae-3e97-3917-b88d-3eeb6bc5eb5f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1219"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/bfa5b911-f03a-3be9-956a-6249bf505caa> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "87895"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/758be4cc-f432-384e-9df6-933aae97134a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "131"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/69ff2882-f063-31c7-b3ae-0810135a168d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "18536"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/e3bdb684-9c56-3447-b1f1-53eabe43cd88> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "3463"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/bedcf22c-afa5-36da-97d5-0bc75000bcd2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "2412"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/10dd3c10-f890-399e-a4a9-014bb3fb9866> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "978"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/10891aa6-7a9f-3b34-835a-c0bb4693536e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "51257"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/67f58a2b-5380-3f3a-ad91-43112eefb339> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "1076"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/b6239494-fcf8-36e4-b636-70e13bd6b224> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "69414"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/69009b74-4c17-3340-8711-366e1cf41fa7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "20586"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/27b54d4b-0aa1-31a5-95d9-04494b0b5285> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "9502"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/efbd5dee-da1c-3389-81bb-a3a90ccf446e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "3312"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/def18e76-5f19-34e7-9bdc-95029b93ecad> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2000> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "319668"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/759798d9-38ba-3718-b476-549d324554ac> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "311"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/c392a66d-21da-3300-b3d7-81fb650abcea> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "28810"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/c7757cce-3ebb-3e55-a561-7405b9eb2ab6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "6633"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/0c0567ed-1d48-33da-9cd0-0de495f9048a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "4256"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/542d7690-f4f2-356d-9837-0ee757fbc277> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1319"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/58f0dfbb-13b9-3e4f-8bbc-50a926ee918c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "90764"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/75920c3a-4cb7-36b1-adfb-ad505bc18079> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "136"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/7aede4c7-ac58-3b73-8199-150814a1ecfc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "19372"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/dd661ea3-76b1-322f-8783-13728b7f5983> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "3559"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/183e65af-9176-33b5-95af-7ff55f265a5c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "2693"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/92cfbea2-b130-3b9d-b2c8-9efd00beeb86> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1079"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/3a5a1a04-a5ef-335b-8be7-edba26dc3595> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "53229"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/d9f691cb-2aa8-3ead-9671-d88416b43c78> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "1063"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/4076be74-e44e-33ed-9e1d-de313e0020d6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "71793"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/8ef8d886-0b8e-3895-aa5d-3e433427b392> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "21143"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/1f50859e-d2e7-34b1-a26d-2aefb0b14fc6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "10601"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/b554ed62-3687-3b26-bae5-2985e47d25d9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "3555"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/89d6fe5c-0c7b-39aa-9740-84bb39accfd3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "328293"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/a755b6b3-3486-300f-88d0-b3b815e49a55> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "318"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/d3d98806-7c24-3d87-9d89-16e1ddfd9992> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "29958"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/61d40f85-0c00-30f0-bade-d16cafe57ca6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "6820"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/258c5ae4-4de9-3ef0-83b7-9574b4c1da4f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "4690"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/a6b419eb-4af3-33a9-b5df-a4db50e018a2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1380"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/2e841e9c-9509-30b4-8a15-378a7d09ece5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "93121"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/4f608985-b878-3b13-83e5-8c49ceba621a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "144"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/fc26ffcf-691b-3ee4-86fd-cf7fbde3e2ea> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "20131"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/d45e447c-89a0-310f-ada5-61db2fc58b8b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "3638"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/8306048d-9f7d-347b-8bf6-bc4c1da75662> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "3016"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/d7e40851-82f7-353f-b1f8-8dc1d5d06635> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1199"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/bd5ab554-e75b-39b4-87da-4fd0bd855cd5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "54962"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/62ba8b48-e72e-355e-a8ca-c7d4f9120fc1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "1118"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/66700190-c693-370b-812c-3769ef47f61d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "73994"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/a48a7c61-9e1f-3e34-9840-b477b63e7c89> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "21759"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/aee18ba2-fde6-30e7-b1e7-7a84b418d97a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "11901"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/b4d32268-e247-3e86-b950-9f02626f9364> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "3807"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/3c17b567-657c-3c25-8829-f6062be9bfa1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "336082"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/dbab8797-06b0-368f-881c-aec1146ff140> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "309"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/640f6ac7-8a93-36c9-bc2c-91fb10b5c044> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "30984"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/f2776993-14e9-3c89-8096-1c6cbb25351c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "6816"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/2dc38892-8fb0-3a4c-b202-b720a68cc411> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "5213"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/d1a2f834-e80a-3a09-bf94-fabadfa55e18> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1485"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/5f240ced-8095-3242-8496-4b2f9bb791c9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "94095"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/0ef01e1a-2251-3021-8607-c84c3a5cda19> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "145"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/766ccbca-7147-3b8c-a046-e1e0c9f7976c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "20806"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/97c0cad3-5414-301a-971c-ab83fb929231> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "3643"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/6a60bc60-5aa2-30f0-845f-70604ec63e73> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "3434"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/4b369d85-3f60-3684-ba53-baffc2fd6541> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1289"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/fb8cc09a-3416-3c5c-8fed-f1982d31d954> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "56029"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/59b19864-804c-3fe8-a98f-5b55e01cd524> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "1080"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/1a85d2ca-24b8-3049-b70f-1482cd44b7d3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "75642"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/1d7ac45b-1374-35a7-80ed-90153fb9d03e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "21705"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/1f240d7b-579f-31fc-8779-bc20f2c88f60> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "12939"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/8eccf5ab-d17c-389b-958b-539b3f0bd333> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "3969"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/0a982852-fe50-358d-99cc-ccc9cac742f5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "336891"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/c814eaa3-71d7-320b-953a-865d6afee082> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "327"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/d3ae6070-cb1d-39e5-b57a-a95e0ef6dca5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "32606"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/597157dd-cad3-3bac-9fea-018acb1ff880> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "7142"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/7afd23df-5de1-3dfc-a0d4-93d5894a841b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "5912"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/d811b8fd-b307-3b4d-b6f0-d521b3d72af6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1596"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/b3bb9b16-9840-30ff-8b80-1eb5ec4d9017> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "96844"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/4116ae3a-ffb6-3a15-bfa5-636dae18c3c5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "155"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/93515f10-65bb-3318-bab7-fc6f6351ee0a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "23113"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/69d4bbcf-4fca-38ad-8621-fafba42d83c7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "3866"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/ebe8d37d-96c9-3469-8e2b-0d04197744fa> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "3846"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/4f1fac43-c604-36ff-a682-af3ec7676d2f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1346"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/fba51ae3-ba20-31c4-80ac-7d3e9a6e9739> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "59312"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/0d493c9e-0740-3ea4-a4d5-abdf415dadee> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "1099"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/0ebd1b8a-9574-33a6-9162-83a477834e49> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "79021"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/149745dd-027d-30e9-96f6-79053ce28b87> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "23153"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/6b5c2352-4cd0-3df2-8005-2377fca2f71e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "14587"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/9e307aac-6e7e-3db0-b43a-5e0ce3e8b9be> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "4204"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/64d11a3c-9675-33ac-b575-372a1d0add99> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "347789"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/922e7d77-729d-3d19-a6f8-b066e960c874> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "327"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/c42723f8-169a-350e-a213-d208ec55542f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "34009"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/e9105512-57a8-3671-a7a8-1d7d7e00efc4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "10789"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/f1494692-2896-3925-b64b-a6163b945581> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "7756"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/f0ac3d3a-3c78-379b-81d9-09c4294fcb0d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "6535"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/2b2de679-aa12-3b8a-a403-103d2ebe6e9d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1640"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/0df26d20-0400-3339-aef8-86aafd0590ff> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "99824"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/b95f9691-43f6-37cf-abfa-c3d4a06e6241> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "163"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/1754ed4d-ca3e-3d83-99c1-47d754daef58> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "27937"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/462db553-7f7f-3ddc-ab27-f7cd8925d2b2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "8612"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/70348a7a-acbc-3266-934a-0dfe136195c5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "4254"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/d324a5ec-afdf-3097-82bc-bbf99e1aeda8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "4315"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/2daf82c0-7202-3283-8de4-cbf599dfbc3b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1423"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/59dcc3b1-e0a0-3704-9d3c-abc75a8d9fe2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "62286"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/154d63f7-b0d6-3bff-83ce-b43f6319e695> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "1112"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/d524bdbb-ee37-32b4-9fad-1e6ee7aa21c6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "82902"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/f3815ac2-09ab-36d7-a4b7-7934f3b563ce> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "37071"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/fd341ea0-8fbd-3e29-af12-0a8cd47c8f57> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "26446"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/ce96fdd0-8abe-35e4-a8c1-ef6bbfb04370> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "16804"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/6874b4a6-8da6-3efc-9676-d5e1cc082bf5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "4571"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/f12a8595-b458-3798-bdd4-93e930652619> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "357790"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/7dbcb47a-a943-34ed-a3c3-7e8b9504b2af> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "330"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/349c2722-460d-33ba-b2fa-5115e912a660> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "36873"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/e87d3e71-fdfe-3eb2-9865-120470032c29> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "11040"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/197f2692-44bd-3c84-88f1-5bf0c96e5847> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "8968"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/c255eb6a-2e0b-3c85-b2bb-f5050804bba6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "7302"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/6660f488-61e5-37fd-9855-238827458baa> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1769"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/a932b42a-65cd-3163-966c-9e57ade0e178> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "106780"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/a9df7dd3-9c98-3a98-a6d3-12ff54073db3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "179"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/c6be7000-a3f8-3c2c-af24-70a73f6852e3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "32421"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/3c283863-b68c-38ed-908d-e8c686cdbaaf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "8742"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/ddfff62b-216c-36c3-9533-85cc8652fd80> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "4873"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/d33336d5-3c77-35b2-9858-ce05c38e6522> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "4645"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/748c9e88-224f-35b8-8e9b-9b8c19160981> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1382"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/e7d046ad-e76a-3ae6-836e-2240eda1e27b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "68534"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/3c1f92ae-3e8b-3b2d-b8ce-40142d9b0443> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "1149"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/f98220ba-5532-3d0e-9296-84d3cc3cea10> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "87478"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/8c00e7fd-a723-3d45-bae7-09d7fc862e62> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "38058"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/f7b9b642-b57c-3805-8074-35d60a138d73> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "30875"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/6194b4ab-6614-365d-af90-5f661b02d352> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "19104"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/5d460881-5106-3a00-9bd9-d33fa21f9466> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "5044"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/bccaedef-d772-3b43-89a3-8fc0f07adc14> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "375142"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/8296b408-3032-35a8-ad58-8c7810820b4f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "347"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/4cec484b-46f1-3d7b-850d-d21035b93497> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "37319"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/c017a959-5420-3a4e-8f10-c55680962109> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "11182"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/97d21442-7ad9-359b-9717-e360a00ab517> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "9670"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/db67b90c-d0cf-35a5-a4d5-389484600d78> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "7949"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/14ecb572-79cb-3127-b1d3-5eafebebef2a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1921"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/4c631d73-9e27-3af3-ad62-c024438080fa> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "106658"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/443b23c5-c2d6-31cc-b8dc-cd3d7dcb03aa> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "180"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/1cd8db35-b8ed-39ff-ba7a-6e2f1b2cb98a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "40959"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/fd645f22-0d25-35ef-af7d-d8c5733cdc9c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "8827"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/841aa731-c3b7-3764-8a95-b6581202d916> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "5315"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/0f2c140d-2f65-3732-b943-894384aa550a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "5067"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/e2646192-41ef-3e7e-b0b2-e94e309774b8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1538"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/81459391-fb40-3104-8cc8-cec5e1ee167c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "75064"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/a453b827-dc11-3a87-9768-ab4ec9b52985> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "1184"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/641d94d2-e666-36a4-8faa-7d322c7ce341> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "91241"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/1df33552-834e-34ad-9832-38a5cd66bc01> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "39062"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/b56cb3cb-b233-38d0-902f-e3095556f92d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "35620"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/337301f9-f7cc-34de-a487-6ea5e28983f6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "20442"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/1afb4090-c992-3ece-b4da-dc209498a5e5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "5461"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/dace4875-582b-39fa-8328-9f3f0f3b9f7d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "382245"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/7bc1e367-64c7-3432-bdc2-301010644e9f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "348"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/79765c37-0bd6-3730-8a76-a59fd6b15845> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "37716"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/4ba8f47b-f7fb-38c8-8cb1-0b9c4063435c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "11100"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/98b61655-1fdb-30dc-ac60-4c251848b1b9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "10418"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/a565d982-f28c-3d64-8d44-37b333bc5f7c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "8037"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/8b2c8f99-9830-32d9-95c0-cc71ed873396> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1942"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/d05878b2-4f59-3009-a2c5-4b5fdd0e891e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "108430"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/da8dc0e8-7441-3489-a0c0-0575f3843101> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "177"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/f1fb79bb-99f7-31d2-975f-f255854444b4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "45771"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/443443fa-a6f1-397b-ab55-e50bfba5c9cd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "8743"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/42e0412a-fe81-31aa-8577-3af9ffec7e1f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "5713"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/631f1bf4-161e-3d68-8100-1922cdbe0eec> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "5251"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/64fddefb-bdee-3f00-8e89-f4f849556fae> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1516"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/13d6109e-0458-3ccb-945a-727aa7ef2b8c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "80201"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/71847206-b6bd-3ca1-804f-f6159a1a2068> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "1197"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/0931979f-ad9d-3222-95f2-19be844ed936> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "92306"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/38e11653-658a-3f00-95e1-c5fdfef494b5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "38896"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/e9dbe881-2e07-3f4e-9d77-49b504850943> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "39480"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/46679995-a36d-3196-9b00-9c775557380c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "21210"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/a7938031-3421-315e-8ade-164cb4096858> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "5484"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/b24e2b72-4c69-3434-b659-5aab5a6415d5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "388895"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/fffb54a5-da8d-31a8-9d4d-28165738df93> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "357"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/ae6a4fed-8cbb-3cef-a6c2-94bbf802f9fc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "38078"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/ffe30257-4019-30df-97b8-acb0f5d1dba5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "10965"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/7455b82c-077c-3a47-9b3c-de69f611e063> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "10907"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/cb9d4c42-ca20-3d44-8d97-09326f6dda27> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "8218"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/272f5dca-86dc-34ae-935f-c38224295177> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1953"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/a1469f64-ac38-313f-a46a-5721c14f4239> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "108892"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/0771ce6a-3ee4-33ee-899c-e76ba6b15dbd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "175"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/00f81e5f-0482-35b9-9186-27a80f9367f2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "36277"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/5036a3a1-5e3f-3620-9abc-bfbab15235ff> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "8648"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/eebe6a3c-e85d-3b08-b1ce-29ba52131aaf> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "5973"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/00a1d21f-3fe6-3503-ad9f-926600efa2c0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "5307"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/e0ae1af1-3d09-303a-8f1e-82c75441f616> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1391"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/2f611bc2-5e69-30f7-a504-040bdb47db3c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "75932"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/d3b36f78-49f8-364c-928a-7e7b6d3428bc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "1158"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/bc8d2dc1-be75-38ba-9f56-e11fa6779aa4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "91601"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/4957fa4e-38f7-3935-b662-c5a7acff321d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "38115"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/55fda82d-c514-3189-a9e7-9215c53022b6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "41378"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/cbca080e-0dce-34bb-a56c-bed595f1eda6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "21498"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/2ee2545c-699d-3664-ab28-456cb6338130> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "5310"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/18c66e77-9b44-34ff-8d50-d122fc395ac0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "388257"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/5471dd82-f9f1-3e4d-a0e8-fa1aaa542023> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "361"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/3017ec74-fb7c-3976-9c09-aa9bd94f9bb8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "38126"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/d8ff47eb-8e4c-35f9-aa36-2604a5b6a6df> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "10844"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/9f73f401-5894-3803-aec9-727aadba87ba> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "11411"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/e62c2512-1ce6-3f34-b744-7ba2ca76a5fe> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "8424"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/4a47f2a1-7ac3-3c97-83f5-4801361479eb> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1935"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/66847091-08a4-3b19-961c-baf84a55bede> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "109607"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/f5e147b4-fef0-347e-8f44-09c5813815be> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "176"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/e4c7ff80-7c4a-3bba-b19c-af012d0e15e5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "30784"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/b8445761-5931-3735-989b-2c0fd878b746> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "8511"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/c6f41446-82b7-3758-96ba-3c0b5aec5758> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "6274"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/6854d263-9734-37ed-aed2-e0ee16ee6190> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "5464"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/b4597bd5-1678-3e9a-89ff-4f5c27698c59> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1335"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/de0bfe54-7457-3670-8726-4468b563e7f4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "72980"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/7adfa51d-063b-3363-89b2-72b8a1b264e5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "1136"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/412e87b9-30cb-38e1-8cce-aa59c6db3ab6> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "91030"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/dbfb4b53-f0a8-30e0-b761-e5483c850a0e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "37190"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/20eb8a8d-e98b-3ba3-bf36-daa138133fd9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "43104"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/3d68a39e-0223-3ab5-8b77-19fc3e68523e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "21944"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/5f88d74d-482c-3314-a7ef-c63c7663d08e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "5250"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/5b0299f3-7fd9-3105-8502-1546894efcf5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "391065"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/cf5549ad-168a-329f-a6ba-0a0f461b2511> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "363"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/1b1efc22-4153-31bd-aac1-1b479be9d286> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "38075"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/b422ef1b-00a1-30f1-80cd-301256f7d0d1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "10615"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/316ea44b-bf96-36e8-9a43-45bfc5004cc9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "11849"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/6a0e04a2-6e87-3f3e-8365-d2b7f20b4f5f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "8760"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/207e4771-2a06-3311-90b8-4fb4b89fd266> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1879"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/f781863f-84ca-3e9e-936a-3072f8d152ea> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "110038"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/095ada56-182e-3a1b-98ee-0f60b16dbea4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "169"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/fe7993ec-1271-34fc-abdc-6a2e75b2673f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "25254"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/f001a154-95e7-3803-8161-5383ba48aae1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "8309"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/275a520e-839d-30dc-a464-50eea818ec4a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "6501"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/3e20e63e-7751-326f-9b9b-2abd5ae41e3e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "5679"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/a75549dc-b079-31fa-9bca-79080d06341b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1299"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/81be4400-80b7-317a-a06d-705c49ecce6c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "68866"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/9426cda1-4d05-34c1-9a27-8f6b3d726624> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "1120"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/5290402d-6732-38f0-8c65-c36627bbac0b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "89577"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/5d3c5a47-408f-383d-801f-ae063172413a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "36316"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/3411e7b5-ce66-3069-8c52-a28f9821dbbd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "44678"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/df22b801-9e73-318a-8ebb-ba4c61c3de5e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "22414"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/d4755689-7464-38c2-9368-aaa13403c113> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "5133"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/81d07385-c40a-3302-8ac1-49427ccc738c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "392930"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/366d8f69-86f1-36c6-afbf-f47cc75a3eba> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "360"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/323949fc-521f-3ff3-9719-4fcc65d58bba> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "38028"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/49c14dd2-eeec-3084-a9e8-6ebeeb45881e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "10446"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/963ed59c-a9f6-379f-b8f3-522b3334d5e8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "12087"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/2800012f-abf1-3439-ad44-ed4e678b9cb9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "9105"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/d42e4c17-6dae-3c46-830f-9aafc2d134cc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1770"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/916444fa-1dde-3919-96f6-a4248a16c964> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "109969"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/f353f74b-b287-31f0-ae4d-15e9253a32a4> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "129"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/79bc8b49-8b3b-3414-a012-5712f1e3aeec> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "25096"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/323e0772-0f30-3855-9e63-50b053122b6a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "8099"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/5a5e1b55-77da-3fd7-9f3b-15607a680bca> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "6639"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/05fcb571-34e9-3e66-8149-f11230f73b58> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "5753"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/3d783de5-4276-37a3-b711-7ba443d59a87> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1258"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/dc3266fd-f214-3f50-9b9d-3871860a5ca5> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "68716"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/020b0c41-5851-3764-9bc3-fa99920d073a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "1114"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/536a8f57-8426-30bb-a66c-8052c5d8a45b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "87579"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/e09b7146-e1bd-3c60-9a9b-714739212f72> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "35294"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/739af8a5-663c-32ac-a37a-6ed292bb1dee> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "45654"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/7e2695d0-711c-37f3-94d1-dd7d7828a891> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "22607"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/1a15490f-ab21-3438-a323-1b05ea4b4db3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "4992"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/65b7cb86-9d91-32e5-96c9-ff69ce78608b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "393072"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/37915d39-b37a-3a4d-85cd-46c705ae753c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "353"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/66bebee9-790a-36f0-aa86-cc72b0f39b75> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "37616"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/9941bcfe-3ff8-3aeb-b865-50f49c01688f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "10265"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/926c028e-93a3-3b29-a49b-814a37bc4b7d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "12240"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/21908de8-4694-391b-bb44-5001f63ef42c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "9420"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/87c62a00-f9b6-3aac-9c7e-9c7669f833cd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1702"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/d4c4dfdc-7ce6-3ff1-a2ec-701aee139259> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "109049"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/43371188-b350-39a8-8182-c5fc0a442553> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "126"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/521f3262-9bad-329a-bd92-bae7d250ed2c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "24701"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/fb3a62ba-4d58-3858-b41e-0500ec63a6cd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "7908"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/4954c149-c3a4-3f29-af05-4dd064b4e8e1> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "6707"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/e3a4bb41-aef9-3963-bc52-f9f06cfbbb60> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "5797"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/b2bfab28-9832-3e70-8015-ba8f9af0450a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1170"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/63768309-6983-3712-b8fc-f0410701c2fc> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "68035"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/44a29d9b-8c6e-353a-840c-358a0e63d812> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "1058"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/2ddc1688-0bab-3df7-8816-0fdb9e0b0aa2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "85331"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/817c1427-c215-37dd-9399-44f51adfcc62> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "34218"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/bd1a0032-049b-3ca4-b996-130407d22169> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "46264"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/f25a6c08-ae41-37f3-b4e0-24b3f349b525> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "22936"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/5f1bbce5-984e-3e3c-b9ca-46159aa0e374> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "4912"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/bd38e2e5-03a7-36ff-9555-2bb85c3a00cd> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "388892"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/2f83906e-4120-3d31-99da-3121854fc226> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "346"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/c41617c5-f3f5-3c93-b7fd-5aebfd53a96e> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "37384"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/9a01d6e3-42a7-388a-8b3c-4d8cf82873c8> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "10077"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/7d70f4f8-b981-3983-98f0-39488f46e6b9> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "12575"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/893c27b1-94d6-36ef-9f62-4f8b83418e7c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "9906"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/a1f13b00-8c0f-3234-a158-31c17cc00115> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1771"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/3a434973-95bf-34c0-995c-31e616f89cf2> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "109182"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/661a025d-2623-3940-8314-dbe1dfa3d792> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "119"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/6ad3d866-be90-326d-8eff-273d2d673ba3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "24418"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/76cc8c72-c1e3-38be-b050-1b229a439ca3> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "7756"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/991fb515-762d-3e4c-8446-a9323858efc0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "6937"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/eb698b28-b556-373a-a2e3-123ff36bb341> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "6057"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/c8528dcd-70ca-3ce7-b07d-2265ed8e7f98> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "1260"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/5c93aa16-6690-3551-a646-a668f91f716d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "68278"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/1984bd97-360d-3cd5-abac-80096701d28a> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/autobuses> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/4> ;
+	iaest-measure:cantidad "1042"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/a749c8ae-d57b-3d49-81af-357794cd80a7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/camiones-y-furgonetas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/3> ;
+	iaest-measure:cantidad "83796"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/87412741-2cae-3318-8aaf-5db84b9df23b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/ciclomotores> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/7> ;
+	iaest-measure:cantidad "33452"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/cf357423-9e1d-3319-a9e0-c3b03b59e793> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/motocicletas> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/2> ;
+	iaest-measure:cantidad "47685"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/9f389844-a9af-3a87-bfc4-13b308e81d98> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/otros-vehiculos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/6> ;
+	iaest-measure:cantidad "23430"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/f6f051e5-8678-3cff-afa8-74a872a03bf7> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/tractores-industriales> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/5> ;
+	iaest-measure:cantidad "5094"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010037TP/f5f2a818-9b70-33bb-b457-306ee908e968> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010037TP>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:tipo-de-vehiculo <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo/turismos> ;
+	iaest-dimension:tipo-de-vehiculo-orden <http://opendata.aragon.es/kos/iaest/tipo-de-vehiculo-orden/1> ;
+	iaest-measure:cantidad "389536"^^xsd:int.

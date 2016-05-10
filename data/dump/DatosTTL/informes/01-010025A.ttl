@@ -1,0 +1,146 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/01-010025A> a qb:DataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/01-010025>;
+	rdfs:label "Suelo rústico"@es ;
+	dct:identifier  "01-010025A" ;
+	rdfs:comment "Cubo de datos para 01-010025A"@es ;
+	dc:modified "2016-05-10"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010025A/8cdd208b-3d0c-3577-bf03-fdb5923e8519> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010025A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2001> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:rustico-parcelas "2538364"^^xsd:int;
+	iaest-measure:rustico-subparcelas "3819179"^^xsd:int;
+	iaest-measure:rustico-superficie "4686020"^^xsd:double;
+	iaest-measure:rustico-valor-catastral "1859772.17"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010025A/e523c47f-05cf-3a23-a6d0-5afe391b731b> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010025A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2002> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:rustico-parcelas "2536511"^^xsd:int;
+	iaest-measure:rustico-subparcelas "3706395"^^xsd:int;
+	iaest-measure:rustico-superficie "4704341"^^xsd:double;
+	iaest-measure:rustico-valor-catastral "1909605"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010025A/74a1fcd0-a379-3069-8a34-b8d8b8aa081f> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010025A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2003> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:rustico-parcelas "2545192"^^xsd:int;
+	iaest-measure:rustico-subparcelas "3693413"^^xsd:int;
+	iaest-measure:rustico-superficie "4712204"^^xsd:double;
+	iaest-measure:rustico-valor-catastral "2077081"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010025A/9e9ed7b3-e3e3-3d56-9729-640a11df7391> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010025A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2004> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:rustico-parcelas "2541581"^^xsd:int;
+	iaest-measure:rustico-subparcelas "3639683"^^xsd:int;
+	iaest-measure:rustico-superficie "4731797"^^xsd:double;
+	iaest-measure:rustico-valor-catastral "2148897"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010025A/ed4cfa1b-ec4a-3894-82d7-ca477bf73f72> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010025A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2005> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:rustico-parcelas "2551637"^^xsd:int;
+	iaest-measure:rustico-subparcelas "3628944"^^xsd:int;
+	iaest-measure:rustico-superficie "4739254"^^xsd:double;
+	iaest-measure:rustico-valor-catastral "2201929"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010025A/0f165dd2-535d-31dc-912e-f5af2b9630ff> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010025A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2006> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:rustico-parcelas "2562451"^^xsd:int;
+	iaest-measure:rustico-subparcelas "3604013"^^xsd:int;
+	iaest-measure:rustico-superficie "4757135.92"^^xsd:double;
+	iaest-measure:rustico-valor-catastral "2261482.61"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010025A/ba160d9d-6afc-3e37-9ebf-29110eeccdec> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010025A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2007> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:rustico-parcelas "2551803"^^xsd:int;
+	iaest-measure:rustico-subparcelas "3520259"^^xsd:int;
+	iaest-measure:rustico-superficie "4738335.37"^^xsd:double;
+	iaest-measure:rustico-valor-catastral "2420771.22"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010025A/78654047-b79b-39b9-bf33-6ea748186316> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010025A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:rustico-parcelas "2548239"^^xsd:int;
+	iaest-measure:rustico-subparcelas "3523361"^^xsd:int;
+	iaest-measure:rustico-superficie "4727938.41"^^xsd:double;
+	iaest-measure:rustico-valor-catastral "2535045.18"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010025A/62abf9bf-cd8c-3851-9506-7d69f00730a0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010025A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:rustico-parcelas "2534877"^^xsd:int;
+	iaest-measure:rustico-subparcelas "3506816"^^xsd:int;
+	iaest-measure:rustico-superficie "4727385.44"^^xsd:double;
+	iaest-measure:rustico-valor-catastral "2758362.29"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010025A/197d1d7e-57a4-30b5-ba92-32174fdf7279> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010025A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:rustico-parcelas "2524235"^^xsd:int;
+	iaest-measure:rustico-subparcelas "3464386"^^xsd:int;
+	iaest-measure:rustico-superficie "4732783.44"^^xsd:double;
+	iaest-measure:rustico-valor-catastral "2913745.51"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010025A/76bfe503-b1c9-3231-962f-d88e88c88d9d> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010025A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:rustico-parcelas "2526540"^^xsd:int;
+	iaest-measure:rustico-subparcelas "3461762"^^xsd:int;
+	iaest-measure:rustico-superficie "4732219.81"^^xsd:double;
+	iaest-measure:rustico-valor-catastral "2976530.25"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010025A/7ee4d6ae-9b32-3052-b3d3-10e5a34e8ed0> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010025A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:rustico-parcelas "2519083"^^xsd:int;
+	iaest-measure:rustico-subparcelas "3455377"^^xsd:int;
+	iaest-measure:rustico-superficie "4731124.69"^^xsd:double;
+	iaest-measure:rustico-valor-catastral "3001040.77"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010025A/78d4596d-e8c5-38a0-b988-934371f1422c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010025A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:rustico-parcelas "2518572"^^xsd:int;
+	iaest-measure:rustico-subparcelas "3449180"^^xsd:int;
+	iaest-measure:rustico-superficie "4731563.09"^^xsd:double;
+	iaest-measure:rustico-valor-catastral "3886282.13"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010025A/0c15b17b-3c4c-3373-a875-42f40c8f8f74> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010025A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:rustico-parcelas "2509479"^^xsd:int;
+	iaest-measure:rustico-subparcelas "3440010"^^xsd:int;
+	iaest-measure:rustico-superficie "4721969.22"^^xsd:double;
+	iaest-measure:rustico-valor-catastral "3856300.93"^^xsd:double.
+<http://opendata.aragon.es/recurso/iaest/observacion/01-010025A/90930168-6d87-3056-8e1e-8131f29b4c2c> a qb:Observation ;
+	qb:DataSet <http://opendata.aragon.es/recurso/iaest/dataset/01-010025A>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:rustico-parcelas "2486035"^^xsd:int;
+	iaest-measure:rustico-subparcelas "3412438"^^xsd:int;
+	iaest-measure:rustico-superficie "4730576.59"^^xsd:double;
+	iaest-measure:rustico-valor-catastral "4060703.44"^^xsd:double.

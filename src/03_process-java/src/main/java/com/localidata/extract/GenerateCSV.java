@@ -2,65 +2,75 @@ package com.localidata.extract;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.CookieManager;
-import java.net.CookiePolicy;
 import java.net.SocketTimeoutException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.collections.ListUtils;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
+import com.localidata.generic.Constants;
+import com.localidata.generic.GoogleDriveAPI;
 import com.localidata.generic.Prop;
-import com.localidata.process.GenerateRDF;
 import com.localidata.util.Cookies;
+import com.localidata.util.Jdbcconnection;
 import com.localidata.util.Utils;
 
+/**
+ * 
+ * @author Localidata
+ */
 public class GenerateCSV {
 	private final static Logger log = Logger.getLogger(GenerateCSV.class);
 	
 	private String urlsDirectoryString = "";
 	
 	private String outputFilesDirectoryString = "";
-	
-	private String dimensionsDirectoryString = "";
-	
-	private String mesuresDirectoryString = "";
-	
-	private String[] extensions = new String[] { "csv", "txt" };
-	
 	private HashMap<String, String> hashCode = new HashMap<>();
 	
-	private HashMap<String, List<String>> dimMesCurada = new HashMap<>();
+	private HashMap<String, String> hashCodeNew = new HashMap<>();
+	
+	private HashMap<String, String> idDescription = new HashMap<>();
+	
 	
 	private List<String> changes = new ArrayList<String>();
 	
 	private List<String> news = new ArrayList<String>();
+	
+	private GoogleDriveAPI drive = null;
+	
 
-	public GenerateCSV(String urls, String outputFiles, String dimensions, String mesures ){
 		urlsDirectoryString = urls;
 		outputFilesDirectoryString = outputFiles;
-		dimensionsDirectoryString = dimensions;
-		mesuresDirectoryString = mesures;
+		drive = new GoogleDriveAPI();
+		drive.init();
+		log.info("Generando el fichero InformesEstadisticaLocal-URLs.csv");
+		/*OBIAragon.initProperties("service.properties");
+		try {
+			OBIAragon.getReportsList();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}*/
+		/*try {
+			Jdbcconnection.main(null);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}*/
+		
+		log.info("fin de la generación del fichero InformesEstadisticaLocal-URLs.csv");
 	}
 	
 	public void extractFiles(List<String> csvLines){
 		
 		log.info("init extractFiles");
-		CookieManager manager = new CookieManager(null, CookiePolicy.ACCEPT_ALL);
 		Cookies cookies = new Cookies();
 		File urlsDirectoryFile = new File(urlsDirectoryString);
-		List<String[]> csvLinesErrors = new ArrayList<>();
 		HashMap<String[], Integer> numErrorFiles = new HashMap<>();
 		HashMap<String[], String> errorFiles = new HashMap<>();
 		String[] valores = null;
@@ -169,10 +179,8 @@ public class GenerateCSV {
 		extractHashCode();
 		List<String> all = new ArrayList<>();
 		all.add("cabecera");
-		CookieManager manager = new CookieManager(null, CookiePolicy.ACCEPT_ALL);
 		Cookies cookies = new Cookies();
 		File urlsDirectoryFile = new File(urlsDirectoryString);
-		List<String[]> csvLinesErrors = new ArrayList<>();
 		HashMap<String[], Integer> numErrorFiles = new HashMap<>();
 		HashMap<String[], String> errorFiles = new HashMap<>();
 		String[] valores = null;
@@ -189,6 +197,10 @@ public class GenerateCSV {
 				for (int h = 1; h < csvLines.size(); h++) {
 					String line=csvLines.get(h);
 					valores = line.split(",");
+					valores[0]=valores[0].replaceAll("\"", "");
+					valores[1]=valores[1].replaceAll("\"", "");
+					valores[2]=valores[2].replaceAll("\"", "");
+					idDescription.put(valores[1],valores[2]);
 					content = Utils.processURLGet("http://bi.aragon.es/analytics/saw.dll?Go&path=/shared/IAEST-PUBLICA/Estadistica%20Local/"+valores[0]+"&Action=Download&Options=df&NQUser=granpublico&NQPassword=granpublico","",headers,cookies,"ISO-8859-1");
 					if(Utils.v(content)){
 						content=content.replace(new String(Character.toChars(0)), "");
@@ -212,7 +224,7 @@ public class GenerateCSV {
 						if(safeFile){
 							if(!content.contains("<!DOCTYPE HTML") && !content.contains("<HTML>") && !content.contains("<DOCTYPE HTML>") && !content.contains("<HTML>") && !content.contains("<div>") && !content.contains("<HTML>")){
 								Utils.stringToFile(content,new File(outputFilesDirectoryString+File.separator+valores[1]+".csv"));
-								hashCode.put(valores[1], hash);
+								hashCodeNew.put(valores[1], hash);
 								log.info("Descargado csv "+valores[1]);
 							}else if(!content.contains("Se ha excedido el n") && !content.contains("Ruta de acceso no encontrada")){
 								numErrorFiles.put(valores, new Integer(0));
@@ -272,7 +284,7 @@ public class GenerateCSV {
 								if(safeFile){
 									if(!content.contains("<!DOCTYPE HTML") && !content.contains("<HTML>") && !content.contains("<DOCTYPE HTML>") && !content.contains("<HTML>") && !content.contains("<div>") && !content.contains("<HTML>")){
 										Utils.stringToFile(content,new File(outputFilesDirectoryString+File.separator+valores[1]+".csv"));
-										hashCode.put(valores[1], hash);
+										hashCodeNew.put(valores[1], hash);
 										log.info("Descargado csv "+valores[1]);
 									}else if(!content.contains("Se ha excedido el n") && !content.contains("Ruta de acceso no encontrada")){
 										numErrorFiles.put(valores, new Integer(0));
@@ -318,16 +330,23 @@ public class GenerateCSV {
 		}
 		log.info("end extractFilesWithChanges");
 	}
-	
+	/*
 	public void updateDimensionsMesures(){
 		log.info("init updateDimensionsMesures");
+		//Lectura de la dimension o medida curada
+		////Se genera HashMap<nombre dimension/medida, lista valores>
 		readDimensionsMesure();
 		
+		//Comprobación de si está el cada valor está en los valores
+		////Se genera una lista con los valores del CSV
 		File outputFilesDirectoryFile = new File(outputFilesDirectoryString);
 		Collection<File> listOutput = FileUtils.listFiles(outputFilesDirectoryFile,
 				extensions, true);
 		for (File file : listOutput) {
 			HashMap<String,List<String>> mapColumns = extractColumns(file);
+			//En caso de no estar se incluirán los nuevos valores
+			////Con la clase ListUtils() comprobamos si hay valores diferentes
+			////En caso de haberlos los agregamos al fichero de curadas
 			
 			for (String header : mapColumns.keySet()) {
 				
@@ -352,8 +371,8 @@ public class GenerateCSV {
 			}
 		}
 		log.info("end updateDimensionsMesures");
-	}
-	
+	}*/
+	/*
 	private HashMap<String,List<String>> extractColumns(File file) {
 		HashMap<String,List<String>> result = new HashMap<>();
 		try {
@@ -386,7 +405,8 @@ public class GenerateCSV {
 		}
 		return result;
 	}
-
+	*/
+	/*
 	private void readDimensionsMesure(){
 		File dimensionsDirectoryFile = new File(dimensionsDirectoryString);
 		Collection<File> listdimensions = FileUtils.listFiles(dimensionsDirectoryFile,
@@ -413,8 +433,9 @@ public class GenerateCSV {
 			}
 			
 		}
-	}
-
+	}*/
+	
+	/*
 	public void generateDimensiones() {
 		
 		File urlsDirectoryFile = new File(outputFilesDirectoryString);
@@ -430,6 +451,7 @@ public class GenerateCSV {
 				
 				for (int h = 1; h < csvLines.size(); h++) {
 					String line = csvLines.get(h);
+//					String[] cells = line.split("\t");
 					Object[] cells = Utils.split(line,"\t");
 					for (int i = 0; i < heads.length; i++) {
 						String value = (String) cells[i];
@@ -471,19 +493,39 @@ public class GenerateCSV {
 				e.printStackTrace();
 			}
 		}
+	}*/
+	
+	public void extractFilesPrueba(){
+		
+		File file = new File(""+Prop.fileHashCSV+"."+Constants.CSV);
+		try {
+			List<String> hashLines = FileUtils.readLines(file, "UTF-8");
+			for (String line : hashLines) {
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 	}
 	
-	public void generateHashCode(){
+	public void generateHashCode(List<String> result){
 		
-		File file = new File(Prop.fileHashCSV);
+		File file = new File(Prop.fileHashCSV+"."+Constants.CSV);
 		String hashCodeFile="";
+
 		for (String key : hashCode.keySet()) {
-			
-			hashCodeFile += key + "," +hashCode.get(key) + "\n";
+			String hash="";
+			if(result.contains(key))
+				hash=hashCodeNew.get(key);
+			else{
+				hash=hashCode.get(key);
+			}
+			hashCodeFile += key + "," + hash + "\n";
 			
 		}
 		try {
 			Utils.stringToFile(hashCodeFile, file);
+			drive.updateFile(Prop.fileHashCSV,file,"text/csv");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -503,7 +545,9 @@ public class GenerateCSV {
 	}
 	
 	protected void extractHashCode(){
-		File file = new File(Prop.fileHashCSV);
+		
+		drive.downloadFile("", Prop.fileHashCSV, Constants.CSV);
+		File file = new File(""+Prop.fileHashCSV+"."+Constants.CSV);
 		try {
 			List<String> hashLines = FileUtils.readLines(file, "UTF-8");
 			for (String line : hashLines) {
@@ -614,13 +658,21 @@ public class GenerateCSV {
 		this.news = news;
 	}
 
+	public HashMap<String, String> getIdDescription() {
+		return idDescription;
+	}
+
+	public void setIdDescription(HashMap<String, String> idDescription) {
+		this.idDescription = idDescription;
+	}
+
 	public static void main(String[] args) {
 		if ((log == null) || (log.getLevel() == null))
 			PropertyConfigurator.configure("log4j.properties");
 		if (args.length == 3) {
 			log.info("Start process");
 			Prop.loadConf();
-			GenerateCSV app = new GenerateCSV(args[1],args[2],args[3],args[4]);
+			GenerateCSV app = new GenerateCSV(args[1],args[2]/*,args[3],args[4]*/);
 			app.backup();
 			if(args[0].equals("update")){
 				app.extractFilesWithChanges();

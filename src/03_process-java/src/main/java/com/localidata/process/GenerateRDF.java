@@ -30,13 +30,21 @@ import com.localidata.bean.SkosBean;
 import com.localidata.generic.Constants;
 import com.localidata.generic.GoogleDriveAPI;
 import com.localidata.generic.Prop;
+import com.localidata.util.SendMailSSL;
 import com.localidata.util.Utils;
 
+/**
+ * 
+ * @author Localidata
+ */
 public class GenerateRDF {
 	private final static Logger log = Logger.getLogger(GenerateRDF.class);
 	private String inputDirectoryString = "";
 	private String outputDirectoryString = "";
 	private String configDirectoryString = "";
+	
+	private String urlsFileString;
+	
 	private String[] extensions = new String[] { "csv" };
 	private String[] extensionsConfig = new String[] { "xlsx", "csv" };
 
@@ -51,19 +59,33 @@ public class GenerateRDF {
 	private HashSet<String> filesNotRDF = new HashSet<>();
 
 	private boolean generateHeaderRDF = true;
+	private HashMap<String, String> idDescription;
+	private String specsTtlFileString;
+	
 
-	public GenerateRDF(String input, String output, String config) {
+	public GenerateRDF(String input, String output, String config, String urls, String specsTtl) {
 		this.inputDirectoryString = input;
 		this.outputDirectoryString = output;
 		this.configDirectoryString = config;
+		this.urlsFileString = urls;
+		this.specsTtlFileString = specsTtl;
 	}
 
-	public void readConfig() {
+	public void readConfig(HashMap<String, String> idDescription) {
 		log.debug("Init readConfig");
 		log.info("Se descarga la configuración");
 		GoogleDriveAPI api = new GoogleDriveAPI();
 		api.init();
-		api.downloadAllFiles(configDirectoryString);
+		try {
+			api.downloadFolderFiles(configDirectoryString,Prop.idParentFolder);
+		} catch (IOException e1) {
+			e1.printStackTrace();
+			String error = "Por problemas con la conexión de google drive no se puede descargar la configuración, intentelo más tarde.";
+			log.error(error);
+			SendMailSSL sendMail = new SendMailSSL();
+			sendMail.enviar(Prop.emailUser, Prop.emailPassword, Prop.emailDestination, "Error en el proceso del IAEsT" , error);
+			System.exit(-1);
+		}
 		log.info("Comienza a extraerse la configuración");
 		File configDirectoryFile = new File(configDirectoryString);
 		File areasReportFile = new File(outputDirectoryString + File.separator
@@ -71,11 +93,12 @@ public class GenerateRDF {
 		Collection<File> listCSV = FileUtils.listFiles(configDirectoryFile,
 				extensionsConfig, true);
 		int cont = 0;
+		
 		int size = listCSV.size();
 		for (File file : listCSV) {
 			log.info("Se extrae el fichero " + file.getName() + " " + (++cont)
 					+ " " + size);
-			if (!file.getName().startsWith("mapping")) {
+			if (!file.getName().startsWith("mapping") && !file.getName().startsWith(Prop.fileHashCSV)) {
 				ConfigBean configBean = new ConfigBean();
 				configBean.setNameFile(file.getName());
 				String id = file.getName().substring(8);
@@ -138,6 +161,29 @@ public class GenerateRDF {
 				}
 			}
 		}
+		
+		if(idDescription==null){
+			this.idDescription =  new HashMap<String, String>();
+			File urlsFile = new File(urlsFileString);
+			List<String> csvLines;
+			try {
+				csvLines = FileUtils.readLines(urlsFile, "UTF-8");
+				for (int h = 1; h < csvLines.size(); h++) {
+					String line=csvLines.get(h);
+					String[] valores = line.split(",");
+					valores[0]=valores[0].replaceAll("\"", "");
+					valores[1]=valores[1].replaceAll("\"", "");
+					valores[2]=valores[2].replaceAll("\"", "");
+					this.idDescription.put(valores[1],valores[2]);
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+		}else{
+			this.idDescription = idDescription;
+		}
+		
 		log.info("Finaliza de extraerse la configuración");
 		log.debug("End readConfig");
 	}
@@ -382,6 +428,9 @@ public class GenerateRDF {
 				Row row = sheet.getRow(i);
 				Cell cellId = row.getCell(0);
 				Cell cellUri = row.getCell(1);
+				if(cellId==null || cellUri==null){
+					continue;
+				}
 				SkosBean skosBean = new SkosBean();
 				SkosBean skosBeanExtra = new SkosBean();
 				String idCell = "";
@@ -546,8 +595,9 @@ public class GenerateRDF {
 		log.debug("End createSkos");
 	}
 
-	public void writeInformationTTL(boolean update) {
+	public List<String> writeInformationTTL() {
 		log.debug("Init extractInformation");
+		List<String> result = new ArrayList<>();
 		File inputDirectoryFile = new File(inputDirectoryString);
 		File propertiesFile = new File(outputDirectoryString + File.separator
 				+ "DatosTTL" + File.separator + "codelists" + File.separator
@@ -559,8 +609,7 @@ public class GenerateRDF {
 				+ "errorReport.txt");
 
 		TransformToRDF.propertiesContent.append(TransformToRDF.addPrefix());
-		if(!update)
-			Utils.stringToFileAppend(TransformToRDF.addPrefix().toString(), dsdFile);
+		Utils.stringToFileAppend(TransformToRDF.addPrefix().toString(), dsdFile);
 
 		Collection<File> listCSV = FileUtils.listFiles(inputDirectoryFile,
 				extensions, true);
@@ -596,14 +645,17 @@ public class GenerateRDF {
 									+ numfile + "/" + listCSV.size());
 							List<String> csvLines = FileUtils.readLines(file,
 									"UTF-8");
+							String description = idDescription.get(fileName + fileLetter);
 							TransformToRDF transformToRDF = new TransformToRDF(
 									csvLines, outputDirectoryFile, propertiesFile,
-									dsdFile, errorReportFile, configBean);
+									dsdFile, errorReportFile, configBean, specsTtlFileString);
 							transformToRDF.initTransformation(
 									fileName + fileLetter, numfile, fileName,
-									dsdList, propertiesList, update);
+									dsdList, propertiesList, description);
+							
 							log.info("End file " + outputDirectoryFile.getName()
 									+ " " + numfile + "/" + listCSV.size());
+							result.add(fileName+fileLetter);
 						} else {
 							log.error("Error al extraer la configuración de "
 									+ fileName);
@@ -615,8 +667,10 @@ public class GenerateRDF {
 			}
 		}
 		
-
+		TransformToRDF.generateCommonData(mapconfig, idDescription);
+		
 		log.debug("End extractInformation");
+		return result;
 	}
 
 	public void backup() {
@@ -641,6 +695,23 @@ public class GenerateRDF {
 			}
 		}
 		log.info("Finaliza de hacerse el backup");
+		log.debug("End backup");
+	}
+	
+	public void delete() {
+		log.debug("Init delete");
+		log.info("Comienza a hacerse el delete");
+		
+		try {
+			File outputDirectoryFile = new File(outputDirectoryString);
+			if (outputDirectoryFile.exists()) {
+				FileUtils.deleteDirectory(outputDirectoryFile);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		log.info("Finaliza de hacerse el delete");
 		log.debug("End backup");
 	}
 
@@ -708,20 +779,34 @@ public class GenerateRDF {
 		this.generateHeaderRDF = generateHeaderRDF;
 	}
 
+	public HashMap<String, ConfigBean> getMapconfig() {
+		return mapconfig;
+	}
+
+	public void setMapconfig(HashMap<String, ConfigBean> mapconfig) {
+		this.mapconfig = mapconfig;
+	}
+
 	public static void main(String[] args) {
 		if ((log == null) || (log.getLevel() == null))
 			PropertyConfigurator.configure("log4j.properties");
-		if (args.length == 4) {
+		if (args.length == 6) {
 			log.info("Start process");
 			Prop.loadConf();
-			GenerateRDF app = new GenerateRDF(args[1], args[2], args[3]);
-			app.backup();
-			app.readConfig();
-			app.writeInformationTTL(false);
+			GenerateRDF app = new GenerateRDF(args[1], args[2], args[3], args[4], args[5]);
+			app.delete();
+			app.readConfig(null);
+			app.writeInformationTTL();
 			app.writeSkosTTL();
 			app.zipFiles();
 			log.info("Finish process");
-		} 
+		} else {
+			log.info("Se deben de pasar dos parámetros: ");
+			log.info("La cadena de texto data ");
+			log.info("\tEl directorio donde están los archivos de entrada");
+			log.info("\tEl directorio donde se van a escribir los archivos ttl");
+			log.info("\tEl directorio donde están los excel de configuación");
+		}
 
 	}
 }

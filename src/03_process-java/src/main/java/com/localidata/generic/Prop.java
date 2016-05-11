@@ -7,6 +7,11 @@ import java.util.Properties;
 
 import org.apache.log4j.Logger;
 
+/**
+ * 
+ * @author Localidata
+ *
+ */
 public class Prop {
 	
 	private final static Logger log = Logger.getLogger(Prop.class);
@@ -33,6 +38,8 @@ public class Prop {
 	public static String fileErrorBig = "";
 	
 	public static String fileErrorNotFound = "";
+	
+	public static String fileConfElda = "";
 	
 	public static String emailUser = "";
 	
@@ -69,6 +76,7 @@ public class Prop {
 			fileErrorGeneric = prop.getProperty("fileErrorGeneric");
 			fileErrorBig = prop.getProperty("fileErrorBig");
 			fileErrorNotFound = prop.getProperty("fileErrorNotFound");
+			fileConfElda =  prop.getProperty("fileConfElda");
 			
 			emailUser = prop.getProperty("emailUser");
 			emailPassword = prop.getProperty("emailPassword");

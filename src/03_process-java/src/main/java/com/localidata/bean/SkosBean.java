@@ -2,6 +2,11 @@ package com.localidata.bean;
 
 import java.util.ArrayList;
 
+/**
+ * 
+ * @author Localidata
+ *
+ */
 public class SkosBean {
 
 	private String id;

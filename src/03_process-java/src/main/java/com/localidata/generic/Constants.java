@@ -1,5 +1,10 @@
 package com.localidata.generic;
 
+/**
+ * 
+ * @author Localidata
+ *
+ */
 public class Constants {
 
 	public final static String dimension = "qb:dimension";

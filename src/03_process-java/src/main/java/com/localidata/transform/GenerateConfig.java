@@ -24,6 +24,10 @@ import com.localidata.generic.Prop;
 import com.localidata.util.SendMailSSL;
 import com.localidata.util.Utils;
 
+/**
+ * 
+ * @author Localidata
+ */
 public class GenerateConfig {
 
 	private final static Logger log = Logger.getLogger(GenerateConfig.class);
@@ -240,7 +244,7 @@ public class GenerateConfig {
 				}
 
 				if (skosData.size() > 0)
-					extractSkosConcept(csvLines, skosData);
+					extractSkosConcept(csvLines, skosData, null);
 
 			} catch (IOException e) {
 				log.error("Error to read lines", e);
@@ -280,9 +284,85 @@ public class GenerateConfig {
 		}
 		log.info("End generateAllConfig");
 	}
+	
+	public HashMap<String, ConfigBean> generateUpdateConfig() {
+		log.info("Init generateUpdateConfig");
+		HashMap<String, ConfigBean> configExtrated = new HashMap<String, ConfigBean>();
+		File inputDirectoryFile = new File(inputDirectoryString);
+		Collection<File> listCSV = FileUtils.listFiles(inputDirectoryFile,
+				extensions, true);
+		
+		int cont = 0;
+		int size = listCSV.size();
+		boolean update = false;
+		for (File file : listCSV) {
+			ArrayList<DataBean> skosData = new ArrayList<DataBean>();
+			String id = "";
+			String letters = "";
+			if (file.getName().endsWith("A.csv")) {
+				id = file.getName().substring(0, file.getName().length() - 5);
+				letters = file.getName().substring(file.getName().length() - 5,
+						file.getName().length() - 4);
+			} else {
+				id = file.getName().substring(0, file.getName().length() - 6);
+				letters = file.getName().substring(file.getName().length() - 6,
+						file.getName().length() - 4);
+			}
+			
+			log.info("Comienza tratamiento para " + id + letters + " "
+					+ (++cont) + "/" + size);
+			ConfigBean configBean = null;
+			if (configExtrated.get(id) != null) {
+				configBean = configExtrated.get(id);
+			} else {
+				configBean = new ConfigBean();
+				configBean.setId(id);
+			}
+			configBean.getLetters().add(letters);
+			configBean.setUpdated(update);
+			try {
+				List<String> csvLines = FileUtils.readLines(file, "UTF-8");
+				String headerLine = Utils.weakClean(csvLines.get(0));
+				String[] cells = headerLine.split("\t");
+				for (int h = 0; h < cells.length; h++) {
+					String name = cells[h];
+					DataBean dataBean = null;
+					if (configBean.getMapData().get(name) != null) {
+						dataBean = configBean.getMapData().get(name);
+					} else {
+						dataBean = new DataBean();
+						dataBean.setName(name.trim());
+						dataBean.setNameNormalized(Utils.urlify(name.trim()));
+					}
+
+					if (name.toLowerCase().contains("código")
+							|| name.toLowerCase().contains("codigo")) {
+						dataBean.setNormalizacion("null");
+						dataBean.setDimensionMesure("null");
+						dataBean.setType("null");
+					} else {
+						configBean.getMapData().put(dataBean.getNameNormalized(), dataBean);
+						skosData.add(dataBean);
+					}
+					
+				}
+				
+				extractSkosConcept(csvLines, skosData, configBean);
+					
+				
+			} catch (IOException e) {
+				log.error("Error to read lines", e);
+			}
+			configExtrated.put(id+letters, configBean);
+			log.info("Finaliza tratamiento para " + id + letters);
+		}
+		
+		log.info("End generateUpdateConfig");
+		return configExtrated;
+	}
 
 	private void extractSkosConcept(List<String> csvLines,
-			ArrayList<DataBean> skosData) {
+			ArrayList<DataBean> skosData, ConfigBean configBean) {
 		log.debug("Init extractSkosConcept");
 		String headerLine = Utils.weakClean(csvLines.get(0));
 		String[] cells = headerLine.split("\t");
@@ -309,25 +389,29 @@ public class GenerateConfig {
 				cells = line.split("\t");
 				for (int i = 0; i < skosData.size(); i++) {
 					try {
-						String cell = cells[posColumn[i]];
-						SkosBean skosBean = new SkosBean();
-						String skosUrified = Utils.urlify(cell);
-						skosBean.setId(skosUrified);
-						skosBean.setLabel(Utils.weakClean(cell));
-						skosBean.setURI(Prop.host + "/kos/" + Prop.datasetName
-								+ "/" + Utils.urlify(skosData.get(i).getName())
-								+ "/" + skosUrified);
-						DataBean dataBean = null;
-						if (skosExtrated.get(skosData.get(i).getName()) != null) {
-							dataBean = skosExtrated.get(skosData.get(i)
-									.getName());
-						} else {
-							dataBean = skosData.get(i);
-						}
-						if (dataBean.getMapSkos().get(skosBean.getId()) == null) {
-							dataBean.getMapSkos().put(skosBean.getId(),
-									skosBean);
-							skosExtrated.put(dataBean.getName(), dataBean);
+						if(cells.length>posColumn[i]){
+							String cell = cells[posColumn[i]];
+							SkosBean skosBean = new SkosBean();
+							String skosUrified = Utils.urlify(cell);
+							skosBean.setId(skosUrified);
+							skosBean.setLabel(Utils.weakClean(cell));
+							skosBean.setURI(Prop.host + "/kos/" + Prop.datasetName
+									+ "/" + Utils.urlify(skosData.get(i).getName())
+									+ "/" + skosUrified);
+							DataBean dataBean = null;
+							if (skosExtrated.get(skosData.get(i).getName()) != null) {
+								dataBean = skosExtrated.get(skosData.get(i)
+										.getName());
+							} else {
+								dataBean = skosData.get(i);
+							}
+							if (dataBean.getMapSkos().get(skosBean.getId()) == null) {
+								dataBean.getMapSkos().put(skosBean.getId(),
+										skosBean);
+								skosExtrated.put(dataBean.getName(), dataBean);
+								if(configBean!=null)
+									configBean.getMapData().put(dataBean.getName(), dataBean);
+							}
 						}
 					} catch (ArrayIndexOutOfBoundsException e) {
 						log.error(
@@ -417,10 +501,10 @@ public class GenerateConfig {
 		log.debug("End generateSkosMapping");
 	}
 	
-	public void updateConfig(List<String> changes, List<String> news){
+	public void updateConfigOLD(List<String> changes, List<String> news, HashMap<String, ConfigBean> configMap){
 		log.info("init updateConfig");
 		log.info("Generamos la configuación de los csv descargados");
-		generateAllConfig(changes);
+		this.configMap = configMap;
 		GoogleDriveAPI drive = new GoogleDriveAPI();
 		drive.init();
 		String mensaje= "";
@@ -488,6 +572,8 @@ public class GenerateConfig {
 			try {
 				com.google.api.services.drive.model.File f = drive.searchFile(id);
 				File fileDrive = drive.downloadFile("config", f, Constants.CSV);
+				if(fileDrive==null)
+					continue;
 				List<String> csvLinesDrive = FileUtils.readLines(fileDrive, "UTF-8");
 				String lineClean = csvLinesDrive.get(0).replace("\"", "");
 				lineClean = lineClean.replace("'", "");
@@ -497,6 +583,8 @@ public class GenerateConfig {
 				String nameFile = GenerateConfig.configDirectoryString + File.separator
 						+ config.getNameFile();
 				File fileLocal= new File(nameFile);
+				if(fileLocal==null)
+					continue;
 				List<String> csvLinesLocal= FileUtils.readLines(fileLocal, "UTF-8");
 				lineClean = csvLinesLocal.get(0).replace("\"", "");
 				lineClean = lineClean.replace("'", "");
@@ -555,6 +643,140 @@ public class GenerateConfig {
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
+			}
+		}
+		
+		if(Utils.v(mensaje)){
+			SendMailSSL sendMail = new SendMailSSL();
+			sendMail.enviar(Prop.emailUser, Prop.emailPassword, Prop.emailDestination, "Cambios en los datos del IAEsT" , mensaje);
+		}
+		log.info("end updateConfig");
+	}
+	
+	public void updateConfig(List<String> changes, List<String> news, HashMap<String, ConfigBean> configMap){
+		log.info("init updateConfig");
+		HashMap<String, ConfigBean> configExtrated = generateUpdateConfig();
+		this.configMap = configMap;
+		GoogleDriveAPI drive = new GoogleDriveAPI();
+		drive.init();
+		String mensaje= "";
+		String mensajeAux = "";
+		
+		for (String nuevo : news) {
+			mensaje= mensaje + "Se ha detectado un nuevo cubo de datos "+nuevo+", genere la nueva configuración en el drive\n\n";
+			filesNotRDF.add(nuevo);
+		}
+		
+		for (String change : changes) {
+			log.info("Detectando si hay cambios en "+change);
+			String id = "";
+			String letters = "";
+			boolean detectadoCambio = false;
+			
+			if (change.endsWith("A")) {
+				id = change.substring(0, change.length() - 1);
+				letters = change.substring(change.length() - 1,
+						change.length());
+			} else {
+				id = change.substring(0, change.length() - 2);
+				letters = change.substring(change.length() - 2,
+						change.length());
+			}
+			
+			try {
+				com.google.api.services.drive.model.File f = drive.searchFile(id);
+				File fileDrive = drive.downloadFile("config", f, Constants.CSV);
+				if(fileDrive==null)
+					continue;
+				List<String> csvLinesDrive = FileUtils.readLines(fileDrive, "UTF-8");
+				List cellsDriveList = new ArrayList();
+				String lineClean = csvLinesDrive.get(0);
+				lineClean = lineClean.replace("'", "");
+				int charac=0;
+				int first=-1;
+				int last=-1;
+				while(lineClean.contains("\"")){
+					if(lineClean.charAt(charac)=='"' && first==-1){
+						first = charac+1;
+					} else if(lineClean.charAt(charac)=='"' && last==-1){
+						last = charac;
+						cellsDriveList.add(lineClean.substring(first, last));
+						String aux = lineClean.substring(0,first-1);
+						String aux2 = lineClean.substring(last+1,lineClean.length());
+						lineClean=aux+aux2;
+						first=-1;
+						last=-1;
+						charac=0;
+					}
+					charac++;
+				}
+				Object[] cellsDriveArray = Utils.split(lineClean, ",");
+				cellsDriveList.addAll(Arrays.asList(cellsDriveArray));
+				ConfigBean config =  configMap.get(id);
+				
+				File fileLocal = new File(inputDirectoryString+File.separator+change+".csv");
+				List<String> csvLinesLocal= FileUtils.readLines(fileLocal, "UTF-8");
+				lineClean = csvLinesLocal.get(0);
+				lineClean = lineClean.replace("'", "");
+				Object[] cellsLocalArray = Utils.split(lineClean, "\t");
+				List cellsLocalList =  Arrays.asList(cellsLocalArray);
+				ConfigBean configLocal =  configExtrated.get(id+letters);
+			
+				if(ListUtils.subtract(cellsLocalList, cellsDriveList).size()>0){
+					List list = ListUtils.subtract(cellsLocalList, cellsDriveList);
+					mensajeAux= mensajeAux + "Se han añadido las columnas ";
+					for (Object object : list) {
+						if(cellsLocalList.contains(object) && cellsDriveList.contains(object))
+							continue;
+						mensajeAux= mensajeAux +"'"+ object +"', ";
+						detectadoCambio=true;
+					}
+					if(detectadoCambio){
+						mensajeAux= mensajeAux + " al cubo "+change+", por favor actualice la configuración "+f.getDefaultOpenWithLink()+"\n\n";
+						mensaje = mensaje + mensajeAux;
+						List<String> lettersList = config.getLetters();
+						for (String letter : lettersList) {
+							filesNotRDF.add(config.getId()+letter);
+						}
+					}
+				}
+				if(config!=null){
+					for(String key : config.getMapData().keySet()){
+						String provisionalMensaje = "Se han añadido los valores ";
+						boolean sendEmail = false;
+						DataBean data = config.getMapData().get(key);
+						if(data.getType()!=null && data.getType().equals(Constants.skosType)){
+							DataBean dataLocal = configLocal.getMapData().get(key);
+							if(dataLocal!=null)	
+								for(String key2 : dataLocal.getMapSkos().keySet()){
+									if(data.getMapSkos().get(key2)==null){
+										SkosBean skos = dataLocal.getMapSkos().get(key2);
+										if(Utils.v(skos.getLabel())){
+											provisionalMensaje = provisionalMensaje + "'" + skos.getLabel() + "' "; 
+											sendEmail=true;
+											detectadoCambio=true;
+										}
+									}
+								}
+							
+						}
+						if(sendEmail){
+							String fileName = fileLocal.getName().substring(0, fileLocal.getName().length() - 4);
+							f = drive.searchFile(data.getNameNormalized());
+							provisionalMensaje = provisionalMensaje + "al codelist "+fileName+", por favor actualice la configuración "+f.getDefaultOpenWithLink()+"\n\n";
+							mensaje = mensaje + provisionalMensaje;
+							List<String> lettersList = config.getLetters();
+							for (String letter : lettersList) {
+								filesNotRDF.add(config.getId()+letter);
+							}
+						}
+					}
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			if(!detectadoCambio){
+				mensaje= mensaje + "En el cubo "+change+", se han detectado nuevos registros y se va a regenerar el cubo de datos.\n\n";
 			}
 		}
 		

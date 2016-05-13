@@ -3250,6 +3250,26 @@ iaest-measure:fuentes-mineromedicinales a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "Fuentes Mineromedicinales"@es ;
 	rdfs:range xsd:int .
 
+iaest-dimension:diputados a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Diputados"@es ;
+	rdfs:comment "Diputados"@es ;
+	rdfs:range skos:Concept .
+
+iaest-dimension:siglas a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Siglas"@es ;
+	rdfs:comment "Siglas"@es ;
+	rdfs:range skos:Concept .
+
+iaest-dimension:orden a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Orden"@es ;
+	rdfs:comment "Orden"@es ;
+	rdfs:range skos:Concept .
+
+iaest-measure:votos a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Votos"@es ;
+	rdfs:comment "Votos"@es ;
+	rdfs:range xsd:int .
+
 iaest-measure:unidades-trabajo-ano-asalariados-fijos a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Unidades trabajo-año asalariados fijos"@es ;
 	rdfs:comment "Unidades trabajo-año asalariados fijos"@es ;
@@ -3323,11 +3343,6 @@ iaest-measure:siglas a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Siglas"@es ;
 	rdfs:comment "Siglas"@es ;
 	rdfs:range xsd:string .
-
-iaest-measure:votos a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Votos"@es ;
-	rdfs:comment "Votos"@es ;
-	rdfs:range xsd:int .
 
 iaest-dimension:numero-de-viajes-diarios a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Número de viajes diarios"@es ;

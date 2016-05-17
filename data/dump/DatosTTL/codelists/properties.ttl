@@ -3253,17 +3253,20 @@ iaest-measure:fuentes-mineromedicinales a qb:MeasureProperty , rdf:Property;
 iaest-dimension:diputados a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Diputados"@es ;
 	rdfs:comment "Diputados"@es ;
-	rdfs:range skos:Concept .
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/diputados> .
 
 iaest-dimension:siglas a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Siglas"@es ;
 	rdfs:comment "Siglas"@es ;
-	rdfs:range skos:Concept .
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/siglas> .
 
 iaest-dimension:orden a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Orden"@es ;
 	rdfs:comment "Orden"@es ;
-	rdfs:range skos:Concept .
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/orden> .
 
 iaest-measure:votos a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Votos"@es ;

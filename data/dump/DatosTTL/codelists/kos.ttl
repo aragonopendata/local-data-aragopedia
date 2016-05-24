@@ -1618,8 +1618,8 @@
 	skos:prefLabel "Hospitales generales y especiales de corta estancia".
 
 <http://opendata.aragon.es/kos/iaest/clase-vivienda> a skos:ConceptScheme;
-	skos:notation "clase-vivienda-agregado";
-	rdfs:label "Clase vivienda (agregado)";
+	skos:notation "clase-vivienda";
+	rdfs:label "Clase vivienda";
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/clase-vivienda/colectiva>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/clase-vivienda/familiar>.
 
@@ -1642,36 +1642,8 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/clase-vivienda>;
 	skos:notation "familiar";
 	skos:prefLabel "Familiar";
-	skos:narrower <http://opendata.aragon.es/kos/iaest/clase-vivienda/familiar-no-principal>;
-	skos:narrower <http://opendata.aragon.es/kos/iaest/clase-vivienda/familiar-principal>.
-
-<http://opendata.aragon.es/kos/iaest/clase-vivienda> a skos:ConceptScheme;
-	skos:notation "clase-vivienda-detalle";
-	rdfs:label "Clase vivienda (detalle)";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/clase-vivienda/colectiva>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/clase-vivienda/familiar>.
-
-<http://opendata.aragon.es/kos/iaest/clase-vivienda/familiar-no-principal> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/clase-vivienda>;
-	skos:notation "familiar-no-principal";
-	skos:prefLabel "Familiar no principal".
-
-<http://opendata.aragon.es/kos/iaest/clase-vivienda/familiar-principal> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/clase-vivienda>;
-	skos:notation "familiar-principal";
-	skos:prefLabel "Familiar principal".
-
-<http://opendata.aragon.es/kos/iaest/clase-vivienda/colectiva> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/clase-vivienda>;
-	skos:notation "colectiva";
-	skos:prefLabel "Colectiva".
-
-<http://opendata.aragon.es/kos/iaest/clase-vivienda/familiar> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/clase-vivienda>;
-	skos:notation "familiar";
-	skos:prefLabel "Familiar";
-	skos:narrower <http://opendata.aragon.es/kos/iaest/clase-vivienda/familiar-no-principal>;
-	skos:narrower <http://opendata.aragon.es/kos/iaest/clase-vivienda/familiar-principal>.
+	skos:narrower <http://opendata.aragon.es/kos/iaest/clase-vivienda/familiar-principal>;
+	skos:narrower <http://opendata.aragon.es/kos/iaest/clase-vivienda/familiar-no-principal>.
 
 <http://opendata.aragon.es/kos/iaest/grupo-de-tipo-de-jornada> a skos:ConceptScheme;
 	skos:notation "grupo-de-tipo-de-jornada";
@@ -2565,8 +2537,9 @@
 	skos:notation "orden";
 	rdfs:label "Orden";
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/orden/11>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/orden/1>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/orden/12>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/orden/13>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/orden/1>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/orden/2>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/orden/3>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/orden/4>;
@@ -2582,15 +2555,20 @@
 	skos:notation "11";
 	skos:prefLabel "11".
 
-<http://opendata.aragon.es/kos/iaest/orden/1> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/orden>;
-	skos:notation "1";
-	skos:prefLabel "1".
-
 <http://opendata.aragon.es/kos/iaest/orden/12> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/orden>;
 	skos:notation "12";
 	skos:prefLabel "12".
+
+<http://opendata.aragon.es/kos/iaest/orden/13> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/orden>;
+	skos:notation "13";
+	skos:prefLabel "13".
+
+<http://opendata.aragon.es/kos/iaest/orden/1> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/orden>;
+	skos:notation "1";
+	skos:prefLabel "1".
 
 <http://opendata.aragon.es/kos/iaest/orden/2> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/orden>;
@@ -2648,6 +2626,7 @@
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/siglas/upyd>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/siglas/pacma>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/siglas/iu-cha-upec>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/siglas/bar>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/siglas/podemos-ahora-alto-aragon-en-comun>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/siglas/pcpe>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/siglas/eb>;
@@ -2693,6 +2672,11 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/siglas>;
 	skos:notation "iu-cha-upec";
 	skos:prefLabel "IU-CHA-UPeC".
+
+<http://opendata.aragon.es/kos/iaest/siglas/bar> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/siglas>;
+	skos:notation "bar";
+	skos:prefLabel "BAR".
 
 <http://opendata.aragon.es/kos/iaest/siglas/podemos-ahora-alto-aragon-en-comun> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/siglas>;

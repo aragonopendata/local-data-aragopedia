@@ -835,17 +835,11 @@ iaest-dimension:tipo-vivienda a qb:DimensionProperty , rdf:Property, qb:CodedPro
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/tipo-vivienda> .
 
-iaest-dimension:clase-vivienda-agregado a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Clase vivienda (agregado)"@es ;
-	rdfs:comment "Clase vivienda (agregado)"@es ;
+iaest-dimension:clase-vivienda a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Clase vivienda"@es ;
+	rdfs:comment "Clase vivienda"@es ;
 	rdfs:range skos:Concept ;
-	qb:codeList <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle> .
-
-iaest-dimension:clase-vivienda-detalle a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Clase vivienda (detalle)"@es ;
-	rdfs:comment "Clase vivienda (detalle)"@es ;
-	rdfs:range skos:Concept ;
-	qb:codeList <http://opendata.aragon.es/kos/iaest/clase-vivienda-detalle> .
+	qb:codeList <http://opendata.aragon.es/kos/iaest/clase-vivienda> .
 
 iaest-dimension:regimen-de-tenencia-detalle a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Régimen de tenencia (detalle)"@es ;

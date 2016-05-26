@@ -13,13 +13,15 @@ import org.apache.log4j.Logger;
  *
  */
 public class Prop {
-	
+
 	private final static Logger log = Logger.getLogger(Prop.class);
 	public static String domainPermission = "";
 	public static String p12File = "";
 	public static String acountId = "";
 	public static String APPLICATION_NAME = "";
 	public static boolean publishDrive = true;
+
+	public static boolean downloadDrive = true;
 	public static String emailUserFile = "";
 	public static String idParentFolder = "";
 	public static String kosName = "";
@@ -28,25 +30,31 @@ public class Prop {
 	public static String eldaName = "";
 	public static String datasetName = "";
 	public static boolean addDataConstant;
-	
 	public static String formatConfig = "";
-	
 	public static String fileHashCSV = "";
-	
 	public static String fileErrorGeneric = "";
-	
 	public static String fileErrorBig = "";
-	
 	public static String fileErrorNotFound = "";
-	
 	public static String fileConfElda = "";
 	
+	public static int bom = 3;
 	public static String emailUser = "";
-	
 	public static String emailPassword = "";
-	
 	public static String emailDestination = "";
-	
+	public static String apiKeyAragopedia = "";
+	public static String githubToken = "";
+	public static String githubURLIssues = "";
+	public static String urlBiAragon = "";
+	public static String initialDataCube = "";
+	public static String nqUserBiAragon = "";
+	public static String nqPasswordBiAragon = "";
+	public static String sawUiAragonBiAragon = "";
+	public static String oraBipsLbinfoBiAragon = "";
+	public static String oraBipsNqidBiAragon = "";
+	public static String utmaBiAragon = "";
+	public static String utmcBiAragon = "";
+	public static String utmzBiAragon = "";
+
 	public static boolean loadConf() {
 
 		boolean conf = false;
@@ -56,12 +64,13 @@ public class Prop {
 		try {
 			InputStream input = new FileInputStream("system.properties");
 			prop.load(input);
-			
+
 			domainPermission = prop.getProperty("domainPermission");
 			p12File = prop.getProperty("p12File");
 			acountId = prop.getProperty("acountId");
 			APPLICATION_NAME = prop.getProperty("APPLICATION_NAME");
-			
+
+			downloadDrive = Boolean.valueOf(prop.getProperty("downloadDrive"));
 			publishDrive = Boolean.valueOf(prop.getProperty("publicDrive"));
 			emailUserFile = prop.getProperty("emailUserFile");
 			idParentFolder = prop.getProperty("idParentFolder");
@@ -76,12 +85,29 @@ public class Prop {
 			fileErrorGeneric = prop.getProperty("fileErrorGeneric");
 			fileErrorBig = prop.getProperty("fileErrorBig");
 			fileErrorNotFound = prop.getProperty("fileErrorNotFound");
-			fileConfElda =  prop.getProperty("fileConfElda");
+			fileConfElda = prop.getProperty("fileConfElda");
+			bom = Integer.valueOf(prop.getProperty("bom"));
 			
 			emailUser = prop.getProperty("emailUser");
 			emailPassword = prop.getProperty("emailPassword");
 			emailDestination = prop.getProperty("emailDestination");
+
+			apiKeyAragopedia = prop.getProperty("apiKeyAragopedia");
 			
+			githubToken = prop.getProperty("githubToken");
+			githubURLIssues = prop.getProperty("githubURLIssues");
+
+			urlBiAragon = prop.getProperty("urlBiAragon");
+			initialDataCube = prop.getProperty("initialDataCube");
+			nqUserBiAragon = prop.getProperty("nqUserBiAragon");
+			nqPasswordBiAragon = prop.getProperty("nqPasswordBiAragon");
+			sawUiAragonBiAragon = prop.getProperty("sawUiAragonBiAragon");
+			oraBipsLbinfoBiAragon = prop.getProperty("oraBipsLbinfoBiAragon");
+			oraBipsNqidBiAragon = prop.getProperty("oraBipsNqidBiAragon");
+			utmaBiAragon = prop.getProperty("utmaBiAragon");
+			utmcBiAragon = prop.getProperty("utmcBiAragon");
+			utmzBiAragon = prop.getProperty("utmzBiAragon");
+
 			conf = true;
 		} catch (IOException io) {
 			log.error("Error loading configuration", io);

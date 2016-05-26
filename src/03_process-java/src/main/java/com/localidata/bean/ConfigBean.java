@@ -26,7 +26,6 @@ public class ConfigBean {
 	private ArrayList<String> letters = new ArrayList<String>();
 	private HashMap<String, DataBean> mapData = new HashMap<String, DataBean>();
 	private ArrayList<DataBean> listDataConstant = new ArrayList<DataBean>();
-	
 	private boolean updated;
 
 	public String getNameFile() {
@@ -68,7 +67,7 @@ public class ConfigBean {
 	public void setLetters(ArrayList<String> letters) {
 		this.letters = letters;
 	}
-	
+
 	public boolean isUpdated() {
 		return updated;
 	}
@@ -103,7 +102,7 @@ public class ConfigBean {
 		return builder.toString();
 	}
 
-	public String toCSV(boolean update) {
+	public String toCSV() {
 		String csvSepartor = ",";
 		String fieldSeparator = "\"";
 		String content = "";
@@ -195,7 +194,7 @@ public class ConfigBean {
 			log.error("Error to generate config file " + getNameFile(), e);
 		}
 		if (Prop.publishDrive) {
-			if(!update){
+			if (!isUpdated()) {
 				GoogleDriveAPI api = new GoogleDriveAPI();
 				api.init();
 				api.createSpreadsheetFromFile(Prop.idParentFolder,
@@ -207,7 +206,4 @@ public class ConfigBean {
 		return content;
 	}
 
-	public String toXLSX() {
-		return "";
-	}
 }

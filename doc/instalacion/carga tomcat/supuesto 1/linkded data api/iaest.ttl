@@ -57,8 +57,8 @@ OpenData:vistaDsd
 		"rdfs_label",
 		"rdfs_comment",
 		"skos_notation",
-		"qb_component.qb_dimension",
-		"qb_component.qb_measure"
+		"qb_component.qb_dimension.rdfs_label",
+		"qb_component.qb_measure.rdfs_label"
 		.
 	
 OpenData:vistaProperties
@@ -69,7 +69,7 @@ OpenData:vistaProperties
 		"rdfs_label",
 		"rdfs_range",
 		"rdfs_comment",
-		"qb_codeList"
+		"qb_codeList.rdfs_label"
 		.
 		
 OpenData:vistaDataset
@@ -79,8 +79,9 @@ OpenData:vistaDataset
 		"rdf_type",
 		"rdfs_label",
 		"rdfs_comment",
-		"qb_structure",
-		"dc_modified"
+		"qb_structure.rdfs_label",
+		"dc_modified",
+		"dct_identifier"
 		.
 
 #*******************************************************************
@@ -596,6 +597,7 @@ qb:dimension api:label "qb_dimension".
 qb:measure api:label "qb_measure".
 qb:structure api:label "qb_structure".
 dc:modified api:label "dc_modified".
+dct:identifier  api:label "dct_identifier".
 
 iaest-dimension:mes-y-ano api:label "iaest-dimension_mes-y-ano".
 iaest-measure:n-parados api:label "iaest-measure_n-parados".

@@ -6,7 +6,7 @@
 2. Comprobaremos que tenemos git instalado ejecutando el comando git -version
 3. Descomprimiremos el zip doc/instalacion/datacube.zip en el directorio home del usuario
 4. A los archivos .sh les daremos permisos con el comando: sudo chmod 755 *.sh
-5. Editaremos el archivo datacube/app/KBManager/props/3cixty.properties En user pondremos el usuario de virtuoso en password la contraseña de virtuoso y en virtuoso_path donde está instalado virtuoso.
+5. Editaremos el archivo datacube/app/KBManager/props/3cixty.properties En user pondremos el usuario de virtuoso en password la contraseña de virtuoso, en virtuoso_path donde está instalado virtuos y en httpHost la direccion del punto de sparql
 6. Editaremos el archivo datacube/system.properties en emailDestination pondremos los correos electrónicos separados por comas de quien se va a encargar del mantenimiento de los datos y de su configuración
 7. Descargaremos el proyecto del git
 7.1. En el directorio datacube ejecutamos el comando git clone  http://github.com/aragonopendata/local-data-aragopedia.git

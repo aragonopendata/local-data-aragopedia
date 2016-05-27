@@ -634,6 +634,36 @@ iaest-dimension:residencia a qb:DimensionProperty , rdf:Property, qb:CodedProper
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/residencia> .
 
+iaest-measure:total-viviendas a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Total viviendas"@es ;
+	rdfs:comment "Total viviendas"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:ano a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Año"@es ;
+	rdfs:comment "Año"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:viviendas-protegidas a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Viviendas protegidas"@es ;
+	rdfs:comment "Viviendas protegidas"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:viviendas-libres a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Viviendas libres"@es ;
+	rdfs:comment "Viviendas libres"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:viviendas-nuevas a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Viviendas nuevas"@es ;
+	rdfs:comment "Viviendas nuevas"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:viviendas-de-2-mano a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Viviendas de 2ª mano"@es ;
+	rdfs:comment "Viviendas de 2ª mano"@es ;
+	rdfs:range xsd:int .
+
 iaest-measure:poblacion a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Población"@es ;
 	rdfs:comment "Población"@es ;
@@ -680,11 +710,6 @@ iaest-measure:viviendas-con-agua-corriente a qb:MeasureProperty , rdf:Property;
 iaest-measure:viviendas-con-acceso-a-internet a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Viviendas con acceso a internet"@es ;
 	rdfs:comment "Viviendas con acceso a internet"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:total-viviendas a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Total viviendas"@es ;
-	rdfs:comment "Total viviendas"@es ;
 	rdfs:range xsd:double .
 
 iaest-measure:viviendas-con-cuarto-de-aseo-con-inodoro a qb:MeasureProperty , rdf:Property;
@@ -3155,11 +3180,6 @@ iaest-dimension:sector a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:comment "Sector"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/sector> .
-
-iaest-measure:ano a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Año"@es ;
-	rdfs:comment "Año"@es ;
-	rdfs:range xsd:int .
 
 iaest-dimension:vehiculos-en-el-hogar a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Vehículos en el hogar"@es ;

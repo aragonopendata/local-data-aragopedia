@@ -1849,14 +1849,14 @@ iaest-measure:pyg a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "PYG"@es ;
 	rdfs:range xsd:string .
 
-iaest-measure:urbana---cuota-liquida-euros a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Urbana   Cuota líquida (euros)"@es ;
-	rdfs:comment "Urbana   Cuota líquida (euros)"@es ;
+iaest-measure:urbana---cuota-integra-euros a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Urbana Cuota íntegra (euros)"@es ;
+	rdfs:comment "Urbana Cuota íntegra (euros)"@es ;
 	rdfs:range xsd:int .
 
-iaest-measure:urbana---cuota-integra-euros a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Urbana   Cuota íntegra (euros)"@es ;
-	rdfs:comment "Urbana   Cuota íntegra (euros)"@es ;
+iaest-measure:urbana---cuota-liquida-euros a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Urbana Cuota líquida (euros)"@es ;
+	rdfs:comment "Urbana Cuota líquida (euros)"@es ;
 	rdfs:range xsd:int .
 
 iaest-dimension:rama-descripcion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
@@ -1866,23 +1866,23 @@ iaest-dimension:rama-descripcion a qb:DimensionProperty , rdf:Property, qb:Coded
 	qb:codeList <http://opendata.aragon.es/kos/iaest/rama-descripcion> .
 
 iaest-measure:rustica---cuota-liquida-euros a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Rústica   Cuota líquida (euros)"@es ;
-	rdfs:comment "Rústica   Cuota líquida (euros)"@es ;
+	rdfs:label "Rústica Cuota líquida (euros)"@es ;
+	rdfs:comment "Rústica Cuota líquida (euros)"@es ;
 	rdfs:range xsd:int .
 
 iaest-measure:rustica---cuota-integra-euros a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Rústica   Cuota íntegra (euros)"@es ;
-	rdfs:comment "Rústica   Cuota íntegra (euros)"@es ;
+	rdfs:label "Rústica Cuota íntegra (euros)"@es ;
+	rdfs:comment "Rústica Cuota íntegra (euros)"@es ;
 	rdfs:range xsd:int .
 
 iaest-measure:rustica---base-liquidable-miles-de-euros a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Rústica   Base liquidable (miles de euros)"@es ;
-	rdfs:comment "Rústica   Base liquidable (miles de euros)"@es ;
+	rdfs:label "Rústica Base liquidable (miles de euros)"@es ;
+	rdfs:comment "Rústica Base liquidable (miles de euros)"@es ;
 	rdfs:range xsd:int .
 
 iaest-measure:rustica---numero-de-recibos a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Rústica   Número de recibos"@es ;
-	rdfs:comment "Rústica   Número de recibos"@es ;
+	rdfs:label "Rústica Número de recibos"@es ;
+	rdfs:comment "Rústica Número de recibos"@es ;
 	rdfs:range xsd:int .
 
 iaest-dimension:nucleodiseminado a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
@@ -1915,8 +1915,8 @@ iaest-measure:explotaciones-ganaderia a qb:MeasureProperty , rdf:Property;
 	rdfs:range xsd:int .
 
 iaest-measure:especie-ganaderia a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Especie ganadería"@es ;
-	rdfs:comment "Especie ganadería"@es ;
+	rdfs:label "Especie ganadería "@es ;
+	rdfs:comment "Especie ganadería "@es ;
 	rdfs:range xsd:string .
 
 iaest-dimension:origen a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
@@ -3522,7 +3522,8 @@ iaest-dimension:corine-land-cover-2000-nivel-2-descripcion a qb:DimensionPropert
 iaest-dimension:corine-land-cover-2000-nivel-3-descripcion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Corine Land Cover 2000 nivel 3 descripción"@es ;
 	rdfs:comment "Corine Land Cover 2000 nivel 3 descripción"@es ;
-	rdfs:range skos:Concept.
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion> .
 
 iaest-measure:superficie-total-agricultura-ecologica a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Superficie total agricultura ecológica"@es ;
@@ -3547,6 +3548,11 @@ iaest-measure:superficie-calificada-en-reconversion a qb:MeasureProperty , rdf:P
 iaest-measure:habitantes-equivalentes a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Habitantes equivalentes"@es ;
 	rdfs:comment "Habitantes equivalentes"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:colectores a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Colectores"@es ;
+	rdfs:comment "Colectores"@es ;
 	rdfs:range xsd:int .
 
 iaest-measure:depuradoras a qb:MeasureProperty , rdf:Property;

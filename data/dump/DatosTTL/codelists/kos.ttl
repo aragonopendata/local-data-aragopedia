@@ -580,7 +580,6 @@
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sector-descripcion/agricultura-ganaderia-y-pesca>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sector-descripcion/construccion>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sector-descripcion/sin-empleo-anterior>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sector-descripcion/sin-clasificar>.
 
 <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> a skos:Concept;
@@ -602,11 +601,6 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/sector-descripcion>;
 	skos:notation "construccion";
 	skos:prefLabel "Construcción".
-
-<http://opendata.aragon.es/kos/iaest/sector-descripcion/sin-empleo-anterior> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/sector-descripcion>;
-	skos:notation "sin-empleo-anterior";
-	skos:prefLabel "Sin empleo anterior".
 
 <http://opendata.aragon.es/kos/iaest/sector-descripcion/sin-clasificar> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/sector-descripcion>;
@@ -2701,6 +2695,7 @@
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/otras-industrias-extractivas>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/industria-de-productos-alimenticios-y-bebidas>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/servicios-a-edificios-y-actividades-de-jardineria>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/seguros-reaseguros-y-fondos-de-pensiones-excepto-seguridad-social-obligatoria>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/agricultura-ganaderia-caza-y-actividades-de-los-servicios-relacionados-con-las-mismas>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/intermediacion-financiera-excepto-seguros-y-planes-de-pensiones>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/actividades-anexas-a-los-transportes-actividades-de-agencias-de-viajes>;
@@ -2737,6 +2732,7 @@
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/captacion-depuracion-y-distribucion-de-agua>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-menor-excepto-de-vehiculos-de-motor-y-motocicletas>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-farmaceuticos>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/actividades-cinematograficas-de-video-y-de-programas-de-television-grabacion-de-sonido-y-edicion-musical>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/investigacion-y-desarrollo>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/industria-del-tabaco>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/actividades-de-bibliotecas-archivos-museos-y-otras-actividades-culturales>;
@@ -2753,6 +2749,7 @@
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/actividades-asociativas>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/venta-mantenimiento-y-reparacion-de-vehiculos-de-motor-motocicletas-y-ciclomotores-venta-al-por-menor-de-combustible-para-vehiculos-de-motor>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/agricultura-ganaderia-caza-y-servicios-relacionados-con-las-mismas>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/reparacion-de-ordenadores-efectos-personales-y-articulos-de-uso-domestico>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/programacion-consultoria-y-otras-actividades-relacionadas-con-la-informatica>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/extraccion-de-minerales-no-metalicos-ni-energeticos>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/sin-clasificar>;
@@ -2868,6 +2865,11 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion>;
 	skos:notation "servicios-a-edificios-y-actividades-de-jardineria";
 	skos:prefLabel "Servicios a edificios y actividades de jardinería".
+
+<http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/seguros-reaseguros-y-fondos-de-pensiones-excepto-seguridad-social-obligatoria> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion>;
+	skos:notation "seguros-reaseguros-y-fondos-de-pensiones-excepto-seguridad-social-obligatoria";
+	skos:prefLabel "Seguros, reaseguros y fondos de pensiones, excepto Seguridad Social obligatoria".
 
 <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/agricultura-ganaderia-caza-y-actividades-de-los-servicios-relacionados-con-las-mismas> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion>;
@@ -3049,6 +3051,11 @@
 	skos:notation "fabricacion-de-productos-farmaceuticos";
 	skos:prefLabel "Fabricación de productos farmacéuticos".
 
+<http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/actividades-cinematograficas-de-video-y-de-programas-de-television-grabacion-de-sonido-y-edicion-musical> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion>;
+	skos:notation "actividades-cinematograficas-de-video-y-de-programas-de-television-grabacion-de-sonido-y-edicion-musical";
+	skos:prefLabel "Actividades cinematográficas, de video y de programas de televisión, grabación de sonido y edición musical".
+
 <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/investigacion-y-desarrollo> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion>;
 	skos:notation "investigacion-y-desarrollo";
@@ -3128,6 +3135,11 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion>;
 	skos:notation "agricultura-ganaderia-caza-y-servicios-relacionados-con-las-mismas";
 	skos:prefLabel "Agricultura, ganadería, caza y servicios relacionados con las mismas".
+
+<http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/reparacion-de-ordenadores-efectos-personales-y-articulos-de-uso-domestico> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion>;
+	skos:notation "reparacion-de-ordenadores-efectos-personales-y-articulos-de-uso-domestico";
+	skos:prefLabel "Reparación de ordenadores, efectos personales y artículos de uso doméstico".
 
 <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/programacion-consultoria-y-otras-actividades-relacionadas-con-la-informatica> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion>;
@@ -40720,7 +40732,6 @@
 <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion> a skos:ConceptScheme;
 	skos:notation "corine-land-cover-2000-nivel-3-descripcion";
 	rdfs:label "Corine Land Cover 2000 nivel 3 descripción";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/zonas-en-construccion>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/bosques-de-coniferas>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/turberas-y-prados-turbosos>;
@@ -40754,12 +40765,8 @@
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/olivares>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/bosques-de-frondosas>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/espacios-con-vegetacion-escasa>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/tejido-urbano-continuo>.
-
-<http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion>;
-	skos:notation "";
-	skos:prefLabel "".
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/tejido-urbano-continuo>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/laminas-de-agua>.
 
 <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/zonas-en-construccion> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion>;
@@ -40930,6 +40937,11 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion>;
 	skos:notation "tejido-urbano-continuo";
 	skos:prefLabel "Tejido urbano continuo".
+
+<http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion/laminas-de-agua> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-3-descripcion>;
+	skos:notation "laminas-de-agua";
+	skos:prefLabel "Láminas de agua".
 
 <http://opendata.aragon.es/kos/iaest/estado-del-edificio> a skos:ConceptScheme;
 	skos:notation "estado-del-edificio";

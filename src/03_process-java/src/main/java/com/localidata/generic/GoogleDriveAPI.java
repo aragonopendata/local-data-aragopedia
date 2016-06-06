@@ -94,6 +94,8 @@ public class GoogleDriveAPI {
 			@Override
 			public void initialize(HttpRequest httpRequest) throws IOException {
 
+				httpRequest.setConnectTimeout(300 * 60000);
+				httpRequest.setReadTimeout(300 * 60000);
 
 			}
 		};

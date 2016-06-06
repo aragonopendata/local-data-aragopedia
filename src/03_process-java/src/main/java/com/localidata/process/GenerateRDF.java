@@ -332,9 +332,21 @@ public class GenerateRDF {
 					columnReaded++;
 			} else {
 				dataBean.setName(cellName.getStringCellValue());
-				dataBean.setNameNormalized(cellNameNormalized.getStringCellValue());
-				dataBean.setNormalizacion(cellNormalization.getStringCellValue());
-				dataBean.setDimensionMesure(cellDimMesure.getStringCellValue());
+				if(cellNameNormalized!=null){
+					dataBean.setNameNormalized(cellNameNormalized.getStringCellValue());
+				}else{
+					log.error("Error in config "+file.getName()+" in cell name normalized");
+				}
+				if(cellNormalization!=null){
+					dataBean.setNormalizacion(cellNormalization.getStringCellValue());
+				}else{
+					log.error("Error in config "+file.getName()+" in cell normalization");
+				}
+				if(cellDimMesure!=null){
+					dataBean.setDimensionMesure(cellDimMesure.getStringCellValue());
+				}else{
+					log.error("Error in config "+file.getName()+" in cell dim mesure");
+				}
 				dataBean.setIdConfig(configBean.getId());
 				String type = "";
 				if (cellType != null) {
@@ -715,7 +727,13 @@ public class GenerateRDF {
 			app.writeSkosTTL();
 			app.zipFiles();
 			log.info("Finish process");
-		} 
+		} else {
+			log.info("Se deben de pasar dos parámetros: ");
+			log.info("La cadena de texto data ");
+			log.info("\tEl directorio donde están los archivos de entrada");
+			log.info("\tEl directorio donde se van a escribir los archivos ttl");
+			log.info("\tEl directorio donde están los excel de configuación");
+		}
 
 	}
 }

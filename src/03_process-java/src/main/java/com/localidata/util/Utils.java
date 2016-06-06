@@ -83,14 +83,21 @@ public class Utils {
 
 	public static String nameDataBeanClean(String chain) {
 		String chainToURI = chain.replace("á", "a");
-		chainToURI = chainToURI.replace("á", "a");
 		chainToURI = chainToURI.replace("é", "e");
 		chainToURI = chainToURI.replace("í", "i");
 		chainToURI = chainToURI.replace("ó", "o");
 		chainToURI = chainToURI.replace("ú", "u");
 		chainToURI = chainToURI.replace("ñ", "n");
-
 		chainToURI = chainToURI.replace("ü", "u");
+		
+		chainToURI = chainToURI.replace("Á", "A");
+		chainToURI = chainToURI.replace("É", "E");
+		chainToURI = chainToURI.replace("Í", "I");
+		chainToURI = chainToURI.replace("Ó", "O");
+		chainToURI = chainToURI.replace("Ú", "U");
+		chainToURI = chainToURI.replace("Ñ", "N");
+		chainToURI = chainToURI.replace("Ü", "U");
+		
 		return chainToURI;
 	}
 
@@ -936,7 +943,7 @@ public class Utils {
 			PropertyConfigurator.configure("log4j.properties");
 
 		Map<String, String> headers = new HashMap<>();
-		headers.put("Authorization", "token XXX");
+		headers.put("Authorization", "token 01a818eaca4ef03ecee4ac3db50966fdaf1bfae5");
 		headers.put("Content-Type", "application/json");
 
 		String body = "{" +

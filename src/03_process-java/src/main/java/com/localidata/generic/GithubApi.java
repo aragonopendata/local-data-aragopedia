@@ -21,12 +21,18 @@ public class GithubApi {
 		log.info("init createIssue");
 		Map<String, String> headers = new HashMap<>();
 		headers.put("Authorization", "token " + Prop.githubToken);
-		headers.put("Content-Type", "application/json");
-
+		headers.put("Content-Type", "application/json; charset=utf-8");
+		
+		titulo = titulo.replace("\"", "");
+		cuerpo = Utils.weakClean(cuerpo);
+//		cuerpo = Utils.nameDataBeanClean(cuerpo);
+		
 		String body = "{" + "\"title\": \"" + titulo + "\"," + "\"body\": \"" + cuerpo + "\"" + "}";
 		body = body.replace("\n", "\\n");
+		log.info("Body create issue "+body);
+		
 		try {
-			Utils.processURLPost(Prop.githubURLIssues, "", headers, body);
+			Utils.processURLPost(Prop.githubURLIssues, "", headers, body, "ISO-8859-1");
 		} catch (Exception e) {
 			log.error("Error creando una incidencia en github",e);
 		}
@@ -39,7 +45,7 @@ public class GithubApi {
 			PropertyConfigurator.configure("log4j.properties");
 		Prop.loadConf();
 
-		 GithubApi.createIssue("Prueba de creacción de issue desde api 23051213","Esto es una prueba de creaccion de una isssue desde la api de github realizada por hlafuente");
+		 GithubApi.createIssue("Prueba de creación de issue desde API","Esto es una prueba de creación de una isssue desde la API de GitHub realizada por @aragopedia");
 
 	}
 

@@ -22,8 +22,10 @@ public class Process {
 			GenerateConfig.main(args);
 		} else if (args[0].equals("data")) {
 			GenerateRDF.main(args);
-		} else if (args[0].equals("csv")) {
-			GenerateCSV.main(args);
+		} else if (args[0].equals("csv") || args[0].equals("generateHash")) {
+			GenerateCSV.main(args);			
+		} else if (args[0].equals("createIssue")) {	
+			GithubApi.main(args);	
 		} else if (args[0].equals("update")) {
 			Logger log = Logger.getLogger(Process.class);
 			PropertyConfigurator.configure("log4j.properties");
@@ -33,10 +35,12 @@ public class Process {
 			csv.extractFiles();
 
 			if (csv.getChanges().size() > 0 || csv.getNews().size() > 0) {
-
+				
+				log.info("El procese de actualización ha detectado "+csv.getChanges().size()+" cambios y "+csv.getNews().size()+" nuevos");
+				
 				GenerateRDF rdf = new GenerateRDF(args[2], args[4], args[3], args[1], args[5]);
 				rdf.readConfig(csv.getIdDescription());
-
+				
 				GenerateConfig config = new GenerateConfig(args[2], "", args[3]);
 				config.updateConfig(csv.getChanges(), csv.getNews(), rdf.getMapconfig());
 

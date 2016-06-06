@@ -489,7 +489,8 @@ public class GenerateConfig {
 			String id = "";
 			String letters = "";
 			boolean detectadoCambio = false;
-
+			mensajeAux = "";
+			
 			if (change.endsWith("A")) {
 				id = change.substring(0, change.length() - 1);
 				letters = change.substring(change.length() - 1, change.length());
@@ -535,6 +536,7 @@ public class GenerateConfig {
 				lineClean = csvLinesLocal.get(0);
 				log.debug("csvLinesLocal "+lineClean);
 				lineClean = lineClean.replace("'", "");
+				lineClean = lineClean.replace("", "");
 				Object[] cellsLocalArray = Utils.split(lineClean, "\t");
 				List cellsLocalList = Arrays.asList(cellsLocalArray);
 				ConfigBean configLocal = configExtrated.get(id + letters);
@@ -550,7 +552,8 @@ public class GenerateConfig {
 					}
 					if (detectadoCambio) {
 						mensajeAux = mensajeAux + " al cubo " + change + ", por favor actualice la configuración " + f.getDefaultOpenWithLink() + "\n\n";
-						mensajesCambiosNuevaConf = mensajesCambiosNuevaConf + mensajeAux;
+						if(!mensajesCambiosNuevaConf.contains(mensajeAux))
+							mensajesCambiosNuevaConf = mensajesCambiosNuevaConf + mensajeAux;
 						List<String> lettersList = config.getLetters();
 						for (String letter : lettersList) {
 							filesNotRDF.add(config.getId() + letter);
@@ -581,7 +584,8 @@ public class GenerateConfig {
 							String fileName = fileLocal.getName().substring(0, fileLocal.getName().length() - 4);
 							f = drive.searchFile(data.getNameNormalized());
 							provisionalMensaje = provisionalMensaje + "al codelist " + fileName + ", por favor actualice la configuración " + f.getDefaultOpenWithLink() + "\n\n";
-							mensajeCambiosConf = mensajeCambiosConf + provisionalMensaje;
+							if(!mensajeCambiosConf.contains(provisionalMensaje))
+								mensajeCambiosConf = mensajeCambiosConf + provisionalMensaje;
 							List<String> lettersList = config.getLetters();
 							for (String letter : lettersList) {
 								filesNotRDF.add(config.getId() + letter);
@@ -629,7 +633,6 @@ public class GenerateConfig {
 
 			log.info("Finish process");
 		} 
-
 	}
 
 }

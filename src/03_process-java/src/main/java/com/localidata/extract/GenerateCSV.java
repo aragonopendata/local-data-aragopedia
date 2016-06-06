@@ -22,46 +22,18 @@ import com.localidata.util.Jdbcconnection;
 import com.localidata.util.Utils;
 
 /**
- * Class to download data cubes
  * 
  * @author Localidata
  */
 public class GenerateCSV {
-	/**
-	 * Log class
-	 */
 	private final static Logger log = Logger.getLogger(GenerateCSV.class);
-	/**
-	 * String urls File
-	 */
 	private String urlsFileString = "";
-	/**
-	 * String output directory
-	 */
 	private String outputFilesDirectoryString = "";
-	/**
-	 * HashMap<String, String> Map to save hashCode old
-	 */
 	private HashMap<String, String> hashCodeOld = new HashMap<>();
-	/**
-	 * HashMap<String, String> Map to save hashCode new
-	 */
 	private HashMap<String, String> hashCodeNew = new HashMap<>();
-	/**
-	 * HashMap<String, String> Map to save data cube description
-	 */
 	private HashMap<String, String> idDescription = new HashMap<>();
-	/**
-	 * List<String> List to save name files with changes
-	 */
 	private List<String> changes = new ArrayList<String>();
-	/**
-	 * List<String> to save name files news
-	 */
 	private List<String> news = new ArrayList<String>();
-	/**
-	 * Class to management drive api
-	 */
 	private GoogleDriveAPI drive = null;
 
 	public GenerateCSV(String urls, String outputFiles) {
@@ -79,9 +51,6 @@ public class GenerateCSV {
 		log.info("fin de la generación del fichero InformesEstadisticaLocal-URLs.csv");
 	}
 
-	/**
-	 * Method to extract data cube files
-	 */
 	public void extractFiles() {
 		log.info("init extractFilesWithChanges");
 		extractHashCode();
@@ -111,9 +80,7 @@ public class GenerateCSV {
 					idDescription.put(valores[1], valores[2]);
 					content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
 					if (Utils.v(content)) {
-						log.debug("content "+content.substring(0, 100));
 						content = cleanAndTransform(content);
-						log.debug("content "+content.substring(0, 100));
 						String hash = Utils.generateHash(content);
 						processContentFile(all, numErrorFiles, errorFiles, valores, content, hash);
 					}
@@ -172,19 +139,9 @@ public class GenerateCSV {
 		log.info("end extractFilesWithChanges");
 	}
 
-	/**
-	 * Method for classifying exchange rate or type of error
-	 * 
-	 * @param all List with changes and news
-	 * @param numErrorFiles Map of error files
-	 * @param errorFiles Map of content error files
-	 * @param valores Array of strings of characteristics file (name url, name file, description data cube)
-	 * @param content String content file
-	 * @param hash String hashcode file
-	 * @throws Exception
-	 */
 	private void processContentFile(List<String> all, HashMap<String[], Integer> numErrorFiles, HashMap<String[], String> errorFiles, String[] valores, String content, String hash) throws Exception {
 		boolean safeFile = false;
+		log.debug("processContentFile hash "+hash);
 		if (hashCodeOld.get(valores[1]) == null) {
 			news.add(valores[1]);
 			all.add(valores[0] + "," + valores[1]);
@@ -218,24 +175,12 @@ public class GenerateCSV {
 		}
 	}
 
-	/**
-	 * Clean content file and transform to UTF8
-	 * 
-	 * @param content String content file
-	 * @return String Content file cleaned and transformed
-	 */
 	private String cleanAndTransform(String content) {
 		content = content.replace(new String(Character.toChars(0)), "");
 		content = content.replace("ÿþ", "");
 		return content;
 	}
 
-	/**
-	 * Method to generate hashcode file
-	 * 
-	 * @param result List with entities with new hashcode
-	 * @param list
-	 */
 	public void generateHashCode(List<String> result, List<String> list) {
 
 		File file = new File(Prop.fileHashCSV + "." + Constants.CSV);
@@ -265,13 +210,97 @@ public class GenerateCSV {
 			log.error("Error generando fichero hashcode", e);
 		}
 	}
+	
+	public void generateHashCodeFromBI() {
+		
+		File urlsFile = new File(urlsFileString);
+		File hashFile = new File(Prop.fileHashCSV + "." + Constants.CSV);
+		Cookies cookies = new Cookies();
+		String[] valores = null;
+		String content = null;
+		StringBuffer result = new StringBuffer();
+		HashMap<String[], Integer> numErrorFiles = new HashMap<>();
+		HashMap<String[], String> errorFiles = new HashMap<>();
+		try{
+			Map<String, String> headers = new HashMap<String, String>();
+			headers.put("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36");
+			headers.put("Cookie", "sawU=" + Prop.sawUiAragonBiAragon + "; ORA_BIPS_LBINFO=" + Prop.oraBipsLbinfoBiAragon + "; ORA_BIPS_NQID=" + Prop.oraBipsNqidBiAragon + "; __utma=" + Prop.utmaBiAragon + "; __utmc=" + Prop.utmcBiAragon + "; __utmz=" + Prop.utmzBiAragon);
+			headers.put("content-type", "text/csv; charset=ISO-8859-1");
+			Utils.processURLGet(Prop.urlBiAragon + Prop.initialDataCube + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
+			List<String> csvLines = FileUtils.readLines(urlsFile, "UTF-8");
+	
+			try {
+				for (int h = 1; h < csvLines.size(); h++) {
+					String line = csvLines.get(h);
+					valores = line.split(",");
+					valores[0] = valores[0].replaceAll("\"", "");
+					valores[1] = valores[1].replaceAll("\"", "");
+					valores[2] = valores[2].replaceAll("\"", "");
+					content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
+					if (Utils.v(content)) {
+						content = cleanAndTransform(content);
+						String hash = Utils.generateHash(content);
+						result.append(valores[1]+","+hash+"\n");
+						log.info(valores[1]+","+hash);
+					}else{
+						numErrorFiles.put(valores, new Integer(0));
+						errorFiles.put(valores, content);
+					}
+				}
+			} catch (IOException e2) {
+				numErrorFiles.put(valores, new Integer(0));
+				errorFiles.put(valores, content);
+				log.error("Error al descargar " + valores[1], e2);
+			}
+			
+			int j = 0;
+			int totalElements = numErrorFiles.size();
+			
+			try {
+				Iterator<String[]> iterator = numErrorFiles.keySet().iterator();
+				while (j < totalElements) {
+					valores = iterator.next();
+					Integer numErrors = numErrorFiles.get(valores);
+					if (numErrors < 5 && numErrors != -1) {
+						content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
+						if (Utils.v(content)) {
+							content = cleanAndTransform(content);
+							if (!content.contains(Constants.errorDoctypeHtml1) && !content.contains(Constants.errorHtml) && !content.contains(Constants.errorDoctypeHtml2) && !content.contains(Constants.errorDiv)) {
+								Utils.stringToFile(content, new File(outputFilesDirectoryString + File.separator + valores[1] + ".csv"));
+								String hash = Utils.generateHash(content);
+								result.append(valores[1]+","+hash+"\n");
+								numErrorFiles.put(valores, new Integer(-1));
+								errorFiles.remove(valores);
+							} else if (!content.contains(Constants.errorExcedidoN) && !content.contains(Constants.errorRutaNoEncontrada)) {
+								numErrorFiles.put(valores, new Integer(-1));
+							} else {
+								log.error("Informe " + valores[1] + " imposible de descargar intento " + (numErrors + 1));
+								numErrorFiles.put(valores, ++numErrors);
+							}
+						}
+						Thread.sleep(1000);
+					}
+					if (!iterator.hasNext()) {
+						iterator = numErrorFiles.keySet().iterator();
+						j++;
+					}
+				}
+			} catch (IOException e2) {
+				log.error("Error al descargar " + valores[1], e2);
+			}
+			
+			try {
+				Utils.stringToFile(result.toString(), hashFile);
+				drive.updateFile(Prop.fileHashCSV, hashFile, "text/csv");
+			} catch (Exception e) {
+				log.error("Error generando fichero hashcode", e);
+			}
+			
+		} catch (Exception e) {
+			log.error("Error desconocido", e);
+		}
+	}
 
-	/**
-	 * Method to add error to propiate file
-	 * 
-	 * @param id String with id data cube
-	 * @param content String with error response
-	 */
 	protected void informeErrores(String id, String content) {
 		if (content != null && content.contains("Se ha excedido el n")) {
 			File file = new File(Prop.fileErrorBig);
@@ -285,9 +314,6 @@ public class GenerateCSV {
 		}
 	}
 
-	/**
-	 * Method to download hashcode file
-	 */
 	protected void extractHashCode() {
 
 		drive.downloadFile("", Prop.fileHashCSV, Constants.CSV);
@@ -303,9 +329,6 @@ public class GenerateCSV {
 		}
 	}
 
-	/**
-	 * Method to do backup of mean files
-	 */
 	private void backup() {
 		log.debug("Init backup");
 		log.info("Comienza a hacerse el backup");
@@ -412,14 +435,15 @@ public class GenerateCSV {
 			log.info("Start process");
 			Prop.loadConf();
 			GenerateCSV app = new GenerateCSV(args[1], args[2]);
-			app.backup();
+//			app.backup();
 			if (args[0].equals("update")) {
 				app.extractFiles();
+			}else if(args[0].equals("generateHash")){
+				app.generateHashCodeFromBI();
 			}
 			log.info("Finish process");
 		} else {
 			log.info("Se deben de pasar dos parámetros: ");
-
 		}
 
 	}

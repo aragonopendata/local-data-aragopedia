@@ -1,6 +1,6 @@
 package com.localidata.bean;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
  * 
@@ -11,12 +11,12 @@ public class SkosBean {
 
 	private String id;
 	private SkosBean parent;
-	private ArrayList<SkosBean> sons;
+	private HashSet<SkosBean> sons;
 	private String URI;
 	private String label;
 
 	public SkosBean() {
-		sons = new ArrayList<SkosBean>();
+		sons = new HashSet<SkosBean>();
 	}
 
 	public String getId() {
@@ -51,11 +51,11 @@ public class SkosBean {
 		this.parent = parent;
 	}
 
-	public ArrayList<SkosBean> getSons() {
+	public HashSet<SkosBean> getSons() {
 		return sons;
 	}
 
-	public void setSons(ArrayList<SkosBean> sons) {
+	public void setSons(HashSet<SkosBean> sons) {
 		this.sons = sons;
 	}
 

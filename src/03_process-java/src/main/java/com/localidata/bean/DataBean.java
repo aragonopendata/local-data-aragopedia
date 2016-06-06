@@ -10,72 +10,28 @@ import com.localidata.generic.Constants;
 import com.localidata.util.Utils;
 
 /**
- * Bean with information's column csv
  * 
  * @author Localidata
  *
  */
 public class DataBean {
 
-	/**
-	 * Log class
-	 */
 	private final static Logger log = Logger.getLogger(DataBean.class);
-	/**
-	 * name column csv
-	 */
 	private String name;
-	/**
-	 * normalized name column csv
-	 */
 	private String nameNormalized;
-	/**
-	 * URL by normalize column csv
-	 */
 	private String normalizacion;
-	/**
-	 * Third line config. ['dim' | 'medida' | null ]
-	 */
 	private String dimensionMesureEntry;
-	/**
-	 * Dsd normalization ['qb:dimension' | 'qb:measure' | null]
-	 */
 	private String dimensionMesure;
-	/**
-	 * Properties normalization ['qb:DimensionProperty' | 'qb:MeasureProperty' |
-	 * null]
-	 */
 	private String dimensionMesureProperty;
-	/**
-	 * Prefix normalization refArea or RefPeriod ['sdmx-dimension' |
-	 * 'sdmx-measure' | null]
-	 */
 	private String dimensionMesureSDMX;
-	/**
-	 * Type data column
-	 */
 	private String type;
-	/**
-	 * Value constant of databean. If databean isn't constant will be null
-	 */
 	private String constant;
-	/**
-	 * Id config of databean
-	 */
 	private String idConfig;
-	/**
-	 * boolean by know if change skos name
-	 */
 	private boolean writeSkos;
-	/**
-	 * String normalization skos
-	 */
 	private String kosName;
-	/**
-	 * Hashmap (id skos -> skosbean) with skos related
-	 */
-	private HashMap<String, SkosBean> mapSkos;
 
+	private String kosNameNormalized;
+	private HashMap<String, SkosBean> mapSkos;
 	private String relationKos;
 
 	public DataBean() {
@@ -206,7 +162,15 @@ public class DataBean {
 
 	public void setKosName(String kosName) {
 		this.kosName = kosName;
-	}	
+	}
+
+	public String getKosNameNormalized() {
+		return kosNameNormalized;
+	}
+
+	public void setKosNameNormalized(String kosNameNormalized) {
+		this.kosNameNormalized = kosNameNormalized;
+	}
 
 	public String getRelationKos() {
 		return relationKos;
@@ -320,6 +284,14 @@ public class DataBean {
 			}
 			if (!continua)
 				return null;
+		}
+		for (Iterator<SkosBean> itMapSkosSource = mapSkos.values()
+				.iterator(); itMapSkosSource.hasNext();) {
+			SkosBean skosSource = itMapSkosSource.next();
+			if (skosSource.getURI() != null && getNameNormalized() != null && getKosNameNormalized() != null) {
+				skosSource.setURI(skosSource.getURI().replace(getNameNormalized(), getKosNameNormalized()));
+				skosSource.setURI(skosSource.getURI().replace(data.getNameNormalized(), getKosNameNormalized()));
+			}
 		}
 		log.debug("end mergeSkos " + data);
 		return mapSkos;

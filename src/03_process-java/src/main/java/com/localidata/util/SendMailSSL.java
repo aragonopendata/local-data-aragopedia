@@ -13,10 +13,12 @@ import javax.mail.internet.MimeMessage;
 
 import org.apache.log4j.Logger;
 
+/**
+ * 
+ * @author Localidata
+ */
 public class SendMailSSL {
-	
 	private static Logger log = Logger.getLogger(SendMailSSL.class);
-	
 	private Properties props=null;
 	
 	
@@ -29,7 +31,6 @@ public class SendMailSSL {
 		props.put("mail.smtp.auth", "true");
 		props.put("mail.smtp.port", "465");
 	}
-	
 	
 	public void enviar(final String usuario, final String password, String destinos,String asunto, String texto)
 	{	

@@ -1,0 +1,446 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/05-0709-070905A>;
+	rdfs:label "Accidentes en jornada Ranking de actividades más accidentadas entre los hombres. Desde 2009"@es ;
+	dct:identifier  "05-0709-070905AA" ;
+	rdfs:comment "Cubo de datos para 05-0709-070905AA"@es ;
+	dc:modified "2016-06-09"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/2b26ecb3-52bc-32df-9bb4-65808df54a17> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/agricultura-ganaderia-caza-y-servicios-relacionados-con-las-mismas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "758"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/f8d0c647-a777-3496-b239-31d702cef06d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/transporte-terrestre-y-por-tuberia> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "720"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/85e92d4a-8743-3a81-8561-150e357869fe> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/actividades-de-construccion-especializada> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "645"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/dc012e36-b0fa-33e9-b7f3-3602d972d4d0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "571"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/67148154-f084-3989-b05e-3cb4c4356ee7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/administracion-publica-y-defensa-seguridad-social-obligatoria> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "502"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/1ea58002-387f-3fe7-a4aa-b189fc8097c7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "482"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/8337822d-fd2b-3c49-92c4-2e3e55fc53e1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/construccion-de-edificios> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "412"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/a69790c9-47c4-3e51-ae8e-8ab4c2f8b164> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "365"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/cf979b7f-186f-309f-ad73-cd623276bb1e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/industria-de-la-alimentacion> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "347"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/186811ba-25af-3887-9b8f-3b3e0e5dcaa6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-menor-excepto-de-vehiculos-de-motor-y-motocicletas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "340"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/f7d9709e-76f3-3f31-bae8-d36839498d19> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/agricultura-ganaderia-caza-y-servicios-relacionados-con-las-mismas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "648"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/0222de10-7563-322d-8a6f-69796ec4ce44> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/transporte-terrestre-y-por-tuberia> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "613"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/679496da-db5d-3a29-9b25-ec151b87e986> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/actividades-de-construccion-especializada> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "567"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/08b2d132-b8b0-313c-b19b-9fd03831aaee> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/administracion-publica-y-defensa-seguridad-social-obligatoria> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "528"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/7ee230e5-6b01-30c3-8fcc-3903534d8c77> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "489"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/b55fbb0e-0884-3a65-a499-fdfc674f83da> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "414"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/a78e1938-8ae3-3d3b-88c6-f975b05fe765> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/construccion-de-edificios> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "396"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/ff09550b-b196-3f4d-a52a-c3a43995a730> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/industria-de-la-alimentacion> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "336"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/fdfa5030-a396-34f4-8aaf-6b409eb25d4a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-menor-excepto-de-vehiculos-de-motor-y-motocicletas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "313"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/c552794e-e9d4-316c-9551-b1ad145fea1b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "305"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/963a53b0-0242-3349-942e-931215018359> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/actividades-de-construccion-especializada> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "642"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/d0ca0735-5ce6-301e-9521-8e2b9c47c0bc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/agricultura-ganaderia-caza-y-servicios-relacionados-con-las-mismas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "616"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/81528a57-bc4b-345b-ac60-923b923f61ec> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/administracion-publica-y-defensa-seguridad-social-obligatoria> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "611"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/edf1997b-2c88-3e91-a452-f9aa13bb1cc2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/transporte-terrestre-y-por-tuberia> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "536"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/07759b9c-002f-33a5-b0be-3aaef4e37302> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "495"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/a0a4352b-ce12-36e2-b736-0e4ad6c85251> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "415"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/ca6f73e3-ea3c-3b39-ae94-ebc2504aee5f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/construccion-de-edificios> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "368"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/151ba848-d554-3886-8acc-8098a6fcccb7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/industria-de-la-alimentacion> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "319"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/748678c8-69c3-3195-9cf1-b094f29a98ef> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-maquinaria-y-equipo-ncop> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "273"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/14247c62-ebac-3fcf-98c3-a983ff1243c4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "261"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/3980763e-f170-3bf9-9ea0-30a80a9f0e78> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/actividades-de-construccion-especializada> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "754"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/70124dca-88b5-31dd-9c91-9e901854d2f5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/transporte-terrestre-y-por-tuberia> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "628"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/c3e2136c-7ed0-3784-90c6-91f4cd87ebd4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/construccion-de-edificios> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "573"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/fb99bcd5-7209-3fa8-8361-b97459b05a3d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/agricultura-ganaderia-caza-y-servicios-relacionados-con-las-mismas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "571"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/5b299b29-d806-342f-834e-d9378e197d80> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "551"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/9fa66c69-9e3d-3184-b1f9-3d6110c9de76> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/administracion-publica-y-defensa-seguridad-social-obligatoria> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "469"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/46e73386-b12b-3632-b079-f187d37a55d7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "443"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/a40eae65-bf9f-3e14-a8be-e62f6a4fd417> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-maquinaria-y-equipo-ncop> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "308"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/d79469d7-1dbe-3d95-90dc-2267046157b1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/industria-de-la-alimentacion> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "297"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/475cfe0c-4b19-3816-b6bc-4bce1cde2a7a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-menor-excepto-de-vehiculos-de-motor-y-motocicletas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "291"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/7b8eed9c-21c0-31a7-a4ae-33346ae4dbdf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/actividades-de-construccion-especializada> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "1007"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/42198444-204f-3e13-9c3a-89fe062b0ed0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/construccion-de-edificios> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "884"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/4f7a1982-21ff-3714-a056-df55e7f3acd0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/transporte-terrestre-y-por-tuberia> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "688"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/0611ade8-c971-347c-9030-473bbf09c9bf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "648"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/3417999f-7e85-361e-b661-c9d4e96283f1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/administracion-publica-y-defensa-seguridad-social-obligatoria> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "565"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/58de5ac6-e030-3e06-a14d-1edace8da29e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/agricultura-ganaderia-caza-y-servicios-relacionados-con-las-mismas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "541"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/45cdee4c-8483-3783-bee3-f067a7012c3e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "455"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/e758c8a2-0681-3a18-b9dc-4a2e50181aed> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "424"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/1a03bda7-a6ed-3e79-8e2e-054f0e8025d1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-menor-excepto-de-vehiculos-de-motor-y-motocicletas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "343"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/0d708e02-093d-30bd-8921-34947a337ce6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-maquinaria-y-equipo-ncop> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "342"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/ce295d6f-2a88-3a86-a6ed-efdf4cd96771> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/actividades-de-construccion-especializada> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "1212"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/a5d0261a-3c15-378f-9c94-26fc48afaafe> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/construccion-de-edificios> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "1043"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/60dd1096-7761-3179-8806-0555b21173a1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/transporte-terrestre-y-por-tuberia> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "798"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/dede1792-806c-3717-90f5-c97af16eaeec> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "639"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/b2e725a2-288d-3bf4-9492-eda222c0f8f9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/administracion-publica-y-defensa-seguridad-social-obligatoria> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "570"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/e62fbe5d-8096-3d43-9f7e-9c0a084b26eb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "525"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/d68bdd6a-9f85-32f0-9aa4-da0539154e6c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/agricultura-ganaderia-caza-y-servicios-relacionados-con-las-mismas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "507"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/3fb74e80-a3ed-3ee2-8da3-43be288167d7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "505"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/98cd0153-1792-397d-be59-01502dbd70ee> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-maquinaria-y-equipo-ncop> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "389"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/96bfb65e-4cf0-3033-b58f-8c2616c4e36d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-menor-excepto-de-vehiculos-de-motor-y-motocicletas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "354"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/47282bfc-b267-3967-9018-d75eed4e9aef> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/actividades-de-construccion-especializada> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "1336"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/3d03a1e4-4c16-34be-98e9-f3ddab0c9d09> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/construccion-de-edificios> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "1317"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/c5ed85be-c9d0-39d2-aa7c-ad2749c4690f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/transporte-terrestre-y-por-tuberia> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "796"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/102b368c-08dc-3201-ac8a-2fd4ed8f3856> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-productos-metalicos-excepto-maquinaria-y-equipo> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "667"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/1935928e-35a2-3b2f-b0d0-506277d18d8a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/administracion-publica-y-defensa-seguridad-social-obligatoria> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "584"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/40e0763c-c4ec-36c3-97b8-fd65f2724981> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/agricultura-ganaderia-caza-y-servicios-relacionados-con-las-mismas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "561"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/e6d8cd6b-424d-3794-a1d9-72569e950e88> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-mayor-e-intermediarios-del-comercio-excepto-de-vehiculos-de-motor-y-motocicletas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "543"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/b25e0932-9506-3be7-9096-ac06d7cb7534> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-maquinaria-y-equipo-ncop> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "463"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/9e3f0f02-8c3f-32e4-8734-44f2e4c34b34> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/comercio-al-por-menor-excepto-de-vehiculos-de-motor-y-motocicletas> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "419"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070905AA/fea09291-1d2f-30f6-a560-b2490f7cee33> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070905AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	iaest-dimension:division-2-digitos-descripcion <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion/fabricacion-de-vehiculos-de-motor-remolques-y-semirremolques> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:n-accidentes "417"^^xsd:int.

@@ -1,0 +1,762 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/05-0709-070906A>;
+	rdfs:label "Accidentes en jornada Accidentes según grupo de ocupación y sexo. Desde 2011"@es ;
+	dct:identifier  "05-0709-070906AA" ;
+	rdfs:comment "Cubo de datos para 05-0709-070906AA"@es ;
+	dc:modified "2016-06-09"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/fabc4c49-88fa-3b74-b9e9-9d66907e0691> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "32"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/1> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/directores-y-gerentes> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/bf4e4baf-5bae-3a80-b871-559d5844c7af> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "7"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/1> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/directores-y-gerentes> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/84962209-b2c8-3fde-b085-65f12f7e0507> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "37"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/1> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/directores-y-gerentes> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/db6725de-b4b6-375c-99ef-130f94c0e879> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "7"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/1> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/directores-y-gerentes> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/339d2756-fa5b-3a08-a4e4-5e98e269a4e9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "30"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/1> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/directores-y-gerentes> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/e92387de-8629-3555-8952-340bb583015c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "14"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/1> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/directores-y-gerentes> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/534c5f55-4c1d-3ecb-93ae-0468aa2dcd1f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "36"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/1> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/directores-y-gerentes> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/8072cdde-8159-30f1-bb82-02c2f4127a2e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "14"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/1> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/directores-y-gerentes> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/e0a93375-fa95-3ad2-9a00-5c83827c426a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "52"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/1> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/directores-y-gerentes> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/947ade55-75d0-3cd9-a541-8008d9c4e12f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "9"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/1> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/directores-y-gerentes> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/763540a7-161c-3f8b-a74a-ececd5871993> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "133"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/2> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-y-profesionales-cientificos-e-intelectuales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/1c104407-41ab-399e-978c-13f19488543f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "253"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/2> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-y-profesionales-cientificos-e-intelectuales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/d7fa2195-2592-39be-b6e1-5cc8ab8e1727> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "105"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/2> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-y-profesionales-cientificos-e-intelectuales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/0689cec3-b286-3a1b-8377-06a416ae76a7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "228"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/2> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-y-profesionales-cientificos-e-intelectuales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/c0973818-af56-3993-b1bf-c36087b196b7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "110"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/2> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-y-profesionales-cientificos-e-intelectuales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/0fc85a15-042c-32da-92f4-19b7f24badc3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "239"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/2> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-y-profesionales-cientificos-e-intelectuales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/29a38bc5-4fba-328b-a9d4-99bdbde8da97> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "98"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/2> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-y-profesionales-cientificos-e-intelectuales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/3188e776-a396-3de4-b256-ed5255637fe7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "189"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/2> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-y-profesionales-cientificos-e-intelectuales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/275c19ce-66bc-3f83-8750-84c92bf9391a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "134"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/2> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-y-profesionales-cientificos-e-intelectuales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/0bf090c6-83ac-3c92-9f4a-6b1ac74354d5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "212"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/2> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-y-profesionales-cientificos-e-intelectuales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/42831da0-6722-3866-b1ec-38f5e2ad7e88> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "286"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/3> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-profesionales-de-apoyo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/6afd4ca6-b40a-37eb-be6d-7c3cd6e1b2d2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "103"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/3> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-profesionales-de-apoyo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/52e2e899-ee52-3983-9b50-931bed801008> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "282"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/3> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-profesionales-de-apoyo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/f19b32f8-8425-3952-8921-178b28c37fc1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "112"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/3> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-profesionales-de-apoyo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/2232dee8-f93a-3919-a67a-92b0d8a88096> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "260"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/3> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-profesionales-de-apoyo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/2bc5d590-788d-3641-8dfc-4701c0e65ec1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "105"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/3> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-profesionales-de-apoyo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/dc02b2e9-06f2-38b8-8317-201758a85923> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "286"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/3> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-profesionales-de-apoyo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/6efbc387-4179-3851-972d-5aa2b106f50d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "74"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/3> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-profesionales-de-apoyo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/ffff47b9-ce85-3de5-adfb-b910cb5697cb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "313"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/3> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-profesionales-de-apoyo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/b6f4e8c1-0c6f-38a8-bbf8-6fd76e4dbeaa> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "118"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/3> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/tecnicos-profesionales-de-apoyo> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/6281c227-3049-3d3d-8d7a-2f42ac6d1222> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "88"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/4> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/empleados-contables-administrativos-y-otros-empleados-de-oficina> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/45ced566-e947-3d9f-aa1b-4c1cb7acd288> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "206"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/4> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/empleados-contables-administrativos-y-otros-empleados-de-oficina> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/f6aa2e7e-3294-3da7-b744-4a3f0bec4116> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "86"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/4> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/empleados-contables-administrativos-y-otros-empleados-de-oficina> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/443d4052-7c31-31fc-a0e5-2b8a163bb05c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "179"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/4> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/empleados-contables-administrativos-y-otros-empleados-de-oficina> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/8e8f4e69-91d5-3403-952b-272e66724eb7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "101"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/4> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/empleados-contables-administrativos-y-otros-empleados-de-oficina> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/886f5927-12c6-3dc9-81d9-0e082899e8f5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "182"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/4> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/empleados-contables-administrativos-y-otros-empleados-de-oficina> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/2613bbd5-896e-306d-bca2-9ec7beb3839d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "100"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/4> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/empleados-contables-administrativos-y-otros-empleados-de-oficina> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/bd8a4e9d-4624-36a7-9d4e-850f344ca4ce> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "203"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/4> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/empleados-contables-administrativos-y-otros-empleados-de-oficina> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/66e99740-947d-3146-b1db-abe34ec5b594> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "99"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/4> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/empleados-contables-administrativos-y-otros-empleados-de-oficina> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/fedbbdd9-0f98-3dce-9d8c-f8261ce39085> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "200"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/4> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/empleados-contables-administrativos-y-otros-empleados-de-oficina> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/9791661d-583a-3002-ad66-65d2f9283dff> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "721"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/5> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-de-los-servicios-de-restauracion-personales-proteccion-y-vendedores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/e78f5b79-154d-39f9-a665-df6fa8d33143> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "1609"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/5> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-de-los-servicios-de-restauracion-personales-proteccion-y-vendedores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/ca18ae60-569c-39ac-8954-342318a4c57b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "740"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/5> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-de-los-servicios-de-restauracion-personales-proteccion-y-vendedores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/5519ce66-30a8-3fd1-a7a3-0dedc1f5f307> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "1493"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/5> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-de-los-servicios-de-restauracion-personales-proteccion-y-vendedores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/53329e7d-6d1d-30d2-b282-e5d8cc971f19> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "742"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/5> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-de-los-servicios-de-restauracion-personales-proteccion-y-vendedores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/819f7292-cd71-3517-915b-443778683e75> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "1468"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/5> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-de-los-servicios-de-restauracion-personales-proteccion-y-vendedores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/ac8dc8f5-a17a-3778-873d-3229b4a6b19d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "665"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/5> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-de-los-servicios-de-restauracion-personales-proteccion-y-vendedores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/9344a466-4e61-36fe-ab82-ee1c3a099b6b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "1309"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/5> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-de-los-servicios-de-restauracion-personales-proteccion-y-vendedores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/5200c370-5974-3347-9eed-d087963f77e1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "762"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/5> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-de-los-servicios-de-restauracion-personales-proteccion-y-vendedores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/56159c6b-9f0b-351c-8104-6e5620d586c5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "1649"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/5> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-de-los-servicios-de-restauracion-personales-proteccion-y-vendedores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/5f852122-ec28-31df-a11b-a613a99240f9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "371"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/6> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-cualificados-en-el-sector-agricola-ganadero-forestal-y-pesquero> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/ed9600f7-4bf7-37ff-85c4-786098d6eeb2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "36"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/6> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-cualificados-en-el-sector-agricola-ganadero-forestal-y-pesquero> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/fc766efc-a2cb-31fb-bdc8-f7373466c0d3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "314"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/6> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-cualificados-en-el-sector-agricola-ganadero-forestal-y-pesquero> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/0770f8e6-4a07-38e9-88fb-3efcd3398f00> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "31"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/6> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-cualificados-en-el-sector-agricola-ganadero-forestal-y-pesquero> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/00b8b686-bafd-3f41-a7fb-51cab725b50e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "357"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/6> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-cualificados-en-el-sector-agricola-ganadero-forestal-y-pesquero> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/0f16a794-0a00-3294-b258-6e1de97f17b5> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "31"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/6> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-cualificados-en-el-sector-agricola-ganadero-forestal-y-pesquero> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/d7436246-56bb-3dcd-9ee0-5b795ea0c5be> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "319"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/6> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-cualificados-en-el-sector-agricola-ganadero-forestal-y-pesquero> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/1d31637d-9719-3f27-8442-f937947425cf> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "27"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/6> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-cualificados-en-el-sector-agricola-ganadero-forestal-y-pesquero> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/35c12b0f-b64a-3bb3-96d8-01fc4feaa4d1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "351"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/6> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-cualificados-en-el-sector-agricola-ganadero-forestal-y-pesquero> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/8a43675d-fa09-3fbe-82d8-0d67c3192028> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "35"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/6> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/trabajadores-cualificados-en-el-sector-agricola-ganadero-forestal-y-pesquero> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/0f1b6d9b-d20a-3287-a198-a11941331d26> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "2633"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/7> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/artesanos-y-trabajadores-cualificados-de-las-industrias-manufactureras-y-la-construccion-excepto-operadores-de-instalaciones-y-maquinaria> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/ad14686e-aac2-3130-b81a-2f82028e0129> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "164"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/7> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/artesanos-y-trabajadores-cualificados-de-las-industrias-manufactureras-y-la-construccion-excepto-operadores-de-instalaciones-y-maquinaria> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/6b4b783a-db13-3932-bbd0-9113e63f7164> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "2483"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/7> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/artesanos-y-trabajadores-cualificados-de-las-industrias-manufactureras-y-la-construccion-excepto-operadores-de-instalaciones-y-maquinaria> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/5c57c528-7233-331e-ace0-8f8263b8f874> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "160"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/7> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/artesanos-y-trabajadores-cualificados-de-las-industrias-manufactureras-y-la-construccion-excepto-operadores-de-instalaciones-y-maquinaria> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/f98e9d97-7a1a-306a-9757-bf07d16a82cd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "2386"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/7> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/artesanos-y-trabajadores-cualificados-de-las-industrias-manufactureras-y-la-construccion-excepto-operadores-de-instalaciones-y-maquinaria> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/cb58e727-68dc-3b4c-9a11-31d5b481f520> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "155"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/7> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/artesanos-y-trabajadores-cualificados-de-las-industrias-manufactureras-y-la-construccion-excepto-operadores-de-instalaciones-y-maquinaria> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/79caf809-afe9-37bd-9cbd-77c1bbe3250c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "2816"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/7> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/artesanos-y-trabajadores-cualificados-de-las-industrias-manufactureras-y-la-construccion-excepto-operadores-de-instalaciones-y-maquinaria> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/be9c2a57-af4f-3ccf-b88a-2a9260f05bcd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "126"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/7> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/artesanos-y-trabajadores-cualificados-de-las-industrias-manufactureras-y-la-construccion-excepto-operadores-de-instalaciones-y-maquinaria> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/8afe6600-f184-34de-9fd9-9ca1f4cc0a72> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "3509"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/7> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/artesanos-y-trabajadores-cualificados-de-las-industrias-manufactureras-y-la-construccion-excepto-operadores-de-instalaciones-y-maquinaria> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/ae4a5663-83e1-3bd5-bc86-aabaa107b8a8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "177"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/7> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/artesanos-y-trabajadores-cualificados-de-las-industrias-manufactureras-y-la-construccion-excepto-operadores-de-instalaciones-y-maquinaria> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/b6148124-b39e-3a11-b2ac-7db13526e8d8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "2044"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/8> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/operadores-de-instalaciones-y-maquinaria-y-montadores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/fdbcdf33-48bb-3cd5-86db-fbb1dcc8e800> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "160"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/8> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/operadores-de-instalaciones-y-maquinaria-y-montadores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/7d7cc9b9-da14-33ac-89c5-d1567e0e4a43> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "1803"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/8> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/operadores-de-instalaciones-y-maquinaria-y-montadores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/2d316c57-f1cc-3851-b5e7-534db784ee1a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "153"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/8> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/operadores-de-instalaciones-y-maquinaria-y-montadores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/731201d9-ef1f-3989-9748-9d9dccd2b198> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "1721"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/8> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/operadores-de-instalaciones-y-maquinaria-y-montadores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/ad9873d1-7db5-3701-a892-2e552f998ee2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "164"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/8> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/operadores-de-instalaciones-y-maquinaria-y-montadores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/223d2758-2aa8-3130-bbe4-94a3ac7a042b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "1936"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/8> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/operadores-de-instalaciones-y-maquinaria-y-montadores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/78923589-eb7d-352e-8f51-50d0c1221542> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "136"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/8> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/operadores-de-instalaciones-y-maquinaria-y-montadores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/06ec1493-7849-3b5d-b9b7-d669ef1aa432> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "2252"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/8> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/operadores-de-instalaciones-y-maquinaria-y-montadores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/25acf9e7-0e05-379f-b26e-f617807548e6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "189"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/8> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/operadores-de-instalaciones-y-maquinaria-y-montadores> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/0de2e3a5-dc19-3e87-b28a-9057b72234dd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "2430"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/9> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/ocupaciones-elementales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/bccc00da-f548-3d86-ab5b-fb3a5fa43f9e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:n-accidentes "1131"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/9> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/ocupaciones-elementales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/1a0e4bb7-aaf6-30eb-83a7-b26eb105f89f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "1993"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/9> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/ocupaciones-elementales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/2daf616b-7f21-3622-9d61-0bf1e27fcd9b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:n-accidentes "1029"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/9> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/ocupaciones-elementales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/447d99d8-7a79-3e42-9524-4bd7d0cf5a4a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "1838"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/9> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/ocupaciones-elementales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/4b7ab690-8bfd-3ec0-9f11-00829a6feefb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "931"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/9> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/ocupaciones-elementales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/d27fd906-aa14-3b9d-bd6a-f87944f81649> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "1894"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/9> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/ocupaciones-elementales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/756387bf-c96a-3207-a862-c347246746b4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:n-accidentes "837"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/9> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/ocupaciones-elementales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/2867eca2-38e9-3ebd-8c44-7479c9fe0b27> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "2387"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/9> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/ocupaciones-elementales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/66750167-110c-34bb-9cba-f4201710d365> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:n-accidentes "1116"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/9> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/ocupaciones-elementales> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/578fd684-79ec-3446-9809-0b962c29486b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/nc> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/no-consta> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .
+<http://opendata.aragon.es/recurso/iaest/observacion/05-0709-070906AA/c5f20ff2-bd46-39a1-9fee-0f17ebdc2cfe> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/05-0709-070906AA>; 
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:n-accidentes "1"^^xsd:int;
+	iaest-dimension:grupo <http://opendata.aragon.es/kos/iaest/grupo/nc> ;
+	iaest-dimension:descripcion-ocupacion <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion/no-consta> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> .

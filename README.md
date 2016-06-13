@@ -43,4 +43,7 @@ La documentación correspondiente usando Swagger se está subiendo a http://open
 * Cubos que tienen una provincia para una dimensión específica http://opendata.aragon.es/recurso/iaest/cubosProvincia/{valor}
 * Cubos que tienen una comunidad autónoma para una dimensión específica http://opendata.aragon.es/recurso/iaest/cubosComunidadAutonoma/{valor}
 
+## Consultas a realizar en el SPARQL endpoint
+En [Consultas](consultas.md) se pueden analizar estas consultas
+
 

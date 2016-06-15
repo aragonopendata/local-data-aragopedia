@@ -1039,6 +1039,40 @@
 	skos:notation "otras-aves-pavos-patos-ocas-perdices-codornices-pintadas";
 	skos:prefLabel "Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)".
 
+<http://opendata.aragon.es/kos/iaest/nacionalidad> a skos:ConceptScheme;
+	skos:notation "nacionalidad";
+	rdfs:label "Nacionalidad";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-comunitarios-ue-28>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-no-comunitarios>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-comunitarios-ue-27>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/espanoles>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/no-consta>.
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-comunitarios-ue-28> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
+	skos:notation "extranjeros-comunitarios-ue-28";
+	skos:prefLabel "Extranjeros comunitarios (UE-28)".
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-no-comunitarios> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
+	skos:notation "extranjeros-no-comunitarios";
+	skos:prefLabel "Extranjeros no comunitarios".
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-comunitarios-ue-27> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
+	skos:notation "extranjeros-comunitarios-ue-27";
+	skos:prefLabel "Extranjeros comunitarios (UE-27)".
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad/espanoles> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
+	skos:notation "espanoles";
+	skos:prefLabel "Españoles".
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad/no-consta> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
+	skos:notation "no-consta";
+	skos:prefLabel "No consta".
+
 <http://opendata.aragon.es/kos/iaest/tipo-de-vivienda> a skos:ConceptScheme;
 	skos:notation "tipo-de-vivienda";
 	rdfs:label "Tipo de vivienda";
@@ -2438,6 +2472,46 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-edificio-detalle>;
 	skos:notation "edificios-principalmente-con-vivienda-colectiva-instituciones-de-ensenanza";
 	skos:prefLabel "Edificios principalmente con vivienda colectiva: instituciones de enseñanza".
+
+<http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion> a skos:ConceptScheme;
+	skos:notation "grupos-1-duracion-demanda-descripcion";
+	rdfs:label "Grupos 1 duración demanda descripción";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/hasta-3-meses>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/mas-de-3-anos>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/de-1-a-2-anos>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/de-3-a-6-meses>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/de-6-a-12-meses>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/de-2-a-3-anos>.
+
+<http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/hasta-3-meses> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion>;
+	skos:notation "hasta-3-meses";
+	skos:prefLabel "Hasta 3 meses".
+
+<http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/mas-de-3-anos> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion>;
+	skos:notation "mas-de-3-anos";
+	skos:prefLabel "Más de 3 años".
+
+<http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/de-1-a-2-anos> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion>;
+	skos:notation "de-1-a-2-anos";
+	skos:prefLabel "De 1 a 2 años".
+
+<http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/de-3-a-6-meses> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion>;
+	skos:notation "de-3-a-6-meses";
+	skos:prefLabel "De 3 a 6 meses".
+
+<http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/de-6-a-12-meses> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion>;
+	skos:notation "de-6-a-12-meses";
+	skos:prefLabel "De 6 a 12 meses".
+
+<http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/de-2-a-3-anos> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion>;
+	skos:notation "de-2-a-3-anos";
+	skos:prefLabel "De 2 a 3 años".
 
 <http://opendata.aragon.es/kos/iaest/residencia> a skos:ConceptScheme;
 	skos:notation "residencia";
@@ -9419,6 +9493,214 @@
 	skos:notation "trabajadores-no-cualificados";
 	skos:prefLabel "Trabajadores no cualificados".
 
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales> a skos:ConceptScheme;
+	skos:notation "edad-grupos-quinquenales";
+	rdfs:label "Edad (grupos quinquenales)";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/90-o-mas>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/40-44>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/50-a-54>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/mas-de-64>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/25-29>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/85-a-89>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/95-y-mas>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/40-a-44>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/30-a-34>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/50-54>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/75-a-79>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/65-a-69>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/35-39>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/20-a-24>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/16-19>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/10-a-14>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/55-a-59>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/45-49>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/45-a-49>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/20-24>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/00-a-04>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/85-a-90>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/35-a-39>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/90-a-94>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/80-a-84>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/25-a-29>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/55-59>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/15-a-19>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/30-34>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/70-a-74>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/60-a-64>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/60-64>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/05-a-09>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/sin-clasificar>.
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/90-o-mas> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "90-o-mas";
+	skos:prefLabel "90 ó más".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/40-44> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "40-44";
+	skos:prefLabel "40-44".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/50-a-54> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "50-a-54";
+	skos:prefLabel "50 a 54".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/mas-de-64> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "mas-de-64";
+	skos:prefLabel "Más de 64".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/25-29> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "25-29";
+	skos:prefLabel "25-29".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/85-a-89> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "85-a-89";
+	skos:prefLabel "85 a 89".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/95-y-mas> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "95-y-mas";
+	skos:prefLabel "95 y más".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/40-a-44> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "40-a-44";
+	skos:prefLabel "40 a 44".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/30-a-34> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "30-a-34";
+	skos:prefLabel "30 a 34".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/50-54> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "50-54";
+	skos:prefLabel "50-54".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/75-a-79> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "75-a-79";
+	skos:prefLabel "75 a 79".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/65-a-69> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "65-a-69";
+	skos:prefLabel "65 a 69".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/35-39> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "35-39";
+	skos:prefLabel "35-39".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/20-a-24> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "20-a-24";
+	skos:prefLabel "20 a 24".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/16-19> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "16-19";
+	skos:prefLabel "16-19".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/10-a-14> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "10-a-14";
+	skos:prefLabel "10 a 14".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/55-a-59> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "55-a-59";
+	skos:prefLabel "55 a 59".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/45-49> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "45-49";
+	skos:prefLabel "45-49".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/45-a-49> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "45-a-49";
+	skos:prefLabel "45 a 49".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/20-24> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "20-24";
+	skos:prefLabel "20-24".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/00-a-04> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "00-a-04";
+	skos:prefLabel "00 a 04".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/85-a-90> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "85-a-90";
+	skos:prefLabel "85 a 90".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/35-a-39> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "35-a-39";
+	skos:prefLabel "35 a 39".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/90-a-94> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "90-a-94";
+	skos:prefLabel "90 a 94".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/80-a-84> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "80-a-84";
+	skos:prefLabel "80 a 84".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/25-a-29> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "25-a-29";
+	skos:prefLabel "25 a 29".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/55-59> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "55-59";
+	skos:prefLabel "55-59".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/15-a-19> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "15-a-19";
+	skos:prefLabel "15 a 19".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/30-34> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "30-34";
+	skos:prefLabel "30-34".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/70-a-74> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "70-a-74";
+	skos:prefLabel "70 a 74".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/60-a-64> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "60-a-64";
+	skos:prefLabel "60 a 64".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/60-64> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "60-64";
+	skos:prefLabel "60-64".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/05-a-09> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "05-a-09";
+	skos:prefLabel "05 a 09".
+
+<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/sin-clasificar> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
+	skos:notation "sin-clasificar";
+	skos:prefLabel "Sin clasificar".
+
 <http://opendata.aragon.es/kos/iaest/grupo-clase-explotacion> a skos:ConceptScheme;
 	skos:notation "grupo-clase-explotacion";
 	rdfs:label "Grupo clase explotación";
@@ -10222,214 +10504,6 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/rama-de-actividad>;
 	skos:notation "fabricacion-de-muebles-otras-industrias-manufactureras-y-reparacion-e-instalacion-de-maquinaria-y-equipo-cnae-31-32-33";
 	skos:prefLabel "Fabricación de muebles; otras industrias manufactureras y reparación e instalación de maquinaria y equipo (cnae 31, 32, 33)".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales> a skos:ConceptScheme;
-	skos:notation "edad-grupos-quinquenales";
-	rdfs:label "Edad (grupos quinquenales)";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/90-o-mas>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/40-44>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/50-a-54>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/mas-de-64>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/25-29>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/85-a-89>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/95-y-mas>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/40-a-44>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/30-a-34>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/50-54>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/75-a-79>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/65-a-69>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/35-39>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/20-a-24>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/16-19>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/10-a-14>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/55-a-59>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/45-49>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/45-a-49>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/20-24>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/00-a-04>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/85-a-90>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/35-a-39>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/90-a-94>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/80-a-84>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/25-a-29>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/55-59>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/15-a-19>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/30-34>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/70-a-74>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/60-a-64>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/60-64>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/05-a-09>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/sin-clasificar>.
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/90-o-mas> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "90-o-mas";
-	skos:prefLabel "90 ó más".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/40-44> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "40-44";
-	skos:prefLabel "40-44".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/50-a-54> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "50-a-54";
-	skos:prefLabel "50 a 54".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/mas-de-64> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "mas-de-64";
-	skos:prefLabel "Más de 64".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/25-29> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "25-29";
-	skos:prefLabel "25-29".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/85-a-89> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "85-a-89";
-	skos:prefLabel "85 a 89".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/95-y-mas> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "95-y-mas";
-	skos:prefLabel "95 y más".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/40-a-44> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "40-a-44";
-	skos:prefLabel "40 a 44".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/30-a-34> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "30-a-34";
-	skos:prefLabel "30 a 34".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/50-54> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "50-54";
-	skos:prefLabel "50-54".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/75-a-79> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "75-a-79";
-	skos:prefLabel "75 a 79".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/65-a-69> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "65-a-69";
-	skos:prefLabel "65 a 69".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/35-39> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "35-39";
-	skos:prefLabel "35-39".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/20-a-24> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "20-a-24";
-	skos:prefLabel "20 a 24".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/16-19> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "16-19";
-	skos:prefLabel "16-19".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/10-a-14> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "10-a-14";
-	skos:prefLabel "10 a 14".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/55-a-59> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "55-a-59";
-	skos:prefLabel "55 a 59".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/45-49> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "45-49";
-	skos:prefLabel "45-49".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/45-a-49> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "45-a-49";
-	skos:prefLabel "45 a 49".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/20-24> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "20-24";
-	skos:prefLabel "20-24".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/00-a-04> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "00-a-04";
-	skos:prefLabel "00 a 04".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/85-a-90> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "85-a-90";
-	skos:prefLabel "85 a 90".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/35-a-39> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "35-a-39";
-	skos:prefLabel "35 a 39".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/90-a-94> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "90-a-94";
-	skos:prefLabel "90 a 94".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/80-a-84> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "80-a-84";
-	skos:prefLabel "80 a 84".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/25-a-29> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "25-a-29";
-	skos:prefLabel "25 a 29".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/55-59> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "55-59";
-	skos:prefLabel "55-59".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/15-a-19> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "15-a-19";
-	skos:prefLabel "15 a 19".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/30-34> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "30-34";
-	skos:prefLabel "30-34".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/70-a-74> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "70-a-74";
-	skos:prefLabel "70 a 74".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/60-a-64> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "60-a-64";
-	skos:prefLabel "60 a 64".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/60-64> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "60-64";
-	skos:prefLabel "60-64".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/05-a-09> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "05-a-09";
-	skos:prefLabel "05 a 09".
-
-<http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/sin-clasificar> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "sin-clasificar";
-	skos:prefLabel "Sin clasificar".
 
 <http://opendata.aragon.es/kos/iaest/corine-land-cover-2000-nivel-5-descripcion> a skos:ConceptScheme;
 	skos:notation "corine-land-cover-2000-nivel-5-descripcion";
@@ -43367,46 +43441,6 @@
 	skos:notation "una-sociedad";
 	skos:prefLabel "Una sociedad".
 
-<http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion> a skos:ConceptScheme;
-	skos:notation "grupos-1-duracion-demanda-descripcion";
-	rdfs:label "Grupos 1 duración demanda descripción";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/hasta-3-meses>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/mas-de-3-anos>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/de-1-a-2-anos>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/de-3-a-6-meses>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/de-6-a-12-meses>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/de-2-a-3-anos>.
-
-<http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/hasta-3-meses> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion>;
-	skos:notation "hasta-3-meses";
-	skos:prefLabel "Hasta 3 meses".
-
-<http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/mas-de-3-anos> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion>;
-	skos:notation "mas-de-3-anos";
-	skos:prefLabel "Más de 3 años".
-
-<http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/de-1-a-2-anos> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion>;
-	skos:notation "de-1-a-2-anos";
-	skos:prefLabel "De 1 a 2 años".
-
-<http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/de-3-a-6-meses> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion>;
-	skos:notation "de-3-a-6-meses";
-	skos:prefLabel "De 3 a 6 meses".
-
-<http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/de-6-a-12-meses> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion>;
-	skos:notation "de-6-a-12-meses";
-	skos:prefLabel "De 6 a 12 meses".
-
-<http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion/de-2-a-3-anos> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion>;
-	skos:notation "de-2-a-3-anos";
-	skos:prefLabel "De 2 a 3 años".
-
 <http://opendata.aragon.es/kos/iaest/nacionalidad-continente-nombre> a skos:ConceptScheme;
 	skos:notation "nacionalidad-continente-nombre";
 	rdfs:label "Nacionalidad continente nombre";
@@ -56176,40 +56210,6 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/nucleodiseminado>;
 	skos:notation "22173000801-triste";
 	skos:prefLabel "22173000801 - Triste".
-
-<http://opendata.aragon.es/kos/iaest/nacionalidad> a skos:ConceptScheme;
-	skos:notation "nacionalidad";
-	rdfs:label "Nacionalidad";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-comunitarios-ue-28>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-no-comunitarios>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-comunitarios-ue-27>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/espanoles>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/no-consta>.
-
-<http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-comunitarios-ue-28> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
-	skos:notation "extranjeros-comunitarios-ue-28";
-	skos:prefLabel "Extranjeros comunitarios (UE-28)".
-
-<http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-no-comunitarios> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
-	skos:notation "extranjeros-no-comunitarios";
-	skos:prefLabel "Extranjeros no comunitarios".
-
-<http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-comunitarios-ue-27> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
-	skos:notation "extranjeros-comunitarios-ue-27";
-	skos:prefLabel "Extranjeros comunitarios (UE-27)".
-
-<http://opendata.aragon.es/kos/iaest/nacionalidad/espanoles> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
-	skos:notation "espanoles";
-	skos:prefLabel "Españoles".
-
-<http://opendata.aragon.es/kos/iaest/nacionalidad/no-consta> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
-	skos:notation "no-consta";
-	skos:prefLabel "No consta".
 
 <http://opendata.aragon.es/kos/iaest/regtenen-orden> a skos:ConceptScheme;
 	skos:notation "regtenen-orden";

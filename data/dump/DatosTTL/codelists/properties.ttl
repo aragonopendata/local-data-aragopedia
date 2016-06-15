@@ -2879,6 +2879,11 @@ iaest-dimension:cod-temporalidad a qb:DimensionProperty , rdf:Property, qb:Coded
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/cod-temporalidad> .
 
+iaest-measure:mes-y-ano a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Mes y año"@es ;
+	rdfs:comment "Mes y año"@es ;
+	rdfs:range xsd:string .
+
 iaest-dimension:nacionalidad a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Nacionalidad"@es ;
 	rdfs:comment "Nacionalidad"@es ;

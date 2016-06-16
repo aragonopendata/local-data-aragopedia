@@ -1,0 +1,1908 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"description": "These are the APIs available for developers",
+		"version": "0.0.1",
+		"title": "APIs",
+		"termsOfService": "",
+		"contact": {
+			"email": "developer@localidata.com"
+		},
+		"license": {
+			"name": "Apache 2.0",
+			"url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+		}
+	},
+	"host": "opendata.aragon.es",
+	"basePath": "/recurso/iaest",
+	"schemes": ["http"],
+	"paths": {
+		"/observacion.{format}": {
+			"get": {
+				"tags": ["Metadata"],
+				"summary": "Finds all observations",
+				"operationId": "findAllObservations",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's observation",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/ObservationResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/observacion/{idDataset}/{idObservation}.{format}": {
+			"get": {
+				"tags": ["Metadata"],
+				"summary": "Finds one observation",
+				"operationId": "findOneObservation",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's observation",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "idDataset",
+					"in": "path",
+					"description": "Id dataset of observation",
+					"default": "01-010001A",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "idObservation",
+					"in": "path",
+					"description": "Id observation",
+					"default": "01aac844-058d-3bd3-abb8-e481e4b278f1",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/ObservationResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/dsd.{format}": {
+			"get": {
+				"tags": ["Metadata"],
+				"summary": "Finds all dsd",
+				"operationId": "findAllDsd",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dsd",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/DsdAllResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/dsd/{idDataset}.{format}": {
+			"get": {
+				"tags": ["Metadata"],
+				"summary": "Finds one dsd",
+				"operationId": "findOneDsd",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dsd",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "idDataset",
+					"in": "path",
+					"description": "Id dataset of dsd",
+					"default": "03-030006",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/DsdIdResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/property.{format}": {
+			"get": {
+				"tags": ["Metadata"],
+				"summary": "Finds all property",
+				"operationId": "findAllProperty",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's property",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/PropertyResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/dimension.{format}": {
+			"get": {
+				"tags": ["Metadata"],
+				"summary": "Finds all dimension",
+				"operationId": "findAllDimension",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dimension",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/PropertyResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/dimension/{idDimension}.{format}": {
+			"get": {
+				"tags": ["Metadata"],
+				"summary": "Finds one dimension",
+				"operationId": "findOneDimension",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dimension",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "idDimension",
+					"in": "path",
+					"description": "Id dimension",
+					"default": "ascensor",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/PropertyResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/medida.{format}": {
+			"get": {
+				"tags": ["Metadata"],
+				"summary": "Finds all measure",
+				"operationId": "findAllMeasure",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's measure",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/PropertyResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/medida/{idMeasure}.{format}": {
+			"get": {
+				"tags": ["Metadata"],
+				"summary": "Finds one measure",
+				"operationId": "findOneMeasure",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's measure",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "idMeasure",
+					"in": "path",
+					"description": "Id measure",
+					"default": "total-viviendas",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/PropertyResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/dataset.{format}": {
+			"get": {
+				"tags": ["Metadata"],
+				"summary": "Finds all dataset",
+				"operationId": "findAllDataset",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dataset",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/DatasetResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+
+		},
+		"/dataset/titulo/{varTitulo}.{format}": {
+			"get": {
+				"tags": ["Metadata"],
+				"summary": "Finds all dataset",
+				"operationId": "findAllDataset",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dataset",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "varTitulo",
+					"in": "path",
+					"description": "Title of dataset",
+					"default": "vivienda",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/DatasetResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+
+		},
+		"/dataset/{idDataset}.{format}": {
+			"get": {
+				"tags": ["Metadata"],
+				"summary": "Finds all dataset",
+				"operationId": "findAllDataset",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dataset",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "idDataset",
+					"in": "path",
+					"description": "Id dataset",
+					"default": "01-010002TM",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/DatasetResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/cubosdimension/{dimension}/{valor}.{format}": {
+			"get": {
+				"tags": ["Datacube"],
+				"summary": "Find datasets with a dimension and value specific",
+				"operationId": "DatasetByDimesionAndValue",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dataset",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "dimension",
+					"in": "path",
+					"description": "Dimension to filter",
+					"default": "regimen-de-tenencia-agregado",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "valor",
+					"in": "path",
+					"description": "Value of dimension",
+					"default": "otra-forma",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/DatasetResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/cubosmedida/{mesure}/{value}.{format}": {
+			"get": {
+				"tags": ["Datacube"],
+				"summary": "Find datasets with a mesure and value specific",
+				"operationId": "DatasetByMEsureAndValue",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dataset",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "mesure",
+					"in": "path",
+					"description": "Mesure to filter",
+					"default": "urbano-superficie",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "value",
+					"in": "path",
+					"description": "Value of mesure",
+					"default": "9",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/DatasetResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/cubosdimensionvalor/{value}.{format}": {
+			"get": {
+				"tags": ["Datacube"],
+				"summary": "Find datasets with a dimension's value specific",
+				"operationId": "datasetsDimensionByValue",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dataset",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "value",
+					"in": "path",
+					"description": "Value of dimension",
+					"default": "familiar",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/DatasetResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/cubosmedidavalor/{value}.{format}": {
+			"get": {
+				"tags": ["Datacube"],
+				"summary": "Find datasets with a mesure's value specific",
+				"operationId": "datasetsMesureByValue",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dataset",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "value",
+					"in": "path",
+					"description": "Value of mesure",
+					"default": "9",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/DatasetResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/cubosdimensionpropiedad/{dimension}.{format}": {
+			"get": {
+				"tags": ["Datacube"],
+				"summary": "Find datasets with a dimension specific",
+				"operationId": "datasetsByDimension",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dataset",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "dimension",
+					"in": "path",
+					"description": "Dimension of dataset to filter",
+					"default": "numero-habitaciones",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/DatasetResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/cubosmedidapropiedad/{mesure}.{format}": {
+			"get": {
+				"tags": ["Datacube"],
+				"summary": "Find datasets with a mesure specific",
+				"operationId": "datasetsByMesure",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dataset",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "mesure",
+					"in": "path",
+					"description": "Mesure of dataset to filter",
+					"default": "urbana",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/DatasetResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/cubosarea/{value}.{format}": {
+			"get": {
+				"tags": ["Datacube"],
+				"summary": "Find datasets with a area specific",
+				"operationId": "datasetsByArea",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dataset",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "value",
+					"in": "path",
+					"description": "Value of area to filter",
+					"default": "La_Jacetania",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/DatasetResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/cubosareacomarca.{format}": {
+			"get": {
+				"tags": ["Datacube"],
+				"summary": "Find datasets with regions",
+				"operationId": "datasetsByArea",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dataset",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/DatasetResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/cubosareamunicipio.{format}": {
+			"get": {
+				"tags": ["Datacube"],
+				"summary": "Find datasets with municipalities",
+				"operationId": "datasetsByArea",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dataset",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/DatasetResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/cubosareaprovincia.{format}": {
+			"get": {
+				"tags": ["Datacube"],
+				"summary": "Find datasets with provinces",
+				"operationId": "datasetsByArea",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dataset",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/DatasetResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		},
+		"/cubosareacomunidad.{format}": {
+			"get": {
+				"tags": ["Datacube"],
+				"summary": "Find datasets with communities",
+				"operationId": "datasetsByArea",
+				"produces": ["text/html"],
+				"parameters": [{
+					"name": "format",
+					"in": "path",
+					"description": "Format's dataset",
+					"required": true,
+					"type": "string",
+					"enum": ["json", "xml", "ttl", "html"]
+				}, {
+					"name": "_view",
+					"in": "query",
+					"description": "A view is a set field that you can see",
+					"default": "list",
+					"required": false,
+					"type": "string",
+					"enum": ["all", "basic", "description"]
+				}, {
+					"name": "_pageSize",
+					"in": "query",
+					"description": "With this param you can set the number of results for page. The max value is 50.",
+					"default": 10,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "_page",
+					"in": "query",
+					"description": "The number of page that you want to see. The first page is 0.",
+					"default": 0,
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "Application's api key",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation",
+						"schema": {
+							"$ref": "#/definitions/DatasetResponse"
+						}
+					},
+					"400": {
+						"description": "Invalid status value"
+					}
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"api_key": {
+			"type": "apiKey",
+			"name": "api_key",
+			"in": "header"
+		}
+	},
+	"definitions": {
+		"ObservationResponse": {
+			"type": "object",
+			"required": ["format", "version", "result"],
+			"properties": {
+				"format": {
+					"type": "string",
+					"description": "format"
+				},
+				"version": {
+					"type": "string",
+					"format": "version"
+				},
+				"result": {
+					"$ref": "#/definitions/ObservationResult"
+				}
+			},
+			"xml": {
+				"name": "ObservationResponse"
+			}
+		},
+		"DsdAllResponse": {
+			"type": "object",
+			"required": ["format", "version", "result"],
+			"properties": {
+				"format": {
+					"type": "string",
+					"description": "format"
+				},
+				"version": {
+					"type": "string",
+					"format": "version"
+				},
+				"result": {
+					"$ref": "#/definitions/DsdAllResult"
+				}
+			},
+			"xml": {
+				"name": "DsdResponse"
+			}
+		},
+		"DsdIdResponse": {
+			"type": "object",
+			"required": ["format", "version", "result"],
+			"properties": {
+				"format": {
+					"type": "string",
+					"description": "format"
+				},
+				"version": {
+					"type": "string",
+					"format": "version"
+				},
+				"result": {
+					"$ref": "#/definitions/DsdIdResult"
+				}
+			},
+			"xml": {
+				"name": "DsdResponse"
+			}
+		},
+		"PropertyResponse": {
+			"type": "object",
+			"required": ["format", "version", "result"],
+			"properties": {
+				"format": {
+					"type": "string",
+					"description": "format"
+				},
+				"version": {
+					"type": "string",
+					"format": "version"
+				},
+				"result": {
+					"$ref": "#/definitions/PropertyResult"
+				}
+			},
+			"xml": {
+				"name": "PropertyResponse"
+			}
+		},
+		"DatasetResponse": {
+			"type": "object",
+			"required": ["format", "version", "result"],
+			"properties": {
+				"format": {
+					"type": "string",
+					"description": "format"
+				},
+				"version": {
+					"type": "string",
+					"format": "version"
+				},
+				"result": {
+					"$ref": "#/definitions/DatasetResult"
+				}
+			},
+			"xml": {
+				"name": "DatasetResponse"
+			}
+		},
+		"ObservationResult": {
+			"type": "object",
+			"required": ["format", "version", "items"],
+			"properties": {
+				"_about": {
+					"type": "string",
+					"description": "URL of the call"
+				},
+				"first": {
+					"type": "string",
+					"description": "URL of the first page"
+				},
+				"items": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Observation"
+					}
+				},
+				"itemsPerPage": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"next": {
+					"type": "string",
+					"description": "URL of the next page"
+				},
+				"page": {
+					"type": "string",
+					"description": "URL of the call"
+				},
+				"prev": {
+					"type": "string",
+					"description": "URL of the previous page"
+				},
+				"startIndex": {
+					"type": "integer",
+					"format": "int32"
+				}
+			},
+			"xml": {
+				"name": "ObservationResult"
+			}
+		},
+		"DsdAllResult": {
+			"type": "object",
+			"required": ["format", "version", "items"],
+			"properties": {
+				"_about": {
+					"type": "string",
+					"description": "URL of the call"
+				},
+				"first": {
+					"type": "string",
+					"description": "URL of the first page"
+				},
+				"items": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/DsdAll"
+					}
+				},
+				"itemsPerPage": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"next": {
+					"type": "string",
+					"description": "URL of the next page"
+				},
+				"page": {
+					"type": "string",
+					"description": "URL of the call"
+				},
+				"prev": {
+					"type": "string",
+					"description": "URL of the previous page"
+				},
+				"startIndex": {
+					"type": "integer",
+					"format": "int32"
+				}
+			},
+			"xml": {
+				"name": "DsdAllResult"
+			}
+		},
+		"DsdIdResult": {
+			"type": "object",
+			"required": ["format", "version", "items"],
+			"properties": {
+				"_about": {
+					"type": "string",
+					"description": "URL of the call"
+				},
+				"first": {
+					"type": "string",
+					"description": "URL of the first page"
+				},
+				"items": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Property"
+					}
+				},
+				"itemsPerPage": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"next": {
+					"type": "string",
+					"description": "URL of the next page"
+				},
+				"page": {
+					"type": "string",
+					"description": "URL of the call"
+				},
+				"prev": {
+					"type": "string",
+					"description": "URL of the previous page"
+				},
+				"startIndex": {
+					"type": "integer",
+					"format": "int32"
+				}
+			},
+			"xml": {
+				"name": "DsdIdResult"
+			}
+		},
+		"PropertyResult": {
+			"type": "object",
+			"required": ["format", "version", "items"],
+			"properties": {
+				"_about": {
+					"type": "string",
+					"description": "URL of the call"
+				},
+				"first": {
+					"type": "string",
+					"description": "URL of the first page"
+				},
+				"items": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Property"
+					}
+				},
+				"itemsPerPage": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"next": {
+					"type": "string",
+					"description": "URL of the next page"
+				},
+				"page": {
+					"type": "string",
+					"description": "URL of the call"
+				},
+				"prev": {
+					"type": "string",
+					"description": "URL of the previous page"
+				},
+				"startIndex": {
+					"type": "integer",
+					"format": "int32"
+				}
+			},
+			"xml": {
+				"name": "PropertyResult"
+			}
+		},
+		"DatasetResult": {
+			"type": "object",
+			"required": ["format", "version", "items"],
+			"properties": {
+				"_about": {
+					"type": "string",
+					"description": "URL of the call"
+				},
+				"first": {
+					"type": "string",
+					"description": "URL of the first page"
+				},
+				"items": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Dataset"
+					}
+				},
+				"itemsPerPage": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"next": {
+					"type": "string",
+					"description": "URL of the next page"
+				},
+				"page": {
+					"type": "string",
+					"description": "URL of the call"
+				},
+				"prev": {
+					"type": "string",
+					"description": "URL of the previous page"
+				},
+				"startIndex": {
+					"type": "integer",
+					"format": "int32"
+				}
+			},
+			"xml": {
+				"name": "DatasetResult"
+			}
+		},
+		"Observation": {
+			"type": "object",
+			"required": ["_about"],
+			"properties": {
+				"_about": {
+					"type": "String",
+					"description": "URI of the Observation",
+					"example": "http://opendata.aragon.es/recurso/iaest/observacion/XX-XXXXXXX/yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+				},
+				"type": {
+					"type": "Object"
+				}
+			}
+		},
+		"DsdAll": {
+			"type": "object",
+			"required": ["_about"],
+			"properties": {
+				"_about": {
+					"type": "String",
+					"description": "URI of the Observation",
+					"example": "http://opendata.aragon.es/recurso/iaest/dsd/01-010002"
+				},
+				"label": {
+					"type": "String",
+					"description": "label of dsd",
+					"example": "Estructura de los cubos de datos que se corresponden con los informes 01-010002"
+				},
+				"skos:notation": {
+					"type": "String",
+					"description": "notation of dsd"
+				},
+				"type": {
+					"type": "Object"
+				}
+			}
+		},
+		"DsdId": {
+			"type": "object",
+			"required": ["_about"],
+			"properties": {
+				"_about": {
+					"type": "String",
+					"description": "URI of the Observation",
+					"example": "http://opendata.aragon.es/recurso/iaest/dsd/03-030006"
+				},
+				"label": {
+					"type": "String",
+					"description": "label of dsd",
+					"example": "Estructura de los cubos de datos que se corresponden con los informes XX-XXXXXX"
+				},
+				"skos:notation": {
+					"type": "String",
+					"description": "notation of dsd"
+				},
+				"type": {
+					"type": "Object"
+				}
+			}
+		},
+		"Property": {
+			"type": "object",
+			"required": ["_about"],
+			"properties": {
+				"_about": {
+					"type": "String",
+					"description": "URI of the Observation",
+					"example": "http://opendata.aragon.es/def/iaest/dimension#regimen-de-tenencia-agregado"
+				},
+				"comment": {
+					"type": "String",
+					"description": "comment of property",
+					"example": "Régimen de tenencia (agregado)"
+				},
+				"label": {
+					"type": "String",
+					"description": "label of property",
+					"example": "Régimen de tenencia (agregado)"
+				},
+				"qb_codeList": {
+					"type": "String",
+					"description": "URI of the codeList",
+					"example": "http://opendata.aragon.es/kos/iaest/regimen-de-tenencia-agregado"
+				},
+				"range": {
+					"type": "String",
+					"description": "URI of the range",
+					"example": "http://www.w3.org/2004/02/skos/core#Concept"
+				}
+			}
+		},
+		"Dataset": {
+			"type": "object",
+			"required": ["_about"],
+			"properties": {
+				"_about": {
+					"type": "String",
+					"description": "URI of the Dataset",
+					"example": "http://opendata.aragon.es/recurso/iaest/dataset/01-080101-010108TM"
+				},
+				"comment": {
+					"type": "String",
+					"description": "comment of dataset",
+					"example": "Cubo de datos para 01-080101-010108TM"
+				},
+				"label": {
+					"type": "String",
+					"description": "label of dataset",
+					"example": "Cubo de datos para 01-080101-010108TM"
+				},
+				"modified": {
+					"type": "String",
+					"description": "Last modification of dataset",
+					"example": "Wed, 16 Mar 2016"
+				},
+				"structure": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Dsd"
+					}
+				},
+				"type": {
+					"type": "Object"
+				}
+			}
+		}
+	},
+	"externalDocs": {
+		"description": "",
+		"url": ""
+	}
+}
+
+
+
+
+
+
+
+

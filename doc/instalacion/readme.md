@@ -19,11 +19,13 @@
 10.4. Ejecutaremos los siguientes comandos en el directorio local-data-aragopedia:
 10.4.1. Para este paso vamos a necesitar un usuario de github que pueda hacer commit en el repositorio http://github.com/aragonopendata/local-data-aragopedia.git
 10.4.2. git config credential.helper store
-10.4.3. git add .
-10.4.4. git commit -m "Actualización  automática $(date)"
-10.4.5. git push origin master
-10.4.6. Insertamos el usuario de github
-10.4.7. Insertamos la contraseña github
+10.4.3. git config --global user.email "you@example.com"
+10.4.4. git config --global user.name "Your Name"
+10.4.5. git add .
+10.4.6. git commit -m "Actualización  automática $(date)"
+10.4.7. git push origin master
+10.4.8. Insertamos el usuario de github
+10.4.9. Insertamos la contraseña github
 11. Ejecutaremos el script home/datacube/GenerateAllRDFandLoad.sh
 12. Se revisará el log para ver que no hay nada excepciones que paren el proceso.
 13. Ejecutaremos el script home/datacube/UpdateRDFandLoad.sh

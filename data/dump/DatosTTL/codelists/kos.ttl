@@ -1,4 +1,4 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -1038,40 +1038,6 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/subespecie-ganaderia-descripcion>;
 	skos:notation "otras-aves-pavos-patos-ocas-perdices-codornices-pintadas";
 	skos:prefLabel "Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)".
-
-<http://opendata.aragon.es/kos/iaest/nacionalidad> a skos:ConceptScheme;
-	skos:notation "nacionalidad";
-	rdfs:label "Nacionalidad";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-comunitarios-ue-28>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-no-comunitarios>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-comunitarios-ue-27>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/espanoles>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/no-consta>.
-
-<http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-comunitarios-ue-28> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
-	skos:notation "extranjeros-comunitarios-ue-28";
-	skos:prefLabel "Extranjeros comunitarios (UE-28)".
-
-<http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-no-comunitarios> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
-	skos:notation "extranjeros-no-comunitarios";
-	skos:prefLabel "Extranjeros no comunitarios".
-
-<http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-comunitarios-ue-27> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
-	skos:notation "extranjeros-comunitarios-ue-27";
-	skos:prefLabel "Extranjeros comunitarios (UE-27)".
-
-<http://opendata.aragon.es/kos/iaest/nacionalidad/espanoles> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
-	skos:notation "espanoles";
-	skos:prefLabel "Españoles".
-
-<http://opendata.aragon.es/kos/iaest/nacionalidad/no-consta> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
-	skos:notation "no-consta";
-	skos:prefLabel "No consta".
 
 <http://opendata.aragon.es/kos/iaest/tipo-de-vivienda> a skos:ConceptScheme;
 	skos:notation "tipo-de-vivienda";
@@ -4171,32 +4137,22 @@
 	skos:notation "horas-trabajadas";
 	rdfs:label "Horas trabajadas";
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/horas-trabajadas/01-10>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/horas-trabajadas/41-50-horas>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/horas-trabajadas/11-20-horas>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/horas-trabajadas/>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/horas-trabajadas/11-20>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/horas-trabajadas/mas-de-50>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/horas-trabajadas/21-30-horas>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/horas-trabajadas/41-50>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/horas-trabajadas/mas-de-50-horas>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/horas-trabajadas/21-30>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/horas-trabajadas/31-40>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/horas-trabajadas/31-40-horas>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/horas-trabajadas/01-10-horas>.
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/horas-trabajadas/31-40>.
 
 <http://opendata.aragon.es/kos/iaest/horas-trabajadas/01-10> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/horas-trabajadas>;
 	skos:notation "01-10";
 	skos:prefLabel "01-10".
 
-<http://opendata.aragon.es/kos/iaest/horas-trabajadas/41-50-horas> a skos:Concept;
+<http://opendata.aragon.es/kos/iaest/horas-trabajadas/> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/horas-trabajadas>;
-	skos:notation "41-50-horas";
-	skos:prefLabel "41-50 horas".
-
-<http://opendata.aragon.es/kos/iaest/horas-trabajadas/11-20-horas> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/horas-trabajadas>;
-	skos:notation "11-20-horas";
-	skos:prefLabel "11-20 horas".
+	skos:notation "";
+	skos:prefLabel "".
 
 <http://opendata.aragon.es/kos/iaest/horas-trabajadas/11-20> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/horas-trabajadas>;
@@ -4208,20 +4164,10 @@
 	skos:notation "mas-de-50";
 	skos:prefLabel "Más de 50".
 
-<http://opendata.aragon.es/kos/iaest/horas-trabajadas/21-30-horas> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/horas-trabajadas>;
-	skos:notation "21-30-horas";
-	skos:prefLabel "21-30 horas".
-
 <http://opendata.aragon.es/kos/iaest/horas-trabajadas/41-50> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/horas-trabajadas>;
 	skos:notation "41-50";
 	skos:prefLabel "41-50".
-
-<http://opendata.aragon.es/kos/iaest/horas-trabajadas/mas-de-50-horas> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/horas-trabajadas>;
-	skos:notation "mas-de-50-horas";
-	skos:prefLabel "Más de 50 horas".
 
 <http://opendata.aragon.es/kos/iaest/horas-trabajadas/21-30> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/horas-trabajadas>;
@@ -4232,16 +4178,6 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/horas-trabajadas>;
 	skos:notation "31-40";
 	skos:prefLabel "31-40".
-
-<http://opendata.aragon.es/kos/iaest/horas-trabajadas/31-40-horas> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/horas-trabajadas>;
-	skos:notation "31-40-horas";
-	skos:prefLabel "31-40 horas".
-
-<http://opendata.aragon.es/kos/iaest/horas-trabajadas/01-10-horas> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/horas-trabajadas>;
-	skos:notation "01-10-horas";
-	skos:prefLabel "01-10 horas".
 
 <http://opendata.aragon.es/kos/iaest/tipo-de-hogar> a skos:ConceptScheme;
 	skos:notation "tipo-de-hogar";
@@ -10138,6 +10074,40 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-de-alojamiento>;
 	skos:notation "campings-y-areas-de-acampada";
 	skos:prefLabel "Campings y áreas de acampada".
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad> a skos:ConceptScheme;
+	skos:notation "nacionalidad";
+	rdfs:label "Nacionalidad";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-comunitarios-ue-28>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-no-comunitarios>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-comunitarios-ue-27>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/espanoles>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/nacionalidad/no-consta>.
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-comunitarios-ue-28> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
+	skos:notation "extranjeros-comunitarios-ue-28";
+	skos:prefLabel "Extranjeros comunitarios (UE-28)".
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-no-comunitarios> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
+	skos:notation "extranjeros-no-comunitarios";
+	skos:prefLabel "Extranjeros no comunitarios".
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad/extranjeros-comunitarios-ue-27> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
+	skos:notation "extranjeros-comunitarios-ue-27";
+	skos:prefLabel "Extranjeros comunitarios (UE-27)".
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad/espanoles> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
+	skos:notation "espanoles";
+	skos:prefLabel "Españoles".
+
+<http://opendata.aragon.es/kos/iaest/nacionalidad/no-consta> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad>;
+	skos:notation "no-consta";
+	skos:prefLabel "No consta".
 
 <http://opendata.aragon.es/kos/iaest/regimen-2-digitos> a skos:ConceptScheme;
 	skos:notation "regimen-2-digitos";

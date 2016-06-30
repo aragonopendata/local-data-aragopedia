@@ -1,5 +1,7 @@
 package com.localidata.generic;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -7,6 +9,7 @@ import org.apache.log4j.PropertyConfigurator;
 
 import com.localidata.extract.GenerateCSV;
 import com.localidata.process.GenerateRDF;
+import com.localidata.process.TransformToRDF;
 import com.localidata.transform.GenerateConfig;
 
 /**
@@ -17,7 +20,10 @@ import com.localidata.transform.GenerateConfig;
 public class Process {
 
 	public static void main(String[] args) {
-
+		
+		Logger log = Logger.getLogger(Process.class);
+		PropertyConfigurator.configure("log4j.properties");
+		
 		if (args[0].equals("config")) {
 			GenerateConfig.main(args);
 		} else if (args[0].equals("data")) {
@@ -26,11 +32,33 @@ public class Process {
 			GenerateCSV.main(args);			
 		} else if (args[0].equals("createIssue")) {	
 			GithubApi.main(args);	
-		} else if (args[0].equals("update")) {
-			Logger log = Logger.getLogger(Process.class);
-			PropertyConfigurator.configure("log4j.properties");
+			log.info("Prueba creando una issue en GitHub superada");
+		} else if (args[0].equals("googleDrive")) {
+			GoogleDriveAPI drive = new GoogleDriveAPI();
+			drive.init();
+			drive.downloadFile("", Prop.fileHashCSV, Constants.CSV);
+			log.info("Prueba descargando un fichero de Google Drive superada");
+		} else if (args[0].equals("generateHash")) {
+			GenerateCSV app = new GenerateCSV(args[1], args[2]);
+			app.generateHashCodeFromBI();
+		} else if (args[0].equals("commonData")) {
+			GenerateRDF rdf = new GenerateRDF(args[2], args[4], args[3], args[1], args[5]);
+			rdf.readConfig(null);
+			rdf.delete();
+			rdf.generateCommonData();
+			rdf.writeSkosTTL();
+			rdf.zipFiles();
+		} else if (args[0].equals("configTest")) {
 			Prop.loadConf();
-			log.info("Init update");
+			log.info("Init configTest");
+			
+			GenerateConfig config = new GenerateConfig(args[2], "", args[3], args[1]);
+			config.updateConfig(new ArrayList(), new ArrayList(), new HashMap());
+			
+			log.info("End configTest");
+			
+		} else if (args[0].equals("update")) {
+			
 			GenerateCSV csv = new GenerateCSV(args[1], args[2]);
 			csv.extractFiles();
 
@@ -41,7 +69,7 @@ public class Process {
 				GenerateRDF rdf = new GenerateRDF(args[2], args[4], args[3], args[1], args[5]);
 				rdf.readConfig(csv.getIdDescription());
 				
-				GenerateConfig config = new GenerateConfig(args[2], "", args[3]);
+				GenerateConfig config = new GenerateConfig(args[2], "", args[3], args[1]);
 				config.updateConfig(csv.getChanges(), csv.getNews(), rdf.getMapconfig());
 
 				if (csv.getNews().size() == 0 && config.getFilesNotRDF().size() == csv.getChanges().size()) {

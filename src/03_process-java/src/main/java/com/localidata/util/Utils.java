@@ -23,6 +23,7 @@ import java.security.NoSuchAlgorithmException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -325,6 +326,7 @@ public class Utils {
 			cadidateUrl = "http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/";
 			ttl = getComunidadAragon();
 		}
+		
 		if (valueCell.contains("Torla-Ordesa")) {
 			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". " + valueCell + " instead of Torla");
 			cadidateUrl += "Torla";
@@ -336,16 +338,31 @@ public class Utils {
 			cadidateUrl += "Biel";
 		} else if (valueCell.contains("Sin_clasificar")) {
 			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell);
+			cadidateUrl="";
 		} else {
 			cadidateUrl += valueCell;
 		}
 
-		if (!ttl.contains(cadidateUrl)) {
-			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell + " NOT FOUND");
-			log.error("URL no encontrada para: " + header + " | " + cleanCell);
-			log.error(cadidateUrl);
-			log.debug("Error en getUrlRefArea cadidateUrl " + cadidateUrl + " response " + ttl);
-			return "\"" + valueCell + "\"";
+		if (!ttl.contains("<"+cadidateUrl+">")) {
+//			try {
+//				String candidate =  "http://es.dbpedia.org/data/"+valueCell;
+//				if(!Utils.processURLGet(candidate+".ntriples").contains("Empty")){
+//					cadidateUrl = candidate;
+//					log.info("cadidateUrl "+cadidateUrl);
+//				}
+//				else{
+					TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell + " NOT FOUND");
+					log.error("URL no encontrada para: " + header + " | " + cleanCell);
+					log.debug("Error en getUrlRefArea cadidateUrl " + cadidateUrl + " response " + ttl);
+					cadidateUrl="";
+					return cadidateUrl;
+//				}
+//			} catch (IOException e) {
+//				log.error("Error al procesar región en dbpedia",e);
+//				cadidateUrl="";
+//				return cadidateUrl;
+//			}
+			
 		}
 
 		return "<" + cadidateUrl + ">";
@@ -826,7 +843,19 @@ public class Utils {
 
 		StringBuffer sb = new StringBuffer();
 		MessageDigest md = null;
-
+		
+		ArrayList<String> lineas = new ArrayList<>();
+		String[] splitOriginal = original.split(System.lineSeparator());
+		for(int h=0;h<splitOriginal.length;h++){
+			lineas.add(splitOriginal[h]);
+		}
+		Collections.sort(lineas);
+		
+		String originalOrdenado = "";
+		for(String line : lineas){
+			originalOrdenado += line+System.lineSeparator();
+		}
+		
 		try {
 			md = MessageDigest.getInstance("MD5");
 		} catch (NoSuchAlgorithmException e) {
@@ -834,7 +863,7 @@ public class Utils {
 		}
 
 		if (md != null) {
-			md.update(original.getBytes());
+			md.update(originalOrdenado.getBytes());
 			byte[] digest = md.digest();
 
 			for (byte b : digest) {

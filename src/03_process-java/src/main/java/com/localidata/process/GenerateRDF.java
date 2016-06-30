@@ -107,7 +107,8 @@ public class GenerateRDF {
 					areas += "TP ";
 				}
 				if (id.contains("A")) {
-					id = id.replace("A", "");
+					
+					id = id.substring(0, id.lastIndexOf("A"))+id.substring(id.lastIndexOf("A")+1, id.length());
 					configBean.getLetters().add("A");
 					areas += "A ";
 				}
@@ -572,7 +573,7 @@ public class GenerateRDF {
 		File inputDirectoryFile = new File(inputDirectoryString);
 		File propertiesFile = new File(outputDirectoryString + File.separator + "DatosTTL" + File.separator + "codelists" + File.separator + "properties.ttl");
 		File dsdFile = new File(outputDirectoryString + File.separator + "DatosTTL" + File.separator + "dataStructures" + File.separator + "dsd.ttl");
-		File errorReportFile = new File(outputDirectoryString + File.separator + "errorReport.txt");
+		File errorReportFile = new File("errorReport.txt");
 
 		TransformToRDF.propertiesContent.append(TransformToRDF.addPrefix());
 		Utils.stringToFileAppend(TransformToRDF.addPrefix().toString(), dsdFile);
@@ -618,7 +619,17 @@ public class GenerateRDF {
 		log.debug("End extractInformation");
 		return result;
 	}
-
+	
+	public void generateCommonData(){
+		
+		File propertiesFile = new File(outputDirectoryString + File.separator + "DatosTTL" + File.separator + "codelists" + File.separator + "properties.ttl");
+		File dsdFile = new File(outputDirectoryString + File.separator + "DatosTTL" + File.separator + "dataStructures" + File.separator + "dsd.ttl");
+		File errorReportFile = new File("errorReport.txt");
+		TransformToRDF transformToRDF = new TransformToRDF(propertiesFile, dsdFile, errorReportFile, specsTtlFileString);
+		transformToRDF.generateCommonData(mapconfig, idDescription);
+		
+	}
+	
 	public void backup() {
 		log.debug("Init backup");
 		log.info("Comienza a hacerse el backup");
@@ -727,13 +738,7 @@ public class GenerateRDF {
 			app.writeSkosTTL();
 			app.zipFiles();
 			log.info("Finish process");
-		} else {
-			log.info("Se deben de pasar dos parámetros: ");
-			log.info("La cadena de texto data ");
-			log.info("\tEl directorio donde están los archivos de entrada");
-			log.info("\tEl directorio donde se van a escribir los archivos ttl");
-			log.info("\tEl directorio donde están los excel de configuación");
-		}
+		} 
 
 	}
 }

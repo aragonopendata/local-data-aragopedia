@@ -431,7 +431,6 @@ public class GenerateCSV {
 	public static void main(String[] args) {
 		if ((log == null) || (log.getLevel() == null))
 			PropertyConfigurator.configure("log4j.properties");
-		if (args.length == 3) {
 			log.info("Start process");
 			Prop.loadConf();
 			GenerateCSV app = new GenerateCSV(args[1], args[2]);
@@ -442,10 +441,6 @@ public class GenerateCSV {
 				app.generateHashCodeFromBI();
 			}
 			log.info("Finish process");
-		} else {
-			log.info("Se deben de pasar dos parámetros: ");
 		}
-
-	}
 
 }

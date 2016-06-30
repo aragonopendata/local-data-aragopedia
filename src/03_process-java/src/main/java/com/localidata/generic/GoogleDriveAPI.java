@@ -94,8 +94,6 @@ public class GoogleDriveAPI {
 			@Override
 			public void initialize(HttpRequest httpRequest) throws IOException {
 
-				httpRequest.setConnectTimeout(300 * 60000);
-				httpRequest.setReadTimeout(300 * 60000);
 
 			}
 		};
@@ -296,29 +294,20 @@ public class GoogleDriveAPI {
 
 	public File searchFile(String name) {
 		log.debug("init listOwnerFiles()");
-		FileList result;
-		List<File> files = new ArrayList<>();
+//		FileList result;
+		List<ChildReference> list = listFolderFiles(Prop.idParentFolder);
 		File file = null;
-		com.google.api.services.drive.Drive.Files.List request = null;
-
-		try {
-			request = drive.files().list().setMaxResults(1000);
-			result = request.execute();
-			files.addAll(result.getItems());
-
-		} catch (Exception e) {
-			log.error("Error list files", e);
-		}
-
-		if (files == null || files.size() == 0) {
-			log.error("No files found");
-		} else {
-			log.debug("Files:\n");
-			for (File fileAux : files) {
-				if (fileAux.getShared() == true && fileAux.getTitle().contains(name)) {
-					file = fileAux;
-					break;
+		
+		for (ChildReference child : list) {
+			try {
+				file = drive.files().get(child.getId()).execute();
+				if(file!=null){
+					if (file.getShared() == true && file.getTitle().contains(name)) {
+						break;
+					}
 				}
+			} catch (IOException e) {
+				log.error("Error read file "+name+" in google Drive API",e);
 			}
 		}
 

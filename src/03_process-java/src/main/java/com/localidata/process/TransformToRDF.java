@@ -145,7 +145,7 @@ public class TransformToRDF {
 		StringBuffer result = new StringBuffer();
 		String url = Prop.host + "/" + Prop.eldaName + "/" + Prop.datasetName;
 		cubo = url + "/dataset/" + fileName;
-		result.append("<" + cubo + "> a qb:DataSet;\n");
+		result.append("<" + cubo + "> a qb:dataSet;\n");
 		result.append("\tqb:structure <" + dsd + ">;\n");
 		result.append("\trdfs:label \"" + decription + "\"@es ;\n");
 		result.append("\tdct:identifier  \"" + fileName + "\" ;\n");
@@ -186,7 +186,7 @@ public class TransformToRDF {
 		}
 		String id = Utils.genUUIDHash(cleanLine);
 		result.append("<" + Prop.host + "/" + Prop.eldaName + "/" + Prop.datasetName + "/observacion/" + fileName + "/" + id + "> a qb:Observation ;" + "\n");
-		result.append("\tqb:DataSet <" + cubo + ">; \n");
+		result.append("\tqb:dataSet <" + cubo + ">; \n");
 
 		String[] cells = cleanLine.split("\t");
 		int col = 1;
@@ -237,8 +237,11 @@ public class TransformToRDF {
 									TransformToRDF.insertError(fileName + ". WARNING. Column " + header + ". MIXED CODE AND VALUE");
 									cell = cell.substring(cell.indexOf("-") + 1, cell.length());
 								}
-								String urlRefArea = Utils.getUrlRefArea(header, cell, fileName);
-								result.append("\t" + dataBean.getDimensionMesureSDMX() + ":refArea " + urlRefArea + " ;" + "\n");
+								if(Utils.v(cell)){
+									String urlRefArea = Utils.getUrlRefArea(header, cell, fileName);
+									if(Utils.v(urlRefArea))
+										result.append("\t" + dataBean.getDimensionMesureSDMX() + ":refArea " + urlRefArea + " ;" + "\n");
+								}
 							}
 
 						}
@@ -304,7 +307,9 @@ public class TransformToRDF {
 
 			resultado = Prop.host + "/" + Prop.eldaName + "/" + Prop.datasetName + "/dsd/" + config.getId();
 			aux = "<" + resultado + "> a qb:DataStructureDefinition ;" + "\n";
-			String description = idDescription.get(config.getId() + config.getLetters().get(0)) != null ? idDescription.get(config.getId() + config.getLetters().get(0)) : "";
+			String description = "";
+			if(config!=null && config.getId()!=null && config.getLetters()!=null && config.getLetters().size()>0)
+				description = idDescription.get(config.getId() + config.getLetters().get(0)) != null ? idDescription.get(config.getId() + config.getLetters().get(0)) : "";
 			aux = aux + "\trdfs:label \"Estructura de los cubos de datos que se corresponden con los informes " + config.getId() + ", " + description + "\"@es ;" + "\n";
 			String notation = "\"DSD-" + config.getId() + "\"";
 			aux = aux + "\tskos:notation " + notation + " ;" + "\n";

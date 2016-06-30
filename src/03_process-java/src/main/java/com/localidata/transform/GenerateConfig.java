@@ -32,6 +32,7 @@ public class GenerateConfig {
 	private final static Logger log = Logger.getLogger(GenerateConfig.class);
 	protected String inputDirectoryString = "D:\\trabajo\\gitOpenDataAragon2\\doc\\iaest\\DatosPrueba2";
 	public static String configDirectoryString = "";
+	private String urlsFileString = "";
 	protected String dimensionDirectoryString = "D:\\trabajo\\gitOpenDataAragon2\\doc\\iaest\\DimensionesFinales\\PosiblesDimensionesMenos20Valores";
 	protected String[] extensions = new String[] { "csv", "txt" };
 	public static HashMap<String, DataBean> skosExtrated = new HashMap<String, DataBean>();
@@ -41,10 +42,11 @@ public class GenerateConfig {
 	private HashMap<File, ArrayList<File>> mappingGenerated = new HashMap<>();
 	private HashSet<String> filesNotRDF = new HashSet<>();
 
-	public GenerateConfig(String input, String dimension, String config) {
+	public GenerateConfig(String input, String dimension, String config, String urls) {
 		inputDirectoryString = input;
 		dimensionDirectoryString = dimension;
 		configDirectoryString = config;
+		urlsFileString = urls;
 	}
 
 
@@ -501,9 +503,13 @@ public class GenerateConfig {
 
 			try {
 				com.google.api.services.drive.model.File f = drive.searchFile(id);
-				File fileDrive = drive.downloadFile("config", f, Constants.CSV);
-				if (fileDrive == null)
+				File fileDrive = drive.downloadFile(configDirectoryString, f, Constants.CSV);
+				if (fileDrive == null){
+					log.info("Error al descargar "+id+" f "+f+" configDirectoryString "+configDirectoryString+" fileDrive "+fileDrive);
 					continue;
+				}
+					
+				
 				List<String> csvLinesDrive = FileUtils.readLines(fileDrive, "UTF-8");
 				List cellsDriveList = new ArrayList();
 				String lineClean = csvLinesDrive.get(0);
@@ -558,8 +564,13 @@ public class GenerateConfig {
 						for (String letter : lettersList) {
 							filesNotRDF.add(config.getId() + letter);
 						}
+					}else{
+						log.info("detectadoCambio "+detectadoCambio);
 					}
+				}else{
+					log.info(change+" Sin nuevas columnas");
 				}
+				
 				if (config != null) {
 					for (String key : config.getMapData().keySet()) {
 						String provisionalMensaje = "Se han añadido los valores ";
@@ -567,7 +578,7 @@ public class GenerateConfig {
 						DataBean data = config.getMapData().get(key);
 						if (data.getType() != null && data.getType().equals(Constants.skosType)) {
 							DataBean dataLocal = configLocal.getMapData().get(key);
-							if (dataLocal != null)
+							if (dataLocal != null){
 								for (String key2 : dataLocal.getMapSkos().keySet()) {
 									if (data.getMapSkos().get(key2) == null) {
 										SkosBean skos = dataLocal.getMapSkos().get(key2);
@@ -575,10 +586,18 @@ public class GenerateConfig {
 											provisionalMensaje = provisionalMensaje + "'" + skos.getLabel() + "' ";
 											sendEmail = true;
 											detectadoCambio = true;
+										}else{
+											log.info("skos.getLabel() "+skos.getLabel());
 										}
+									}else{
+										log.info("data.getMapSkos().get(key2) "+data.getMapSkos().get(key2));
 									}
 								}
-
+							}else{
+								log.info("dataLocal "+dataLocal);
+							}
+						}else{
+							log.info("data.getType() "+data.getType());
 						}
 						if (sendEmail) {
 							String fileName = fileLocal.getName().substring(0, fileLocal.getName().length() - 4);
@@ -600,12 +619,60 @@ public class GenerateConfig {
 				mensajeRegenerar = mensajeRegenerar + "En el cubo " + change + ", se han detectado nuevos registros y se va a regenerar el cubo de datos.\n\n";
 			}
 		}
-
-		if (Utils.v(mensajesNuevos) || Utils.v(mensajesCambiosNuevaConf) || Utils.v(mensajeCambiosConf) || Utils.v(mensajeRegenerar)) {
+		
+		String content="";
+		ArrayList<String> idDataCubeVirtuoso = new ArrayList<>();
+		try {
+			content = Utils.processURLGet(Prop.urlQueryTodosGrafos);
+			String[] splitConent = content.split("\"\n");
+			for (int h = 1; h < splitConent.length; h++) {
+				String line = splitConent[h];
+				line = line.replaceAll("\"", "");
+				if(line.contains("http://opendata.aragon.es/graph/datacube") && !line.equals("http://opendata.aragon.es/graph/datacube/commonData")){
+					idDataCubeVirtuoso.add(line.replace("http://opendata.aragon.es/graph/datacube/", ""));
+				}
+			}
+		} catch (IOException e1) {
+			log.error("Error al procesar la url de los grafos de virtuoso",e1);
+		}
+		
+		String[] valores = null;
+		ArrayList<String> idDataCubeBI = new ArrayList<>();
+		File urlsFile = new File(urlsFileString);
+		List<String> csvLines;
+		try {
+			csvLines = FileUtils.readLines(urlsFile, "UTF-8");
+			for (int h = 1; h < csvLines.size(); h++) {
+				String line = csvLines.get(h);
+				valores = line.split(",");
+				idDataCubeBI.add(valores[1].replaceAll("\"", ""));
+			}
+		} catch (IOException e) {
+			log.error("Error al leer el archivo de id's de los cubos de datos.",e);
+		}
+		
+		File dropFile = new File("dropDatacube.txt");
+		String contentDropFile = "";
+		String mensajesBorrados = "";
+		if (ListUtils.subtract(idDataCubeVirtuoso, idDataCubeBI).size() > 0) {
+			List<String> cubeDelete = ListUtils.subtract(idDataCubeVirtuoso, idDataCubeBI );
+			for(String cube : cubeDelete){
+				mensajesBorrados += "El cubo de datos "+cube+" ya no se encuentra en la base de datos.\n\n";
+				contentDropFile += cube+System.lineSeparator();
+			}
+		}
+		try {
+			Utils.stringToFile(contentDropFile,dropFile);
+		} catch (Exception e) {
+			log.error("Error escribiendo el fichero de cubos de datos a borrar",e);
+		}
+		
+		if (Utils.v(mensajesNuevos) || Utils.v(mensajesCambiosNuevaConf) || Utils.v(mensajeCambiosConf) || Utils.v(mensajeRegenerar) || Utils.v(mensajesBorrados)) {
 			if (true) {
-				mensaje = mensajesNuevos + mensajesCambiosNuevaConf + mensajeCambiosConf + mensajeRegenerar;
+				mensaje = mensajesNuevos + mensajesCambiosNuevaConf + mensajeCambiosConf + mensajeRegenerar + mensajesBorrados;
 				String titulo = "Cambios en los datos del IAEsT " + Utils.getDate();
-				GithubApi.createIssue(titulo, mensaje);
+				if(Prop.createIssue)
+					GithubApi.createIssue(titulo, mensaje);
 			}
 		}
 		log.info("end updateConfig");
@@ -628,11 +695,12 @@ public class GenerateConfig {
 			Prop.loadConf();
 			GenerateConfig config = null;
 			if (args[0].equals("update")) {
-				config = new GenerateConfig(args[2], args[3], args[4]);
+				config = new GenerateConfig(args[2], args[3], args[4], args[5]);
 			}
 
 			log.info("Finish process");
 		} 
+
 	}
 
 }

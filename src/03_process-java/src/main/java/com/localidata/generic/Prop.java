@@ -22,6 +22,8 @@ public class Prop {
 	public static boolean publishDrive = true;
 
 	public static boolean downloadDrive = true;
+	
+	public static boolean createIssue = true;
 	public static String emailUserFile = "";
 	public static String idParentFolder = "";
 	public static String kosName = "";
@@ -54,7 +56,10 @@ public class Prop {
 	public static String utmaBiAragon = "";
 	public static String utmcBiAragon = "";
 	public static String utmzBiAragon = "";
-
+	public static String urlQueryTodosGrafos = "";
+	public static String urlGraph = "";
+	public static String urlGraphCommonData = "";
+	
 	public static boolean loadConf() {
 
 		boolean conf = false;
@@ -69,7 +74,8 @@ public class Prop {
 			p12File = prop.getProperty("p12File");
 			acountId = prop.getProperty("acountId");
 			APPLICATION_NAME = prop.getProperty("APPLICATION_NAME");
-
+			
+			createIssue = Boolean.valueOf(prop.getProperty("createIssue"));
 			downloadDrive = Boolean.valueOf(prop.getProperty("downloadDrive"));
 			publishDrive = Boolean.valueOf(prop.getProperty("publicDrive"));
 			emailUserFile = prop.getProperty("emailUserFile");
@@ -107,6 +113,10 @@ public class Prop {
 			utmaBiAragon = prop.getProperty("utmaBiAragon");
 			utmcBiAragon = prop.getProperty("utmcBiAragon");
 			utmzBiAragon = prop.getProperty("utmzBiAragon");
+			
+			urlQueryTodosGrafos = prop.getProperty("urlQueryTodosGrafos");
+			urlGraph = prop.getProperty("urlGraph");
+			urlGraphCommonData = prop.getProperty("urlGraphCommonData");
 
 			conf = true;
 		} catch (IOException io) {

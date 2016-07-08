@@ -777,6 +777,17 @@ iaest-dimension:tipo-de-estudios-realizados a qb:DimensionProperty , rdf:Propert
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/tipo-de-estudios-realizados> .
 
+iaest-measure:vab a qb:MeasureProperty , rdf:Property;
+	rdfs:label "VAB"@es ;
+	rdfs:comment "VAB"@es ;
+	rdfs:range xsd:double .
+
+iaest-dimension:sector-vab-descripcion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Sector VAB descripción"@es ;
+	rdfs:comment "Sector VAB descripción"@es ;
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion> .
+
 iaest-dimension:numero-habitaciones a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Número habitaciones"@es ;
 	rdfs:comment "Número habitaciones"@es ;
@@ -2976,17 +2987,6 @@ iaest-dimension:intervalo-renta a qb:DimensionProperty , rdf:Property, qb:CodedP
 	rdfs:comment "Intervalo renta"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/intervalo-renta> .
-
-iaest-measure:vab a qb:MeasureProperty , rdf:Property;
-	rdfs:label "VAB"@es ;
-	rdfs:comment "VAB"@es ;
-	rdfs:range xsd:double .
-
-iaest-dimension:sector-vab-descripcion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Sector VAB descripción"@es ;
-	rdfs:comment "Sector VAB descripción"@es ;
-	rdfs:range skos:Concept ;
-	qb:codeList <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion> .
 
 iaest-dimension:subseccion-descripcion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Subsección descripción"@es ;

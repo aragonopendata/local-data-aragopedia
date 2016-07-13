@@ -2,6 +2,7 @@ package com.localidata.extract;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.SocketTimeoutException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -42,11 +43,11 @@ public class GenerateCSV {
 		drive = new GoogleDriveAPI();
 		drive.init();
 		log.info("Generando el fichero InformesEstadisticaLocal-URLs.csv");
-		try {
-			Jdbcconnection.main(null);
-		} catch (Exception e) {
-			log.error("Error generando informe bbdd iaest",e);
-		}
+//		try {
+//			Jdbcconnection.main(null);
+//		} catch (Exception e) {
+//			log.error("Error generando informe bbdd iaest",e);
+//		}
 
 		log.info("fin de la generación del fichero InformesEstadisticaLocal-URLs.csv");
 	}
@@ -70,8 +71,9 @@ public class GenerateCSV {
 			Utils.processURLGet(Prop.urlBiAragon + Prop.initialDataCube + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
 			List<String> csvLines = FileUtils.readLines(urlsFile, "UTF-8");
 
-			try {
-				for (int h = 1; h < csvLines.size(); h++) {
+			
+			for (int h = 1; h < csvLines.size(); h++) {
+				try {
 					String line = csvLines.get(h);
 					valores = line.split(",");
 					valores[0] = valores[0].replaceAll("\"", "");
@@ -81,15 +83,15 @@ public class GenerateCSV {
 					content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
 					if (Utils.v(content)) {
 						content = cleanAndTransform(content);
-						String hash = Utils.generateHash(content);
-						processContentFile(all, numErrorFiles, errorFiles, valores, content, hash);
+							String hash = Utils.generateHash(content);
+							processContentFile(all, numErrorFiles, errorFiles, valores, content, hash);
 					}
+				} catch (Exception e2) {
+					numErrorFiles.put(valores, new Integer(0));
+					errorFiles.put(valores, content);
+					String valor = valores.length>0 ? valores[1] : "";
+					log.error("Error al descargar " + valor, e2);
 				}
-			} catch (IOException e2) {
-				numErrorFiles.put(valores, new Integer(0));
-				errorFiles.put(valores, content);
-				e2.printStackTrace();
-				log.error("Error al descargar " + valores[1], e2);
 			}
 
 			int j = 0;
@@ -100,17 +102,21 @@ public class GenerateCSV {
 				while (j < totalElements) {
 					valores = iterator.next();
 					Integer numErrors = numErrorFiles.get(valores);
-					if (numErrors < 5 && numErrors != -1) {
+					boolean sucess = false;
+					while (numErrors < 5 && numErrors != -1 && sucess ) {
+						log.info("Intento "+numErrors+" del csv "+valores[0]);
 						content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
 						if (Utils.v(content)) {
 							content = cleanAndTransform(content);
-							if (!content.contains(Constants.errorDoctypeHtml1) && !content.contains(Constants.errorHtml) && !content.contains(Constants.errorDoctypeHtml2) && !content.contains(Constants.errorDiv)) {
+							if (!content.contains(Constants.errorDoctypeHtml1) && !content.contains(Constants.errorHtml) && !content.contains(Constants.errorDoctypeHtml2) && !content.contains(Constants.errorDiv) && !content.contains(Constants.errorNingunaFila)) {
 								Utils.stringToFile(content, new File(outputFilesDirectoryString + File.separator + valores[1] + ".csv"));
 								String hash = Utils.generateHash(content);
 								processContentFile(all, numErrorFiles, errorFiles, valores, content, hash);
 								numErrorFiles.put(valores, new Integer(-1));
 								errorFiles.remove(valores);
-							} else if (!content.contains(Constants.errorExcedidoN) && !content.contains(Constants.errorRutaNoEncontrada)) {
+								sucess=true;
+							} else if (!content.contains(Constants.errorExcedidoN) && !content.contains(Constants.errorRutaNoEncontrada) && !content.contains(Constants.errorNingunaFila)) {
+								log.error("Informe " + valores[1] + " imposible de descargar intento " + (numErrors + 1));
 								numErrorFiles.put(valores, new Integer(-1));
 							} else {
 								log.error("Informe " + valores[1] + " imposible de descargar intento " + (numErrors + 1));
@@ -124,7 +130,7 @@ public class GenerateCSV {
 						j++;
 					}
 				}
-			} catch (IOException e2) {
+			} catch (Exception e2) {
 				log.error("Error al descargar " + valores[1], e2);
 			}
 
@@ -156,11 +162,11 @@ public class GenerateCSV {
 			log.info("No hay cambios en el cubo de datos " + valores[1]);
 		}
 		if (safeFile) {
-			if (!content.contains(Constants.errorDoctypeHtml1) && !content.contains(Constants.errorHtml) && !content.contains(Constants.errorDoctypeHtml2) && !content.contains(Constants.errorDiv)) {
+			if (!content.contains(Constants.errorDoctypeHtml1) && !content.contains(Constants.errorHtml) && !content.contains(Constants.errorDoctypeHtml2) && !content.contains(Constants.errorDiv) && !content.contains(Constants.errorNingunaFila)) {
 				Utils.stringToFile(content, new File(outputFilesDirectoryString + File.separator + valores[1] + ".csv"));
 				hashCodeNew.put(valores[1], hash);
 				log.info("Descargado csv " + valores[1]);
-			} else if (!content.contains(Constants.errorExcedidoN) && !content.contains(Constants.errorRutaNoEncontrada)) {
+			} else if (!content.contains(Constants.errorExcedidoN) && !content.contains(Constants.errorRutaNoEncontrada) && !content.contains(Constants.errorNingunaFila)) {
 				numErrorFiles.put(valores, new Integer(0));
 				errorFiles.put(valores, content);
 				news.remove(valores[1]);

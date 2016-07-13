@@ -738,7 +738,13 @@ public class GenerateRDF {
 			app.writeSkosTTL();
 			app.zipFiles();
 			log.info("Finish process");
-		} 
+		} else {
+			log.info("Se deben de pasar dos parámetros: ");
+			log.info("La cadena de texto data ");
+			log.info("\tEl directorio donde están los archivos de entrada");
+			log.info("\tEl directorio donde se van a escribir los archivos ttl");
+			log.info("\tEl directorio donde están los excel de configuación");
+		}
 
 	}
 }

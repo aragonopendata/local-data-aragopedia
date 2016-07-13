@@ -699,7 +699,13 @@ public class GenerateConfig {
 			}
 
 			log.info("Finish process");
-		} 
+		} else {
+			log.info("Se deben de pasar dos parámetros: ");
+			log.info("La cadena de texto config ");
+			log.info("\tEl directorio donde están los archivos de entrada");
+			log.info("\tEl directorio donde están las dimensiones");
+			log.info("\tEl directorio donde se va a escribir la configuración resultante");
+		}
 
 	}
 

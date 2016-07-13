@@ -40,19 +40,32 @@ import com.google.api.services.drive.model.User;
 import com.localidata.util.Utils;
 
 /**
+ * Class by management google drive api
  * 
  * @author Localidata
  *
  */
 public class GoogleDriveAPI {
 
+	/**
+	 * Log class
+	 */
 	private final static Logger log = Logger.getLogger(GoogleDriveAPI.class);
+	/** Global instance of the JSON factory. */
 	private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
+	/** Global instance of the HTTP transport. */
 	private static HttpTransport HTTP_TRANSPORT;
+	/** Global instance of the scopes required by this api. */
 	private static final List<String> SCOPES = Arrays.asList(DriveScopes.DRIVE_METADATA_READONLY, DriveScopes.DRIVE, DriveScopes.DRIVE_APPDATA, DriveScopes.DRIVE_APPS_READONLY, DriveScopes.DRIVE_FILE, DriveScopes.DRIVE_METADATA, DriveScopes.DRIVE_READONLY,
 			"https://www.googleapis.com/auth/drive.install");
+	/**
+	 * Service definition for Drive
+	 */
 	private Drive drive = null;
 
+	/**
+	 * Global instance of the HTTP transport.
+	 */
 	static {
 		try {
 			HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
@@ -62,6 +75,9 @@ public class GoogleDriveAPI {
 		}
 	}
 
+	/**
+	 * Method to initialize the variables required to use Google Drive
+	 */
 	public void init() {
 
 		try {
@@ -75,6 +91,12 @@ public class GoogleDriveAPI {
 		}
 	}
 
+	/**
+	 * Build and return an authorized Drive client service.
+	 * 
+	 * @return an authorized Drive client service
+	 * @throws IOException
+	 */
 	private static Drive getDriveService() throws IOException {
 		Credential credential = null;
 		try {
@@ -86,6 +108,13 @@ public class GoogleDriveAPI {
 		return new Drive.Builder(HTTP_TRANSPORT, JSON_FACTORY, credential).setApplicationName(Prop.APPLICATION_NAME).build();
 	}
 
+	/**
+	 * Creates an authorized Credential object.
+	 * 
+	 * @return an authorized Credential object.
+	 * @throws IOException
+	 * @throws GeneralSecurityException
+	 */
 	private static GoogleCredential authorize() throws IOException, GeneralSecurityException {
 		HttpTransport httpTransport = new NetHttpTransport();
 		httpTransport = httpTransport.createRequestFactory().getTransport();
@@ -94,16 +123,33 @@ public class GoogleDriveAPI {
 			@Override
 			public void initialize(HttpRequest httpRequest) throws IOException {
 
+				httpRequest.setConnectTimeout(300 * 60000);
+				httpRequest.setReadTimeout(300 * 60000);
 
 			}
 		};
 		JacksonFactory jsonFactory = new JacksonFactory();
 		GoogleCredential credential = new GoogleCredential.Builder().setRequestInitializer(httpRequestInitializer).setTransport(httpTransport).setJsonFactory(jsonFactory)
+		/*
+		 * Account id is the email in credetials p12 (Google developers /* console -> permisos - Dirección de correo)
+		 */
 		.setServiceAccountId(Prop.acountId).setServiceAccountScopes(SCOPES)
+		/*
+		 * File get in Google developers console -> Administrador de las /* apis -> credenciales -> Nuevas credeciales -> Clave de cuenta /* de servicio -> p12
+		 */
 		.setServiceAccountPrivateKeyFromP12File(new java.io.File(Prop.p12File)).build();
 		return credential;
 	}
 
+	/**
+	 * Metodo para crear una carpeta
+	 * 
+	 * @param nameFolder
+	 *            String name folder
+	 * @param emailUserOwner
+	 *            String email user owner
+	 * @return True if create is ok, false otherwise
+	 */
 	public boolean createFolder(String nameFolder, String emailUserOwner) {
 
 		log.debug("init createFolder");
@@ -142,6 +188,10 @@ public class GoogleDriveAPI {
 		return resultado;
 	}
 
+	/**
+	 * Method to create a google spreadsheet from a folder
+	 * 
+	 */
 	public boolean createSpreadsheetFromFolder(String folderOrigin, String idParentFolder, String emailUserOwner, String extensionFile, String mimeType) {
 
 		java.io.File folder = new java.io.File(folderOrigin);
@@ -162,6 +212,24 @@ public class GoogleDriveAPI {
 		return true;
 	}
 
+	/**
+	 * Method to create a google spreadsheet from a file
+	 * 
+	 * @param idParentFolder
+	 *            String to identify the parent folder
+	 * @param emailUserOwner
+	 *            String to identify email user owner
+	 * @param extensionFile
+	 *            String with extension file
+	 * @param nameFile
+	 *            String with name google spreadsheet
+	 * @param fileOrigin
+	 *            File with content file origin
+	 * @param mimeType
+	 *            String with mime type file origin
+	 * 
+	 * @return True if create is ok, False otherwise
+	 */
 	public boolean createSpreadsheetFromFile(String idParentFolder, String emailUserOwner, String extensionFile, String nameFile, java.io.File fileOrigin, String mimeType) {
 
 		boolean result = true;
@@ -197,6 +265,17 @@ public class GoogleDriveAPI {
 		return result;
 	}
 
+	/**
+	 * Method by update file
+	 * 
+	 * @param name
+	 *            String name file
+	 * @param fileContent
+	 *            content file
+	 * @param newMimeType
+	 *            String with mime type
+	 * @return boolean true if updated is success
+	 */
 	public boolean updateFile(String name, java.io.File fileContent, String newMimeType) {
 
 		File file = searchFile(name);
@@ -210,6 +289,13 @@ public class GoogleDriveAPI {
 		return (updatedFile != null);
 	}
 
+	/**
+	 * Method by list files into a folder
+	 * 
+	 * @param folderId
+	 *            String id folder
+	 * @return List with files
+	 */
 	public List<ChildReference> listFolderFiles(String folderId) {
 		List<ChildReference> result = new ArrayList<ChildReference>();
 		try {
@@ -235,6 +321,9 @@ public class GoogleDriveAPI {
 
 	}
 
+	/**
+	 * Method to list all files and folders of id account
+	 */
 	public List<File> listOwnerFiles() {
 		log.debug("init listOwnerFiles()");
 		List<File> result = new ArrayList<File>();
@@ -260,6 +349,9 @@ public class GoogleDriveAPI {
 		return result;
 	}
 
+	/**
+	 * Method to list files and folders of id account after date of parameter
+	 */
 	public List<File> listOwnerFilesAfterDate(String stringDateLastChange) {
 		SimpleDateFormat formatFullDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		Date dateLastChange = null;
@@ -292,6 +384,9 @@ public class GoogleDriveAPI {
 		return files;
 	}
 
+	/**
+	 * Method to list all files and folders of id account
+	 */
 	public File searchFile(String name) {
 		log.debug("init listOwnerFiles()");
 //		FileList result;
@@ -310,11 +405,42 @@ public class GoogleDriveAPI {
 				log.error("Error read file "+name+" in google Drive API",e);
 			}
 		}
+		
+//		com.google.api.services.drive.Drive.Files.List request = null;
+
+//		try {
+//			request = drive.files().list().setMaxResults(1000);
+//			result = request.execute();
+//			files.addAll(result.getItems());
+//
+//		} catch (Exception e) {
+//			log.error("Error list files", e);
+//		}
+
+//		if (files == null || files.size() == 0) {
+//			log.error("No files found");
+//		} else {
+//			log.debug("Files:\n");
+//			for (File fileAux : files) {
+//				if (fileAux.getShared() == true && fileAux.getTitle().contains(name)) {
+//					file = fileAux;
+//					break;
+//				}
+//			}
+//		}
 
 		log.debug("end listOwnerFiles()");
 		return file;
 	}
 
+	/**
+	 * Download files after a date
+	 * 
+	 * @param path
+	 *            Path where download files
+	 * @param stringDateLastChange
+	 *            String with a date
+	 */
 	public void downloadFilesAfterDate(String path, String stringDateLastChange) {
 
 		List<File> files = listOwnerFilesAfterDate(stringDateLastChange);
@@ -334,6 +460,12 @@ public class GoogleDriveAPI {
 
 	}
 
+	/**
+	 * Method to download folder files
+	 * @param path String with destination path
+	 * @param folderId String with id folder
+	 * @throws IOException
+	 */
 	public void downloadFolderFiles(String path, String folderId) throws IOException {
 
 		List<ChildReference> listErrors = new ArrayList<>();
@@ -368,6 +500,12 @@ public class GoogleDriveAPI {
 		}
 	}
 	
+	/**
+	 * Method to download file from folder
+	 * @param path String with destination file
+	 * @param child ChildReference to download
+	 * @throws IOException
+	 */
 	private void downloadChildFile(String path, ChildReference child) throws IOException {
 		File file = drive.files().get(child.getId()).execute();
 		download(path, file);
@@ -385,6 +523,12 @@ public class GoogleDriveAPI {
 		}
 	}
 
+	/**
+	 * Download all owner files
+	 * 
+	 * @param path
+	 *            Path where download files
+	 */
 	public void downloadAllFiles(String path) throws IOException {
 		log.debug("init downloadAllFiles()");
 		List<File> files = listOwnerFiles();
@@ -396,11 +540,23 @@ public class GoogleDriveAPI {
 		log.debug("end downloadAllFiles()");
 	}
 
+	/**
+	 * Download all owner files
+	 * 
+	 * @param path
+	 *            Path where download files
+	 */
 	public java.io.File downloadFile(String path, String name, String format) {
 		File file = searchFile(name);
 		return downloadFile(path,file,format);
 	}
 
+	/**
+	 * Download all owner files
+	 * 
+	 * @param path
+	 *            Path where download files
+	 */
 	public java.io.File downloadFile(String path, File file, String format) {
 		if (file == null)
 			return null;
@@ -432,6 +588,12 @@ public class GoogleDriveAPI {
 		return null;
 	}
 
+	/**
+	 * Get a download URL
+	 * 
+	 * @param fileId
+	 * @return URL
+	 */
 	public String getDownloadUrl(String fileId) {
 		try {
 			return drive.files().get(fileId).execute().getDownloadUrl();
@@ -441,17 +603,33 @@ public class GoogleDriveAPI {
 		return null;
 	}
 
+	/**
+	 * Method to create permission by create a file or folder
+	 * 
+	 * @return Permission created
+	 */
 	private Permission createPermission() {
 
 		Permission newPermission = new Permission();
+		/* Domain drive for example localidata.com */
 		newPermission.setDomain(Prop.domainPermission);
 		newPermission.setValue(Prop.domainPermission);
+		/* Acceptable types are: anyone, domain, group, user */
 		newPermission.setType("domain");
+		/* Acceptable roles are: owner, reader, writer */
 		newPermission.setRole("writer");
 		return newPermission;
 
 	}
 
+	/**
+	 * Method to insert permission by create a file or folder
+	 * 
+	 * @param newPermission
+	 *            Permission to insert
+	 * @param fileId
+	 *            String with id file
+	 */
 	private void insertPermission(Permission newPermission, String fileId) {
 		try {
 			drive.permissions().insert(fileId, newPermission).execute();
@@ -460,6 +638,9 @@ public class GoogleDriveAPI {
 		}
 	}
 
+	/**
+	 * Main's class
+	 */
 	public static void main(String[] args) {
 		if ((log == null) || (log.getLevel() == null))
 			PropertyConfigurator.configure("log4j.properties");

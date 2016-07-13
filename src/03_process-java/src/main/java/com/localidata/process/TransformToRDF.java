@@ -261,7 +261,7 @@ public class TransformToRDF {
 		}
 		if (configBean.getListDataConstant().size() > 0) {
 			for (DataBean data : configBean.getListDataConstant()) {
-				result.append("\t" + data.getNormalizacion() + " " + "\"" + data.getConstant() + "\"");
+				result.append("\t" + data.getNormalizacion() + " " + data.getConstant() );
 				if (Utils.v(data.getType()))
 					result.append("^^" + data.getType() + " ." + "\n");
 				else

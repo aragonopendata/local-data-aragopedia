@@ -589,9 +589,12 @@ public class Utils {
 		} catch (MalformedURLException e) {
 			log.error("Error with the URI: " + url + "?" + urlParameters, e);
 
+		} catch (SocketTimeoutException e) {
+			throw e;
+
 		} catch (IOException e) {
 			log.error("IOError: " + url + "?" + urlParameters, e);
-
+			
 		} finally {
 			httpConnection.disconnect();
 		}

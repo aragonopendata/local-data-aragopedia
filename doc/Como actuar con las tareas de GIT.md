@@ -1,8 +1,8 @@
-# Como actuar con las tareas de GIT
+# Cómo actuar cuando se reciben issues a través de Git
 
 ### Se indica que se ha regenerado un cubo de datos.
 
-Lineas informativas y no requieren ninguna acción.
+Líneas informativas que no requieren ninguna acción.
 
 Ejemplo:
 
@@ -10,7 +10,7 @@ En el cubo 05-050204TP, se han detectado nuevos registros y se va a regenerar el
 
 ### Se indica que se ha detectado un nuevo cubo de datos.
 
-El proceso ha generado una configuración por defecto, que se podrá ver pulsando el enlace. Habrá que repasar todo pero principalmente si las dimensiones y las medidas están bien elegidas.
+El proceso ha generado una configuración por defecto, que se podrá ver pulsando el enlace. Habrá que repasar todo, pero principalmente si las dimensiones y las medidas están bien elegidas.
 
 Ejemplo:
 
@@ -18,7 +18,7 @@ Se ha detectado un nuevo cubo de datos 915-150017TM, revise la nueva configuraci
 
 ### Se indica que se ha detectado un nueva columna en un cubo de datos.
 
-El proceso ha detectado una nueva columna y habrá que añadir la configuración correspondiente. Para saber como hacerlo habrá que seguir las intrucciones de la guia 'guia de la configuración'  https://github.com/aragonopendata/local-data-aragopedia/blob/master/doc/guia%20de%20la%20configuraci%C3%B3n.md
+El proceso ha detectado una nueva columna y habrá que añadir la configuración correspondiente. Para saber cómo hacerlo habrá que seguir las intrucciones de la guía 'guía de la configuración'  https://github.com/aragonopendata/local-data-aragopedia/blob/master/doc/guia%20de%20la%20configuraci%C3%B3n.md
 
 Ejemplo:
 
@@ -26,7 +26,7 @@ Se han añadido las columnas 'CCAA nombre', al cubo 05-050302A, por favor actual
 
 ### Se indica que hay nuevos valores para una codelist
 
-El proceso ha detectado que hay nuevos valores para una dimensión y hay que añadirlos en el enlace que se adjunta. Son dos columnas una con el valor tal cual viene en el csv y otra con su url.
+El proceso ha detectado que hay nuevos valores para una dimensión y hay que añadirlos en el enlace que se adjunta. Son dos columnas: una con el valor tal cual viene en el csv y otra con su URI.
 
 Ejemplo:
 
@@ -34,7 +34,7 @@ Se han añadido los valores '44142' al codelist 05-050104TM, por favor actualice
 
 ### Se indica que un cubo de datos ha sido borrado
 
-Lineas informativas y no requieren ninguna acción.
+Líneas informativas que no requieren ninguna acción.
 
 Ejemplo:
 

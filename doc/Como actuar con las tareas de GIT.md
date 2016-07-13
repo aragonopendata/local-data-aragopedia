@@ -1,4 +1,4 @@
-# Cómo actuar con las tareas de GIT
+# Cómo actuar cuando se reciben issues a través de Git
 
 ### Se indica que se ha regenerado un cubo de datos.
 

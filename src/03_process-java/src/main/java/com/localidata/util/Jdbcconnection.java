@@ -115,7 +115,7 @@ public class Jdbcconnection {
         	if(valor.getDirweb() != null && !valor.getDirweb().substring(lenS,lenS+2).equals("06")){
 	        	writer.append("\"" + valor.getDescripcion() + "\"");
 	        	writer.append(",");
-	        	writer.append("\"" + valor.getDescripcion() + ". ");
+	        	writer.append("\"" + valor.getDescripcion() + " # ");
 	        	
 	        	String descripcionMejorada = valor.getDescripcion();
 	        	//writerToTest.write(valor.getDescripcion().substring(valor.getDescripcion().length() - 4).toLowerCase()+"\n");
@@ -136,7 +136,7 @@ public class Jdbcconnection {
 		     	        	} 
 	     	        	}
 	        			 
-	        			 writer.append(valor1.getDescripcion() + ". ");
+	        			 writer.append(valor1.getDescripcion() + " # ");
 	        			 for (Valor valor2 : valores) {
 	                		 if(valor2.getLinea_clave().equals(valor1.getPadre())){
 	                			 
@@ -145,19 +145,19 @@ public class Jdbcconnection {
 		        					 descripcionMejorada =  valor2.getDescripcion()  + " " + descripcionMejorada.replace("Características personales","").replace("Características del contrato", "");
 		        				 }
 	                			 
-	                			 writer.append(valor2.getDescripcion() + ". ");
+	                			 writer.append(valor2.getDescripcion() + " # ");
 	                			 for (Valor valor3 : valores) {
 	                        		 if(valor3.getLinea_clave().equals(valor2.getPadre())){
-	                        			 writer.append(valor3.getDescripcion() + ". ");
+	                        			 writer.append(valor3.getDescripcion() + " # ");
 	                        			 for (Valor valor4 : valores) {
 	                                		 if(valor4.getLinea_clave().equals(valor3.getPadre())){
-	                                			 writer.append(valor4.getDescripcion() + ". ");
+	                                			 writer.append(valor4.getDescripcion() + " # ");
 	                                			 for (Valor valor5 : valores) {
 	                                        		 if(valor5.getLinea_clave().equals(valor4.getPadre())){
-	                                        			 writer.append(valor5.getDescripcion() + ". ");
+	                                        			 writer.append(valor5.getDescripcion() + " # ");
 	                                        			 for (Valor valor6 : valores) {
 	                                                		 if(valor6.getLinea_clave().equals(valor5.getPadre())){
-	                                                			 writer.append(valor6.getDescripcion() + ". ");
+	                                                			 writer.append(valor6.getDescripcion() + " # ");
 	                                                		 }
 	                                                     }
 	                                        		 }

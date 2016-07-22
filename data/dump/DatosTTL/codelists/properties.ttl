@@ -686,9 +686,9 @@ iaest-dimension:estado-del-edificio a qb:DimensionProperty , rdf:Property, qb:Co
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/estado-del-edificio> .
 
-iaest-dimension:superficie-util-agrupada a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Superficie útil agrupada"@es ;
-	rdfs:comment "Superficie útil agrupada"@es ;
+iaest-dimension:superficie-util-agrupada-m2 a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Superficie útil agrupada (m2)"@es ;
+	rdfs:comment "Superficie útil agrupada (m2)"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/superficie-util-agrupada> .
 
@@ -696,6 +696,11 @@ iaest-measure:n-habitaciones a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Nº habitaciones"@es ;
 	rdfs:comment "Nº habitaciones"@es ;
 	rdfs:range xsd:double .
+
+iaest-measure:n-viviendas a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Nº viviendas"@es ;
+	rdfs:comment "Nº viviendas"@es ;
+	rdfs:range xsd:int .
 
 iaest-measure:superficie-util a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Superficie útil"@es ;
@@ -740,11 +745,6 @@ iaest-measure:viviendas-con-agua-caliente-central a qb:MeasureProperty , rdf:Pro
 iaest-measure:viviendas-con-tendido-telefonico a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Viviendas con tendido telefónico"@es ;
 	rdfs:comment "Viviendas con tendido telefónico"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:n-viviendas a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Nº viviendas"@es ;
-	rdfs:comment "Nº viviendas"@es ;
 	rdfs:range xsd:double .
 
 iaest-dimension:tipo-de-vivienda-principal a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;

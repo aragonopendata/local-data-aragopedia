@@ -14,6 +14,7 @@ public class Valor {
     String padre;
     String descripcion;
     String dirweb;
+    String operacion;
 	
     public String getLinea_clave() {
 		return linea_clave;
@@ -53,6 +54,14 @@ public class Valor {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+	
+	public String getOperacion() {
+		return operacion;
+	}
+	
+    public void setOperacion(String operacion) {
+		this.operacion = operacion;
 	}
 	@Override
 	public String toString() {

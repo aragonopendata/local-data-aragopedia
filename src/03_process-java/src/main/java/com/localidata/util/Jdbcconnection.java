@@ -16,6 +16,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Properties;
 
+
+
 public class Jdbcconnection {
 
 	
@@ -33,9 +35,9 @@ public class Jdbcconnection {
 		props.load(input);
 	    
 	    //Query que devuelve las carpetas estructuradas.
-		String query_full = "select linea_clave, padre, descripcion, dirweb "
+		String query_full = "select linea_clave, padre, descripcion, dirweb, operacion"
 				+ "from"
-				+ "  (select linea_clave, descripcion, padre, orden, level"
+				+ "  (select linea_clave, descripcion, padre, orden, operacion, level"
 				+ "   from IAES.menu_linea"
 				+ "   where linea_clave not like '900%'"
 				+ "   start with padre = 0"
@@ -73,13 +75,13 @@ public class Jdbcconnection {
 
         //Insertamos los resultados en objetos de tipo Valor y los metemos en un ArrayList
         while(rs.next()) {
-        	   Valor v = new Valor();      
-        	   v.setLinea_clave(rs.getString("linea_clave"));
-        	   v.setPadre(rs.getString("padre"));
-        	   v.setDescripcion(rs.getString("descripcion"));
-        	   v.setDirweb(rs.getString("dirweb"));
-
-        	   valores.add(v);
+        	 Valor v = new Valor();      
+	      	   v.setLinea_clave(rs.getString("linea_clave"));
+	      	   v.setPadre(rs.getString("padre"));
+	      	   v.setDescripcion(rs.getString("descripcion"));
+	      	   v.setDirweb(rs.getString("dirweb"));
+	      	   v.setOperacion(rs.getString("operacion"));
+	      	   valores.add(v);
         	} 
        
        
@@ -97,6 +99,8 @@ public class Jdbcconnection {
         writer.append("\"RutaSinTipo\"");
         writer.append(",");
         writer.append("\"Tipo\"");
+        writer.append(",");
+        writer.append("\"Operacion\"");
    	 	writer.append("\n");
    	 	
    	 	
@@ -202,6 +206,10 @@ public class Jdbcconnection {
 	        	 writer.append(",");
 	        	 //Insertamos código
 	        	 writer.append("\"" + code + "\"");
+	        	 writer.append(",");
+	        	 //Insertamos operacion
+	        	 writer.append("\"" + valor.getOperacion() + "\"");
+	        	 
 	        	 writer.append("\n");
 	        	 
 	        	 int len = "Estadistica Local".length() + 1;

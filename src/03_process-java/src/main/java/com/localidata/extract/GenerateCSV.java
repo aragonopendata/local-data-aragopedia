@@ -43,11 +43,11 @@ public class GenerateCSV {
 		drive = new GoogleDriveAPI();
 		drive.init();
 		log.info("Generando el fichero InformesEstadisticaLocal-URLs.csv");
-//		try {
-//			Jdbcconnection.main(null);
-//		} catch (Exception e) {
-//			log.error("Error generando informe bbdd iaest",e);
-//		}
+		try {
+			Jdbcconnection.main(null);
+		} catch (Exception e) {
+			log.error("Error generando informe bbdd iaest",e);
+		}
 
 		log.info("fin de la generación del fichero InformesEstadisticaLocal-URLs.csv");
 	}

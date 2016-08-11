@@ -35,7 +35,7 @@ public class Jdbcconnection {
 		props.load(input);
 	    
 	    //Query que devuelve las carpetas estructuradas.
-		String query_full = "select linea_clave, padre, descripcion, dirweb, operacion"
+		String query_full = "select linea_clave, padre, descripcion, dirweb, operacion "
 				+ "from"
 				+ "  (select linea_clave, descripcion, padre, orden, operacion, level"
 				+ "   from IAES.menu_linea"

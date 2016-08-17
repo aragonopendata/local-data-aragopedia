@@ -3260,15 +3260,15 @@ iaest-dimension:codmun a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/codmun> .
 
-iaest-dimension:contenedores-de-envases a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+iaest-measure:contenedores-de-envases a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Contenedores de envases"@es ;
 	rdfs:comment "Contenedores de envases"@es ;
-	rdfs:range skos:Concept .
+	rdfs:range xsd:int .
 
-iaest-dimension:kg-recogidos-envases a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+iaest-measure:kg-recogidos-envases a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Kg recogidos envases"@es ;
 	rdfs:comment "Kg recogidos envases"@es ;
-	rdfs:range skos:Concept .
+	rdfs:range xsd:int .
 
 iaest-measure:fuentes-mineromedicinales a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Fuentes Mineromedicinales"@es ;

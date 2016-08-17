@@ -1,0 +1,80 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/04-040021A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/04-040021>;
+	rdfs:label "Reciclaje de residuos: envases ligeros"@es ;
+	dct:identifier  "04-040021A" ;
+	rdfs:comment "Cubo de datos para 04-040021A"@es ;
+	dc:modified "2016-08-17"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040021A/d9ce71b1-5fe7-3adc-8a63-4b9c90ae41c8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040021A>; 
+	iaest-measure:ano "2007"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040021A/aaa5d61b-630e-3306-8784-11399146b2c4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040021A>; 
+	iaest-measure:ano "2009"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:contenedores-de-envases "8389"^^xsd:int;
+	iaest-measure:kg-recogidos-envases "16274955,31"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040021A/e9187a8c-5b61-38c0-9048-7352b8c4d67c> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040021A>; 
+	iaest-measure:ano "2010"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:contenedores-de-envases "8932"^^xsd:int;
+	iaest-measure:kg-recogidos-envases "16833170,11"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040021A/60461a0a-945f-3dde-93f7-d304e0114845> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040021A>; 
+	iaest-measure:ano "2011"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:contenedores-de-envases "9288"^^xsd:int;
+	iaest-measure:kg-recogidos-envases "17063889"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040021A/a00280b0-7176-3574-9e17-19ddb8801a82> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040021A>; 
+	iaest-measure:ano "2012"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:contenedores-de-envases "9314"^^xsd:int;
+	iaest-measure:kg-recogidos-envases "17164336"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040021A/ba18b8da-1d8c-3205-b93b-a948fdf824e9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040021A>; 
+	iaest-measure:ano "2013"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:contenedores-de-envases "9522"^^xsd:int;
+	iaest-measure:kg-recogidos-envases "16706655,92"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040021A/cdf9a8ec-4a67-37c5-8627-e1a657acb050> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040021A>; 
+	iaest-measure:ano "2014"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:contenedores-de-envases "10182"^^xsd:int;
+	iaest-measure:kg-recogidos-envases "16933616,15"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/04-040021A/a14fd908-870e-386d-8f2a-4b887957acd1> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/04-040021A>; 
+	iaest-measure:ano "2015"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:contenedores-de-envases "10451"^^xsd:int;
+	iaest-measure:kg-recogidos-envases "17206408,64"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

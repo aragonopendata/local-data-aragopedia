@@ -1231,11 +1231,10 @@ iaest-measure:1980-1989 a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "1980-1989"@es ;
 	rdfs:range xsd:int .
 
-iaest-dimension:fuente-y-fecha a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+iaest-measure:fuente-y-fecha a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Fuente y fecha"@es ;
 	rdfs:comment "Fuente y fecha"@es ;
-	rdfs:range skos:Concept ;
-	qb:codeList <http://opendata.aragon.es/kos/iaest/fuente-y-fecha> .
+	rdfs:range xsd:string .
 
 iaest-measure:2010-y-posterior a qb:MeasureProperty , rdf:Property;
 	rdfs:label "2010 y posterior"@es ;

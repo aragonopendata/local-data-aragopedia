@@ -67,7 +67,7 @@ public class TransformToRDF {
 
 	public void initTransformation(String fileName, int numfile, String id, ArrayList<String> dsdList, ArrayList<String> propertiesList, String decription) {
 		log.debug("Init initTransformation");
-		if (this.csvLines != null && this.csvLines.size() > 2) {
+		if (this.csvLines != null && this.csvLines.size() >= 2) {
 			log.debug("Start file " + fileName);
 			TransformToRDF.dsdList = dsdList;
 			TransformToRDF.propertiesList = propertiesList;
@@ -92,8 +92,13 @@ public class TransformToRDF {
 					continue;
 				if (cabecera) {
 					dsd = Prop.host + "/" + Prop.eldaName + "/" + Prop.datasetName + "/dsd/" + id;
-					addHeader(line, csvLines.get(h + 2), id, numfile, configBean.getLetters());
-
+					if(csvLines.size()<=2){
+						addHeader(line,csvLines.get(h + 1), id, numfile, configBean.getLetters());
+					}else{
+						addHeader(line, csvLines.get(h + 2), id, numfile, configBean.getLetters());
+					}
+					
+					
 					log.debug("Insert header");
 					lineAux.append("#Observations\n");
 					lineAux.append(addCubeLink(fileName, dsd));

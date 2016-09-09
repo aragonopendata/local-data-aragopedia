@@ -271,12 +271,6 @@ iaest-dimension:nacionalidad-nombre a qb:DimensionProperty , rdf:Property, qb:Co
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/nacionalidad-nombre> .
 
-iaest-dimension:tipo-nacionalidad a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Tipo nacionalidad"@es ;
-	rdfs:comment "Tipo nacionalidad"@es ;
-	rdfs:range skos:Concept ;
-	qb:codeList <http://opendata.aragon.es/kos/iaest/tipo-nacionalidad> .
-
 iaest-dimension:continente-nacionalidad a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Continente nacionalidad"@es ;
 	rdfs:comment "Continente nacionalidad"@es ;
@@ -289,6 +283,12 @@ iaest-dimension:area-nacionalidad-nombre a qb:DimensionProperty , rdf:Property, 
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/area-nacionalidad-nombre> .
 
+iaest-dimension:tipo-nacionalidad a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Tipo nacionalidad"@es ;
+	rdfs:comment "Tipo nacionalidad"@es ;
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/tipo-nacionalidad> .
+
 iaest-dimension:grupo-clase-explotacion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Grupo clase explotación"@es ;
 	rdfs:comment "Grupo clase explotación"@es ;
@@ -300,11 +300,6 @@ iaest-measure:explotaciones a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "Explotaciones"@es ;
 	rdfs:range xsd:int .
 
-iaest-measure:superficie-total a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Superficie total"@es ;
-	rdfs:comment "Superficie total"@es ;
-	rdfs:range xsd:double .
-
 iaest-measure:sau a qb:MeasureProperty , rdf:Property;
 	rdfs:label "SAU"@es ;
 	rdfs:comment "SAU"@es ;
@@ -313,6 +308,11 @@ iaest-measure:sau a qb:MeasureProperty , rdf:Property;
 iaest-measure:superficie-tierras-labradas a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Superficie tierras labradas"@es ;
 	rdfs:comment "Superficie tierras labradas"@es ;
+	rdfs:range xsd:double .
+
+iaest-measure:superficie-total a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Superficie total"@es ;
+	rdfs:comment "Superficie total"@es ;
 	rdfs:range xsd:double .
 
 iaest-dimension:division-2-digitos-descripcion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
@@ -3454,6 +3454,11 @@ iaest-dimension:personalidad-juridica a qb:DimensionProperty , rdf:Property, qb:
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/personalidad-juridica> .
 
+iaest-measure:numero-de-explotaciones-sin-ganado a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Número de explotaciones sin ganado"@es ;
+	rdfs:comment "Número de explotaciones sin ganado"@es ;
+	rdfs:range xsd:int .
+
 iaest-measure:numero-de-explotaciones-con-ganado a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Número de explotaciones con ganado"@es ;
 	rdfs:comment "Número de explotaciones con ganado"@es ;
@@ -3463,11 +3468,6 @@ iaest-measure:unidades-ganaderas-totales a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Unidades ganaderas totales"@es ;
 	rdfs:comment "Unidades ganaderas totales"@es ;
 	rdfs:range xsd:double .
-
-iaest-measure:numero-de-explotaciones-sin-ganado a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Número de explotaciones sin ganado"@es ;
-	rdfs:comment "Número de explotaciones sin ganado"@es ;
-	rdfs:range xsd:int .
 
 iaest-dimension:condicion-socioeconomica a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Condición socioeconómica"@es ;

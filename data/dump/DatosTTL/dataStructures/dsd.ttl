@@ -108,7 +108,7 @@ _:node3egmfx10 qb:dimension iaest-dimension:sexo .
 _:node3egmfx11 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050202> a qb:DataStructureDefinition ;
-	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 05-050202, Paro registrado Grupos de edad y sexo"@es ;
+	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 05-050202, Paro registrado Grupo de edad y sexo"@es ;
 	skos:notation "DSD-05-050202" ;
 	rdfs:comment "Esta estructura afecta a las areas: TP A "^^xsd:string .
 
@@ -168,7 +168,7 @@ _:node6egmfx5 qb:dimension iaest-dimension:sexo .
 _:node6egmfx7 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050204> a qb:DataStructureDefinition ;
-	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 05-050204, Paro registrado Duración de la demanda y sexo"@es ;
+	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 05-050204, Paro registrado Duración de la situación laboral como desempleado y sexo"@es ;
 	skos:notation "DSD-05-050204" ;
 	rdfs:comment "Esta estructura afecta a las areas: TC TP A "^^xsd:string .
 
@@ -2037,6 +2037,9 @@ _:node85egmfx3 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010003> qb:component _:node85egmfx4 .
 _:node85egmfx4 qb:dimension sdmx-dimension:refArea .
+
+<http://opendata.aragon.es/recurso/iaest/dsd/01-010003> qb:component _:node85egmfx6 .
+_:node85egmfx6 qb:measure iaest-measure:numero-de-viviendas .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010004> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 01-010004, Características de las viviendas familiares principales Según número de habitaciones"@es ;
@@ -6905,11 +6908,11 @@ _:node227egmfx7 qb:measure iaest-measure:votos .
 <http://opendata.aragon.es/recurso/iaest/dsd/03-030057> qb:component _:node228egmfx1 .
 _:node228egmfx1 qb:dimension sdmx-dimension:refArea .
 
-<http://opendata.aragon.es/recurso/iaest/dsd/03-030057> qb:component _:node228egmfx2 .
-_:node228egmfx2 qb:measure iaest-measure:personas-residentes-viviendas-familiares .
+<http://opendata.aragon.es/recurso/iaest/dsd/03-030057> qb:component _:node228egmfx3 .
+_:node228egmfx3 qb:dimension sdmx-dimension:refPeriod .
 
-<http://opendata.aragon.es/recurso/iaest/dsd/03-030057> qb:component _:node228egmfx4 .
-_:node228egmfx4 qb:dimension sdmx-dimension:refPeriod .
+<http://opendata.aragon.es/recurso/iaest/dsd/03-030057> qb:component _:node228egmfx5 .
+_:node228egmfx5 qb:measure iaest-measure:personas-residentes-viviendas-familiares .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010083> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 01-080101-010083, Nº explotaciones según régimen de tenencia de la SAU. Censo agrario"@es ;

@@ -63,17 +63,22 @@ iaest-dimension:nivel-formativo-grupo-iaest-descripcion a qb:DimensionProperty ,
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/nivel-formativo-grupo-iaest-descripcion> .
 
-iaest-dimension:sector-descripcion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Sector descripción"@es ;
-	rdfs:comment "Sector descripción"@es ;
-	rdfs:range skos:Concept ;
-	qb:codeList <http://opendata.aragon.es/kos/iaest/sector-descripcion> .
+iaest-measure:mes-y-ano a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Mes y año"@es ;
+	rdfs:comment "Mes y año"@es ;
+	rdfs:range xsd:string .
 
 iaest-dimension:edad-grupos-quinquenales a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Edad (grupos quinquenales)"@es ;
 	rdfs:comment "Edad (grupos quinquenales)"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales> .
+
+iaest-dimension:sector-descripcion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Sector descripción"@es ;
+	rdfs:comment "Sector descripción"@es ;
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/sector-descripcion> .
 
 iaest-measure:personas-residentes-viviendas-familiares a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Personas residentes viviendas familiares"@es ;

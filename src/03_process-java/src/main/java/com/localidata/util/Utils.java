@@ -172,7 +172,7 @@ public class Utils {
 		chainToURI = chainToURI.replace("<", "");
 		chainToURI = chainToURI.replace("+", "");
 		chainToURI = chainToURI.replace("\"", "");
-		chainToURI = chainToURI.replace("%", "");
+		chainToURI = chainToURI.replace("%", "porcentaje"); //cambiamos el símbolo % por el string 'porcentaje' issue #198
 		chainToURI = chainToURI.replace("*", "");
 		chainToURI = chainToURI.replace("", "");
 		if (chainToURI.length() > 0) {

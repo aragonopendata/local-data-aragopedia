@@ -168,14 +168,14 @@ iaest-dimension:descripcion-ocupacion a qb:DimensionProperty , rdf:Property, qb:
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion> .
 
+iaest-measure:porcentaje-superficie-regada-sobre-sau a qb:MeasureProperty , rdf:Property;
+	rdfs:label "% superficie regada sobre SAU"@es ;
+	rdfs:comment "% superficie regada sobre SAU"@es ;
+	rdfs:range xsd:double .
+
 iaest-measure:superficie-agricola-utilizada-sau a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Superficie Agrícola Utilizada (SAU)"@es ;
 	rdfs:comment "Superficie Agrícola Utilizada (SAU)"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:superficie-regada-sobre-sau a qb:MeasureProperty , rdf:Property;
-	rdfs:label "% superficie regada sobre SAU"@es ;
-	rdfs:comment "% superficie regada sobre SAU"@es ;
 	rdfs:range xsd:double .
 
 iaest-measure:superficie-regada-has a qb:MeasureProperty , rdf:Property;
@@ -607,6 +607,21 @@ iaest-measure:indice-reemplazamiento-edad-activa-total a qb:MeasureProperty , rd
 	rdfs:comment "Índice reemplazamiento edad activa total"@es ;
 	rdfs:range xsd:double .
 
+iaest-measure:porcentaje-de-poblacion-de-0-a-19-anos a qb:MeasureProperty , rdf:Property;
+	rdfs:label "% de población de 0 a 19 años"@es ;
+	rdfs:comment "% de población de 0 a 19 años"@es ;
+	rdfs:range xsd:double .
+
+iaest-measure:porcentaje-de-poblacion-menor-de-45 a qb:MeasureProperty , rdf:Property;
+	rdfs:label "% de población menor de 45"@es ;
+	rdfs:comment "% de población menor de 45"@es ;
+	rdfs:range xsd:double .
+
+iaest-measure:porcentaje-de-poblacion-menor-de-25 a qb:MeasureProperty , rdf:Property;
+	rdfs:label "% de población menor de 25"@es ;
+	rdfs:comment "% de población menor de 25"@es ;
+	rdfs:range xsd:double .
+
 iaest-measure:indice-de-vejez a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Índice de vejez"@es ;
 	rdfs:comment "Índice de vejez"@es ;
@@ -617,6 +632,11 @@ iaest-measure:indice-de-potencialidad a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "Índice de potencialidad"@es ;
 	rdfs:range xsd:double .
 
+iaest-measure:porcentaje-de-poblacion-de-65-y-mas-anos a qb:MeasureProperty , rdf:Property;
+	rdfs:label "% de población de 65 y más años"@es ;
+	rdfs:comment "% de población de 65 y más años"@es ;
+	rdfs:range xsd:double .
+
 iaest-measure:indice-de-juventud a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Índice de juventud"@es ;
 	rdfs:comment "Índice de juventud"@es ;
@@ -625,6 +645,21 @@ iaest-measure:indice-de-juventud a qb:MeasureProperty , rdf:Property;
 iaest-measure:indice-de-ancianidad a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Índice de ancianidad"@es ;
 	rdfs:comment "Índice de ancianidad"@es ;
+	rdfs:range xsd:double .
+
+iaest-measure:porcentaje-de-poblacion-menor-de-15 a qb:MeasureProperty , rdf:Property;
+	rdfs:label "% de población menor de 15"@es ;
+	rdfs:comment "% de población menor de 15"@es ;
+	rdfs:range xsd:double .
+
+iaest-measure:porcentaje-de-poblacion-de-20-a-64-anos a qb:MeasureProperty , rdf:Property;
+	rdfs:label "% de población de 20 a 64 años"@es ;
+	rdfs:comment "% de población de 20 a 64 años"@es ;
+	rdfs:range xsd:double .
+
+iaest-measure:porcentaje-de-poblacion-menor-de-35 a qb:MeasureProperty , rdf:Property;
+	rdfs:label "% de población menor de 35"@es ;
+	rdfs:comment "% de población menor de 35"@es ;
 	rdfs:range xsd:double .
 
 iaest-dimension:grupo-de-tipo-de-jornada a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
@@ -987,19 +1022,19 @@ iaest-measure:rustico-superficie a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "Rústico, superficie"@es ;
 	rdfs:range xsd:double .
 
+iaest-measure:porcentaje-rustica a qb:MeasureProperty , rdf:Property;
+	rdfs:label "% Rústica"@es ;
+	rdfs:comment "% Rústica"@es ;
+	rdfs:range xsd:double .
+
 iaest-measure:urbano-superficie a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Urbano, superficie"@es ;
 	rdfs:comment "Urbano, superficie"@es ;
 	rdfs:range xsd:double .
 
-iaest-measure:urbana a qb:MeasureProperty , rdf:Property;
+iaest-measure:porcentaje-urbana a qb:MeasureProperty , rdf:Property;
 	rdfs:label "% Urbana"@es ;
 	rdfs:comment "% Urbana"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:rustica a qb:MeasureProperty , rdf:Property;
-	rdfs:label "% Rústica"@es ;
-	rdfs:comment "% Rústica"@es ;
 	rdfs:range xsd:double .
 
 iaest-dimension:plantas-sobre-rasante a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;

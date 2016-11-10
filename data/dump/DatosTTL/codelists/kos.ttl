@@ -259,7 +259,6 @@
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/hombres>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/hombre>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/mujer>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/varones>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/mujeres>.
 
 <http://opendata.aragon.es/kos/iaest/sexo/hombres> a skos:Concept;
@@ -276,11 +275,6 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
 	skos:notation "mujer";
 	skos:prefLabel "Mujer".
-
-<http://opendata.aragon.es/kos/iaest/sexo/varones> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
-	skos:notation "varones";
-	skos:prefLabel "Varones".
 
 <http://opendata.aragon.es/kos/iaest/sexo/mujeres> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
@@ -10144,12 +10138,18 @@
 <http://opendata.aragon.es/kos/iaest/origen> a skos:ConceptScheme;
 	skos:notation "origen";
 	rdfs:label "Origen";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/origen/iaest2>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/origen/iaest>.
+
+<http://opendata.aragon.es/kos/iaest/origen/iaest2> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/origen>;
+	skos:notation "iaest2";
+	skos:prefLabel "IAEST2".
 
 <http://opendata.aragon.es/kos/iaest/origen/iaest> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/origen>;
 	skos:notation "iaest";
-	skos:prefLabel "IAEST".
+	skos:prefLabel "iaest".
 
 <http://opendata.aragon.es/kos/iaest/tipo-de-alojamiento> a skos:ConceptScheme;
 	skos:notation "tipo-de-alojamiento";

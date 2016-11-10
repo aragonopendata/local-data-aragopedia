@@ -1879,6 +1879,12 @@ iaest-dimension:rama-descripcion a qb:DimensionProperty , rdf:Property, qb:Coded
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/rama-descripcion> .
 
+iaest-dimension:ocupacion-agraria a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Jefe explotación"@es ;
+	rdfs:comment "Jefe explotación"@es ;
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/ocupacion-agraria> .
+
 iaest-measure:rustica---cuota-liquida-euros a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Rústica   Cuota líquida (euros)"@es ;
 	rdfs:comment "Rústica   Cuota líquida (euros)"@es ;
@@ -2388,24 +2394,24 @@ iaest-measure:explotaciones-con-tierras-cuya-superficie-es-totalmente-de-su-prop
 	rdfs:comment "Explotaciones con tierras cuya superficie es totalmente de su propiedad"@es ;
 	rdfs:range xsd:int .
 
-iaest-measure:explotaciones-con-tierras-con-75-y--100-de-su-propiedad a qb:MeasureProperty , rdf:Property;
+iaest-measure:explotaciones-con-tierras-con-75porcentaje-y--100porcentaje-de-su-propiedad a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Explotaciones con tierras con >=75% y  <100% de su propiedad"@es ;
 	rdfs:comment "Explotaciones con tierras con >=75% y  <100% de su propiedad"@es ;
 	rdfs:range xsd:int .
 
-iaest-measure:explotaciones-con-tierras-con-25-y-50-de-su-propiedad a qb:MeasureProperty , rdf:Property;
+iaest-measure:explotaciones-con-tierras-con--25porcentaje-de-su-propiedad a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Explotaciones con tierras con < 25% de su propiedad"@es ;
+	rdfs:comment "Explotaciones con tierras con < 25% de su propiedad"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:explotaciones-con-tierras-con-25porcentaje-y-50porcentaje-de-su-propiedad a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Explotaciones con tierras con >=25% y <50% de su propiedad"@es ;
 	rdfs:comment "Explotaciones con tierras con >=25% y <50% de su propiedad"@es ;
 	rdfs:range xsd:int .
 
-iaest-measure:explotaciones-con-tierras-con-50-y--75-de-su-propiedad a qb:MeasureProperty , rdf:Property;
+iaest-measure:explotaciones-con-tierras-con-50porcentaje-y--75porcentaje-de-su-propiedad a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Explotaciones con tierras con >=50% y  <75% de su propiedad"@es ;
 	rdfs:comment "Explotaciones con tierras con >=50% y  <75% de su propiedad"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:explotaciones-con-tierras-con--25-de-su-propiedad a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Explotaciones con tierras con < 25% de su propiedad"@es ;
-	rdfs:comment "Explotaciones con tierras con < 25% de su propiedad"@es ;
 	rdfs:range xsd:int .
 
 iaest-dimension:nivel-estudios a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
@@ -2726,9 +2732,9 @@ iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-activida
 	rdfs:comment "Personas mano obra familiar cónyuges que trabajan en otra actividad como principal"@es ;
 	rdfs:range xsd:int .
 
-iaest-measure:personas-mano-obra-familiar-con-100-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar con 100% trabajando en explotación"@es ;
-	rdfs:comment "Personas mano obra familiar con 100% trabajando en explotación"@es ;
+iaest-measure:personas-mano-obra-familiar-con-25porcentaje-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar con <25% trabajando en explotación"@es ;
+	rdfs:comment "Personas mano obra familiar con <25% trabajando en explotación"@es ;
 	rdfs:range xsd:int .
 
 iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-tambien-en-otra-activ-lucrativa a qb:MeasureProperty , rdf:Property;
@@ -2741,24 +2747,14 @@ iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-activid
 	rdfs:comment "Personas mano obra familiar titulares que trabajan en otra actividad como secundaria"@es ;
 	rdfs:range xsd:int .
 
-iaest-measure:personas-mano-obra-familiar-con-4999-y-75-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar con >49,99 y <75% trabajando en explotación"@es ;
-	rdfs:comment "Personas mano obra familiar con >49,99 y <75% trabajando en explotación"@es ;
-	rdfs:range xsd:int .
-
 iaest-measure:personas-mano-obra-familiar-titulares-que-solo-trabajan-en-la-explotacion a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Personas mano obra familiar titulares que sólo trabajan en la explotación"@es ;
 	rdfs:comment "Personas mano obra familiar titulares que sólo trabajan en la explotación"@es ;
 	rdfs:range xsd:int .
 
-iaest-measure:personas-mano-obra-familiar-con-7499-y-100-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
+iaest-measure:personas-mano-obra-familiar-con-7499-y-100porcentaje-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Personas mano obra familiar con >74,99 y <100% trabajando en explotación"@es ;
 	rdfs:comment "Personas mano obra familiar con >74,99 y <100% trabajando en explotación"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-con-25-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar con <25% trabajando en explotación"@es ;
-	rdfs:comment "Personas mano obra familiar con <25% trabajando en explotación"@es ;
 	rdfs:range xsd:int .
 
 iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-secundaria a qb:MeasureProperty , rdf:Property;
@@ -2769,6 +2765,11 @@ iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-secund
 iaest-measure:personas-mano-obra-familiar-trabajan-tambien-en-otra-activ-lucrativa a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Personas mano obra familiar trabajan también en otra activ. lucrativa"@es ;
 	rdfs:comment "Personas mano obra familiar trabajan también en otra activ. lucrativa"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-con-4999-y-75porcentaje-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar con >49,99 y <75% trabajando en explotación"@es ;
+	rdfs:comment "Personas mano obra familiar con >49,99 y <75% trabajando en explotación"@es ;
 	rdfs:range xsd:int .
 
 iaest-measure:personas-mano-obra-familiar-otros--trabajan-en-otra-actividad-como-principal a qb:MeasureProperty , rdf:Property;
@@ -2786,19 +2787,24 @@ iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-princi
 	rdfs:comment "Personas mano obra familiar trabajan en otra actividad como principal"@es ;
 	rdfs:range xsd:int .
 
+iaest-measure:personas-mano-obra-familiar-con-2499-y-50porcentaje-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar con >24,99 y <50% trabajando en explotación"@es ;
+	rdfs:comment "Personas mano obra familiar con >24,99 y <50% trabajando en explotación"@es ;
+	rdfs:range xsd:int .
+
 iaest-measure:personas-mano-obra-familiar-otros-que-solo-trabajan-en-la-explotacion a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Personas mano obra familiar otros, que sólo trabajan en la explotación"@es ;
 	rdfs:comment "Personas mano obra familiar otros, que sólo trabajan en la explotación"@es ;
 	rdfs:range xsd:int .
 
+iaest-measure:personas-mano-obra-familiar-con-100porcentaje-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar con 100% trabajando en explotación"@es ;
+	rdfs:comment "Personas mano obra familiar con 100% trabajando en explotación"@es ;
+	rdfs:range xsd:int .
+
 iaest-measure:personas-mano-obra-familiar-solo-trabajan-en-la-explotacion a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Personas mano obra familiar sólo trabajan en la explotación"@es ;
 	rdfs:comment "Personas mano obra familiar sólo trabajan en la explotación"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-con-2499-y-50-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar con >24,99 y <50% trabajando en explotación"@es ;
-	rdfs:comment "Personas mano obra familiar con >24,99 y <50% trabajando en explotación"@es ;
 	rdfs:range xsd:int .
 
 iaest-measure:personas-asalariadas-fijas-mujeres a qb:MeasureProperty , rdf:Property;
@@ -2955,29 +2961,29 @@ iaest-measure:explotaciones-con-tierras-con-sau--10-y--20-hectareas a qb:Measure
 	rdfs:comment "Explotaciones con tierras con SAU >= 10 y < 20 hectáreas"@es ;
 	rdfs:range xsd:int .
 
-iaest-measure:explotaciones-con-tierras-con-sau-50-y-75-de-su-propiedad a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Explotaciones con tierras con SAU >=50% y <75% de su propiedad"@es ;
-	rdfs:comment "Explotaciones con tierras con SAU >=50% y <75% de su propiedad"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:explotaciones-con-tierras-con-sau--25-de-su-propiedad a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Explotaciones con tierras con SAU  <25% de su propiedad"@es ;
-	rdfs:comment "Explotaciones con tierras con SAU  <25% de su propiedad"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:explotaciones-con-tierras-con-sau-75-y-100-de-su-propiedad a qb:MeasureProperty , rdf:Property;
+iaest-measure:explotaciones-con-tierras-con-sau-75porcentaje-y-100porcentaje-de-su-propiedad a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Explotaciones con tierras con SAU >=75% y <100% de su propiedad"@es ;
 	rdfs:comment "Explotaciones con tierras con SAU >=75% y <100% de su propiedad"@es ;
 	rdfs:range xsd:int .
 
-iaest-measure:explotaciones-con-tierras-con-sau-25-y-50-de-su-propiedad a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Explotaciones con tierras con SAU >=25% y <50% de su propiedad"@es ;
-	rdfs:comment "Explotaciones con tierras con SAU >=25% y <50% de su propiedad"@es ;
+iaest-measure:explotaciones-con-tierras-con-sau-50porcentaje-y-75porcentaje-de-su-propiedad a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Explotaciones con tierras con SAU >=50% y <75% de su propiedad"@es ;
+	rdfs:comment "Explotaciones con tierras con SAU >=50% y <75% de su propiedad"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:explotaciones-con-tierras-con-sau--25porcentaje-de-su-propiedad a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Explotaciones con tierras con SAU  <25% de su propiedad"@es ;
+	rdfs:comment "Explotaciones con tierras con SAU  <25% de su propiedad"@es ;
 	rdfs:range xsd:int .
 
 iaest-measure:explotaciones-con-tierras-con-sau-totalmente-de-su-propiedad a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Explotaciones con tierras con SAU totalmente de su propiedad"@es ;
 	rdfs:comment "Explotaciones con tierras con SAU totalmente de su propiedad"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:explotaciones-con-tierras-con-sau-25porcentaje-y-50porcentaje-de-su-propiedad a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Explotaciones con tierras con SAU >=25% y <50% de su propiedad"@es ;
+	rdfs:comment "Explotaciones con tierras con SAU >=25% y <50% de su propiedad"@es ;
 	rdfs:range xsd:int .
 
 iaest-measure:renta-disponible-bruta a qb:MeasureProperty , rdf:Property;

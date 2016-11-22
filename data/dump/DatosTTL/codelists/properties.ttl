@@ -168,6 +168,11 @@ iaest-dimension:descripcion-ocupacion a qb:DimensionProperty , rdf:Property, qb:
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion> .
 
+iaest-measure:ano a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Año"@es ;
+	rdfs:comment "Año"@es ;
+	rdfs:range xsd:int .
+
 iaest-measure:porcentaje-superficie-regada-sobre-sau a qb:MeasureProperty , rdf:Property;
 	rdfs:label "% superficie regada sobre SAU"@es ;
 	rdfs:comment "% superficie regada sobre SAU"@es ;
@@ -642,11 +647,6 @@ iaest-dimension:residencia a qb:DimensionProperty , rdf:Property, qb:CodedProper
 iaest-measure:total-viviendas a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Total viviendas"@es ;
 	rdfs:comment "Total viviendas"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:ano a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Año"@es ;
-	rdfs:comment "Año"@es ;
 	rdfs:range xsd:int .
 
 iaest-measure:viviendas-protegidas a qb:MeasureProperty , rdf:Property;
@@ -1235,10 +1235,11 @@ iaest-measure:1980-1989 a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "1980-1989"@es ;
 	rdfs:range xsd:int .
 
-iaest-measure:fuente-y-fecha a qb:MeasureProperty , rdf:Property;
+iaest-dimension:fuente-y-fecha a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Fuente y fecha"@es ;
 	rdfs:comment "Fuente y fecha"@es ;
-	rdfs:range xsd:string .
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/fuente-y-fecha> .
 
 iaest-measure:2010-y-posterior a qb:MeasureProperty , rdf:Property;
 	rdfs:label "2010 y posterior"@es ;
@@ -1527,11 +1528,10 @@ iaest-measure:impuestos-indirectos a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "Impuestos indirectos"@es ;
 	rdfs:range xsd:double .
 
-iaest-dimension:jefe-explotacion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Jefe explotación"@es ;
-	rdfs:comment "Jefe explotación"@es ;
-	rdfs:range skos:Concept ;
-	qb:codeList <http://opendata.aragon.es/kos/iaest/jefe-explotacion> .
+iaest-dimension:ocupacion-agraria a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Ocupación agraria"@es ;
+	rdfs:comment "Ocupación agraria"@es ;
+	rdfs:range skos:Concept.
 
 iaest-measure:superficie-total-ha a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Superficie total (Ha.)"@es ;
@@ -1878,12 +1878,6 @@ iaest-dimension:rama-descripcion a qb:DimensionProperty , rdf:Property, qb:Coded
 	rdfs:comment "Rama descripción"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/rama-descripcion> .
-
-iaest-dimension:ocupacion-agraria a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Jefe explotación"@es ;
-	rdfs:comment "Jefe explotación"@es ;
-	rdfs:range skos:Concept ;
-	qb:codeList <http://opendata.aragon.es/kos/iaest/ocupacion-agraria> .
 
 iaest-measure:rustica---cuota-liquida-euros a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Rústica   Cuota líquida (euros)"@es ;

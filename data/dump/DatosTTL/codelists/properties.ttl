@@ -29,11 +29,6 @@ iaest-dimension:ue27 a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/ue27> .
 
-iaest-dimension:mes-y-ano a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Mes y año"@es ;
-	rdfs:comment "Mes y año"@es ;
-	rdfs:range xsd:string .
-
 iaest-dimension:ue25 a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "UE25"@es ;
 	rdfs:comment "UE25"@es ;
@@ -62,11 +57,6 @@ iaest-dimension:nivel-formativo-grupo-iaest-descripcion a qb:DimensionProperty ,
 	rdfs:comment "Nivel formativo grupo IAEST descripción"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/nivel-formativo-grupo-iaest-descripcion> .
-
-iaest-measure:mes-y-ano a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Mes y año"@es ;
-	rdfs:comment "Mes y año"@es ;
-	rdfs:range xsd:string .
 
 iaest-dimension:edad-grupos-quinquenales a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Edad (grupos quinquenales)"@es ;
@@ -353,6 +343,11 @@ iaest-dimension:grandes-grupos-cno a qb:DimensionProperty , rdf:Property, qb:Cod
 	rdfs:comment "Grandes grupos CNO"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/grandes-grupos-cno> .
+
+iaest-dimension:mes-y-ano a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Mes y año"@es ;
+	rdfs:comment "Mes y año"@es ;
+	rdfs:range xsd:string .
 
 iaest-dimension:ocupacion-1-digito-descripcion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Ocupación (1 dígito) descripción"@es ;

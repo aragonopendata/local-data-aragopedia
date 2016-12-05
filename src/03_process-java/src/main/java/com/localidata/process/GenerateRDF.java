@@ -133,14 +133,19 @@ public class GenerateRDF {
 				DataBean data2 = mapconfig.get(data1.getIdConfig()).getMapData().get(data1.getRelationKos());
 				HashMap<String, SkosBean> mapSkos = data1.mergeSkos(data2);
 				if (mapSkos != null) {
-					log.info("Kos " + data1.getName() + " is parent of " + data2.getName());
-					data2.setWriteSkos(false);
-					data1.setMapSkos(mapSkos);
-					data2.setMapSkos(mapSkos);
-					mapconfig.get(data1.getIdConfig()).getMapData().get(data1.getNameNormalized()).setMapSkos(mapSkos);
-					mapconfig.get(data2.getIdConfig()).getMapData().get(data2.getNameNormalized()).setMapSkos(mapSkos);
-					data1.setNormalizacion(data1.getNormalizacion().replace(data1.getNameNormalized(), data1.getKosNameNormalized()));
-					data2.setNormalizacion(data2.getNormalizacion().replace(data2.getNameNormalized(), data2.getKosNameNormalized()));
+					try{
+						log.info("Kos " + data1.getName() + " is parent of " + data2.getName());
+						data2.setWriteSkos(false);
+						data1.setMapSkos(mapSkos);
+						data2.setMapSkos(mapSkos);
+						mapconfig.get(data1.getIdConfig()).getMapData().get(data1.getNameNormalized()).setMapSkos(mapSkos);
+						mapconfig.get(data2.getIdConfig()).getMapData().get(data2.getNameNormalized()).setMapSkos(mapSkos);
+						data1.setNormalizacion(data1.getNormalizacion().replace(data1.getNameNormalized(), data1.getKosNameNormalized()));
+						data2.setNormalizacion(data2.getNormalizacion().replace(data2.getNameNormalized(), data2.getKosNameNormalized()));
+					}
+					catch(Exception e){
+						log.error("[M]Error : ", e);
+					}
 				}
 			}
 		}

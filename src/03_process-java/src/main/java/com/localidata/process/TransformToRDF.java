@@ -184,6 +184,7 @@ public class TransformToRDF {
 		StringBuffer result = new StringBuffer();
 		String endResult = "";
 		boolean year = false;
+		boolean month = false;
 		String cleanLine = Utils.weakClean(line);
 		if (cleanLine.equals("")) {
 			log.debug("End addObservation");
@@ -230,8 +231,19 @@ public class TransformToRDF {
 									}
 								} else {
 									if (dataBean.getNormalizacion().equals("sdmx-dimension:refPeriod")) {
-										year = true;
-										result.append("\t" + dataBean.getNormalizacion() + " <http://reference.data.gov.uk/id/year/" + normalizedCell + "> ;" + "\n");
+										try{
+											if (dataBean.getNameNormalized().equals("ano")){
+												year = true;
+												result.append("\t" + dataBean.getNormalizacion() + " <http://reference.data.gov.uk/id/year/" + normalizedCell + "> ;" + "\n");
+											} else if (dataBean.getNameNormalized().equals("mes-codigo")){
+												month = true;
+												result.append("\t" + dataBean.getNormalizacion() + " <http://reference.data.gov.uk/id/month/" + normalizedCell.substring(0, 4) + "-" + normalizedCell.substring(4, 6) + "> ;" + "\n");
+											} else {
+												result.append("\t" + dataBean.getNormalizacion() + " <http://reference.data.gov.uk/id/year/2011> ;" + "\n");
+											}
+										}catch (Exception e) {
+											log.error("[M] Error formateando refPedriod: " + e);
+										}
 									}
 								}
 							} else {
@@ -276,7 +288,7 @@ public class TransformToRDF {
 				}
 			}
 		}
-		if (!year) {
+		if (!year && !month) {
 			result.append("\tsdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ." + "\n");
 		}
 

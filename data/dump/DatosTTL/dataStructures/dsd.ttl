@@ -5112,8 +5112,8 @@ _:node170egmfx4 qb:measure iaest-measure:afiliaciones-en-alta .
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050003> qb:component _:node170egmfx5 .
 _:node170egmfx5 qb:dimension iaest-dimension:sexo .
 
-<http://opendata.aragon.es/recurso/iaest/dsd/05-050003> qb:component _:node170egmfx7 .
-_:node170egmfx7 qb:dimension iaest-dimension:nacionalidad .
+<http://opendata.aragon.es/recurso/iaest/dsd/05-050003> qb:component _:node170egmfx8 .
+_:node170egmfx8 qb:dimension iaest-dimension:nacionalidad .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050006> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 05-050006, Autónomos y Empresas con asalariados Autónomos según grupos de edad y sexo"@es ;
@@ -6630,22 +6630,22 @@ _:node218egmfx5 qb:dimension sdmx-dimension:refArea .
 	rdfs:comment "Esta estructura afecta a las areas: TC TP A "^^xsd:string .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050105> qb:component _:node219egmfx1 .
-_:node219egmfx1 qb:measure iaest-measure:cuentas-cotizacion-con-trabajadores .
+_:node219egmfx1 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050105> qb:component _:node219egmfx2 .
-_:node219egmfx2 qb:measure iaest-measure:territorio .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/05-050105> qb:component _:node219egmfx3 .
-_:node219egmfx3 qb:dimension sdmx-dimension:refArea .
+_:node219egmfx2 qb:dimension iaest-dimension:sector-descripcion .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050105> qb:component _:node219egmfx4 .
-_:node219egmfx4 qb:dimension iaest-dimension:codcom .
+_:node219egmfx4 qb:measure iaest-measure:cuentas-cotizacion-con-trabajadores .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050105> qb:component _:node219egmfx5 .
-_:node219egmfx5 qb:dimension sdmx-dimension:refPeriod .
+_:node219egmfx5 qb:measure iaest-measure:territorio .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050105> qb:component _:node219egmfx6 .
-_:node219egmfx6 qb:dimension iaest-dimension:sector-descripcion .
+_:node219egmfx6 qb:dimension iaest-dimension:codcom .
+
+<http://opendata.aragon.es/recurso/iaest/dsd/05-050105> qb:component _:node219egmfx7 .
+_:node219egmfx7 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/03-030058> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 03-030058, Estructura de los hogares"@es ;

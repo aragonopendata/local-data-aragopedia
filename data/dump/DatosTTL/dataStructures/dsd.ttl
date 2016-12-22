@@ -1138,11 +1138,8 @@ _:node52egmfx3 qb:dimension sdmx-dimension:refArea .
 <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030100> qb:component _:node52egmfx4 .
 _:node52egmfx4 qb:measure iaest-measure:n-hogares .
 
-<http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030100> qb:component _:node52egmfx6 .
-_:node52egmfx6 qb:measure iaest-measure:provincia .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030100> qb:component _:node52egmfx8 .
-_:node52egmfx8 qb:dimension sdmx-dimension:refPeriod .
+<http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030100> qb:component _:node52egmfx7 .
+_:node52egmfx7 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030101> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 03-02010301-030101, Hogares y familias Según número de miembros"@es ;
@@ -1309,25 +1306,22 @@ _:node59egmfx4 qb:measure iaest-measure:duracion-contrato .
 _:node59egmfx5 qb:measure iaest-measure:duracion-contrato--100--numero-de-contratos .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050315> qb:component _:node59egmfx6 .
-_:node59egmfx6 qb:measure iaest-measure:ordenmodalidad .
+_:node59egmfx6 qb:dimension iaest-dimension:mes-nombre .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050315> qb:component _:node59egmfx7 .
-_:node59egmfx7 qb:dimension iaest-dimension:mes-nombre .
+_:node59egmfx7 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050315> qb:component _:node59egmfx8 .
-_:node59egmfx8 qb:dimension sdmx-dimension:refPeriod .
+_:node59egmfx8 qb:dimension iaest-dimension:dias-duracion-contrato .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050315> qb:component _:node59egmfx9 .
-_:node59egmfx9 qb:dimension iaest-dimension:dias-duracion-contrato .
+_:node59egmfx9 qb:dimension iaest-dimension:modalidad .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050315> qb:component _:node59egmfx10 .
-_:node59egmfx10 qb:dimension iaest-dimension:modalidad .
+_:node59egmfx10 qb:dimension iaest-dimension:grupo-de-tipo-de-contrato .
 
-<http://opendata.aragon.es/recurso/iaest/dsd/05-050315> qb:component _:node59egmfx11 .
-_:node59egmfx11 qb:dimension iaest-dimension:grupo-de-tipo-de-contrato .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/05-050315> qb:component _:node59egmfx13 .
-_:node59egmfx13 qb:dimension iaest-dimension:sexo .
+<http://opendata.aragon.es/recurso/iaest/dsd/05-050315> qb:component _:node59egmfx12 .
+_:node59egmfx12 qb:dimension iaest-dimension:sexo .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/03-030008> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 03-030008, Población según lugar de nacimiento. CCAA."@es ;
@@ -1961,16 +1955,13 @@ _:node84egmfx4 qb:dimension sdmx-dimension:refPeriod .
 _:node85egmfx1 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010115> qb:component _:node85egmfx2 .
-_:node85egmfx2 qb:measure iaest-measure:ano .
+_:node85egmfx2 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010115> qb:component _:node85egmfx3 .
 _:node85egmfx3 qb:measure iaest-measure:vab .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010115> qb:component _:node85egmfx4 .
 _:node85egmfx4 qb:dimension iaest-dimension:sector-vab-descripcion .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010115> qb:component _:node85egmfx6 .
-_:node85egmfx6 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010003> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 01-010003, Características de las viviendas familiares principales Según superficie útil"@es ;
@@ -2381,8 +2372,8 @@ _:node105egmfx4 qb:dimension sdmx-dimension:refPeriod .
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010025> qb:component _:node105egmfx5 .
 _:node105egmfx5 qb:measure iaest-measure:rustico-valor-catastral .
 
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010025> qb:component _:node105egmfx7 .
-_:node105egmfx7 qb:measure iaest-measure:rustico-subparcelas .
+<http://opendata.aragon.es/recurso/iaest/dsd/01-010025> qb:component _:node105egmfx6 .
+_:node105egmfx6 qb:measure iaest-measure:rustico-subparcelas .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010026> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 01-010026, Licencias municipales de obra según tipo"@es ;
@@ -6011,13 +6002,10 @@ _:node204egmfx7 qb:dimension iaest-dimension:sector .
 _:node205egmfx1 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010077> qb:component _:node205egmfx2 .
-_:node205egmfx2 qb:measure iaest-measure:ano .
+_:node205egmfx2 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010077> qb:component _:node205egmfx5 .
 _:node205egmfx5 qb:dimension iaest-dimension:division-2-digitos-descripcion .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010077> qb:component _:node205egmfx7 .
-_:node205egmfx7 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/03-030068> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 03-030068, Disponibilidad de vehículo"@es ;
@@ -6666,16 +6654,13 @@ _:node221egmfx6 qb:dimension sdmx-dimension:refArea .
 _:node222egmfx1 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/04-040021> qb:component _:node222egmfx2 .
-_:node222egmfx2 qb:measure iaest-measure:ano .
+_:node222egmfx2 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/04-040021> qb:component _:node222egmfx4 .
 _:node222egmfx4 qb:measure iaest-measure:contenedores-de-envases .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/04-040021> qb:component _:node222egmfx6 .
 _:node222egmfx6 qb:measure iaest-measure:kg-recogidos-envases .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/04-040021> qb:component _:node222egmfx8 .
-_:node222egmfx8 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-0709-070910> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 05-0709-070910, Accidentes en jornada Accidentes según grado de lesión y régimen de Seguridad Social"@es ;
@@ -6927,7 +6912,7 @@ _:node234egmfx2 qb:dimension sdmx-dimension:refPeriod .
 _:node234egmfx3 qb:measure iaest-measure:diputados .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150010> qb:component _:node234egmfx5 .
-_:node234egmfx5 qb:measure iaest-measure:siglas .
+_:node234egmfx5 qb:dimension iaest-dimension:siglas .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150010> qb:component _:node234egmfx6 .
 _:node234egmfx6 qb:measure iaest-measure:votos .
@@ -7075,7 +7060,7 @@ _:node242egmfx2 qb:dimension sdmx-dimension:refPeriod .
 _:node242egmfx3 qb:measure iaest-measure:diputados .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150012> qb:component _:node242egmfx4 .
-_:node242egmfx4 qb:measure iaest-measure:siglas .
+_:node242egmfx4 qb:dimension iaest-dimension:siglas .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150012> qb:component _:node242egmfx5 .
 _:node242egmfx5 qb:measure iaest-measure:votos .
@@ -7187,7 +7172,7 @@ _:node247egmfx2 qb:measure iaest-measure:diputados .
 _:node247egmfx3 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150014> qb:component _:node247egmfx5 .
-_:node247egmfx5 qb:measure iaest-measure:siglas .
+_:node247egmfx5 qb:dimension iaest-dimension:siglas .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150014> qb:component _:node247egmfx6 .
 _:node247egmfx6 qb:measure iaest-measure:votos .
@@ -7258,7 +7243,7 @@ _:node251egmfx2 qb:measure iaest-measure:diputados .
 _:node251egmfx3 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150013> qb:component _:node251egmfx5 .
-_:node251egmfx5 qb:measure iaest-measure:siglas .
+_:node251egmfx5 qb:dimension iaest-dimension:siglas .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150013> qb:component _:node251egmfx6 .
 _:node251egmfx6 qb:measure iaest-measure:votos .
@@ -7456,7 +7441,7 @@ _:node260egmfx2 qb:measure iaest-measure:diputados .
 _:node260egmfx3 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150004> qb:component _:node260egmfx5 .
-_:node260egmfx5 qb:measure iaest-measure:siglas .
+_:node260egmfx5 qb:dimension iaest-dimension:siglas .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150004> qb:component _:node260egmfx6 .
 _:node260egmfx6 qb:measure iaest-measure:votos .
@@ -7557,7 +7542,7 @@ _:node264egmfx1 qb:dimension sdmx-dimension:refArea .
 _:node264egmfx2 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150006> qb:component _:node264egmfx5 .
-_:node264egmfx5 qb:measure iaest-measure:siglas .
+_:node264egmfx5 qb:dimension iaest-dimension:siglas .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150006> qb:component _:node264egmfx6 .
 _:node264egmfx6 qb:measure iaest-measure:votos .
@@ -7580,10 +7565,10 @@ _:node265egmfx3 qb:measure iaest-measure:concejales .
 _:node265egmfx4 qb:measure iaest-measure:votos .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150009> qb:component _:node265egmfx7 .
-_:node265egmfx7 qb:measure iaest-measure:siglas-agrupada .
+_:node265egmfx7 qb:dimension iaest-dimension:siglas-agrupada .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150009> qb:component _:node265egmfx8 .
-_:node265egmfx8 qb:measure iaest-measure:siglas .
+_:node265egmfx8 qb:dimension iaest-dimension:siglas .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/04-040016> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 04-040016, Reciclaje de residuos: pilas"@es ;
@@ -7631,7 +7616,7 @@ _:node268egmfx1 qb:dimension sdmx-dimension:refArea .
 _:node268egmfx2 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150008> qb:component _:node268egmfx5 .
-_:node268egmfx5 qb:measure iaest-measure:siglas .
+_:node268egmfx5 qb:dimension iaest-dimension:siglas .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150008> qb:component _:node268egmfx6 .
 _:node268egmfx6 qb:measure iaest-measure:votos .
@@ -7892,7 +7877,7 @@ _:node280egmfx2 qb:measure iaest-measure:diputados .
 _:node280egmfx3 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150003> qb:component _:node280egmfx5 .
-_:node280egmfx5 qb:measure iaest-measure:siglas .
+_:node280egmfx5 qb:dimension iaest-dimension:siglas .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150003> qb:component _:node280egmfx6 .
 _:node280egmfx6 qb:measure iaest-measure:votos .
@@ -7935,7 +7920,7 @@ _:node282egmfx2 qb:dimension sdmx-dimension:refPeriod .
 _:node282egmfx3 qb:measure iaest-measure:diputados .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150002> qb:component _:node282egmfx4 .
-_:node282egmfx4 qb:measure iaest-measure:siglas .
+_:node282egmfx4 qb:dimension iaest-dimension:siglas .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150002> qb:component _:node282egmfx5 .
 _:node282egmfx5 qb:measure iaest-measure:votos .

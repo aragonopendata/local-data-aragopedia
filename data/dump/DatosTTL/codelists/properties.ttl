@@ -488,11 +488,6 @@ iaest-dimension:tipo-de-hogar a qb:DimensionProperty , rdf:Property, qb:CodedPro
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/tipo-de-hogar> .
 
-iaest-measure:provincia a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Provincia:"@es ;
-	rdfs:comment "Provincia:"@es ;
-	rdfs:range xsd:int .
-
 iaest-dimension:numero-de-miembros a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Número de miembros"@es ;
 	rdfs:comment "Número de miembros"@es ;
@@ -532,11 +527,6 @@ iaest-dimension:dias-duracion-contrato a qb:DimensionProperty , rdf:Property, qb
 	rdfs:comment "Días duración contrato"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/dias-duracion-contrato> .
-
-iaest-measure:ordenmodalidad a qb:MeasureProperty , rdf:Property;
-	rdfs:label "orden_modalidad"@es ;
-	rdfs:comment "orden_modalidad"@es ;
-	rdfs:range xsd:int .
 
 iaest-dimension:modalidad a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Modalidad"@es ;
@@ -3375,11 +3365,6 @@ iaest-measure:diputados a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "Diputados"@es ;
 	rdfs:range xsd:int .
 
-iaest-measure:siglas a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Siglas"@es ;
-	rdfs:comment "Siglas"@es ;
-	rdfs:range xsd:string .
-
 iaest-dimension:superficie-agricola-utilizada a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Superficie agrícola utilizada"@es ;
 	rdfs:comment "Superficie agrícola utilizada"@es ;
@@ -3588,10 +3573,11 @@ iaest-measure:concejales a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "Concejales"@es ;
 	rdfs:range xsd:int .
 
-iaest-measure:siglas-agrupada a qb:MeasureProperty , rdf:Property;
+iaest-dimension:siglas-agrupada a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Siglas agrupada"@es ;
 	rdfs:comment "Siglas agrupada"@es ;
-	rdfs:range xsd:string .
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/siglas-agrupada> .
 
 iaest-measure:kg-recogidos-de-pilas a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Kg recogidos de pilas"@es ;

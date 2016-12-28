@@ -158,24 +158,19 @@ iaest-dimension:descripcion-ocupacion a qb:DimensionProperty , rdf:Property, qb:
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/descripcion-ocupacion> .
 
-iaest-measure:ano a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Año"@es ;
-	rdfs:comment "Año"@es ;
-	rdfs:range xsd:int .
-
 iaest-measure:porcentaje-superficie-regada-sobre-sau a qb:MeasureProperty , rdf:Property;
 	rdfs:label "% superficie regada sobre SAU"@es ;
 	rdfs:comment "% superficie regada sobre SAU"@es ;
 	rdfs:range xsd:double .
 
-iaest-measure:superficie-agricola-utilizada-sau a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Superficie Agrícola Utilizada (SAU)"@es ;
-	rdfs:comment "Superficie Agrícola Utilizada (SAU)"@es ;
-	rdfs:range xsd:double .
-
 iaest-measure:superficie-regada-has a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Superficie regada (has)"@es ;
 	rdfs:comment "Superficie regada (has)"@es ;
+	rdfs:range xsd:double .
+
+iaest-measure:superficie-agricola-utilizada-sau a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Superficie Agrícola Utilizada (SAU)"@es ;
+	rdfs:comment "Superficie Agrícola Utilizada (SAU)"@es ;
 	rdfs:range xsd:double .
 
 iaest-dimension:contaminacion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
@@ -627,6 +622,11 @@ iaest-dimension:residencia a qb:DimensionProperty , rdf:Property, qb:CodedProper
 iaest-measure:total-viviendas a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Total viviendas"@es ;
 	rdfs:comment "Total viviendas"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:ano a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Año"@es ;
+	rdfs:comment "Año"@es ;
 	rdfs:range xsd:int .
 
 iaest-measure:viviendas-protegidas a qb:MeasureProperty , rdf:Property;

@@ -349,25 +349,22 @@ _:node16egmfx6 qb:dimension iaest-dimension:descripcion-ocupacion .
 <http://opendata.aragon.es/recurso/iaest/dsd/04-040003> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 04-040003, Superficie regada en relación a la SAU"@es ;
 	skos:notation "DSD-04-040003" ;
-	rdfs:comment "Esta estructura afecta a las areas: TC "^^xsd:string .
+	rdfs:comment "Esta estructura afecta a las areas: TC TM TP A "^^xsd:string .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/04-040003> qb:component _:node17egmfx1 .
 _:node17egmfx1 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/04-040003> qb:component _:node17egmfx2 .
-_:node17egmfx2 qb:measure iaest-measure:ano .
+_:node17egmfx2 qb:dimension sdmx-dimension:refPeriod .
+
+<http://opendata.aragon.es/recurso/iaest/dsd/04-040003> qb:component _:node17egmfx3 .
+_:node17egmfx3 qb:measure iaest-measure:porcentaje-superficie-regada-sobre-sau .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/04-040003> qb:component _:node17egmfx4 .
-_:node17egmfx4 qb:measure iaest-measure:porcentaje-superficie-regada-sobre-sau .
+_:node17egmfx4 qb:measure iaest-measure:superficie-regada-has .
 
-<http://opendata.aragon.es/recurso/iaest/dsd/04-040003> qb:component _:node17egmfx5 .
-_:node17egmfx5 qb:measure iaest-measure:superficie-agricola-utilizada-sau .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/04-040003> qb:component _:node17egmfx6 .
-_:node17egmfx6 qb:measure iaest-measure:superficie-regada-has .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/04-040003> qb:component _:node17egmfx8 .
-_:node17egmfx8 qb:dimension sdmx-dimension:refPeriod .
+<http://opendata.aragon.es/recurso/iaest/dsd/04-040003> qb:component _:node17egmfx7 .
+_:node17egmfx7 qb:measure iaest-measure:superficie-agricola-utilizada-sau .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/04-040004> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 04-040004, Contaminación y ruido"@es ;

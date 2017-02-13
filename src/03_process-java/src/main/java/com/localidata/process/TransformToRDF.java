@@ -429,7 +429,7 @@ public class TransformToRDF {
 	private static void insertViewTTL(String view) {
 
 		File specsTtl = new File(specsTtlFileString);
-		String line = view + " api:label \"" + view.replace(":", "_") + "\".\n";
+		String line = view + " api:label \"" + view.replace(":", "_").replace("-","_") + "\".\n"; //Fallo en la ordenación en ELDA - issue #198
 		Utils.stringToFileAppend(line, specsTtl);
 
 	}

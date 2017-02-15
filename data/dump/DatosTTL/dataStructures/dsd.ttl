@@ -6997,19 +6997,25 @@ _:node238egmfx6 qb:measure iaest-measure:explotaciones .
 	rdfs:comment "Esta estructura afecta a las areas: TC TM TP A "^^xsd:string .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/03-030054> qb:component _:node239egmfx1 .
-_:node239egmfx1 qb:measure iaest-measure:personas-residentes-viviendas-familiares .
+_:node239egmfx1 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/03-030054> qb:component _:node239egmfx2 .
-_:node239egmfx2 qb:dimension sdmx-dimension:refPeriod .
+_:node239egmfx2 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/03-030054> qb:component _:node239egmfx3 .
-_:node239egmfx3 qb:dimension iaest-dimension:situacion-preferente .
+_:node239egmfx3 qb:dimension iaest-dimension:sector-vab-descripcion .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/03-030054> qb:component _:node239egmfx4 .
-_:node239egmfx4 qb:dimension sdmx-dimension:refArea .
+_:node239egmfx4 qb:dimension iaest-dimension:lugar-trabajo-o-estudio .
+
+<http://opendata.aragon.es/recurso/iaest/dsd/03-030054> qb:component _:node239egmfx6 .
+_:node239egmfx6 qb:measure iaest-measure:personas-residentes-viviendas-familiares .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/03-030054> qb:component _:node239egmfx7 .
-_:node239egmfx7 qb:dimension iaest-dimension:lugar-trabajo-o-estudio .
+_:node239egmfx7 qb:dimension iaest-dimension:situacion-preferente .
+
+<http://opendata.aragon.es/recurso/iaest/dsd/03-030054> qb:component _:node239egmfx9 .
+_:node239egmfx9 qb:measure iaest-measure:vab .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010087> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 01-080101-010087, Nº explotaciones agrarias según cursos realizados por el jefe de la explotación. Censo 2009"@es ;

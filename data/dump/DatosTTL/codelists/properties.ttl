@@ -92,11 +92,41 @@ iaest-measure:n-demandantes a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "Nº demandantes"@es ;
 	rdfs:range xsd:int .
 
+iaest-measure:hectareas-de-sau-en-otros-regimenes-de-tenencia-de-las-tierras a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Hectáreas de SAU en otros regímenes de tenencia de las tierras"@es ;
+	rdfs:comment "Hectáreas de SAU en otros regímenes de tenencia de las tierras"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:hectareas-de-sau-en-aparceria a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Hectáreas de SAU en aparcería"@es ;
+	rdfs:comment "Hectáreas de SAU en aparcería"@es ;
+	rdfs:range xsd:int .
+
 iaest-dimension:estudios-en-curso a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Estudios en curso"@es ;
 	rdfs:comment "Estudios en curso"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/estudios-en-curso> .
+
+iaest-measure:superficie-total-de-las-explotaciones a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Superficie total de las explotaciones"@es ;
+	rdfs:comment "Superficie total de las explotaciones"@es ;
+	rdfs:range xsd:double .
+
+iaest-measure:hectareas-de-sau-en-propiedad a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Hectáreas de SAU en propiedad"@es ;
+	rdfs:comment "Hectáreas de SAU en propiedad"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:superficie-agricola-utilizada-sau a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Superficie Agrícola Utilizada (SAU)"@es ;
+	rdfs:comment "Superficie Agrícola Utilizada (SAU)"@es ;
+	rdfs:range xsd:double .
+
+iaest-measure:hectareas-de-sau-en-arrendamiento a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Hectáreas de SAU en arrendamiento"@es ;
+	rdfs:comment "Hectáreas de SAU en arrendamiento"@es ;
+	rdfs:range xsd:int .
 
 iaest-measure:municipio-superficie-medida a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Municipio superficie, medida"@es ;
@@ -166,11 +196,6 @@ iaest-measure:porcentaje-superficie-regada-sobre-sau a qb:MeasureProperty , rdf:
 iaest-measure:superficie-regada-has a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Superficie regada (has)"@es ;
 	rdfs:comment "Superficie regada (has)"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:superficie-agricola-utilizada-sau a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Superficie Agrícola Utilizada (SAU)"@es ;
-	rdfs:comment "Superficie Agrícola Utilizada (SAU)"@es ;
 	rdfs:range xsd:double .
 
 iaest-dimension:contaminacion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
@@ -2100,11 +2125,6 @@ iaest-measure:hectareas-en-propiedad a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "Hectáreas en propiedad"@es ;
 	rdfs:range xsd:int .
 
-iaest-measure:superficie-total-de-las-explotaciones a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Superficie total de las explotaciones"@es ;
-	rdfs:comment "Superficie total de las explotaciones"@es ;
-	rdfs:range xsd:double .
-
 iaest-measure:hectareas-en-arrendamiento a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Hectáreas en arrendamiento"@es ;
 	rdfs:comment "Hectáreas en arrendamiento"@es ;
@@ -2415,26 +2435,6 @@ iaest-measure:n-personas a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Nº personas"@es ;
 	rdfs:comment "Nº personas"@es ;
 	rdfs:range xsd:double .
-
-iaest-measure:hectareas-de-sau-en-otros-regimenes-de-tenencia-de-las-tierras a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Hectáreas de SAU en otros regímenes de tenencia de las tierras"@es ;
-	rdfs:comment "Hectáreas de SAU en otros regímenes de tenencia de las tierras"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:hectareas-de-sau-en-aparceria a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Hectáreas de SAU en aparcería"@es ;
-	rdfs:comment "Hectáreas de SAU en aparcería"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:hectareas-de-sau-en-propiedad a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Hectáreas de SAU en propiedad"@es ;
-	rdfs:comment "Hectáreas de SAU en propiedad"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:hectareas-de-sau-en-arrendamiento a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Hectáreas de SAU en arrendamiento"@es ;
-	rdfs:comment "Hectáreas de SAU en arrendamiento"@es ;
-	rdfs:range xsd:int .
 
 iaest-measure:hectareas-en-tierras-labradas-de-secano-cultivo-olivar a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Hectáreas en tierras labradas de secano cultivo olivar"@es ;

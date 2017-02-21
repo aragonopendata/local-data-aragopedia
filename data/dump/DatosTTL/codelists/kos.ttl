@@ -207,6 +207,46 @@
 	skos:notation "076-090";
 	skos:prefLabel "076 - 090".
 
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia> a skos:ConceptScheme;
+	skos:notation "regimen-de-tenencia";
+	rdfs:label "Régimen de tenencia";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-herencia-o-donacion>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/alquilada>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-compra-con-pagos-pendientes-hipotecas>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-compra-totalmente-pagada>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/cedida-gratis-o-a-bajo-precio-por-otro-hogar-pagada-por-la-empresa>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/otra-forma>.
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-herencia-o-donacion> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia>;
+	skos:notation "propia-por-herencia-o-donacion";
+	skos:prefLabel "Propia por herencia o donación".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/alquilada> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia>;
+	skos:notation "alquilada";
+	skos:prefLabel "Alquilada".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-compra-con-pagos-pendientes-hipotecas> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia>;
+	skos:notation "propia-por-compra-con-pagos-pendientes-hipotecas";
+	skos:prefLabel "Propia, por compra, con pagos pendientes (hipotecas)".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-compra-totalmente-pagada> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia>;
+	skos:notation "propia-por-compra-totalmente-pagada";
+	skos:prefLabel "Propia, por compra, totalmente pagada".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/cedida-gratis-o-a-bajo-precio-por-otro-hogar-pagada-por-la-empresa> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia>;
+	skos:notation "cedida-gratis-o-a-bajo-precio-por-otro-hogar-pagada-por-la-empresa";
+	skos:prefLabel "Cedida gratis o a bajo precio (por otro hogar, pagada por la empresa...)".
+
+<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/otra-forma> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia>;
+	skos:notation "otra-forma";
+	skos:prefLabel "Otra forma".
+
 <http://opendata.aragon.es/kos/iaest/nivel-formativo-grupo-iaest-descripcion> a skos:ConceptScheme;
 	skos:notation "nivel-formativo-grupo-iaest-descripcion";
 	rdfs:label "Nivel formativo grupo IAEST descripción";
@@ -4806,46 +4846,6 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion>;
 	skos:notation "venta-y-reparacion-de-vehiculos-de-motor-y-motocicletas";
 	skos:prefLabel "Venta y reparación de vehículos de motor y motocicletas".
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia> a skos:ConceptScheme;
-	skos:notation "regimen-de-tenencia";
-	rdfs:label "Régimen de tenencia";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-herencia-o-donacion>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/alquilada>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-compra-con-pagos-pendientes-hipotecas>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-compra-totalmente-pagada>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/cedida-gratis-o-a-bajo-precio-por-otro-hogar-pagada-por-la-empresa>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/otra-forma>.
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-herencia-o-donacion> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia>;
-	skos:notation "propia-por-herencia-o-donacion";
-	skos:prefLabel "Propia por herencia o donación".
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/alquilada> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia>;
-	skos:notation "alquilada";
-	skos:prefLabel "Alquilada".
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-compra-con-pagos-pendientes-hipotecas> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia>;
-	skos:notation "propia-por-compra-con-pagos-pendientes-hipotecas";
-	skos:prefLabel "Propia, por compra, con pagos pendientes (hipotecas)".
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/propia-por-compra-totalmente-pagada> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia>;
-	skos:notation "propia-por-compra-totalmente-pagada";
-	skos:prefLabel "Propia, por compra, totalmente pagada".
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/cedida-gratis-o-a-bajo-precio-por-otro-hogar-pagada-por-la-empresa> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia>;
-	skos:notation "cedida-gratis-o-a-bajo-precio-por-otro-hogar-pagada-por-la-empresa";
-	skos:prefLabel "Cedida gratis o a bajo precio (por otro hogar, pagada por la empresa...)".
-
-<http://opendata.aragon.es/kos/iaest/regimen-de-tenencia/otra-forma> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia>;
-	skos:notation "otra-forma";
-	skos:prefLabel "Otra forma".
 
 <http://opendata.aragon.es/kos/iaest/mes-nombre> a skos:ConceptScheme;
 	skos:notation "mes-nombre";

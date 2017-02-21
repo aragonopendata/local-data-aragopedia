@@ -702,6 +702,17 @@ iaest-dimension:estado-del-edificio a qb:DimensionProperty , rdf:Property, qb:Co
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/estado-del-edificio> .
 
+iaest-measure:n-viviendas a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Nº viviendas"@es ;
+	rdfs:comment "Nº viviendas"@es ;
+	rdfs:range xsd:int .
+
+iaest-dimension:regimen-de-tenencia a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Régimen de tenencia"@es ;
+	rdfs:comment "Régimen de tenencia"@es ;
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia> .
+
 iaest-dimension:superficie-util-agrupada-m2 a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Superficie útil agrupada (m2)"@es ;
 	rdfs:comment "Superficie útil agrupada (m2)"@es ;
@@ -712,11 +723,6 @@ iaest-measure:n-habitaciones a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Nº habitaciones"@es ;
 	rdfs:comment "Nº habitaciones"@es ;
 	rdfs:range xsd:double .
-
-iaest-measure:n-viviendas a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Nº viviendas"@es ;
-	rdfs:comment "Nº viviendas"@es ;
-	rdfs:range xsd:int .
 
 iaest-measure:superficie-util a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Superficie útil"@es ;
@@ -780,12 +786,6 @@ iaest-dimension:n-de-habitaciones-de-la-vivienda a qb:DimensionProperty , rdf:Pr
 	rdfs:comment "Nº de habitaciones de la vivienda"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/n-de-habitaciones-de-la-vivienda> .
-
-iaest-dimension:regimen-de-tenencia a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Régimen de tenencia"@es ;
-	rdfs:comment "Régimen de tenencia"@es ;
-	rdfs:range skos:Concept ;
-	qb:codeList <http://opendata.aragon.es/kos/iaest/regimen-de-tenencia> .
 
 iaest-dimension:tipo-de-estudios-realizados a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Tipo de estudios realizados"@es ;

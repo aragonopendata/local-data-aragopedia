@@ -1824,22 +1824,25 @@ _:node77egmfx7 qb:dimension sdmx-dimension:refPeriod .
 	rdfs:comment "Esta estructura afecta a las areas: TC TM TP A "^^xsd:string .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030096> qb:component _:node78egmfx1 .
-_:node78egmfx1 qb:dimension iaest-dimension:superficie-util-agrupada-m2 .
+_:node78egmfx1 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030096> qb:component _:node78egmfx2 .
-_:node78egmfx2 qb:dimension sdmx-dimension:refArea .
+_:node78egmfx2 qb:measure iaest-measure:n-viviendas .
 
-<http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030096> qb:component _:node78egmfx5 .
-_:node78egmfx5 qb:measure iaest-measure:n-habitaciones .
+<http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030096> qb:component _:node78egmfx3 .
+_:node78egmfx3 qb:dimension iaest-dimension:regimen-de-tenencia .
 
-<http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030096> qb:component _:node78egmfx6 .
-_:node78egmfx6 qb:measure iaest-measure:n-viviendas .
+<http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030096> qb:component _:node78egmfx4 .
+_:node78egmfx4 qb:dimension iaest-dimension:superficie-util-agrupada-m2 .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030096> qb:component _:node78egmfx7 .
-_:node78egmfx7 qb:measure iaest-measure:superficie-util .
+_:node78egmfx7 qb:measure iaest-measure:n-habitaciones .
 
-<http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030096> qb:component _:node78egmfx9 .
-_:node78egmfx9 qb:dimension sdmx-dimension:refPeriod .
+<http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030096> qb:component _:node78egmfx8 .
+_:node78egmfx8 qb:measure iaest-measure:superficie-util .
+
+<http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030096> qb:component _:node78egmfx10 .
+_:node78egmfx10 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030097> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 03-02010301-030097, Equipamientos de las viviendas"@es ;

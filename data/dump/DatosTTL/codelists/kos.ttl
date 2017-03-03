@@ -5749,6 +5749,22 @@
 	skos:notation "derecho-y-ciencias-sociales-administracion-psicologia-economia-periodismo-";
 	skos:prefLabel "Derecho y Ciencias Sociales (Administración, Psicología, Economía, Periodismo, ...)".
 
+<http://opendata.aragon.es/kos/iaest/cif> a skos:ConceptScheme;
+	skos:notation "cif";
+	rdfs:label "CIF";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/cif/otros>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/cif/a-traves-de-una-ett>.
+
+<http://opendata.aragon.es/kos/iaest/cif/otros> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/cif>;
+	skos:notation "otros";
+	skos:prefLabel "Otros".
+
+<http://opendata.aragon.es/kos/iaest/cif/a-traves-de-una-ett> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/cif>;
+	skos:notation "a-traves-de-una-ett";
+	skos:prefLabel "A través de una ETT".
+
 <http://opendata.aragon.es/kos/iaest/viviendas-en-el-edificio> a skos:ConceptScheme;
 	skos:notation "viviendas-en-el-edificio";
 	rdfs:label "Viviendas en el edificio";
@@ -10650,22 +10666,6 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales-2010>;
 	skos:notation "sin-clasificar";
 	skos:prefLabel "Sin clasificar".
-
-<http://opendata.aragon.es/kos/iaest/cif> a skos:ConceptScheme;
-	skos:notation "cif";
-	rdfs:label "CIF";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/cif/otros>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/cif/a-traves-de-una-ett>.
-
-<http://opendata.aragon.es/kos/iaest/cif/otros> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/cif>;
-	skos:notation "otros";
-	skos:prefLabel "Otros".
-
-<http://opendata.aragon.es/kos/iaest/cif/a-traves-de-una-ett> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/cif>;
-	skos:notation "a-traves-de-una-ett";
-	skos:prefLabel "A través de una ETT".
 
 <http://opendata.aragon.es/kos/iaest/ocupacion-1-digito-descripcion> a skos:ConceptScheme;
 	skos:notation "ocupacion-1-digito-descripcion";

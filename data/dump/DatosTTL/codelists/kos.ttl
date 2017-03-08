@@ -662,8 +662,7 @@
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sector-descripcion/agricultura-ganaderia-y-pesca>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sector-descripcion/industria-y-energia>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sector-descripcion/construccion>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sector-descripcion/sin-empleo-anterior>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sector-descripcion/sin-clasificar>.
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sector-descripcion/sin-empleo-anterior>.
 
 <http://opendata.aragon.es/kos/iaest/sector-descripcion/servicios> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/sector-descripcion>;
@@ -689,11 +688,6 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/sector-descripcion>;
 	skos:notation "sin-empleo-anterior";
 	skos:prefLabel "Sin empleo anterior".
-
-<http://opendata.aragon.es/kos/iaest/sector-descripcion/sin-clasificar> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/sector-descripcion>;
-	skos:notation "sin-clasificar";
-	skos:prefLabel "Sin clasificar".
 
 <http://opendata.aragon.es/kos/iaest/siglas> a skos:ConceptScheme;
 	skos:notation "siglas";
@@ -13136,22 +13130,34 @@
 	rdfs:label "Tipo licencias descripción";
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-privado-mercancias-nacional-empresa>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/servicio-publico-mixto-mercancias-y-viajeros>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-mercancias-pesadas-nacionales-servicio-publico>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-mercancias-pesadas-nacinal-servicio-publico-autorizado-por-empresa>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-ambulancias-nacional>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-privado-mercancias-nacional>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/operador-de-transporte-sin-ambito-geografico>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-mercancias-nacional-empresa>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-mercancias-ligeras-nacional-empresa>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-viajeros-en-autobus>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-privado-ambulancias-nacional-empresa>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-privado-de-viajeros-nacional>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-mercancias-ligeras-nacional-servicio-publico-autorizado-por-empresa>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-arrendamiento-con-conductor-nacional>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-mercancias-nacional>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-mixtos>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-mercancias-propias-nacional-autorizado-por-empresa>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-de-viajeros-nacionales-servicio-publico>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-viajeros-en-autobus-nacional>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-mercancias-ligeras-nacional>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-privado-ambulancias-nacional>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/servicio-publico-nacional-mixto-mercancias-y-viajeros>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/licencias-taxi>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-privado-mercancias-nacional>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/operador-de-transporte-sin-ambito-geografico>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-mercancias-nacional-empresa>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-viajeros-en-autobus>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-privado-ambulancias-nacional-empresa>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-privado-de-viajeros-nacional>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/ambulancias-nacionales-servicio-publico>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-mixtos>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/operaciones-de-transporte>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-de-alquiler-con-conductor-nacional>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-mercancias-propias-nacional>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-de-viajeros-en-turismo-nacional>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-ambulancias-nacional-empresa>.
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-ambulancias-nacional-empresa>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-mercancias-ligeras-nacionales-servicio-publico>.
 
 <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-privado-mercancias-nacional-empresa> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
@@ -13163,45 +13169,30 @@
 	skos:notation "servicio-publico-mixto-mercancias-y-viajeros";
 	skos:prefLabel "Servicio público mixto-Mercancías y viajeros".
 
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-mercancias-pesadas-nacionales-servicio-publico> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
+	skos:notation "transporte-mercancias-pesadas-nacionales-servicio-publico";
+	skos:prefLabel "Transporte mercancías pesadas nacionales servicio público".
+
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-mercancias-pesadas-nacinal-servicio-publico-autorizado-por-empresa> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
+	skos:notation "transporte-mercancias-pesadas-nacinal-servicio-publico-autorizado-por-empresa";
+	skos:prefLabel "Transporte mercancías pesadas nacinal servicio público autorizado por empresa".
+
 <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-ambulancias-nacional> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
 	skos:notation "transporte-publico-ambulancias-nacional";
 	skos:prefLabel "Transporte público ambulancias nacional".
-
-<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-privado-mercancias-nacional> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
-	skos:notation "transporte-privado-mercancias-nacional";
-	skos:prefLabel "Transporte privado mercancías nacional".
-
-<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/operador-de-transporte-sin-ambito-geografico> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
-	skos:notation "operador-de-transporte-sin-ambito-geografico";
-	skos:prefLabel "Operador de transporte (sin ámbito geográfico)".
-
-<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-mercancias-nacional-empresa> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
-	skos:notation "transporte-publico-mercancias-nacional-empresa";
-	skos:prefLabel "Transporte público mercancías nacional empresa".
 
 <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-mercancias-ligeras-nacional-empresa> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
 	skos:notation "transporte-publico-mercancias-ligeras-nacional-empresa";
 	skos:prefLabel "Transporte público mercancías ligeras nacional empresa".
 
-<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-viajeros-en-autobus> a skos:Concept;
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-mercancias-ligeras-nacional-servicio-publico-autorizado-por-empresa> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
-	skos:notation "transporte-publico-viajeros-en-autobus";
-	skos:prefLabel "Transporte público viajeros en autobús".
-
-<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-privado-ambulancias-nacional-empresa> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
-	skos:notation "transporte-privado-ambulancias-nacional-empresa";
-	skos:prefLabel "Transporte privado ambulancias nacional empresa".
-
-<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-privado-de-viajeros-nacional> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
-	skos:notation "transporte-privado-de-viajeros-nacional";
-	skos:prefLabel "Transporte privado de viajeros nacional".
+	skos:notation "transporte-mercancias-ligeras-nacional-servicio-publico-autorizado-por-empresa";
+	skos:prefLabel "Transporte mercancías ligeras nacional servicio público autorizado por empresa".
 
 <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-arrendamiento-con-conductor-nacional> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
@@ -13213,10 +13204,15 @@
 	skos:notation "transporte-publico-mercancias-nacional";
 	skos:prefLabel "Transporte público mercancías nacional".
 
-<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-mixtos> a skos:Concept;
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-mercancias-propias-nacional-autorizado-por-empresa> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
-	skos:notation "transporte-publico-mixtos";
-	skos:prefLabel "Transporte público mixtos".
+	skos:notation "transporte-mercancias-propias-nacional-autorizado-por-empresa";
+	skos:prefLabel "transporte mercancías propias nacional autorizado por empresa".
+
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-de-viajeros-nacionales-servicio-publico> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
+	skos:notation "transporte-de-viajeros-nacionales-servicio-publico";
+	skos:prefLabel "Transporte de viajeros nacionales servicio público".
 
 <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-viajeros-en-autobus-nacional> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
@@ -13233,6 +13229,71 @@
 	skos:notation "transporte-privado-ambulancias-nacional";
 	skos:prefLabel "Transporte privado ambulancias nacional".
 
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/servicio-publico-nacional-mixto-mercancias-y-viajeros> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
+	skos:notation "servicio-publico-nacional-mixto-mercancias-y-viajeros";
+	skos:prefLabel "Servicio público nacional mixto-Mercancías y viajeros".
+
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/licencias-taxi> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
+	skos:notation "licencias-taxi";
+	skos:prefLabel "Licencias taxi".
+
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-privado-mercancias-nacional> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
+	skos:notation "transporte-privado-mercancias-nacional";
+	skos:prefLabel "Transporte privado mercancías nacional".
+
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/operador-de-transporte-sin-ambito-geografico> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
+	skos:notation "operador-de-transporte-sin-ambito-geografico";
+	skos:prefLabel "Operador de transporte (sin ámbito geográfico)".
+
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-mercancias-nacional-empresa> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
+	skos:notation "transporte-publico-mercancias-nacional-empresa";
+	skos:prefLabel "Transporte público mercancías nacional empresa".
+
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-viajeros-en-autobus> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
+	skos:notation "transporte-publico-viajeros-en-autobus";
+	skos:prefLabel "Transporte público viajeros en autobús".
+
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-privado-ambulancias-nacional-empresa> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
+	skos:notation "transporte-privado-ambulancias-nacional-empresa";
+	skos:prefLabel "Transporte privado ambulancias nacional empresa".
+
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-privado-de-viajeros-nacional> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
+	skos:notation "transporte-privado-de-viajeros-nacional";
+	skos:prefLabel "Transporte privado de viajeros nacional".
+
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/ambulancias-nacionales-servicio-publico> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
+	skos:notation "ambulancias-nacionales-servicio-publico";
+	skos:prefLabel "Ambulancias nacionales servicio público".
+
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-mixtos> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
+	skos:notation "transporte-publico-mixtos";
+	skos:prefLabel "Transporte público mixtos".
+
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/operaciones-de-transporte> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
+	skos:notation "operaciones-de-transporte";
+	skos:prefLabel "Operaciones de transporte".
+
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-de-alquiler-con-conductor-nacional> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
+	skos:notation "transporte-de-alquiler-con-conductor-nacional";
+	skos:prefLabel "Transporte de alquiler con conductor nacional".
+
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-mercancias-propias-nacional> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
+	skos:notation "transporte-mercancias-propias-nacional";
+	skos:prefLabel "Transporte mercancías propias nacional".
+
 <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-publico-de-viajeros-en-turismo-nacional> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
 	skos:notation "transporte-publico-de-viajeros-en-turismo-nacional";
@@ -13242,6 +13303,11 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
 	skos:notation "transporte-publico-ambulancias-nacional-empresa";
 	skos:prefLabel "Transporte público ambulancias nacional empresa".
+
+<http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion/transporte-mercancias-ligeras-nacionales-servicio-publico> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion>;
+	skos:notation "transporte-mercancias-ligeras-nacionales-servicio-publico";
+	skos:prefLabel "Transporte mercancías ligeras nacionales servicio público".
 
 <http://opendata.aragon.es/kos/iaest/nucleos-en-el-hogar> a skos:ConceptScheme;
 	skos:notation "nucleos-en-el-hogar";

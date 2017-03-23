@@ -548,6 +548,11 @@ iaest-dimension:dias-duracion-contrato a qb:DimensionProperty , rdf:Property, qb
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/dias-duracion-contrato> .
 
+iaest-dimension:duracion-media-contrato a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Duración media contrato"@es ;
+	rdfs:comment "Duración media contrato"@es ;
+	rdfs:range xsd:int .
+
 iaest-dimension:modalidad a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Modalidad"@es ;
 	rdfs:comment "Modalidad"@es ;
@@ -565,6 +570,12 @@ iaest-dimension:cif a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:comment "CIF"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/cif> .
+
+iaest-dimension:tramitacion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Tramitación"@es ;
+	rdfs:comment "Tramitación"@es ;
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/tramitacion> .
 
 iaest-dimension:bonificado-o-no a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Bonificado o no"@es ;

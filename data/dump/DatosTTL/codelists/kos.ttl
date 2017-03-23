@@ -10885,6 +10885,22 @@
 	skos:notation "sin-clasificar";
 	skos:prefLabel "Sin clasificar".
 
+<http://opendata.aragon.es/kos/iaest/tramitacion> a skos:ConceptScheme;
+	skos:notation "tramitacion";
+	rdfs:label "Tramitación";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tramitacion/otros>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/tramitacion/a-traves-de-una-ett>.
+
+<http://opendata.aragon.es/kos/iaest/tramitacion/otros> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tramitacion>;
+	skos:notation "otros";
+	skos:prefLabel "Otros".
+
+<http://opendata.aragon.es/kos/iaest/tramitacion/a-traves-de-una-ett> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/tramitacion>;
+	skos:notation "a-traves-de-una-ett";
+	skos:prefLabel "A través de una ETT".
+
 <http://opendata.aragon.es/kos/iaest/ocupacion-1-digito-descripcion> a skos:ConceptScheme;
 	skos:notation "ocupacion-1-digito-descripcion";
 	rdfs:label "Ocupación (1 dígito) descripción";

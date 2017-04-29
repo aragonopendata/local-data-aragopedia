@@ -1,0 +1,169 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/03-90205-0205_006A> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/03-90205-0205_006>;
+	rdfs:label "Saldo vegetativo y tasas"@es ;
+	dct:identifier  "03-90205-0205_006A" ;
+	rdfs:comment "Cubo de datos para 03-90205-0205_006A"@es ;
+	dc:modified "2017-04-29"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/03-90205-0205_006A/76693af2-9097-395a-8a39-d77f151349e3> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-90205-0205_006A>; 
+	iaest-measure:ano "2015"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:saldo-vegetativo "-2987"^^xsd:int;
+	iaest-measure:tasa-bruta-de-saldo-vegetativo "-2,26"^^xsd:int;
+	iaest-measure:tasa-bruta-de-natalidad "8,59"^^xsd:int;
+	iaest-measure:tasa-bruta-de-mortalidad "10,85"^^xsd:int;
+	iaest-measure:tasa-global-de-fecundidad "39,46"^^xsd:int;
+	iaest-measure:tasa-bruta-de-nupcialidad "3,25"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-90205-0205_006A/16de68e0-1568-33f1-8844-0e51ecad1ed8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-90205-0205_006A>; 
+	iaest-measure:ano "2014"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:saldo-vegetativo "-2140"^^xsd:int;
+	iaest-measure:tasa-bruta-de-saldo-vegetativo "-1,61"^^xsd:int;
+	iaest-measure:tasa-bruta-de-natalidad "8,73"^^xsd:int;
+	iaest-measure:tasa-bruta-de-mortalidad "10,35"^^xsd:int;
+	iaest-measure:tasa-global-de-fecundidad "39,59"^^xsd:int;
+	iaest-measure:tasa-bruta-de-nupcialidad "3,18"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-90205-0205_006A/b1eb883f-9e47-3177-842f-77e501c8df51> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-90205-0205_006A>; 
+	iaest-measure:ano "2013"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:saldo-vegetativo "-1691"^^xsd:int;
+	iaest-measure:tasa-bruta-de-saldo-vegetativo "-1,27"^^xsd:int;
+	iaest-measure:tasa-bruta-de-natalidad "8,74"^^xsd:int;
+	iaest-measure:tasa-bruta-de-mortalidad "10,01"^^xsd:int;
+	iaest-measure:tasa-global-de-fecundidad "39,05"^^xsd:int;
+	iaest-measure:tasa-bruta-de-nupcialidad "3,28"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-90205-0205_006A/12469d96-2e54-3f43-9ef3-d3136fc547ed> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-90205-0205_006A>; 
+	iaest-measure:ano "2012"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:saldo-vegetativo "-1744"^^xsd:int;
+	iaest-measure:tasa-bruta-de-saldo-vegetativo "-1,3"^^xsd:int;
+	iaest-measure:tasa-bruta-de-natalidad "8,94"^^xsd:int;
+	iaest-measure:tasa-bruta-de-mortalidad "10,24"^^xsd:int;
+	iaest-measure:tasa-global-de-fecundidad "39,41"^^xsd:int;
+	iaest-measure:tasa-bruta-de-nupcialidad "3,52"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-90205-0205_006A/35ef9210-8942-3a50-bbe5-424082123db0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-90205-0205_006A>; 
+	iaest-measure:ano "2011"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:saldo-vegetativo "-943"^^xsd:int;
+	iaest-measure:tasa-bruta-de-saldo-vegetativo "-0,7"^^xsd:int;
+	iaest-measure:tasa-bruta-de-natalidad "9,38"^^xsd:int;
+	iaest-measure:tasa-bruta-de-mortalidad "10,08"^^xsd:int;
+	iaest-measure:tasa-global-de-fecundidad "40,95"^^xsd:int;
+	iaest-measure:tasa-bruta-de-nupcialidad "3,21"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-90205-0205_006A/90629d63-e875-3009-a749-edf67dd7ee4d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-90205-0205_006A>; 
+	iaest-measure:ano "2010"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:saldo-vegetativo "-254"^^xsd:int;
+	iaest-measure:tasa-bruta-de-saldo-vegetativo "-0,19"^^xsd:int;
+	iaest-measure:tasa-bruta-de-natalidad "9,63"^^xsd:int;
+	iaest-measure:tasa-bruta-de-mortalidad "9,82"^^xsd:int;
+	iaest-measure:tasa-global-de-fecundidad "41,58"^^xsd:int;
+	iaest-measure:tasa-bruta-de-nupcialidad "3,34"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-90205-0205_006A/b31dc7d3-a098-3bb9-9f15-8ef00e1fdcd8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-90205-0205_006A>; 
+	iaest-measure:ano "2009"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:saldo-vegetativo "-206"^^xsd:int;
+	iaest-measure:tasa-bruta-de-saldo-vegetativo "-0,15"^^xsd:int;
+	iaest-measure:tasa-bruta-de-natalidad "9,72"^^xsd:int;
+	iaest-measure:tasa-bruta-de-mortalidad "9,87"^^xsd:int;
+	iaest-measure:tasa-global-de-fecundidad "41,52"^^xsd:int;
+	iaest-measure:tasa-bruta-de-nupcialidad "3,55"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-90205-0205_006A/fb9fa38d-6cfa-3677-bd18-51a175cafdd6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-90205-0205_006A>; 
+	iaest-measure:ano "2008"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:saldo-vegetativo "277"^^xsd:int;
+	iaest-measure:tasa-bruta-de-saldo-vegetativo "0,21"^^xsd:int;
+	iaest-measure:tasa-bruta-de-natalidad "10,23"^^xsd:int;
+	iaest-measure:tasa-bruta-de-mortalidad "10,03"^^xsd:int;
+	iaest-measure:tasa-global-de-fecundidad "43,38"^^xsd:int;
+	iaest-measure:tasa-bruta-de-nupcialidad "3,81"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-90205-0205_006A/dcebc53b-982e-3302-931a-d144f08e2f8b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-90205-0205_006A>; 
+	iaest-measure:ano "2007"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:saldo-vegetativo "-422"^^xsd:int;
+	iaest-measure:tasa-bruta-de-saldo-vegetativo "-0,32"^^xsd:int;
+	iaest-measure:tasa-bruta-de-natalidad "9,82"^^xsd:int;
+	iaest-measure:tasa-bruta-de-mortalidad "10,14"^^xsd:int;
+	iaest-measure:tasa-global-de-fecundidad "41,43"^^xsd:int;
+	iaest-measure:tasa-bruta-de-nupcialidad "4,08"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-90205-0205_006A/965fe34f-4e7a-314f-afcd-968095617a8a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-90205-0205_006A>; 
+	iaest-measure:ano "2006"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:saldo-vegetativo "-709"^^xsd:int;
+	iaest-measure:tasa-bruta-de-saldo-vegetativo "-0,55"^^xsd:int;
+	iaest-measure:tasa-bruta-de-natalidad "9,57"^^xsd:int;
+	iaest-measure:tasa-bruta-de-mortalidad "10,12"^^xsd:int;
+	iaest-measure:tasa-global-de-fecundidad "40,29"^^xsd:int;
+	iaest-measure:tasa-bruta-de-nupcialidad "4,35"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-90205-0205_006A/88a4decd-5d11-3e13-aa18-0dfa737df830> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-90205-0205_006A>; 
+	iaest-measure:ano "2005"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:saldo-vegetativo "-2054"^^xsd:int;
+	iaest-measure:tasa-bruta-de-saldo-vegetativo "-1,63"^^xsd:int;
+	iaest-measure:tasa-bruta-de-natalidad "9,2"^^xsd:int;
+	iaest-measure:tasa-bruta-de-mortalidad "10,83"^^xsd:int;
+	iaest-measure:tasa-global-de-fecundidad "38,62"^^xsd:int;
+	iaest-measure:tasa-bruta-de-nupcialidad "4,5"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-90205-0205_006A/a80fbe08-1e52-318f-952d-7270302cb556> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-90205-0205_006A>; 
+	iaest-measure:ano "2004"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:saldo-vegetativo "-1717"^^xsd:int;
+	iaest-measure:tasa-bruta-de-saldo-vegetativo "-1,38"^^xsd:int;
+	iaest-measure:tasa-bruta-de-natalidad "9,21"^^xsd:int;
+	iaest-measure:tasa-bruta-de-mortalidad "10,59"^^xsd:int;
+	iaest-measure:tasa-global-de-fecundidad "38,57"^^xsd:int;
+	iaest-measure:tasa-bruta-de-nupcialidad "4,73"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .
+<http://opendata.aragon.es/recurso/iaest/observacion/03-90205-0205_006A/1dd314c5-89e9-320a-8ec5-9504ddf07193> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/03-90205-0205_006A>; 
+	iaest-measure:ano "2003"^^xsd:int;
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma/Aragón> ;
+	iaest-measure:saldo-vegetativo "-2696"^^xsd:int;
+	iaest-measure:tasa-bruta-de-saldo-vegetativo "-2,19"^^xsd:int;
+	iaest-measure:tasa-bruta-de-natalidad "8,93"^^xsd:int;
+	iaest-measure:tasa-bruta-de-mortalidad "11,12"^^xsd:int;
+	iaest-measure:tasa-global-de-fecundidad "37,33"^^xsd:int;
+	iaest-measure:tasa-bruta-de-nupcialidad "4,65"^^xsd:int;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> .

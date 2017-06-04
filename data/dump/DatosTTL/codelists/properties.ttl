@@ -1964,7 +1964,8 @@ iaest-dimension:nucleodiseminado a qb:DimensionProperty , rdf:Property, qb:Coded
 iaest-dimension:entidad-singular a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Entidad singular"@es ;
 	rdfs:comment "Entidad singular"@es ;
-	rdfs:range skos:Concept .
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/entidad-singular> .
 
 iaest-dimension:nucleo a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Núcleo"@es ;

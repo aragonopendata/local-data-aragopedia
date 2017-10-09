@@ -11,6 +11,11 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
+
 import java.net.MalformedURLException;
 import java.net.SocketTimeoutException;
 import java.net.URL;
@@ -550,8 +555,31 @@ public class Utils {
 
 	public static String processURLGet(String url, String urlParameters, Map<String, String> headers, Cookies cookies, String encoding) throws SocketTimeoutException {
 
+		//Security SSL
+		TrustManager[] trustAllCerts = new TrustManager[]{
+			new X509TrustManager() {
+			    public java.security.cert.X509Certificate[] getAcceptedIssuers() {
+			        return null;
+			    }
+			    public void checkClientTrusted(
+			        java.security.cert.X509Certificate[] certs, String authType) {
+			    }
+			    public void checkServerTrusted(
+			        java.security.cert.X509Certificate[] certs, String authType) {
+			    }
+			}
+		};
+
+	   try {
+		   SSLContext sc = SSLContext.getInstance("SSL");
+		   sc.init(null, trustAllCerts, new java.security.SecureRandom());
+		   HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
+	   } catch (Exception e) {
+		   
+	   }
+	   
 		String output = null;
-		HttpURLConnection httpConnection = null;
+		HttpsURLConnection httpsConnection = null;
 		try {
 			URL targetUrl = null;
 			if ((urlParameters == null) || (urlParameters.equals(""))) {
@@ -560,27 +588,27 @@ public class Utils {
 				targetUrl = new URL(url + "?" + urlParameters);
 			}
 
-			httpConnection = (HttpURLConnection) targetUrl.openConnection();
-			httpConnection.setDoOutput(true);
-			httpConnection.setRequestMethod("GET");
+			httpsConnection = (HttpsURLConnection) targetUrl.openConnection();
+			httpsConnection.setDoOutput(true);
+			httpsConnection.setRequestMethod("GET");
 			if (headers != null) {
 				Iterator<Entry<String, String>> it = headers.entrySet().iterator();
 				while (it.hasNext()) {
 					Map.Entry<String, String> pairs = (Map.Entry<String, String>) it.next();
-					httpConnection.setRequestProperty(pairs.getKey(), pairs.getValue());
+					httpsConnection.setRequestProperty(pairs.getKey(), pairs.getValue());
 				}
 			}
-			cookies.setCookies(httpConnection);
-			httpConnection.setConnectTimeout(defaultTimeOut);
-			httpConnection.setReadTimeout(defaultReadTimeOut);
+			cookies.setCookies(httpsConnection);
+			httpsConnection.setConnectTimeout(defaultTimeOut);
+			httpsConnection.setReadTimeout(defaultReadTimeOut);
 
-			InputStream is = (InputStream) httpConnection.getContent();
+			InputStream is = httpsConnection.getInputStream();
 
 			output = IOUtils.toString(is, encoding);
 
-			cookies.storeCookies(httpConnection);
+			cookies.storeCookies(httpsConnection);
 
-			if (httpConnection.getResponseCode() != 200) {
+			if (httpsConnection.getResponseCode() != 200) {
 				log.error("The URI does not return a 200 code");
 				log.error(output);
 				return "";
@@ -596,7 +624,7 @@ public class Utils {
 			log.error("IOError: " + url + "?" + urlParameters, e);
 			
 		} finally {
-			httpConnection.disconnect();
+			httpsConnection.disconnect();
 		}
 
 		return output;

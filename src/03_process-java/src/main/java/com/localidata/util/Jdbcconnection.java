@@ -59,9 +59,7 @@ public class Jdbcconnection {
 		
 		//Creamos la conexión
 		Class.forName ("oracle.jdbc.OracleDriver");
-		//String dbURL = "jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=on)(ADDRESS=(PROTOCOL=TCP)(HOST=vir_backpro1.dga.es)(PORT=1523))(ADDRESS=(PROTOCOL=TCP)(HOST=vir_backpro2.dga.es)(PORT=1523))(CONNECT_DATA=(SERVICE_NAME=proapp1.dga.es))))";
-		//[M]
-		//String dbURL = "jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=pre01-scan.aragon.local)(PORT=47034)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=MDEPJ2EE_GN4_02.aragon.local)))";
+		
 		String dbURL = props.getProperty("DB_IAEST");
 		String strUserID = props.getProperty("DB_USER");
 		String strPassword = props.getProperty("DB_PASS");

@@ -144,6 +144,21 @@ iaest-dimension:agua-corriente a qb:DimensionProperty , rdf:Property, qb:CodedPr
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/agua-corriente> .
 
+iaest-dimension:tipo-variacion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Tipo variación"@es ;
+	rdfs:comment "Tipo variación"@es ;
+	rdfs:range skos:Concept .
+
+iaest-dimension:nacionalidad-continente a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Nacionalidad Continente"@es ;
+	rdfs:comment "Nacionalidad Continente"@es ;
+	rdfs:range skos:Concept .
+
+iaest-measure:variaciones a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Variaciones"@es ;
+	rdfs:comment "Variaciones"@es ;
+	rdfs:range xsd:int .
+
 iaest-dimension:corine-land-cover-2000-nivel-1-descripcion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Corine Land Cover 2000 nivel 1 descripción"@es ;
 	rdfs:comment "Corine Land Cover 2000 nivel 1 descripción"@es ;
@@ -232,6 +247,11 @@ iaest-dimension:nivel-estudios-agregado a qb:DimensionProperty , rdf:Property, q
 	rdfs:comment "Nivel estudios (agregado)"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/nivel-estudios-agregado> .
+
+iaest-measure:saldo-migratorio a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Saldo migratorio"@es ;
+	rdfs:comment "Saldo migratorio"@es ;
+	rdfs:range xsd:int .
 
 iaest-dimension:estado-civil a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Estado civil"@es ;
@@ -340,6 +360,11 @@ iaest-dimension:division-2-digitos-descripcion a qb:DimensionProperty , rdf:Prop
 	rdfs:comment "División (2 dígitos) Descripción"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/division-2-digitos-descripcion> .
+
+iaest-measure:ccaa-nombre a qb:MeasureProperty , rdf:Property;
+	rdfs:label "CCAA nombre"@es ;
+	rdfs:comment "CCAA nombre"@es ;
+	rdfs:range xsd:string .
 
 iaest-measure:numero-de-contratos a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Número de contratos"@es ;

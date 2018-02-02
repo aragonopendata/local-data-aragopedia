@@ -1,0 +1,350 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix iaest-dimension: <http://opendata.aragon.es/def/iaest/dimension#> .
+@prefix iaest-measure:    <http://opendata.aragon.es/def/iaest/medida#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+#Observations
+<http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP> a qb:dataSet;
+	qb:structure <http://opendata.aragon.es/recurso/iaest/dsd/902-0204-02040101S>;
+	rdfs:label "Saldos por variaciones residenciales según sexo"@es ;
+	dct:identifier  "902-0204-02040101STP" ;
+	rdfs:comment "Cubo de datos para 902-0204-02040101STP"@es ;
+	dc:modified "2018-02-02"^^xsd:date.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/79ff9f18-be09-3a76-b8ff-748996840d82> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2016> ;
+	iaest-measure:saldo-migratorio "1"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/49335e1b-d9ab-3ad2-aad6-7035a521c9c2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2016> ;
+	iaest-measure:saldo-migratorio "-32"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/c332e535-8bec-37a2-86b3-c55061199777> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2016> ;
+	iaest-measure:saldo-migratorio "-425"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/0083fe90-0e55-3d19-bd02-b420a2bc4d1f> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2016> ;
+	iaest-measure:saldo-migratorio "-292"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/0e674391-47dd-32e8-bbe0-277906036db7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2016> ;
+	iaest-measure:saldo-migratorio "495"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/2736be97-54f9-37bd-b188-28de6d01a1ba> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2016> ;
+	iaest-measure:saldo-migratorio "2025"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/ef172d1b-d3d3-3c76-be23-f56f93b5f303> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:saldo-migratorio "-256"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/11723f2d-250f-3f7d-9a56-1e588692ac84> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:saldo-migratorio "-107"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/1ded0fb4-8e8f-396c-b36f-9c2c31f08376> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:saldo-migratorio "-588"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/10c12f26-f981-38db-b0b2-5b74c370601d> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:saldo-migratorio "-455"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/a6474f19-45cc-3be6-80a0-6131623923cb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:saldo-migratorio "-408"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/1664bc7e-0165-30d1-a38a-bd63d94facb0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2015> ;
+	iaest-measure:saldo-migratorio "938"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/bcde6ed5-6426-3f54-8d99-c014e1cbe0b2> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:saldo-migratorio "-388"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/a22e784d-67b0-3064-b78b-0c67ae882989> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:saldo-migratorio "-212"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/14fff3a5-777e-39ec-b358-85c83ab7f5a6> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:saldo-migratorio "-569"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/08863ab4-f83c-31ee-a17c-bece9b714023> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:saldo-migratorio "-343"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/bfe4577b-8028-3ff5-87a0-29c66e2ff1dc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:saldo-migratorio "625"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/6610144b-a7d8-357c-8dd7-53bf3139dfbc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2014> ;
+	iaest-measure:saldo-migratorio "588"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/7137aada-7b72-3a62-bf38-824e5d38c543> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:saldo-migratorio "-444"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/81ce1932-e37b-33c4-a704-53a9a23808d8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:saldo-migratorio "-74"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/b2f19f15-ea08-3d31-8d8c-3edd96301d21> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:saldo-migratorio "-669"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/51b169c1-ed4c-3b14-88b8-c02ff515d384> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:saldo-migratorio "-441"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/fcf13f54-3c27-35bb-9202-b02f4bd67ca9> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:saldo-migratorio "-898"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/1f8a81d4-08b9-33eb-b2e2-e61a50ea1083> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2013> ;
+	iaest-measure:saldo-migratorio "136"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/5cb0bd4b-58cf-35a0-b151-ccbe5640a8dd> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:saldo-migratorio "-249"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/e9d54296-8797-32e5-879b-63e645796b7a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:saldo-migratorio "-110"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/93e6654a-a000-34f2-980a-c4f481321670> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:saldo-migratorio "-650"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/7d1e524b-870d-38d9-8233-274865be2af8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:saldo-migratorio "-360"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/0dce5774-6d23-356c-b8f8-c6b03ab16326> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:saldo-migratorio "-518"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/b1b1af11-2dc5-3a70-98f3-f308e1883485> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2012> ;
+	iaest-measure:saldo-migratorio "548"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/52e607f0-b05c-3d6b-a8f8-43cc8d4f3fc0> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:saldo-migratorio "-408"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/4fdc9430-048c-3eae-b793-4d1171e237ca> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:saldo-migratorio "65"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/4a57ceca-eec2-3e64-b6c1-3ebbc0926d96> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:saldo-migratorio "-431"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/f13ba962-84b7-350c-ac4a-fb5b7265f852> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:saldo-migratorio "-295"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/dfe9e8fe-068c-3c7b-ba6c-5d92e6aab458> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:saldo-migratorio "1843"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/bf3f9910-8b5d-37bf-ac6c-a26927c8d7d8> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2011> ;
+	iaest-measure:saldo-migratorio "3022"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/fd3ece3b-a63c-3f93-887b-8c507a4967bb> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	iaest-measure:saldo-migratorio "-95"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/0f4be963-1a5b-31e4-8a0d-0eb7a671997e> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	iaest-measure:saldo-migratorio "146"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/0a544b48-4283-3dbf-accf-c238b818f1c4> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	iaest-measure:saldo-migratorio "-57"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/a1c9b9f7-3b84-3587-99f0-c0f5b81e2d96> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	iaest-measure:saldo-migratorio "84"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/2db4e6f4-8ba1-36d3-9824-39ed69e380da> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	iaest-measure:saldo-migratorio "-20"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/0c60a3a6-37fb-31ab-b9dc-a7da7d24b497> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2010> ;
+	iaest-measure:saldo-migratorio "2280"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/fbf8aab0-7150-3c46-8799-8f9f8dfaeadc> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	iaest-measure:saldo-migratorio "108"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/7d53e7e5-04cf-3054-a1ef-0409feeb6f5a> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	iaest-measure:saldo-migratorio "320"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/12a64f17-4dc9-314f-8265-c4312c7956ad> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	iaest-measure:saldo-migratorio "-581"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/c99ba98b-1fe9-3921-bbfb-8bd593687016> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	iaest-measure:saldo-migratorio "22"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/1254ad7b-7126-3f56-a16c-e7025b9bb537> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	iaest-measure:saldo-migratorio "1885"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/86b66d59-d057-335d-b5e9-28b6022ad6c7> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2009> ;
+	iaest-measure:saldo-migratorio "3110"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/4225d07b-d739-356a-bb2d-38721ad1fc72> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:saldo-migratorio "1746"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/4ae89de8-44ec-31e6-928d-46b16f6ec877> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Huesca> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:saldo-migratorio "1175"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/3387a06a-2c1d-3e1d-83f7-b19626ef0326> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:saldo-migratorio "657"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/a65f5f98-1c53-34ed-af95-2a35d9697c83> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Teruel> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:saldo-migratorio "511"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/9e3fe0b4-98fd-323b-aa7b-263efa4c417b> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/hombres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:saldo-migratorio "8619"^^xsd:int.
+<http://opendata.aragon.es/recurso/iaest/observacion/902-0204-02040101STP/388a9d88-e5cb-3c5f-a7e2-e316575d2b37> a qb:Observation ;
+	qb:dataSet <http://opendata.aragon.es/recurso/iaest/dataset/902-0204-02040101STP>; 
+	sdmx-dimension:refArea <http://opendata.aragon.es/recurso/territorio/Provincia/Zaragoza> ;
+	iaest-dimension:sexo <http://opendata.aragon.es/kos/iaest/sexo/mujeres> ;
+	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/year/2008> ;
+	iaest-measure:saldo-migratorio "6963"^^xsd:int.

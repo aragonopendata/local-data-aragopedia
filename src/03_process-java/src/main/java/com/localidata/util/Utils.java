@@ -72,7 +72,7 @@ import com.localidata.process.TransformToRDF;
 public class Utils {
 
 	private final static Logger log = Logger.getLogger(Utils.class);
-	private static final int defaultReadTimeOut = 10000;
+	private static final int defaultReadTimeOut = 30000;
 	private static final int defaultTimeOut = 5000;
 	private static String comarcasAragon = null;
 	private static String municipiosAragon = null;
@@ -375,7 +375,7 @@ public class Utils {
 
 	private static String getComarcasAragon() {
 		if (comarcasAragon == null) {
-			String url = "http://opendata.aragon.es/recurso/territorio/Comarca";
+			String url = "https://opendata.aragon.es/recurso/territorio/Comarca";
 			String response = "";
 			comarcasAragon = Utils.processURLGet(url + ".ttl?_sort=label&_page=0&_pageSize=100&api_key=" + Prop.apiKeyAragopedia, "", null);
 			boolean finish = false;
@@ -394,7 +394,7 @@ public class Utils {
 
 	private static String getMunicipiosAragon() {
 		if (municipiosAragon == null) {
-			String url = "http://opendata.aragon.es/recurso/territorio/Municipio";
+			String url = "https://opendata.aragon.es/recurso/territorio/Municipio";
 			String response = "";
 			municipiosAragon = Utils.processURLGet(url + ".ttl?_sort=label&_page=0&_pageSize=100&api_key=" + Prop.apiKeyAragopedia, "", null);
 			boolean finish = false;
@@ -413,7 +413,7 @@ public class Utils {
 
 	private static String getProvinciasAragon() {
 		if (provinciasAragon == null) {
-			String url = "http://opendata.aragon.es/recurso/territorio/Provincia";
+			String url = "https://opendata.aragon.es/recurso/territorio/Provincia";
 			String response = "";
 			provinciasAragon = Utils.processURLGet(url + ".ttl?_sort=label&_page=0&_pageSize=100&api_key=" + Prop.apiKeyAragopedia, "", null);
 			boolean finish = false;
@@ -432,7 +432,7 @@ public class Utils {
 
 	private static String getComunidadAragon() {
 		if (comunidadAragon == null) {
-			String url = "http://opendata.aragon.es/recurso/territorio/ComunidadAutonoma";
+			String url = "https://opendata.aragon.es/recurso/territorio/ComunidadAutonoma";
 			String response = "";
 			comunidadAragon = Utils.processURLGet(url + ".ttl?_sort=label&_page=0&_pageSize=100&api_key=" + Prop.apiKeyAragopedia, "", null);
 			boolean finish = false;

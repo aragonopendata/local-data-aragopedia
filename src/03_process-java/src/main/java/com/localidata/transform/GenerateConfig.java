@@ -599,17 +599,17 @@ public class GenerateConfig {
 						}else{
 							log.info("data.getType() "+data.getType());
 						}
-						if (sendEmail) {
-							String fileName = fileLocal.getName().substring(0, fileLocal.getName().length() - 4);
-							f = drive.searchFile(data.getNameNormalized());
-							provisionalMensaje = provisionalMensaje + "al codelist " + fileName + ", por favor actualice la configuración " + f.getDefaultOpenWithLink() + "\n\n";
-							if(!mensajeCambiosConf.contains(provisionalMensaje))
-								mensajeCambiosConf = mensajeCambiosConf + provisionalMensaje;
-							List<String> lettersList = config.getLetters();
-							for (String letter : lettersList) {
-								filesNotRDF.add(config.getId() + letter);
-							}
-						}
+//						if (sendEmail) {
+//							String fileName = fileLocal.getName().substring(0, fileLocal.getName().length() - 4);
+//							f = drive.searchFile(data.getNameNormalized());
+//							provisionalMensaje = provisionalMensaje + "al codelist " + fileName + ", por favor actualice la configuración " + f.getDefaultOpenWithLink() + "\n\n";
+//							if(!mensajeCambiosConf.contains(provisionalMensaje))
+//								mensajeCambiosConf = mensajeCambiosConf + provisionalMensaje;
+//							List<String> lettersList = config.getLetters();
+//							for (String letter : lettersList) {
+//								filesNotRDF.add(config.getId() + letter);
+//							}
+//						}
 					}
 				}
 			} catch (IOException e) {

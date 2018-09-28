@@ -87,11 +87,6 @@ iaest-dimension:grupos-1-duracion-demanda-descripcion a qb:DimensionProperty , r
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/grupos-1-duracion-demanda-descripcion> .
 
-iaest-measure:n-demandantes a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Nº demandantes"@es ;
-	rdfs:comment "Nº demandantes"@es ;
-	rdfs:range xsd:int .
-
 iaest-measure:hectareas-de-sau-en-otros-regimenes-de-tenencia-de-las-tierras a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Hectáreas de SAU en otros regímenes de tenencia de las tierras"@es ;
 	rdfs:comment "Hectáreas de SAU en otros regímenes de tenencia de las tierras"@es ;
@@ -126,6 +121,11 @@ iaest-measure:superficie-agricola-utilizada-sau a qb:MeasureProperty , rdf:Prope
 iaest-measure:hectareas-de-sau-en-arrendamiento a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Hectáreas de SAU en arrendamiento"@es ;
 	rdfs:comment "Hectáreas de SAU en arrendamiento"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:n-demandantes a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Nº demandantes"@es ;
+	rdfs:comment "Nº demandantes"@es ;
 	rdfs:range xsd:int .
 
 iaest-measure:municipio-superficie-medida a qb:MeasureProperty , rdf:Property;
@@ -236,6 +236,11 @@ iaest-dimension:tipo-estudios a qb:DimensionProperty , rdf:Property, qb:CodedPro
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/tipo-estudios> .
 
+iaest-measure:saldo-migratorio a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Saldo migratorio"@es ;
+	rdfs:comment "Saldo migratorio"@es ;
+	rdfs:range xsd:int .
+
 iaest-dimension:nivel-estudios-detalle a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Nivel estudios (detalle)"@es ;
 	rdfs:comment "Nivel estudios (detalle)"@es ;
@@ -247,11 +252,6 @@ iaest-dimension:nivel-estudios-agregado a qb:DimensionProperty , rdf:Property, q
 	rdfs:comment "Nivel estudios (agregado)"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/nivel-estudios-agregado> .
-
-iaest-measure:saldo-migratorio a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Saldo migratorio"@es ;
-	rdfs:comment "Saldo migratorio"@es ;
-	rdfs:range xsd:int .
 
 iaest-dimension:estado-civil a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Estado civil"@es ;
@@ -1610,31 +1610,6 @@ iaest-measure:porcentaje-de-sau-sobre-la-superficie-total-de-explotaciones-porce
 	rdfs:comment "Porcentaje de SAU sobre la superficie total de explotaciones (%)"@es ;
 	rdfs:range xsd:double .
 
-iaest-measure:rustica---base-imponible-miles-de-euros a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Rústica   Base imponible (miles de euros)"@es ;
-	rdfs:comment "Rústica   Base imponible (miles de euros)"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:rustica---cuota-euros a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Rústica   Cuota (euros)"@es ;
-	rdfs:comment "Rústica   Cuota (euros)"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:pastizales-permanentes a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Pastizales permanentes"@es ;
-	rdfs:comment "Pastizales permanentes"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:tierras-labradas a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Tierras labradas"@es ;
-	rdfs:comment "Tierras labradas"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:otras-tierrras a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Otras tierrras"@es ;
-	rdfs:comment "Otras tierrras"@es ;
-	rdfs:range xsd:double .
-
 iaest-measure:b-activo-corriente a qb:MeasureProperty , rdf:Property;
 	rdfs:label "B) ACTIVO CORRIENTE"@es ;
 	rdfs:comment "B) ACTIVO CORRIENTE"@es ;
@@ -1925,6 +1900,37 @@ iaest-measure:pyg a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "PYG"@es ;
 	rdfs:range xsd:string .
 
+iaest-measure:pastizales-permanentes a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Pastizales permanentes"@es ;
+	rdfs:comment "Pastizales permanentes"@es ;
+	rdfs:range xsd:double .
+
+iaest-measure:tierras-labradas a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Tierras labradas"@es ;
+	rdfs:comment "Tierras labradas"@es ;
+	rdfs:range xsd:double .
+
+iaest-measure:otras-tierrras a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Otras tierrras"@es ;
+	rdfs:comment "Otras tierrras"@es ;
+	rdfs:range xsd:double .
+
+iaest-measure:rustica---base-imponible-miles-de-euros a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Rústica   Base imponible (miles de euros)"@es ;
+	rdfs:comment "Rústica   Base imponible (miles de euros)"@es ;
+	rdfs:range xsd:double .
+
+iaest-measure:rustica---cuota-euros a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Rústica   Cuota (euros)"@es ;
+	rdfs:comment "Rústica   Cuota (euros)"@es ;
+	rdfs:range xsd:int .
+
+iaest-dimension:rama-descripcion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Rama descripción"@es ;
+	rdfs:comment "Rama descripción"@es ;
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/rama-descripcion> .
+
 iaest-measure:urbana---cuota-integra-euros a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Urbana   Cuota íntegra (euros)"@es ;
 	rdfs:comment "Urbana   Cuota íntegra (euros)"@es ;
@@ -1935,11 +1941,10 @@ iaest-measure:urbana---cuota-liquida-euros a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "Urbana   Cuota líquida (euros)"@es ;
 	rdfs:range xsd:int .
 
-iaest-dimension:rama-descripcion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Rama descripción"@es ;
-	rdfs:comment "Rama descripción"@es ;
-	rdfs:range skos:Concept ;
-	qb:codeList <http://opendata.aragon.es/kos/iaest/rama-descripcion> .
+iaest-dimension:superficie-km2 a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Superficie (km2)"@es ;
+	rdfs:comment "Superficie (km2)"@es ;
+	rdfs:range xsd:double .
 
 iaest-measure:rustica---cuota-liquida-euros a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Rústica   Cuota líquida (euros)"@es ;
@@ -1960,11 +1965,6 @@ iaest-measure:rustica---numero-de-recibos a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Rústica   Número de recibos"@es ;
 	rdfs:comment "Rústica   Número de recibos"@es ;
 	rdfs:range xsd:int .
-
-iaest-dimension:superficie-km2 a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Superficie (km2)"@es ;
-	rdfs:comment "Superficie (km2)"@es ;
-	rdfs:range xsd:double .
 
 iaest-dimension:nucleodiseminado a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Núcleo/diseminado"@es ;
@@ -2393,12 +2393,6 @@ iaest-dimension:grandes-grupos a qb:DimensionProperty , rdf:Property, qb:CodedPr
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/grandes-grupos> .
 
-iaest-dimension:grado a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Grado"@es ;
-	rdfs:comment "Grado"@es ;
-	rdfs:range skos:Concept ;
-	qb:codeList <http://opendata.aragon.es/kos/iaest/grado> .
-
 iaest-measure:explotaciones-con-superficie--20-y-50-hectareas a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Explotaciones con superficie >= 20 y <50 hectáreas"@es ;
 	rdfs:comment "Explotaciones con superficie >= 20 y <50 hectáreas"@es ;
@@ -2438,6 +2432,12 @@ iaest-measure:explotaciones-con-superficie--01-y-5-hectareas a qb:MeasurePropert
 	rdfs:label "Explotaciones con superficie >= 0,1 y <5 hectáreas"@es ;
 	rdfs:comment "Explotaciones con superficie >= 0,1 y <5 hectáreas"@es ;
 	rdfs:range xsd:int .
+
+iaest-dimension:grado a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Grado"@es ;
+	rdfs:comment "Grado"@es ;
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/grado> .
 
 iaest-measure:explotaciones-con-tierras-cuya-superficie-es-totalmente-de-su-propiedad a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Explotaciones con tierras cuya superficie es totalmente de su propiedad"@es ;
@@ -3268,6 +3268,17 @@ iaest-dimension:estrato a qb:DimensionProperty , rdf:Property, qb:CodedProperty 
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/estrato> .
 
+iaest-measure:cuentas-cotizacion-con-trabajadores a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Cuentas cotización con trabajadores"@es ;
+	rdfs:comment "Cuentas cotización con trabajadores"@es ;
+	rdfs:range xsd:int .
+
+iaest-dimension:codcom a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Codcom"@es ;
+	rdfs:comment "Codcom"@es ;
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/codcom> .
+
 iaest-dimension:tipo-de-hogar-2 a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Tipo de hogar 2"@es ;
 	rdfs:comment "Tipo de hogar 2"@es ;
@@ -3280,28 +3291,17 @@ iaest-dimension:tipo-hogar-1 a qb:DimensionProperty , rdf:Property, qb:CodedProp
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/tipo-hogar-1> .
 
-iaest-measure:cuentas-cotizacion-con-trabajadores a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Cuentas cotización con trabajadores"@es ;
-	rdfs:comment "Cuentas cotización con trabajadores"@es ;
-	rdfs:range xsd:int .
-
-iaest-dimension:codcom a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Codcom"@es ;
-	rdfs:comment "Codcom"@es ;
+iaest-dimension:codmun a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Codmun"@es ;
+	rdfs:comment "Codmun"@es ;
 	rdfs:range skos:Concept ;
-	qb:codeList <http://opendata.aragon.es/kos/iaest/codcom> .
+	qb:codeList <http://opendata.aragon.es/kos/iaest/codmun> .
 
 iaest-dimension:estructura-hogar a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Estructura hogar"@es ;
 	rdfs:comment "Estructura hogar"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/estructura-hogar> .
-
-iaest-dimension:codmun a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Codmun"@es ;
-	rdfs:comment "Codmun"@es ;
-	rdfs:range skos:Concept ;
-	qb:codeList <http://opendata.aragon.es/kos/iaest/codmun> .
 
 iaest-measure:contenedores-de-envases a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Contenedores de envases"@es ;
@@ -3439,18 +3439,6 @@ iaest-dimension:horas-trabajadas a qb:DimensionProperty , rdf:Property, qb:Coded
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/horas-trabajadas> .
 
-iaest-dimension:situacion-profesional a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Situación profesional"@es ;
-	rdfs:comment "Situación profesional"@es ;
-	rdfs:range skos:Concept ;
-	qb:codeList <http://opendata.aragon.es/kos/iaest/situacion-profesional> .
-
-iaest-dimension:formacion-jefe-explotacion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Formación jefe explotación"@es ;
-	rdfs:comment "Formación jefe explotación"@es ;
-	rdfs:range skos:Concept ;
-	qb:codeList <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion> .
-
 iaest-measure:abstencion a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Abstención"@es ;
 	rdfs:comment "Abstención"@es ;
@@ -3486,17 +3474,29 @@ iaest-measure:porcentaje-participacion a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "% Participación"@es ;
 	rdfs:range xsd:double .
 
-iaest-dimension:sector-actividad-descripcion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Sector actividad, descripción"@es ;
-	rdfs:comment "Sector actividad, descripción"@es ;
+iaest-dimension:formacion-jefe-explotacion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Formación jefe explotación"@es ;
+	rdfs:comment "Formación jefe explotación"@es ;
 	rdfs:range skos:Concept ;
-	qb:codeList <http://opendata.aragon.es/kos/iaest/sector-actividad-descripcion> .
+	qb:codeList <http://opendata.aragon.es/kos/iaest/formacion-jefe-explotacion> .
+
+iaest-dimension:situacion-profesional a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Situación profesional"@es ;
+	rdfs:comment "Situación profesional"@es ;
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/situacion-profesional> .
 
 iaest-dimension:gestion-explotacion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Gestión explotación"@es ;
 	rdfs:comment "Gestión explotación"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/gestion-explotacion> .
+
+iaest-dimension:sector-actividad-descripcion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Sector actividad, descripción"@es ;
+	rdfs:comment "Sector actividad, descripción"@es ;
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/sector-actividad-descripcion> .
 
 iaest-dimension:personalidad-juridica a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Personalidad jurídica"@es ;

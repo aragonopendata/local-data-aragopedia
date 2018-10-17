@@ -17,6 +17,132 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 
+<http://opendata.aragon.es/kos/iaest/temporalidad> a skos:ConceptScheme;
+	skos:notation "temporalidad";
+	rdfs:label "Temporalidad";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/temporalidad/temporal>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar>.
+
+<http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/temporalidad>;
+	skos:notation "indefinido";
+	skos:prefLabel "Indefinido".
+
+<http://opendata.aragon.es/kos/iaest/temporalidad/temporal> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/temporalidad>;
+	skos:notation "temporal";
+	skos:prefLabel "Temporal".
+
+<http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/temporalidad>;
+	skos:notation "sin-clasificar";
+	skos:prefLabel "Sin clasificar".
+
+<http://opendata.aragon.es/kos/iaest/sexo> a skos:ConceptScheme;
+	skos:notation "sexo";
+	rdfs:label "Sexo";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/hombres>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/hombre>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/mujer>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/mujeres>.
+
+<http://opendata.aragon.es/kos/iaest/sexo/hombres> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
+	skos:notation "hombres";
+	skos:prefLabel "Hombres".
+
+<http://opendata.aragon.es/kos/iaest/sexo/hombre> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
+	skos:notation "hombre";
+	skos:prefLabel "Hombre".
+
+<http://opendata.aragon.es/kos/iaest/sexo/mujer> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
+	skos:notation "mujer";
+	skos:prefLabel "Mujer".
+
+<http://opendata.aragon.es/kos/iaest/sexo/mujeres> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
+	skos:notation "mujeres";
+	skos:prefLabel "Mujeres".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre> a skos:ConceptScheme;
+	skos:notation "mes-nombre";
+	rdfs:label "Mes nombre";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/agosto>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/noviembre>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/abril>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/junio>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/septiembre>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/mayo>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/enero>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/julio>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/febrero>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/diciembre>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/octubre>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/marzo>.
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/agosto> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "agosto";
+	skos:prefLabel "Agosto".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/noviembre> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "noviembre";
+	skos:prefLabel "Noviembre".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/abril> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "abril";
+	skos:prefLabel "Abril".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/junio> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "junio";
+	skos:prefLabel "Junio".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/septiembre> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "septiembre";
+	skos:prefLabel "Septiembre".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/mayo> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "mayo";
+	skos:prefLabel "Mayo".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/enero> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "enero";
+	skos:prefLabel "Enero".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/julio> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "julio";
+	skos:prefLabel "Julio".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/febrero> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "febrero";
+	skos:prefLabel "Febrero".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/diciembre> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "diciembre";
+	skos:prefLabel "Diciembre".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/octubre> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "octubre";
+	skos:prefLabel "Octubre".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/marzo> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "marzo";
+	skos:prefLabel "Marzo".
+
 <http://opendata.aragon.es/kos/iaest/nacionalidad-continente> a skos:ConceptScheme;
 	skos:notation "nacionalidad-continente";
 	rdfs:label "Nacionalidad Continente";
@@ -62,34 +188,6 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/nacionalidad-continente>;
 	skos:notation "america";
 	skos:prefLabel "América".
-
-<http://opendata.aragon.es/kos/iaest/sexo> a skos:ConceptScheme;
-	skos:notation "sexo";
-	rdfs:label "Sexo";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/hombres>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/hombre>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/mujer>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/mujeres>.
-
-<http://opendata.aragon.es/kos/iaest/sexo/hombres> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
-	skos:notation "hombres";
-	skos:prefLabel "Hombres".
-
-<http://opendata.aragon.es/kos/iaest/sexo/hombre> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
-	skos:notation "hombre";
-	skos:prefLabel "Hombre".
-
-<http://opendata.aragon.es/kos/iaest/sexo/mujer> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
-	skos:notation "mujer";
-	skos:prefLabel "Mujer".
-
-<http://opendata.aragon.es/kos/iaest/sexo/mujeres> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
-	skos:notation "mujeres";
-	skos:prefLabel "Mujeres".
 
 <http://opendata.aragon.es/kos/iaest/fuente-y-fecha> a skos:ConceptScheme;
 	skos:notation "fuente-y-fecha";
@@ -418,104 +516,6 @@
 
 <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales/sin-clasificar> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales>;
-	skos:notation "sin-clasificar";
-	skos:prefLabel "Sin clasificar".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre> a skos:ConceptScheme;
-	skos:notation "mes-nombre";
-	rdfs:label "Mes nombre";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/agosto>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/noviembre>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/abril>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/junio>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/septiembre>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/mayo>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/enero>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/julio>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/febrero>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/diciembre>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/octubre>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/marzo>.
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/agosto> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "agosto";
-	skos:prefLabel "Agosto".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/noviembre> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "noviembre";
-	skos:prefLabel "Noviembre".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/abril> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "abril";
-	skos:prefLabel "Abril".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/junio> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "junio";
-	skos:prefLabel "Junio".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/septiembre> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "septiembre";
-	skos:prefLabel "Septiembre".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/mayo> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "mayo";
-	skos:prefLabel "Mayo".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/enero> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "enero";
-	skos:prefLabel "Enero".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/julio> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "julio";
-	skos:prefLabel "Julio".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/febrero> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "febrero";
-	skos:prefLabel "Febrero".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/diciembre> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "diciembre";
-	skos:prefLabel "Diciembre".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/octubre> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "octubre";
-	skos:prefLabel "Octubre".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/marzo> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "marzo";
-	skos:prefLabel "Marzo".
-
-<http://opendata.aragon.es/kos/iaest/temporalidad> a skos:ConceptScheme;
-	skos:notation "temporalidad";
-	rdfs:label "Temporalidad";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/temporalidad/temporal>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar>.
-
-<http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/temporalidad>;
-	skos:notation "indefinido";
-	skos:prefLabel "Indefinido".
-
-<http://opendata.aragon.es/kos/iaest/temporalidad/temporal> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/temporalidad>;
-	skos:notation "temporal";
-	skos:prefLabel "Temporal".
-
-<http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/temporalidad>;
 	skos:notation "sin-clasificar";
 	skos:prefLabel "Sin clasificar".
 

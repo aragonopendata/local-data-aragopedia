@@ -17,6 +17,132 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 
+<http://opendata.aragon.es/kos/iaest/sexo> a skos:ConceptScheme;
+	skos:notation "sexo";
+	rdfs:label "Sexo";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/hombres>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/hombre>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/mujer>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/mujeres>.
+
+<http://opendata.aragon.es/kos/iaest/sexo/hombres> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
+	skos:notation "hombres";
+	skos:prefLabel "Hombres".
+
+<http://opendata.aragon.es/kos/iaest/sexo/hombre> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
+	skos:notation "hombre";
+	skos:prefLabel "Hombre".
+
+<http://opendata.aragon.es/kos/iaest/sexo/mujer> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
+	skos:notation "mujer";
+	skos:prefLabel "Mujer".
+
+<http://opendata.aragon.es/kos/iaest/sexo/mujeres> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
+	skos:notation "mujeres";
+	skos:prefLabel "Mujeres".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre> a skos:ConceptScheme;
+	skos:notation "mes-nombre";
+	rdfs:label "Mes nombre";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/agosto>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/noviembre>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/abril>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/junio>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/septiembre>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/mayo>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/enero>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/julio>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/febrero>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/diciembre>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/octubre>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/marzo>.
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/agosto> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "agosto";
+	skos:prefLabel "Agosto".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/noviembre> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "noviembre";
+	skos:prefLabel "Noviembre".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/abril> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "abril";
+	skos:prefLabel "Abril".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/junio> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "junio";
+	skos:prefLabel "Junio".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/septiembre> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "septiembre";
+	skos:prefLabel "Septiembre".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/mayo> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "mayo";
+	skos:prefLabel "Mayo".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/enero> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "enero";
+	skos:prefLabel "Enero".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/julio> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "julio";
+	skos:prefLabel "Julio".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/febrero> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "febrero";
+	skos:prefLabel "Febrero".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/diciembre> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "diciembre";
+	skos:prefLabel "Diciembre".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/octubre> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "octubre";
+	skos:prefLabel "Octubre".
+
+<http://opendata.aragon.es/kos/iaest/mes-nombre/marzo> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
+	skos:notation "marzo";
+	skos:prefLabel "Marzo".
+
+<http://opendata.aragon.es/kos/iaest/temporalidad> a skos:ConceptScheme;
+	skos:notation "temporalidad";
+	rdfs:label "Temporalidad";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/temporalidad/temporal>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar>.
+
+<http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/temporalidad>;
+	skos:notation "indefinido";
+	skos:prefLabel "Indefinido".
+
+<http://opendata.aragon.es/kos/iaest/temporalidad/temporal> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/temporalidad>;
+	skos:notation "temporal";
+	skos:prefLabel "Temporal".
+
+<http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/temporalidad>;
+	skos:notation "sin-clasificar";
+	skos:prefLabel "Sin clasificar".
+
 <http://opendata.aragon.es/kos/iaest/siglas> a skos:ConceptScheme;
 	skos:notation "siglas";
 	rdfs:label "Siglas";
@@ -1056,34 +1182,6 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/situacion-preferente>;
 	skos:notation "parados";
 	skos:prefLabel "Parados".
-
-<http://opendata.aragon.es/kos/iaest/sexo> a skos:ConceptScheme;
-	skos:notation "sexo";
-	rdfs:label "Sexo";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/hombres>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/hombre>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/mujer>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sexo/mujeres>.
-
-<http://opendata.aragon.es/kos/iaest/sexo/hombres> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
-	skos:notation "hombres";
-	skos:prefLabel "Hombres".
-
-<http://opendata.aragon.es/kos/iaest/sexo/hombre> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
-	skos:notation "hombre";
-	skos:prefLabel "Hombre".
-
-<http://opendata.aragon.es/kos/iaest/sexo/mujer> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
-	skos:notation "mujer";
-	skos:prefLabel "Mujer".
-
-<http://opendata.aragon.es/kos/iaest/sexo/mujeres> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/sexo>;
-	skos:notation "mujeres";
-	skos:prefLabel "Mujeres".
 
 <http://opendata.aragon.es/kos/iaest/orden> a skos:ConceptScheme;
 	skos:notation "orden";
@@ -3497,6 +3595,46 @@
 	skos:notation "transporte-mercancias-ligeras-nacionales-servicio-publico";
 	skos:prefLabel "Transporte mercancías ligeras nacionales servicio público".
 
+<http://opendata.aragon.es/kos/iaest/edad-grandes-grupos> a skos:ConceptScheme;
+	skos:notation "edad-grandes-grupos";
+	rdfs:label "Edad (grandes grupos)";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/0-a-15>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/65-o-mas>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/0-15>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/16-64>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/65-y-mas>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/16-a-64>.
+
+<http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/0-a-15> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos>;
+	skos:notation "0-a-15";
+	skos:prefLabel "0 a 15".
+
+<http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/65-o-mas> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos>;
+	skos:notation "65-o-mas";
+	skos:prefLabel "65 ó más".
+
+<http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/0-15> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos>;
+	skos:notation "0-15";
+	skos:prefLabel "0-15".
+
+<http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/16-64> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos>;
+	skos:notation "16-64";
+	skos:prefLabel "16-64".
+
+<http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/65-y-mas> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos>;
+	skos:notation "65-y-mas";
+	skos:prefLabel "65 y más".
+
+<http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/16-a-64> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos>;
+	skos:notation "16-a-64";
+	skos:prefLabel "16 a 64".
+
 <http://opendata.aragon.es/kos/iaest/numero-de-personas-en-el-hogar> a skos:ConceptScheme;
 	skos:notation "numero-de-personas-en-el-hogar";
 	rdfs:label "Número de personas en el hogar";
@@ -3823,28 +3961,6 @@
 	skos:notation "sin-clasificar";
 	skos:prefLabel "Sin clasificar".
 
-<http://opendata.aragon.es/kos/iaest/temporalidad> a skos:ConceptScheme;
-	skos:notation "temporalidad";
-	rdfs:label "Temporalidad";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/temporalidad/indefinido>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/temporalidad/temporal>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar>.
-
-<http://opendata.aragon.es/kos/iaest/temporalidad/indefinido> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/temporalidad>;
-	skos:notation "indefinido";
-	skos:prefLabel "Indefinido".
-
-<http://opendata.aragon.es/kos/iaest/temporalidad/temporal> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/temporalidad>;
-	skos:notation "temporal";
-	skos:prefLabel "Temporal".
-
-<http://opendata.aragon.es/kos/iaest/temporalidad/sin-clasificar> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/temporalidad>;
-	skos:notation "sin-clasificar";
-	skos:prefLabel "Sin clasificar".
-
 <http://opendata.aragon.es/kos/iaest/grupo-antiguedad> a skos:ConceptScheme;
 	skos:notation "grupo-antiguedad";
 	rdfs:label "Grupo Antigüedad";
@@ -3890,46 +4006,6 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/grupo-antiguedad>;
 	skos:notation "de-10-a-12-meses";
 	skos:prefLabel "De 10 a 12 meses".
-
-<http://opendata.aragon.es/kos/iaest/edad-grandes-grupos> a skos:ConceptScheme;
-	skos:notation "edad-grandes-grupos";
-	rdfs:label "Edad (grandes grupos)";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/0-a-15>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/65-o-mas>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/0-15>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/16-64>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/65-y-mas>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/16-a-64>.
-
-<http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/0-a-15> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos>;
-	skos:notation "0-a-15";
-	skos:prefLabel "0 a 15".
-
-<http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/65-o-mas> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos>;
-	skos:notation "65-o-mas";
-	skos:prefLabel "65 ó más".
-
-<http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/0-15> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos>;
-	skos:notation "0-15";
-	skos:prefLabel "0-15".
-
-<http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/16-64> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos>;
-	skos:notation "16-64";
-	skos:prefLabel "16-64".
-
-<http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/65-y-mas> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos>;
-	skos:notation "65-y-mas";
-	skos:prefLabel "65 y más".
-
-<http://opendata.aragon.es/kos/iaest/edad-grandes-grupos/16-a-64> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/edad-grandes-grupos>;
-	skos:notation "16-a-64";
-	skos:prefLabel "16 a 64".
 
 <http://opendata.aragon.es/kos/iaest/residencia-continente-nombre> a skos:ConceptScheme;
 	skos:notation "residencia-continente-nombre";
@@ -42311,168 +42387,6 @@
 	skos:notation "7";
 	skos:prefLabel "7".
 
-<http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales> a skos:ConceptScheme;
-	skos:notation "evacuacion-aguas-residuales";
-	rdfs:label "Evacuación aguas residuales";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales/otro-tipo-de-evacuacion>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales/alcantarillado>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales/sin-evacuacion>.
-
-<http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales/otro-tipo-de-evacuacion> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales>;
-	skos:notation "otro-tipo-de-evacuacion";
-	skos:prefLabel "Otro tipo de evacuación".
-
-<http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales/alcantarillado> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales>;
-	skos:notation "alcantarillado";
-	skos:prefLabel "Alcantarillado".
-
-<http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales/sin-evacuacion> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales>;
-	skos:notation "sin-evacuacion";
-	skos:prefLabel "Sin evacuación".
-
-<http://opendata.aragon.es/kos/iaest/agua-corriente> a skos:ConceptScheme;
-	skos:notation "agua-corriente";
-	rdfs:label "Agua corriente";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-abastecimiento-privado>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/agua-corriente/sin-agua-corriente>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-abastecimiento-publico>.
-
-<http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-abastecimiento-privado> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/agua-corriente>;
-	skos:notation "agua-corriente-abastecimiento-privado";
-	skos:prefLabel "Agua corriente abastecimiento privado".
-
-<http://opendata.aragon.es/kos/iaest/agua-corriente/sin-agua-corriente> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/agua-corriente>;
-	skos:notation "sin-agua-corriente";
-	skos:prefLabel "Sin agua corriente".
-
-<http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-abastecimiento-publico> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/agua-corriente>;
-	skos:notation "agua-corriente-abastecimiento-publico";
-	skos:prefLabel "Agua corriente abastecimiento público".
-
-<http://opendata.aragon.es/kos/iaest/portero-automatico> a skos:ConceptScheme;
-	skos:notation "portero-automatico";
-	rdfs:label "Portero automático";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/portero-automatico/con-portero-automatico>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/portero-automatico/sin-portero-automatico>.
-
-<http://opendata.aragon.es/kos/iaest/portero-automatico/con-portero-automatico> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/portero-automatico>;
-	skos:notation "con-portero-automatico";
-	skos:prefLabel "Con portero automático".
-
-<http://opendata.aragon.es/kos/iaest/portero-automatico/sin-portero-automatico> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/portero-automatico>;
-	skos:notation "sin-portero-automatico";
-	skos:prefLabel "Sin portero automático".
-
-<http://opendata.aragon.es/kos/iaest/agua-caliente-central> a skos:ConceptScheme;
-	skos:notation "agua-caliente-central";
-	rdfs:label "Agua caliente central";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/agua-caliente-central/sin-agua-caliente>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/agua-caliente-central/con-agua-caliente>.
-
-<http://opendata.aragon.es/kos/iaest/agua-caliente-central/sin-agua-caliente> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/agua-caliente-central>;
-	skos:notation "sin-agua-caliente";
-	skos:prefLabel "Sin agua caliente".
-
-<http://opendata.aragon.es/kos/iaest/agua-caliente-central/con-agua-caliente> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/agua-caliente-central>;
-	skos:notation "con-agua-caliente";
-	skos:prefLabel "Con agua caliente".
-
-<http://opendata.aragon.es/kos/iaest/ascensor> a skos:ConceptScheme;
-	skos:notation "ascensor";
-	rdfs:label "Ascensor";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/ascensor/sin-ascensor>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/ascensor/con-ascensor>.
-
-<http://opendata.aragon.es/kos/iaest/ascensor/sin-ascensor> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/ascensor>;
-	skos:notation "sin-ascensor";
-	skos:prefLabel "Sin ascensor".
-
-<http://opendata.aragon.es/kos/iaest/ascensor/con-ascensor> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/ascensor>;
-	skos:notation "con-ascensor";
-	skos:prefLabel "Con ascensor".
-
-<http://opendata.aragon.es/kos/iaest/portero> a skos:ConceptScheme;
-	skos:notation "portero";
-	rdfs:label "Portero";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/portero/con-portero>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/portero/no-aplicable>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/portero/sin-portero>.
-
-<http://opendata.aragon.es/kos/iaest/portero/con-portero> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/portero>;
-	skos:notation "con-portero";
-	skos:prefLabel "Con portero".
-
-<http://opendata.aragon.es/kos/iaest/portero/no-aplicable> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/portero>;
-	skos:notation "no-aplicable";
-	skos:prefLabel " No aplicable".
-
-<http://opendata.aragon.es/kos/iaest/portero/sin-portero> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/portero>;
-	skos:notation "sin-portero";
-	skos:prefLabel "Sin portero".
-
-<http://opendata.aragon.es/kos/iaest/gas> a skos:ConceptScheme;
-	skos:notation "gas";
-	rdfs:label "Gas";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/gas/con-gas>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/gas/sin-gas>.
-
-<http://opendata.aragon.es/kos/iaest/gas/con-gas> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/gas>;
-	skos:notation "con-gas";
-	skos:prefLabel "Con gas".
-
-<http://opendata.aragon.es/kos/iaest/gas/sin-gas> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/gas>;
-	skos:notation "sin-gas";
-	skos:prefLabel "Sin gas".
-
-<http://opendata.aragon.es/kos/iaest/accesible> a skos:ConceptScheme;
-	skos:notation "accesible";
-	rdfs:label "Accesible";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/accesible/no-accesible>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/accesible/accesible>.
-
-<http://opendata.aragon.es/kos/iaest/accesible/no-accesible> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/accesible>;
-	skos:notation "no-accesible";
-	skos:prefLabel "No accesible".
-
-<http://opendata.aragon.es/kos/iaest/accesible/accesible> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/accesible>;
-	skos:notation "accesible";
-	skos:prefLabel "Accesible".
-
-<http://opendata.aragon.es/kos/iaest/telefono> a skos:ConceptScheme;
-	skos:notation "telefono";
-	rdfs:label "Teléfono";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/telefono/sin-telefono>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/telefono/con-telefono>.
-
-<http://opendata.aragon.es/kos/iaest/telefono/sin-telefono> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/telefono>;
-	skos:notation "sin-telefono";
-	skos:prefLabel "Sin teléfono".
-
-<http://opendata.aragon.es/kos/iaest/telefono/con-telefono> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/telefono>;
-	skos:notation "con-telefono";
-	skos:prefLabel "Con teléfono".
-
 <http://opendata.aragon.es/kos/iaest/clase-de-propietario> a skos:ConceptScheme;
 	skos:notation "clase-de-propietario";
 	rdfs:label "Clase de propietario";
@@ -42856,6 +42770,168 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/plazas-garaje>;
 	skos:notation "21-a-50";
 	skos:prefLabel "21 a 50".
+
+<http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales> a skos:ConceptScheme;
+	skos:notation "evacuacion-aguas-residuales";
+	rdfs:label "Evacuación aguas residuales";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales/otro-tipo-de-evacuacion>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales/alcantarillado>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales/sin-evacuacion>.
+
+<http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales/otro-tipo-de-evacuacion> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales>;
+	skos:notation "otro-tipo-de-evacuacion";
+	skos:prefLabel "Otro tipo de evacuación".
+
+<http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales/alcantarillado> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales>;
+	skos:notation "alcantarillado";
+	skos:prefLabel "Alcantarillado".
+
+<http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales/sin-evacuacion> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/evacuacion-aguas-residuales>;
+	skos:notation "sin-evacuacion";
+	skos:prefLabel "Sin evacuación".
+
+<http://opendata.aragon.es/kos/iaest/agua-corriente> a skos:ConceptScheme;
+	skos:notation "agua-corriente";
+	rdfs:label "Agua corriente";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-abastecimiento-privado>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/agua-corriente/sin-agua-corriente>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-abastecimiento-publico>.
+
+<http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-abastecimiento-privado> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/agua-corriente>;
+	skos:notation "agua-corriente-abastecimiento-privado";
+	skos:prefLabel "Agua corriente abastecimiento privado".
+
+<http://opendata.aragon.es/kos/iaest/agua-corriente/sin-agua-corriente> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/agua-corriente>;
+	skos:notation "sin-agua-corriente";
+	skos:prefLabel "Sin agua corriente".
+
+<http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-abastecimiento-publico> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/agua-corriente>;
+	skos:notation "agua-corriente-abastecimiento-publico";
+	skos:prefLabel "Agua corriente abastecimiento público".
+
+<http://opendata.aragon.es/kos/iaest/portero-automatico> a skos:ConceptScheme;
+	skos:notation "portero-automatico";
+	rdfs:label "Portero automático";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/portero-automatico/con-portero-automatico>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/portero-automatico/sin-portero-automatico>.
+
+<http://opendata.aragon.es/kos/iaest/portero-automatico/con-portero-automatico> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/portero-automatico>;
+	skos:notation "con-portero-automatico";
+	skos:prefLabel "Con portero automático".
+
+<http://opendata.aragon.es/kos/iaest/portero-automatico/sin-portero-automatico> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/portero-automatico>;
+	skos:notation "sin-portero-automatico";
+	skos:prefLabel "Sin portero automático".
+
+<http://opendata.aragon.es/kos/iaest/agua-caliente-central> a skos:ConceptScheme;
+	skos:notation "agua-caliente-central";
+	rdfs:label "Agua caliente central";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/agua-caliente-central/sin-agua-caliente>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/agua-caliente-central/con-agua-caliente>.
+
+<http://opendata.aragon.es/kos/iaest/agua-caliente-central/sin-agua-caliente> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/agua-caliente-central>;
+	skos:notation "sin-agua-caliente";
+	skos:prefLabel "Sin agua caliente".
+
+<http://opendata.aragon.es/kos/iaest/agua-caliente-central/con-agua-caliente> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/agua-caliente-central>;
+	skos:notation "con-agua-caliente";
+	skos:prefLabel "Con agua caliente".
+
+<http://opendata.aragon.es/kos/iaest/ascensor> a skos:ConceptScheme;
+	skos:notation "ascensor";
+	rdfs:label "Ascensor";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/ascensor/sin-ascensor>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/ascensor/con-ascensor>.
+
+<http://opendata.aragon.es/kos/iaest/ascensor/sin-ascensor> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/ascensor>;
+	skos:notation "sin-ascensor";
+	skos:prefLabel "Sin ascensor".
+
+<http://opendata.aragon.es/kos/iaest/ascensor/con-ascensor> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/ascensor>;
+	skos:notation "con-ascensor";
+	skos:prefLabel "Con ascensor".
+
+<http://opendata.aragon.es/kos/iaest/portero> a skos:ConceptScheme;
+	skos:notation "portero";
+	rdfs:label "Portero";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/portero/con-portero>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/portero/no-aplicable>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/portero/sin-portero>.
+
+<http://opendata.aragon.es/kos/iaest/portero/con-portero> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/portero>;
+	skos:notation "con-portero";
+	skos:prefLabel "Con portero".
+
+<http://opendata.aragon.es/kos/iaest/portero/no-aplicable> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/portero>;
+	skos:notation "no-aplicable";
+	skos:prefLabel " No aplicable".
+
+<http://opendata.aragon.es/kos/iaest/portero/sin-portero> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/portero>;
+	skos:notation "sin-portero";
+	skos:prefLabel "Sin portero".
+
+<http://opendata.aragon.es/kos/iaest/gas> a skos:ConceptScheme;
+	skos:notation "gas";
+	rdfs:label "Gas";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/gas/con-gas>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/gas/sin-gas>.
+
+<http://opendata.aragon.es/kos/iaest/gas/con-gas> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/gas>;
+	skos:notation "con-gas";
+	skos:prefLabel "Con gas".
+
+<http://opendata.aragon.es/kos/iaest/gas/sin-gas> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/gas>;
+	skos:notation "sin-gas";
+	skos:prefLabel "Sin gas".
+
+<http://opendata.aragon.es/kos/iaest/accesible> a skos:ConceptScheme;
+	skos:notation "accesible";
+	rdfs:label "Accesible";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/accesible/no-accesible>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/accesible/accesible>.
+
+<http://opendata.aragon.es/kos/iaest/accesible/no-accesible> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/accesible>;
+	skos:notation "no-accesible";
+	skos:prefLabel "No accesible".
+
+<http://opendata.aragon.es/kos/iaest/accesible/accesible> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/accesible>;
+	skos:notation "accesible";
+	skos:prefLabel "Accesible".
+
+<http://opendata.aragon.es/kos/iaest/telefono> a skos:ConceptScheme;
+	skos:notation "telefono";
+	rdfs:label "Teléfono";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/telefono/sin-telefono>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/telefono/con-telefono>.
+
+<http://opendata.aragon.es/kos/iaest/telefono/sin-telefono> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/telefono>;
+	skos:notation "sin-telefono";
+	skos:prefLabel "Sin teléfono".
+
+<http://opendata.aragon.es/kos/iaest/telefono/con-telefono> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/telefono>;
+	skos:notation "con-telefono";
+	skos:prefLabel "Con teléfono".
 
 <http://opendata.aragon.es/kos/iaest/estado> a skos:ConceptScheme;
 	skos:notation "estado";
@@ -47099,82 +47175,6 @@
 	skos:notation "2";
 	skos:prefLabel "2".
 
-<http://opendata.aragon.es/kos/iaest/mes-nombre> a skos:ConceptScheme;
-	skos:notation "mes-nombre";
-	rdfs:label "Mes nombre";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/agosto>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/noviembre>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/abril>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/junio>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/septiembre>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/mayo>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/enero>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/julio>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/febrero>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/diciembre>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/octubre>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/mes-nombre/marzo>.
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/agosto> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "agosto";
-	skos:prefLabel "Agosto".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/noviembre> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "noviembre";
-	skos:prefLabel "Noviembre".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/abril> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "abril";
-	skos:prefLabel "Abril".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/junio> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "junio";
-	skos:prefLabel "Junio".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/septiembre> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "septiembre";
-	skos:prefLabel "Septiembre".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/mayo> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "mayo";
-	skos:prefLabel "Mayo".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/enero> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "enero";
-	skos:prefLabel "Enero".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/julio> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "julio";
-	skos:prefLabel "Julio".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/febrero> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "febrero";
-	skos:prefLabel "Febrero".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/diciembre> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "diciembre";
-	skos:prefLabel "Diciembre".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/octubre> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "octubre";
-	skos:prefLabel "Octubre".
-
-<http://opendata.aragon.es/kos/iaest/mes-nombre/marzo> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/mes-nombre>;
-	skos:notation "marzo";
-	skos:prefLabel "Marzo".
-
 <http://opendata.aragon.es/kos/iaest/dias-duracion-contrato> a skos:ConceptScheme;
 	skos:notation "dias-duracion-contrato";
 	rdfs:label "Días duración contrato";
@@ -47190,6 +47190,22 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/dias-duracion-contrato>;
 	skos:notation "1";
 	skos:prefLabel "1".
+
+<http://opendata.aragon.es/kos/iaest/bonificado-o-no> a skos:ConceptScheme;
+	skos:notation "bonificado-o-no";
+	rdfs:label "Bonificado o no";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/bonificado-o-no/no-bonificados>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/bonificado-o-no/bonificados>.
+
+<http://opendata.aragon.es/kos/iaest/bonificado-o-no/no-bonificados> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/bonificado-o-no>;
+	skos:notation "no-bonificados";
+	skos:prefLabel "No bonificados".
+
+<http://opendata.aragon.es/kos/iaest/bonificado-o-no/bonificados> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/bonificado-o-no>;
+	skos:notation "bonificados";
+	skos:prefLabel "Bonificados".
 
 <http://opendata.aragon.es/kos/iaest/grupo-de-tipo-de-contrato> a skos:ConceptScheme;
 	skos:notation "grupo-de-tipo-de-contrato";
@@ -49842,22 +49858,6 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/siglas-agrupada>;
 	skos:notation "pyln";
 	skos:prefLabel "PYLN".
-
-<http://opendata.aragon.es/kos/iaest/bonificado-o-no> a skos:ConceptScheme;
-	skos:notation "bonificado-o-no";
-	rdfs:label "Bonificado o no";
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/bonificado-o-no/no-bonificados>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/bonificado-o-no/bonificados>.
-
-<http://opendata.aragon.es/kos/iaest/bonificado-o-no/no-bonificados> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/bonificado-o-no>;
-	skos:notation "no-bonificados";
-	skos:prefLabel "No bonificados".
-
-<http://opendata.aragon.es/kos/iaest/bonificado-o-no/bonificados> a skos:Concept;
-	skos:inScheme <http://opendata.aragon.es/kos/iaest/bonificado-o-no>;
-	skos:notation "bonificados";
-	skos:prefLabel "Bonificados".
 
 <http://opendata.aragon.es/kos/iaest/grupo-de-tipo-de-jornada> a skos:ConceptScheme;
 	skos:notation "grupo-de-tipo-de-jornada";

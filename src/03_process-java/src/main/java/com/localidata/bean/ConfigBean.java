@@ -8,7 +8,6 @@ import java.util.Iterator;
 
 import org.apache.log4j.Logger;
 
-import com.localidata.generic.GoogleDriveAPI;
 import com.localidata.generic.Prop;
 import com.localidata.transform.GenerateConfig;
 import com.localidata.util.Utils;
@@ -193,16 +192,16 @@ public class ConfigBean {
 		} catch (Exception e) {
 			log.error("Error to generate config file " + getNameFile(), e);
 		}
-		if (Prop.publishDrive) {
-			if (!isUpdated()) {
-				GoogleDriveAPI api = new GoogleDriveAPI();
-				api.init();
-				api.createSpreadsheetFromFile(Prop.idParentFolder,
-						Prop.emailUserFile, "csv",
-						getNameFile().substring(0, getNameFile().length() - 4),
-						file, "text/csv");
-			}
-		}
+//		if (Prop.publishDrive) {
+//			if (!isUpdated()) {
+//				GoogleDriveAPI api = new GoogleDriveAPI();
+//				api.init();
+//				api.createSpreadsheetFromFile(Prop.idParentFolder,
+//						Prop.emailUserFile, "csv",
+//						getNameFile().substring(0, getNameFile().length() - 4),
+//						file, "text/csv");
+//			}
+//		}
 		return content;
 	}
 

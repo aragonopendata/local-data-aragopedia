@@ -1,11 +1,15 @@
 package com.localidata.generic;
 
+import java.io.FileInputStream;
 import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.apache.commons.codec.binary.Base64;
 
+import com.google.api.client.http.FileContent;
+import com.google.api.services.drive.model.File;
 import com.localidata.util.Utils;
 
 /**

@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -60,6 +61,11 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import com.localidata.generic.Prop;
 import com.localidata.process.TransformToRDF;
@@ -781,6 +787,70 @@ public class Utils {
 		}
 
 	}
+	
+	public static String processURLPutGitHub(String url, String urlParameters, Map<String, String> headers, byte[] body) throws IOException {
+		return processURLPutGitHub(url,urlParameters,headers,body,"UTF-8");
+	}
+	
+	public static String processURLPutGitHub(String url, String urlParameters, Map<String, String> headers, byte[] body, String encoding) throws IOException {
+
+		HttpURLConnection httpConnection = null;
+		try {
+
+			StringBuffer sb = new StringBuffer();
+			String u = "";
+			if (!Utils.v(urlParameters)) {
+				u = url;
+			} else {
+				u = url + "?" + urlParameters;
+			}
+			URL targetUrl = new URL(u);
+
+			httpConnection = (HttpURLConnection) targetUrl.openConnection();
+			httpConnection.setDoOutput(true);
+			httpConnection.setRequestMethod("PUT");
+			httpConnection.setConnectTimeout(defaultTimeOut);
+			httpConnection.setReadTimeout(defaultReadTimeOut);
+
+			if (headers != null) {
+				Iterator<Entry<String, String>> it = headers.entrySet().iterator();
+				while (it.hasNext()) {
+					Map.Entry<String, String> pairs = it.next();
+					httpConnection.setRequestProperty(pairs.getKey(), pairs.getValue());
+				}
+			}
+
+			OutputStream outputStream = httpConnection.getOutputStream();
+			outputStream.write(body);
+			outputStream.flush();
+
+			BufferedReader responseBuffer;
+
+			responseBuffer = new BufferedReader(new InputStreamReader(httpConnection.getInputStream(), encoding));
+
+			String output;
+
+			while ((output = responseBuffer.readLine()) != null) {
+				sb.append(output);
+			}
+
+			if ((httpConnection.getResponseCode() > 299) && (httpConnection.getResponseCode() < 200)) {
+				log.error("The URI does not return a 2XX code");
+				log.error(httpConnection.getResponseCode());
+				httpConnection.disconnect();
+				return "";
+			}
+			httpConnection.disconnect();
+			return sb.toString();
+
+		} catch (IOException e) {
+			log.error("Error procesing URL by Post");
+			if (httpConnection != null)
+				httpConnection.disconnect();
+			throw e;
+		}
+
+	}
 
 	public static void stringToFile(String string, File file) throws Exception {
 
@@ -1019,6 +1089,80 @@ public class Utils {
 			log.error("Error en main", e);
 		}
 
+	}
+	
+	public static void XLSXToCsv(File inputFile, File  outputFile) throws Exception {
+
+		StringBuffer data = new StringBuffer();
+		try {
+			FileOutputStream fos = new FileOutputStream(outputFile);
+			XSSFWorkbook wBook = new XSSFWorkbook(new FileInputStream(inputFile));
+			XSSFSheet sheet = wBook.getSheetAt(0);
+			Row row;
+			Cell cell;
+	
+			Iterator<Row> rowIterator = sheet.iterator();
+			while (rowIterator.hasNext()) {
+				row = rowIterator.next();
+				Iterator<Cell> cellIterator = row.cellIterator();
+				while (cellIterator.hasNext()) {
+			
+					cell = cellIterator.next();
+			
+					switch (cell.getCellType()) {
+						case Cell.CELL_TYPE_BOOLEAN:
+							data.append(cell.getBooleanCellValue() + ",");
+				
+						break;
+						case Cell.CELL_TYPE_NUMERIC:
+							data.append(cell.getNumericCellValue() + ",");
+				
+						break;
+						case Cell.CELL_TYPE_STRING:
+							data.append(cell.getStringCellValue() + ",");
+						break;
+				
+						case Cell.CELL_TYPE_BLANK:
+							data.append("" + ",");
+						break;
+						default:
+							data.append(cell + ",");
+			
+					}
+				}
+				data.append('\n');
+			}
+	
+			fos.write(data.toString().getBytes());
+			fos.close();
+
+		} catch (Exception ioe) {
+			ioe.printStackTrace();
+		}
+    }
+	
+	public static void csvToXLSX(File inputFile, File  outputFile) {
+	    try {
+	        XSSFWorkbook workBook = new XSSFWorkbook();
+	        XSSFSheet sheet = workBook.createSheet(inputFile.getName());
+	        String currentLine=null;
+	        int RowNum=0;
+	        BufferedReader br = new BufferedReader(new FileReader(inputFile));
+	        while ((currentLine = br.readLine()) != null) {
+	            String str[] = currentLine.split(",");
+	            RowNum++;
+	            XSSFRow currentRow=sheet.createRow(RowNum);
+	            for(int i=0;i<str.length;i++){
+	                currentRow.createCell(i).setCellValue(str[i]);
+	            }
+	        }
+
+	        FileOutputStream fileOutputStream =  new FileOutputStream(outputFile);
+	        workBook.write(fileOutputStream);
+	        fileOutputStream.close();
+	    } catch (Exception ex) {
+	        ex.printStackTrace();
+	    }
 	}
 
 }

@@ -28,7 +28,6 @@ import com.localidata.bean.ConfigBean;
 import com.localidata.bean.DataBean;
 import com.localidata.bean.SkosBean;
 import com.localidata.generic.Constants;
-import com.localidata.generic.GoogleDriveAPI;
 import com.localidata.generic.Prop;
 import com.localidata.util.Utils;
 
@@ -64,17 +63,6 @@ public class GenerateRDF {
 
 	public void readConfig(HashMap<String, String> idDescription) {
 		log.debug("Init readConfig");
-		log.info("Se descarga la configuración");
-		GoogleDriveAPI api = new GoogleDriveAPI();
-		api.init();
-		try {
-			if (Prop.downloadDrive)
-				api.downloadFolderFiles(configDirectoryString, Prop.idParentFolder);
-		} catch (IOException e1) {
-			e1.printStackTrace();
-			String error = "Por problemas con la conexión de google drive no se puede descargar la configuración, intentelo más tarde.";
-			log.error(error);
-		}
 		log.info("Comienza a extraerse la configuración");
 		File configDirectoryFile = new File(configDirectoryString);
 		File areasReportFile = new File(outputDirectoryString + File.separator + "areas.txt");
@@ -573,7 +561,7 @@ public class GenerateRDF {
 	}
 
 	public List<String> writeInformationTTL() {
-		log.debug("Init extractInformation");
+		log.info("Init extractInformation");
 		List<String> result = new ArrayList<>();
 		File inputDirectoryFile = new File(inputDirectoryString);
 		File propertiesFile = new File(outputDirectoryString + File.separator + "DatosTTL" + File.separator + "codelists" + File.separator + "properties.ttl");
@@ -621,7 +609,7 @@ public class GenerateRDF {
 		TransformToRDF transformToRDF = new TransformToRDF(propertiesFile, dsdFile, errorReportFile, specsTtlFileString);
 		transformToRDF.generateCommonData(mapconfig, idDescription);
 
-		log.debug("End extractInformation");
+		log.info("End extractInformation");
 		return result;
 	}
 	

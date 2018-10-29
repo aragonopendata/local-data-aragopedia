@@ -1,6 +1,7 @@
 package com.localidata.transform;
 
 import java.io.File;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,7 +20,6 @@ import com.localidata.bean.DataBean;
 import com.localidata.bean.SkosBean;
 import com.localidata.generic.Constants;
 import com.localidata.generic.GithubApi;
-import com.localidata.generic.GoogleDriveAPI;
 import com.localidata.generic.Prop;
 import com.localidata.util.Utils;
 
@@ -437,16 +437,6 @@ public class GenerateConfig {
 			File file = new File(pathFile);
 			try {
 				Utils.stringToFile(content.toString(), file);
-
-				if (Prop.publishDrive) {
-					if (!update) {
-						GoogleDriveAPI api = new GoogleDriveAPI();
-						api.init();
-						com.google.api.services.drive.model.File f = api.searchFile(nameFile);
-						if (f == null)
-							api.createSpreadsheetFromFile(Prop.idParentFolder, Prop.emailUserFile, "csv", nameFile, file, "text/csv");
-					}
-				}
 				log.info("finaliza de escribirse el archivo " + nameFile + ".csv");
 			} catch (Exception e) {
 				log.error("Error to generate skos mapping " + pathFile, e);
@@ -460,8 +450,6 @@ public class GenerateConfig {
 		log.info("init updateConfig");
 		HashMap<String, ConfigBean> configExtrated = generateUpdateConfig();
 		this.configMap = configMap;
-		GoogleDriveAPI drive = new GoogleDriveAPI();
-		drive.init();
 
 		String mensaje = "";
 		String mensajeAux = "";
@@ -482,8 +470,7 @@ public class GenerateConfig {
 				letters = nuevo.substring(nuevo.length() - 2, nuevo.length());
 			}
 			filesNotRDF.add(id + letters);
-			com.google.api.services.drive.model.File f = drive.searchFile(id);
-			mensajesNuevos = mensajesNuevos + "Se ha detectado un nuevo cubo de datos " + nuevo + ", revise la nueva configuración propuesta y sus mapping " + f.getDefaultOpenWithLink() + "\n\n";
+			mensajesNuevos = mensajesNuevos + "Se ha detectado un nuevo cubo de datos " + nuevo + ", revise la nueva configuración propuesta y sus mapping " + id + "\n\n";
 		}
 
 		for (String change : changes) {
@@ -500,17 +487,19 @@ public class GenerateConfig {
 				id = change.substring(0, change.length() - 2);
 				letters = change.substring(change.length() - 2, change.length());
 			}
-
+			
 			try {
-				com.google.api.services.drive.model.File f = drive.searchFile(id);
-				File fileDrive = drive.downloadFile(configDirectoryString, f, Constants.CSV);
-				if (fileDrive == null){
-					log.info("Error al descargar "+id+" f "+f+" configDirectoryString "+configDirectoryString+" fileDrive "+fileDrive);
-					continue;
-				}
-					
-				
-				List<String> csvLinesDrive = FileUtils.readLines(fileDrive, "UTF-8");
+				final String nameFile = id; 
+				File dir = new File(configDirectoryString);
+				File[] files = dir.listFiles((dir1, name) -> name.startsWith("Informe-" + nameFile) && name.endsWith(".xlsx"));
+				File fileXlsx = new File(configDirectoryString + "/" + files[0].getName());
+				File file = new File(configDirectoryString + "/" + files[0].getName().substring(0,4) + Constants.CSV);
+				Utils.XLSXToCsv(fileXlsx, file);
+//				if (file == null){
+//					log.info("Error al descargar "+id + " configDirectoryString " + configDirectoryString +" file "+file.getName());
+//					continue;
+//				}
+				List<String> csvLinesDrive = FileUtils.readLines(file, "UTF-8");
 				List cellsDriveList = new ArrayList();
 				String lineClean = csvLinesDrive.get(0);
 				log.debug("csvLinesDrive "+lineClean);
@@ -557,7 +546,7 @@ public class GenerateConfig {
 						detectadoCambio = true;
 					}
 					if (detectadoCambio) {
-						mensajeAux = mensajeAux + " al cubo " + change + ", por favor actualice la configuración " + f.getDefaultOpenWithLink() + "\n\n";
+						mensajeAux = mensajeAux + " al cubo " + change + ", por favor actualice la configuración " + file.getName() + "\n\n";
 						if(!mensajesCambiosNuevaConf.contains(mensajeAux))
 							mensajesCambiosNuevaConf = mensajesCambiosNuevaConf + mensajeAux;
 						List<String> lettersList = config.getLetters();
@@ -599,6 +588,7 @@ public class GenerateConfig {
 						}else{
 							log.info("data.getType() "+data.getType());
 						}
+<<<<<<< Updated upstream
 						if (sendEmail) {
 							String fileName = fileLocal.getName().substring(0, fileLocal.getName().length() - 4);
 							f = drive.searchFile(data.getNameNormalized());
@@ -610,10 +600,15 @@ public class GenerateConfig {
 								filesNotRDF.add(config.getId() + letter);
 							}
 						}
+=======
+>>>>>>> Stashed changes
 					}
 				}
 			} catch (IOException e) {
 				log.error("Error chequeando las cambios ", e);
+			} catch (Exception e) {
+				log.error("Error al transformar archivo Xlsx a Csv");
+				e.printStackTrace();
 			}
 			if (!detectadoCambio) {
 				mensajeRegenerar = mensajeRegenerar + "En el cubo " + change + ", se han detectado nuevos registros y se va a regenerar el cubo de datos.\n\n";

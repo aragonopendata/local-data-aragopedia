@@ -494,11 +494,11 @@ public class GenerateConfig {
 
 				File dir = new File(configDirectoryString);
 
-				File[] files = dir.listFiles((dir1, name -> name.startsWith("Informe-" + nameFile) && name.endsWith(".xlsx"));
+				File[] files = dir.listFiles((dir1, name) -> name.startsWith("Informe-" + nameFile) && name.endsWith(".xlsx"));
 				File fileXlsx = new File(configDirectoryString + "/" + files[0].getName());
-				File file = new FIle(configDirectoryString + "/" + files[0].getName().substring(0,4) + Constants.CSV);
+				File file = new File(configDirectoryString + "/" + files[0].getName().substring(0,4) + Constants.CSV);
 				Utils.XLSXToCsv(fileXlsx, file);
-				List<String> csvLinesDrive = FilesUtils.readLines(file, "UTF-8");
+				List<String> csvLinesDrive = FileUtils.readLines(file, "UTF-8");
 				
 				List cellsDriveList = new ArrayList();
 				String lineClean = csvLinesDrive.get(0);

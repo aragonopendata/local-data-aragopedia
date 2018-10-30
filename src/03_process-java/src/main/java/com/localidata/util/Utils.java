@@ -65,7 +65,7 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkBook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import com.localidata.generic.Prop;
 import com.localidata.process.TransformToRDF;
@@ -792,7 +792,7 @@ public class Utils {
 		return processURLPutGitHub(url, urlParameters, headers, body, "UTF-8");
 	}
 
-	public static String processURLPutGitHub(String url, String urlParameters, Map<String, String> hedaers, byte[] body, String encoding) throws IOException {
+	public static String processURLPutGitHub(String url, String urlParameters, Map<String, String> headers, byte[] body, String encoding) throws IOException {
 
 		HttpURLConnection httpConnection = null;
 		try {
@@ -1098,7 +1098,7 @@ public class Utils {
 		StringBuffer data = new StringBuffer();
 		try {
 			FileOutputStream fos = new FileOutputStream(outputFile);
-			XSSFWorkBook wBook = new XSSFWorkBook(new FileInputStream(inputFile));
+			XSSFWorkbook wBook = new XSSFWorkbook(new FileInputStream(inputFile));
 			XSSFSheet sheet = wBook.getSheetAt(0);
 			Row row;
 			Cell cell;
@@ -1138,7 +1138,7 @@ public class Utils {
 
 	public static void csvToXLSX(File inputFile, File outputFile) {
 		try {
-			XSSFWorkBook workBook = XSSFWorkBook();
+			XSSFWorkbook workBook = new XSSFWorkbook();
 			XSSFSheet sheet = workBook.createSheet(inputFile.getName());
 			String currentLine = null;
 			int RowNum = 0;

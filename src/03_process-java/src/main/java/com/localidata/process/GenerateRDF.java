@@ -589,7 +589,7 @@ public class GenerateRDF {
 				if (!filesNotRDF.contains(fileName + fileLetter)) {
 					ConfigBean configBean = mapconfig.get(fileName);
 					if (configBean != null) {
-						File outputDirectoryFsile = new File(outputDirectoryString + File.separator + "DatosTTL" + File.separator + "informes" + File.separator + fileName + fileLetter + ".ttl");
+						File outputDirectoryFile = new File(outputDirectoryString + File.separator + "DatosTTL" + File.separator + "informes" + File.separator + fileName + fileLetter + ".ttl");
 						log.info("Init file " + fileName + fileLetter + ". Size " + FileUtils.sizeOf(file) + " " + numfile + "/" + listCSV.size());
 						List<String> csvLines = FileUtils.readLines(file, "UTF-8");
 						String description = idDescription.get(fileName + fileLetter);

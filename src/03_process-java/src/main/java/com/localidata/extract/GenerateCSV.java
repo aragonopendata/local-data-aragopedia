@@ -65,6 +65,7 @@ public class GenerateCSV {
 			headers.put("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36");
 			headers.put("Cookie", "sawU=" + Prop.sawUiAragonBiAragon + "; ORA_BIPS_LBINFO=" + Prop.oraBipsLbinfoBiAragon + "; ORA_BIPS_NQID=" + Prop.oraBipsNqidBiAragon + "; __utma=" + Prop.utmaBiAragon + "; __utmc=" + Prop.utmcBiAragon + "; __utmz=" + Prop.utmzBiAragon);
 			headers.put("content-type", "text/csv; charset=ISO-8859-1");
+			log.info("URL a descargar_01: " + Prop.urlBiAragon + Prop.initialDataCube + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon);
 			Utils.processURLGet(Prop.urlBiAragon + Prop.initialDataCube + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
 			List<String> csvLines = FileUtils.readLines(urlsFile, "UTF-8");
 
@@ -77,6 +78,7 @@ public class GenerateCSV {
 					valores[1] = valores[1].replaceAll("\"", "");
 					valores[2] = valores[2].replaceAll("\"", "");
 					idDescription.put(valores[1], valores[2]);
+					log.info("URL a descargar_02: " + Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon);
 					content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
 					if (Utils.v(content)) {
 						content = cleanAndTransform(content);
@@ -102,6 +104,7 @@ public class GenerateCSV {
 					boolean sucess = false;
 					while (numErrors < 5 && numErrors != -1 && sucess ) {
 						log.info("Intento "+numErrors+" del csv "+valores[0]);
+						log.info("URL a descargar_03: " + Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon);
 						content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
 						if (Utils.v(content)) {
 							content = cleanAndTransform(content);
@@ -231,6 +234,7 @@ public class GenerateCSV {
 			headers.put("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36");
 			headers.put("Cookie", "sawU=" + Prop.sawUiAragonBiAragon + "; ORA_BIPS_LBINFO=" + Prop.oraBipsLbinfoBiAragon + "; ORA_BIPS_NQID=" + Prop.oraBipsNqidBiAragon + "; __utma=" + Prop.utmaBiAragon + "; __utmc=" + Prop.utmcBiAragon + "; __utmz=" + Prop.utmzBiAragon);
 			headers.put("content-type", "text/csv; charset=ISO-8859-1");
+			log.info("URL a descargar_04: " + Prop.urlBiAragon + Prop.initialDataCube + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon);
 			Utils.processURLGet(Prop.urlBiAragon + Prop.initialDataCube + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
 			List<String> csvLines = FileUtils.readLines(urlsFile, "UTF-8");
 	
@@ -241,6 +245,7 @@ public class GenerateCSV {
 					valores[0] = valores[0].replaceAll("\"", "");
 					valores[1] = valores[1].replaceAll("\"", "");
 					valores[2] = valores[2].replaceAll("\"", "");
+					log.info("URL a descargar_05: " + Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon);
 					content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
 					if (Utils.v(content)) {
 						content = cleanAndTransform(content);
@@ -267,6 +272,7 @@ public class GenerateCSV {
 					valores = iterator.next();
 					Integer numErrors = numErrorFiles.get(valores);
 					if (numErrors < 5 && numErrors != -1) {
+						log.info("URL a descargar_06: " + Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon);
 						content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
 						if (Utils.v(content)) {
 							content = cleanAndTransform(content);
@@ -325,11 +331,11 @@ public class GenerateCSV {
 		File fileXLSX = new File("" + Prop.fileHashCSV + "." + Constants.XLSX);
 		try {
 			try {
-				Utils.XLSXToCsv(fileXlsx, fileCSV);
+				Utils.XLSXToCsv(fileXLSX, fileCSV);
 			} catch (Exception e1) {
 				log.error("Error al transformar el fichero Xlsx a Csv");
 			}
-			List<String> hashLines = FileUtils.readLines(file, "UTF-8");
+			List<String> hashLines = FileUtils.readLines(fileCSV, "UTF-8");
 			for (String line : hashLines) {
 				String[] valores = line.split(",");
 				hashCodeOld.put(valores[0], valores[1]);

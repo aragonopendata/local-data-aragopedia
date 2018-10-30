@@ -16,7 +16,6 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 import com.localidata.generic.Constants;
-import com.localidata.generic.GoogleDriveAPI;
 import com.localidata.generic.Prop;
 import com.localidata.util.Cookies;
 import com.localidata.util.Jdbcconnection;
@@ -35,13 +34,11 @@ public class GenerateCSV {
 	private HashMap<String, String> idDescription = new HashMap<>();
 	private List<String> changes = new ArrayList<String>();
 	private List<String> news = new ArrayList<String>();
-	private GoogleDriveAPI drive = null;
 
 	public GenerateCSV(String urls, String outputFiles) {
 		urlsFileString = urls;
 		outputFilesDirectoryString = outputFiles;
-		drive = new GoogleDriveAPI();
-		drive.init();
+
 		log.info("Generando el fichero InformesEstadisticaLocal-URLs.csv");
 		try {
 			Jdbcconnection.main(null);
@@ -189,7 +186,8 @@ public class GenerateCSV {
 
 	public void generateHashCode(List<String> result, List<String> list) {
 
-		File file = new File(Prop.fileHashCSV + "." + Constants.CSV);
+		File fileCSV = new File(Prop.fileHashCSV + "." + Constants.CSV);
+		File fileXlsx = new File(Prop.fileHashCSV + "." + Constants.XLSX);
 		String hashCodeFile = "";
 
 		for (String key : hashCodeOld.keySet()) {
@@ -210,8 +208,9 @@ public class GenerateCSV {
 			}
 		}
 		try {
-			Utils.stringToFile(hashCodeFile, file);
-			drive.updateFile(Prop.fileHashCSV, file, "text/csv");
+			Utils.stringToFile(hashCodeFile, fileCSV);
+			Utils.csvToXLSX(fileCSV, fileXlsx);
+			log.info("Hashcode generado correctamente");
 		} catch (Exception e) {
 			log.error("Error generando fichero hashcode", e);
 		}
@@ -297,7 +296,7 @@ public class GenerateCSV {
 			
 			try {
 				Utils.stringToFile(result.toString(), hashFile);
-				drive.updateFile(Prop.fileHashCSV, hashFile, "text/csv");
+				log.info("Hashcode generado correctamente");
 			} catch (Exception e) {
 				log.error("Error generando fichero hashcode", e);
 			}
@@ -322,9 +321,14 @@ public class GenerateCSV {
 
 	protected void extractHashCode() {
 
-		drive.downloadFile("", Prop.fileHashCSV, Constants.CSV);
-		File file = new File("" + Prop.fileHashCSV + "." + Constants.CSV);
+		File fileCSV = new File("" + Prop.fileHashCSV + "." + Constants.CSV);
+		File fileXLSX = new File("" + Prop.fileHashCSV + "." + Constants.XLSX);
 		try {
+			try {
+				Utils.XLSXToCsv(fileXlsx, fileCSV);
+			} catch (Exception e1) {
+				log.error("Error al transformar el fichero Xlsx a Csv");
+			}
 			List<String> hashLines = FileUtils.readLines(file, "UTF-8");
 			for (String line : hashLines) {
 				String[] valores = line.split(",");

@@ -46,6 +46,7 @@ public class Prop {
 	public static String apiKeyAragopedia = "";
 	public static String githubToken = "";
 	public static String githubURLIssues = "";
+	public static String githubURLUpdateHash = "";
 	public static String urlBiAragon = "";
 	public static String initialDataCube = "";
 	public static String nqUserBiAragon = "";
@@ -102,6 +103,7 @@ public class Prop {
 			
 			githubToken = prop.getProperty("githubToken");
 			githubURLIssues = prop.getProperty("githubURLIssues");
+			githubURLUpdateHash = prop.getProperty("githubURLUpdateHash");
 
 			urlBiAragon = prop.getProperty("urlBiAragon");
 			initialDataCube = prop.getProperty("initialDataCube");

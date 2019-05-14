@@ -2333,13 +2333,13 @@ _:node100egmfx2 qb:dimension sdmx-dimension:refArea .
 _:node100egmfx3 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010019> qb:component _:node100egmfx4 .
-_:node100egmfx4 qb:measure iaest-measure:porcentaje-rustica .
+_:node100egmfx4 qb:measure iaest-measure:urbano-superficie .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010019> qb:component _:node100egmfx5 .
-_:node100egmfx5 qb:measure iaest-measure:urbano-superficie .
+_:node100egmfx5 qb:measure iaest-measure:urbana .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010019> qb:component _:node100egmfx8 .
-_:node100egmfx8 qb:measure iaest-measure:porcentaje-urbana .
+_:node100egmfx8 qb:measure iaest-measure:rustica .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010010> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 01-010010, Edificios según número de viviendas"@es ;
@@ -2429,8 +2429,8 @@ _:node105egmfx4 qb:dimension sdmx-dimension:refPeriod .
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010025> qb:component _:node105egmfx5 .
 _:node105egmfx5 qb:measure iaest-measure:rustico-valor-catastral .
 
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010025> qb:component _:node105egmfx6 .
-_:node105egmfx6 qb:measure iaest-measure:rustico-subparcelas .
+<http://opendata.aragon.es/recurso/iaest/dsd/01-010025> qb:component _:node105egmfx7 .
+_:node105egmfx7 qb:measure iaest-measure:rustico-subparcelas .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010026> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 01-010026, Licencias municipales de obra según tipo"@es ;
@@ -2447,10 +2447,10 @@ _:node106egmfx2 qb:dimension sdmx-dimension:refPeriod .
 _:node106egmfx3 qb:measure iaest-measure:licencias-nueva-planta-sin-demolicion .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010026> qb:component _:node106egmfx4 .
-_:node106egmfx4 qb:measure iaest-measure:licencias-rehabilitacion-con-demolicion .
+_:node106egmfx4 qb:measure iaest-measure:licencias-nueva-planta-total .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010026> qb:component _:node106egmfx5 .
-_:node106egmfx5 qb:measure iaest-measure:licencias-nueva-planta-total .
+_:node106egmfx5 qb:measure iaest-measure:licencias-rehabilitacion-con-demolicion .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010026> qb:component _:node106egmfx6 .
 _:node106egmfx6 qb:measure iaest-measure:licencias-demolicion .
@@ -2722,55 +2722,58 @@ _:node112egmfx20 qb:measure iaest-measure:bi-espectaculos .
 	rdfs:comment "Esta estructura afecta a las areas: TC TM TP A "^^xsd:string .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx1 .
-_:node113egmfx1 qb:measure iaest-measure:vc-oficinas .
+_:node113egmfx1 qb:measure iaest-measure:bi-religioso .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx2 .
-_:node113egmfx2 qb:dimension sdmx-dimension:refArea .
+_:node113egmfx2 qb:measure iaest-measure:bi-almacen-estacionamiento .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx3 .
-_:node113egmfx3 qb:dimension sdmx-dimension:refPeriod .
+_:node113egmfx3 qb:measure iaest-measure:total .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx4 .
-_:node113egmfx4 qb:measure iaest-measure:vc-residencial .
+_:node113egmfx4 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx5 .
-_:node113egmfx5 qb:measure iaest-measure:vc-edificios-singulares .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx6 .
-_:node113egmfx6 qb:measure iaest-measure:vc-cultural .
+_:node113egmfx5 qb:measure iaest-measure:bi-sin-definir .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx7 .
-_:node113egmfx7 qb:measure iaest-measure:vc-espectaculos .
+_:node113egmfx7 qb:measure iaest-measure:residencial .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx8 .
-_:node113egmfx8 qb:measure iaest-measure:vc-ocio-hosteleria .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx9 .
-_:node113egmfx9 qb:measure iaest-measure:vc-almacen-estacionamiento .
+_:node113egmfx8 qb:measure iaest-measure:bi-comercial .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx10 .
-_:node113egmfx10 qb:measure iaest-measure:vc-religioso .
+_:node113egmfx10 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx11 .
-_:node113egmfx11 qb:measure iaest-measure:vc-sin-definir .
+_:node113egmfx11 qb:measure iaest-measure:bi-oficinas .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx12 .
-_:node113egmfx12 qb:measure iaest-measure:vc-deportivo .
+_:node113egmfx12 qb:measure iaest-measure:bi-cultural .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx13 .
-_:node113egmfx13 qb:measure iaest-measure:vc-industrial .
+_:node113egmfx13 qb:measure iaest-measure:bi-deportivo .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx14 .
-_:node113egmfx14 qb:measure iaest-measure:total .
+_:node113egmfx14 qb:measure iaest-measure:bi-sanidad-benefic .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx15 .
-_:node113egmfx15 qb:measure iaest-measure:vc-suelo-vacante .
+_:node113egmfx15 qb:measure iaest-measure:bi-suelo-vacante .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx16 .
-_:node113egmfx16 qb:measure iaest-measure:vc-comercial .
+_:node113egmfx16 qb:measure iaest-measure:bi-edificios-singulares .
+
+<http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx17 .
+_:node113egmfx17 qb:measure iaest-measure:total-bienes-inmuebles .
+
+<http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx18 .
+_:node113egmfx18 qb:measure iaest-measure:bi-industrial .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx19 .
-_:node113egmfx19 qb:measure iaest-measure:vc-sanidad-benefic .
+_:node113egmfx19 qb:measure iaest-measure:bi-ocio-hosteleria .
+
+<http://opendata.aragon.es/recurso/iaest/dsd/01-010024> qb:component _:node113egmfx20 .
+_:node113egmfx20 qb:measure iaest-measure:bi-espectaculos .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/02-020002> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 02-020002, Superficie"@es ;
@@ -4845,76 +4848,34 @@ _:node161egmfx21 qb:measure iaest-measure:personas-mano-obra-familiar-son-titula
 	rdfs:comment "Esta estructura afecta a las areas: TC TM TP A "^^xsd:string .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx1 .
-_:node162egmfx1 qb:measure iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-secundaria .
+_:node162egmfx1 qb:dimension iaest-dimension:malas-comunicaciones .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx2 .
-_:node162egmfx2 qb:measure iaest-measure:personas-mano-obra-familiar-conyuges-que-solo-trabajan-en-la-explotacion .
+_:node162egmfx2 qb:dimension iaest-dimension:falta-de-servicios-de-aseo .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx3 .
-_:node162egmfx3 qb:measure iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-tambien-en-otra-activ-lucrativa .
+_:node162egmfx3 qb:dimension iaest-dimension:pocas-zonas-verdes .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx4 .
-_:node162egmfx4 qb:measure iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-principal .
+_:node162egmfx4 qb:dimension iaest-dimension:contaminacion .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx5 .
-_:node162egmfx5 qb:dimension sdmx-dimension:refArea .
+_:node162egmfx5 qb:dimension iaest-dimension:delincuencia-zona .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx6 .
-_:node162egmfx6 qb:measure iaest-measure:personas-mano-obra-familiar-otros-que--trabajan-tambien-en-otra-activ-lucrativa .
+_:node162egmfx6 qb:dimension iaest-dimension:ruidos-exteriores .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx7 .
-_:node162egmfx7 qb:measure iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-principal .
+_:node162egmfx7 qb:dimension iaest-dimension:poca-limpieza .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx8 .
-_:node162egmfx8 qb:measure iaest-measure:personas-mano-obra-familiar-con-25porcentaje-trabajando-en-explotacion .
+_:node162egmfx8 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx9 .
-_:node162egmfx9 qb:measure iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-tambien-en-otra-activ-lucrativa .
+_:node162egmfx9 qb:measure iaest-measure:numero-viviendas .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx10 .
-_:node162egmfx10 qb:measure iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-secundaria .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx11 .
-_:node162egmfx11 qb:measure iaest-measure:personas-mano-obra-familiar-titulares-que-solo-trabajan-en-la-explotacion .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx12 .
-_:node162egmfx12 qb:measure iaest-measure:personas-mano-obra-familiar-con-7499-y-100porcentaje-trabajando-en-explotacion .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx13 .
-_:node162egmfx13 qb:measure iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-secundaria .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx16 .
-_:node162egmfx16 qb:dimension sdmx-dimension:refPeriod .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx17 .
-_:node162egmfx17 qb:measure iaest-measure:personas-mano-obra-familiar-trabajan-tambien-en-otra-activ-lucrativa .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx18 .
-_:node162egmfx18 qb:measure iaest-measure:personas-mano-obra-familiar-con-4999-y-75porcentaje-trabajando-en-explotacion .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx19 .
-_:node162egmfx19 qb:measure iaest-measure:personas-mano-obra-familiar-otros--trabajan-en-otra-actividad-como-principal .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx20 .
-_:node162egmfx20 qb:measure iaest-measure:personas-mano-obra-familiar-otros-que-trabajan-en-otra-actividad-como-secundaria .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx21 .
-_:node162egmfx21 qb:measure iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-principal .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx23 .
-_:node162egmfx23 qb:measure iaest-measure:personas-mano-obra-familiar-con-2499-y-50porcentaje-trabajando-en-explotacion .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx24 .
-_:node162egmfx24 qb:measure iaest-measure:personas-que-son-mano-de-obra-familiar .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx25 .
-_:node162egmfx25 qb:measure iaest-measure:personas-mano-obra-familiar-otros-que-solo-trabajan-en-la-explotacion .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx26 .
-_:node162egmfx26 qb:measure iaest-measure:personas-mano-obra-familiar-con-100porcentaje-trabajando-en-explotacion .
-
-<http://opendata.aragon.es/recurso/iaest/dsd/01-010055> qb:component _:node162egmfx27 .
-_:node162egmfx27 qb:measure iaest-measure:personas-mano-obra-familiar-solo-trabajan-en-la-explotacion .
+_:node162egmfx10 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/03-02010301-030079> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 03-02010301-030079, Datos demográficos Por grandes grupos de edad (hasta 85 y más)"@es ;

@@ -1014,19 +1014,19 @@ iaest-measure:rustico-superficie a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "Rústico, superficie"@es ;
 	rdfs:range xsd:double .
 
-iaest-measure:porcentaje-rustica a qb:MeasureProperty , rdf:Property;
-	rdfs:label "% Rústica"@es ;
-	rdfs:comment "% Rústica"@es ;
-	rdfs:range xsd:double .
-
 iaest-measure:urbano-superficie a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Urbano, superficie"@es ;
 	rdfs:comment "Urbano, superficie"@es ;
 	rdfs:range xsd:double .
 
-iaest-measure:porcentaje-urbana a qb:MeasureProperty , rdf:Property;
+iaest-measure:urbana a qb:MeasureProperty , rdf:Property;
 	rdfs:label "% Urbana"@es ;
 	rdfs:comment "% Urbana"@es ;
+	rdfs:range xsd:double .
+
+iaest-measure:rustica a qb:MeasureProperty , rdf:Property;
+	rdfs:label "% Rústica"@es ;
+	rdfs:comment "% Rústica"@es ;
 	rdfs:range xsd:double .
 
 iaest-dimension:plantas-sobre-rasante a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
@@ -1061,14 +1061,14 @@ iaest-measure:licencias-nueva-planta-sin-demolicion a qb:MeasureProperty , rdf:P
 	rdfs:comment "Licencias, nueva planta, sin demolición"@es ;
 	rdfs:range xsd:int .
 
-iaest-measure:licencias-rehabilitacion-con-demolicion a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Licencias, rehabilitación, con demolición"@es ;
-	rdfs:comment "Licencias, rehabilitación, con demolición"@es ;
-	rdfs:range xsd:int .
-
 iaest-measure:licencias-nueva-planta-total a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Licencias, nueva planta, total"@es ;
 	rdfs:comment "Licencias, nueva planta, total"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:licencias-rehabilitacion-con-demolicion a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Licencias, rehabilitación, con demolición"@es ;
+	rdfs:comment "Licencias, rehabilitación, con demolición"@es ;
 	rdfs:range xsd:int .
 
 iaest-measure:licencias-demolicion a qb:MeasureProperty , rdf:Property;
@@ -1392,76 +1392,6 @@ iaest-measure:bi-espectaculos a qb:MeasureProperty , rdf:Property;
 	rdfs:label "BI Espectáculos"@es ;
 	rdfs:comment "BI Espectáculos"@es ;
 	rdfs:range xsd:int .
-
-iaest-measure:vc-oficinas a qb:MeasureProperty , rdf:Property;
-	rdfs:label "VC Oficinas"@es ;
-	rdfs:comment "VC Oficinas"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:vc-residencial a qb:MeasureProperty , rdf:Property;
-	rdfs:label "VC Residencial"@es ;
-	rdfs:comment "VC Residencial"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:vc-edificios-singulares a qb:MeasureProperty , rdf:Property;
-	rdfs:label "VC Edificios singulares"@es ;
-	rdfs:comment "VC Edificios singulares"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:vc-cultural a qb:MeasureProperty , rdf:Property;
-	rdfs:label "VC Cultural"@es ;
-	rdfs:comment "VC Cultural"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:vc-espectaculos a qb:MeasureProperty , rdf:Property;
-	rdfs:label "VC Espectáculos"@es ;
-	rdfs:comment "VC Espectáculos"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:vc-ocio-hosteleria a qb:MeasureProperty , rdf:Property;
-	rdfs:label "VC Ocio, hostelería"@es ;
-	rdfs:comment "VC Ocio, hostelería"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:vc-almacen-estacionamiento a qb:MeasureProperty , rdf:Property;
-	rdfs:label "VC Almacén, estacionamiento"@es ;
-	rdfs:comment "VC Almacén, estacionamiento"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:vc-religioso a qb:MeasureProperty , rdf:Property;
-	rdfs:label "VC Religioso"@es ;
-	rdfs:comment "VC Religioso"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:vc-sin-definir a qb:MeasureProperty , rdf:Property;
-	rdfs:label "VC Sin definir"@es ;
-	rdfs:comment "VC Sin definir"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:vc-deportivo a qb:MeasureProperty , rdf:Property;
-	rdfs:label "VC Deportivo"@es ;
-	rdfs:comment "VC Deportivo"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:vc-industrial a qb:MeasureProperty , rdf:Property;
-	rdfs:label "VC Industrial"@es ;
-	rdfs:comment "VC Industrial"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:vc-suelo-vacante a qb:MeasureProperty , rdf:Property;
-	rdfs:label "VC Suelo vacante"@es ;
-	rdfs:comment "VC Suelo vacante"@es ;
-	rdfs:range xsd:string .
-
-iaest-measure:vc-comercial a qb:MeasureProperty , rdf:Property;
-	rdfs:label "VC Comercial"@es ;
-	rdfs:comment "VC Comercial"@es ;
-	rdfs:range xsd:double .
-
-iaest-measure:vc-sanidad-benefic a qb:MeasureProperty , rdf:Property;
-	rdfs:label "VC Sanidad, benefic"@es ;
-	rdfs:comment "VC Sanidad, benefic"@es ;
-	rdfs:range xsd:string .
 
 iaest-measure:superficie-km2 a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Superficie (km2)"@es ;
@@ -2675,111 +2605,6 @@ iaest-measure:personas-que-son-mano-de-obra-familiar-y-titulares-explotacion a q
 iaest-measure:personas-mano-obra-familiar-son-titulares-de-mas-de-65-anos a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Personas mano obra familiar son titulares de más de 65 años"@es ;
 	rdfs:comment "Personas mano obra familiar son titulares de más de 65 años"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-secundaria a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar cónyuges que trabajan en otra actividad como secundaria"@es ;
-	rdfs:comment "Personas mano obra familiar cónyuges que trabajan en otra actividad como secundaria"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-conyuges-que-solo-trabajan-en-la-explotacion a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar cónyuges que sólo trabajan en la explotación"@es ;
-	rdfs:comment "Personas mano obra familiar cónyuges que sólo trabajan en la explotación"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-tambien-en-otra-activ-lucrativa a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar titulares que trabajan también en otra activ. lucrativa"@es ;
-	rdfs:comment "Personas mano obra familiar titulares que trabajan también en otra activ. lucrativa"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-principal a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar titulares que trabajan en otra actividad como principal"@es ;
-	rdfs:comment "Personas mano obra familiar titulares que trabajan en otra actividad como principal"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-otros-que--trabajan-tambien-en-otra-activ-lucrativa a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar otros, que  trabajan también en otra activ. lucrativa"@es ;
-	rdfs:comment "Personas mano obra familiar otros, que  trabajan también en otra activ. lucrativa"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-principal a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar cónyuges que trabajan en otra actividad como principal"@es ;
-	rdfs:comment "Personas mano obra familiar cónyuges que trabajan en otra actividad como principal"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-con-25porcentaje-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar con <25% trabajando en explotación"@es ;
-	rdfs:comment "Personas mano obra familiar con <25% trabajando en explotación"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-tambien-en-otra-activ-lucrativa a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar cónyuges que trabajan también en otra activ. Lucrativa"@es ;
-	rdfs:comment "Personas mano obra familiar cónyuges que trabajan también en otra activ. Lucrativa"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-secundaria a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar titulares que trabajan en otra actividad como secundaria"@es ;
-	rdfs:comment "Personas mano obra familiar titulares que trabajan en otra actividad como secundaria"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-titulares-que-solo-trabajan-en-la-explotacion a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar titulares que sólo trabajan en la explotación"@es ;
-	rdfs:comment "Personas mano obra familiar titulares que sólo trabajan en la explotación"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-con-7499-y-100porcentaje-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar con >74,99 y <100% trabajando en explotación"@es ;
-	rdfs:comment "Personas mano obra familiar con >74,99 y <100% trabajando en explotación"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-secundaria a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar trabajan en otra actividad como secundaria"@es ;
-	rdfs:comment "Personas mano obra familiar trabajan en otra actividad como secundaria"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-trabajan-tambien-en-otra-activ-lucrativa a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar trabajan también en otra activ. lucrativa"@es ;
-	rdfs:comment "Personas mano obra familiar trabajan también en otra activ. lucrativa"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-con-4999-y-75porcentaje-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar con >49,99 y <75% trabajando en explotación"@es ;
-	rdfs:comment "Personas mano obra familiar con >49,99 y <75% trabajando en explotación"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-otros--trabajan-en-otra-actividad-como-principal a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar otros,  trabajan en otra actividad como principal"@es ;
-	rdfs:comment "Personas mano obra familiar otros,  trabajan en otra actividad como principal"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-otros-que-trabajan-en-otra-actividad-como-secundaria a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar otros, que trabajan en otra actividad como secundaria"@es ;
-	rdfs:comment "Personas mano obra familiar otros, que trabajan en otra actividad como secundaria"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-principal a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar trabajan en otra actividad como principal"@es ;
-	rdfs:comment "Personas mano obra familiar trabajan en otra actividad como principal"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-con-2499-y-50porcentaje-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar con >24,99 y <50% trabajando en explotación"@es ;
-	rdfs:comment "Personas mano obra familiar con >24,99 y <50% trabajando en explotación"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-otros-que-solo-trabajan-en-la-explotacion a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar otros, que sólo trabajan en la explotación"@es ;
-	rdfs:comment "Personas mano obra familiar otros, que sólo trabajan en la explotación"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-con-100porcentaje-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar con 100% trabajando en explotación"@es ;
-	rdfs:comment "Personas mano obra familiar con 100% trabajando en explotación"@es ;
-	rdfs:range xsd:int .
-
-iaest-measure:personas-mano-obra-familiar-solo-trabajan-en-la-explotacion a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Personas mano obra familiar sólo trabajan en la explotación"@es ;
-	rdfs:comment "Personas mano obra familiar sólo trabajan en la explotación"@es ;
 	rdfs:range xsd:int .
 
 iaest-measure:total-personas a qb:MeasureProperty , rdf:Property;

@@ -138,6 +138,17 @@ iaest-measure:numero-de-edificios a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "Número de edificios"@es ;
 	rdfs:range xsd:int .
 
+iaest-measure:numero-de-viviendas a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Número de viviendas"@es ;
+	rdfs:comment "Número de viviendas"@es ;
+	rdfs:range xsd:int .
+
+iaest-dimension:sistema-de-suministro-de-agua a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Sistema de suministro de agua"@es ;
+	rdfs:comment "Sistema de suministro de agua"@es ;
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/agua-corriente> .
+
 iaest-dimension:agua-corriente a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Agua corriente"@es ;
 	rdfs:comment "Agua corriente"@es ;
@@ -819,11 +830,6 @@ iaest-dimension:sector-vab-descripcion a qb:DimensionProperty , rdf:Property, qb
 	rdfs:comment "Sector VAB descripción"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion> .
-
-iaest-measure:numero-de-viviendas a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Número de viviendas"@es ;
-	rdfs:comment "Número de viviendas"@es ;
-	rdfs:range xsd:int .
 
 iaest-dimension:numero-habitaciones a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Número habitaciones"@es ;
@@ -1815,6 +1821,11 @@ iaest-measure:urbana---cuota-liquida-euros a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "Urbana   Cuota líquida (euros)"@es ;
 	rdfs:range xsd:int .
 
+iaest-measure:jefe-explotacion a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Jefe explotación"@es ;
+	rdfs:comment "Jefe explotación"@es ;
+	rdfs:range xsd:int .
+
 iaest-dimension:rama-descripcion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Rama descripción"@es ;
 	rdfs:comment "Rama descripción"@es ;
@@ -2715,6 +2726,12 @@ iaest-dimension:nacionalidad a qb:DimensionProperty , rdf:Property, qb:CodedProp
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/nacionalidad> .
 
+iaest-dimension:edad-grupos-quinquenales-2010 a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Edad (Grupos Quinquenales 2010)"@es ;
+	rdfs:comment "Edad (Grupos Quinquenales 2010)"@es ;
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales-2010> .
+
 iaest-measure:e-resultado-del-ejercicio-con-op-interrumpidas a qb:MeasureProperty , rdf:Property;
 	rdfs:label "E) RESULTADO DEL EJERCICIO (con op. interrumpidas)"@es ;
 	rdfs:comment "E) RESULTADO DEL EJERCICIO (con op. interrumpidas)"@es ;
@@ -2917,12 +2934,6 @@ iaest-dimension:residencia-pais-nombre a qb:DimensionProperty , rdf:Property, qb
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/residencia-pais-nombre> .
 
-iaest-dimension:edad-grupos-quinquenales-2010 a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Edad (Grupos Quinquenales 2010)"@es ;
-	rdfs:comment "Edad (Grupos Quinquenales 2010)"@es ;
-	rdfs:range skos:Concept ;
-	qb:codeList <http://opendata.aragon.es/kos/iaest/edad-grupos-quinquenales-2010> .
-
 iaest-dimension:regimen a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Régimen"@es ;
 	rdfs:comment "Régimen"@es ;
@@ -2959,6 +2970,11 @@ iaest-dimension:grupo-antiguedad a qb:DimensionProperty , rdf:Property, qb:Coded
 	rdfs:comment "Grupo Antigüedad"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/grupo-antiguedad> .
+
+iaest-measure:ord-temporalidad a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Ord_Temporalidad"@es ;
+	rdfs:comment "Ord_Temporalidad"@es ;
+	rdfs:range xsd:int .
 
 iaest-dimension:numero-de-personas-en-el-hogar a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Número de personas en el hogar"@es ;

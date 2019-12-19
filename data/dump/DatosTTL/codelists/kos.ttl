@@ -4176,7 +4176,10 @@
 	rdfs:label "Agua corriente";
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-abastecimiento-privado>;
 	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/agua-corriente/sin-agua-corriente>;
-	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-abastecimiento-publico>.
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-abastecimiento-publico>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-por-abastecimiento-privado-o-particular-del-edificio>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-por-abastecimiento-publico>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/agua-corriente/no-tiene-agua-corriente>.
 
 <http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-abastecimiento-privado> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/agua-corriente>;
@@ -4192,6 +4195,21 @@
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/agua-corriente>;
 	skos:notation "agua-corriente-abastecimiento-publico";
 	skos:prefLabel "Agua corriente abastecimiento público".
+
+<http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-por-abastecimiento-privado-o-particular-del-edificio> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/agua-corriente>;
+	skos:notation "agua-corriente-por-abastecimiento-privado-o-particular-del-edificio";
+	skos:prefLabel "Agua corriente por abastecimiento privado o particular del edificio".
+
+<http://opendata.aragon.es/kos/iaest/agua-corriente/agua-corriente-por-abastecimiento-publico> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/agua-corriente>;
+	skos:notation "agua-corriente-por-abastecimiento-publico";
+	skos:prefLabel "Agua corriente por abastecimiento público".
+
+<http://opendata.aragon.es/kos/iaest/agua-corriente/no-tiene-agua-corriente> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/agua-corriente>;
+	skos:notation "no-tiene-agua-corriente";
+	skos:prefLabel "No tiene agua corriente".
 
 <http://opendata.aragon.es/kos/iaest/portero-automatico> a skos:ConceptScheme;
 	skos:notation "portero-automatico";
@@ -49605,6 +49623,46 @@
 	skos:notation "sin-clasificar";
 	skos:prefLabel "Sin clasificar".
 
+<http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua> a skos:ConceptScheme;
+	skos:notation "sistema-de-suministro-de-agua";
+	rdfs:label "Sistema de suministro de agua";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua/agua-corriente-abastecimiento-privado>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua/sin-agua-corriente>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua/agua-corriente-abastecimiento-publico>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua/agua-corriente-por-abastecimiento-privado-o-particular-del-edificio>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua/agua-corriente-por-abastecimiento-publico>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua/no-tiene-agua-corriente>.
+
+<http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua/agua-corriente-abastecimiento-privado> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua>;
+	skos:notation "agua-corriente-abastecimiento-privado";
+	skos:prefLabel "Agua corriente abastecimiento privado".
+
+<http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua/sin-agua-corriente> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua>;
+	skos:notation "sin-agua-corriente";
+	skos:prefLabel "Sin agua corriente".
+
+<http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua/agua-corriente-abastecimiento-publico> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua>;
+	skos:notation "agua-corriente-abastecimiento-publico";
+	skos:prefLabel "Agua corriente abastecimiento público".
+
+<http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua/agua-corriente-por-abastecimiento-privado-o-particular-del-edificio> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua>;
+	skos:notation "agua-corriente-por-abastecimiento-privado-o-particular-del-edificio";
+	skos:prefLabel "Agua corriente por abastecimiento privado o particular del edificio".
+
+<http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua/agua-corriente-por-abastecimiento-publico> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua>;
+	skos:notation "agua-corriente-por-abastecimiento-publico";
+	skos:prefLabel "Agua corriente por abastecimiento público".
+
+<http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua/no-tiene-agua-corriente> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/sistema-de-suministro-de-agua>;
+	skos:notation "no-tiene-agua-corriente";
+	skos:prefLabel "No tiene agua corriente".
+
 <http://opendata.aragon.es/kos/iaest/combustible> a skos:ConceptScheme;
 	skos:notation "combustible";
 	rdfs:label "Combustible";
@@ -50556,6 +50614,88 @@
 
 <http://opendata.aragon.es/kos/iaest/sector-de-actividad/sin-clasificar> a skos:Concept;
 	skos:inScheme <http://opendata.aragon.es/kos/iaest/sector-de-actividad>;
+	skos:notation "sin-clasificar";
+	skos:prefLabel "Sin clasificar".
+
+<http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010> a skos:ConceptScheme;
+	skos:notation "Edad-grupos-quinquenales-2010";
+	rdfs:label "Edad (Grupos Quinquenales 2010)";
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/65-69>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/40-44>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/45-49>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/20-24>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/25-29>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/50-54>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/55-59>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/30-34>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/35-39>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/mas-de-69>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/16-19>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/60-64>;
+	skos:hasTopConcept <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/sin-clasificar>.
+
+<http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/65-69> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010>;
+	skos:notation "65-69";
+	skos:prefLabel "65-69".
+
+<http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/40-44> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010>;
+	skos:notation "40-44";
+	skos:prefLabel "40-44".
+
+<http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/45-49> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010>;
+	skos:notation "45-49";
+	skos:prefLabel "45-49".
+
+<http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/20-24> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010>;
+	skos:notation "20-24";
+	skos:prefLabel "20-24".
+
+<http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/25-29> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010>;
+	skos:notation "25-29";
+	skos:prefLabel "25-29".
+
+<http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/50-54> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010>;
+	skos:notation "50-54";
+	skos:prefLabel "50-54".
+
+<http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/55-59> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010>;
+	skos:notation "55-59";
+	skos:prefLabel "55-59".
+
+<http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/30-34> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010>;
+	skos:notation "30-34";
+	skos:prefLabel "30-34".
+
+<http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/35-39> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010>;
+	skos:notation "35-39";
+	skos:prefLabel "35-39".
+
+<http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/mas-de-69> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010>;
+	skos:notation "mas-de-69";
+	skos:prefLabel "Más de 69".
+
+<http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/16-19> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010>;
+	skos:notation "16-19";
+	skos:prefLabel "16-19".
+
+<http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/60-64> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010>;
+	skos:notation "60-64";
+	skos:prefLabel "60-64".
+
+<http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010/sin-clasificar> a skos:Concept;
+	skos:inScheme <http://opendata.aragon.es/kos/iaest/Edad-grupos-quinquenales-2010>;
 	skos:notation "sin-clasificar";
 	skos:prefLabel "Sin clasificar".
 

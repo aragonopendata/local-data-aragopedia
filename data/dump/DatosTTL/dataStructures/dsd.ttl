@@ -270,16 +270,22 @@ _:node11egmfx5 qb:dimension sdmx-dimension:refPeriod .
 	rdfs:comment "Esta estructura afecta a las areas: TC TM TP A "^^xsd:string .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/04-040002> qb:component _:node12egmfx1 .
-_:node12egmfx1 qb:dimension sdmx-dimension:refPeriod .
+_:node12egmfx1 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/04-040002> qb:component _:node12egmfx2 .
-_:node12egmfx2 qb:measure iaest-measure:numero-de-edificios .
+_:node12egmfx2 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/04-040002> qb:component _:node12egmfx3 .
-_:node12egmfx3 qb:dimension sdmx-dimension:refArea .
+_:node12egmfx3 qb:measure iaest-measure:numero-de-edificios .
+
+<http://opendata.aragon.es/recurso/iaest/dsd/04-040002> qb:component _:node12egmfx4 .
+_:node12egmfx4 qb:measure iaest-measure:numero-de-viviendas .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/04-040002> qb:component _:node12egmfx6 .
-_:node12egmfx6 qb:dimension iaest-dimension:agua-corriente .
+_:node12egmfx6 qb:dimension iaest-dimension:sistema-de-suministro-de-agua .
+
+<http://opendata.aragon.es/recurso/iaest/dsd/04-040002> qb:component _:node12egmfx10 .
+_:node12egmfx10 qb:dimension iaest-dimension:agua-corriente .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/04-040009> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 04-040009, Usos del suelo (nomenclatura a 1 dígito)"@es ;
@@ -3182,19 +3188,22 @@ _:node123egmfx9 qb:measure iaest-measure:urbana---base-liquidable-miles-de-euros
 	rdfs:comment "Esta estructura afecta a las areas: TC TM TP A "^^xsd:string .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010110> qb:component _:node124egmfx1 .
-_:node124egmfx1 qb:dimension iaest-dimension:ocupacion-agraria .
+_:node124egmfx1 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010110> qb:component _:node124egmfx2 .
-_:node124egmfx2 qb:dimension sdmx-dimension:refArea .
+_:node124egmfx2 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010110> qb:component _:node124egmfx3 .
-_:node124egmfx3 qb:dimension sdmx-dimension:refPeriod .
+_:node124egmfx3 qb:measure iaest-measure:personas .
 
-<http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010110> qb:component _:node124egmfx6 .
-_:node124egmfx6 qb:dimension iaest-dimension:sexo .
+<http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010110> qb:component _:node124egmfx4 .
+_:node124egmfx4 qb:dimension iaest-dimension:ocupacion-agraria .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010110> qb:component _:node124egmfx7 .
-_:node124egmfx7 qb:measure iaest-measure:personas .
+_:node124egmfx7 qb:measure iaest-measure:jefe-explotacion .
+
+<http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010110> qb:component _:node124egmfx8 .
+_:node124egmfx8 qb:dimension iaest-dimension:sexo .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-110304-11030404> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 01-110304-11030404, Cuentas según ramas de actividad"@es ;
@@ -5083,16 +5092,19 @@ _:node170egmfx1 qb:dimension iaest-dimension:edad-grupos-quinquenales .
 _:node170egmfx2 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050006> qb:component _:node170egmfx3 .
-_:node170egmfx3 qb:dimension sdmx-dimension:refArea .
+_:node170egmfx3 qb:dimension iaest-dimension:edad-grupos-quinquenales-2010 .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050006> qb:component _:node170egmfx4 .
-_:node170egmfx4 qb:measure iaest-measure:afiliaciones-en-alta .
+_:node170egmfx4 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050006> qb:component _:node170egmfx5 .
-_:node170egmfx5 qb:dimension iaest-dimension:sexo .
+_:node170egmfx5 qb:measure iaest-measure:afiliaciones-en-alta .
 
-<http://opendata.aragon.es/recurso/iaest/dsd/05-050006> qb:component _:node170egmfx7 .
-_:node170egmfx7 qb:measure iaest-measure:edad .
+<http://opendata.aragon.es/recurso/iaest/dsd/05-050006> qb:component _:node170egmfx6 .
+_:node170egmfx6 qb:dimension iaest-dimension:sexo .
+
+<http://opendata.aragon.es/recurso/iaest/dsd/05-050006> qb:component _:node170egmfx8 .
+_:node170egmfx8 qb:measure iaest-measure:edad .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-050005> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 05-050005, Afiliaciones en alta a la Seguridad Social. Todos los regímenes Según división de actividad"@es ;
@@ -5841,7 +5853,10 @@ _:node195egmfx3 qb:dimension sdmx-dimension:refPeriod .
 _:node195egmfx4 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-0709-070904> qb:component _:node195egmfx5 .
-_:node195egmfx5 qb:dimension iaest-dimension:sector-descripcion .
+_:node195egmfx5 qb:measure iaest-measure:ord-temporalidad .
+
+<http://opendata.aragon.es/recurso/iaest/dsd/05-0709-070904> qb:component _:node195egmfx6 .
+_:node195egmfx6 qb:dimension iaest-dimension:sector-descripcion .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/05-0709-070903> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 05-0709-070903, Accidentes en jornada Accidentes según grupo de edad y sexo"@es ;

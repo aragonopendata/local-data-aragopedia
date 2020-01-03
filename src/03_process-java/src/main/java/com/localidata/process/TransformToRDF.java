@@ -185,8 +185,6 @@ public class TransformToRDF {
 		String endResult = "";
 		boolean year = false;
 		boolean month = false;
-
-		String yearText
 		String cleanLine = Utils.weakClean(line);
 		if (cleanLine.equals("")) {
 			log.debug("End addObservation");

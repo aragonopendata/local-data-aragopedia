@@ -185,6 +185,8 @@ public class TransformToRDF {
 		String endResult = "";
 		boolean year = false;
 		boolean month = false;
+
+		String yearText
 		String cleanLine = Utils.weakClean(line);
 		if (cleanLine.equals("")) {
 			log.debug("End addObservation");
@@ -238,6 +240,9 @@ public class TransformToRDF {
 											} else if (dataBean.getNameNormalized().equals("mes-codigo")){
 												month = true;
 												result.append("\t" + dataBean.getNormalizacion() + " <http://reference.data.gov.uk/id/month/" + normalizedCell.substring(0, 4) + "-" + normalizedCell.substring(4, 6) + "> ;" + "\n");
+											} else if (dataBean.getNameNormalized().equals("mes-y-ano")){
+												month = true;
+												result.append("\t" + dataBean.getNormalizacion() + " <http://reference.data.gov.uk/id/month/" + normalizedCell.split(" ")[1] + "-" + getNumberMonth(normalizedCell.split(" ")[0]) + "> ;" + "\n");
 											} else {
 												result.append("\t" + dataBean.getNormalizacion() + " <http://reference.data.gov.uk/id/year/2011> ;" + "\n");
 											}
@@ -432,6 +437,36 @@ public class TransformToRDF {
 		String line = view + " api:label \"" + view.replace(":", "_").replace("-","_") + "\".\n"; //Fallo en la ordenación en ELDA - issue #198
 		Utils.stringToFileAppend(line, specsTtl);
 
+	}
+
+	public String getNumberMonth(String month) {
+		if(month.equalsIgnoreCase("Enero")) {
+			return "01";
+		} else if (month.equalsIgnoreCase("Febrero")) {
+			return "02";
+		} else if (month.equalsIgnoreCase("Marzo")) {
+			return "03";
+		} else if (month.equalsIgnoreCase("Abril")) {
+			return "04";
+		} else if (month.equalsIgnoreCase("Mayo")) {
+			return "05";
+		} else if (month.equalsIgnoreCase("Junio")) {
+			return "06";
+		} else if (month.equalsIgnoreCase("Julio")) {
+			return "07";
+		} else if (month.equalsIgnoreCase("Agosto")) {
+			return "08";
+		} else if (month.equalsIgnoreCase("Septiembre")) {
+			return "09";
+		} else if (month.equalsIgnoreCase("Octubre")) {
+			return "10";
+		} else if (month.equalsIgnoreCase("Noviembre")) {
+			return "11";
+		} else if (month.equalsIgnoreCase("Diciembre")) {
+			return "12";
+		} else {
+			return "01";
+		}
 	}
 
 	public String getRdfFinal() {

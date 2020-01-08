@@ -61,7 +61,6 @@ public class Prop {
 	public static String urlGraphCommonData = "";
 	
 	public static boolean loadConf() {
-
 		boolean conf = false;
 
 		Properties prop = new Properties();

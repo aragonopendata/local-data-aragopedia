@@ -1,10 +1,13 @@
 package com.localidata.util;
 
+import com.localidata.generic.Prop;
+import com.localidata.process.TransformToRDF;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -25,6 +28,8 @@ import java.nio.CharBuffer;
 import java.nio.charset.Charset;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+import java.security.cert.X509Certificate;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -40,6 +45,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 import javax.xml.bind.DatatypeConverter;
 
@@ -60,17 +69,17 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-
-import com.localidata.generic.Prop;
-import com.localidata.process.TransformToRDF;
-
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 /**
  * 
  * @author Localidata
  *
  */
 public class Utils {
-
 	private final static Logger log = Logger.getLogger(Utils.class);
 	private static final int defaultReadTimeOut = 30000;
 	private static final int defaultTimeOut = 5000;
@@ -137,7 +146,7 @@ public class Utils {
 	}
 
 	public static String cleanCaracters(String chain) {
-
+		
 		String result = "";
 		char[] charaters = { '\t', '~', 'á', 'Á', 'é', 'É', 'í', 'Í', 'ó', 'Ó', 'ú', 'Ú', '(', ')', '%', '>', '<', '-', '.', '\n', '\r' };
 		ArrayList listChars = new ArrayList(Arrays.asList(charaters));
@@ -253,15 +262,15 @@ public class Utils {
 
 	public static String genUUIDHash(String id) {
 
-		String hash;
+		
 		UUID uuid = null;
 
-		if (!Utils.v(id)) {
+		if (!v(id)) {
 			log.error("Invalid ID generating a UUID");
 			return null;
 		}
 		try {
-			hash = DatatypeConverter.printHexBinary(MessageDigest.getInstance("SHA-1").digest(id.getBytes("UTF-8")));
+			String hash = DatatypeConverter.printHexBinary(MessageDigest.getInstance("SHA-1").digest(id.getBytes("UTF-8")));
 			uuid = UUID.nameUUIDFromBytes(hash.getBytes());
 		} catch (NoSuchAlgorithmException e) {
 			log.error("Error generating a UUID hash with id:" + id, e);
@@ -556,23 +565,21 @@ public class Utils {
 	public static String processURLGet(String url, String urlParameters, Map<String, String> headers, Cookies cookies, String encoding) throws SocketTimeoutException {
 
 		//Security SSL
-		TrustManager[] trustAllCerts = new TrustManager[]{
-			new X509TrustManager() {
-			    public java.security.cert.X509Certificate[] getAcceptedIssuers() {
+		TrustManager[] trustAllCerts = { new X509TrustManager() {
+			    @Override
+				public X509Certificate[] getAcceptedIssuers() {
 			        return null;
 			    }
-			    public void checkClientTrusted(
-			        java.security.cert.X509Certificate[] certs, String authType) {
+			    @Override
+			    public void checkClientTrusted(X509Certificate[] certs, String authType) {
 			    }
-			    public void checkServerTrusted(
-			        java.security.cert.X509Certificate[] certs, String authType) {
+			    @Override
+			    public void checkServerTrusted(X509Certificate[] certs, String authType) {
 			    }
-			}
-		};
-
+			} };
 	   try {
 		   SSLContext sc = SSLContext.getInstance("SSL");
-		   sc.init(null, trustAllCerts, new java.security.SecureRandom());
+		   sc.init(null, trustAllCerts, new SecureRandom());
 		   HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
 	   } catch (Exception e) {
 		   
@@ -781,7 +788,73 @@ public class Utils {
 		}
 
 	}
+	
+	public static String processURLPutGitHub(String url, String urlParameters, Map<String, String> headers, byte[] body) throws IOException {
+	    return processURLPutGitHub(url, urlParameters, headers, body, "UTF-8");
+	  }
+	
+	
+	public static String processURLPutGitHub(String url, String urlParameters, Map<String, String> headers, byte[] body, String encoding) throws IOException {
+		HttpURLConnection httpConnection = null;
+	    
+	    try {
+	      StringBuffer sb = new StringBuffer();
+	      String u = "";
+	      if (!v(urlParameters)) {
+	        u = url;
+	      } else {
+	        u = String.valueOf(url) + "?" + urlParameters;
+	      }
+	      URL targetUrl = new URL(u);
+	      
+	      httpConnection = (HttpURLConnection)targetUrl.openConnection();
+	      httpConnection.setDoOutput(true);
+	      httpConnection.setRequestMethod("PUT");
+	      httpConnection.setConnectTimeout(30000);
+	      httpConnection.setReadTimeout(30000);
+	      
+	      if (headers != null) {
+	          Iterator<Map.Entry<String, String>> it = headers.entrySet().iterator();
+	          while (it.hasNext()) {
+	            Map.Entry<String, String> pairs = it.next();
+	            httpConnection.setRequestProperty(pairs.getKey(), pairs.getValue());
+	          } 
+	        } 
+	      
+	      
+	      OutputStream outputStream = httpConnection.getOutputStream();
+	      outputStream.write(body);
+	      outputStream.flush();
+	      
+	      
+	      
+	      BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(httpConnection.getInputStream(), encoding));
+	      String output;
+	      
+	      
+	      while ((output = responseBuffer.readLine()) != null)
+	          sb.append(output); 
+	      
+	      
+	      if (httpConnection.getResponseCode() > 299 && httpConnection.getResponseCode() < 200) {
+	          log.error("The URI does not return a 2XX code");
+	          log.error(Integer.valueOf(httpConnection.getResponseCode()));
+	          httpConnection.disconnect();
+	          return "";
+	        } 
+	        
+	        httpConnection.disconnect();
+	        return sb.toString();
+	      
+	    } catch (IOException e) {
+	    	  log.error("Error procesing URL by Post");
+	          if (httpConnection != null)
+	            httpConnection.disconnect(); 
+	          throw e;
+	        } 
+	      }
 
+	
 	public static void stringToFile(String string, File file) throws Exception {
 
 		try {
@@ -1020,5 +1093,63 @@ public class Utils {
 		}
 
 	}
-
+	
+	public static void XLSXToCsv(File inputFile, File outputFile) throws Exception {
+	    StringBuffer data = new StringBuffer();
+	    try {
+	      FileOutputStream fos = new FileOutputStream(outputFile);
+	      XSSFWorkbook wBook = new XSSFWorkbook(new FileInputStream(inputFile));
+	      XSSFSheet sheet = wBook.getSheetAt(0);
+	      Iterator<Row> rowIterator = sheet.iterator();
+	      while (rowIterator.hasNext()) {
+	        Row row = rowIterator.next();
+	        Iterator<Cell> cellIterator = row.cellIterator();
+	        while (cellIterator.hasNext()) {
+	          Cell cell = cellIterator.next();
+	          switch (cell.getCellType()) {
+	          	case 4:
+	              data.append(String.valueOf(cell.getBooleanCellValue()) + ",");
+	              continue;
+	            case 0:
+	              data.append(String.valueOf(cell.getNumericCellValue()) + ",");
+	              continue;
+	            case 1:
+	                data.append(String.valueOf(cell.getStringCellValue()) + ",");
+	                continue;
+	              case 3:
+	                data.append(",");
+	                continue;
+	            } 
+	            data.append(cell + ",");
+	          } 
+	          data.append('\n');
+	      } 
+	      fos.write(data.toString().getBytes());
+	      fos.close();
+	    } catch (Exception ioe) {
+	      ioe.printStackTrace();
+	    } 
+	  }
+	
+	public static void csvToXLSX(File inputFile, File outputFile) {
+	    try {
+	      XSSFWorkbook workBook = new XSSFWorkbook();
+	      XSSFSheet sheet = workBook.createSheet(inputFile.getName());
+	      String currentLine = null;
+	      int RowNum = 0;
+	      BufferedReader br = new BufferedReader(new FileReader(inputFile));
+	      while ((currentLine = br.readLine()) != null) {
+	        String[] str = currentLine.split(",");
+	        RowNum++;
+	        XSSFRow currentRow = sheet.createRow(RowNum);
+	        for (int i = 0; i < str.length; i++)
+	          currentRow.createCell(i).setCellValue(str[i]); 
+	      }
+	      FileOutputStream fileOutputStream = new FileOutputStream(outputFile);
+	      workBook.write(fileOutputStream);
+	      fileOutputStream.close();
+	    } catch (Exception ex) {
+	      ex.printStackTrace();
+	    } 
+	  }
 }

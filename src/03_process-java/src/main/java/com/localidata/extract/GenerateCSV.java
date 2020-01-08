@@ -16,7 +16,6 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 import com.localidata.generic.Constants;
-import com.localidata.generic.GoogleDriveAPI;
 import com.localidata.generic.Prop;
 import com.localidata.util.Cookies;
 import com.localidata.util.Jdbcconnection;
@@ -35,13 +34,10 @@ public class GenerateCSV {
 	private HashMap<String, String> idDescription = new HashMap<>();
 	private List<String> changes = new ArrayList<String>();
 	private List<String> news = new ArrayList<String>();
-	private GoogleDriveAPI drive = null;
 
 	public GenerateCSV(String urls, String outputFiles) {
 		urlsFileString = urls;
 		outputFilesDirectoryString = outputFiles;
-		drive = new GoogleDriveAPI();
-		drive.init();
 		log.info("Generando el fichero InformesEstadisticaLocal-URLs.csv");
 		try {
 			Jdbcconnection.main(null);
@@ -71,7 +67,6 @@ public class GenerateCSV {
 			Utils.processURLGet(Prop.urlBiAragon + Prop.initialDataCube + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
 			List<String> csvLines = FileUtils.readLines(urlsFile, "UTF-8");
 
-			
 			for (int h = 1; h < csvLines.size(); h++) {
 				try {
 					String line = csvLines.get(h);
@@ -188,33 +183,35 @@ public class GenerateCSV {
 	}
 
 	public void generateHashCode(List<String> result, List<String> list) {
-
-		File file = new File(Prop.fileHashCSV + "." + Constants.CSV);
+		File fileCSV = new File(String.valueOf(Prop.fileHashCSV) + "." + "csv");
+	    File fileXlsx = new File(String.valueOf(Prop.fileHashCSV) + "." + "xlsx");
 		String hashCodeFile = "";
-
-		for (String key : hashCodeOld.keySet()) {
+		
+		for (String key : this.hashCodeOld.keySet()) {
 			String hash = "";
-			if (result.contains(key))
-				hash = hashCodeNew.get(key);
-			else {
-				hash = hashCodeOld.get(key);
-			}
-			hashCodeFile += key + "," + hash + "\n";
-
-		}
-		for (String key : hashCodeNew.keySet()) {
+			if (result.contains(key)) {
+				hash = this.hashCodeNew.get(key);
+			} else {
+				hash = this.hashCodeOld.get(key);
+			} 
+			hashCodeFile = String.valueOf(hashCodeFile) + key + "," + hash + "\n";
+		} 
+		
+		for (String key : this.hashCodeNew.keySet()) {
 			String hash = "";
 			if (!hashCodeFile.contains(key)) {
-				hash = hashCodeNew.get(key);
-				hashCodeFile += key + ",nuevo\n";
+				hash = this.hashCodeNew.get(key);
+				hashCodeFile = String.valueOf(hashCodeFile) + key + ",nuevo\n";
 			}
-		}
+		} 
+		
 		try {
-			Utils.stringToFile(hashCodeFile, file);
-			drive.updateFile(Prop.fileHashCSV, file, "text/csv");
+			Utils.stringToFile(hashCodeFile, fileCSV);
+			Utils.csvToXLSX(fileCSV, fileXlsx);
+			log.info("Hashcode generado correctamente");
 		} catch (Exception e) {
 			log.error("Error generando fichero hashcode", e);
-		}
+		} 
 	}
 	
 	public void generateHashCodeFromBI() {
@@ -297,7 +294,7 @@ public class GenerateCSV {
 			
 			try {
 				Utils.stringToFile(result.toString(), hashFile);
-				drive.updateFile(Prop.fileHashCSV, hashFile, "text/csv");
+				log.info("Hashcode generado correctamente");
 			} catch (Exception e) {
 				log.error("Error generando fichero hashcode", e);
 			}
@@ -319,20 +316,24 @@ public class GenerateCSV {
 			Utils.stringToFileAppend(id + ".csv" + System.lineSeparator(), file);
 		}
 	}
-
+	
 	protected void extractHashCode() {
-
-		drive.downloadFile("", Prop.fileHashCSV, Constants.CSV);
-		File file = new File("" + Prop.fileHashCSV + "." + Constants.CSV);
-		try {
-			List<String> hashLines = FileUtils.readLines(file, "UTF-8");
-			for (String line : hashLines) {
-				String[] valores = line.split(",");
-				hashCodeOld.put(valores[0], valores[1]);
-			}
-		} catch (IOException e) {
-			log.error("Error leyendo fichero hashcode", e);
-		}
+	    File fileCSV = new File(Prop.fileHashCSV + "." + "csv");
+	    File fileXLSX = new File(Prop.fileHashCSV + "." + "xlsx");
+	    try {
+	    	try {
+	    		Utils.XLSXToCsv(fileXLSX, fileCSV);
+	    	} catch (Exception e1) {
+	    		log.error("Error al transformar el fichero Xlsx a Csv");
+	    	} 
+	    	List<String> hashLines = FileUtils.readLines(fileCSV, "UTF-8");
+	    	for (String line : hashLines) {
+	    		String[] valores = line.split(",");
+	    		this.hashCodeOld.put(valores[0], valores[1]);
+	    	} 
+	    } catch (IOException e) {
+	    	log.error("Error leyendo fichero hashcode", e);
+	    } 
 	}
 
 	private void backup() {

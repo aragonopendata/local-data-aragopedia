@@ -14,6 +14,7 @@ import org.apache.log4j.Logger;
 
 import com.localidata.bean.ConfigBean;
 import com.localidata.bean.DataBean;
+import com.localidata.bean.SkosBean;
 import com.localidata.generic.Constants;
 import com.localidata.generic.Prop;
 import com.localidata.util.Utils;
@@ -66,7 +67,7 @@ public class TransformToRDF {
 	}
 
 	public void initTransformation(String fileName, int numfile, String id, ArrayList<String> dsdList, ArrayList<String> propertiesList, String decription) {
-		log.debug("Init initTransformation");
+		log.info("Init initTransformation");
 		if (this.csvLines != null && this.csvLines.size() >= 2) {
 			log.debug("Start file " + fileName);
 			TransformToRDF.dsdList = dsdList;
@@ -196,90 +197,87 @@ public class TransformToRDF {
 
 		String[] cells = cleanLine.split("\t");
 		int col = 1;
-		for (String cell : cells) {
-			String normalizedCell = Utils.urlify(cell);
-			if (normalizedHeader.size() <= col - 1) {
-				TransformToRDF.insertError(fileName + ". ERROR. " + "COLUMN NAME MISSING  ");
-				log.error(fileName + ". ERROR. " + "COLUMN NAME MISSING  ");
-				continue;
-			}
-			String header = normalizedHeader.get(col - 1);
-			cleanHeader.get(col - 1);
-			DataBean dataBean = configBean.getMapData().get(header);
-			try {
-				if (dataBean != null) {
-					if (dataBean.getNormalizacion() != null) {
-						if (normalizedCell.equals("")) {
-							TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". NO VALUE ");
-						} else {
-
-							if (!dataBean.getType().contains(Constants.URIType)) {
-								if (!dataBean.getNormalizacion().equals("sdmx-dimension:refPeriod")) {
-									if (dataBean.getType().equals(Constants.skosType)) {
-										if (dataBean.getMapSkos().get(normalizedCell) == null) {
-											TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". NO SKOS VALID BY " + normalizedCell);
-											log.error(fileName + ". ERROR. Column " + header + ". NO SKOS VALID BY " + normalizedCell);
+		byte b;
+	    int i;
+	    String[] arrayOfString1;
+	    for (i = (arrayOfString1 = cells).length, b = 0; b < i; ) {
+	        String cell = arrayOfString1[b];
+	        String normalizedCell = Utils.urlify(cell);
+	        if (this.normalizedHeader.size() <= col - 1) {
+	          insertError(String.valueOf(fileName) + ". ERROR. " + "COLUMN NAME MISSING  ");
+	          log.error(String.valueOf(fileName) + ". ERROR. " + "COLUMN NAME MISSING  ");
+	        } else {
+	        	String header = this.normalizedHeader.get(col - 1);
+	            this.cleanHeader.get(col - 1);
+	            DataBean dataBean = (DataBean)this.configBean.getMapData().get(header);
+	            try {
+	            	if (dataBean != null) {
+	            		if (dataBean.getNormalizacion() != null)
+	            			if (normalizedCell.equals("")) {
+	            				insertError(String.valueOf(fileName) + ". ERROR. Column " + header + ". NO VALUE ");
+	            			} else if (!dataBean.getType().contains("URI")) {
+	            				if (!dataBean.getNormalizacion().equals("sdmx-dimension:refPeriod")) {
+	            					if (dataBean.getType().equals("skos:Concept")) {
+	            						if (dataBean.getMapSkos().get(normalizedCell) == null) {
+	            							insertError(String.valueOf(fileName) + ". ERROR. Column " + header + ". NO SKOS VALID BY " + normalizedCell);
+	            							log.error(String.valueOf(fileName) + ". ERROR. Column " + header + ". NO SKOS VALID BY " + normalizedCell);
+	            						} else {
+	            							result.append("\t" + dataBean.getNormalizacion() + " <" + ((SkosBean)dataBean.getMapSkos().get(normalizedCell)).getURI() + "> ;" + "\n");
+	            							((SkosBean)dataBean.getMapSkos().get(normalizedCell)).setLabel(Utils.weakClean(cell));
+	            						}
+	            					} else {
+	            						if (dataBean.getType().equals("xsd:double"))
+	            							cell = cell.replace(",", ".");
+	            						result.append("\t" + dataBean.getNormalizacion() + " \"" + Utils.weakClean(cell) + "\"^^" + dataBean.getType() + ";" + "\n");
+	            					}
+	            				} else if (dataBean.getNormalizacion().equals("sdmx-dimension:refPeriod")) {
+	                              try {
+	                                if (dataBean.getNameNormalized().equals("ano")){
+											year = true;
+											result.append("\t" + dataBean.getNormalizacion() + " <http://reference.data.gov.uk/id/year/" + normalizedCell + "> ;" + "\n");
+										} else if (dataBean.getNameNormalized().equals("mes-codigo")){
+											month = true;
+											result.append("\t" + dataBean.getNormalizacion() + " <http://reference.data.gov.uk/id/month/" + normalizedCell.substring(0, 4) + "-" + normalizedCell.substring(4, 6) + "> ;" + "\n");
+										} else if (dataBean.getNameNormalized().equals("mes-y-ano")){
+											month = true;
+											result.append("\t" + dataBean.getNormalizacion() + " <http://reference.data.gov.uk/id/month/" + normalizedCell.split("-")[1] + "-" + getNumberMonth(normalizedCell.split("-")[0]) + "> ;" + "\n");
 										} else {
-											result.append("\t" + dataBean.getNormalizacion() + " <" + dataBean.getMapSkos().get(normalizedCell).getURI() + "> ;" + "\n");
-											dataBean.getMapSkos().get(normalizedCell).setLabel(Utils.weakClean(cell));
-										}
-									} else {
-										if (dataBean.getType().equals(Constants.doubleType)) {
-											cell = cell.replace(",", ".");
-										}
-										result.append("\t" + dataBean.getNormalizacion() + " \"" + Utils.weakClean(cell) + "\"^^" + dataBean.getType() + ";" + "\n");
-									}
-								} else {
-									if (dataBean.getNormalizacion().equals("sdmx-dimension:refPeriod")) {
-										try{
-											if (dataBean.getNameNormalized().equals("ano")){
-												year = true;
-												result.append("\t" + dataBean.getNormalizacion() + " <http://reference.data.gov.uk/id/year/" + normalizedCell + "> ;" + "\n");
-											} else if (dataBean.getNameNormalized().equals("mes-codigo")){
-												month = true;
-												result.append("\t" + dataBean.getNormalizacion() + " <http://reference.data.gov.uk/id/month/" + normalizedCell.substring(0, 4) + "-" + normalizedCell.substring(4, 6) + "> ;" + "\n");
-											} else if (dataBean.getNameNormalized().equals("mes-y-ano")){
-												month = true;
-												result.append("\t" + dataBean.getNormalizacion() + " <http://reference.data.gov.uk/id/month/" + normalizedCell.split(" ")[1] + "-" + getNumberMonth(normalizedCell.split(" ")[0]) + "> ;" + "\n");
-											} else {
-												result.append("\t" + dataBean.getNormalizacion() + " <http://reference.data.gov.uk/id/year/2011> ;" + "\n");
-											}
-										}catch (Exception e) {
-											log.error("[M] Error formateando refPedriod: " + e);
-										}
-									}
-								}
-							} else {
-								String pattern = "([0-9]+)(-)(.*)";
-								Pattern r = Pattern.compile(pattern);
-								Matcher m = r.matcher(cell);
-								if (m.find()) {
-									TransformToRDF.insertError(fileName + ". WARNING. Column " + header + ". MIXED CODE AND VALUE");
-									cell = cell.substring(cell.indexOf("-") + 1, cell.length());
-								}
-								if(Utils.v(cell)){
-									String urlRefArea = Utils.getUrlRefArea(header, cell, fileName);
-									if(Utils.v(urlRefArea))
-										result.append("\t" + dataBean.getDimensionMesureSDMX() + ":refArea " + urlRefArea + " ;" + "\n");
-								}
-							}
-
-						}
-					}
-				} else {
-					if (header.equals("")) {
-						TransformToRDF.insertError(fileName + ". ERROR. HEADER COLUMN EMPTY " + ". CONFIGURATION FOR THIS COLUMN NOT FOUND ");
-						log.error(fileName + ". ERROR. HEADER COLUMN EMPTY " + ". CONFIGURATION FOR THIS COLUMN NOT FOUND ");
-					}
-					TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". CONFIGURATION FOR THIS COLUMN NOT FOUND ");
-					log.error(fileName + ". ERROR. Column " + header + ". CONFIGURATION FOR THIS COLUMN NOT FOUND ");
-				}
-				col++;
-			} catch (Exception e) {
-				log.error("Error al añadir una observacion en " + configBean.getNameFile(), e);
-			}
-		}
-		if (configBean.getListDataConstant().size() > 0) {
+											result.append("\t" + dataBean.getNormalizacion() + " <http://reference.data.gov.uk/id/year/2011> ;" + "\n");
+										} 
+	                                  } catch (Exception e) {
+	                                	  log.error("[M] Error formateando refPedriod: " + e);
+	                                  } 
+	                                } 
+	                              } else {
+	                                String pattern = "([0-9]+)(-)(.*)";
+	                                Pattern r = Pattern.compile(pattern);
+	                                Matcher m = r.matcher(cell);
+	                                if (m.find()) {
+	                                  insertError(String.valueOf(fileName) + ". WARNING. Column " + header + ". MIXED CODE AND VALUE");
+	                                  cell = cell.substring(cell.indexOf("-") + 1, cell.length());
+	                                } 
+	                                if (Utils.v(cell)) {
+	                                  String urlRefArea = Utils.getUrlRefArea(header, cell, fileName);
+	                                  if (Utils.v(urlRefArea))
+	                                      result.append("\t" + dataBean.getDimensionMesureSDMX() + ":refArea " + urlRefArea + " ;" + "\n"); 
+	                                  } 
+	                                }
+	            	 } else {
+	                     if (header.equals("")) {
+	                       insertError(String.valueOf(fileName) + ". ERROR. HEADER COLUMN EMPTY " + ". CONFIGURATION FOR THIS COLUMN NOT FOUND ");
+	                       log.error(String.valueOf(fileName) + ". ERROR. HEADER COLUMN EMPTY " + ". CONFIGURATION FOR THIS COLUMN NOT FOUND ");
+	                     } 
+	                     insertError(String.valueOf(fileName) + ". ERROR. Column " + header + ". CONFIGURATION FOR THIS COLUMN NOT FOUND ");
+	                     log.error(String.valueOf(fileName) + ". ERROR. Column " + header + ". CONFIGURATION FOR THIS COLUMN NOT FOUND ");
+	            	 } 
+	                col++;
+	              } catch (Exception e) {
+	            	  log.error("Error al auna observacion en " + this.configBean.getNameFile(), e);
+	              } 
+	            } 
+	            b++;
+	          }
+		if (this.configBean.getListDataConstant().size() > 0) {
 			for (DataBean data : configBean.getListDataConstant()) {
 				result.append("\t" + data.getNormalizacion() + " " + data.getConstant() );
 				if (Utils.v(data.getType()))
@@ -430,11 +428,9 @@ public class TransformToRDF {
 	}
 
 	private static void insertViewTTL(String view) {
-
 		File specsTtl = new File(specsTtlFileString);
 		String line = view + " api:label \"" + view.replace(":", "_").replace("-","_") + "\".\n"; //Fallo en la ordenación en ELDA - issue #198
 		Utils.stringToFileAppend(line, specsTtl);
-
 	}
 
 	public String getNumberMonth(String month) {

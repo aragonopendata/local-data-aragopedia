@@ -2908,6 +2908,9 @@ _:node118egmfx5 qb:dimension iaest-dimension:ocupacion-agraria .
 <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010113> qb:component _:node118egmfx8 .
 _:node118egmfx8 qb:dimension iaest-dimension:sexo .
 
+<http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010113> qb:component _:node118egmfx9 .
+_:node118egmfx9 qb:dimension iaest-dimension:jefe-explotacion .
+
 <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010112> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 01-080101-010112, Superficie de las explotaciones agrarias Porcentaje de SAU sobre la superficie total del municipio. Censo 2009"@es ;
 	skos:notation "DSD-01-080101-010112" ;
@@ -5835,6 +5838,9 @@ _:node194egmfx4 qb:dimension sdmx-dimension:refPeriod .
 <http://opendata.aragon.es/recurso/iaest/dsd/05-0709-070908> qb:component _:node194egmfx5 .
 _:node194egmfx5 qb:dimension sdmx-dimension:refArea .
 
+<http://opendata.aragon.es/recurso/iaest/dsd/05-0709-070908> qb:component _:node194egmfx6 .
+_:node194egmfx6 qb:measure iaest-measure:ord-temporalidad .
+
 <http://opendata.aragon.es/recurso/iaest/dsd/05-0709-070904> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 05-0709-070904, Accidentes en jornada Accidentes según sector de actividad y tipo de contrato"@es ;
 	skos:notation "DSD-05-0709-070904" ;
@@ -7070,19 +7076,22 @@ _:node240egmfx5 qb:dimension sdmx-dimension:refArea .
 	rdfs:comment "Esta estructura afecta a las areas: A "^^xsd:string .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150012> qb:component _:node241egmfx1 .
-_:node241egmfx1 qb:dimension sdmx-dimension:refArea .
+_:node241egmfx1 qb:measure iaest-measure:candidatura .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150012> qb:component _:node241egmfx2 .
-_:node241egmfx2 qb:dimension sdmx-dimension:refPeriod .
+_:node241egmfx2 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150012> qb:component _:node241egmfx3 .
-_:node241egmfx3 qb:measure iaest-measure:diputados .
+_:node241egmfx3 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150012> qb:component _:node241egmfx4 .
-_:node241egmfx4 qb:dimension iaest-dimension:siglas .
+_:node241egmfx4 qb:measure iaest-measure:diputados .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150012> qb:component _:node241egmfx5 .
-_:node241egmfx5 qb:measure iaest-measure:votos .
+_:node241egmfx5 qb:measure iaest-measure:siglas .
+
+<http://opendata.aragon.es/recurso/iaest/dsd/915-150012> qb:component _:node241egmfx6 .
+_:node241egmfx6 qb:measure iaest-measure:votos .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/01-080101-010086> a qb:DataStructureDefinition ;
 	rdfs:label "Estructura de los cubos de datos que se corresponden con los informes 01-080101-010086, Nº explotaciones según la formación agraria del jefe de la explotación. Censo 2009"@es ;
@@ -7936,17 +7945,20 @@ _:node280egmfx6 qb:measure iaest-measure:votos .
 	rdfs:comment "Esta estructura afecta a las areas: A "^^xsd:string .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150002> qb:component _:node281egmfx1 .
-_:node281egmfx1 qb:dimension sdmx-dimension:refArea .
+_:node281egmfx1 qb:measure iaest-measure:candidatura .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150002> qb:component _:node281egmfx2 .
-_:node281egmfx2 qb:dimension sdmx-dimension:refPeriod .
+_:node281egmfx2 qb:dimension sdmx-dimension:refArea .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150002> qb:component _:node281egmfx3 .
-_:node281egmfx3 qb:measure iaest-measure:diputados .
+_:node281egmfx3 qb:dimension sdmx-dimension:refPeriod .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150002> qb:component _:node281egmfx4 .
-_:node281egmfx4 qb:dimension iaest-dimension:siglas .
+_:node281egmfx4 qb:measure iaest-measure:diputados .
 
 <http://opendata.aragon.es/recurso/iaest/dsd/915-150002> qb:component _:node281egmfx5 .
-_:node281egmfx5 qb:measure iaest-measure:votos .
+_:node281egmfx5 qb:measure iaest-measure:siglas .
+
+<http://opendata.aragon.es/recurso/iaest/dsd/915-150002> qb:component _:node281egmfx6 .
+_:node281egmfx6 qb:measure iaest-measure:votos .
 

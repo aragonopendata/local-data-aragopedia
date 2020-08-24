@@ -1481,6 +1481,12 @@ iaest-dimension:ocupacion-agraria a qb:DimensionProperty , rdf:Property, qb:Code
 	rdfs:comment "Ocupación agraria"@es ;
 	rdfs:range skos:Concept.
 
+iaest-dimension:jefe-explotacion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label "Jefe explotación"@es ;
+	rdfs:comment "Jefe explotación"@es ;
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/jefe-explotacion> .
+
 iaest-measure:superficie-total-ha a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Superficie total (Ha.)"@es ;
 	rdfs:comment "Superficie total (Ha.)"@es ;
@@ -3229,6 +3235,16 @@ iaest-dimension:horas-trabajadas a qb:DimensionProperty , rdf:Property, qb:Coded
 	rdfs:comment "Horas trabajadas"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/horas-trabajadas> .
+
+iaest-measure:candidatura a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Candidatura"@es ;
+	rdfs:comment "Candidatura"@es ;
+	rdfs:range xsd:string .
+
+iaest-measure:siglas a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Siglas"@es ;
+	rdfs:comment "Siglas"@es ;
+	rdfs:range xsd:string .
 
 iaest-dimension:formacion-jefe-explotacion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Formación jefe explotación"@es ;

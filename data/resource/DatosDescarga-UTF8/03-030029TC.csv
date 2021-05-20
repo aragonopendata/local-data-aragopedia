@@ -1,23 +1,834 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-   <head>
-      <meta charset="UTF-8" />
-      <title>Oracle Analytics</title>
-      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-      <meta http-equiv="Expires" content="0" />
-      <meta http-equiv="Pragma" content="no-cache" />
-      <!-- mobile viewport -->
-      <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-      <!-- Set IE compatibility mode to most recent version (IE11) -->
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <!-- Load the resources required by login page -->
-      <script src="js/libs/require/require.js"></script>
-      <script src="js/loginhelper.js" type="text/javascript"></script>
-      <link href="/bi-security-login/css/loginhelper.css" rel="stylesheet" type="text/css"/>
-      <link href="/bi-security-login/css/libs/oj/v7.1.0/alta/oj-alta-min.css" rel="stylesheet" type="text/css"/>
-   </head>
-   <body onload="bitechLogin.setup();">
-   
-   </body>
-</html>
+Comarca código	Comarca nombre	Continente	Area nacionalidad, código	Area nacionalidad	Nivel estudios (agregado)	Grado de formación
+01	La Jacetania	Europa	01	UE-15	Analfabetos	5
+01	La Jacetania	Europa	01	UE-15	Sin estudios	8
+01	La Jacetania	Europa	01	UE-15	Primer grado	10
+01	La Jacetania	Europa	01	UE-15	Segundo grado	40
+01	La Jacetania	Europa	01	UE-15	Tercer grado	28
+01	La Jacetania	Europa	02	Resto de Europa	Sin estudios	4
+01	La Jacetania	Europa	02	Resto de Europa	Primer grado	3
+01	La Jacetania	Europa	02	Resto de Europa	Segundo grado	28
+01	La Jacetania	Europa	02	Resto de Europa	Tercer grado	8
+01	La Jacetania	África	03	Magreb	Analfabetos	4
+01	La Jacetania	África	03	Magreb	Sin estudios	2
+01	La Jacetania	África	03	Magreb	Primer grado	4
+01	La Jacetania	África	03	Magreb	Segundo grado	12
+01	La Jacetania	África	03	Magreb	Tercer grado	2
+01	La Jacetania	África	04	Resto de África	Segundo grado	4
+01	La Jacetania	África	04	Resto de África	Tercer grado	1
+01	La Jacetania	América	05	América del Norte	Primer grado	1
+01	La Jacetania	América	05	América del Norte	Tercer grado	3
+01	La Jacetania	América	06	Resto de América	Analfabetos	16
+01	La Jacetania	América	06	Resto de América	Sin estudios	19
+01	La Jacetania	América	06	Resto de América	Primer grado	72
+01	La Jacetania	América	06	Resto de América	Segundo grado	125
+01	La Jacetania	América	06	Resto de América	Tercer grado	10
+01	La Jacetania	Asia	07	Asia	Analfabetos	1
+01	La Jacetania	Asia	07	Asia	Segundo grado	6
+01	La Jacetania	Asia	07	Asia	Tercer grado	1
+01	La Jacetania	Oceanía	08	Oceanía	Sin estudios	2
+02	Alto Gállego	Europa	01	UE-15	Analfabetos	4
+02	Alto Gállego	Europa	01	UE-15	Sin estudios	5
+02	Alto Gállego	Europa	01	UE-15	Primer grado	4
+02	Alto Gállego	Europa	01	UE-15	Segundo grado	32
+02	Alto Gállego	Europa	01	UE-15	Tercer grado	14
+02	Alto Gállego	Europa	02	Resto de Europa	Analfabetos	1
+02	Alto Gállego	Europa	02	Resto de Europa	Sin estudios	2
+02	Alto Gállego	Europa	02	Resto de Europa	Primer grado	3
+02	Alto Gállego	Europa	02	Resto de Europa	Segundo grado	20
+02	Alto Gállego	Europa	02	Resto de Europa	Tercer grado	3
+02	Alto Gállego	África	03	Magreb	Analfabetos	3
+02	Alto Gállego	África	03	Magreb	Sin estudios	9
+02	Alto Gállego	África	03	Magreb	Primer grado	4
+02	Alto Gállego	África	03	Magreb	Segundo grado	3
+02	Alto Gállego	África	03	Magreb	Tercer grado	1
+02	Alto Gállego	América	06	Resto de América	Analfabetos	4
+02	Alto Gállego	América	06	Resto de América	Sin estudios	8
+02	Alto Gállego	América	06	Resto de América	Primer grado	20
+02	Alto Gállego	América	06	Resto de América	Segundo grado	62
+02	Alto Gállego	América	06	Resto de América	Tercer grado	11
+02	Alto Gállego	Asia	07	Asia	Primer grado	1
+02	Alto Gállego	Asia	07	Asia	Segundo grado	1
+03	Sobrarbe	Europa	01	UE-15	Analfabetos	2
+03	Sobrarbe	Europa	01	UE-15	Sin estudios	2
+03	Sobrarbe	Europa	01	UE-15	Primer grado	12
+03	Sobrarbe	Europa	01	UE-15	Segundo grado	39
+03	Sobrarbe	Europa	01	UE-15	Tercer grado	12
+03	Sobrarbe	Europa	02	Resto de Europa	Sin estudios	1
+03	Sobrarbe	Europa	02	Resto de Europa	Primer grado	2
+03	Sobrarbe	Europa	02	Resto de Europa	Segundo grado	8
+03	Sobrarbe	África	03	Magreb	Analfabetos	5
+03	Sobrarbe	África	03	Magreb	Sin estudios	1
+03	Sobrarbe	África	03	Magreb	Primer grado	2
+03	Sobrarbe	África	03	Magreb	Segundo grado	1
+03	Sobrarbe	África	04	Resto de África	Segundo grado	2
+03	Sobrarbe	África	04	Resto de África	Tercer grado	1
+03	Sobrarbe	América	05	América del Norte	Segundo grado	2
+03	Sobrarbe	América	06	Resto de América	Analfabetos	3
+03	Sobrarbe	América	06	Resto de América	Sin estudios	4
+03	Sobrarbe	América	06	Resto de América	Primer grado	14
+03	Sobrarbe	América	06	Resto de América	Segundo grado	19
+03	Sobrarbe	América	06	Resto de América	Tercer grado	2
+03	Sobrarbe	Asia	07	Asia	Primer grado	1
+03	Sobrarbe	Asia	07	Asia	Segundo grado	2
+04	La Ribagorza	Europa	01	UE-15	Analfabetos	7
+04	La Ribagorza	Europa	01	UE-15	Sin estudios	10
+04	La Ribagorza	Europa	01	UE-15	Primer grado	15
+04	La Ribagorza	Europa	01	UE-15	Segundo grado	39
+04	La Ribagorza	Europa	01	UE-15	Tercer grado	33
+04	La Ribagorza	Europa	02	Resto de Europa	Analfabetos	3
+04	La Ribagorza	Europa	02	Resto de Europa	Sin estudios	7
+04	La Ribagorza	Europa	02	Resto de Europa	Primer grado	12
+04	La Ribagorza	Europa	02	Resto de Europa	Segundo grado	57
+04	La Ribagorza	Europa	02	Resto de Europa	Tercer grado	10
+04	La Ribagorza	África	03	Magreb	Analfabetos	2
+04	La Ribagorza	África	03	Magreb	Sin estudios	1
+04	La Ribagorza	África	03	Magreb	Primer grado	7
+04	La Ribagorza	África	03	Magreb	Segundo grado	7
+04	La Ribagorza	África	03	Magreb	Tercer grado	1
+04	La Ribagorza	África	04	Resto de África	Analfabetos	3
+04	La Ribagorza	África	04	Resto de África	Primer grado	4
+04	La Ribagorza	África	04	Resto de África	Segundo grado	4
+04	La Ribagorza	África	04	Resto de África	Tercer grado	2
+04	La Ribagorza	América	05	América del Norte	Analfabetos	2
+04	La Ribagorza	América	06	Resto de América	Analfabetos	15
+04	La Ribagorza	América	06	Resto de América	Sin estudios	14
+04	La Ribagorza	América	06	Resto de América	Primer grado	36
+04	La Ribagorza	América	06	Resto de América	Segundo grado	77
+04	La Ribagorza	América	06	Resto de América	Tercer grado	11
+04	La Ribagorza	Asia	07	Asia	Segundo grado	1
+04	La Ribagorza	Asia	07	Asia	Tercer grado	2
+04	La Ribagorza	Oceanía	08	Oceanía	Segundo grado	3
+05	Cinco Villas	Europa	01	UE-15	Analfabetos	3
+05	Cinco Villas	Europa	01	UE-15	Sin estudios	4
+05	Cinco Villas	Europa	01	UE-15	Primer grado	9
+05	Cinco Villas	Europa	01	UE-15	Segundo grado	29
+05	Cinco Villas	Europa	01	UE-15	Tercer grado	11
+05	Cinco Villas	Europa	02	Resto de Europa	Analfabetos	22
+05	Cinco Villas	Europa	02	Resto de Europa	Sin estudios	33
+05	Cinco Villas	Europa	02	Resto de Europa	Primer grado	131
+05	Cinco Villas	Europa	02	Resto de Europa	Segundo grado	161
+05	Cinco Villas	Europa	02	Resto de Europa	Tercer grado	20
+05	Cinco Villas	África	03	Magreb	Analfabetos	14
+05	Cinco Villas	África	03	Magreb	Sin estudios	42
+05	Cinco Villas	África	03	Magreb	Primer grado	120
+05	Cinco Villas	África	03	Magreb	Segundo grado	205
+05	Cinco Villas	África	03	Magreb	Tercer grado	29
+05	Cinco Villas	África	04	Resto de África	Analfabetos	3
+05	Cinco Villas	África	04	Resto de África	Sin estudios	11
+05	Cinco Villas	África	04	Resto de África	Primer grado	17
+05	Cinco Villas	África	04	Resto de África	Segundo grado	15
+05	Cinco Villas	América	05	América del Norte	Analfabetos	2
+05	Cinco Villas	América	05	América del Norte	Primer grado	1
+05	Cinco Villas	América	05	América del Norte	Segundo grado	2
+05	Cinco Villas	América	05	América del Norte	Tercer grado	1
+05	Cinco Villas	América	06	Resto de América	Analfabetos	26
+05	Cinco Villas	América	06	Resto de América	Sin estudios	38
+05	Cinco Villas	América	06	Resto de América	Primer grado	69
+05	Cinco Villas	América	06	Resto de América	Segundo grado	107
+05	Cinco Villas	América	06	Resto de América	Tercer grado	25
+06	Hoya de Huesca / Plana de Uesca	Europa	01	UE-15	Analfabetos	5
+06	Hoya de Huesca / Plana de Uesca	Europa	01	UE-15	Sin estudios	19
+06	Hoya de Huesca / Plana de Uesca	Europa	01	UE-15	Primer grado	30
+06	Hoya de Huesca / Plana de Uesca	Europa	01	UE-15	Segundo grado	72
+06	Hoya de Huesca / Plana de Uesca	Europa	01	UE-15	Tercer grado	49
+06	Hoya de Huesca / Plana de Uesca	Europa	02	Resto de Europa	Analfabetos	7
+06	Hoya de Huesca / Plana de Uesca	Europa	02	Resto de Europa	Sin estudios	16
+06	Hoya de Huesca / Plana de Uesca	Europa	02	Resto de Europa	Primer grado	30
+06	Hoya de Huesca / Plana de Uesca	Europa	02	Resto de Europa	Segundo grado	85
+06	Hoya de Huesca / Plana de Uesca	Europa	02	Resto de Europa	Tercer grado	28
+06	Hoya de Huesca / Plana de Uesca	África	03	Magreb	Analfabetos	11
+06	Hoya de Huesca / Plana de Uesca	África	03	Magreb	Sin estudios	54
+06	Hoya de Huesca / Plana de Uesca	África	03	Magreb	Primer grado	70
+06	Hoya de Huesca / Plana de Uesca	África	03	Magreb	Segundo grado	67
+06	Hoya de Huesca / Plana de Uesca	África	03	Magreb	Tercer grado	16
+06	Hoya de Huesca / Plana de Uesca	África	04	Resto de África	Analfabetos	33
+06	Hoya de Huesca / Plana de Uesca	África	04	Resto de África	Sin estudios	72
+06	Hoya de Huesca / Plana de Uesca	África	04	Resto de África	Primer grado	53
+06	Hoya de Huesca / Plana de Uesca	África	04	Resto de África	Segundo grado	86
+06	Hoya de Huesca / Plana de Uesca	África	04	Resto de África	Tercer grado	8
+06	Hoya de Huesca / Plana de Uesca	América	05	América del Norte	Analfabetos	2
+06	Hoya de Huesca / Plana de Uesca	América	05	América del Norte	Primer grado	4
+06	Hoya de Huesca / Plana de Uesca	América	05	América del Norte	Segundo grado	7
+06	Hoya de Huesca / Plana de Uesca	América	05	América del Norte	Tercer grado	8
+06	Hoya de Huesca / Plana de Uesca	América	06	Resto de América	Analfabetos	34
+06	Hoya de Huesca / Plana de Uesca	América	06	Resto de América	Sin estudios	53
+06	Hoya de Huesca / Plana de Uesca	América	06	Resto de América	Primer grado	105
+06	Hoya de Huesca / Plana de Uesca	América	06	Resto de América	Segundo grado	211
+06	Hoya de Huesca / Plana de Uesca	América	06	Resto de América	Tercer grado	43
+06	Hoya de Huesca / Plana de Uesca	Asia	07	Asia	Analfabetos	7
+06	Hoya de Huesca / Plana de Uesca	Asia	07	Asia	Sin estudios	8
+06	Hoya de Huesca / Plana de Uesca	Asia	07	Asia	Primer grado	16
+06	Hoya de Huesca / Plana de Uesca	Asia	07	Asia	Segundo grado	22
+06	Hoya de Huesca / Plana de Uesca	Asia	07	Asia	Tercer grado	6
+07	Somontano de Barbastro	Europa	01	UE-15	Analfabetos	4
+07	Somontano de Barbastro	Europa	01	UE-15	Sin estudios	4
+07	Somontano de Barbastro	Europa	01	UE-15	Primer grado	16
+07	Somontano de Barbastro	Europa	01	UE-15	Segundo grado	25
+07	Somontano de Barbastro	Europa	01	UE-15	Tercer grado	22
+07	Somontano de Barbastro	Europa	02	Resto de Europa	Analfabetos	6
+07	Somontano de Barbastro	Europa	02	Resto de Europa	Sin estudios	7
+07	Somontano de Barbastro	Europa	02	Resto de Europa	Primer grado	29
+07	Somontano de Barbastro	Europa	02	Resto de Europa	Segundo grado	48
+07	Somontano de Barbastro	Europa	02	Resto de Europa	Tercer grado	7
+07	Somontano de Barbastro	África	03	Magreb	Analfabetos	40
+07	Somontano de Barbastro	África	03	Magreb	Sin estudios	58
+07	Somontano de Barbastro	África	03	Magreb	Primer grado	71
+07	Somontano de Barbastro	África	03	Magreb	Segundo grado	43
+07	Somontano de Barbastro	África	03	Magreb	Tercer grado	3
+07	Somontano de Barbastro	África	04	Resto de África	Analfabetos	18
+07	Somontano de Barbastro	África	04	Resto de África	Sin estudios	19
+07	Somontano de Barbastro	África	04	Resto de África	Primer grado	8
+07	Somontano de Barbastro	África	04	Resto de África	Segundo grado	13
+07	Somontano de Barbastro	América	05	América del Norte	Sin estudios	1
+07	Somontano de Barbastro	América	05	América del Norte	Primer grado	1
+07	Somontano de Barbastro	América	05	América del Norte	Tercer grado	1
+07	Somontano de Barbastro	América	06	Resto de América	Analfabetos	16
+07	Somontano de Barbastro	América	06	Resto de América	Sin estudios	21
+07	Somontano de Barbastro	América	06	Resto de América	Primer grado	52
+07	Somontano de Barbastro	América	06	Resto de América	Segundo grado	96
+07	Somontano de Barbastro	América	06	Resto de América	Tercer grado	8
+07	Somontano de Barbastro	Asia	07	Asia	Analfabetos	5
+07	Somontano de Barbastro	Asia	07	Asia	Sin estudios	2
+07	Somontano de Barbastro	Asia	07	Asia	Primer grado	1
+07	Somontano de Barbastro	Asia	07	Asia	Segundo grado	6
+07	Somontano de Barbastro	Oceanía	08	Oceanía	Sin estudios	2
+08	Cinca Medio	Europa	01	UE-15	Sin estudios	1
+08	Cinca Medio	Europa	01	UE-15	Primer grado	9
+08	Cinca Medio	Europa	01	UE-15	Segundo grado	19
+08	Cinca Medio	Europa	01	UE-15	Tercer grado	5
+08	Cinca Medio	Europa	02	Resto de Europa	Analfabetos	9
+08	Cinca Medio	Europa	02	Resto de Europa	Sin estudios	31
+08	Cinca Medio	Europa	02	Resto de Europa	Primer grado	31
+08	Cinca Medio	Europa	02	Resto de Europa	Segundo grado	89
+08	Cinca Medio	Europa	02	Resto de Europa	Tercer grado	12
+08	Cinca Medio	África	03	Magreb	Analfabetos	53
+08	Cinca Medio	África	03	Magreb	Sin estudios	64
+08	Cinca Medio	África	03	Magreb	Primer grado	123
+08	Cinca Medio	África	03	Magreb	Segundo grado	143
+08	Cinca Medio	África	03	Magreb	Tercer grado	16
+08	Cinca Medio	África	04	Resto de África	Analfabetos	26
+08	Cinca Medio	África	04	Resto de África	Sin estudios	87
+08	Cinca Medio	África	04	Resto de África	Primer grado	81
+08	Cinca Medio	África	04	Resto de África	Segundo grado	63
+08	Cinca Medio	América	05	América del Norte	Primer grado	2
+08	Cinca Medio	América	05	América del Norte	Tercer grado	1
+08	Cinca Medio	América	06	Resto de América	Analfabetos	3
+08	Cinca Medio	América	06	Resto de América	Sin estudios	8
+08	Cinca Medio	América	06	Resto de América	Primer grado	15
+08	Cinca Medio	América	06	Resto de América	Segundo grado	48
+08	Cinca Medio	América	06	Resto de América	Tercer grado	5
+08	Cinca Medio	Asia	07	Asia	Analfabetos	2
+08	Cinca Medio	Asia	07	Asia	Primer grado	4
+08	Cinca Medio	Asia	07	Asia	Tercer grado	3
+08	Cinca Medio	Oceanía	08	Oceanía	Analfabetos	2
+08	Cinca Medio	Oceanía	08	Oceanía	Sin estudios	5
+08	Cinca Medio	Oceanía	08	Oceanía	Primer grado	3
+08	Cinca Medio	Oceanía	08	Oceanía	Segundo grado	5
+09	La Litera / La Llitera	Europa	01	UE-15	Sin estudios	5
+09	La Litera / La Llitera	Europa	01	UE-15	Primer grado	10
+09	La Litera / La Llitera	Europa	01	UE-15	Segundo grado	9
+09	La Litera / La Llitera	Europa	01	UE-15	Tercer grado	5
+09	La Litera / La Llitera	Europa	02	Resto de Europa	Analfabetos	6
+09	La Litera / La Llitera	Europa	02	Resto de Europa	Sin estudios	11
+09	La Litera / La Llitera	Europa	02	Resto de Europa	Primer grado	16
+09	La Litera / La Llitera	Europa	02	Resto de Europa	Segundo grado	44
+09	La Litera / La Llitera	Europa	02	Resto de Europa	Tercer grado	5
+09	La Litera / La Llitera	África	03	Magreb	Analfabetos	11
+09	La Litera / La Llitera	África	03	Magreb	Sin estudios	3
+09	La Litera / La Llitera	África	03	Magreb	Primer grado	20
+09	La Litera / La Llitera	África	03	Magreb	Segundo grado	22
+09	La Litera / La Llitera	África	03	Magreb	Tercer grado	3
+09	La Litera / La Llitera	África	04	Resto de África	Analfabetos	91
+09	La Litera / La Llitera	África	04	Resto de África	Sin estudios	92
+09	La Litera / La Llitera	África	04	Resto de África	Primer grado	32
+09	La Litera / La Llitera	África	04	Resto de África	Segundo grado	28
+09	La Litera / La Llitera	África	04	Resto de África	Tercer grado	6
+09	La Litera / La Llitera	América	05	América del Norte	Segundo grado	3
+09	La Litera / La Llitera	América	06	Resto de América	Analfabetos	6
+09	La Litera / La Llitera	América	06	Resto de América	Sin estudios	21
+09	La Litera / La Llitera	América	06	Resto de América	Primer grado	56
+09	La Litera / La Llitera	América	06	Resto de América	Segundo grado	72
+09	La Litera / La Llitera	América	06	Resto de América	Tercer grado	8
+09	La Litera / La Llitera	Asia	07	Asia	Primer grado	2
+09	La Litera / La Llitera	Asia	07	Asia	Segundo grado	4
+09	La Litera / La Llitera	Asia	07	Asia	Tercer grado	1
+09	La Litera / La Llitera	Oceanía	08	Oceanía	Analfabetos	1
+09	La Litera / La Llitera	Oceanía	08	Oceanía	Primer grado	1
+09	La Litera / La Llitera	Oceanía	08	Oceanía	Tercer grado	1
+10	Los Monegros	Europa	01	UE-15	Analfabetos	1
+10	Los Monegros	Europa	01	UE-15	Sin estudios	4
+10	Los Monegros	Europa	01	UE-15	Primer grado	6
+10	Los Monegros	Europa	01	UE-15	Segundo grado	18
+10	Los Monegros	Europa	01	UE-15	Tercer grado	9
+10	Los Monegros	Europa	02	Resto de Europa	Analfabetos	8
+10	Los Monegros	Europa	02	Resto de Europa	Sin estudios	17
+10	Los Monegros	Europa	02	Resto de Europa	Primer grado	26
+10	Los Monegros	Europa	02	Resto de Europa	Segundo grado	67
+10	Los Monegros	Europa	02	Resto de Europa	Tercer grado	9
+10	Los Monegros	África	03	Magreb	Analfabetos	20
+10	Los Monegros	África	03	Magreb	Sin estudios	24
+10	Los Monegros	África	03	Magreb	Primer grado	31
+10	Los Monegros	África	03	Magreb	Segundo grado	16
+10	Los Monegros	África	03	Magreb	Tercer grado	1
+10	Los Monegros	África	04	Resto de África	Analfabetos	1
+10	Los Monegros	África	04	Resto de África	Sin estudios	8
+10	Los Monegros	África	04	Resto de África	Primer grado	8
+10	Los Monegros	África	04	Resto de África	Segundo grado	10
+10	Los Monegros	América	05	América del Norte	Sin estudios	1
+10	Los Monegros	América	05	América del Norte	Primer grado	2
+10	Los Monegros	América	05	América del Norte	Segundo grado	3
+10	Los Monegros	América	05	América del Norte	Tercer grado	1
+10	Los Monegros	América	06	Resto de América	Analfabetos	6
+10	Los Monegros	América	06	Resto de América	Sin estudios	20
+10	Los Monegros	América	06	Resto de América	Primer grado	34
+10	Los Monegros	América	06	Resto de América	Segundo grado	61
+10	Los Monegros	América	06	Resto de América	Tercer grado	6
+11	Bajo Cinca / Baix Cinca	Europa	01	UE-15	Sin estudios	1
+11	Bajo Cinca / Baix Cinca	Europa	01	UE-15	Primer grado	5
+11	Bajo Cinca / Baix Cinca	Europa	01	UE-15	Segundo grado	13
+11	Bajo Cinca / Baix Cinca	Europa	01	UE-15	Tercer grado	2
+11	Bajo Cinca / Baix Cinca	Europa	02	Resto de Europa	Analfabetos	14
+11	Bajo Cinca / Baix Cinca	Europa	02	Resto de Europa	Sin estudios	27
+11	Bajo Cinca / Baix Cinca	Europa	02	Resto de Europa	Primer grado	59
+11	Bajo Cinca / Baix Cinca	Europa	02	Resto de Europa	Segundo grado	156
+11	Bajo Cinca / Baix Cinca	Europa	02	Resto de Europa	Tercer grado	7
+11	Bajo Cinca / Baix Cinca	África	03	Magreb	Analfabetos	30
+11	Bajo Cinca / Baix Cinca	África	03	Magreb	Sin estudios	63
+11	Bajo Cinca / Baix Cinca	África	03	Magreb	Primer grado	99
+11	Bajo Cinca / Baix Cinca	África	03	Magreb	Segundo grado	172
+11	Bajo Cinca / Baix Cinca	África	03	Magreb	Tercer grado	6
+11	Bajo Cinca / Baix Cinca	África	04	Resto de África	Analfabetos	45
+11	Bajo Cinca / Baix Cinca	África	04	Resto de África	Sin estudios	22
+11	Bajo Cinca / Baix Cinca	África	04	Resto de África	Primer grado	17
+11	Bajo Cinca / Baix Cinca	África	04	Resto de África	Segundo grado	20
+11	Bajo Cinca / Baix Cinca	África	04	Resto de África	Tercer grado	1
+11	Bajo Cinca / Baix Cinca	América	05	América del Norte	Analfabetos	1
+11	Bajo Cinca / Baix Cinca	América	05	América del Norte	Sin estudios	3
+11	Bajo Cinca / Baix Cinca	América	05	América del Norte	Segundo grado	2
+11	Bajo Cinca / Baix Cinca	América	06	Resto de América	Analfabetos	15
+11	Bajo Cinca / Baix Cinca	América	06	Resto de América	Sin estudios	5
+11	Bajo Cinca / Baix Cinca	América	06	Resto de América	Primer grado	18
+11	Bajo Cinca / Baix Cinca	América	06	Resto de América	Segundo grado	59
+11	Bajo Cinca / Baix Cinca	América	06	Resto de América	Tercer grado	1
+11	Bajo Cinca / Baix Cinca	Asia	07	Asia	Sin estudios	1
+11	Bajo Cinca / Baix Cinca	Asia	07	Asia	Primer grado	4
+11	Bajo Cinca / Baix Cinca	Asia	07	Asia	Segundo grado	3
+12	Tarazona y el Moncayo	Europa	01	UE-15	Sin estudios	2
+12	Tarazona y el Moncayo	Europa	01	UE-15	Segundo grado	6
+12	Tarazona y el Moncayo	Europa	01	UE-15	Tercer grado	3
+12	Tarazona y el Moncayo	Europa	02	Resto de Europa	Primer grado	5
+12	Tarazona y el Moncayo	Europa	02	Resto de Europa	Segundo grado	15
+12	Tarazona y el Moncayo	Europa	02	Resto de Europa	Tercer grado	1
+12	Tarazona y el Moncayo	África	03	Magreb	Analfabetos	9
+12	Tarazona y el Moncayo	África	03	Magreb	Sin estudios	12
+12	Tarazona y el Moncayo	África	03	Magreb	Primer grado	30
+12	Tarazona y el Moncayo	África	03	Magreb	Segundo grado	22
+12	Tarazona y el Moncayo	África	03	Magreb	Tercer grado	3
+12	Tarazona y el Moncayo	África	04	Resto de África	Sin estudios	1
+12	Tarazona y el Moncayo	África	04	Resto de África	Primer grado	1
+12	Tarazona y el Moncayo	África	04	Resto de África	Segundo grado	2
+12	Tarazona y el Moncayo	América	06	Resto de América	Analfabetos	8
+12	Tarazona y el Moncayo	América	06	Resto de América	Sin estudios	18
+12	Tarazona y el Moncayo	América	06	Resto de América	Primer grado	43
+12	Tarazona y el Moncayo	América	06	Resto de América	Segundo grado	82
+12	Tarazona y el Moncayo	América	06	Resto de América	Tercer grado	21
+12	Tarazona y el Moncayo	Asia	07	Asia	Analfabetos	2
+12	Tarazona y el Moncayo	Asia	07	Asia	Sin estudios	1
+12	Tarazona y el Moncayo	Asia	07	Asia	Segundo grado	2
+12	Tarazona y el Moncayo	Asia	07	Asia	Tercer grado	1
+13	Campo de Borja	Europa	01	UE-15	Analfabetos	3
+13	Campo de Borja	Europa	01	UE-15	Primer grado	5
+13	Campo de Borja	Europa	01	UE-15	Segundo grado	18
+13	Campo de Borja	Europa	01	UE-15	Tercer grado	9
+13	Campo de Borja	Europa	02	Resto de Europa	Analfabetos	19
+13	Campo de Borja	Europa	02	Resto de Europa	Sin estudios	18
+13	Campo de Borja	Europa	02	Resto de Europa	Primer grado	50
+13	Campo de Borja	Europa	02	Resto de Europa	Segundo grado	132
+13	Campo de Borja	Europa	02	Resto de Europa	Tercer grado	14
+13	Campo de Borja	África	03	Magreb	Analfabetos	17
+13	Campo de Borja	África	03	Magreb	Sin estudios	13
+13	Campo de Borja	África	03	Magreb	Primer grado	25
+13	Campo de Borja	África	03	Magreb	Segundo grado	62
+13	Campo de Borja	África	03	Magreb	Tercer grado	10
+13	Campo de Borja	África	04	Resto de África	Primer grado	1
+13	Campo de Borja	América	06	Resto de América	Analfabetos	4
+13	Campo de Borja	América	06	Resto de América	Sin estudios	7
+13	Campo de Borja	América	06	Resto de América	Primer grado	17
+13	Campo de Borja	América	06	Resto de América	Segundo grado	27
+13	Campo de Borja	América	06	Resto de América	Tercer grado	7
+14	Aranda	Europa	01	UE-15	Primer grado	3
+14	Aranda	Europa	01	UE-15	Segundo grado	1
+14	Aranda	Europa	01	UE-15	Tercer grado	1
+14	Aranda	Europa	02	Resto de Europa	Analfabetos	2
+14	Aranda	Europa	02	Resto de Europa	Sin estudios	12
+14	Aranda	Europa	02	Resto de Europa	Primer grado	10
+14	Aranda	Europa	02	Resto de Europa	Segundo grado	25
+14	Aranda	África	03	Magreb	Analfabetos	12
+14	Aranda	África	03	Magreb	Sin estudios	24
+14	Aranda	África	03	Magreb	Primer grado	28
+14	Aranda	África	03	Magreb	Segundo grado	28
+14	Aranda	África	03	Magreb	Tercer grado	4
+14	Aranda	América	05	América del Norte	Primer grado	1
+14	Aranda	América	06	Resto de América	Analfabetos	3
+14	Aranda	América	06	Resto de América	Sin estudios	7
+14	Aranda	América	06	Resto de América	Primer grado	15
+14	Aranda	América	06	Resto de América	Segundo grado	27
+14	Aranda	América	06	Resto de América	Tercer grado	6
+15	Ribera Alta del Ebro	Europa	01	UE-15	Analfabetos	2
+15	Ribera Alta del Ebro	Europa	01	UE-15	Sin estudios	8
+15	Ribera Alta del Ebro	Europa	01	UE-15	Primer grado	18
+15	Ribera Alta del Ebro	Europa	01	UE-15	Segundo grado	31
+15	Ribera Alta del Ebro	Europa	01	UE-15	Tercer grado	7
+15	Ribera Alta del Ebro	Europa	02	Resto de Europa	Analfabetos	9
+15	Ribera Alta del Ebro	Europa	02	Resto de Europa	Sin estudios	15
+15	Ribera Alta del Ebro	Europa	02	Resto de Europa	Primer grado	48
+15	Ribera Alta del Ebro	Europa	02	Resto de Europa	Segundo grado	112
+15	Ribera Alta del Ebro	Europa	02	Resto de Europa	Tercer grado	11
+15	Ribera Alta del Ebro	África	03	Magreb	Analfabetos	19
+15	Ribera Alta del Ebro	África	03	Magreb	Sin estudios	26
+15	Ribera Alta del Ebro	África	03	Magreb	Primer grado	37
+15	Ribera Alta del Ebro	África	03	Magreb	Segundo grado	52
+15	Ribera Alta del Ebro	África	03	Magreb	Tercer grado	19
+15	Ribera Alta del Ebro	África	04	Resto de África	Segundo grado	4
+15	Ribera Alta del Ebro	África	04	Resto de África	Tercer grado	1
+15	Ribera Alta del Ebro	América	05	América del Norte	Tercer grado	2
+15	Ribera Alta del Ebro	América	06	Resto de América	Analfabetos	7
+15	Ribera Alta del Ebro	América	06	Resto de América	Sin estudios	5
+15	Ribera Alta del Ebro	América	06	Resto de América	Primer grado	14
+15	Ribera Alta del Ebro	América	06	Resto de América	Segundo grado	59
+15	Ribera Alta del Ebro	América	06	Resto de América	Tercer grado	12
+15	Ribera Alta del Ebro	Asia	07	Asia	Primer grado	3
+15	Ribera Alta del Ebro	Asia	07	Asia	Segundo grado	5
+15	Ribera Alta del Ebro	Asia	07	Asia	Tercer grado	1
+16	Valdejalón	Europa	01	UE-15	Analfabetos	2
+16	Valdejalón	Europa	01	UE-15	Sin estudios	8
+16	Valdejalón	Europa	01	UE-15	Primer grado	16
+16	Valdejalón	Europa	01	UE-15	Segundo grado	18
+16	Valdejalón	Europa	01	UE-15	Tercer grado	3
+16	Valdejalón	Europa	02	Resto de Europa	Analfabetos	26
+16	Valdejalón	Europa	02	Resto de Europa	Sin estudios	97
+16	Valdejalón	Europa	02	Resto de Europa	Primer grado	117
+16	Valdejalón	Europa	02	Resto de Europa	Segundo grado	295
+16	Valdejalón	Europa	02	Resto de Europa	Tercer grado	28
+16	Valdejalón	África	03	Magreb	Analfabetos	61
+16	Valdejalón	África	03	Magreb	Sin estudios	67
+16	Valdejalón	África	03	Magreb	Primer grado	98
+16	Valdejalón	África	03	Magreb	Segundo grado	187
+16	Valdejalón	África	03	Magreb	Tercer grado	13
+16	Valdejalón	África	04	Resto de África	Analfabetos	3
+16	Valdejalón	África	04	Resto de África	Sin estudios	2
+16	Valdejalón	África	04	Resto de África	Primer grado	5
+16	Valdejalón	África	04	Resto de África	Segundo grado	14
+16	Valdejalón	África	04	Resto de África	Tercer grado	1
+16	Valdejalón	América	05	América del Norte	Analfabetos	2
+16	Valdejalón	América	05	América del Norte	Segundo grado	1
+16	Valdejalón	América	06	Resto de América	Analfabetos	13
+16	Valdejalón	América	06	Resto de América	Sin estudios	15
+16	Valdejalón	América	06	Resto de América	Primer grado	32
+16	Valdejalón	América	06	Resto de América	Segundo grado	60
+16	Valdejalón	América	06	Resto de América	Tercer grado	6
+16	Valdejalón	Asia	07	Asia	Segundo grado	2
+17	D.C. Zaragoza	Europa	01	UE-15	Analfabetos	140
+17	D.C. Zaragoza	Europa	01	UE-15	Sin estudios	158
+17	D.C. Zaragoza	Europa	01	UE-15	Primer grado	250
+17	D.C. Zaragoza	Europa	01	UE-15	Segundo grado	759
+17	D.C. Zaragoza	Europa	01	UE-15	Tercer grado	529
+17	D.C. Zaragoza	Europa	02	Resto de Europa	Analfabetos	133
+17	D.C. Zaragoza	Europa	02	Resto de Europa	Sin estudios	220
+17	D.C. Zaragoza	Europa	02	Resto de Europa	Primer grado	459
+17	D.C. Zaragoza	Europa	02	Resto de Europa	Segundo grado	1571
+17	D.C. Zaragoza	Europa	02	Resto de Europa	Tercer grado	407
+17	D.C. Zaragoza	África	03	Magreb	Analfabetos	418
+17	D.C. Zaragoza	África	03	Magreb	Sin estudios	482
+17	D.C. Zaragoza	África	03	Magreb	Primer grado	740
+17	D.C. Zaragoza	África	03	Magreb	Segundo grado	1215
+17	D.C. Zaragoza	África	03	Magreb	Tercer grado	222
+17	D.C. Zaragoza	África	04	Resto de África	Analfabetos	446
+17	D.C. Zaragoza	África	04	Resto de África	Sin estudios	545
+17	D.C. Zaragoza	África	04	Resto de África	Primer grado	758
+17	D.C. Zaragoza	África	04	Resto de África	Segundo grado	1210
+17	D.C. Zaragoza	África	04	Resto de África	Tercer grado	170
+17	D.C. Zaragoza	América	05	América del Norte	Analfabetos	14
+17	D.C. Zaragoza	América	05	América del Norte	Sin estudios	21
+17	D.C. Zaragoza	América	05	América del Norte	Primer grado	29
+17	D.C. Zaragoza	América	05	América del Norte	Segundo grado	135
+17	D.C. Zaragoza	América	05	América del Norte	Tercer grado	107
+17	D.C. Zaragoza	América	06	Resto de América	Analfabetos	786
+17	D.C. Zaragoza	América	06	Resto de América	Sin estudios	958
+17	D.C. Zaragoza	América	06	Resto de América	Primer grado	2004
+17	D.C. Zaragoza	América	06	Resto de América	Segundo grado	5209
+17	D.C. Zaragoza	América	06	Resto de América	Tercer grado	1096
+17	D.C. Zaragoza	Asia	07	Asia	Analfabetos	69
+17	D.C. Zaragoza	Asia	07	Asia	Sin estudios	76
+17	D.C. Zaragoza	Asia	07	Asia	Primer grado	179
+17	D.C. Zaragoza	Asia	07	Asia	Segundo grado	289
+17	D.C. Zaragoza	Asia	07	Asia	Tercer grado	53
+17	D.C. Zaragoza	Oceanía	08	Oceanía	Primer grado	2
+17	D.C. Zaragoza	Oceanía	08	Oceanía	Segundo grado	5
+17	D.C. Zaragoza	Oceanía	08	Oceanía	Tercer grado	3
+17	D.C. Zaragoza	 Apátridas y no consta	09	Apátridas y no consta	Analfabetos	1
+17	D.C. Zaragoza	 Apátridas y no consta	09	Apátridas y no consta	Primer grado	6
+17	D.C. Zaragoza	 Apátridas y no consta	09	Apátridas y no consta	Segundo grado	4
+17	D.C. Zaragoza	 Apátridas y no consta	09	Apátridas y no consta	Tercer grado	2
+18	Ribera Baja del Ebro	Europa	01	UE-15	Primer grado	3
+18	Ribera Baja del Ebro	Europa	01	UE-15	Segundo grado	8
+18	Ribera Baja del Ebro	Europa	01	UE-15	Tercer grado	2
+18	Ribera Baja del Ebro	Europa	02	Resto de Europa	Analfabetos	1
+18	Ribera Baja del Ebro	Europa	02	Resto de Europa	Sin estudios	3
+18	Ribera Baja del Ebro	Europa	02	Resto de Europa	Primer grado	5
+18	Ribera Baja del Ebro	Europa	02	Resto de Europa	Segundo grado	22
+18	Ribera Baja del Ebro	Europa	02	Resto de Europa	Tercer grado	1
+18	Ribera Baja del Ebro	África	03	Magreb	Analfabetos	9
+18	Ribera Baja del Ebro	África	03	Magreb	Sin estudios	5
+18	Ribera Baja del Ebro	África	03	Magreb	Primer grado	13
+18	Ribera Baja del Ebro	África	03	Magreb	Segundo grado	16
+18	Ribera Baja del Ebro	África	04	Resto de África	Analfabetos	4
+18	Ribera Baja del Ebro	África	04	Resto de África	Sin estudios	5
+18	Ribera Baja del Ebro	África	04	Resto de África	Primer grado	3
+18	Ribera Baja del Ebro	África	04	Resto de África	Segundo grado	1
+18	Ribera Baja del Ebro	América	05	América del Norte	Tercer grado	1
+18	Ribera Baja del Ebro	América	06	Resto de América	Analfabetos	3
+18	Ribera Baja del Ebro	América	06	Resto de América	Sin estudios	3
+18	Ribera Baja del Ebro	América	06	Resto de América	Primer grado	12
+18	Ribera Baja del Ebro	América	06	Resto de América	Segundo grado	24
+18	Ribera Baja del Ebro	América	06	Resto de América	Tercer grado	6
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Europa	01	UE-15	Analfabetos	1
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Europa	01	UE-15	Sin estudios	2
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Europa	01	UE-15	Primer grado	2
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Europa	01	UE-15	Segundo grado	15
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Europa	01	UE-15	Tercer grado	1
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Europa	02	Resto de Europa	Sin estudios	1
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Europa	02	Resto de Europa	Primer grado	2
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Europa	02	Resto de Europa	Segundo grado	13
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Europa	02	Resto de Europa	Tercer grado	1
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	África	03	Magreb	Analfabetos	37
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	África	03	Magreb	Sin estudios	34
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	África	03	Magreb	Primer grado	39
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	África	03	Magreb	Segundo grado	39
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	África	03	Magreb	Tercer grado	3
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	África	04	Resto de África	Analfabetos	8
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	África	04	Resto de África	Sin estudios	1
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	África	04	Resto de África	Primer grado	4
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	América	06	Resto de América	Analfabetos	3
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	América	06	Resto de América	Sin estudios	10
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	América	06	Resto de América	Primer grado	9
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	América	06	Resto de América	Segundo grado	12
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	América	06	Resto de América	Tercer grado	6
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Asia	07	Asia	Analfabetos	6
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Asia	07	Asia	Sin estudios	16
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Asia	07	Asia	Primer grado	18
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Asia	07	Asia	Segundo grado	36
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Asia	07	Asia	Tercer grado	3
+20	Comunidad de Calatayud	Europa	01	UE-15	Analfabetos	2
+20	Comunidad de Calatayud	Europa	01	UE-15	Sin estudios	1
+20	Comunidad de Calatayud	Europa	01	UE-15	Primer grado	13
+20	Comunidad de Calatayud	Europa	01	UE-15	Segundo grado	33
+20	Comunidad de Calatayud	Europa	01	UE-15	Tercer grado	13
+20	Comunidad de Calatayud	Europa	02	Resto de Europa	Analfabetos	50
+20	Comunidad de Calatayud	Europa	02	Resto de Europa	Sin estudios	83
+20	Comunidad de Calatayud	Europa	02	Resto de Europa	Primer grado	202
+20	Comunidad de Calatayud	Europa	02	Resto de Europa	Segundo grado	472
+20	Comunidad de Calatayud	Europa	02	Resto de Europa	Tercer grado	53
+20	Comunidad de Calatayud	África	03	Magreb	Analfabetos	23
+20	Comunidad de Calatayud	África	03	Magreb	Sin estudios	40
+20	Comunidad de Calatayud	África	03	Magreb	Primer grado	67
+20	Comunidad de Calatayud	África	03	Magreb	Segundo grado	102
+20	Comunidad de Calatayud	África	03	Magreb	Tercer grado	5
+20	Comunidad de Calatayud	África	04	Resto de África	Sin estudios	1
+20	Comunidad de Calatayud	África	04	Resto de África	Primer grado	1
+20	Comunidad de Calatayud	América	05	América del Norte	Analfabetos	1
+20	Comunidad de Calatayud	América	05	América del Norte	Sin estudios	1
+20	Comunidad de Calatayud	América	05	América del Norte	Primer grado	1
+20	Comunidad de Calatayud	América	05	América del Norte	Segundo grado	3
+20	Comunidad de Calatayud	América	05	América del Norte	Tercer grado	1
+20	Comunidad de Calatayud	América	06	Resto de América	Analfabetos	14
+20	Comunidad de Calatayud	América	06	Resto de América	Sin estudios	29
+20	Comunidad de Calatayud	América	06	Resto de América	Primer grado	51
+20	Comunidad de Calatayud	América	06	Resto de América	Segundo grado	113
+20	Comunidad de Calatayud	América	06	Resto de América	Tercer grado	17
+20	Comunidad de Calatayud	Asia	07	Asia	Analfabetos	1
+20	Comunidad de Calatayud	Asia	07	Asia	Sin estudios	2
+20	Comunidad de Calatayud	Asia	07	Asia	Primer grado	7
+20	Comunidad de Calatayud	Asia	07	Asia	Segundo grado	3
+20	Comunidad de Calatayud	Oceanía	08	Oceanía	Tercer grado	1
+21	Campo de Cariñena	Europa	01	UE-15	Sin estudios	1
+21	Campo de Cariñena	Europa	01	UE-15	Primer grado	8
+21	Campo de Cariñena	Europa	01	UE-15	Segundo grado	21
+21	Campo de Cariñena	Europa	01	UE-15	Tercer grado	2
+21	Campo de Cariñena	Europa	02	Resto de Europa	Analfabetos	19
+21	Campo de Cariñena	Europa	02	Resto de Europa	Sin estudios	40
+21	Campo de Cariñena	Europa	02	Resto de Europa	Primer grado	32
+21	Campo de Cariñena	Europa	02	Resto de Europa	Segundo grado	295
+21	Campo de Cariñena	Europa	02	Resto de Europa	Tercer grado	22
+21	Campo de Cariñena	África	03	Magreb	Analfabetos	4
+21	Campo de Cariñena	África	03	Magreb	Sin estudios	22
+21	Campo de Cariñena	África	03	Magreb	Primer grado	36
+21	Campo de Cariñena	África	03	Magreb	Segundo grado	93
+21	Campo de Cariñena	África	03	Magreb	Tercer grado	16
+21	Campo de Cariñena	África	04	Resto de África	Sin estudios	8
+21	Campo de Cariñena	África	04	Resto de África	Primer grado	18
+21	Campo de Cariñena	África	04	Resto de África	Segundo grado	145
+21	Campo de Cariñena	África	04	Resto de África	Tercer grado	9
+21	Campo de Cariñena	América	06	Resto de América	Analfabetos	7
+21	Campo de Cariñena	América	06	Resto de América	Sin estudios	2
+21	Campo de Cariñena	América	06	Resto de América	Primer grado	11
+21	Campo de Cariñena	América	06	Resto de América	Segundo grado	35
+21	Campo de Cariñena	América	06	Resto de América	Tercer grado	3
+21	Campo de Cariñena	Asia	07	Asia	Segundo grado	1
+22	Campo de Belchite	Europa	01	UE-15	Primer grado	1
+22	Campo de Belchite	Europa	01	UE-15	Segundo grado	7
+22	Campo de Belchite	Europa	02	Resto de Europa	Analfabetos	1
+22	Campo de Belchite	Europa	02	Resto de Europa	Sin estudios	1
+22	Campo de Belchite	Europa	02	Resto de Europa	Primer grado	3
+22	Campo de Belchite	Europa	02	Resto de Europa	Segundo grado	13
+22	Campo de Belchite	Europa	02	Resto de Europa	Tercer grado	1
+22	Campo de Belchite	África	03	Magreb	Analfabetos	3
+22	Campo de Belchite	África	03	Magreb	Sin estudios	9
+22	Campo de Belchite	África	03	Magreb	Primer grado	1
+22	Campo de Belchite	África	03	Magreb	Segundo grado	5
+22	Campo de Belchite	América	06	Resto de América	Sin estudios	1
+22	Campo de Belchite	América	06	Resto de América	Primer grado	2
+22	Campo de Belchite	América	06	Resto de América	Segundo grado	3
+22	Campo de Belchite	América	06	Resto de América	Tercer grado	6
+23	Bajo Martín	Europa	01	UE-15	Sin estudios	1
+23	Bajo Martín	Europa	01	UE-15	Primer grado	2
+23	Bajo Martín	Europa	01	UE-15	Segundo grado	8
+23	Bajo Martín	Europa	02	Resto de Europa	Analfabetos	1
+23	Bajo Martín	Europa	02	Resto de Europa	Primer grado	3
+23	Bajo Martín	Europa	02	Resto de Europa	Segundo grado	14
+23	Bajo Martín	Europa	02	Resto de Europa	Tercer grado	2
+23	Bajo Martín	África	03	Magreb	Analfabetos	3
+23	Bajo Martín	África	03	Magreb	Sin estudios	5
+23	Bajo Martín	África	03	Magreb	Primer grado	17
+23	Bajo Martín	África	03	Magreb	Segundo grado	26
+23	Bajo Martín	África	03	Magreb	Tercer grado	3
+23	Bajo Martín	África	04	Resto de África	Sin estudios	2
+23	Bajo Martín	África	04	Resto de África	Primer grado	7
+23	Bajo Martín	América	06	Resto de América	Analfabetos	2
+23	Bajo Martín	América	06	Resto de América	Sin estudios	9
+23	Bajo Martín	América	06	Resto de América	Primer grado	8
+23	Bajo Martín	América	06	Resto de América	Segundo grado	16
+23	Bajo Martín	América	06	Resto de América	Tercer grado	2
+24	Campo de Daroca	Europa	01	UE-15	Sin estudios	1
+24	Campo de Daroca	Europa	01	UE-15	Primer grado	2
+24	Campo de Daroca	Europa	01	UE-15	Segundo grado	2
+24	Campo de Daroca	Europa	01	UE-15	Tercer grado	1
+24	Campo de Daroca	Europa	02	Resto de Europa	Primer grado	2
+24	Campo de Daroca	Europa	02	Resto de Europa	Segundo grado	2
+24	Campo de Daroca	Europa	02	Resto de Europa	Tercer grado	2
+24	Campo de Daroca	África	03	Magreb	Sin estudios	2
+24	Campo de Daroca	África	03	Magreb	Primer grado	1
+24	Campo de Daroca	África	03	Magreb	Segundo grado	4
+24	Campo de Daroca	América	06	Resto de América	Analfabetos	3
+24	Campo de Daroca	América	06	Resto de América	Sin estudios	3
+24	Campo de Daroca	América	06	Resto de América	Primer grado	9
+24	Campo de Daroca	América	06	Resto de América	Segundo grado	15
+24	Campo de Daroca	América	06	Resto de América	Tercer grado	1
+25	Jiloca	Europa	01	UE-15	Analfabetos	1
+25	Jiloca	Europa	01	UE-15	Primer grado	5
+25	Jiloca	Europa	01	UE-15	Segundo grado	6
+25	Jiloca	Europa	01	UE-15	Tercer grado	1
+25	Jiloca	Europa	02	Resto de Europa	Analfabetos	9
+25	Jiloca	Europa	02	Resto de Europa	Sin estudios	9
+25	Jiloca	Europa	02	Resto de Europa	Primer grado	23
+25	Jiloca	Europa	02	Resto de Europa	Segundo grado	54
+25	Jiloca	Europa	02	Resto de Europa	Tercer grado	10
+25	Jiloca	África	03	Magreb	Analfabetos	2
+25	Jiloca	África	03	Magreb	Sin estudios	27
+25	Jiloca	África	03	Magreb	Primer grado	18
+25	Jiloca	África	03	Magreb	Segundo grado	22
+25	Jiloca	África	03	Magreb	Tercer grado	3
+25	Jiloca	África	04	Resto de África	Sin estudios	1
+25	Jiloca	África	04	Resto de África	Segundo grado	3
+25	Jiloca	África	04	Resto de África	Tercer grado	1
+25	Jiloca	América	06	Resto de América	Analfabetos	11
+25	Jiloca	América	06	Resto de América	Sin estudios	17
+25	Jiloca	América	06	Resto de América	Primer grado	31
+25	Jiloca	América	06	Resto de América	Segundo grado	57
+25	Jiloca	América	06	Resto de América	Tercer grado	4
+25	Jiloca	Asia	07	Asia	Segundo grado	1
+26	Cuencas Mineras	Europa	01	UE-15	Segundo grado	5
+26	Cuencas Mineras	Europa	02	Resto de Europa	Primer grado	2
+26	Cuencas Mineras	Europa	02	Resto de Europa	Segundo grado	10
+26	Cuencas Mineras	Europa	02	Resto de Europa	Tercer grado	4
+26	Cuencas Mineras	África	03	Magreb	Analfabetos	11
+26	Cuencas Mineras	África	03	Magreb	Sin estudios	17
+26	Cuencas Mineras	África	03	Magreb	Primer grado	35
+26	Cuencas Mineras	África	03	Magreb	Segundo grado	22
+26	Cuencas Mineras	África	03	Magreb	Tercer grado	1
+26	Cuencas Mineras	América	06	Resto de América	Analfabetos	5
+26	Cuencas Mineras	América	06	Resto de América	Sin estudios	1
+26	Cuencas Mineras	América	06	Resto de América	Primer grado	11
+26	Cuencas Mineras	América	06	Resto de América	Segundo grado	13
+26	Cuencas Mineras	América	06	Resto de América	Tercer grado	2
+26	Cuencas Mineras	Asia	07	Asia	Analfabetos	10
+26	Cuencas Mineras	Asia	07	Asia	Sin estudios	7
+26	Cuencas Mineras	Asia	07	Asia	Primer grado	6
+26	Cuencas Mineras	Asia	07	Asia	Segundo grado	12
+27	Andorra-Sierra de Arcos	Europa	01	UE-15	Analfabetos	1
+27	Andorra-Sierra de Arcos	Europa	01	UE-15	Segundo grado	3
+27	Andorra-Sierra de Arcos	Europa	01	UE-15	Tercer grado	1
+27	Andorra-Sierra de Arcos	Europa	02	Resto de Europa	Analfabetos	5
+27	Andorra-Sierra de Arcos	Europa	02	Resto de Europa	Sin estudios	6
+27	Andorra-Sierra de Arcos	Europa	02	Resto de Europa	Primer grado	5
+27	Andorra-Sierra de Arcos	Europa	02	Resto de Europa	Segundo grado	36
+27	Andorra-Sierra de Arcos	Europa	02	Resto de Europa	Tercer grado	1
+27	Andorra-Sierra de Arcos	África	03	Magreb	Analfabetos	4
+27	Andorra-Sierra de Arcos	África	03	Magreb	Sin estudios	10
+27	Andorra-Sierra de Arcos	África	03	Magreb	Primer grado	6
+27	Andorra-Sierra de Arcos	África	03	Magreb	Segundo grado	3
+27	Andorra-Sierra de Arcos	América	06	Resto de América	Analfabetos	4
+27	Andorra-Sierra de Arcos	América	06	Resto de América	Sin estudios	3
+27	Andorra-Sierra de Arcos	América	06	Resto de América	Primer grado	10
+27	Andorra-Sierra de Arcos	América	06	Resto de América	Segundo grado	14
+27	Andorra-Sierra de Arcos	América	06	Resto de América	Tercer grado	2
+27	Andorra-Sierra de Arcos	Asia	07	Asia	Analfabetos	1
+27	Andorra-Sierra de Arcos	Asia	07	Asia	Sin estudios	7
+27	Andorra-Sierra de Arcos	Asia	07	Asia	Primer grado	6
+27	Andorra-Sierra de Arcos	Asia	07	Asia	Segundo grado	7
+28	Bajo Aragón	Europa	01	UE-15	Analfabetos	6
+28	Bajo Aragón	Europa	01	UE-15	Sin estudios	8
+28	Bajo Aragón	Europa	01	UE-15	Primer grado	17
+28	Bajo Aragón	Europa	01	UE-15	Segundo grado	18
+28	Bajo Aragón	Europa	01	UE-15	Tercer grado	5
+28	Bajo Aragón	Europa	02	Resto de Europa	Analfabetos	12
+28	Bajo Aragón	Europa	02	Resto de Europa	Sin estudios	27
+28	Bajo Aragón	Europa	02	Resto de Europa	Primer grado	51
+28	Bajo Aragón	Europa	02	Resto de Europa	Segundo grado	111
+28	Bajo Aragón	Europa	02	Resto de Europa	Tercer grado	21
+28	Bajo Aragón	África	03	Magreb	Analfabetos	31
+28	Bajo Aragón	África	03	Magreb	Sin estudios	41
+28	Bajo Aragón	África	03	Magreb	Primer grado	81
+28	Bajo Aragón	África	03	Magreb	Segundo grado	82
+28	Bajo Aragón	África	03	Magreb	Tercer grado	7
+28	Bajo Aragón	África	04	Resto de África	Analfabetos	9
+28	Bajo Aragón	África	04	Resto de África	Sin estudios	9
+28	Bajo Aragón	África	04	Resto de África	Primer grado	20
+28	Bajo Aragón	África	04	Resto de África	Segundo grado	11
+28	Bajo Aragón	América	05	América del Norte	Segundo grado	3
+28	Bajo Aragón	América	06	Resto de América	Analfabetos	29
+28	Bajo Aragón	América	06	Resto de América	Sin estudios	26
+28	Bajo Aragón	América	06	Resto de América	Primer grado	55
+28	Bajo Aragón	América	06	Resto de América	Segundo grado	85
+28	Bajo Aragón	América	06	Resto de América	Tercer grado	18
+28	Bajo Aragón	Asia	07	Asia	Analfabetos	1
+28	Bajo Aragón	Asia	07	Asia	Sin estudios	1
+28	Bajo Aragón	Asia	07	Asia	Primer grado	6
+28	Bajo Aragón	Asia	07	Asia	Segundo grado	6
+28	Bajo Aragón	Asia	07	Asia	Tercer grado	1
+29	Comunidad de Teruel	Europa	01	UE-15	Analfabetos	2
+29	Comunidad de Teruel	Europa	01	UE-15	Sin estudios	3
+29	Comunidad de Teruel	Europa	01	UE-15	Primer grado	7
+29	Comunidad de Teruel	Europa	01	UE-15	Segundo grado	29
+29	Comunidad de Teruel	Europa	01	UE-15	Tercer grado	7
+29	Comunidad de Teruel	Europa	02	Resto de Europa	Analfabetos	23
+29	Comunidad de Teruel	Europa	02	Resto de Europa	Sin estudios	7
+29	Comunidad de Teruel	Europa	02	Resto de Europa	Primer grado	29
+29	Comunidad de Teruel	Europa	02	Resto de Europa	Segundo grado	100
+29	Comunidad de Teruel	Europa	02	Resto de Europa	Tercer grado	10
+29	Comunidad de Teruel	África	03	Magreb	Analfabetos	26
+29	Comunidad de Teruel	África	03	Magreb	Sin estudios	26
+29	Comunidad de Teruel	África	03	Magreb	Primer grado	42
+29	Comunidad de Teruel	África	03	Magreb	Segundo grado	42
+29	Comunidad de Teruel	África	03	Magreb	Tercer grado	3
+29	Comunidad de Teruel	África	04	Resto de África	Sin estudios	3
+29	Comunidad de Teruel	África	04	Resto de África	Primer grado	2
+29	Comunidad de Teruel	América	05	América del Norte	Tercer grado	1
+29	Comunidad de Teruel	América	06	Resto de América	Analfabetos	36
+29	Comunidad de Teruel	América	06	Resto de América	Sin estudios	32
+29	Comunidad de Teruel	América	06	Resto de América	Primer grado	103
+29	Comunidad de Teruel	América	06	Resto de América	Segundo grado	180
+29	Comunidad de Teruel	América	06	Resto de América	Tercer grado	21
+29	Comunidad de Teruel	Asia	07	Asia	Analfabetos	13
+29	Comunidad de Teruel	Asia	07	Asia	Sin estudios	9
+29	Comunidad de Teruel	Asia	07	Asia	Primer grado	9
+29	Comunidad de Teruel	Asia	07	Asia	Segundo grado	18
+29	Comunidad de Teruel	Asia	07	Asia	Tercer grado	2
+29	Comunidad de Teruel	Oceanía	08	Oceanía	Sin estudios	1
+30	Maestrazgo	Europa	01	UE-15	Analfabetos	1
+30	Maestrazgo	Europa	01	UE-15	Sin estudios	1
+30	Maestrazgo	Europa	01	UE-15	Primer grado	2
+30	Maestrazgo	Europa	01	UE-15	Segundo grado	12
+30	Maestrazgo	Europa	02	Resto de Europa	Analfabetos	1
+30	Maestrazgo	Europa	02	Resto de Europa	Sin estudios	1
+30	Maestrazgo	Europa	02	Resto de Europa	Primer grado	3
+30	Maestrazgo	Europa	02	Resto de Europa	Segundo grado	16
+30	Maestrazgo	Europa	02	Resto de Europa	Tercer grado	1
+30	Maestrazgo	África	03	Magreb	Analfabetos	5
+30	Maestrazgo	África	03	Magreb	Sin estudios	10
+30	Maestrazgo	África	03	Magreb	Primer grado	2
+30	Maestrazgo	África	03	Magreb	Segundo grado	5
+30	Maestrazgo	América	06	Resto de América	Primer grado	2
+30	Maestrazgo	América	06	Resto de América	Segundo grado	5
+30	Maestrazgo	América	06	Resto de América	Tercer grado	3
+30	Maestrazgo	Asia	07	Asia	Analfabetos	18
+30	Maestrazgo	Asia	07	Asia	Sin estudios	17
+30	Maestrazgo	Asia	07	Asia	Primer grado	1
+30	Maestrazgo	Asia	07	Asia	Segundo grado	2
+31	Sierra de Albarracín	Europa	01	UE-15	Sin estudios	1
+31	Sierra de Albarracín	Europa	01	UE-15	Primer grado	4
+31	Sierra de Albarracín	Europa	01	UE-15	Segundo grado	8
+31	Sierra de Albarracín	Europa	02	Resto de Europa	Analfabetos	3
+31	Sierra de Albarracín	Europa	02	Resto de Europa	Sin estudios	3
+31	Sierra de Albarracín	Europa	02	Resto de Europa	Primer grado	2
+31	Sierra de Albarracín	Europa	02	Resto de Europa	Segundo grado	3
+31	Sierra de Albarracín	Europa	02	Resto de Europa	Tercer grado	1
+31	Sierra de Albarracín	África	03	Magreb	Analfabetos	5
+31	Sierra de Albarracín	África	03	Magreb	Sin estudios	2
+31	Sierra de Albarracín	África	03	Magreb	Primer grado	2
+31	Sierra de Albarracín	África	03	Magreb	Segundo grado	10
+31	Sierra de Albarracín	África	03	Magreb	Tercer grado	1
+31	Sierra de Albarracín	América	06	Resto de América	Analfabetos	6
+31	Sierra de Albarracín	América	06	Resto de América	Sin estudios	5
+31	Sierra de Albarracín	América	06	Resto de América	Primer grado	4
+31	Sierra de Albarracín	América	06	Resto de América	Segundo grado	39
+31	Sierra de Albarracín	América	06	Resto de América	Tercer grado	4
+31	Sierra de Albarracín	Asia	07	Asia	Segundo grado	1
+32	Gúdar-Javalambre	Europa	01	UE-15	Analfabetos	1
+32	Gúdar-Javalambre	Europa	01	UE-15	Sin estudios	2
+32	Gúdar-Javalambre	Europa	01	UE-15	Primer grado	7
+32	Gúdar-Javalambre	Europa	01	UE-15	Segundo grado	16
+32	Gúdar-Javalambre	Europa	01	UE-15	Tercer grado	4
+32	Gúdar-Javalambre	Europa	02	Resto de Europa	Analfabetos	9
+32	Gúdar-Javalambre	Europa	02	Resto de Europa	Sin estudios	5
+32	Gúdar-Javalambre	Europa	02	Resto de Europa	Primer grado	18
+32	Gúdar-Javalambre	Europa	02	Resto de Europa	Segundo grado	31
+32	Gúdar-Javalambre	Europa	02	Resto de Europa	Tercer grado	7
+32	Gúdar-Javalambre	África	03	Magreb	Analfabetos	1
+32	Gúdar-Javalambre	África	03	Magreb	Sin estudios	17
+32	Gúdar-Javalambre	África	03	Magreb	Primer grado	23
+32	Gúdar-Javalambre	África	03	Magreb	Segundo grado	14
+32	Gúdar-Javalambre	África	03	Magreb	Tercer grado	5
+32	Gúdar-Javalambre	África	04	Resto de África	Segundo grado	2
+32	Gúdar-Javalambre	América	06	Resto de América	Analfabetos	15
+32	Gúdar-Javalambre	América	06	Resto de América	Sin estudios	17
+32	Gúdar-Javalambre	América	06	Resto de América	Primer grado	27
+32	Gúdar-Javalambre	América	06	Resto de América	Segundo grado	50
+32	Gúdar-Javalambre	América	06	Resto de América	Tercer grado	10
+32	Gúdar-Javalambre	Asia	07	Asia	Analfabetos	5
+32	Gúdar-Javalambre	Asia	07	Asia	Sin estudios	16
+32	Gúdar-Javalambre	Asia	07	Asia	Primer grado	13
+32	Gúdar-Javalambre	Asia	07	Asia	Segundo grado	5
+33	Matarraña / Matarranya	Europa	01	UE-15	Analfabetos	2
+33	Matarraña / Matarranya	Europa	01	UE-15	Primer grado	3
+33	Matarraña / Matarranya	Europa	01	UE-15	Segundo grado	16
+33	Matarraña / Matarranya	Europa	01	UE-15	Tercer grado	7
+33	Matarraña / Matarranya	Europa	02	Resto de Europa	Analfabetos	10
+33	Matarraña / Matarranya	Europa	02	Resto de Europa	Sin estudios	6
+33	Matarraña / Matarranya	Europa	02	Resto de Europa	Primer grado	15
+33	Matarraña / Matarranya	Europa	02	Resto de Europa	Segundo grado	59
+33	Matarraña / Matarranya	Europa	02	Resto de Europa	Tercer grado	9
+33	Matarraña / Matarranya	África	03	Magreb	Analfabetos	7
+33	Matarraña / Matarranya	África	03	Magreb	Sin estudios	4
+33	Matarraña / Matarranya	África	03	Magreb	Primer grado	16
+33	Matarraña / Matarranya	África	03	Magreb	Segundo grado	28
+33	Matarraña / Matarranya	África	03	Magreb	Tercer grado	1
+33	Matarraña / Matarranya	África	04	Resto de África	Sin estudios	3
+33	Matarraña / Matarranya	África	04	Resto de África	Primer grado	4
+33	Matarraña / Matarranya	América	05	América del Norte	Segundo grado	1
+33	Matarraña / Matarranya	América	06	Resto de América	Analfabetos	9
+33	Matarraña / Matarranya	América	06	Resto de América	Sin estudios	5
+33	Matarraña / Matarranya	América	06	Resto de América	Primer grado	10
+33	Matarraña / Matarranya	América	06	Resto de América	Segundo grado	19
+33	Matarraña / Matarranya	América	06	Resto de América	Tercer grado	3
+33	Matarraña / Matarranya	Oceanía	08	Oceanía	Segundo grado	1

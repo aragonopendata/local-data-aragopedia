@@ -1,23 +1,661 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-   <head>
-      <meta charset="UTF-8" />
-      <title>Oracle Analytics</title>
-      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-      <meta http-equiv="Expires" content="0" />
-      <meta http-equiv="Pragma" content="no-cache" />
-      <!-- mobile viewport -->
-      <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-      <!-- Set IE compatibility mode to most recent version (IE11) -->
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <!-- Load the resources required by login page -->
-      <script src="js/libs/require/require.js"></script>
-      <script src="js/loginhelper.js" type="text/javascript"></script>
-      <link href="/bi-security-login/css/loginhelper.css" rel="stylesheet" type="text/css"/>
-      <link href="/bi-security-login/css/libs/oj/v7.1.0/alta/oj-alta-min.css" rel="stylesheet" type="text/css"/>
-   </head>
-   <body onload="bitechLogin.setup();">
-   
-   </body>
-</html>
+Comarca código	Comarca nombre	Estructura hogar	Número hogares
+01	La Jacetania	Una mujer de 16 a 64 años	344
+01	La Jacetania	Un hombre de 16 a 64 años	686
+01	La Jacetania	Una mujer de 65 o más años	504
+01	La Jacetania	Un hombre de 65 o más años	245
+01	La Jacetania	Una mujer adulta con uno o más menores	113
+01	La Jacetania	Un hombre adulto con  uno o más menores	45
+01	La Jacetania	Dos adultos de 16 a 64 años, sin menores	603
+01	La Jacetania	Dos adultos, uno al menos de 65 años o más, sin menores	821
+01	La Jacetania	Dos adultos y un menor	395
+01	La Jacetania	Dos adultos y dos menores	366
+01	La Jacetania	Dos adultos y tres o más menores	64
+01	La Jacetania	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	370
+01	La Jacetania	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	142
+01	La Jacetania	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	36
+01	La Jacetania	Otro hogar de tres adultos, con o sin menores	417
+01	La Jacetania	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	345
+01	La Jacetania	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	51
+01	La Jacetania	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	7
+01	La Jacetania	Otro hogar de cuatro adultos, con o sin menores	278
+01	La Jacetania	Cinco o más adultos, con o sin menores	398
+02	Alto Gállego	Una mujer de 16 a 64 años	198
+02	Alto Gállego	Un hombre de 16 a 64 años	381
+02	Alto Gállego	Una mujer de 65 o más años	295
+02	Alto Gállego	Un hombre de 65 o más años	158
+02	Alto Gállego	Una mujer adulta con uno o más menores	49
+02	Alto Gállego	Un hombre adulto con  uno o más menores	25
+02	Alto Gállego	Dos adultos de 16 a 64 años, sin menores	416
+02	Alto Gállego	Dos adultos, uno al menos de 65 años o más, sin menores	622
+02	Alto Gállego	Dos adultos y un menor	308
+02	Alto Gállego	Dos adultos y dos menores	276
+02	Alto Gállego	Dos adultos y tres o más menores	36
+02	Alto Gállego	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	326
+02	Alto Gállego	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	159
+02	Alto Gállego	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	30
+02	Alto Gállego	Otro hogar de tres adultos, con o sin menores	313
+02	Alto Gállego	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	306
+02	Alto Gállego	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	25
+02	Alto Gállego	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	5
+02	Alto Gállego	Otro hogar de cuatro adultos, con o sin menores	199
+02	Alto Gállego	Cinco o más adultos, con o sin menores	273
+03	Sobrarbe	Una mujer de 16 a 64 años	102
+03	Sobrarbe	Un hombre de 16 a 64 años	341
+03	Sobrarbe	Una mujer de 65 o más años	180
+03	Sobrarbe	Un hombre de 65 o más años	128
+03	Sobrarbe	Una mujer adulta con uno o más menores	28
+03	Sobrarbe	Un hombre adulto con  uno o más menores	19
+03	Sobrarbe	Dos adultos de 16 a 64 años, sin menores	211
+03	Sobrarbe	Dos adultos, uno al menos de 65 años o más, sin menores	320
+03	Sobrarbe	Dos adultos y un menor	106
+03	Sobrarbe	Dos adultos y dos menores	108
+03	Sobrarbe	Dos adultos y tres o más menores	15
+03	Sobrarbe	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	94
+03	Sobrarbe	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	39
+03	Sobrarbe	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	13
+03	Sobrarbe	Otro hogar de tres adultos, con o sin menores	230
+03	Sobrarbe	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	86
+03	Sobrarbe	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	16
+03	Sobrarbe	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	5
+03	Sobrarbe	Otro hogar de cuatro adultos, con o sin menores	164
+03	Sobrarbe	Cinco o más adultos, con o sin menores	250
+04	La Ribagorza	Una mujer de 16 a 64 años	228
+04	La Ribagorza	Un hombre de 16 a 64 años	525
+04	La Ribagorza	Una mujer de 65 o más años	386
+04	La Ribagorza	Un hombre de 65 o más años	290
+04	La Ribagorza	Una mujer adulta con uno o más menores	59
+04	La Ribagorza	Un hombre adulto con  uno o más menores	34
+04	La Ribagorza	Dos adultos de 16 a 64 años, sin menores	373
+04	La Ribagorza	Dos adultos, uno al menos de 65 años o más, sin menores	653
+04	La Ribagorza	Dos adultos y un menor	198
+04	La Ribagorza	Dos adultos y dos menores	169
+04	La Ribagorza	Dos adultos y tres o más menores	21
+04	La Ribagorza	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	242
+04	La Ribagorza	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	66
+04	La Ribagorza	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	24
+04	La Ribagorza	Otro hogar de tres adultos, con o sin menores	388
+04	La Ribagorza	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	167
+04	La Ribagorza	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	22
+04	La Ribagorza	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	3
+04	La Ribagorza	Otro hogar de cuatro adultos, con o sin menores	265
+04	La Ribagorza	Cinco o más adultos, con o sin menores	345
+05	Cinco Villas	Una mujer de 16 a 64 años	350
+05	Cinco Villas	Un hombre de 16 a 64 años	817
+05	Cinco Villas	Una mujer de 65 o más años	1038
+05	Cinco Villas	Un hombre de 65 o más años	476
+05	Cinco Villas	Una mujer adulta con uno o más menores	124
+05	Cinco Villas	Un hombre adulto con  uno o más menores	47
+05	Cinco Villas	Dos adultos de 16 a 64 años, sin menores	1082
+05	Cinco Villas	Dos adultos, uno al menos de 65 años o más, sin menores	1789
+05	Cinco Villas	Dos adultos y un menor	791
+05	Cinco Villas	Dos adultos y dos menores	771
+05	Cinco Villas	Dos adultos y tres o más menores	82
+05	Cinco Villas	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	876
+05	Cinco Villas	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	395
+05	Cinco Villas	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	81
+05	Cinco Villas	Otro hogar de tres adultos, con o sin menores	857
+05	Cinco Villas	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	710
+05	Cinco Villas	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	115
+05	Cinco Villas	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	32
+05	Cinco Villas	Otro hogar de cuatro adultos, con o sin menores	460
+05	Cinco Villas	Cinco o más adultos, con o sin menores	695
+06	Hoya de Huesca / Plana de Uesca	Una mujer de 16 a 64 años	1035
+06	Hoya de Huesca / Plana de Uesca	Un hombre de 16 a 64 años	1483
+06	Hoya de Huesca / Plana de Uesca	Una mujer de 65 o más años	1782
+06	Hoya de Huesca / Plana de Uesca	Un hombre de 65 o más años	695
+06	Hoya de Huesca / Plana de Uesca	Una mujer adulta con uno o más menores	498
+06	Hoya de Huesca / Plana de Uesca	Un hombre adulto con  uno o más menores	162
+06	Hoya de Huesca / Plana de Uesca	Dos adultos de 16 a 64 años, sin menores	2108
+06	Hoya de Huesca / Plana de Uesca	Dos adultos, uno al menos de 65 años o más, sin menores	2960
+06	Hoya de Huesca / Plana de Uesca	Dos adultos y un menor	1578
+06	Hoya de Huesca / Plana de Uesca	Dos adultos y dos menores	1448
+06	Hoya de Huesca / Plana de Uesca	Dos adultos y tres o más menores	216
+06	Hoya de Huesca / Plana de Uesca	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	1746
+06	Hoya de Huesca / Plana de Uesca	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	680
+06	Hoya de Huesca / Plana de Uesca	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	122
+06	Hoya de Huesca / Plana de Uesca	Otro hogar de tres adultos, con o sin menores	1473
+06	Hoya de Huesca / Plana de Uesca	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	1606
+06	Hoya de Huesca / Plana de Uesca	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	159
+06	Hoya de Huesca / Plana de Uesca	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	35
+06	Hoya de Huesca / Plana de Uesca	Otro hogar de cuatro adultos, con o sin menores	772
+06	Hoya de Huesca / Plana de Uesca	Cinco o más adultos, con o sin menores	1143
+07	Somontano de Barbastro	Una mujer de 16 a 64 años	329
+07	Somontano de Barbastro	Un hombre de 16 a 64 años	553
+07	Somontano de Barbastro	Una mujer de 65 o más años	775
+07	Somontano de Barbastro	Un hombre de 65 o más años	367
+07	Somontano de Barbastro	Una mujer adulta con uno o más menores	151
+07	Somontano de Barbastro	Un hombre adulto con  uno o más menores	51
+07	Somontano de Barbastro	Dos adultos de 16 a 64 años, sin menores	672
+07	Somontano de Barbastro	Dos adultos, uno al menos de 65 años o más, sin menores	1257
+07	Somontano de Barbastro	Dos adultos y un menor	514
+07	Somontano de Barbastro	Dos adultos y dos menores	506
+07	Somontano de Barbastro	Dos adultos y tres o más menores	81
+07	Somontano de Barbastro	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	604
+07	Somontano de Barbastro	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	250
+07	Somontano de Barbastro	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	39
+07	Somontano de Barbastro	Otro hogar de tres adultos, con o sin menores	595
+07	Somontano de Barbastro	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	503
+07	Somontano de Barbastro	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	77
+07	Somontano de Barbastro	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	19
+07	Somontano de Barbastro	Otro hogar de cuatro adultos, con o sin menores	392
+07	Somontano de Barbastro	Cinco o más adultos, con o sin menores	487
+08	Cinca Medio	Una mujer de 16 a 64 años	228
+08	Cinca Medio	Un hombre de 16 a 64 años	480
+08	Cinca Medio	Una mujer de 65 o más años	605
+08	Cinca Medio	Un hombre de 65 o más años	244
+08	Cinca Medio	Una mujer adulta con uno o más menores	108
+08	Cinca Medio	Un hombre adulto con  uno o más menores	27
+08	Cinca Medio	Dos adultos de 16 a 64 años, sin menores	742
+08	Cinca Medio	Dos adultos, uno al menos de 65 años o más, sin menores	1234
+08	Cinca Medio	Dos adultos y un menor	618
+08	Cinca Medio	Dos adultos y dos menores	516
+08	Cinca Medio	Dos adultos y tres o más menores	63
+08	Cinca Medio	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	613
+08	Cinca Medio	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	259
+08	Cinca Medio	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	57
+08	Cinca Medio	Otro hogar de tres adultos, con o sin menores	571
+08	Cinca Medio	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	455
+08	Cinca Medio	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	72
+08	Cinca Medio	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	14
+08	Cinca Medio	Otro hogar de cuatro adultos, con o sin menores	375
+08	Cinca Medio	Cinco o más adultos, con o sin menores	480
+09	La Litera / La Llitera	Una mujer de 16 a 64 años	157
+09	La Litera / La Llitera	Un hombre de 16 a 64 años	355
+09	La Litera / La Llitera	Una mujer de 65 o más años	649
+09	La Litera / La Llitera	Un hombre de 65 o más años	281
+09	La Litera / La Llitera	Una mujer adulta con uno o más menores	62
+09	La Litera / La Llitera	Un hombre adulto con  uno o más menores	17
+09	La Litera / La Llitera	Dos adultos de 16 a 64 años, sin menores	550
+09	La Litera / La Llitera	Dos adultos, uno al menos de 65 años o más, sin menores	1111
+09	La Litera / La Llitera	Dos adultos y un menor	400
+09	La Litera / La Llitera	Dos adultos y dos menores	449
+09	La Litera / La Llitera	Dos adultos y tres o más menores	37
+09	La Litera / La Llitera	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	528
+09	La Litera / La Llitera	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	182
+09	La Litera / La Llitera	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	29
+09	La Litera / La Llitera	Otro hogar de tres adultos, con o sin menores	548
+09	La Litera / La Llitera	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	395
+09	La Litera / La Llitera	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	42
+09	La Litera / La Llitera	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	10
+09	La Litera / La Llitera	Otro hogar de cuatro adultos, con o sin menores	340
+09	La Litera / La Llitera	Cinco o más adultos, con o sin menores	459
+10	Los Monegros	Una mujer de 16 a 64 años	208
+10	Los Monegros	Un hombre de 16 a 64 años	557
+10	Los Monegros	Una mujer de 65 o más años	659
+10	Los Monegros	Un hombre de 65 o más años	360
+10	Los Monegros	Una mujer adulta con uno o más menores	66
+10	Los Monegros	Un hombre adulto con  uno o más menores	36
+10	Los Monegros	Dos adultos de 16 a 64 años, sin menores	451
+10	Los Monegros	Dos adultos, uno al menos de 65 años o más, sin menores	1270
+10	Los Monegros	Dos adultos y un menor	337
+10	Los Monegros	Dos adultos y dos menores	377
+10	Los Monegros	Dos adultos y tres o más menores	48
+10	Los Monegros	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	541
+10	Los Monegros	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	220
+10	Los Monegros	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	37
+10	Los Monegros	Otro hogar de tres adultos, con o sin menores	697
+10	Los Monegros	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	484
+10	Los Monegros	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	70
+10	Los Monegros	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	15
+10	Los Monegros	Otro hogar de cuatro adultos, con o sin menores	410
+10	Los Monegros	Cinco o más adultos, con o sin menores	592
+11	Bajo Cinca / Baix Cinca	Una mujer de 16 a 64 años	178
+11	Bajo Cinca / Baix Cinca	Un hombre de 16 a 64 años	467
+11	Bajo Cinca / Baix Cinca	Una mujer de 65 o más años	495
+11	Bajo Cinca / Baix Cinca	Un hombre de 65 o más años	202
+11	Bajo Cinca / Baix Cinca	Una mujer adulta con uno o más menores	99
+11	Bajo Cinca / Baix Cinca	Un hombre adulto con  uno o más menores	38
+11	Bajo Cinca / Baix Cinca	Dos adultos de 16 a 64 años, sin menores	667
+11	Bajo Cinca / Baix Cinca	Dos adultos, uno al menos de 65 años o más, sin menores	1082
+11	Bajo Cinca / Baix Cinca	Dos adultos y un menor	508
+11	Bajo Cinca / Baix Cinca	Dos adultos y dos menores	556
+11	Bajo Cinca / Baix Cinca	Dos adultos y tres o más menores	61
+11	Bajo Cinca / Baix Cinca	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	577
+11	Bajo Cinca / Baix Cinca	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	249
+11	Bajo Cinca / Baix Cinca	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	50
+11	Bajo Cinca / Baix Cinca	Otro hogar de tres adultos, con o sin menores	603
+11	Bajo Cinca / Baix Cinca	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	450
+11	Bajo Cinca / Baix Cinca	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	81
+11	Bajo Cinca / Baix Cinca	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	19
+11	Bajo Cinca / Baix Cinca	Otro hogar de cuatro adultos, con o sin menores	425
+11	Bajo Cinca / Baix Cinca	Cinco o más adultos, con o sin menores	620
+12	Tarazona y el Moncayo	Una mujer de 16 a 64 años	190
+12	Tarazona y el Moncayo	Un hombre de 16 a 64 años	319
+12	Tarazona y el Moncayo	Una mujer de 65 o más años	545
+12	Tarazona y el Moncayo	Un hombre de 65 o más años	211
+12	Tarazona y el Moncayo	Una mujer adulta con uno o más menores	76
+12	Tarazona y el Moncayo	Un hombre adulto con  uno o más menores	42
+12	Tarazona y el Moncayo	Dos adultos de 16 a 64 años, sin menores	440
+12	Tarazona y el Moncayo	Dos adultos, uno al menos de 65 años o más, sin menores	941
+12	Tarazona y el Moncayo	Dos adultos y un menor	312
+12	Tarazona y el Moncayo	Dos adultos y dos menores	362
+12	Tarazona y el Moncayo	Dos adultos y tres o más menores	44
+12	Tarazona y el Moncayo	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	438
+12	Tarazona y el Moncayo	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	166
+12	Tarazona y el Moncayo	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	28
+12	Tarazona y el Moncayo	Otro hogar de tres adultos, con o sin menores	367
+12	Tarazona y el Moncayo	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	343
+12	Tarazona y el Moncayo	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	35
+12	Tarazona y el Moncayo	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	6
+12	Tarazona y el Moncayo	Otro hogar de cuatro adultos, con o sin menores	159
+12	Tarazona y el Moncayo	Cinco o más adultos, con o sin menores	243
+13	Campo de Borja	Una mujer de 16 a 64 años	176
+13	Campo de Borja	Un hombre de 16 a 64 años	390
+13	Campo de Borja	Una mujer de 65 o más años	560
+13	Campo de Borja	Un hombre de 65 o más años	286
+13	Campo de Borja	Una mujer adulta con uno o más menores	58
+13	Campo de Borja	Un hombre adulto con  uno o más menores	50
+13	Campo de Borja	Dos adultos de 16 a 64 años, sin menores	481
+13	Campo de Borja	Dos adultos, uno al menos de 65 años o más, sin menores	900
+13	Campo de Borja	Dos adultos y un menor	330
+13	Campo de Borja	Dos adultos y dos menores	359
+13	Campo de Borja	Dos adultos y tres o más menores	39
+13	Campo de Borja	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	369
+13	Campo de Borja	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	158
+13	Campo de Borja	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	22
+13	Campo de Borja	Otro hogar de tres adultos, con o sin menores	374
+13	Campo de Borja	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	341
+13	Campo de Borja	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	48
+13	Campo de Borja	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	11
+13	Campo de Borja	Otro hogar de cuatro adultos, con o sin menores	179
+13	Campo de Borja	Cinco o más adultos, con o sin menores	234
+14	Aranda	Una mujer de 16 a 64 años	71
+14	Aranda	Un hombre de 16 a 64 años	169
+14	Aranda	Una mujer de 65 o más años	251
+14	Aranda	Un hombre de 65 o más años	116
+14	Aranda	Una mujer adulta con uno o más menores	30
+14	Aranda	Un hombre adulto con  uno o más menores	12
+14	Aranda	Dos adultos de 16 a 64 años, sin menores	273
+14	Aranda	Dos adultos, uno al menos de 65 años o más, sin menores	478
+14	Aranda	Dos adultos y un menor	237
+14	Aranda	Dos adultos y dos menores	237
+14	Aranda	Dos adultos y tres o más menores	21
+14	Aranda	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	214
+14	Aranda	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	102
+14	Aranda	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	14
+14	Aranda	Otro hogar de tres adultos, con o sin menores	198
+14	Aranda	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	203
+14	Aranda	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	34
+14	Aranda	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	8
+14	Aranda	Otro hogar de cuatro adultos, con o sin menores	81
+14	Aranda	Cinco o más adultos, con o sin menores	147
+15	Ribera Alta del Ebro	Una mujer de 16 a 64 años	215
+15	Ribera Alta del Ebro	Un hombre de 16 a 64 años	517
+15	Ribera Alta del Ebro	Una mujer de 65 o más años	713
+15	Ribera Alta del Ebro	Un hombre de 65 o más años	268
+15	Ribera Alta del Ebro	Una mujer adulta con uno o más menores	66
+15	Ribera Alta del Ebro	Un hombre adulto con  uno o más menores	36
+15	Ribera Alta del Ebro	Dos adultos de 16 a 64 años, sin menores	832
+15	Ribera Alta del Ebro	Dos adultos, uno al menos de 65 años o más, sin menores	1341
+15	Ribera Alta del Ebro	Dos adultos y un menor	647
+15	Ribera Alta del Ebro	Dos adultos y dos menores	598
+15	Ribera Alta del Ebro	Dos adultos y tres o más menores	72
+15	Ribera Alta del Ebro	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	670
+15	Ribera Alta del Ebro	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	289
+15	Ribera Alta del Ebro	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	50
+15	Ribera Alta del Ebro	Otro hogar de tres adultos, con o sin menores	509
+15	Ribera Alta del Ebro	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	449
+15	Ribera Alta del Ebro	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	73
+15	Ribera Alta del Ebro	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	16
+15	Ribera Alta del Ebro	Otro hogar de cuatro adultos, con o sin menores	295
+15	Ribera Alta del Ebro	Cinco o más adultos, con o sin menores	409
+16	Valdejalón	Una mujer de 16 a 64 años	240
+16	Valdejalón	Un hombre de 16 a 64 años	594
+16	Valdejalón	Una mujer de 65 o más años	727
+16	Valdejalón	Un hombre de 65 o más años	355
+16	Valdejalón	Una mujer adulta con uno o más menores	83
+16	Valdejalón	Un hombre adulto con  uno o más menores	37
+16	Valdejalón	Dos adultos de 16 a 64 años, sin menores	828
+16	Valdejalón	Dos adultos, uno al menos de 65 años o más, sin menores	1428
+16	Valdejalón	Dos adultos y un menor	602
+16	Valdejalón	Dos adultos y dos menores	563
+16	Valdejalón	Dos adultos y tres o más menores	88
+16	Valdejalón	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	632
+16	Valdejalón	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	235
+16	Valdejalón	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	66
+16	Valdejalón	Otro hogar de tres adultos, con o sin menores	572
+16	Valdejalón	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	516
+16	Valdejalón	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	73
+16	Valdejalón	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	23
+16	Valdejalón	Otro hogar de cuatro adultos, con o sin menores	279
+16	Valdejalón	Cinco o más adultos, con o sin menores	429
+17	D.C. Zaragoza	Una mujer de 16 a 64 años	12128
+17	D.C. Zaragoza	Un hombre de 16 a 64 años	13904
+17	D.C. Zaragoza	Una mujer de 65 o más años	19547
+17	D.C. Zaragoza	Un hombre de 65 o más años	4816
+17	D.C. Zaragoza	Una mujer adulta con uno o más menores	3789
+17	D.C. Zaragoza	Un hombre adulto con  uno o más menores	1034
+17	D.C. Zaragoza	Dos adultos de 16 a 64 años, sin menores	31500
+17	D.C. Zaragoza	Dos adultos, uno al menos de 65 años o más, sin menores	32352
+17	D.C. Zaragoza	Dos adultos y un menor	21043
+17	D.C. Zaragoza	Dos adultos y dos menores	17317
+17	D.C. Zaragoza	Dos adultos y tres o más menores	2158
+17	D.C. Zaragoza	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	21798
+17	D.C. Zaragoza	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	8348
+17	D.C. Zaragoza	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	1274
+17	D.C. Zaragoza	Otro hogar de tres adultos, con o sin menores	13696
+17	D.C. Zaragoza	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	18579
+17	D.C. Zaragoza	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	2050
+17	D.C. Zaragoza	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	383
+17	D.C. Zaragoza	Otro hogar de cuatro adultos, con o sin menores	5893
+17	D.C. Zaragoza	Cinco o más adultos, con o sin menores	9726
+18	Ribera Baja del Ebro	Una mujer de 16 a 64 años	143
+18	Ribera Baja del Ebro	Un hombre de 16 a 64 años	285
+18	Ribera Baja del Ebro	Una mujer de 65 o más años	385
+18	Ribera Baja del Ebro	Un hombre de 65 o más años	193
+18	Ribera Baja del Ebro	Una mujer adulta con uno o más menores	38
+18	Ribera Baja del Ebro	Un hombre adulto con  uno o más menores	34
+18	Ribera Baja del Ebro	Dos adultos de 16 a 64 años, sin menores	371
+18	Ribera Baja del Ebro	Dos adultos, uno al menos de 65 años o más, sin menores	686
+18	Ribera Baja del Ebro	Dos adultos y un menor	268
+18	Ribera Baja del Ebro	Dos adultos y dos menores	198
+18	Ribera Baja del Ebro	Dos adultos y tres o más menores	15
+18	Ribera Baja del Ebro	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	290
+18	Ribera Baja del Ebro	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	90
+18	Ribera Baja del Ebro	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	20
+18	Ribera Baja del Ebro	Otro hogar de tres adultos, con o sin menores	236
+18	Ribera Baja del Ebro	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	171
+18	Ribera Baja del Ebro	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	21
+18	Ribera Baja del Ebro	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	1
+18	Ribera Baja del Ebro	Otro hogar de cuatro adultos, con o sin menores	122
+18	Ribera Baja del Ebro	Cinco o más adultos, con o sin menores	150
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Una mujer de 16 a 64 años	144
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Un hombre de 16 a 64 años	292
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Una mujer de 65 o más años	512
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Un hombre de 65 o más años	222
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Una mujer adulta con uno o más menores	46
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Un hombre adulto con  uno o más menores	18
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Dos adultos de 16 a 64 años, sin menores	452
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Dos adultos, uno al menos de 65 años o más, sin menores	831
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Dos adultos y un menor	311
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Dos adultos y dos menores	299
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Dos adultos y tres o más menores	35
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	353
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	160
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	17
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Otro hogar de tres adultos, con o sin menores	343
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	265
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	42
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	11
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Otro hogar de cuatro adultos, con o sin menores	221
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Cinco o más adultos, con o sin menores	259
+20	Comunidad de Calatayud	Una mujer de 16 a 64 años	497
+20	Comunidad de Calatayud	Un hombre de 16 a 64 años	953
+20	Comunidad de Calatayud	Una mujer de 65 o más años	1880
+20	Comunidad de Calatayud	Un hombre de 65 o más años	839
+20	Comunidad de Calatayud	Una mujer adulta con uno o más menores	155
+20	Comunidad de Calatayud	Un hombre adulto con  uno o más menores	52
+20	Comunidad de Calatayud	Dos adultos de 16 a 64 años, sin menores	1265
+20	Comunidad de Calatayud	Dos adultos, uno al menos de 65 años o más, sin menores	3010
+20	Comunidad de Calatayud	Dos adultos y un menor	827
+20	Comunidad de Calatayud	Dos adultos y dos menores	862
+20	Comunidad de Calatayud	Dos adultos y tres o más menores	112
+20	Comunidad de Calatayud	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	1092
+20	Comunidad de Calatayud	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	364
+20	Comunidad de Calatayud	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	65
+20	Comunidad de Calatayud	Otro hogar de tres adultos, con o sin menores	1074
+20	Comunidad de Calatayud	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	851
+20	Comunidad de Calatayud	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	124
+20	Comunidad de Calatayud	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	20
+20	Comunidad de Calatayud	Otro hogar de cuatro adultos, con o sin menores	517
+20	Comunidad de Calatayud	Cinco o más adultos, con o sin menores	701
+21	Campo de Cariñena	Una mujer de 16 a 64 años	101
+21	Campo de Cariñena	Un hombre de 16 a 64 años	294
+21	Campo de Cariñena	Una mujer de 65 o más años	368
+21	Campo de Cariñena	Un hombre de 65 o más años	164
+21	Campo de Cariñena	Una mujer adulta con uno o más menores	29
+21	Campo de Cariñena	Un hombre adulto con  uno o más menores	8
+21	Campo de Cariñena	Dos adultos de 16 a 64 años, sin menores	310
+21	Campo de Cariñena	Dos adultos, uno al menos de 65 años o más, sin menores	709
+21	Campo de Cariñena	Dos adultos y un menor	186
+21	Campo de Cariñena	Dos adultos y dos menores	218
+21	Campo de Cariñena	Dos adultos y tres o más menores	25
+21	Campo de Cariñena	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	286
+21	Campo de Cariñena	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	104
+21	Campo de Cariñena	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	19
+21	Campo de Cariñena	Otro hogar de tres adultos, con o sin menores	316
+21	Campo de Cariñena	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	203
+21	Campo de Cariñena	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	33
+21	Campo de Cariñena	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	7
+21	Campo de Cariñena	Otro hogar de cuatro adultos, con o sin menores	154
+21	Campo de Cariñena	Cinco o más adultos, con o sin menores	242
+22	Campo de Belchite	Una mujer de 16 a 64 años	61
+22	Campo de Belchite	Un hombre de 16 a 64 años	159
+22	Campo de Belchite	Una mujer de 65 o más años	309
+22	Campo de Belchite	Un hombre de 65 o más años	161
+22	Campo de Belchite	Una mujer adulta con uno o más menores	21
+22	Campo de Belchite	Un hombre adulto con  uno o más menores	9
+22	Campo de Belchite	Dos adultos de 16 a 64 años, sin menores	186
+22	Campo de Belchite	Dos adultos, uno al menos de 65 años o más, sin menores	569
+22	Campo de Belchite	Dos adultos y un menor	101
+22	Campo de Belchite	Dos adultos y dos menores	91
+22	Campo de Belchite	Dos adultos y tres o más menores	7
+22	Campo de Belchite	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	159
+22	Campo de Belchite	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	42
+22	Campo de Belchite	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	5
+22	Campo de Belchite	Otro hogar de tres adultos, con o sin menores	175
+22	Campo de Belchite	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	115
+22	Campo de Belchite	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	6
+22	Campo de Belchite	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	2
+22	Campo de Belchite	Otro hogar de cuatro adultos, con o sin menores	82
+22	Campo de Belchite	Cinco o más adultos, con o sin menores	88
+23	Bajo Martín	Una mujer de 16 a 64 años	76
+23	Bajo Martín	Un hombre de 16 a 64 años	169
+23	Bajo Martín	Una mujer de 65 o más años	378
+23	Bajo Martín	Un hombre de 65 o más años	167
+23	Bajo Martín	Una mujer adulta con uno o más menores	19
+23	Bajo Martín	Un hombre adulto con  uno o más menores	6
+23	Bajo Martín	Dos adultos de 16 a 64 años, sin menores	216
+23	Bajo Martín	Dos adultos, uno al menos de 65 años o más, sin menores	634
+23	Bajo Martín	Dos adultos y un menor	155
+23	Bajo Martín	Dos adultos y dos menores	185
+23	Bajo Martín	Dos adultos y tres o más menores	23
+23	Bajo Martín	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	225
+23	Bajo Martín	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	75
+23	Bajo Martín	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	10
+23	Bajo Martín	Otro hogar de tres adultos, con o sin menores	186
+23	Bajo Martín	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	146
+23	Bajo Martín	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	18
+23	Bajo Martín	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	4
+23	Bajo Martín	Otro hogar de cuatro adultos, con o sin menores	93
+23	Bajo Martín	Cinco o más adultos, con o sin menores	119
+24	Campo de Daroca	Una mujer de 16 a 64 años	87
+24	Campo de Daroca	Un hombre de 16 a 64 años	244
+24	Campo de Daroca	Una mujer de 65 o más años	307
+24	Campo de Daroca	Un hombre de 65 o más años	147
+24	Campo de Daroca	Una mujer adulta con uno o más menores	23
+24	Campo de Daroca	Un hombre adulto con  uno o más menores	14
+24	Campo de Daroca	Dos adultos de 16 a 64 años, sin menores	198
+24	Campo de Daroca	Dos adultos, uno al menos de 65 años o más, sin menores	605
+24	Campo de Daroca	Dos adultos y un menor	97
+24	Campo de Daroca	Dos adultos y dos menores	116
+24	Campo de Daroca	Dos adultos y tres o más menores	7
+24	Campo de Daroca	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	185
+24	Campo de Daroca	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	41
+24	Campo de Daroca	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	7
+24	Campo de Daroca	Otro hogar de tres adultos, con o sin menores	222
+24	Campo de Daroca	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	133
+24	Campo de Daroca	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	11
+24	Campo de Daroca	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	5
+24	Campo de Daroca	Otro hogar de cuatro adultos, con o sin menores	107
+24	Campo de Daroca	Cinco o más adultos, con o sin menores	107
+25	Jiloca	Una mujer de 16 a 64 años	185
+25	Jiloca	Un hombre de 16 a 64 años	370
+25	Jiloca	Una mujer de 65 o más años	704
+25	Jiloca	Un hombre de 65 o más años	400
+25	Jiloca	Una mujer adulta con uno o más menores	65
+25	Jiloca	Un hombre adulto con  uno o más menores	23
+25	Jiloca	Dos adultos de 16 a 64 años, sin menores	365
+25	Jiloca	Dos adultos, uno al menos de 65 años o más, sin menores	1242
+25	Jiloca	Dos adultos y un menor	188
+25	Jiloca	Dos adultos y dos menores	312
+25	Jiloca	Dos adultos y tres o más menores	38
+25	Jiloca	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	408
+25	Jiloca	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	141
+25	Jiloca	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	20
+25	Jiloca	Otro hogar de tres adultos, con o sin menores	358
+25	Jiloca	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	261
+25	Jiloca	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	41
+25	Jiloca	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	10
+25	Jiloca	Otro hogar de cuatro adultos, con o sin menores	179
+25	Jiloca	Cinco o más adultos, con o sin menores	245
+26	Cuencas Mineras	Una mujer de 16 a 64 años	94
+26	Cuencas Mineras	Un hombre de 16 a 64 años	266
+26	Cuencas Mineras	Una mujer de 65 o más años	381
+26	Cuencas Mineras	Un hombre de 65 o más años	168
+26	Cuencas Mineras	Una mujer adulta con uno o más menores	20
+26	Cuencas Mineras	Un hombre adulto con  uno o más menores	16
+26	Cuencas Mineras	Dos adultos de 16 a 64 años, sin menores	299
+26	Cuencas Mineras	Dos adultos, uno al menos de 65 años o más, sin menores	673
+26	Cuencas Mineras	Dos adultos y un menor	189
+26	Cuencas Mineras	Dos adultos y dos menores	268
+26	Cuencas Mineras	Dos adultos y tres o más menores	32
+26	Cuencas Mineras	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	265
+26	Cuencas Mineras	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	117
+26	Cuencas Mineras	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	23
+26	Cuencas Mineras	Otro hogar de tres adultos, con o sin menores	236
+26	Cuencas Mineras	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	200
+26	Cuencas Mineras	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	46
+26	Cuencas Mineras	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	5
+26	Cuencas Mineras	Otro hogar de cuatro adultos, con o sin menores	118
+26	Cuencas Mineras	Cinco o más adultos, con o sin menores	169
+27	Andorra-Sierra de Arcos	Una mujer de 16 a 64 años	68
+27	Andorra-Sierra de Arcos	Un hombre de 16 a 64 años	190
+27	Andorra-Sierra de Arcos	Una mujer de 65 o más años	334
+27	Andorra-Sierra de Arcos	Un hombre de 65 o más años	148
+27	Andorra-Sierra de Arcos	Una mujer adulta con uno o más menores	25
+27	Andorra-Sierra de Arcos	Un hombre adulto con  uno o más menores	20
+27	Andorra-Sierra de Arcos	Dos adultos de 16 a 64 años, sin menores	401
+27	Andorra-Sierra de Arcos	Dos adultos, uno al menos de 65 años o más, sin menores	707
+27	Andorra-Sierra de Arcos	Dos adultos y un menor	261
+27	Andorra-Sierra de Arcos	Dos adultos y dos menores	389
+27	Andorra-Sierra de Arcos	Dos adultos y tres o más menores	44
+27	Andorra-Sierra de Arcos	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	282
+27	Andorra-Sierra de Arcos	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	192
+27	Andorra-Sierra de Arcos	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	18
+27	Andorra-Sierra de Arcos	Otro hogar de tres adultos, con o sin menores	259
+27	Andorra-Sierra de Arcos	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	273
+27	Andorra-Sierra de Arcos	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	69
+27	Andorra-Sierra de Arcos	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	10
+27	Andorra-Sierra de Arcos	Otro hogar de cuatro adultos, con o sin menores	103
+27	Andorra-Sierra de Arcos	Cinco o más adultos, con o sin menores	160
+28	Bajo Aragón	Una mujer de 16 a 64 años	265
+28	Bajo Aragón	Un hombre de 16 a 64 años	498
+28	Bajo Aragón	Una mujer de 65 o más años	853
+28	Bajo Aragón	Un hombre de 65 o más años	333
+28	Bajo Aragón	Una mujer adulta con uno o más menores	122
+28	Bajo Aragón	Un hombre adulto con  uno o más menores	52
+28	Bajo Aragón	Dos adultos de 16 a 64 años, sin menores	875
+28	Bajo Aragón	Dos adultos, uno al menos de 65 años o más, sin menores	1699
+28	Bajo Aragón	Dos adultos y un menor	721
+28	Bajo Aragón	Dos adultos y dos menores	855
+28	Bajo Aragón	Dos adultos y tres o más menores	112
+28	Bajo Aragón	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	705
+28	Bajo Aragón	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	352
+28	Bajo Aragón	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	64
+28	Bajo Aragón	Otro hogar de tres adultos, con o sin menores	569
+28	Bajo Aragón	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	594
+28	Bajo Aragón	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	99
+28	Bajo Aragón	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	13
+28	Bajo Aragón	Otro hogar de cuatro adultos, con o sin menores	270
+28	Bajo Aragón	Cinco o más adultos, con o sin menores	462
+29	Comunidad de Teruel	Una mujer de 16 a 64 años	749
+29	Comunidad de Teruel	Un hombre de 16 a 64 años	1017
+29	Comunidad de Teruel	Una mujer de 65 o más años	1344
+29	Comunidad de Teruel	Un hombre de 65 o más años	568
+29	Comunidad de Teruel	Una mujer adulta con uno o más menores	316
+29	Comunidad de Teruel	Un hombre adulto con  uno o más menores	106
+29	Comunidad de Teruel	Dos adultos de 16 a 64 años, sin menores	1327
+29	Comunidad de Teruel	Dos adultos, uno al menos de 65 años o más, sin menores	2521
+29	Comunidad de Teruel	Dos adultos y un menor	1022
+29	Comunidad de Teruel	Dos adultos y dos menores	1325
+29	Comunidad de Teruel	Dos adultos y tres o más menores	163
+29	Comunidad de Teruel	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	1180
+29	Comunidad de Teruel	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	552
+29	Comunidad de Teruel	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	95
+29	Comunidad de Teruel	Otro hogar de tres adultos, con o sin menores	888
+29	Comunidad de Teruel	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	1000
+29	Comunidad de Teruel	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	189
+29	Comunidad de Teruel	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	24
+29	Comunidad de Teruel	Otro hogar de cuatro adultos, con o sin menores	448
+29	Comunidad de Teruel	Cinco o más adultos, con o sin menores	663
+30	Maestrazgo	Una mujer de 16 a 64 años	58
+30	Maestrazgo	Un hombre de 16 a 64 años	140
+30	Maestrazgo	Una mujer de 65 o más años	182
+30	Maestrazgo	Un hombre de 65 o más años	98
+30	Maestrazgo	Una mujer adulta con uno o más menores	12
+30	Maestrazgo	Un hombre adulto con  uno o más menores	9
+30	Maestrazgo	Dos adultos de 16 a 64 años, sin menores	99
+30	Maestrazgo	Dos adultos, uno al menos de 65 años o más, sin menores	288
+30	Maestrazgo	Dos adultos y un menor	47
+30	Maestrazgo	Dos adultos y dos menores	81
+30	Maestrazgo	Dos adultos y tres o más menores	20
+30	Maestrazgo	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	87
+30	Maestrazgo	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	22
+30	Maestrazgo	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	6
+30	Maestrazgo	Otro hogar de tres adultos, con o sin menores	128
+30	Maestrazgo	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	76
+30	Maestrazgo	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	13
+30	Maestrazgo	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	3
+30	Maestrazgo	Otro hogar de cuatro adultos, con o sin menores	75
+30	Maestrazgo	Cinco o más adultos, con o sin menores	59
+31	Sierra de Albarracín	Una mujer de 16 a 64 años	81
+31	Sierra de Albarracín	Un hombre de 16 a 64 años	203
+31	Sierra de Albarracín	Una mujer de 65 o más años	253
+31	Sierra de Albarracín	Un hombre de 65 o más años	138
+31	Sierra de Albarracín	Una mujer adulta con uno o más menores	14
+31	Sierra de Albarracín	Un hombre adulto con  uno o más menores	9
+31	Sierra de Albarracín	Dos adultos de 16 a 64 años, sin menores	117
+31	Sierra de Albarracín	Dos adultos, uno al menos de 65 años o más, sin menores	462
+31	Sierra de Albarracín	Dos adultos y un menor	55
+31	Sierra de Albarracín	Dos adultos y dos menores	104
+31	Sierra de Albarracín	Dos adultos y tres o más menores	20
+31	Sierra de Albarracín	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	103
+31	Sierra de Albarracín	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	38
+31	Sierra de Albarracín	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	9
+31	Sierra de Albarracín	Otro hogar de tres adultos, con o sin menores	146
+31	Sierra de Albarracín	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	75
+31	Sierra de Albarracín	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	19
+31	Sierra de Albarracín	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	2
+31	Sierra de Albarracín	Otro hogar de cuatro adultos, con o sin menores	74
+31	Sierra de Albarracín	Cinco o más adultos, con o sin menores	96
+32	Gúdar-Javalambre	Una mujer de 16 a 64 años	158
+32	Gúdar-Javalambre	Un hombre de 16 a 64 años	357
+32	Gúdar-Javalambre	Una mujer de 65 o más años	354
+32	Gúdar-Javalambre	Un hombre de 65 o más años	229
+32	Gúdar-Javalambre	Una mujer adulta con uno o más menores	38
+32	Gúdar-Javalambre	Un hombre adulto con  uno o más menores	12
+32	Gúdar-Javalambre	Dos adultos de 16 a 64 años, sin menores	241
+32	Gúdar-Javalambre	Dos adultos, uno al menos de 65 años o más, sin menores	583
+32	Gúdar-Javalambre	Dos adultos y un menor	142
+32	Gúdar-Javalambre	Dos adultos y dos menores	195
+32	Gúdar-Javalambre	Dos adultos y tres o más menores	36
+32	Gúdar-Javalambre	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	182
+32	Gúdar-Javalambre	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	49
+32	Gúdar-Javalambre	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	16
+32	Gúdar-Javalambre	Otro hogar de tres adultos, con o sin menores	229
+32	Gúdar-Javalambre	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	127
+32	Gúdar-Javalambre	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	25
+32	Gúdar-Javalambre	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	8
+32	Gúdar-Javalambre	Otro hogar de cuatro adultos, con o sin menores	112
+32	Gúdar-Javalambre	Cinco o más adultos, con o sin menores	114
+33	Matarraña / Matarranya	Una mujer de 16 a 64 años	79
+33	Matarraña / Matarranya	Un hombre de 16 a 64 años	232
+33	Matarraña / Matarranya	Una mujer de 65 o más años	362
+33	Matarraña / Matarranya	Un hombre de 65 o más años	214
+33	Matarraña / Matarranya	Una mujer adulta con uno o más menores	21
+33	Matarraña / Matarranya	Un hombre adulto con  uno o más menores	8
+33	Matarraña / Matarranya	Dos adultos de 16 a 64 años, sin menores	218
+33	Matarraña / Matarranya	Dos adultos, uno al menos de 65 años o más, sin menores	703
+33	Matarraña / Matarranya	Dos adultos y un menor	150
+33	Matarraña / Matarranya	Dos adultos y dos menores	222
+33	Matarraña / Matarranya	Dos adultos y tres o más menores	26
+33	Matarraña / Matarranya	Dos adultos de 35 años o más, uno de 16 a 34 años, sin menores	200
+33	Matarraña / Matarranya	Dos adultos de 35 años o más, uno de 16 a 34 años y un menor	87
+33	Matarraña / Matarranya	Dos adultos de 35 años o más, uno de 16 a 34 años y dos o más menores	19
+33	Matarraña / Matarranya	Otro hogar de tres adultos, con o sin menores	259
+33	Matarraña / Matarranya	Dos adultos de 35 años o más, dos de 16 a 34 años, sin menores	173
+33	Matarraña / Matarranya	Dos adultos de 35 años o más, dos de 16 a 34 años y un menor	16
+33	Matarraña / Matarranya	Dos adultos de 35 años o más, dos de 16 a 34 años y dos o más menores	3
+33	Matarraña / Matarranya	Otro hogar de cuatro adultos, con o sin menores	159
+33	Matarraña / Matarranya	Cinco o más adultos, con o sin menores	184

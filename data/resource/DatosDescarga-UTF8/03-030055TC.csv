@@ -1,23 +1,395 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-   <head>
-      <meta charset="UTF-8" />
-      <title>Oracle Analytics</title>
-      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-      <meta http-equiv="Expires" content="0" />
-      <meta http-equiv="Pragma" content="no-cache" />
-      <!-- mobile viewport -->
-      <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-      <!-- Set IE compatibility mode to most recent version (IE11) -->
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <!-- Load the resources required by login page -->
-      <script src="js/libs/require/require.js"></script>
-      <script src="js/loginhelper.js" type="text/javascript"></script>
-      <link href="/bi-security-login/css/loginhelper.css" rel="stylesheet" type="text/css"/>
-      <link href="/bi-security-login/css/libs/oj/v7.1.0/alta/oj-alta-min.css" rel="stylesheet" type="text/css"/>
-   </head>
-   <body onload="bitechLogin.setup();">
-   
-   </body>
-</html>
+Comarca código	Comarca nombre	Lugar trabajo o estudio	Número de viajes diarios	Personas residentes viviendas familiares	Situación preferente
+01	La Jacetania	En el mismo municipio de residencia	0 viajes	25	Estudiantes que no trabajan
+01	La Jacetania	En el mismo municipio de residencia	0 viajes	74	Trabajadores
+01	La Jacetania	En el mismo municipio de residencia	1 viaje	268	Estudiantes que no trabajan
+01	La Jacetania	En el mismo municipio de residencia	1 viaje	1714	Trabajadores
+01	La Jacetania	En el mismo municipio de residencia	2 ó más viajes	84	Estudiantes que no trabajan
+01	La Jacetania	En el mismo municipio de residencia	2 ó más viajes	2885	Trabajadores
+01	La Jacetania	En otro municipio	0 viajes	503	Estudiantes que no trabajan
+01	La Jacetania	En otro municipio	0 viajes	744	Trabajadores
+01	La Jacetania	En otro municipio	1 viaje	144	Estudiantes que no trabajan
+01	La Jacetania	En otro municipio	1 viaje	665	Trabajadores
+01	La Jacetania	En otro municipio	2 ó más viajes	40	Estudiantes que no trabajan
+01	La Jacetania	En otro municipio	2 ó más viajes	277	Trabajadores
+02	Alto Gállego	En el mismo municipio de residencia	0 viajes	4	Estudiantes que no trabajan
+02	Alto Gállego	En el mismo municipio de residencia	0 viajes	49	Trabajadores
+02	Alto Gállego	En el mismo municipio de residencia	1 viaje	228	Estudiantes que no trabajan
+02	Alto Gállego	En el mismo municipio de residencia	1 viaje	1387	Trabajadores
+02	Alto Gállego	En el mismo municipio de residencia	2 ó más viajes	28	Estudiantes que no trabajan
+02	Alto Gállego	En el mismo municipio de residencia	2 ó más viajes	1985	Trabajadores
+02	Alto Gállego	En otro municipio	0 viajes	409	Estudiantes que no trabajan
+02	Alto Gállego	En otro municipio	0 viajes	511	Trabajadores
+02	Alto Gállego	En otro municipio	1 viaje	116	Estudiantes que no trabajan
+02	Alto Gállego	En otro municipio	1 viaje	463	Trabajadores
+02	Alto Gállego	En otro municipio	2 ó más viajes	34	Estudiantes que no trabajan
+02	Alto Gállego	En otro municipio	2 ó más viajes	187	Trabajadores
+03	Sobrarbe	En el mismo municipio de residencia	0 viajes	8	Estudiantes que no trabajan
+03	Sobrarbe	En el mismo municipio de residencia	0 viajes	44	Trabajadores
+03	Sobrarbe	En el mismo municipio de residencia	1 viaje	18	Estudiantes que no trabajan
+03	Sobrarbe	En el mismo municipio de residencia	1 viaje	454	Trabajadores
+03	Sobrarbe	En el mismo municipio de residencia	2 ó más viajes	17	Estudiantes que no trabajan
+03	Sobrarbe	En el mismo municipio de residencia	2 ó más viajes	784	Trabajadores
+03	Sobrarbe	En otro municipio	0 viajes	232	Estudiantes que no trabajan
+03	Sobrarbe	En otro municipio	0 viajes	529	Trabajadores
+03	Sobrarbe	En otro municipio	1 viaje	56	Estudiantes que no trabajan
+03	Sobrarbe	En otro municipio	1 viaje	256	Trabajadores
+03	Sobrarbe	En otro municipio	2 ó más viajes	3	Estudiantes que no trabajan
+03	Sobrarbe	En otro municipio	2 ó más viajes	83	Trabajadores
+04	La Ribagorza	En el mismo municipio de residencia	0 viajes	19	Estudiantes que no trabajan
+04	La Ribagorza	En el mismo municipio de residencia	0 viajes	71	Trabajadores
+04	La Ribagorza	En el mismo municipio de residencia	1 viaje	76	Estudiantes que no trabajan
+04	La Ribagorza	En el mismo municipio de residencia	1 viaje	803	Trabajadores
+04	La Ribagorza	En el mismo municipio de residencia	2 ó más viajes	17	Estudiantes que no trabajan
+04	La Ribagorza	En el mismo municipio de residencia	2 ó más viajes	1544	Trabajadores
+04	La Ribagorza	En otro municipio	0 viajes	416	Estudiantes que no trabajan
+04	La Ribagorza	En otro municipio	0 viajes	696	Trabajadores
+04	La Ribagorza	En otro municipio	1 viaje	68	Estudiantes que no trabajan
+04	La Ribagorza	En otro municipio	1 viaje	399	Trabajadores
+04	La Ribagorza	En otro municipio	2 ó más viajes	6	Estudiantes que no trabajan
+04	La Ribagorza	En otro municipio	2 ó más viajes	211	Trabajadores
+05	Cinco Villas	En el mismo municipio de residencia	0 viajes	16	Estudiantes que no trabajan
+05	Cinco Villas	En el mismo municipio de residencia	0 viajes	88	Trabajadores
+05	Cinco Villas	En el mismo municipio de residencia	1 viaje	645	Estudiantes que no trabajan
+05	Cinco Villas	En el mismo municipio de residencia	1 viaje	3422	Trabajadores
+05	Cinco Villas	En el mismo municipio de residencia	2 ó más viajes	80	Estudiantes que no trabajan
+05	Cinco Villas	En el mismo municipio de residencia	2 ó más viajes	5686	Trabajadores
+05	Cinco Villas	En otro municipio	0 viajes	757	Estudiantes que no trabajan
+05	Cinco Villas	En otro municipio	0 viajes	1205	Trabajadores
+05	Cinco Villas	En otro municipio	1 viaje	235	Estudiantes que no trabajan
+05	Cinco Villas	En otro municipio	1 viaje	1359	Trabajadores
+05	Cinco Villas	En otro municipio	2 ó más viajes	57	Estudiantes que no trabajan
+05	Cinco Villas	En otro municipio	2 ó más viajes	358	Trabajadores
+06	Hoya de Huesca / Plana de Uesca	En el mismo municipio de residencia	0 viajes	32	Estudiantes que no trabajan
+06	Hoya de Huesca / Plana de Uesca	En el mismo municipio de residencia	0 viajes	85	Trabajadores
+06	Hoya de Huesca / Plana de Uesca	En el mismo municipio de residencia	1 viaje	1714	Estudiantes que no trabajan
+06	Hoya de Huesca / Plana de Uesca	En el mismo municipio de residencia	1 viaje	7701	Trabajadores
+06	Hoya de Huesca / Plana de Uesca	En el mismo municipio de residencia	2 ó más viajes	634	Estudiantes que no trabajan
+06	Hoya de Huesca / Plana de Uesca	En el mismo municipio de residencia	2 ó más viajes	10230	Trabajadores
+06	Hoya de Huesca / Plana de Uesca	En otro municipio	0 viajes	1234	Estudiantes que no trabajan
+06	Hoya de Huesca / Plana de Uesca	En otro municipio	0 viajes	1768	Trabajadores
+06	Hoya de Huesca / Plana de Uesca	En otro municipio	1 viaje	636	Estudiantes que no trabajan
+06	Hoya de Huesca / Plana de Uesca	En otro municipio	1 viaje	2759	Trabajadores
+06	Hoya de Huesca / Plana de Uesca	En otro municipio	2 ó más viajes	121	Estudiantes que no trabajan
+06	Hoya de Huesca / Plana de Uesca	En otro municipio	2 ó más viajes	958	Trabajadores
+07	Somontano de Barbastro	En el mismo municipio de residencia	0 viajes	20	Estudiantes que no trabajan
+07	Somontano de Barbastro	En el mismo municipio de residencia	0 viajes	43	Trabajadores
+07	Somontano de Barbastro	En el mismo municipio de residencia	1 viaje	317	Estudiantes que no trabajan
+07	Somontano de Barbastro	En el mismo municipio de residencia	1 viaje	2225	Trabajadores
+07	Somontano de Barbastro	En el mismo municipio de residencia	2 ó más viajes	105	Estudiantes que no trabajan
+07	Somontano de Barbastro	En el mismo municipio de residencia	2 ó más viajes	3560	Trabajadores
+07	Somontano de Barbastro	En otro municipio	0 viajes	628	Estudiantes que no trabajan
+07	Somontano de Barbastro	En otro municipio	0 viajes	680	Trabajadores
+07	Somontano de Barbastro	En otro municipio	1 viaje	192	Estudiantes que no trabajan
+07	Somontano de Barbastro	En otro municipio	1 viaje	1124	Trabajadores
+07	Somontano de Barbastro	En otro municipio	2 ó más viajes	22	Estudiantes que no trabajan
+07	Somontano de Barbastro	En otro municipio	2 ó más viajes	435	Trabajadores
+08	Cinca Medio	En el mismo municipio de residencia	0 viajes	7	Estudiantes que no trabajan
+08	Cinca Medio	En el mismo municipio de residencia	0 viajes	24	Trabajadores
+08	Cinca Medio	En el mismo municipio de residencia	1 viaje	350	Estudiantes que no trabajan
+08	Cinca Medio	En el mismo municipio de residencia	1 viaje	1822	Trabajadores
+08	Cinca Medio	En el mismo municipio de residencia	2 ó más viajes	66	Estudiantes que no trabajan
+08	Cinca Medio	En el mismo municipio de residencia	2 ó más viajes	3860	Trabajadores
+08	Cinca Medio	En otro municipio	0 viajes	587	Estudiantes que no trabajan
+08	Cinca Medio	En otro municipio	0 viajes	475	Trabajadores
+08	Cinca Medio	En otro municipio	1 viaje	192	Estudiantes que no trabajan
+08	Cinca Medio	En otro municipio	1 viaje	1094	Trabajadores
+08	Cinca Medio	En otro municipio	2 ó más viajes	27	Estudiantes que no trabajan
+08	Cinca Medio	En otro municipio	2 ó más viajes	733	Trabajadores
+09	La Litera / La Llitera	En el mismo municipio de residencia	0 viajes	8	Estudiantes que no trabajan
+09	La Litera / La Llitera	En el mismo municipio de residencia	0 viajes	22	Trabajadores
+09	La Litera / La Llitera	En el mismo municipio de residencia	1 viaje	177	Estudiantes que no trabajan
+09	La Litera / La Llitera	En el mismo municipio de residencia	1 viaje	1104	Trabajadores
+09	La Litera / La Llitera	En el mismo municipio de residencia	2 ó más viajes	25	Estudiantes que no trabajan
+09	La Litera / La Llitera	En el mismo municipio de residencia	2 ó más viajes	3192	Trabajadores
+09	La Litera / La Llitera	En otro municipio	0 viajes	484	Estudiantes que no trabajan
+09	La Litera / La Llitera	En otro municipio	0 viajes	529	Trabajadores
+09	La Litera / La Llitera	En otro municipio	1 viaje	249	Estudiantes que no trabajan
+09	La Litera / La Llitera	En otro municipio	1 viaje	923	Trabajadores
+09	La Litera / La Llitera	En otro municipio	2 ó más viajes	25	Estudiantes que no trabajan
+09	La Litera / La Llitera	En otro municipio	2 ó más viajes	804	Trabajadores
+10	Los Monegros	En el mismo municipio de residencia	0 viajes	7	Estudiantes que no trabajan
+10	Los Monegros	En el mismo municipio de residencia	0 viajes	47	Trabajadores
+10	Los Monegros	En el mismo municipio de residencia	1 viaje	170	Estudiantes que no trabajan
+10	Los Monegros	En el mismo municipio de residencia	1 viaje	965	Trabajadores
+10	Los Monegros	En el mismo municipio de residencia	2 ó más viajes	22	Estudiantes que no trabajan
+10	Los Monegros	En el mismo municipio de residencia	2 ó más viajes	3024	Trabajadores
+10	Los Monegros	En otro municipio	0 viajes	645	Estudiantes que no trabajan
+10	Los Monegros	En otro municipio	0 viajes	1333	Trabajadores
+10	Los Monegros	En otro municipio	1 viaje	368	Estudiantes que no trabajan
+10	Los Monegros	En otro municipio	1 viaje	1408	Trabajadores
+10	Los Monegros	En otro municipio	2 ó más viajes	20	Estudiantes que no trabajan
+10	Los Monegros	En otro municipio	2 ó más viajes	353	Trabajadores
+11	Bajo Cinca / Baix Cinca	En el mismo municipio de residencia	0 viajes	14	Estudiantes que no trabajan
+11	Bajo Cinca / Baix Cinca	En el mismo municipio de residencia	0 viajes	25	Trabajadores
+11	Bajo Cinca / Baix Cinca	En el mismo municipio de residencia	1 viaje	215	Estudiantes que no trabajan
+11	Bajo Cinca / Baix Cinca	En el mismo municipio de residencia	1 viaje	1853	Trabajadores
+11	Bajo Cinca / Baix Cinca	En el mismo municipio de residencia	2 ó más viajes	54	Estudiantes que no trabajan
+11	Bajo Cinca / Baix Cinca	En el mismo municipio de residencia	2 ó más viajes	4644	Trabajadores
+11	Bajo Cinca / Baix Cinca	En otro municipio	0 viajes	482	Estudiantes que no trabajan
+11	Bajo Cinca / Baix Cinca	En otro municipio	0 viajes	317	Trabajadores
+11	Bajo Cinca / Baix Cinca	En otro municipio	1 viaje	330	Estudiantes que no trabajan
+11	Bajo Cinca / Baix Cinca	En otro municipio	1 viaje	971	Trabajadores
+11	Bajo Cinca / Baix Cinca	En otro municipio	2 ó más viajes	26	Estudiantes que no trabajan
+11	Bajo Cinca / Baix Cinca	En otro municipio	2 ó más viajes	400	Trabajadores
+12	Tarazona y el Moncayo	En el mismo municipio de residencia	0 viajes	7	Estudiantes que no trabajan
+12	Tarazona y el Moncayo	En el mismo municipio de residencia	0 viajes	11	Trabajadores
+12	Tarazona y el Moncayo	En el mismo municipio de residencia	1 viaje	248	Estudiantes que no trabajan
+12	Tarazona y el Moncayo	En el mismo municipio de residencia	1 viaje	1602	Trabajadores
+12	Tarazona y el Moncayo	En el mismo municipio de residencia	2 ó más viajes	36	Estudiantes que no trabajan
+12	Tarazona y el Moncayo	En el mismo municipio de residencia	2 ó más viajes	1897	Trabajadores
+12	Tarazona y el Moncayo	En otro municipio	0 viajes	340	Estudiantes que no trabajan
+12	Tarazona y el Moncayo	En otro municipio	0 viajes	343	Trabajadores
+12	Tarazona y el Moncayo	En otro municipio	1 viaje	128	Estudiantes que no trabajan
+12	Tarazona y el Moncayo	En otro municipio	1 viaje	754	Trabajadores
+12	Tarazona y el Moncayo	En otro municipio	2 ó más viajes	32	Estudiantes que no trabajan
+12	Tarazona y el Moncayo	En otro municipio	2 ó más viajes	298	Trabajadores
+13	Campo de Borja	En el mismo municipio de residencia	0 viajes	9	Estudiantes que no trabajan
+13	Campo de Borja	En el mismo municipio de residencia	0 viajes	39	Trabajadores
+13	Campo de Borja	En el mismo municipio de residencia	1 viaje	108	Estudiantes que no trabajan
+13	Campo de Borja	En el mismo municipio de residencia	1 viaje	1047	Trabajadores
+13	Campo de Borja	En el mismo municipio de residencia	2 ó más viajes	22	Estudiantes que no trabajan
+13	Campo de Borja	En el mismo municipio de residencia	2 ó más viajes	1824	Trabajadores
+13	Campo de Borja	En otro municipio	0 viajes	255	Estudiantes que no trabajan
+13	Campo de Borja	En otro municipio	0 viajes	472	Trabajadores
+13	Campo de Borja	En otro municipio	1 viaje	202	Estudiantes que no trabajan
+13	Campo de Borja	En otro municipio	1 viaje	1203	Trabajadores
+13	Campo de Borja	En otro municipio	2 ó más viajes	34	Estudiantes que no trabajan
+13	Campo de Borja	En otro municipio	2 ó más viajes	407	Trabajadores
+14	Aranda	En el mismo municipio de residencia	0 viajes	4	Estudiantes que no trabajan
+14	Aranda	En el mismo municipio de residencia	0 viajes	55	Trabajadores
+14	Aranda	En el mismo municipio de residencia	1 viaje	51	Estudiantes que no trabajan
+14	Aranda	En el mismo municipio de residencia	1 viaje	353	Trabajadores
+14	Aranda	En el mismo municipio de residencia	2 ó más viajes	28	Estudiantes que no trabajan
+14	Aranda	En el mismo municipio de residencia	2 ó más viajes	1552	Trabajadores
+14	Aranda	En otro municipio	0 viajes	90	Estudiantes que no trabajan
+14	Aranda	En otro municipio	0 viajes	218	Trabajadores
+14	Aranda	En otro municipio	1 viaje	79	Estudiantes que no trabajan
+14	Aranda	En otro municipio	1 viaje	188	Trabajadores
+14	Aranda	En otro municipio	2 ó más viajes	53	Estudiantes que no trabajan
+14	Aranda	En otro municipio	2 ó más viajes	530	Trabajadores
+15	Ribera Alta del Ebro	En el mismo municipio de residencia	0 viajes	9	Estudiantes que no trabajan
+15	Ribera Alta del Ebro	En el mismo municipio de residencia	0 viajes	65	Trabajadores
+15	Ribera Alta del Ebro	En el mismo municipio de residencia	1 viaje	193	Estudiantes que no trabajan
+15	Ribera Alta del Ebro	En el mismo municipio de residencia	1 viaje	1871	Trabajadores
+15	Ribera Alta del Ebro	En el mismo municipio de residencia	2 ó más viajes	26	Estudiantes que no trabajan
+15	Ribera Alta del Ebro	En el mismo municipio de residencia	2 ó más viajes	1983	Trabajadores
+15	Ribera Alta del Ebro	En otro municipio	0 viajes	234	Estudiantes que no trabajan
+15	Ribera Alta del Ebro	En otro municipio	0 viajes	339	Trabajadores
+15	Ribera Alta del Ebro	En otro municipio	1 viaje	609	Estudiantes que no trabajan
+15	Ribera Alta del Ebro	En otro municipio	1 viaje	3234	Trabajadores
+15	Ribera Alta del Ebro	En otro municipio	2 ó más viajes	63	Estudiantes que no trabajan
+15	Ribera Alta del Ebro	En otro municipio	2 ó más viajes	814	Trabajadores
+16	Valdejalón	En el mismo municipio de residencia	0 viajes	10	Estudiantes que no trabajan
+16	Valdejalón	En el mismo municipio de residencia	0 viajes	120	Trabajadores
+16	Valdejalón	En el mismo municipio de residencia	1 viaje	300	Estudiantes que no trabajan
+16	Valdejalón	En el mismo municipio de residencia	1 viaje	1834	Trabajadores
+16	Valdejalón	En el mismo municipio de residencia	2 ó más viajes	149	Estudiantes que no trabajan
+16	Valdejalón	En el mismo municipio de residencia	2 ó más viajes	3214	Trabajadores
+16	Valdejalón	En otro municipio	0 viajes	317	Estudiantes que no trabajan
+16	Valdejalón	En otro municipio	0 viajes	703	Trabajadores
+16	Valdejalón	En otro municipio	1 viaje	300	Estudiantes que no trabajan
+16	Valdejalón	En otro municipio	1 viaje	1843	Trabajadores
+16	Valdejalón	En otro municipio	2 ó más viajes	90	Estudiantes que no trabajan
+16	Valdejalón	En otro municipio	2 ó más viajes	593	Trabajadores
+17	D.C. Zaragoza	En el mismo municipio de residencia	0 viajes	301	Estudiantes que no trabajan
+17	D.C. Zaragoza	En el mismo municipio de residencia	0 viajes	853	Trabajadores
+17	D.C. Zaragoza	En el mismo municipio de residencia	1 viaje	26228	Estudiantes que no trabajan
+17	D.C. Zaragoza	En el mismo municipio de residencia	1 viaje	110446	Trabajadores
+17	D.C. Zaragoza	En el mismo municipio de residencia	2 ó más viajes	15319	Estudiantes que no trabajan
+17	D.C. Zaragoza	En el mismo municipio de residencia	2 ó más viajes	111945	Trabajadores
+17	D.C. Zaragoza	En otro municipio	0 viajes	2085	Estudiantes que no trabajan
+17	D.C. Zaragoza	En otro municipio	0 viajes	5717	Trabajadores
+17	D.C. Zaragoza	En otro municipio	1 viaje	2685	Estudiantes que no trabajan
+17	D.C. Zaragoza	En otro municipio	1 viaje	25931	Trabajadores
+17	D.C. Zaragoza	En otro municipio	2 ó más viajes	759	Estudiantes que no trabajan
+17	D.C. Zaragoza	En otro municipio	2 ó más viajes	9803	Trabajadores
+18	Ribera Baja del Ebro	En el mismo municipio de residencia	0 viajes	2	Estudiantes que no trabajan
+18	Ribera Baja del Ebro	En el mismo municipio de residencia	0 viajes	20	Trabajadores
+18	Ribera Baja del Ebro	En el mismo municipio de residencia	1 viaje	146	Estudiantes que no trabajan
+18	Ribera Baja del Ebro	En el mismo municipio de residencia	1 viaje	1039	Trabajadores
+18	Ribera Baja del Ebro	En el mismo municipio de residencia	2 ó más viajes	9	Estudiantes que no trabajan
+18	Ribera Baja del Ebro	En el mismo municipio de residencia	2 ó más viajes	1198	Trabajadores
+18	Ribera Baja del Ebro	En otro municipio	0 viajes	227	Estudiantes que no trabajan
+18	Ribera Baja del Ebro	En otro municipio	0 viajes	306	Trabajadores
+18	Ribera Baja del Ebro	En otro municipio	1 viaje	180	Estudiantes que no trabajan
+18	Ribera Baja del Ebro	En otro municipio	1 viaje	639	Trabajadores
+18	Ribera Baja del Ebro	En otro municipio	2 ó más viajes	23	Estudiantes que no trabajan
+18	Ribera Baja del Ebro	En otro municipio	2 ó más viajes	151	Trabajadores
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	En el mismo municipio de residencia	0 viajes	6	Estudiantes que no trabajan
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	En el mismo municipio de residencia	0 viajes	34	Trabajadores
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	En el mismo municipio de residencia	1 viaje	165	Estudiantes que no trabajan
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	En el mismo municipio de residencia	1 viaje	1065	Trabajadores
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	En el mismo municipio de residencia	2 ó más viajes	34	Estudiantes que no trabajan
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	En el mismo municipio de residencia	2 ó más viajes	2699	Trabajadores
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	En otro municipio	0 viajes	249	Estudiantes que no trabajan
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	En otro municipio	0 viajes	250	Trabajadores
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	En otro municipio	1 viaje	113	Estudiantes que no trabajan
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	En otro municipio	1 viaje	258	Trabajadores
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	En otro municipio	2 ó más viajes	34	Estudiantes que no trabajan
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	En otro municipio	2 ó más viajes	138	Trabajadores
+20	Comunidad de Calatayud	En el mismo municipio de residencia	0 viajes	29	Estudiantes que no trabajan
+20	Comunidad de Calatayud	En el mismo municipio de residencia	0 viajes	344	Trabajadores
+20	Comunidad de Calatayud	En el mismo municipio de residencia	1 viaje	576	Estudiantes que no trabajan
+20	Comunidad de Calatayud	En el mismo municipio de residencia	1 viaje	3630	Trabajadores
+20	Comunidad de Calatayud	En el mismo municipio de residencia	2 ó más viajes	136	Estudiantes que no trabajan
+20	Comunidad de Calatayud	En el mismo municipio de residencia	2 ó más viajes	5488	Trabajadores
+20	Comunidad de Calatayud	En otro municipio	0 viajes	819	Estudiantes que no trabajan
+20	Comunidad de Calatayud	En otro municipio	0 viajes	1335	Trabajadores
+20	Comunidad de Calatayud	En otro municipio	1 viaje	374	Estudiantes que no trabajan
+20	Comunidad de Calatayud	En otro municipio	1 viaje	1579	Trabajadores
+20	Comunidad de Calatayud	En otro municipio	2 ó más viajes	147	Estudiantes que no trabajan
+20	Comunidad de Calatayud	En otro municipio	2 ó más viajes	982	Trabajadores
+21	Campo de Cariñena	En el mismo municipio de residencia	0 viajes	9	Estudiantes que no trabajan
+21	Campo de Cariñena	En el mismo municipio de residencia	0 viajes	40	Trabajadores
+21	Campo de Cariñena	En el mismo municipio de residencia	1 viaje	92	Estudiantes que no trabajan
+21	Campo de Cariñena	En el mismo municipio de residencia	1 viaje	1043	Trabajadores
+21	Campo de Cariñena	En el mismo municipio de residencia	2 ó más viajes	6	Estudiantes que no trabajan
+21	Campo de Cariñena	En el mismo municipio de residencia	2 ó más viajes	1300	Trabajadores
+21	Campo de Cariñena	En otro municipio	0 viajes	165	Estudiantes que no trabajan
+21	Campo de Cariñena	En otro municipio	0 viajes	416	Trabajadores
+21	Campo de Cariñena	En otro municipio	1 viaje	166	Estudiantes que no trabajan
+21	Campo de Cariñena	En otro municipio	1 viaje	672	Trabajadores
+21	Campo de Cariñena	En otro municipio	2 ó más viajes	16	Estudiantes que no trabajan
+21	Campo de Cariñena	En otro municipio	2 ó más viajes	187	Trabajadores
+22	Campo de Belchite	En el mismo municipio de residencia	0 viajes	4	Estudiantes que no trabajan
+22	Campo de Belchite	En el mismo municipio de residencia	0 viajes	52	Trabajadores
+22	Campo de Belchite	En el mismo municipio de residencia	1 viaje	47	Estudiantes que no trabajan
+22	Campo de Belchite	En el mismo municipio de residencia	1 viaje	418	Trabajadores
+22	Campo de Belchite	En el mismo municipio de residencia	2 ó más viajes	10	Estudiantes que no trabajan
+22	Campo de Belchite	En el mismo municipio de residencia	2 ó más viajes	443	Trabajadores
+22	Campo de Belchite	En otro municipio	0 viajes	103	Estudiantes que no trabajan
+22	Campo de Belchite	En otro municipio	0 viajes	412	Trabajadores
+22	Campo de Belchite	En otro municipio	1 viaje	57	Estudiantes que no trabajan
+22	Campo de Belchite	En otro municipio	1 viaje	292	Trabajadores
+22	Campo de Belchite	En otro municipio	2 ó más viajes	8	Estudiantes que no trabajan
+22	Campo de Belchite	En otro municipio	2 ó más viajes	73	Trabajadores
+23	Bajo Martín	En el mismo municipio de residencia	0 viajes	2	Estudiantes que no trabajan
+23	Bajo Martín	En el mismo municipio de residencia	0 viajes	5	Trabajadores
+23	Bajo Martín	En el mismo municipio de residencia	1 viaje	56	Estudiantes que no trabajan
+23	Bajo Martín	En el mismo municipio de residencia	1 viaje	473	Trabajadores
+23	Bajo Martín	En el mismo municipio de residencia	2 ó más viajes	2	Estudiantes que no trabajan
+23	Bajo Martín	En el mismo municipio de residencia	2 ó más viajes	758	Trabajadores
+23	Bajo Martín	En otro municipio	0 viajes	192	Estudiantes que no trabajan
+23	Bajo Martín	En otro municipio	0 viajes	316	Trabajadores
+23	Bajo Martín	En otro municipio	1 viaje	119	Estudiantes que no trabajan
+23	Bajo Martín	En otro municipio	1 viaje	450	Trabajadores
+23	Bajo Martín	En otro municipio	2 ó más viajes	10	Estudiantes que no trabajan
+23	Bajo Martín	En otro municipio	2 ó más viajes	151	Trabajadores
+24	Campo de Daroca	En el mismo municipio de residencia	0 viajes	2	Estudiantes que no trabajan
+24	Campo de Daroca	En el mismo municipio de residencia	0 viajes	26	Trabajadores
+24	Campo de Daroca	En el mismo municipio de residencia	1 viaje	53	Estudiantes que no trabajan
+24	Campo de Daroca	En el mismo municipio de residencia	1 viaje	387	Trabajadores
+24	Campo de Daroca	En el mismo municipio de residencia	2 ó más viajes	7	Estudiantes que no trabajan
+24	Campo de Daroca	En el mismo municipio de residencia	2 ó más viajes	914	Trabajadores
+24	Campo de Daroca	En otro municipio	0 viajes	148	Estudiantes que no trabajan
+24	Campo de Daroca	En otro municipio	0 viajes	500	Trabajadores
+24	Campo de Daroca	En otro municipio	1 viaje	46	Estudiantes que no trabajan
+24	Campo de Daroca	En otro municipio	1 viaje	133	Trabajadores
+24	Campo de Daroca	En otro municipio	2 ó más viajes	12	Estudiantes que no trabajan
+24	Campo de Daroca	En otro municipio	2 ó más viajes	82	Trabajadores
+25	Jiloca	En el mismo municipio de residencia	0 viajes	4	Estudiantes que no trabajan
+25	Jiloca	En el mismo municipio de residencia	0 viajes	22	Trabajadores
+25	Jiloca	En el mismo municipio de residencia	1 viaje	140	Estudiantes que no trabajan
+25	Jiloca	En el mismo municipio de residencia	1 viaje	850	Trabajadores
+25	Jiloca	En el mismo municipio de residencia	2 ó más viajes	10	Estudiantes que no trabajan
+25	Jiloca	En el mismo municipio de residencia	2 ó más viajes	2065	Trabajadores
+25	Jiloca	En otro municipio	0 viajes	489	Estudiantes que no trabajan
+25	Jiloca	En otro municipio	0 viajes	678	Trabajadores
+25	Jiloca	En otro municipio	1 viaje	74	Estudiantes que no trabajan
+25	Jiloca	En otro municipio	1 viaje	442	Trabajadores
+25	Jiloca	En otro municipio	2 ó más viajes	5	Estudiantes que no trabajan
+25	Jiloca	En otro municipio	2 ó más viajes	200	Trabajadores
+26	Cuencas Mineras	En el mismo municipio de residencia	0 viajes	9	Estudiantes que no trabajan
+26	Cuencas Mineras	En el mismo municipio de residencia	0 viajes	28	Trabajadores
+26	Cuencas Mineras	En el mismo municipio de residencia	1 viaje	153	Estudiantes que no trabajan
+26	Cuencas Mineras	En el mismo municipio de residencia	1 viaje	780	Trabajadores
+26	Cuencas Mineras	En el mismo municipio de residencia	2 ó más viajes	22	Estudiantes que no trabajan
+26	Cuencas Mineras	En el mismo municipio de residencia	2 ó más viajes	805	Trabajadores
+26	Cuencas Mineras	En otro municipio	0 viajes	236	Estudiantes que no trabajan
+26	Cuencas Mineras	En otro municipio	0 viajes	404	Trabajadores
+26	Cuencas Mineras	En otro municipio	1 viaje	134	Estudiantes que no trabajan
+26	Cuencas Mineras	En otro municipio	1 viaje	490	Trabajadores
+26	Cuencas Mineras	En otro municipio	2 ó más viajes	19	Estudiantes que no trabajan
+26	Cuencas Mineras	En otro municipio	2 ó más viajes	168	Trabajadores
+27	Andorra-Sierra de Arcos	En el mismo municipio de residencia	0 viajes	8	Estudiantes que no trabajan
+27	Andorra-Sierra de Arcos	En el mismo municipio de residencia	0 viajes	32	Trabajadores
+27	Andorra-Sierra de Arcos	En el mismo municipio de residencia	1 viaje	247	Estudiantes que no trabajan
+27	Andorra-Sierra de Arcos	En el mismo municipio de residencia	1 viaje	1094	Trabajadores
+27	Andorra-Sierra de Arcos	En el mismo municipio de residencia	2 ó más viajes	24	Estudiantes que no trabajan
+27	Andorra-Sierra de Arcos	En el mismo municipio de residencia	2 ó más viajes	1103	Trabajadores
+27	Andorra-Sierra de Arcos	En otro municipio	0 viajes	349	Estudiantes que no trabajan
+27	Andorra-Sierra de Arcos	En otro municipio	0 viajes	289	Trabajadores
+27	Andorra-Sierra de Arcos	En otro municipio	1 viaje	102	Estudiantes que no trabajan
+27	Andorra-Sierra de Arcos	En otro municipio	1 viaje	409	Trabajadores
+27	Andorra-Sierra de Arcos	En otro municipio	2 ó más viajes	16	Estudiantes que no trabajan
+27	Andorra-Sierra de Arcos	En otro municipio	2 ó más viajes	76	Trabajadores
+28	Bajo Aragón	En el mismo municipio de residencia	0 viajes	17	Estudiantes que no trabajan
+28	Bajo Aragón	En el mismo municipio de residencia	0 viajes	45	Trabajadores
+28	Bajo Aragón	En el mismo municipio de residencia	1 viaje	406	Estudiantes que no trabajan
+28	Bajo Aragón	En el mismo municipio de residencia	1 viaje	2379	Trabajadores
+28	Bajo Aragón	En el mismo municipio de residencia	2 ó más viajes	57	Estudiantes que no trabajan
+28	Bajo Aragón	En el mismo municipio de residencia	2 ó más viajes	4750	Trabajadores
+28	Bajo Aragón	En otro municipio	0 viajes	758	Estudiantes que no trabajan
+28	Bajo Aragón	En otro municipio	0 viajes	570	Trabajadores
+28	Bajo Aragón	En otro municipio	1 viaje	268	Estudiantes que no trabajan
+28	Bajo Aragón	En otro municipio	1 viaje	1045	Trabajadores
+28	Bajo Aragón	En otro municipio	2 ó más viajes	7	Estudiantes que no trabajan
+28	Bajo Aragón	En otro municipio	2 ó más viajes	394	Trabajadores
+29	Comunidad de Teruel	En el mismo municipio de residencia	0 viajes	25	Estudiantes que no trabajan
+29	Comunidad de Teruel	En el mismo municipio de residencia	0 viajes	75	Trabajadores
+29	Comunidad de Teruel	En el mismo municipio de residencia	1 viaje	1334	Estudiantes que no trabajan
+29	Comunidad de Teruel	En el mismo municipio de residencia	1 viaje	6910	Trabajadores
+29	Comunidad de Teruel	En el mismo municipio de residencia	2 ó más viajes	395	Estudiantes que no trabajan
+29	Comunidad de Teruel	En el mismo municipio de residencia	2 ó más viajes	6481	Trabajadores
+29	Comunidad de Teruel	En otro municipio	0 viajes	815	Estudiantes que no trabajan
+29	Comunidad de Teruel	En otro municipio	0 viajes	987	Trabajadores
+29	Comunidad de Teruel	En otro municipio	1 viaje	269	Estudiantes que no trabajan
+29	Comunidad de Teruel	En otro municipio	1 viaje	1278	Trabajadores
+29	Comunidad de Teruel	En otro municipio	2 ó más viajes	40	Estudiantes que no trabajan
+29	Comunidad de Teruel	En otro municipio	2 ó más viajes	281	Trabajadores
+30	Maestrazgo	En el mismo municipio de residencia	0 viajes	1	Estudiantes que no trabajan
+30	Maestrazgo	En el mismo municipio de residencia	0 viajes	13	Trabajadores
+30	Maestrazgo	En el mismo municipio de residencia	1 viaje	4	Estudiantes que no trabajan
+30	Maestrazgo	En el mismo municipio de residencia	1 viaje	255	Trabajadores
+30	Maestrazgo	En el mismo municipio de residencia	2 ó más viajes	2	Estudiantes que no trabajan
+30	Maestrazgo	En el mismo municipio de residencia	2 ó más viajes	502	Trabajadores
+30	Maestrazgo	En otro municipio	0 viajes	119	Estudiantes que no trabajan
+30	Maestrazgo	En otro municipio	0 viajes	153	Trabajadores
+30	Maestrazgo	En otro municipio	1 viaje	17	Estudiantes que no trabajan
+30	Maestrazgo	En otro municipio	1 viaje	152	Trabajadores
+30	Maestrazgo	En otro municipio	2 ó más viajes	34	Trabajadores
+31	Sierra de Albarracín	En el mismo municipio de residencia	0 viajes	7	Estudiantes que no trabajan
+31	Sierra de Albarracín	En el mismo municipio de residencia	0 viajes	23	Trabajadores
+31	Sierra de Albarracín	En el mismo municipio de residencia	1 viaje	11	Estudiantes que no trabajan
+31	Sierra de Albarracín	En el mismo municipio de residencia	1 viaje	302	Trabajadores
+31	Sierra de Albarracín	En el mismo municipio de residencia	2 ó más viajes	1	Estudiantes que no trabajan
+31	Sierra de Albarracín	En el mismo municipio de residencia	2 ó más viajes	690	Trabajadores
+31	Sierra de Albarracín	En otro municipio	0 viajes	141	Estudiantes que no trabajan
+31	Sierra de Albarracín	En otro municipio	0 viajes	354	Trabajadores
+31	Sierra de Albarracín	En otro municipio	1 viaje	31	Estudiantes que no trabajan
+31	Sierra de Albarracín	En otro municipio	1 viaje	140	Trabajadores
+31	Sierra de Albarracín	En otro municipio	2 ó más viajes	1	Estudiantes que no trabajan
+31	Sierra de Albarracín	En otro municipio	2 ó más viajes	54	Trabajadores
+32	Gúdar-Javalambre	En el mismo municipio de residencia	0 viajes	7	Estudiantes que no trabajan
+32	Gúdar-Javalambre	En el mismo municipio de residencia	0 viajes	29	Trabajadores
+32	Gúdar-Javalambre	En el mismo municipio de residencia	1 viaje	11	Estudiantes que no trabajan
+32	Gúdar-Javalambre	En el mismo municipio de residencia	1 viaje	710	Trabajadores
+32	Gúdar-Javalambre	En el mismo municipio de residencia	2 ó más viajes	1012	Trabajadores
+32	Gúdar-Javalambre	En otro municipio	0 viajes	188	Estudiantes que no trabajan
+32	Gúdar-Javalambre	En otro municipio	0 viajes	281	Trabajadores
+32	Gúdar-Javalambre	En otro municipio	1 viaje	90	Estudiantes que no trabajan
+32	Gúdar-Javalambre	En otro municipio	1 viaje	334	Trabajadores
+32	Gúdar-Javalambre	En otro municipio	2 ó más viajes	1	Estudiantes que no trabajan
+32	Gúdar-Javalambre	En otro municipio	2 ó más viajes	96	Trabajadores
+33	Matarraña / Matarranya	En el mismo municipio de residencia	0 viajes	3	Estudiantes que no trabajan
+33	Matarraña / Matarranya	En el mismo municipio de residencia	0 viajes	13	Trabajadores
+33	Matarraña / Matarranya	En el mismo municipio de residencia	1 viaje	40	Estudiantes que no trabajan
+33	Matarraña / Matarranya	En el mismo municipio de residencia	1 viaje	529	Trabajadores
+33	Matarraña / Matarranya	En el mismo municipio de residencia	2 ó más viajes	2	Estudiantes que no trabajan
+33	Matarraña / Matarranya	En el mismo municipio de residencia	2 ó más viajes	1599	Trabajadores
+33	Matarraña / Matarranya	En otro municipio	0 viajes	239	Estudiantes que no trabajan
+33	Matarraña / Matarranya	En otro municipio	0 viajes	225	Trabajadores
+33	Matarraña / Matarranya	En otro municipio	1 viaje	120	Estudiantes que no trabajan
+33	Matarraña / Matarranya	En otro municipio	1 viaje	338	Trabajadores
+33	Matarraña / Matarranya	En otro municipio	2 ó más viajes	8	Estudiantes que no trabajan
+33	Matarraña / Matarranya	En otro municipio	2 ó más viajes	94	Trabajadores

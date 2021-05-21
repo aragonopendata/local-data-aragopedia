@@ -1,23 +1,983 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-   <head>
-      <meta charset="UTF-8" />
-      <title>Oracle Analytics</title>
-      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-      <meta http-equiv="Expires" content="0" />
-      <meta http-equiv="Pragma" content="no-cache" />
-      <!-- mobile viewport -->
-      <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-      <!-- Set IE compatibility mode to most recent version (IE11) -->
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <!-- Load the resources required by login page -->
-      <script src="js/libs/require/require.js"></script>
-      <script src="js/loginhelper.js" type="text/javascript"></script>
-      <link href="/bi-security-login/css/loginhelper.css" rel="stylesheet" type="text/css"/>
-      <link href="/bi-security-login/css/libs/oj/v7.1.0/alta/oj-alta-min.css" rel="stylesheet" type="text/css"/>
-   </head>
-   <body onload="bitechLogin.setup();">
-   
-   </body>
-</html>
+Municipio codigo	Municipio nombre	Tipo de edificio	Tipo de edificio, código	Nº edificios
+22001	Abiego	Destinado principal o exclusivamente a viviendas	1	216
+22002	Abizanda	Destinado principal o exclusivamente a viviendas	1	61
+22003	Adahuesca	Destinado principal o exclusivamente a viviendas	1	113
+22004	Agüero	Destinado principal o exclusivamente a viviendas	1	235
+22006	Aísa	Destinado principal o exclusivamente a viviendas	1	193
+22007	Albalate de Cinca	Destinado principal o exclusivamente a viviendas	1	488
+22008	Albalatillo	Destinado principal o exclusivamente a viviendas	1	132
+22009	Albelda	Destinado principal o exclusivamente a viviendas	1	406
+22011	Albero Alto	Destinado principal o exclusivamente a viviendas	1	62
+22012	Albero Bajo	Destinado principal o exclusivamente a viviendas	1	54
+22013	Alberuela de Tubo	Destinado principal o exclusivamente a viviendas	1	160
+22014	Alcalá de Gurrea	Destinado principal o exclusivamente a viviendas	1	208
+22015	Alcalá del Obispo	Destinado principal o exclusivamente a viviendas	1	218
+22016	Alcampell	Destinado principal o exclusivamente a viviendas	1	522
+22017	Alcolea de Cinca	Destinado principal o exclusivamente a viviendas	1	500
+22018	Alcubierre	Destinado principal o exclusivamente a viviendas	1	276
+22019	Alerre	Destinado principal o exclusivamente a viviendas	1	99
+22020	Alfántega	Destinado principal o exclusivamente a viviendas	1	120
+22021	Almudévar	Destinado principal o exclusivamente a viviendas	1	1242
+22022	Almunia de San Juan	Destinado principal o exclusivamente a viviendas	1	421
+22023	Almuniente	Destinado principal o exclusivamente a viviendas	1	277
+22024	Alquézar	Destinado principal o exclusivamente a viviendas	1	196
+22025	Altorricón	Destinado principal o exclusivamente a viviendas	1	529
+22027	Angüés	Destinado principal o exclusivamente a viviendas	1	309
+22028	Ansó	Destinado principal o exclusivamente a viviendas	1	362
+22029	Antillón	Destinado principal o exclusivamente a viviendas	1	59
+22032	Aragüés del Puerto	Destinado principal o exclusivamente a viviendas	1	130
+22035	Arén	Destinado principal o exclusivamente a viviendas	1	250
+22036	Argavieso	Destinado principal o exclusivamente a viviendas	1	52
+22037	Arguis	Destinado principal o exclusivamente a viviendas	1	166
+22039	Ayerbe	Destinado principal o exclusivamente a viviendas	1	571
+22040	Azanuy-Alins	Destinado principal o exclusivamente a viviendas	1	198
+22041	Azara	Destinado principal o exclusivamente a viviendas	1	99
+22042	Azlor	Destinado principal o exclusivamente a viviendas	1	100
+22043	Baells	Destinado principal o exclusivamente a viviendas	1	109
+22044	Bailo	Destinado principal o exclusivamente a viviendas	1	196
+22045	Baldellou	Destinado principal o exclusivamente a viviendas	1	152
+22046	Ballobar	Destinado principal o exclusivamente a viviendas	1	490
+22047	Banastás	Destinado principal o exclusivamente a viviendas	1	115
+22048	Barbastro	Destinado principal o exclusivamente a viviendas	1	2127
+22049	Barbués	Destinado principal o exclusivamente a viviendas	1	59
+22050	Barbuñales	Destinado principal o exclusivamente a viviendas	1	93
+22051	Bárcabo	Destinado principal o exclusivamente a viviendas	1	56
+22052	Belver de Cinca	Destinado principal o exclusivamente a viviendas	1	597
+22053	Benabarre	Destinado principal o exclusivamente a viviendas	1	691
+22054	Benasque	Destinado principal o exclusivamente a viviendas	1	633
+22055	Berbegal	Destinado principal o exclusivamente a viviendas	1	278
+22057	Bielsa	Destinado principal o exclusivamente a viviendas	1	344
+22058	Bierge	Destinado principal o exclusivamente a viviendas	1	231
+22059	Biescas	Destinado principal o exclusivamente a viviendas	1	918
+22060	Binaced	Destinado principal o exclusivamente a viviendas	1	660
+22061	Binéfar	Destinado principal o exclusivamente a viviendas	1	1998
+22062	Bisaurri	Destinado principal o exclusivamente a viviendas	1	119
+22063	Biscarrués	Destinado principal o exclusivamente a viviendas	1	150
+22064	Blecua y Torres	Destinado principal o exclusivamente a viviendas	1	144
+22066	Boltaña	Destinado principal o exclusivamente a viviendas	1	371
+22067	Bonansa	Destinado principal o exclusivamente a viviendas	1	65
+22068	Borau	Destinado principal o exclusivamente a viviendas	1	83
+22069	Broto	Destinado principal o exclusivamente a viviendas	1	344
+22072	Caldearenas	Destinado principal o exclusivamente a viviendas	1	183
+22074	Campo	Destinado principal o exclusivamente a viviendas	1	283
+22075	Camporrells	Destinado principal o exclusivamente a viviendas	1	210
+22076	Canal de Berdún	Destinado principal o exclusivamente a viviendas	1	358
+22077	Candasnos	Destinado principal o exclusivamente a viviendas	1	275
+22078	Canfranc	Destinado principal o exclusivamente a viviendas	1	139
+22079	Capdesaso	Destinado principal o exclusivamente a viviendas	1	105
+22080	Capella	Destinado principal o exclusivamente a viviendas	1	222
+22081	Casbas de Huesca	Destinado principal o exclusivamente a viviendas	1	331
+22082	Castejón del Puente	Destinado principal o exclusivamente a viviendas	1	172
+22083	Castejón de Monegros	Destinado principal o exclusivamente a viviendas	1	359
+22084	Castejón de Sos	Destinado principal o exclusivamente a viviendas	1	322
+22085	Castelflorite	Destinado principal o exclusivamente a viviendas	1	59
+22086	Castiello de Jaca	Destinado principal o exclusivamente a viviendas	1	251
+22087	Castigaleu	Destinado principal o exclusivamente a viviendas	1	47
+22088	Castillazuelo	Destinado principal o exclusivamente a viviendas	1	144
+22089	Castillonroy	Destinado principal o exclusivamente a viviendas	1	295
+22090	Colungo	Destinado principal o exclusivamente a viviendas	1	112
+22094	Chalamera	Destinado principal o exclusivamente a viviendas	1	104
+22095	Chía	Destinado principal o exclusivamente a viviendas	1	76
+22096	Chimillas	Destinado principal o exclusivamente a viviendas	1	154
+22099	Esplús	Destinado principal o exclusivamente a viviendas	1	283
+22102	Estada	Destinado principal o exclusivamente a viviendas	1	106
+22103	Estadilla	Destinado principal o exclusivamente a viviendas	1	393
+22105	Estopiñán del Castillo	Destinado principal o exclusivamente a viviendas	1	185
+22106	Fago	Destinado principal o exclusivamente a viviendas	1	78
+22107	Fanlo	Destinado principal o exclusivamente a viviendas	1	132
+22109	Fiscal	Destinado principal o exclusivamente a viviendas	1	250
+22110	Fonz	Destinado principal o exclusivamente a viviendas	1	609
+22111	Foradada del Toscar	Destinado principal o exclusivamente a viviendas	1	138
+22112	Fraga	Destinado principal o exclusivamente a viviendas	1	1841
+22113	Fueva (La)	Destinado principal o exclusivamente a viviendas	1	425
+22114	Gistaín	Destinado principal o exclusivamente a viviendas	1	67
+22115	Grado (El)	Destinado principal o exclusivamente a viviendas	1	470
+22116	Grañén	Destinado principal o exclusivamente a viviendas	1	698
+22117	Graus	Destinado principal o exclusivamente a viviendas	1	1239
+22119	Gurrea de Gállego	Destinado principal o exclusivamente a viviendas	1	851
+22122	Hoz de Jaca	Destinado principal o exclusivamente a viviendas	1	103
+22124	Huerto	Destinado principal o exclusivamente a viviendas	1	162
+22125	Huesca	Destinado principal o exclusivamente a viviendas	1	3109
+22126	Ibieca	Destinado principal o exclusivamente a viviendas	1	79
+22127	Igriés	Destinado principal o exclusivamente a viviendas	1	232
+22128	Ilche	Destinado principal o exclusivamente a viviendas	1	122
+22129	Isábena	Destinado principal o exclusivamente a viviendas	1	193
+22130	Jaca	Destinado principal o exclusivamente a viviendas	1	2061
+22131	Jasa	Destinado principal o exclusivamente a viviendas	1	135
+22133	Labuerda	Destinado principal o exclusivamente a viviendas	1	131
+22135	Laluenga	Destinado principal o exclusivamente a viviendas	1	166
+22136	Lalueza	Destinado principal o exclusivamente a viviendas	1	529
+22137	Lanaja	Destinado principal o exclusivamente a viviendas	1	829
+22139	Laperdiguera	Destinado principal o exclusivamente a viviendas	1	78
+22141	Lascellas-Ponzano	Destinado principal o exclusivamente a viviendas	1	145
+22142	Lascuarre	Destinado principal o exclusivamente a viviendas	1	89
+22143	Laspaúles	Destinado principal o exclusivamente a viviendas	1	296
+22144	Laspuña	Destinado principal o exclusivamente a viviendas	1	249
+22149	Loarre	Destinado principal o exclusivamente a viviendas	1	260
+22150	Loporzano	Destinado principal o exclusivamente a viviendas	1	419
+22151	Loscorrales	Destinado principal o exclusivamente a viviendas	1	73
+22155	Monesma y Cajigar	Destinado principal o exclusivamente a viviendas	1	47
+22156	Monflorite-Lascasas	Destinado principal o exclusivamente a viviendas	1	177
+22157	Montanuy	Destinado principal o exclusivamente a viviendas	1	218
+22158	Monzón	Destinado principal o exclusivamente a viviendas	1	3301
+22160	Naval	Destinado principal o exclusivamente a viviendas	1	159
+22162	Novales	Destinado principal o exclusivamente a viviendas	1	78
+22163	Nueno	Destinado principal o exclusivamente a viviendas	1	301
+22164	Olvena	Destinado principal o exclusivamente a viviendas	1	53
+22165	Ontiñena	Destinado principal o exclusivamente a viviendas	1	363
+22167	Osso de Cinca	Destinado principal o exclusivamente a viviendas	1	272
+22168	Palo	Destinado principal o exclusivamente a viviendas	1	49
+22170	Panticosa	Destinado principal o exclusivamente a viviendas	1	341
+22172	Peñalba	Destinado principal o exclusivamente a viviendas	1	252
+22173	Peñas de Riglos (Las)	Destinado principal o exclusivamente a viviendas	1	384
+22174	Peralta de Alcofea	Destinado principal o exclusivamente a viviendas	1	426
+22175	Peralta de Calasanz	Destinado principal o exclusivamente a viviendas	1	366
+22176	Peraltilla	Destinado principal o exclusivamente a viviendas	1	95
+22177	Perarrúa	Destinado principal o exclusivamente a viviendas	1	127
+22178	Pertusa	Destinado principal o exclusivamente a viviendas	1	98
+22181	Piracés	Destinado principal o exclusivamente a viviendas	1	43
+22182	Plan	Destinado principal o exclusivamente a viviendas	1	177
+22184	Poleñino	Destinado principal o exclusivamente a viviendas	1	126
+22186	Pozán de Vero	Destinado principal o exclusivamente a viviendas	1	141
+22187	Puebla de Castro (La)	Destinado principal o exclusivamente a viviendas	1	309
+22188	Puente de Montañana	Destinado principal o exclusivamente a viviendas	1	112
+22189	Puértolas	Destinado principal o exclusivamente a viviendas	1	98
+22190	Pueyo de Araguás (El)	Destinado principal o exclusivamente a viviendas	1	52
+22193	Pueyo de Santa Cruz	Destinado principal o exclusivamente a viviendas	1	195
+22195	Quicena	Destinado principal o exclusivamente a viviendas	1	92
+22197	Robres	Destinado principal o exclusivamente a viviendas	1	259
+22199	Sabiñánigo	Destinado principal o exclusivamente a viviendas	1	1696
+22200	Sahún	Destinado principal o exclusivamente a viviendas	1	215
+22201	Salas Altas	Destinado principal o exclusivamente a viviendas	1	175
+22202	Salas Bajas	Destinado principal o exclusivamente a viviendas	1	116
+22203	Salillas	Destinado principal o exclusivamente a viviendas	1	85
+22204	Sallent de Gállego	Destinado principal o exclusivamente a viviendas	1	848
+22205	San Esteban de Litera	Destinado principal o exclusivamente a viviendas	1	406
+22206	Sangarrén	Destinado principal o exclusivamente a viviendas	1	142
+22207	San Juan de Plan	Destinado principal o exclusivamente a viviendas	1	86
+22208	Santa Cilia	Destinado principal o exclusivamente a viviendas	1	125
+22209	Santa Cruz de la Serós	Destinado principal o exclusivamente a viviendas	1	105
+22212	Santaliestra y San Quílez	Destinado principal o exclusivamente a viviendas	1	77
+22213	Sariñena	Destinado principal o exclusivamente a viviendas	1	1749
+22214	Secastilla	Destinado principal o exclusivamente a viviendas	1	97
+22215	Seira	Destinado principal o exclusivamente a viviendas	1	99
+22217	Sena	Destinado principal o exclusivamente a viviendas	1	355
+22218	Senés de Alcubierre	Destinado principal o exclusivamente a viviendas	1	50
+22220	Sesa	Destinado principal o exclusivamente a viviendas	1	155
+22221	Sesué	Destinado principal o exclusivamente a viviendas	1	102
+22222	Siétamo	Destinado principal o exclusivamente a viviendas	1	399
+22223	Sopeira	Destinado principal o exclusivamente a viviendas	1	123
+22225	Tamarite de Litera	Destinado principal o exclusivamente a viviendas	1	1107
+22226	Tardienta	Destinado principal o exclusivamente a viviendas	1	374
+22227	Tella-Sin	Destinado principal o exclusivamente a viviendas	1	113
+22228	Tierz	Destinado principal o exclusivamente a viviendas	1	268
+22229	Tolva	Destinado principal o exclusivamente a viviendas	1	174
+22230	Torla	Destinado principal o exclusivamente a viviendas	1	195
+22232	Torralba de Aragón	Destinado principal o exclusivamente a viviendas	1	61
+22233	Torre la Ribera	Destinado principal o exclusivamente a viviendas	1	66
+22234	Torrente de Cinca	Destinado principal o exclusivamente a viviendas	1	378
+22235	Torres de Alcanadre	Destinado principal o exclusivamente a viviendas	1	88
+22236	Torres de Barbués	Destinado principal o exclusivamente a viviendas	1	154
+22239	Tramaced	Destinado principal o exclusivamente a viviendas	1	46
+22242	Valfarta	Destinado principal o exclusivamente a viviendas	1	61
+22243	Valle de Bardají	Destinado principal o exclusivamente a viviendas	1	16
+22244	Valle de Lierp	Destinado principal o exclusivamente a viviendas	1	54
+22245	Velilla de Cinca	Destinado principal o exclusivamente a viviendas	1	233
+22246	Beranuy	Destinado principal o exclusivamente a viviendas	1	105
+22247	Viacamp y Litera	Destinado principal o exclusivamente a viviendas	1	27
+22248	Vicién	Destinado principal o exclusivamente a viviendas	1	67
+22249	Villanova	Destinado principal o exclusivamente a viviendas	1	87
+22250	Villanúa	Destinado principal o exclusivamente a viviendas	1	354
+22251	Villanueva de Sigena	Destinado principal o exclusivamente a viviendas	1	224
+22252	Yebra de Basa	Destinado principal o exclusivamente a viviendas	1	62
+22253	Yésero	Destinado principal o exclusivamente a viviendas	1	72
+22254	Zaidín	Destinado principal o exclusivamente a viviendas	1	646
+22901	Valle de Hecho	Destinado principal o exclusivamente a viviendas	1	637
+22902	Puente la Reina de Jaca	Destinado principal o exclusivamente a viviendas	1	179
+22903	San Miguel del Cinca	Destinado principal o exclusivamente a viviendas	1	457
+22904	Sotonera (La)	Destinado principal o exclusivamente a viviendas	1	724
+22905	Lupiñén-Ortilla	Destinado principal o exclusivamente a viviendas	1	240
+22906	Santa María de Dulcis	Destinado principal o exclusivamente a viviendas	1	101
+22907	Aínsa-Sobrarbe	Destinado principal o exclusivamente a viviendas	1	773
+22908	Hoz y Costeán	Destinado principal o exclusivamente a viviendas	1	153
+22909	Vencillón	Destinado principal o exclusivamente a viviendas	1	192
+44001	Ababuj	Destinado principal o exclusivamente a viviendas	1	100
+44002	Abejuela	Destinado principal o exclusivamente a viviendas	1	146
+44003	Aguatón	Destinado principal o exclusivamente a viviendas	1	25
+44004	Aguaviva	Destinado principal o exclusivamente a viviendas	1	540
+44005	Aguilar del Alfambra	Destinado principal o exclusivamente a viviendas	1	127
+44006	Alacón	Destinado principal o exclusivamente a viviendas	1	365
+44007	Alba	Destinado principal o exclusivamente a viviendas	1	204
+44008	Albalate del Arzobispo	Destinado principal o exclusivamente a viviendas	1	1128
+44009	Albarracín	Destinado principal o exclusivamente a viviendas	1	480
+44010	Albentosa	Destinado principal o exclusivamente a viviendas	1	317
+44011	Alcaine	Destinado principal o exclusivamente a viviendas	1	218
+44012	Alcalá de la Selva	Destinado principal o exclusivamente a viviendas	1	748
+44013	Alcañiz	Destinado principal o exclusivamente a viviendas	1	2779
+44014	Alcorisa	Destinado principal o exclusivamente a viviendas	1	1270
+44016	Alfambra	Destinado principal o exclusivamente a viviendas	1	447
+44017	Aliaga	Destinado principal o exclusivamente a viviendas	1	523
+44018	Almohaja	Destinado principal o exclusivamente a viviendas	1	67
+44019	Alobras	Destinado principal o exclusivamente a viviendas	1	105
+44020	Alpeñés	Destinado principal o exclusivamente a viviendas	1	36
+44021	Allepuz	Destinado principal o exclusivamente a viviendas	1	208
+44022	Alloza	Destinado principal o exclusivamente a viviendas	1	597
+44023	Allueva	Destinado principal o exclusivamente a viviendas	1	61
+44024	Anadón	Destinado principal o exclusivamente a viviendas	1	60
+44025	Andorra	Destinado principal o exclusivamente a viviendas	1	2275
+44026	Arcos de las Salinas	Destinado principal o exclusivamente a viviendas	1	333
+44027	Arens de Lledó	Destinado principal o exclusivamente a viviendas	1	157
+44028	Argente	Destinado principal o exclusivamente a viviendas	1	151
+44029	Ariño	Destinado principal o exclusivamente a viviendas	1	573
+44031	Azaila	Destinado principal o exclusivamente a viviendas	1	176
+44032	Bádenas	Destinado principal o exclusivamente a viviendas	1	43
+44033	Báguena	Destinado principal o exclusivamente a viviendas	1	408
+44034	Bañón	Destinado principal o exclusivamente a viviendas	1	167
+44035	Barrachina	Destinado principal o exclusivamente a viviendas	1	192
+44036	Bea	Destinado principal o exclusivamente a viviendas	1	48
+44037	Beceite	Destinado principal o exclusivamente a viviendas	1	571
+44038	Belmonte de San José	Destinado principal o exclusivamente a viviendas	1	141
+44039	Bello	Destinado principal o exclusivamente a viviendas	1	348
+44040	Berge	Destinado principal o exclusivamente a viviendas	1	225
+44041	Bezas	Destinado principal o exclusivamente a viviendas	1	107
+44042	Blancas	Destinado principal o exclusivamente a viviendas	1	253
+44043	Blesa	Destinado principal o exclusivamente a viviendas	1	283
+44044	Bordón	Destinado principal o exclusivamente a viviendas	1	134
+44045	Bronchales	Destinado principal o exclusivamente a viviendas	1	594
+44046	Bueña	Destinado principal o exclusivamente a viviendas	1	74
+44047	Burbáguena	Destinado principal o exclusivamente a viviendas	1	290
+44048	Cabra de Mora	Destinado principal o exclusivamente a viviendas	1	102
+44049	Calaceite	Destinado principal o exclusivamente a viviendas	1	782
+44050	Calamocha	Destinado principal o exclusivamente a viviendas	1	2191
+44051	Calanda	Destinado principal o exclusivamente a viviendas	1	1444
+44052	Calomarde	Destinado principal o exclusivamente a viviendas	1	119
+44053	Camañas	Destinado principal o exclusivamente a viviendas	1	88
+44054	Camarena de la Sierra	Destinado principal o exclusivamente a viviendas	1	286
+44055	Camarillas	Destinado principal o exclusivamente a viviendas	1	181
+44056	Caminreal	Destinado principal o exclusivamente a viviendas	1	485
+44059	Cantavieja	Destinado principal o exclusivamente a viviendas	1	421
+44060	Cañada de Benatanduz	Destinado principal o exclusivamente a viviendas	1	79
+44061	Cañada de Verich (La)	Destinado principal o exclusivamente a viviendas	1	88
+44062	Cañada Vellida	Destinado principal o exclusivamente a viviendas	1	51
+44063	Cañizar del Olivar	Destinado principal o exclusivamente a viviendas	1	135
+44064	Cascante del Río	Destinado principal o exclusivamente a viviendas	1	191
+44065	Castejón de Tornos	Destinado principal o exclusivamente a viviendas	1	116
+44066	Castel de Cabra	Destinado principal o exclusivamente a viviendas	1	162
+44067	Castelnou	Destinado principal o exclusivamente a viviendas	1	136
+44068	Castelserás	Destinado principal o exclusivamente a viviendas	1	554
+44070	Castellar (El)	Destinado principal o exclusivamente a viviendas	1	108
+44071	Castellote	Destinado principal o exclusivamente a viviendas	1	732
+44074	Cedrillas	Destinado principal o exclusivamente a viviendas	1	356
+44075	Celadas	Destinado principal o exclusivamente a viviendas	1	200
+44076	Cella	Destinado principal o exclusivamente a viviendas	1	1208
+44077	Cerollera (La)	Destinado principal o exclusivamente a viviendas	1	91
+44080	Codoñera (La)	Destinado principal o exclusivamente a viviendas	1	269
+44082	Corbalán	Destinado principal o exclusivamente a viviendas	1	109
+44084	Cortes de Aragón	Destinado principal o exclusivamente a viviendas	1	135
+44085	Cosa	Destinado principal o exclusivamente a viviendas	1	81
+44086	Cretas	Destinado principal o exclusivamente a viviendas	1	427
+44087	Crivillén	Destinado principal o exclusivamente a viviendas	1	157
+44088	Cuba (La)	Destinado principal o exclusivamente a viviendas	1	87
+44089	Cubla	Destinado principal o exclusivamente a viviendas	1	113
+44090	Cucalón	Destinado principal o exclusivamente a viviendas	1	144
+44092	Cuervo (El)	Destinado principal o exclusivamente a viviendas	1	145
+44093	Cuevas de Almudén	Destinado principal o exclusivamente a viviendas	1	66
+44094	Cuevas Labradas	Destinado principal o exclusivamente a viviendas	1	101
+44096	Ejulve	Destinado principal o exclusivamente a viviendas	1	175
+44097	Escorihuela	Destinado principal o exclusivamente a viviendas	1	176
+44099	Escucha	Destinado principal o exclusivamente a viviendas	1	295
+44100	Estercuel	Destinado principal o exclusivamente a viviendas	1	296
+44101	Ferreruela de Huerva	Destinado principal o exclusivamente a viviendas	1	79
+44102	Fonfría	Destinado principal o exclusivamente a viviendas	1	46
+44103	Formiche Alto	Destinado principal o exclusivamente a viviendas	1	211
+44105	Fórnoles	Destinado principal o exclusivamente a viviendas	1	157
+44106	Fortanete	Destinado principal o exclusivamente a viviendas	1	253
+44107	Foz-Calanda	Destinado principal o exclusivamente a viviendas	1	208
+44108	Fresneda (La)	Destinado principal o exclusivamente a viviendas	1	527
+44109	Frías de Albarracín	Destinado principal o exclusivamente a viviendas	1	211
+44110	Fuenferrada	Destinado principal o exclusivamente a viviendas	1	94
+44111	Fuentes Calientes	Destinado principal o exclusivamente a viviendas	1	99
+44112	Fuentes Claras	Destinado principal o exclusivamente a viviendas	1	411
+44113	Fuentes de Rubielos	Destinado principal o exclusivamente a viviendas	1	158
+44114	Fuentespalda	Destinado principal o exclusivamente a viviendas	1	229
+44115	Galve	Destinado principal o exclusivamente a viviendas	1	89
+44116	Gargallo	Destinado principal o exclusivamente a viviendas	1	142
+44117	Gea de Albarracín	Destinado principal o exclusivamente a viviendas	1	365
+44118	Ginebrosa (La)	Destinado principal o exclusivamente a viviendas	1	315
+44119	Griegos	Destinado principal o exclusivamente a viviendas	1	172
+44120	Guadalaviar	Destinado principal o exclusivamente a viviendas	1	175
+44121	Gúdar	Destinado principal o exclusivamente a viviendas	1	106
+44122	Híjar	Destinado principal o exclusivamente a viviendas	1	936
+44123	Hinojosa de Jarque	Destinado principal o exclusivamente a viviendas	1	115
+44124	Hoz de la Vieja (La)	Destinado principal o exclusivamente a viviendas	1	259
+44125	Huesa del Común	Destinado principal o exclusivamente a viviendas	1	209
+44126	Iglesuela del Cid (La)	Destinado principal o exclusivamente a viviendas	1	338
+44127	Jabaloyas	Destinado principal o exclusivamente a viviendas	1	155
+44128	Jarque de la Val	Destinado principal o exclusivamente a viviendas	1	77
+44129	Jatiel	Destinado principal o exclusivamente a viviendas	1	63
+44130	Jorcas	Destinado principal o exclusivamente a viviendas	1	90
+44131	Josa	Destinado principal o exclusivamente a viviendas	1	129
+44132	Lagueruela	Destinado principal o exclusivamente a viviendas	1	85
+44133	Lanzuela	Destinado principal o exclusivamente a viviendas	1	38
+44135	Libros	Destinado principal o exclusivamente a viviendas	1	182
+44136	Lidón	Destinado principal o exclusivamente a viviendas	1	76
+44137	Linares de Mora	Destinado principal o exclusivamente a viviendas	1	310
+44138	Loscos	Destinado principal o exclusivamente a viviendas	1	225
+44141	Lledó	Destinado principal o exclusivamente a viviendas	1	123
+44142	Maicas	Destinado principal o exclusivamente a viviendas	1	78
+44143	Manzanera	Destinado principal o exclusivamente a viviendas	1	885
+44144	Martín del Río	Destinado principal o exclusivamente a viviendas	1	279
+44145	Mas de las Matas	Destinado principal o exclusivamente a viviendas	1	774
+44146	Mata de los Olmos (La)	Destinado principal o exclusivamente a viviendas	1	151
+44147	Mazaleón	Destinado principal o exclusivamente a viviendas	1	411
+44148	Mezquita de Jarque	Destinado principal o exclusivamente a viviendas	1	97
+44149	Mirambel	Destinado principal o exclusivamente a viviendas	1	165
+44150	Miravete de la Sierra	Destinado principal o exclusivamente a viviendas	1	80
+44151	Molinos	Destinado principal o exclusivamente a viviendas	1	303
+44152	Monforte de Moyuela	Destinado principal o exclusivamente a viviendas	1	128
+44153	Monreal del Campo	Destinado principal o exclusivamente a viviendas	1	1264
+44154	Monroyo	Destinado principal o exclusivamente a viviendas	1	241
+44155	Montalbán	Destinado principal o exclusivamente a viviendas	1	691
+44156	Monteagudo del Castillo	Destinado principal o exclusivamente a viviendas	1	106
+44157	Monterde de Albarracín	Destinado principal o exclusivamente a viviendas	1	154
+44158	Mora de Rubielos	Destinado principal o exclusivamente a viviendas	1	1097
+44159	Moscardón	Destinado principal o exclusivamente a viviendas	1	89
+44160	Mosqueruela	Destinado principal o exclusivamente a viviendas	1	521
+44161	Muniesa	Destinado principal o exclusivamente a viviendas	1	553
+44163	Noguera de Albarracín	Destinado principal o exclusivamente a viviendas	1	152
+44164	Nogueras	Destinado principal o exclusivamente a viviendas	1	87
+44165	Nogueruelas	Destinado principal o exclusivamente a viviendas	1	280
+44167	Obón	Destinado principal o exclusivamente a viviendas	1	252
+44168	Odón	Destinado principal o exclusivamente a viviendas	1	221
+44169	Ojos Negros	Destinado principal o exclusivamente a viviendas	1	516
+44171	Olba	Destinado principal o exclusivamente a viviendas	1	466
+44172	Oliete	Destinado principal o exclusivamente a viviendas	1	627
+44173	Olmos (Los)	Destinado principal o exclusivamente a viviendas	1	144
+44174	Orihuela del Tremedal	Destinado principal o exclusivamente a viviendas	1	447
+44175	Orrios	Destinado principal o exclusivamente a viviendas	1	125
+44176	Palomar de Arroyos	Destinado principal o exclusivamente a viviendas	1	186
+44177	Pancrudo	Destinado principal o exclusivamente a viviendas	1	195
+44178	Parras de Castellote (Las)	Destinado principal o exclusivamente a viviendas	1	197
+44179	Peñarroya de Tastavins	Destinado principal o exclusivamente a viviendas	1	352
+44180	Peracense	Destinado principal o exclusivamente a viviendas	1	118
+44181	Peralejos	Destinado principal o exclusivamente a viviendas	1	75
+44182	Perales del Alfambra	Destinado principal o exclusivamente a viviendas	1	211
+44183	Pitarque	Destinado principal o exclusivamente a viviendas	1	143
+44184	Plou	Destinado principal o exclusivamente a viviendas	1	90
+44185	Pobo (El)	Destinado principal o exclusivamente a viviendas	1	171
+44187	Portellada (La)	Destinado principal o exclusivamente a viviendas	1	214
+44189	Pozondón	Destinado principal o exclusivamente a viviendas	1	137
+44190	Pozuel del Campo	Destinado principal o exclusivamente a viviendas	1	165
+44191	Puebla de Híjar (La)	Destinado principal o exclusivamente a viviendas	1	723
+44192	Puebla de Valverde (La)	Destinado principal o exclusivamente a viviendas	1	445
+44193	Puertomingalvo	Destinado principal o exclusivamente a viviendas	1	156
+44194	Ráfales	Destinado principal o exclusivamente a viviendas	1	191
+44195	Rillo	Destinado principal o exclusivamente a viviendas	1	114
+44196	Riodeva	Destinado principal o exclusivamente a viviendas	1	210
+44197	Ródenas	Destinado principal o exclusivamente a viviendas	1	127
+44198	Royuela	Destinado principal o exclusivamente a viviendas	1	169
+44199	Rubiales	Destinado principal o exclusivamente a viviendas	1	68
+44200	Rubielos de la Cérida	Destinado principal o exclusivamente a viviendas	1	73
+44201	Rubielos de Mora	Destinado principal o exclusivamente a viviendas	1	654
+44203	Salcedillo	Destinado principal o exclusivamente a viviendas	1	34
+44204	Saldón	Destinado principal o exclusivamente a viviendas	1	93
+44205	Samper de Calanda	Destinado principal o exclusivamente a viviendas	1	708
+44206	San Agustín	Destinado principal o exclusivamente a viviendas	1	328
+44207	San Martín del Río	Destinado principal o exclusivamente a viviendas	1	303
+44208	Santa Cruz de Nogueras	Destinado principal o exclusivamente a viviendas	1	57
+44209	Santa Eulalia	Destinado principal o exclusivamente a viviendas	1	774
+44210	Sarrión	Destinado principal o exclusivamente a viviendas	1	908
+44211	Segura de los Baños	Destinado principal o exclusivamente a viviendas	1	97
+44212	Seno	Destinado principal o exclusivamente a viviendas	1	83
+44213	Singra	Destinado principal o exclusivamente a viviendas	1	97
+44215	Terriente	Destinado principal o exclusivamente a viviendas	1	208
+44216	Teruel	Destinado principal o exclusivamente a viviendas	1	5399
+44217	Toril y Masegoso	Destinado principal o exclusivamente a viviendas	1	106
+44218	Tormón	Destinado principal o exclusivamente a viviendas	1	73
+44219	Tornos	Destinado principal o exclusivamente a viviendas	1	252
+44220	Torralba de los Sisones	Destinado principal o exclusivamente a viviendas	1	149
+44221	Torrecilla de Alcañiz	Destinado principal o exclusivamente a viviendas	1	293
+44222	Torrecilla del Rebollar	Destinado principal o exclusivamente a viviendas	1	186
+44223	Torre de Arcas	Destinado principal o exclusivamente a viviendas	1	104
+44224	Torre de las Arcas	Destinado principal o exclusivamente a viviendas	1	80
+44225	Torre del Compte	Destinado principal o exclusivamente a viviendas	1	220
+44226	Torrelacárcel	Destinado principal o exclusivamente a viviendas	1	252
+44227	Torre los Negros	Destinado principal o exclusivamente a viviendas	1	124
+44228	Torremocha de Jiloca	Destinado principal o exclusivamente a viviendas	1	120
+44229	Torres de Albarracín	Destinado principal o exclusivamente a viviendas	1	163
+44230	Torrevelilla	Destinado principal o exclusivamente a viviendas	1	193
+44231	Torrijas	Destinado principal o exclusivamente a viviendas	1	168
+44232	Torrijo del Campo	Destinado principal o exclusivamente a viviendas	1	364
+44234	Tramacastiel	Destinado principal o exclusivamente a viviendas	1	203
+44235	Tramacastilla	Destinado principal o exclusivamente a viviendas	1	150
+44236	Tronchón	Destinado principal o exclusivamente a viviendas	1	140
+44237	Urrea de Gaén	Destinado principal o exclusivamente a viviendas	1	376
+44238	Utrillas	Destinado principal o exclusivamente a viviendas	1	721
+44239	Valacloche	Destinado principal o exclusivamente a viviendas	1	59
+44240	Valbona	Destinado principal o exclusivamente a viviendas	1	283
+44241	Valdealgorfa	Destinado principal o exclusivamente a viviendas	1	452
+44243	Valdecuenca	Destinado principal o exclusivamente a viviendas	1	95
+44244	Valdelinares	Destinado principal o exclusivamente a viviendas	1	178
+44245	Valdeltormo	Destinado principal o exclusivamente a viviendas	1	257
+44246	Valderrobres	Destinado principal o exclusivamente a viviendas	1	1018
+44247	Valjunquera	Destinado principal o exclusivamente a viviendas	1	301
+44249	Vallecillo (El)	Destinado principal o exclusivamente a viviendas	1	96
+44250	Veguillas de la Sierra	Destinado principal o exclusivamente a viviendas	1	62
+44251	Villafranca del Campo	Destinado principal o exclusivamente a viviendas	1	287
+44252	Villahermosa del Campo	Destinado principal o exclusivamente a viviendas	1	98
+44256	Villanueva del Rebollar de la Sierra	Destinado principal o exclusivamente a viviendas	1	93
+44257	Villar del Cobo	Destinado principal o exclusivamente a viviendas	1	154
+44258	Villar del Salz	Destinado principal o exclusivamente a viviendas	1	101
+44260	Villarluengo	Destinado principal o exclusivamente a viviendas	1	260
+44261	Villarquemado	Destinado principal o exclusivamente a viviendas	1	536
+44262	Villarroya de los Pinares	Destinado principal o exclusivamente a viviendas	1	186
+44263	Villastar	Destinado principal o exclusivamente a viviendas	1	292
+44264	Villel	Destinado principal o exclusivamente a viviendas	1	344
+44265	Vinaceite	Destinado principal o exclusivamente a viviendas	1	183
+44266	Visiedo	Destinado principal o exclusivamente a viviendas	1	148
+44267	Vivel del Río Martín	Destinado principal o exclusivamente a viviendas	1	220
+44268	Zoma (La)	Destinado principal o exclusivamente a viviendas	1	33
+50001	Abanto	Destinado principal o exclusivamente a viviendas	1	152
+50002	Acered	Destinado principal o exclusivamente a viviendas	1	188
+50003	Agón	Destinado principal o exclusivamente a viviendas	1	117
+50004	Aguarón	Destinado principal o exclusivamente a viviendas	1	531
+50005	Aguilón	Destinado principal o exclusivamente a viviendas	1	251
+50006	Ainzón	Destinado principal o exclusivamente a viviendas	1	577
+50007	Aladrén	Destinado principal o exclusivamente a viviendas	1	131
+50008	Alagón	Destinado principal o exclusivamente a viviendas	1	1692
+50009	Alarba	Destinado principal o exclusivamente a viviendas	1	194
+50010	Alberite de San Juan	Destinado principal o exclusivamente a viviendas	1	70
+50011	Albeta	Destinado principal o exclusivamente a viviendas	1	98
+50012	Alborge	Destinado principal o exclusivamente a viviendas	1	105
+50013	Alcalá de Ebro	Destinado principal o exclusivamente a viviendas	1	160
+50014	Alcalá de Moncayo	Destinado principal o exclusivamente a viviendas	1	181
+50015	Alconchel de Ariza	Destinado principal o exclusivamente a viviendas	1	209
+50016	Aldehuela de Liestos	Destinado principal o exclusivamente a viviendas	1	86
+50017	Alfajarín	Destinado principal o exclusivamente a viviendas	1	1136
+50018	Alfamén	Destinado principal o exclusivamente a viviendas	1	637
+50019	Alforque	Destinado principal o exclusivamente a viviendas	1	119
+50020	Alhama de Aragón	Destinado principal o exclusivamente a viviendas	1	567
+50021	Almochuel	Destinado principal o exclusivamente a viviendas	1	28
+50022	Almolda (La)	Destinado principal o exclusivamente a viviendas	1	349
+50023	Almonacid de la Cuba	Destinado principal o exclusivamente a viviendas	1	177
+50024	Almonacid de la Sierra	Destinado principal o exclusivamente a viviendas	1	508
+50025	Almunia de Doña Godina (La)	Destinado principal o exclusivamente a viviendas	1	1983
+50026	Alpartir	Destinado principal o exclusivamente a viviendas	1	348
+50027	Ambel	Destinado principal o exclusivamente a viviendas	1	279
+50028	Anento	Destinado principal o exclusivamente a viviendas	1	130
+50029	Aniñón	Destinado principal o exclusivamente a viviendas	1	495
+50030	Añón de Moncayo	Destinado principal o exclusivamente a viviendas	1	216
+50031	Aranda de Moncayo	Destinado principal o exclusivamente a viviendas	1	310
+50032	Arándiga	Destinado principal o exclusivamente a viviendas	1	439
+50033	Ardisa	Destinado principal o exclusivamente a viviendas	1	85
+50034	Ariza	Destinado principal o exclusivamente a viviendas	1	516
+50035	Artieda	Destinado principal o exclusivamente a viviendas	1	59
+50036	Asín	Destinado principal o exclusivamente a viviendas	1	102
+50037	Atea	Destinado principal o exclusivamente a viviendas	1	232
+50038	Ateca	Destinado principal o exclusivamente a viviendas	1	800
+50039	Azuara	Destinado principal o exclusivamente a viviendas	1	690
+50040	Badules	Destinado principal o exclusivamente a viviendas	1	109
+50041	Bagüés	Destinado principal o exclusivamente a viviendas	1	28
+50042	Balconchán	Destinado principal o exclusivamente a viviendas	1	43
+50043	Bárboles	Destinado principal o exclusivamente a viviendas	1	236
+50044	Bardallur	Destinado principal o exclusivamente a viviendas	1	214
+50045	Belchite	Destinado principal o exclusivamente a viviendas	1	1255
+50046	Belmonte de Gracián	Destinado principal o exclusivamente a viviendas	1	198
+50047	Berdejo	Destinado principal o exclusivamente a viviendas	1	88
+50048	Berrueco	Destinado principal o exclusivamente a viviendas	1	49
+50050	Bijuesca	Destinado principal o exclusivamente a viviendas	1	253
+50051	Biota	Destinado principal o exclusivamente a viviendas	1	636
+50052	Bisimbre	Destinado principal o exclusivamente a viviendas	1	101
+50053	Boquiñeni	Destinado principal o exclusivamente a viviendas	1	423
+50054	Bordalba	Destinado principal o exclusivamente a viviendas	1	159
+50055	Borja	Destinado principal o exclusivamente a viviendas	1	2373
+50056	Botorrita	Destinado principal o exclusivamente a viviendas	1	285
+50057	Brea de Aragón	Destinado principal o exclusivamente a viviendas	1	560
+50058	Bubierca	Destinado principal o exclusivamente a viviendas	1	115
+50059	Bujaraloz	Destinado principal o exclusivamente a viviendas	1	393
+50060	Bulbuente	Destinado principal o exclusivamente a viviendas	1	262
+50061	Bureta	Destinado principal o exclusivamente a viviendas	1	162
+50062	Burgo de Ebro (El)	Destinado principal o exclusivamente a viviendas	1	768
+50063	Buste (El)	Destinado principal o exclusivamente a viviendas	1	112
+50064	Cabañas de Ebro	Destinado principal o exclusivamente a viviendas	1	250
+50065	Cabolafuente	Destinado principal o exclusivamente a viviendas	1	146
+50066	Cadrete	Destinado principal o exclusivamente a viviendas	1	1166
+50067	Calatayud	Destinado principal o exclusivamente a viviendas	1	2835
+50068	Calatorao	Destinado principal o exclusivamente a viviendas	1	1353
+50069	Calcena	Destinado principal o exclusivamente a viviendas	1	81
+50070	Calmarza	Destinado principal o exclusivamente a viviendas	1	102
+50071	Campillo de Aragón	Destinado principal o exclusivamente a viviendas	1	221
+50072	Carenas	Destinado principal o exclusivamente a viviendas	1	430
+50073	Cariñena	Destinado principal o exclusivamente a viviendas	1	873
+50074	Caspe	Destinado principal o exclusivamente a viviendas	1	2857
+50075	Castejón de Alarba	Destinado principal o exclusivamente a viviendas	1	82
+50076	Castejón de las Armas	Destinado principal o exclusivamente a viviendas	1	140
+50077	Castejón de Valdejasa	Destinado principal o exclusivamente a viviendas	1	221
+50078	Castiliscar	Destinado principal o exclusivamente a viviendas	1	355
+50079	Cervera de la Cañada	Destinado principal o exclusivamente a viviendas	1	234
+50080	Cerveruela	Destinado principal o exclusivamente a viviendas	1	93
+50081	Cetina	Destinado principal o exclusivamente a viviendas	1	585
+50082	Cimballa	Destinado principal o exclusivamente a viviendas	1	165
+50083	Cinco Olivas	Destinado principal o exclusivamente a viviendas	1	121
+50084	Clarés de Ribota	Destinado principal o exclusivamente a viviendas	1	132
+50085	Codo	Destinado principal o exclusivamente a viviendas	1	282
+50086	Codos	Destinado principal o exclusivamente a viviendas	1	326
+50087	Contamina	Destinado principal o exclusivamente a viviendas	1	46
+50088	Cosuenda	Destinado principal o exclusivamente a viviendas	1	321
+50089	Cuarte de Huerva	Destinado principal o exclusivamente a viviendas	1	1558
+50090	Cubel	Destinado principal o exclusivamente a viviendas	1	181
+50091	Cuerlas (Las)	Destinado principal o exclusivamente a viviendas	1	130
+50092	Chiprana	Destinado principal o exclusivamente a viviendas	1	348
+50093	Chodes	Destinado principal o exclusivamente a viviendas	1	108
+50094	Daroca	Destinado principal o exclusivamente a viviendas	1	910
+50095	Ejea de los Caballeros	Destinado principal o exclusivamente a viviendas	1	4506
+50096	Embid de Ariza	Destinado principal o exclusivamente a viviendas	1	116
+50098	Encinacorba	Destinado principal o exclusivamente a viviendas	1	208
+50099	Épila	Destinado principal o exclusivamente a viviendas	1	2237
+50100	Erla	Destinado principal o exclusivamente a viviendas	1	266
+50101	Escatrón	Destinado principal o exclusivamente a viviendas	1	1044
+50102	Fabara	Destinado principal o exclusivamente a viviendas	1	645
+50104	Farlete	Destinado principal o exclusivamente a viviendas	1	194
+50105	Fayón	Destinado principal o exclusivamente a viviendas	1	306
+50106	Fayos (Los)	Destinado principal o exclusivamente a viviendas	1	240
+50107	Figueruelas	Destinado principal o exclusivamente a viviendas	1	353
+50108	Fombuena	Destinado principal o exclusivamente a viviendas	1	39
+50109	Frago (El)	Destinado principal o exclusivamente a viviendas	1	99
+50110	Frasno (El)	Destinado principal o exclusivamente a viviendas	1	485
+50111	Fréscano	Destinado principal o exclusivamente a viviendas	1	144
+50113	Fuendejalón	Destinado principal o exclusivamente a viviendas	1	411
+50114	Fuendetodos	Destinado principal o exclusivamente a viviendas	1	127
+50115	Fuentes de Ebro	Destinado principal o exclusivamente a viviendas	1	1600
+50116	Fuentes de Jiloca	Destinado principal o exclusivamente a viviendas	1	264
+50117	Gallocanta	Destinado principal o exclusivamente a viviendas	1	133
+50118	Gallur	Destinado principal o exclusivamente a viviendas	1	1249
+50119	Gelsa	Destinado principal o exclusivamente a viviendas	1	661
+50120	Godojos	Destinado principal o exclusivamente a viviendas	1	70
+50121	Gotor	Destinado principal o exclusivamente a viviendas	1	208
+50122	Grisel	Destinado principal o exclusivamente a viviendas	1	97
+50123	Grisén	Destinado principal o exclusivamente a viviendas	1	331
+50124	Herrera de los Navarros	Destinado principal o exclusivamente a viviendas	1	470
+50125	Ibdes	Destinado principal o exclusivamente a viviendas	1	513
+50126	Illueca	Destinado principal o exclusivamente a viviendas	1	612
+50128	Isuerre	Destinado principal o exclusivamente a viviendas	1	60
+50129	Jaraba	Destinado principal o exclusivamente a viviendas	1	269
+50130	Jarque	Destinado principal o exclusivamente a viviendas	1	364
+50131	Jaulín	Destinado principal o exclusivamente a viviendas	1	173
+50132	Joyosa (La)	Destinado principal o exclusivamente a viviendas	1	308
+50133	Lagata	Destinado principal o exclusivamente a viviendas	1	142
+50134	Langa del Castillo	Destinado principal o exclusivamente a viviendas	1	200
+50135	Layana	Destinado principal o exclusivamente a viviendas	1	119
+50136	Lécera	Destinado principal o exclusivamente a viviendas	1	616
+50137	Leciñena	Destinado principal o exclusivamente a viviendas	1	542
+50138	Lechón	Destinado principal o exclusivamente a viviendas	1	39
+50139	Letux	Destinado principal o exclusivamente a viviendas	1	345
+50140	Litago	Destinado principal o exclusivamente a viviendas	1	230
+50141	Lituénigo	Destinado principal o exclusivamente a viviendas	1	152
+50142	Lobera de Onsella	Destinado principal o exclusivamente a viviendas	1	48
+50143	Longares	Destinado principal o exclusivamente a viviendas	1	400
+50144	Longás	Destinado principal o exclusivamente a viviendas	1	49
+50146	Lucena de Jalón	Destinado principal o exclusivamente a viviendas	1	193
+50147	Luceni	Destinado principal o exclusivamente a viviendas	1	570
+50148	Luesia	Destinado principal o exclusivamente a viviendas	1	268
+50149	Luesma	Destinado principal o exclusivamente a viviendas	1	52
+50150	Lumpiaque	Destinado principal o exclusivamente a viviendas	1	612
+50151	Luna	Destinado principal o exclusivamente a viviendas	1	583
+50152	Maella	Destinado principal o exclusivamente a viviendas	1	1057
+50153	Magallón	Destinado principal o exclusivamente a viviendas	1	644
+50154	Mainar	Destinado principal o exclusivamente a viviendas	1	132
+50155	Malanquilla	Destinado principal o exclusivamente a viviendas	1	134
+50156	Maleján	Destinado principal o exclusivamente a viviendas	1	182
+50157	Malón	Destinado principal o exclusivamente a viviendas	1	359
+50159	Maluenda	Destinado principal o exclusivamente a viviendas	1	478
+50160	Mallén	Destinado principal o exclusivamente a viviendas	1	1306
+50161	Manchones	Destinado principal o exclusivamente a viviendas	1	158
+50162	Mara	Destinado principal o exclusivamente a viviendas	1	180
+50163	María de Huerva	Destinado principal o exclusivamente a viviendas	1	1171
+50164	Mediana de Aragón	Destinado principal o exclusivamente a viviendas	1	277
+50165	Mequinenza	Destinado principal o exclusivamente a viviendas	1	936
+50166	Mesones de Isuela	Destinado principal o exclusivamente a viviendas	1	256
+50167	Mezalocha	Destinado principal o exclusivamente a viviendas	1	164
+50168	Mianos	Destinado principal o exclusivamente a viviendas	1	43
+50169	Miedes de Aragón	Destinado principal o exclusivamente a viviendas	1	328
+50170	Monegrillo	Destinado principal o exclusivamente a viviendas	1	208
+50171	Moneva	Destinado principal o exclusivamente a viviendas	1	146
+50172	Monreal de Ariza	Destinado principal o exclusivamente a viviendas	1	212
+50173	Monterde	Destinado principal o exclusivamente a viviendas	1	220
+50174	Montón	Destinado principal o exclusivamente a viviendas	1	137
+50175	Morata de Jalón	Destinado principal o exclusivamente a viviendas	1	871
+50176	Morata de Jiloca	Destinado principal o exclusivamente a viviendas	1	264
+50177	Morés	Destinado principal o exclusivamente a viviendas	1	351
+50178	Moros	Destinado principal o exclusivamente a viviendas	1	368
+50179	Moyuela	Destinado principal o exclusivamente a viviendas	1	303
+50180	Mozota	Destinado principal o exclusivamente a viviendas	1	165
+50181	Muel	Destinado principal o exclusivamente a viviendas	1	551
+50182	Muela (La)	Destinado principal o exclusivamente a viviendas	1	1790
+50183	Munébrega	Destinado principal o exclusivamente a viviendas	1	331
+50184	Murero	Destinado principal o exclusivamente a viviendas	1	145
+50185	Murillo de Gállego	Destinado principal o exclusivamente a viviendas	1	207
+50186	Navardún	Destinado principal o exclusivamente a viviendas	1	46
+50187	Nigüella	Destinado principal o exclusivamente a viviendas	1	83
+50188	Nombrevilla	Destinado principal o exclusivamente a viviendas	1	66
+50189	Nonaspe	Destinado principal o exclusivamente a viviendas	1	676
+50190	Novallas	Destinado principal o exclusivamente a viviendas	1	620
+50191	Novillas	Destinado principal o exclusivamente a viviendas	1	362
+50192	Nuévalos	Destinado principal o exclusivamente a viviendas	1	215
+50193	Nuez de Ebro	Destinado principal o exclusivamente a viviendas	1	513
+50194	Olvés	Destinado principal o exclusivamente a viviendas	1	203
+50195	Orcajo	Destinado principal o exclusivamente a viviendas	1	68
+50196	Orera	Destinado principal o exclusivamente a viviendas	1	129
+50197	Orés	Destinado principal o exclusivamente a viviendas	1	121
+50198	Oseja	Destinado principal o exclusivamente a viviendas	1	62
+50199	Osera de Ebro	Destinado principal o exclusivamente a viviendas	1	352
+50200	Paniza	Destinado principal o exclusivamente a viviendas	1	408
+50201	Paracuellos de Jiloca	Destinado principal o exclusivamente a viviendas	1	335
+50202	Paracuellos de la Ribera	Destinado principal o exclusivamente a viviendas	1	274
+50203	Pastriz	Destinado principal o exclusivamente a viviendas	1	489
+50204	Pedrola	Destinado principal o exclusivamente a viviendas	1	981
+50205	Pedrosas (Las)	Destinado principal o exclusivamente a viviendas	1	91
+50206	Perdiguera	Destinado principal o exclusivamente a viviendas	1	321
+50207	Piedratajada	Destinado principal o exclusivamente a viviendas	1	100
+50208	Pina de Ebro	Destinado principal o exclusivamente a viviendas	1	1016
+50209	Pinseque	Destinado principal o exclusivamente a viviendas	1	1330
+50210	Pintanos (Los)	Destinado principal o exclusivamente a viviendas	1	68
+50211	Plasencia de Jalón	Destinado principal o exclusivamente a viviendas	1	255
+50212	Pleitas	Destinado principal o exclusivamente a viviendas	1	57
+50213	Plenas	Destinado principal o exclusivamente a viviendas	1	195
+50214	Pomer	Destinado principal o exclusivamente a viviendas	1	86
+50215	Pozuel de Ariza	Destinado principal o exclusivamente a viviendas	1	108
+50216	Pozuelo de Aragón	Destinado principal o exclusivamente a viviendas	1	176
+50217	Pradilla de Ebro	Destinado principal o exclusivamente a viviendas	1	322
+50218	Puebla de Albortón	Destinado principal o exclusivamente a viviendas	1	107
+50219	Puebla de Alfindén (La)	Destinado principal o exclusivamente a viviendas	1	1434
+50220	Puendeluna	Destinado principal o exclusivamente a viviendas	1	78
+50221	Purujosa	Destinado principal o exclusivamente a viviendas	1	49
+50222	Quinto	Destinado principal o exclusivamente a viviendas	1	860
+50223	Remolinos	Destinado principal o exclusivamente a viviendas	1	547
+50224	Retascón	Destinado principal o exclusivamente a viviendas	1	91
+50225	Ricla	Destinado principal o exclusivamente a viviendas	1	985
+50227	Romanos	Destinado principal o exclusivamente a viviendas	1	111
+50228	Rueda de Jalón	Destinado principal o exclusivamente a viviendas	1	247
+50229	Ruesca	Destinado principal o exclusivamente a viviendas	1	68
+50230	Sádaba	Destinado principal o exclusivamente a viviendas	1	722
+50231	Salillas de Jalón	Destinado principal o exclusivamente a viviendas	1	227
+50232	Salvatierra de Esca	Destinado principal o exclusivamente a viviendas	1	233
+50233	Samper del Salz	Destinado principal o exclusivamente a viviendas	1	100
+50234	San Martín de la Virgen de Moncayo	Destinado principal o exclusivamente a viviendas	1	153
+50235	San Mateo de Gállego	Destinado principal o exclusivamente a viviendas	1	1346
+50236	Santa Cruz de Grío	Destinado principal o exclusivamente a viviendas	1	148
+50237	Santa Cruz de Moncayo	Destinado principal o exclusivamente a viviendas	1	155
+50238	Santa Eulalia de Gállego	Destinado principal o exclusivamente a viviendas	1	137
+50239	Santed	Destinado principal o exclusivamente a viviendas	1	81
+50240	Sástago	Destinado principal o exclusivamente a viviendas	1	749
+50241	Saviñán	Destinado principal o exclusivamente a viviendas	1	417
+50242	Sediles	Destinado principal o exclusivamente a viviendas	1	85
+50243	Sestrica	Destinado principal o exclusivamente a viviendas	1	325
+50244	Sierra de Luna	Destinado principal o exclusivamente a viviendas	1	184
+50245	Sigüés	Destinado principal o exclusivamente a viviendas	1	117
+50246	Sisamón	Destinado principal o exclusivamente a viviendas	1	150
+50247	Sobradiel	Destinado principal o exclusivamente a viviendas	1	246
+50248	Sos del Rey Católico	Destinado principal o exclusivamente a viviendas	1	505
+50249	Tabuenca	Destinado principal o exclusivamente a viviendas	1	329
+50250	Talamantes	Destinado principal o exclusivamente a viviendas	1	88
+50251	Tarazona	Destinado principal o exclusivamente a viviendas	1	2788
+50252	Tauste	Destinado principal o exclusivamente a viviendas	1	1834
+50253	Terrer	Destinado principal o exclusivamente a viviendas	1	401
+50254	Tierga	Destinado principal o exclusivamente a viviendas	1	136
+50255	Tobed	Destinado principal o exclusivamente a viviendas	1	284
+50256	Torralba de los Frailes	Destinado principal o exclusivamente a viviendas	1	204
+50257	Torralba de Ribota	Destinado principal o exclusivamente a viviendas	1	203
+50258	Torralbilla	Destinado principal o exclusivamente a viviendas	1	137
+50259	Torrehermosa	Destinado principal o exclusivamente a viviendas	1	105
+50260	Torrelapaja	Destinado principal o exclusivamente a viviendas	1	82
+50261	Torrellas	Destinado principal o exclusivamente a viviendas	1	391
+50262	Torres de Berrellén	Destinado principal o exclusivamente a viviendas	1	671
+50263	Torrijo de la Cañada	Destinado principal o exclusivamente a viviendas	1	426
+50264	Tosos	Destinado principal o exclusivamente a viviendas	1	248
+50265	Trasmoz	Destinado principal o exclusivamente a viviendas	1	87
+50266	Trasobares	Destinado principal o exclusivamente a viviendas	1	215
+50267	Uncastillo	Destinado principal o exclusivamente a viviendas	1	572
+50268	Undués de Lerda	Destinado principal o exclusivamente a viviendas	1	56
+50269	Urrea de Jalón	Destinado principal o exclusivamente a viviendas	1	319
+50270	Urriés	Destinado principal o exclusivamente a viviendas	1	78
+50271	Used	Destinado principal o exclusivamente a viviendas	1	335
+50272	Utebo	Destinado principal o exclusivamente a viviendas	1	2476
+50273	Valdehorna	Destinado principal o exclusivamente a viviendas	1	53
+50274	Val de San Martín	Destinado principal o exclusivamente a viviendas	1	102
+50275	Valmadrid	Destinado principal o exclusivamente a viviendas	1	77
+50276	Valpalmas	Destinado principal o exclusivamente a viviendas	1	130
+50277	Valtorres	Destinado principal o exclusivamente a viviendas	1	131
+50278	Velilla de Ebro	Destinado principal o exclusivamente a viviendas	1	269
+50279	Velilla de Jiloca	Destinado principal o exclusivamente a viviendas	1	123
+50280	Vera de Moncayo	Destinado principal o exclusivamente a viviendas	1	459
+50281	Vierlas	Destinado principal o exclusivamente a viviendas	1	78
+50282	Vilueña (La)	Destinado principal o exclusivamente a viviendas	1	87
+50283	Villadoz	Destinado principal o exclusivamente a viviendas	1	84
+50284	Villafeliche	Destinado principal o exclusivamente a viviendas	1	275
+50285	Villafranca de Ebro	Destinado principal o exclusivamente a viviendas	1	407
+50286	Villalba de Perejil	Destinado principal o exclusivamente a viviendas	1	69
+50287	Villalengua	Destinado principal o exclusivamente a viviendas	1	290
+50288	Villanueva de Gállego	Destinado principal o exclusivamente a viviendas	1	1273
+50289	Villanueva de Jiloca	Destinado principal o exclusivamente a viviendas	1	134
+50290	Villanueva de Huerva	Destinado principal o exclusivamente a viviendas	1	412
+50291	Villar de los Navarros	Destinado principal o exclusivamente a viviendas	1	256
+50292	Villarreal de Huerva	Destinado principal o exclusivamente a viviendas	1	157
+50293	Villarroya de la Sierra	Destinado principal o exclusivamente a viviendas	1	474
+50294	Villarroya del Campo	Destinado principal o exclusivamente a viviendas	1	86
+50295	Vistabella	Destinado principal o exclusivamente a viviendas	1	156
+50296	Zaida (La)	Destinado principal o exclusivamente a viviendas	1	302
+50297	Zaragoza	Destinado principal o exclusivamente a viviendas	1	37511
+50298	Zuera	Destinado principal o exclusivamente a viviendas	1	2247
+50901	Biel	Destinado principal o exclusivamente a viviendas	1	236
+50902	Marracos	Destinado principal o exclusivamente a viviendas	1	69
+50903	Villamayor de Gállego	Destinado principal o exclusivamente a viviendas	1	1048
+22009	Albelda	Destinado a otros fines	2	1
+22013	Alberuela de Tubo	Destinado a otros fines	2	2
+22016	Alcampell	Destinado a otros fines	2	1
+22018	Alcubierre	Destinado a otros fines	2	1
+22021	Almudévar	Destinado a otros fines	2	5
+22022	Almunia de San Juan	Destinado a otros fines	2	6
+22024	Alquézar	Destinado a otros fines	2	1
+22027	Angüés	Destinado a otros fines	2	1
+22028	Ansó	Destinado a otros fines	2	5
+22039	Ayerbe	Destinado a otros fines	2	7
+22046	Ballobar	Destinado a otros fines	2	7
+22048	Barbastro	Destinado a otros fines	2	19
+22050	Barbuñales	Destinado a otros fines	2	1
+22051	Bárcabo	Destinado a otros fines	2	1
+22054	Benasque	Destinado a otros fines	2	4
+22055	Berbegal	Destinado a otros fines	2	1
+22059	Biescas	Destinado a otros fines	2	16
+22061	Binéfar	Destinado a otros fines	2	6
+22067	Bonansa	Destinado a otros fines	2	1
+22069	Broto	Destinado a otros fines	2	23
+22074	Campo	Destinado a otros fines	2	1
+22075	Camporrells	Destinado a otros fines	2	1
+22078	Canfranc	Destinado a otros fines	2	5
+22080	Capella	Destinado a otros fines	2	1
+22084	Castejón de Sos	Destinado a otros fines	2	5
+22086	Castiello de Jaca	Destinado a otros fines	2	2
+22089	Castillonroy	Destinado a otros fines	2	1
+22090	Colungo	Destinado a otros fines	2	1
+22109	Fiscal	Destinado a otros fines	2	1
+22110	Fonz	Destinado a otros fines	2	4
+22112	Fraga	Destinado a otros fines	2	5
+22116	Grañén	Destinado a otros fines	2	1
+22117	Graus	Destinado a otros fines	2	3
+22124	Huerto	Destinado a otros fines	2	1
+22125	Huesca	Destinado a otros fines	2	45
+22129	Isábena	Destinado a otros fines	2	1
+22130	Jaca	Destinado a otros fines	2	10
+22137	Lanaja	Destinado a otros fines	2	2
+22143	Laspaúles	Destinado a otros fines	2	3
+22151	Loscorrales	Destinado a otros fines	2	1
+22158	Monzón	Destinado a otros fines	2	10
+22163	Nueno	Destinado a otros fines	2	1
+22167	Osso de Cinca	Destinado a otros fines	2	1
+22170	Panticosa	Destinado a otros fines	2	7
+22178	Pertusa	Destinado a otros fines	2	1
+22184	Poleñino	Destinado a otros fines	2	3
+22190	Pueyo de Araguás (El)	Destinado a otros fines	2	1
+22195	Quicena	Destinado a otros fines	2	1
+22199	Sabiñánigo	Destinado a otros fines	2	3
+22200	Sahún	Destinado a otros fines	2	1
+22204	Sallent de Gállego	Destinado a otros fines	2	25
+22208	Santa Cilia	Destinado a otros fines	2	1
+22209	Santa Cruz de la Serós	Destinado a otros fines	2	2
+22212	Santaliestra y San Quílez	Destinado a otros fines	2	1
+22218	Senés de Alcubierre	Destinado a otros fines	2	1
+22226	Tardienta	Destinado a otros fines	2	1
+22230	Torla	Destinado a otros fines	2	7
+22252	Yebra de Basa	Destinado a otros fines	2	1
+22254	Zaidín	Destinado a otros fines	2	4
+22901	Valle de Hecho	Destinado a otros fines	2	6
+22903	San Miguel del Cinca	Destinado a otros fines	2	1
+22906	Santa María de Dulcis	Destinado a otros fines	2	1
+22907	Aínsa-Sobrarbe	Destinado a otros fines	2	31
+22908	Hoz y Costeán	Destinado a otros fines	2	1
+22909	Vencillón	Destinado a otros fines	2	1
+44004	Aguaviva	Destinado a otros fines	2	11
+44008	Albalate del Arzobispo	Destinado a otros fines	2	1
+44009	Albarracín	Destinado a otros fines	2	9
+44010	Albentosa	Destinado a otros fines	2	4
+44012	Alcalá de la Selva	Destinado a otros fines	2	3
+44013	Alcañiz	Destinado a otros fines	2	25
+44014	Alcorisa	Destinado a otros fines	2	10
+44016	Alfambra	Destinado a otros fines	2	3
+44017	Aliaga	Destinado a otros fines	2	3
+44022	Alloza	Destinado a otros fines	2	5
+44025	Andorra	Destinado a otros fines	2	12
+44033	Báguena	Destinado a otros fines	2	3
+44035	Barrachina	Destinado a otros fines	2	1
+44039	Bello	Destinado a otros fines	2	3
+44040	Berge	Destinado a otros fines	2	1
+44042	Blancas	Destinado a otros fines	2	1
+44045	Bronchales	Destinado a otros fines	2	2
+44048	Cabra de Mora	Destinado a otros fines	2	3
+44049	Calaceite	Destinado a otros fines	2	4
+44050	Calamocha	Destinado a otros fines	2	6
+44051	Calanda	Destinado a otros fines	2	3
+44052	Calomarde	Destinado a otros fines	2	2
+44054	Camarena de la Sierra	Destinado a otros fines	2	1
+44055	Camarillas	Destinado a otros fines	2	1
+44056	Caminreal	Destinado a otros fines	2	1
+44062	Cañada Vellida	Destinado a otros fines	2	1
+44063	Cañizar del Olivar	Destinado a otros fines	2	4
+44068	Castelserás	Destinado a otros fines	2	5
+44070	Castellar (El)	Destinado a otros fines	2	1
+44071	Castellote	Destinado a otros fines	2	32
+44076	Cella	Destinado a otros fines	2	2
+44086	Cretas	Destinado a otros fines	2	2
+44099	Escucha	Destinado a otros fines	2	1
+44100	Estercuel	Destinado a otros fines	2	2
+44106	Fortanete	Destinado a otros fines	2	3
+44107	Foz-Calanda	Destinado a otros fines	2	4
+44108	Fresneda (La)	Destinado a otros fines	2	3
+44112	Fuentes Claras	Destinado a otros fines	2	2
+44113	Fuentes de Rubielos	Destinado a otros fines	2	1
+44114	Fuentespalda	Destinado a otros fines	2	1
+44116	Gargallo	Destinado a otros fines	2	1
+44119	Griegos	Destinado a otros fines	2	3
+44122	Híjar	Destinado a otros fines	2	2
+44126	Iglesuela del Cid (La)	Destinado a otros fines	2	2
+44135	Libros	Destinado a otros fines	2	1
+44143	Manzanera	Destinado a otros fines	2	1
+44144	Martín del Río	Destinado a otros fines	2	1
+44145	Mas de las Matas	Destinado a otros fines	2	9
+44146	Mata de los Olmos (La)	Destinado a otros fines	2	4
+44147	Mazaleón	Destinado a otros fines	2	1
+44148	Mezquita de Jarque	Destinado a otros fines	2	2
+44151	Molinos	Destinado a otros fines	2	1
+44153	Monreal del Campo	Destinado a otros fines	2	7
+44157	Monterde de Albarracín	Destinado a otros fines	2	1
+44158	Mora de Rubielos	Destinado a otros fines	2	1
+44161	Muniesa	Destinado a otros fines	2	6
+44163	Noguera de Albarracín	Destinado a otros fines	2	1
+44172	Oliete	Destinado a otros fines	2	3
+44175	Orrios	Destinado a otros fines	2	1
+44180	Peracense	Destinado a otros fines	2	1
+44182	Perales del Alfambra	Destinado a otros fines	2	2
+44187	Portellada (La)	Destinado a otros fines	2	3
+44189	Pozondón	Destinado a otros fines	2	1
+44191	Puebla de Híjar (La)	Destinado a otros fines	2	2
+44192	Puebla de Valverde (La)	Destinado a otros fines	2	1
+44193	Puertomingalvo	Destinado a otros fines	2	1
+44196	Riodeva	Destinado a otros fines	2	2
+44209	Santa Eulalia	Destinado a otros fines	2	2
+44210	Sarrión	Destinado a otros fines	2	1
+44212	Seno	Destinado a otros fines	2	1
+44215	Terriente	Destinado a otros fines	2	1
+44216	Teruel	Destinado a otros fines	2	35
+44220	Torralba de los Sisones	Destinado a otros fines	2	1
+44221	Torrecilla de Alcañiz	Destinado a otros fines	2	1
+44232	Torrijo del Campo	Destinado a otros fines	2	1
+44237	Urrea de Gaén	Destinado a otros fines	2	1
+44238	Utrillas	Destinado a otros fines	2	2
+44241	Valdealgorfa	Destinado a otros fines	2	5
+44243	Valdecuenca	Destinado a otros fines	2	1
+44245	Valdeltormo	Destinado a otros fines	2	1
+44246	Valderrobres	Destinado a otros fines	2	2
+44258	Villar del Salz	Destinado a otros fines	2	1
+44261	Villarquemado	Destinado a otros fines	2	1
+50002	Acered	Destinado a otros fines	2	1
+50003	Agón	Destinado a otros fines	2	1
+50004	Aguarón	Destinado a otros fines	2	4
+50005	Aguilón	Destinado a otros fines	2	1
+50006	Ainzón	Destinado a otros fines	2	2
+50008	Alagón	Destinado a otros fines	2	60
+50014	Alcalá de Moncayo	Destinado a otros fines	2	1
+50017	Alfajarín	Destinado a otros fines	2	3
+50018	Alfamén	Destinado a otros fines	2	6
+50019	Alforque	Destinado a otros fines	2	1
+50020	Alhama de Aragón	Destinado a otros fines	2	2
+50027	Ambel	Destinado a otros fines	2	2
+50028	Anento	Destinado a otros fines	2	1
+50030	Añón de Moncayo	Destinado a otros fines	2	2
+50031	Aranda de Moncayo	Destinado a otros fines	2	1
+50034	Ariza	Destinado a otros fines	2	3
+50038	Ateca	Destinado a otros fines	2	2
+50041	Bagüés	Destinado a otros fines	2	2
+50043	Bárboles	Destinado a otros fines	2	1
+50045	Belchite	Destinado a otros fines	2	8
+50047	Berdejo	Destinado a otros fines	2	2
+50051	Biota	Destinado a otros fines	2	1
+50055	Borja	Destinado a otros fines	2	14
+50067	Calatayud	Destinado a otros fines	2	14
+50068	Calatorao	Destinado a otros fines	2	11
+50072	Carenas	Destinado a otros fines	2	4
+50074	Caspe	Destinado a otros fines	2	31
+50077	Castejón de Valdejasa	Destinado a otros fines	2	2
+50078	Castiliscar	Destinado a otros fines	2	5
+50081	Cetina	Destinado a otros fines	2	1
+50082	Cimballa	Destinado a otros fines	2	2
+50085	Codo	Destinado a otros fines	2	1
+50090	Cubel	Destinado a otros fines	2	1
+50092	Chiprana	Destinado a otros fines	2	1
+50094	Daroca	Destinado a otros fines	2	8
+50095	Ejea de los Caballeros	Destinado a otros fines	2	79
+50098	Encinacorba	Destinado a otros fines	2	2
+50099	Épila	Destinado a otros fines	2	4
+50101	Escatrón	Destinado a otros fines	2	3
+50102	Fabara	Destinado a otros fines	2	3
+50108	Fombuena	Destinado a otros fines	2	1
+50115	Fuentes de Ebro	Destinado a otros fines	2	31
+50118	Gallur	Destinado a otros fines	2	14
+50121	Gotor	Destinado a otros fines	2	2
+50124	Herrera de los Navarros	Destinado a otros fines	2	1
+50125	Ibdes	Destinado a otros fines	2	1
+50128	Isuerre	Destinado a otros fines	2	1
+50130	Jarque	Destinado a otros fines	2	2
+50133	Lagata	Destinado a otros fines	2	1
+50135	Layana	Destinado a otros fines	2	2
+50136	Lécera	Destinado a otros fines	2	2
+50137	Leciñena	Destinado a otros fines	2	4
+50139	Letux	Destinado a otros fines	2	1
+50148	Luesia	Destinado a otros fines	2	7
+50150	Lumpiaque	Destinado a otros fines	2	4
+50151	Luna	Destinado a otros fines	2	1
+50152	Maella	Destinado a otros fines	2	1
+50157	Malón	Destinado a otros fines	2	1
+50160	Mallén	Destinado a otros fines	2	8
+50163	María de Huerva	Destinado a otros fines	2	1
+50165	Mequinenza	Destinado a otros fines	2	2
+50166	Mesones de Isuela	Destinado a otros fines	2	1
+50169	Miedes de Aragón	Destinado a otros fines	2	1
+50175	Morata de Jalón	Destinado a otros fines	2	1
+50183	Munébrega	Destinado a otros fines	2	1
+50185	Murillo de Gállego	Destinado a otros fines	2	1
+50189	Nonaspe	Destinado a otros fines	2	2
+50191	Novillas	Destinado a otros fines	2	2
+50192	Nuévalos	Destinado a otros fines	2	3
+50193	Nuez de Ebro	Destinado a otros fines	2	2
+50197	Orés	Destinado a otros fines	2	1
+50202	Paracuellos de la Ribera	Destinado a otros fines	2	1
+50204	Pedrola	Destinado a otros fines	2	2
+50208	Pina de Ebro	Destinado a otros fines	2	1
+50211	Plasencia de Jalón	Destinado a otros fines	2	1
+50213	Plenas	Destinado a otros fines	2	1
+50223	Remolinos	Destinado a otros fines	2	1
+50229	Ruesca	Destinado a otros fines	2	1
+50231	Salillas de Jalón	Destinado a otros fines	2	1
+50232	Salvatierra de Esca	Destinado a otros fines	2	1
+50234	San Martín de la Virgen de Moncayo	Destinado a otros fines	2	1
+50235	San Mateo de Gállego	Destinado a otros fines	2	1
+50236	Santa Cruz de Grío	Destinado a otros fines	2	1
+50240	Sástago	Destinado a otros fines	2	6
+50244	Sierra de Luna	Destinado a otros fines	2	3
+50245	Sigüés	Destinado a otros fines	2	1
+50248	Sos del Rey Católico	Destinado a otros fines	2	5
+50251	Tarazona	Destinado a otros fines	2	9
+50253	Terrer	Destinado a otros fines	2	5
+50262	Torres de Berrellén	Destinado a otros fines	2	17
+50264	Tosos	Destinado a otros fines	2	3
+50271	Used	Destinado a otros fines	2	1
+50272	Utebo	Destinado a otros fines	2	56
+50274	Val de San Martín	Destinado a otros fines	2	1
+50276	Valpalmas	Destinado a otros fines	2	2
+50278	Velilla de Ebro	Destinado a otros fines	2	1
+50284	Villafeliche	Destinado a otros fines	2	2
+50288	Villanueva de Gállego	Destinado a otros fines	2	6
+50292	Villarreal de Huerva	Destinado a otros fines	2	1
+50293	Villarroya de la Sierra	Destinado a otros fines	2	1
+50296	Zaida (La)	Destinado a otros fines	2	2
+50297	Zaragoza	Destinado a otros fines	2	767
+50298	Zuera	Destinado a otros fines	2	1

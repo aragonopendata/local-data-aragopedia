@@ -1,23 +1,548 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-   <head>
-      <meta charset="UTF-8" />
-      <title>Oracle Analytics</title>
-      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-      <meta http-equiv="Expires" content="0" />
-      <meta http-equiv="Pragma" content="no-cache" />
-      <!-- mobile viewport -->
-      <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-      <!-- Set IE compatibility mode to most recent version (IE11) -->
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <!-- Load the resources required by login page -->
-      <script src="js/libs/require/require.js"></script>
-      <script src="js/loginhelper.js" type="text/javascript"></script>
-      <link href="/bi-security-login/css/loginhelper.css" rel="stylesheet" type="text/css"/>
-      <link href="/bi-security-login/css/libs/oj/v7.1.0/alta/oj-alta-min.css" rel="stylesheet" type="text/css"/>
-   </head>
-   <body onload="bitechLogin.setup();">
-   
-   </body>
-</html>
+Comarca codigo	Comarca nombre	Subespecie ganadería descripción	Especie ganadería descripción	Subespecie ganadería código	Especie ganadería código	Número de cabezas
+01	La Jacetania	Bovinos de entre uno y dos años	Bovinos	13	1	902
+01	La Jacetania	Bovinos de menos de un año	Bovinos	14	1	1348
+01	La Jacetania	Cabras madres y chivas de reposición	Caprinos	31	3	1465
+01	La Jacetania	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	3246
+01	La Jacetania	Colmenas	Colmenas	81	8	30
+01	La Jacetania	Conejas madres	Conejas madres	71	7	1401
+01	La Jacetania	Equinos (caballos, mulas y asnos)	Equinos	41	4	199
+01	La Jacetania	Gallinas ponedoras	Aves	61	6	80991
+01	La Jacetania	Lechones de menos de 20 kg	Porcinos	52	5	6492
+01	La Jacetania	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	64
+01	La Jacetania	Otros bovinos de dos años o más	Bovinos	12	1	803
+01	La Jacetania	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	261
+01	La Jacetania	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	10745
+01	La Jacetania	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	7041
+01	La Jacetania	Ovejas madres y corderas para reposición	Ovinos	21	2	70294
+01	La Jacetania	Pollos de carne	Aves	62	6	359
+01	La Jacetania	Vacas	Bovinos	11	1	3459
+02	Alto Gállego	Bovinos de entre uno y dos años	Bovinos	13	1	2332
+02	Alto Gállego	Bovinos de menos de un año	Bovinos	14	1	2476
+02	Alto Gállego	Cabras madres y chivas de reposición	Caprinos	31	3	1512
+02	Alto Gállego	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	1502
+02	Alto Gállego	Colmenas	Colmenas	81	8	203
+02	Alto Gállego	Conejas madres	Conejas madres	71	7	70
+02	Alto Gállego	Equinos (caballos, mulas y asnos)	Equinos	41	4	623
+02	Alto Gállego	Gallinas ponedoras	Aves	61	6	512
+02	Alto Gállego	Lechones de menos de 20 kg	Porcinos	52	5	2917
+02	Alto Gállego	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	70
+02	Alto Gállego	Otros bovinos de dos años o más	Bovinos	12	1	941
+02	Alto Gállego	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	90
+02	Alto Gállego	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	2695
+02	Alto Gállego	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	3909
+02	Alto Gállego	Ovejas madres y corderas para reposición	Ovinos	21	2	27102
+02	Alto Gállego	Pollos de carne	Aves	62	6	336
+02	Alto Gállego	Vacas	Bovinos	11	1	4257
+03	Sobrarbe	Bovinos de entre uno y dos años	Bovinos	13	1	4905
+03	Sobrarbe	Bovinos de menos de un año	Bovinos	14	1	11919
+03	Sobrarbe	Cabras madres y chivas de reposición	Caprinos	31	3	3774
+03	Sobrarbe	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	4219
+03	Sobrarbe	Colmenas	Colmenas	81	8	869
+03	Sobrarbe	Conejas madres	Conejas madres	71	7	276
+03	Sobrarbe	Equinos (caballos, mulas y asnos)	Equinos	41	4	299
+03	Sobrarbe	Gallinas ponedoras	Aves	61	6	1399
+03	Sobrarbe	Lechones de menos de 20 kg	Porcinos	52	5	17063
+03	Sobrarbe	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	363
+03	Sobrarbe	Otros bovinos de dos años o más	Bovinos	12	1	1639
+03	Sobrarbe	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	777
+03	Sobrarbe	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	5368
+03	Sobrarbe	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	45711
+03	Sobrarbe	Ovejas madres y corderas para reposición	Ovinos	21	2	50727
+03	Sobrarbe	Pollos de carne	Aves	62	6	881
+03	Sobrarbe	Vacas	Bovinos	11	1	7645
+04	La Ribagorza	Bovinos de entre uno y dos años	Bovinos	13	1	7823
+04	La Ribagorza	Bovinos de menos de un año	Bovinos	14	1	29848
+04	La Ribagorza	Cabras madres y chivas de reposición	Caprinos	31	3	4940
+04	La Ribagorza	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	21810
+04	La Ribagorza	Colmenas	Colmenas	81	8	2932
+04	La Ribagorza	Conejas madres	Conejas madres	71	7	523
+04	La Ribagorza	Equinos (caballos, mulas y asnos)	Equinos	41	4	430
+04	La Ribagorza	Gallinas ponedoras	Aves	61	6	29454
+04	La Ribagorza	Lechones de menos de 20 kg	Porcinos	52	5	57959
+04	La Ribagorza	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	396
+04	La Ribagorza	Otros bovinos de dos años o más	Bovinos	12	1	1399
+04	La Ribagorza	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	728
+04	La Ribagorza	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	8902
+04	La Ribagorza	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	131621
+04	La Ribagorza	Ovejas madres y corderas para reposición	Ovinos	21	2	99694
+04	La Ribagorza	Pollos de carne	Aves	62	6	855775
+04	La Ribagorza	Vacas	Bovinos	11	1	6698
+05	Cinco Villas	Bovinos de entre uno y dos años	Bovinos	13	1	3246
+05	Cinco Villas	Bovinos de menos de un año	Bovinos	14	1	5254
+05	Cinco Villas	Cabras madres y chivas de reposición	Caprinos	31	3	3405
+05	Cinco Villas	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	103884
+05	Cinco Villas	Colmenas	Colmenas	81	8	3889
+05	Cinco Villas	Conejas madres	Conejas madres	71	7	2307
+05	Cinco Villas	Equinos (caballos, mulas y asnos)	Equinos	41	4	343
+05	Cinco Villas	Gallinas ponedoras	Aves	61	6	6609
+05	Cinco Villas	Lechones de menos de 20 kg	Porcinos	52	5	213424
+05	Cinco Villas	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	2054
+05	Cinco Villas	Otros bovinos de dos años o más	Bovinos	12	1	934
+05	Cinco Villas	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	680
+05	Cinco Villas	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	17094
+05	Cinco Villas	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	389183
+05	Cinco Villas	Ovejas madres y corderas para reposición	Ovinos	21	2	146124
+05	Cinco Villas	Pollos de carne	Aves	62	6	984583
+05	Cinco Villas	Vacas	Bovinos	11	1	3773
+06	Hoya de Huesca / Plana de Uesca	Bovinos de entre uno y dos años	Bovinos	13	1	4218
+06	Hoya de Huesca / Plana de Uesca	Bovinos de menos de un año	Bovinos	14	1	10359
+06	Hoya de Huesca / Plana de Uesca	Cabras madres y chivas de reposición	Caprinos	31	3	1768
+06	Hoya de Huesca / Plana de Uesca	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	29214
+06	Hoya de Huesca / Plana de Uesca	Colmenas	Colmenas	81	8	1991
+06	Hoya de Huesca / Plana de Uesca	Conejas madres	Conejas madres	71	7	3170
+06	Hoya de Huesca / Plana de Uesca	Equinos (caballos, mulas y asnos)	Equinos	41	4	476
+06	Hoya de Huesca / Plana de Uesca	Gallinas ponedoras	Aves	61	6	1022402
+06	Hoya de Huesca / Plana de Uesca	Lechones de menos de 20 kg	Porcinos	52	5	105608
+06	Hoya de Huesca / Plana de Uesca	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	380146
+06	Hoya de Huesca / Plana de Uesca	Otros bovinos de dos años o más	Bovinos	12	1	1380
+06	Hoya de Huesca / Plana de Uesca	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	231
+06	Hoya de Huesca / Plana de Uesca	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	7370
+06	Hoya de Huesca / Plana de Uesca	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	283682
+06	Hoya de Huesca / Plana de Uesca	Ovejas madres y corderas para reposición	Ovinos	21	2	74387
+06	Hoya de Huesca / Plana de Uesca	Pollos de carne	Aves	62	6	900710
+06	Hoya de Huesca / Plana de Uesca	Vacas	Bovinos	11	1	2880
+07	Somontano de Barbastro	Bovinos de entre uno y dos años	Bovinos	13	1	4213
+07	Somontano de Barbastro	Bovinos de menos de un año	Bovinos	14	1	10754
+07	Somontano de Barbastro	Cabras madres y chivas de reposición	Caprinos	31	3	977
+07	Somontano de Barbastro	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	17342
+07	Somontano de Barbastro	Colmenas	Colmenas	81	8	1870
+07	Somontano de Barbastro	Conejas madres	Conejas madres	71	7	4488
+07	Somontano de Barbastro	Equinos (caballos, mulas y asnos)	Equinos	41	4	50
+07	Somontano de Barbastro	Gallinas ponedoras	Aves	61	6	643
+07	Somontano de Barbastro	Lechones de menos de 20 kg	Porcinos	52	5	42203
+07	Somontano de Barbastro	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	83
+07	Somontano de Barbastro	Otros bovinos de dos años o más	Bovinos	12	1	187
+07	Somontano de Barbastro	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	226
+07	Somontano de Barbastro	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	3005
+07	Somontano de Barbastro	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	157242
+07	Somontano de Barbastro	Ovejas madres y corderas para reposición	Ovinos	21	2	39669
+07	Somontano de Barbastro	Pollos de carne	Aves	62	6	423218
+07	Somontano de Barbastro	Vacas	Bovinos	11	1	766
+08	Cinca Medio	Bovinos de entre uno y dos años	Bovinos	13	1	5839
+08	Cinca Medio	Bovinos de menos de un año	Bovinos	14	1	11109
+08	Cinca Medio	Cabras madres y chivas de reposición	Caprinos	31	3	598
+08	Cinca Medio	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	15029
+08	Cinca Medio	Colmenas	Colmenas	81	8	19
+08	Cinca Medio	Conejas madres	Conejas madres	71	7	2328
+08	Cinca Medio	Equinos (caballos, mulas y asnos)	Equinos	41	4	118
+08	Cinca Medio	Gallinas ponedoras	Aves	61	6	325
+08	Cinca Medio	Lechones de menos de 20 kg	Porcinos	52	5	51968
+08	Cinca Medio	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	22043
+08	Cinca Medio	Otros bovinos de dos años o más	Bovinos	12	1	590
+08	Cinca Medio	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	88
+08	Cinca Medio	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	2462
+08	Cinca Medio	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	226198
+08	Cinca Medio	Ovejas madres y corderas para reposición	Ovinos	21	2	23295
+08	Cinca Medio	Pollos de carne	Aves	62	6	1078460
+08	Cinca Medio	Vacas	Bovinos	11	1	1896
+09	La Litera / La Llitera	Bovinos de entre uno y dos años	Bovinos	13	1	7903
+09	La Litera / La Llitera	Bovinos de menos de un año	Bovinos	14	1	30572
+09	La Litera / La Llitera	Cabras madres y chivas de reposición	Caprinos	31	3	790
+09	La Litera / La Llitera	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	16737
+09	La Litera / La Llitera	Colmenas	Colmenas	81	8	1399
+09	La Litera / La Llitera	Conejas madres	Conejas madres	71	7	4843
+09	La Litera / La Llitera	Equinos (caballos, mulas y asnos)	Equinos	41	4	39
+09	La Litera / La Llitera	Gallinas ponedoras	Aves	61	6	15155
+09	La Litera / La Llitera	Lechones de menos de 20 kg	Porcinos	52	5	77664
+09	La Litera / La Llitera	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	510822
+09	La Litera / La Llitera	Otros bovinos de dos años o más	Bovinos	12	1	1385
+09	La Litera / La Llitera	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	52
+09	La Litera / La Llitera	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	3979
+09	La Litera / La Llitera	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	315588
+09	La Litera / La Llitera	Ovejas madres y corderas para reposición	Ovinos	21	2	18306
+09	La Litera / La Llitera	Pollos de carne	Aves	62	6	827279
+09	La Litera / La Llitera	Vacas	Bovinos	11	1	3060
+10	Los Monegros	Bovinos de entre uno y dos años	Bovinos	13	1	4514
+10	Los Monegros	Bovinos de menos de un año	Bovinos	14	1	10185
+10	Los Monegros	Cabras madres y chivas de reposición	Caprinos	31	3	2192
+10	Los Monegros	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	46153
+10	Los Monegros	Colmenas	Colmenas	81	8	1387
+10	Los Monegros	Conejas madres	Conejas madres	71	7	5838
+10	Los Monegros	Equinos (caballos, mulas y asnos)	Equinos	41	4	31
+10	Los Monegros	Gallinas ponedoras	Aves	61	6	443559
+10	Los Monegros	Lechones de menos de 20 kg	Porcinos	52	5	145179
+10	Los Monegros	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	171547
+10	Los Monegros	Otros bovinos de dos años o más	Bovinos	12	1	861
+10	Los Monegros	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	515
+10	Los Monegros	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	16234
+10	Los Monegros	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	594981
+10	Los Monegros	Ovejas madres y corderas para reposición	Ovinos	21	2	122081
+10	Los Monegros	Pollos de carne	Aves	62	6	724942
+10	Los Monegros	Vacas	Bovinos	11	1	2733
+11	Bajo Cinca / Baix Cinca	Bovinos de entre uno y dos años	Bovinos	13	1	2153
+11	Bajo Cinca / Baix Cinca	Bovinos de menos de un año	Bovinos	14	1	13702
+11	Bajo Cinca / Baix Cinca	Cabras madres y chivas de reposición	Caprinos	31	3	1690
+11	Bajo Cinca / Baix Cinca	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	40384
+11	Bajo Cinca / Baix Cinca	Colmenas	Colmenas	81	8	1875
+11	Bajo Cinca / Baix Cinca	Conejas madres	Conejas madres	71	7	6339
+11	Bajo Cinca / Baix Cinca	Equinos (caballos, mulas y asnos)	Equinos	41	4	189
+11	Bajo Cinca / Baix Cinca	Gallinas ponedoras	Aves	61	6	137977
+11	Bajo Cinca / Baix Cinca	Lechones de menos de 20 kg	Porcinos	52	5	102646
+11	Bajo Cinca / Baix Cinca	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	495369
+11	Bajo Cinca / Baix Cinca	Otros bovinos de dos años o más	Bovinos	12	1	1375
+11	Bajo Cinca / Baix Cinca	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	288
+11	Bajo Cinca / Baix Cinca	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	4250
+11	Bajo Cinca / Baix Cinca	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	286310
+11	Bajo Cinca / Baix Cinca	Ovejas madres y corderas para reposición	Ovinos	21	2	36843
+11	Bajo Cinca / Baix Cinca	Pollos de carne	Aves	62	6	1683692
+11	Bajo Cinca / Baix Cinca	Vacas	Bovinos	11	1	1286
+12	Tarazona y el Moncayo	Bovinos de entre uno y dos años	Bovinos	13	1	20
+12	Tarazona y el Moncayo	Bovinos de menos de un año	Bovinos	14	1	400
+12	Tarazona y el Moncayo	Cabras madres y chivas de reposición	Caprinos	31	3	2339
+12	Tarazona y el Moncayo	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	4550
+12	Tarazona y el Moncayo	Colmenas	Colmenas	81	8	184
+12	Tarazona y el Moncayo	Conejas madres	Conejas madres	71	7	978
+12	Tarazona y el Moncayo	Equinos (caballos, mulas y asnos)	Equinos	41	4	7
+12	Tarazona y el Moncayo	Gallinas ponedoras	Aves	61	6	117148
+12	Tarazona y el Moncayo	Lechones de menos de 20 kg	Porcinos	52	5	12233
+12	Tarazona y el Moncayo	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	43885
+12	Tarazona y el Moncayo	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	87
+12	Tarazona y el Moncayo	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	1667
+12	Tarazona y el Moncayo	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	14047
+12	Tarazona y el Moncayo	Ovejas madres y corderas para reposición	Ovinos	21	2	20273
+12	Tarazona y el Moncayo	Pollos de carne	Aves	62	6	247439
+12	Tarazona y el Moncayo	Vacas	Bovinos	11	1	81
+13	Campo de Borja	Bovinos de entre uno y dos años	Bovinos	13	1	4760
+13	Campo de Borja	Bovinos de menos de un año	Bovinos	14	1	5955
+13	Campo de Borja	Cabras madres y chivas de reposición	Caprinos	31	3	224
+13	Campo de Borja	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	9527
+13	Campo de Borja	Colmenas	Colmenas	81	8	490
+13	Campo de Borja	Conejas madres	Conejas madres	71	7	5
+13	Campo de Borja	Equinos (caballos, mulas y asnos)	Equinos	41	4	384
+13	Campo de Borja	Gallinas ponedoras	Aves	61	6	116
+13	Campo de Borja	Lechones de menos de 20 kg	Porcinos	52	5	14269
+13	Campo de Borja	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	2690
+13	Campo de Borja	Otros bovinos de dos años o más	Bovinos	12	1	211
+13	Campo de Borja	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	39
+13	Campo de Borja	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	4822
+13	Campo de Borja	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	85532
+13	Campo de Borja	Ovejas madres y corderas para reposición	Ovinos	21	2	28988
+13	Campo de Borja	Pollos de carne	Aves	62	6	22011
+13	Campo de Borja	Vacas	Bovinos	11	1	1269
+14	Aranda	Bovinos de menos de un año	Bovinos	14	1	64
+14	Aranda	Cabras madres y chivas de reposición	Caprinos	31	3	713
+14	Aranda	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	670
+14	Aranda	Colmenas	Colmenas	81	8	751
+14	Aranda	Conejas madres	Conejas madres	71	7	413
+14	Aranda	Equinos (caballos, mulas y asnos)	Equinos	41	4	12
+14	Aranda	Gallinas ponedoras	Aves	61	6	79
+14	Aranda	Lechones de menos de 20 kg	Porcinos	52	5	1710
+14	Aranda	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	81
+14	Aranda	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	3614
+14	Aranda	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	4836
+14	Aranda	Ovejas madres y corderas para reposición	Ovinos	21	2	29941
+14	Aranda	Pollos de carne	Aves	62	6	65606
+15	Ribera Alta del Ebro	Bovinos de entre uno y dos años	Bovinos	13	1	1499
+15	Ribera Alta del Ebro	Bovinos de menos de un año	Bovinos	14	1	5316
+15	Ribera Alta del Ebro	Cabras madres y chivas de reposición	Caprinos	31	3	334
+15	Ribera Alta del Ebro	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	5242
+15	Ribera Alta del Ebro	Colmenas	Colmenas	81	8	106
+15	Ribera Alta del Ebro	Conejas madres	Conejas madres	71	7	13
+15	Ribera Alta del Ebro	Equinos (caballos, mulas y asnos)	Equinos	41	4	35
+15	Ribera Alta del Ebro	Gallinas ponedoras	Aves	61	6	187
+15	Ribera Alta del Ebro	Lechones de menos de 20 kg	Porcinos	52	5	15622
+15	Ribera Alta del Ebro	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	69
+15	Ribera Alta del Ebro	Otros bovinos de dos años o más	Bovinos	12	1	635
+15	Ribera Alta del Ebro	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	58
+15	Ribera Alta del Ebro	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	1905
+15	Ribera Alta del Ebro	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	46264
+15	Ribera Alta del Ebro	Ovejas madres y corderas para reposición	Ovinos	21	2	18655
+15	Ribera Alta del Ebro	Pollos de carne	Aves	62	6	84964
+15	Ribera Alta del Ebro	Vacas	Bovinos	11	1	1587
+16	Valdejalón	Bovinos de entre uno y dos años	Bovinos	13	1	1181
+16	Valdejalón	Bovinos de menos de un año	Bovinos	14	1	1161
+16	Valdejalón	Cabras madres y chivas de reposición	Caprinos	31	3	609
+16	Valdejalón	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	18833
+16	Valdejalón	Colmenas	Colmenas	81	8	1964
+16	Valdejalón	Conejas madres	Conejas madres	71	7	302
+16	Valdejalón	Equinos (caballos, mulas y asnos)	Equinos	41	4	18
+16	Valdejalón	Gallinas ponedoras	Aves	61	6	1154429
+16	Valdejalón	Lechones de menos de 20 kg	Porcinos	52	5	56519
+16	Valdejalón	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	4
+16	Valdejalón	Otros bovinos de dos años o más	Bovinos	12	1	60
+16	Valdejalón	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	64
+16	Valdejalón	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	11017
+16	Valdejalón	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	27644
+16	Valdejalón	Ovejas madres y corderas para reposición	Ovinos	21	2	52683
+16	Valdejalón	Pollos de carne	Aves	62	6	714368
+16	Valdejalón	Vacas	Bovinos	11	1	147
+17	D.C. Zaragoza	Bovinos de entre uno y dos años	Bovinos	13	1	3765
+17	D.C. Zaragoza	Bovinos de menos de un año	Bovinos	14	1	4402
+17	D.C. Zaragoza	Cabras madres y chivas de reposición	Caprinos	31	3	1671
+17	D.C. Zaragoza	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	12815
+17	D.C. Zaragoza	Colmenas	Colmenas	81	8	74
+17	D.C. Zaragoza	Conejas madres	Conejas madres	71	7	1050
+17	D.C. Zaragoza	Equinos (caballos, mulas y asnos)	Equinos	41	4	211
+17	D.C. Zaragoza	Gallinas ponedoras	Aves	61	6	287716
+17	D.C. Zaragoza	Lechones de menos de 20 kg	Porcinos	52	5	32466
+17	D.C. Zaragoza	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	65
+17	D.C. Zaragoza	Otros bovinos de dos años o más	Bovinos	12	1	778
+17	D.C. Zaragoza	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	207
+17	D.C. Zaragoza	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	11572
+17	D.C. Zaragoza	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	64646
+17	D.C. Zaragoza	Ovejas madres y corderas para reposición	Ovinos	21	2	70471
+17	D.C. Zaragoza	Pollos de carne	Aves	62	6	683052
+17	D.C. Zaragoza	Vacas	Bovinos	11	1	1852
+18	Ribera Baja del Ebro	Bovinos de entre uno y dos años	Bovinos	13	1	2518
+18	Ribera Baja del Ebro	Bovinos de menos de un año	Bovinos	14	1	3722
+18	Ribera Baja del Ebro	Cabras madres y chivas de reposición	Caprinos	31	3	163
+18	Ribera Baja del Ebro	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	760
+18	Ribera Baja del Ebro	Colmenas	Colmenas	81	8	611
+18	Ribera Baja del Ebro	Equinos (caballos, mulas y asnos)	Equinos	41	4	13
+18	Ribera Baja del Ebro	Gallinas ponedoras	Aves	61	6	25
+18	Ribera Baja del Ebro	Lechones de menos de 20 kg	Porcinos	52	5	3004
+18	Ribera Baja del Ebro	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	218000
+18	Ribera Baja del Ebro	Otros bovinos de dos años o más	Bovinos	12	1	174
+18	Ribera Baja del Ebro	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	65
+18	Ribera Baja del Ebro	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	2666
+18	Ribera Baja del Ebro	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	79674
+18	Ribera Baja del Ebro	Ovejas madres y corderas para reposición	Ovinos	21	2	38464
+18	Ribera Baja del Ebro	Pollos de carne	Aves	62	6	279000
+18	Ribera Baja del Ebro	Vacas	Bovinos	11	1	739
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Bovinos de entre uno y dos años	Bovinos	13	1	6
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Bovinos de menos de un año	Bovinos	14	1	859
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Cabras madres y chivas de reposición	Caprinos	31	3	1104
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	38148
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Colmenas	Colmenas	81	8	518
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Conejas madres	Conejas madres	71	7	13968
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Equinos (caballos, mulas y asnos)	Equinos	41	4	9
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Gallinas ponedoras	Aves	61	6	58584
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Lechones de menos de 20 kg	Porcinos	52	5	88603
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	1
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	84
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	5748
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	141557
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Ovejas madres y corderas para reposición	Ovinos	21	2	29318
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Pollos de carne	Aves	62	6	572460
+19	Bajo Aragón-Caspe / Baix Aragó-Casp	Vacas	Bovinos	11	1	24
+20	Comunidad de Calatayud	Bovinos de entre uno y dos años	Bovinos	13	1	971
+20	Comunidad de Calatayud	Bovinos de menos de un año	Bovinos	14	1	1262
+20	Comunidad de Calatayud	Cabras madres y chivas de reposición	Caprinos	31	3	1095
+20	Comunidad de Calatayud	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	4140
+20	Comunidad de Calatayud	Colmenas	Colmenas	81	8	2619
+20	Comunidad de Calatayud	Conejas madres	Conejas madres	71	7	2597
+20	Comunidad de Calatayud	Equinos (caballos, mulas y asnos)	Equinos	41	4	75
+20	Comunidad de Calatayud	Gallinas ponedoras	Aves	61	6	193348
+20	Comunidad de Calatayud	Lechones de menos de 20 kg	Porcinos	52	5	11683
+20	Comunidad de Calatayud	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	14110
+20	Comunidad de Calatayud	Otros bovinos de dos años o más	Bovinos	12	1	8
+20	Comunidad de Calatayud	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	176
+20	Comunidad de Calatayud	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	7878
+20	Comunidad de Calatayud	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	26090
+20	Comunidad de Calatayud	Ovejas madres y corderas para reposición	Ovinos	21	2	64489
+20	Comunidad de Calatayud	Pollos de carne	Aves	62	6	596452
+20	Comunidad de Calatayud	Vacas	Bovinos	11	1	345
+21	Campo de Cariñena	Bovinos de entre uno y dos años	Bovinos	13	1	156
+21	Campo de Cariñena	Bovinos de menos de un año	Bovinos	14	1	243
+21	Campo de Cariñena	Cabras madres y chivas de reposición	Caprinos	31	3	78
+21	Campo de Cariñena	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	2905
+21	Campo de Cariñena	Colmenas	Colmenas	81	8	1317
+21	Campo de Cariñena	Conejas madres	Conejas madres	71	7	2380
+21	Campo de Cariñena	Equinos (caballos, mulas y asnos)	Equinos	41	4	9
+21	Campo de Cariñena	Gallinas ponedoras	Aves	61	6	625154
+21	Campo de Cariñena	Lechones de menos de 20 kg	Porcinos	52	5	11935
+21	Campo de Cariñena	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	24011
+21	Campo de Cariñena	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	16
+21	Campo de Cariñena	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	1015
+21	Campo de Cariñena	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	17713
+21	Campo de Cariñena	Ovejas madres y corderas para reposición	Ovinos	21	2	9273
+21	Campo de Cariñena	Pollos de carne	Aves	62	6	380003
+22	Campo de Belchite	Bovinos de entre uno y dos años	Bovinos	13	1	3197
+22	Campo de Belchite	Bovinos de menos de un año	Bovinos	14	1	3590
+22	Campo de Belchite	Cabras madres y chivas de reposición	Caprinos	31	3	761
+22	Campo de Belchite	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	3380
+22	Campo de Belchite	Colmenas	Colmenas	81	8	405
+22	Campo de Belchite	Equinos (caballos, mulas y asnos)	Equinos	41	4	229
+22	Campo de Belchite	Gallinas ponedoras	Aves	61	6	71
+22	Campo de Belchite	Lechones de menos de 20 kg	Porcinos	52	5	5947
+22	Campo de Belchite	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	1
+22	Campo de Belchite	Otros bovinos de dos años o más	Bovinos	12	1	189
+22	Campo de Belchite	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	108
+22	Campo de Belchite	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	4007
+22	Campo de Belchite	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	85620
+22	Campo de Belchite	Ovejas madres y corderas para reposición	Ovinos	21	2	22224
+22	Campo de Belchite	Pollos de carne	Aves	62	6	650816
+22	Campo de Belchite	Vacas	Bovinos	11	1	451
+23	Bajo Martín	Bovinos de entre uno y dos años	Bovinos	13	1	550
+23	Bajo Martín	Bovinos de menos de un año	Bovinos	14	1	4981
+23	Bajo Martín	Cabras madres y chivas de reposición	Caprinos	31	3	287
+23	Bajo Martín	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	6140
+23	Bajo Martín	Colmenas	Colmenas	81	8	166
+23	Bajo Martín	Conejas madres	Conejas madres	71	7	4
+23	Bajo Martín	Equinos (caballos, mulas y asnos)	Equinos	41	4	2
+23	Bajo Martín	Gallinas ponedoras	Aves	61	6	107740
+23	Bajo Martín	Lechones de menos de 20 kg	Porcinos	52	5	21190
+23	Bajo Martín	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	38008
+23	Bajo Martín	Otros bovinos de dos años o más	Bovinos	12	1	11
+23	Bajo Martín	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	30
+23	Bajo Martín	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	1923
+23	Bajo Martín	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	44403
+23	Bajo Martín	Ovejas madres y corderas para reposición	Ovinos	21	2	26211
+23	Bajo Martín	Pollos de carne	Aves	62	6	45001
+23	Bajo Martín	Vacas	Bovinos	11	1	102
+24	Campo de Daroca	Bovinos de entre uno y dos años	Bovinos	13	1	1722
+24	Campo de Daroca	Bovinos de menos de un año	Bovinos	14	1	1232
+24	Campo de Daroca	Cabras madres y chivas de reposición	Caprinos	31	3	234
+24	Campo de Daroca	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	4382
+24	Campo de Daroca	Colmenas	Colmenas	81	8	1150
+24	Campo de Daroca	Conejas madres	Conejas madres	71	7	353
+24	Campo de Daroca	Equinos (caballos, mulas y asnos)	Equinos	41	4	8
+24	Campo de Daroca	Gallinas ponedoras	Aves	61	6	855235
+24	Campo de Daroca	Lechones de menos de 20 kg	Porcinos	52	5	10330
+24	Campo de Daroca	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	41400
+24	Campo de Daroca	Otros bovinos de dos años o más	Bovinos	12	1	84
+24	Campo de Daroca	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	58
+24	Campo de Daroca	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	3204
+24	Campo de Daroca	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	32111
+24	Campo de Daroca	Ovejas madres y corderas para reposición	Ovinos	21	2	24986
+24	Campo de Daroca	Pollos de carne	Aves	62	6	174036
+24	Campo de Daroca	Vacas	Bovinos	11	1	337
+25	Jiloca	Bovinos de entre uno y dos años	Bovinos	13	1	249
+25	Jiloca	Bovinos de menos de un año	Bovinos	14	1	2426
+25	Jiloca	Cabras madres y chivas de reposición	Caprinos	31	3	653
+25	Jiloca	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	14101
+25	Jiloca	Colmenas	Colmenas	81	8	696
+25	Jiloca	Conejas madres	Conejas madres	71	7	22563
+25	Jiloca	Equinos (caballos, mulas y asnos)	Equinos	41	4	19
+25	Jiloca	Gallinas ponedoras	Aves	61	6	708
+25	Jiloca	Lechones de menos de 20 kg	Porcinos	52	5	38176
+25	Jiloca	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	38
+25	Jiloca	Otros bovinos de dos años o más	Bovinos	12	1	113
+25	Jiloca	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	80
+25	Jiloca	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	4411
+25	Jiloca	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	135661
+25	Jiloca	Ovejas madres y corderas para reposición	Ovinos	21	2	86805
+25	Jiloca	Pollos de carne	Aves	62	6	45214
+26	Cuencas Mineras	Bovinos de entre uno y dos años	Bovinos	13	1	934
+26	Cuencas Mineras	Bovinos de menos de un año	Bovinos	14	1	740
+26	Cuencas Mineras	Cabras madres y chivas de reposición	Caprinos	31	3	542
+26	Cuencas Mineras	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	11024
+26	Cuencas Mineras	Colmenas	Colmenas	81	8	2738
+26	Cuencas Mineras	Conejas madres	Conejas madres	71	7	2903
+26	Cuencas Mineras	Equinos (caballos, mulas y asnos)	Equinos	41	4	22
+26	Cuencas Mineras	Gallinas ponedoras	Aves	61	6	509
+26	Cuencas Mineras	Lechones de menos de 20 kg	Porcinos	52	5	2630
+26	Cuencas Mineras	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	37
+26	Cuencas Mineras	Otros bovinos de dos años o más	Bovinos	12	1	100
+26	Cuencas Mineras	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	81
+26	Cuencas Mineras	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	2208
+26	Cuencas Mineras	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	8208
+26	Cuencas Mineras	Ovejas madres y corderas para reposición	Ovinos	21	2	52554
+26	Cuencas Mineras	Pollos de carne	Aves	62	6	45123
+26	Cuencas Mineras	Vacas	Bovinos	11	1	727
+27	Andorra-Sierra de Arcos	Bovinos de menos de un año	Bovinos	14	1	94
+27	Andorra-Sierra de Arcos	Cabras madres y chivas de reposición	Caprinos	31	3	676
+27	Andorra-Sierra de Arcos	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	3990
+27	Andorra-Sierra de Arcos	Colmenas	Colmenas	81	8	1349
+27	Andorra-Sierra de Arcos	Conejas madres	Conejas madres	71	7	959
+27	Andorra-Sierra de Arcos	Equinos (caballos, mulas y asnos)	Equinos	41	4	8
+27	Andorra-Sierra de Arcos	Gallinas ponedoras	Aves	61	6	379
+27	Andorra-Sierra de Arcos	Lechones de menos de 20 kg	Porcinos	52	5	2962
+27	Andorra-Sierra de Arcos	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	4
+27	Andorra-Sierra de Arcos	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	60
+27	Andorra-Sierra de Arcos	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	2706
+27	Andorra-Sierra de Arcos	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	12156
+27	Andorra-Sierra de Arcos	Ovejas madres y corderas para reposición	Ovinos	21	2	34677
+27	Andorra-Sierra de Arcos	Pollos de carne	Aves	62	6	56
+28	Bajo Aragón	Bovinos de entre uno y dos años	Bovinos	13	1	460
+28	Bajo Aragón	Bovinos de menos de un año	Bovinos	14	1	2611
+28	Bajo Aragón	Cabras madres y chivas de reposición	Caprinos	31	3	2033
+28	Bajo Aragón	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	18553
+28	Bajo Aragón	Colmenas	Colmenas	81	8	2363
+28	Bajo Aragón	Conejas madres	Conejas madres	71	7	10520
+28	Bajo Aragón	Equinos (caballos, mulas y asnos)	Equinos	41	4	21
+28	Bajo Aragón	Gallinas ponedoras	Aves	61	6	2366
+28	Bajo Aragón	Lechones de menos de 20 kg	Porcinos	52	5	57708
+28	Bajo Aragón	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	2
+28	Bajo Aragón	Otros bovinos de dos años o más	Bovinos	12	1	202
+28	Bajo Aragón	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	136
+28	Bajo Aragón	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	3934
+28	Bajo Aragón	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	145514
+28	Bajo Aragón	Ovejas madres y corderas para reposición	Ovinos	21	2	59188
+28	Bajo Aragón	Pollos de carne	Aves	62	6	920041
+28	Bajo Aragón	Vacas	Bovinos	11	1	349
+29	Comunidad de Teruel	Bovinos de entre uno y dos años	Bovinos	13	1	679
+29	Comunidad de Teruel	Bovinos de menos de un año	Bovinos	14	1	1413
+29	Comunidad de Teruel	Cabras madres y chivas de reposición	Caprinos	31	3	758
+29	Comunidad de Teruel	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	9794
+29	Comunidad de Teruel	Colmenas	Colmenas	81	8	1269
+29	Comunidad de Teruel	Conejas madres	Conejas madres	71	7	2662
+29	Comunidad de Teruel	Equinos (caballos, mulas y asnos)	Equinos	41	4	213
+29	Comunidad de Teruel	Gallinas ponedoras	Aves	61	6	1586
+29	Comunidad de Teruel	Lechones de menos de 20 kg	Porcinos	52	5	17292
+29	Comunidad de Teruel	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	27574
+29	Comunidad de Teruel	Otros bovinos de dos años o más	Bovinos	12	1	246
+29	Comunidad de Teruel	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	68
+29	Comunidad de Teruel	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	19454
+29	Comunidad de Teruel	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	71739
+29	Comunidad de Teruel	Ovejas madres y corderas para reposición	Ovinos	21	2	182495
+29	Comunidad de Teruel	Pollos de carne	Aves	62	6	103168
+29	Comunidad de Teruel	Vacas	Bovinos	11	1	1053
+30	Maestrazgo	Bovinos de entre uno y dos años	Bovinos	13	1	473
+30	Maestrazgo	Bovinos de menos de un año	Bovinos	14	1	1364
+30	Maestrazgo	Cabras madres y chivas de reposición	Caprinos	31	3	1865
+30	Maestrazgo	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	8290
+30	Maestrazgo	Colmenas	Colmenas	81	8	1823
+30	Maestrazgo	Conejas madres	Conejas madres	71	7	2924
+30	Maestrazgo	Equinos (caballos, mulas y asnos)	Equinos	41	4	117
+30	Maestrazgo	Gallinas ponedoras	Aves	61	6	437
+30	Maestrazgo	Lechones de menos de 20 kg	Porcinos	52	5	15005
+30	Maestrazgo	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	22
+30	Maestrazgo	Otros bovinos de dos años o más	Bovinos	12	1	749
+30	Maestrazgo	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	122
+30	Maestrazgo	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	3259
+30	Maestrazgo	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	51099
+30	Maestrazgo	Ovejas madres y corderas para reposición	Ovinos	21	2	44883
+30	Maestrazgo	Pollos de carne	Aves	62	6	13126
+30	Maestrazgo	Vacas	Bovinos	11	1	3867
+31	Sierra de Albarracín	Bovinos de entre uno y dos años	Bovinos	13	1	452
+31	Sierra de Albarracín	Bovinos de menos de un año	Bovinos	14	1	552
+31	Sierra de Albarracín	Cabras madres y chivas de reposición	Caprinos	31	3	1312
+31	Sierra de Albarracín	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	3330
+31	Sierra de Albarracín	Colmenas	Colmenas	81	8	1382
+31	Sierra de Albarracín	Conejas madres	Conejas madres	71	7	3114
+31	Sierra de Albarracín	Equinos (caballos, mulas y asnos)	Equinos	41	4	44
+31	Sierra de Albarracín	Gallinas ponedoras	Aves	61	6	511
+31	Sierra de Albarracín	Lechones de menos de 20 kg	Porcinos	52	5	2851
+31	Sierra de Albarracín	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	27
+31	Sierra de Albarracín	Otros bovinos de dos años o más	Bovinos	12	1	216
+31	Sierra de Albarracín	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	159
+31	Sierra de Albarracín	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	5791
+31	Sierra de Albarracín	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	4579
+31	Sierra de Albarracín	Ovejas madres y corderas para reposición	Ovinos	21	2	59585
+31	Sierra de Albarracín	Pollos de carne	Aves	62	6	100
+31	Sierra de Albarracín	Vacas	Bovinos	11	1	931
+32	Gúdar-Javalambre	Bovinos de entre uno y dos años	Bovinos	13	1	748
+32	Gúdar-Javalambre	Bovinos de menos de un año	Bovinos	14	1	1400
+32	Gúdar-Javalambre	Cabras madres y chivas de reposición	Caprinos	31	3	3077
+32	Gúdar-Javalambre	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	1387
+32	Gúdar-Javalambre	Colmenas	Colmenas	81	8	591
+32	Gúdar-Javalambre	Conejas madres	Conejas madres	71	7	2608
+32	Gúdar-Javalambre	Equinos (caballos, mulas y asnos)	Equinos	41	4	172
+32	Gúdar-Javalambre	Gallinas ponedoras	Aves	61	6	729
+32	Gúdar-Javalambre	Lechones de menos de 20 kg	Porcinos	52	5	3064
+32	Gúdar-Javalambre	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	33
+32	Gúdar-Javalambre	Otros bovinos de dos años o más	Bovinos	12	1	1509
+32	Gúdar-Javalambre	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	279
+32	Gúdar-Javalambre	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	3943
+32	Gúdar-Javalambre	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	8522
+32	Gúdar-Javalambre	Ovejas madres y corderas para reposición	Ovinos	21	2	55645
+32	Gúdar-Javalambre	Pollos de carne	Aves	62	6	154
+32	Gúdar-Javalambre	Vacas	Bovinos	11	1	3711
+33	Matarraña / Matarranya	Bovinos de entre uno y dos años	Bovinos	13	1	873
+33	Matarraña / Matarranya	Bovinos de menos de un año	Bovinos	14	1	2222
+33	Matarraña / Matarranya	Cabras madres y chivas de reposición	Caprinos	31	3	1254
+33	Matarraña / Matarranya	Cerdas madres y cerdas para reposición de 50 kg y más	Porcinos	51	5	17983
+33	Matarraña / Matarranya	Colmenas	Colmenas	81	8	1193
+33	Matarraña / Matarranya	Conejas madres	Conejas madres	71	7	29065
+33	Matarraña / Matarranya	Equinos (caballos, mulas y asnos)	Equinos	41	4	21
+33	Matarraña / Matarranya	Gallinas ponedoras	Aves	61	6	51125
+33	Matarraña / Matarranya	Lechones de menos de 20 kg	Porcinos	52	5	43757
+33	Matarraña / Matarranya	Otras aves (pavos, patos, ocas, perdices, codornices, pintadas,...)	Aves	63	6	14530
+33	Matarraña / Matarranya	Otros bovinos de dos años o más	Bovinos	12	1	450
+33	Matarraña / Matarranya	Otros caprinos (cabritos, sementales, machos castrados)	Caprinos	32	3	37
+33	Matarraña / Matarranya	Otros ovinos (lechales, recentales, sementales, machos castrados)	Ovinos	22	2	3197
+33	Matarraña / Matarranya	Otros porcinos (verracos, cebo y reproductores de desecho)	Porcinos	53	5	133313
+33	Matarraña / Matarranya	Ovejas madres y corderas para reposición	Ovinos	21	2	23972
+33	Matarraña / Matarranya	Pollos de carne	Aves	62	6	1061085
+33	Matarraña / Matarranya	Vacas	Bovinos	11	1	465

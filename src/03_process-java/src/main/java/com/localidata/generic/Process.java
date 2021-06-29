@@ -33,11 +33,6 @@ public class Process {
 		} else if (args[0].equals("createIssue")) {	
 			GithubApi.main(args);	
 			log.info("Prueba creando una issue en GitHub superada");
-		} else if (args[0].equals("googleDrive")) {
-			GoogleDriveAPI drive = new GoogleDriveAPI();
-			drive.init();
-			drive.downloadFile("", Prop.fileHashCSV, Constants.CSV);
-			log.info("Prueba descargando un fichero de Google Drive superada");
 		} else if (args[0].equals("generateHash")) {
 			GenerateCSV app = new GenerateCSV(args[1], args[2]);
 			app.generateHashCodeFromBI();
@@ -58,12 +53,14 @@ public class Process {
 			log.info("End configTest");
 			
 		} else if (args[0].equals("update")) {
-			
+			PropertyConfigurator.configure("log4j.properties");
+			log.info("Start process");
+			Prop.loadConf();
 			GenerateCSV csv = new GenerateCSV(args[1], args[2]);
 			csv.extractFiles();
 
 			if (csv.getChanges().size() > 0 || csv.getNews().size() > 0) {
-				
+				log.info("Cantidad de cubos nuevos: " + csv.getNews().size());
 				log.info("El procese de actualización ha detectado "+csv.getChanges().size()+" cambios y "+csv.getNews().size()+" nuevos");
 				
 				GenerateRDF rdf = new GenerateRDF(args[2], args[4], args[3], args[1], args[5]);

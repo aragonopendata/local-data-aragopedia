@@ -8,7 +8,6 @@ import java.util.Iterator;
 
 import org.apache.log4j.Logger;
 
-import com.localidata.generic.GoogleDriveAPI;
 import com.localidata.generic.Prop;
 import com.localidata.transform.GenerateConfig;
 import com.localidata.util.Utils;
@@ -112,96 +111,87 @@ public class ConfigBean {
 			DataBean data = getMapData().get(key);
 			dataArray[cont++] = data;
 		}
-		for (DataBean dataBean : dataArray) {
-			content = content + fieldSeparator + dataBean.getName()
-					+ fieldSeparator + csvSepartor;
+		byte b;
+		int i;
+		DataBean[] arrayOfDataBean1;
+		for (i = (arrayOfDataBean1 = dataArray).length, b = 0; b < i; ) {
+			DataBean dataBean = arrayOfDataBean1[b];
+			content = String.valueOf(content) + fieldSeparator + dataBean.getName() + fieldSeparator + csvSepartor;
+			b++;
 		}
-		for (DataBean dataBean : listDataConstant) {
-			content = content + fieldSeparator + dataBean.getName()
-					+ fieldSeparator + csvSepartor;
-		}
-		content = content.substring(0, content.length() - 1)
-				+ System.getProperty("line.separator");
-		for (DataBean dataBean : dataArray) {
-			content = content + fieldSeparator + dataBean.getNameNormalized()
-					+ fieldSeparator + csvSepartor;
-		}
-		for (DataBean dataBean : listDataConstant) {
-			content = content + fieldSeparator + dataBean.getNameNormalized()
-					+ fieldSeparator + csvSepartor;
-		}
-		content = content.substring(0, content.length() - 1)
-				+ System.getProperty("line.separator");
-		for (DataBean dataBean : dataArray) {
-			content = content + fieldSeparator + dataBean.getNormalizacion()
-					+ fieldSeparator + csvSepartor;
-		}
-		for (DataBean dataBean : listDataConstant) {
-			content = content + fieldSeparator + dataBean.getNormalizacion()
-					+ fieldSeparator + csvSepartor;
-		}
-		content = content.substring(0, content.length() - 1)
-				+ System.getProperty("line.separator");
-		for (DataBean dataBean : dataArray) {
-			content = content + fieldSeparator
-					+ dataBean.getDimensionMesureEntry() + fieldSeparator
-					+ csvSepartor;
-		}
-		for (DataBean dataBean : listDataConstant) {
-			content = content + fieldSeparator
-					+ dataBean.getDimensionMesureEntry() + fieldSeparator
-					+ csvSepartor;
-		}
-		content = content.substring(0, content.length() - 1)
-				+ System.getProperty("line.separator");
-		for (DataBean dataBean : dataArray) {
-			content = content + fieldSeparator + dataBean.getType()
-					+ fieldSeparator + csvSepartor;
-		}
-		for (DataBean dataBean : listDataConstant) {
-			content = content + fieldSeparator + dataBean.getType()
-					+ fieldSeparator + csvSepartor;
-		}
-		content = content.substring(0, content.length() - 1)
-				+ System.getProperty("line.separator");
-		for (DataBean dataBean : dataArray) {
-			DataBean dataBeanAux = GenerateConfig.skosExtrated.get(dataBean
-					.getName());
-			if (dataBeanAux != null && dataBeanAux.getMapSkos() != null
-					&& dataBeanAux.getMapSkos().size() > 0) {
-				String nameFile = dataBeanAux.generateSkosMapping();
-				content = content + fieldSeparator + nameFile + fieldSeparator
-						+ csvSepartor;
 
+		for (DataBean dataBean : this.listDataConstant)
+			content = String.valueOf(content) + fieldSeparator + dataBean.getName() + fieldSeparator + csvSepartor;
+		
+		content = String.valueOf(content.substring(0, content.length() - 1)) + System.getProperty("line.separator");
+		
+		for (i = (arrayOfDataBean1 = dataArray).length, b = 0; b < i; ) {
+			DataBean dataBean = arrayOfDataBean1[b];
+			content = String.valueOf(content) + fieldSeparator + dataBean.getNameNormalized() + fieldSeparator + csvSepartor;
+			b++;
+		}
+
+		for (DataBean dataBean : this.listDataConstant)
+			content = String.valueOf(content) + fieldSeparator + dataBean.getNameNormalized() + fieldSeparator + csvSepartor; 
+		
+		content = String.valueOf(content.substring(0, content.length() - 1)) + System.getProperty("line.separator");
+
+		for (i = (arrayOfDataBean1 = dataArray).length, b = 0; b < i; ) {
+			DataBean dataBean = arrayOfDataBean1[b];
+			content = String.valueOf(content) + fieldSeparator + dataBean.getNormalizacion() + fieldSeparator + csvSepartor;
+			b++;
+		}
+		
+		for (DataBean dataBean : this.listDataConstant)
+			content = String.valueOf(content) + fieldSeparator + dataBean.getNormalizacion() + fieldSeparator + csvSepartor; 
+		
+		content = String.valueOf(content.substring(0, content.length() - 1)) + System.getProperty("line.separator");
+		
+		for (i = (arrayOfDataBean1 = dataArray).length, b = 0; b < i; ) {
+			DataBean dataBean = arrayOfDataBean1[b];
+			content = String.valueOf(content) + fieldSeparator + dataBean.getDimensionMesureEntry() + fieldSeparator + csvSepartor;
+			b++;
+		}
+
+		for (DataBean dataBean : this.listDataConstant)
+			content = String.valueOf(content) + fieldSeparator + dataBean.getDimensionMesureEntry() + fieldSeparator + csvSepartor; 
+		
+		content = String.valueOf(content.substring(0, content.length() - 1)) + System.getProperty("line.separator");
+
+		for (i = (arrayOfDataBean1 = dataArray).length, b = 0; b < i; ) {
+			DataBean dataBean = arrayOfDataBean1[b];
+			content = String.valueOf(content) + fieldSeparator + dataBean.getType() + fieldSeparator + csvSepartor;
+			b++;
+		}
+		
+		for (DataBean dataBean : this.listDataConstant)
+			content = String.valueOf(content) + fieldSeparator + dataBean.getType() + fieldSeparator + csvSepartor; 
+		
+		content = String.valueOf(content.substring(0, content.length() - 1)) + System.getProperty("line.separator");
+
+		for (i = (arrayOfDataBean1 = dataArray).length, b = 0; b < i; ) {
+			DataBean dataBean = arrayOfDataBean1[b];
+			DataBean dataBeanAux = (DataBean)GenerateConfig.skosExtrated.get(dataBean.getName());
+			if (dataBeanAux != null && dataBeanAux.getMapSkos() != null && dataBeanAux.getMapSkos().size() > 0) {
+				String str = dataBeanAux.generateSkosMapping();
+				content = String.valueOf(content) + fieldSeparator + str + fieldSeparator + csvSepartor;
 			} else {
-				content = content + fieldSeparator + fieldSeparator
-						+ csvSepartor;
+				content = String.valueOf(content) + fieldSeparator + fieldSeparator + csvSepartor;
 			}
+			b++;
 		}
-		for (DataBean dataBean : listDataConstant) {
-			content = content + fieldSeparator + dataBean.getConstant()
-					+ fieldSeparator + csvSepartor;
-		}
-		content = content.substring(0, content.length() - 1)
-				+ System.getProperty("line.separator");
-
-		String nameFile = GenerateConfig.configDirectoryString + File.separator
-				+ getNameFile();
+		
+		for (DataBean dataBean : this.listDataConstant)
+			content = String.valueOf(content) + fieldSeparator + dataBean.getConstant() + fieldSeparator + csvSepartor; 
+		
+		content = String.valueOf(content.substring(0, content.length() - 1)) + System.getProperty("line.separator");
+		String nameFile = String.valueOf(GenerateConfig.configDirectoryString) + File.separator + getNameFile();
 		File file = new File(nameFile);
+		
 		try {
 			Utils.stringToFile(content, file);
 		} catch (Exception e) {
 			log.error("Error to generate config file " + getNameFile(), e);
-		}
-		if (Prop.publishDrive) {
-			if (!isUpdated()) {
-				GoogleDriveAPI api = new GoogleDriveAPI();
-				api.init();
-				api.createSpreadsheetFromFile(Prop.idParentFolder,
-						Prop.emailUserFile, "csv",
-						getNameFile().substring(0, getNameFile().length() - 4),
-						file, "text/csv");
-			}
 		}
 		return content;
 	}

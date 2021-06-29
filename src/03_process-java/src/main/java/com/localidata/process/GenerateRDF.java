@@ -28,7 +28,6 @@ import com.localidata.bean.ConfigBean;
 import com.localidata.bean.DataBean;
 import com.localidata.bean.SkosBean;
 import com.localidata.generic.Constants;
-import com.localidata.generic.GoogleDriveAPI;
 import com.localidata.generic.Prop;
 import com.localidata.util.Utils;
 
@@ -64,24 +63,14 @@ public class GenerateRDF {
 
 	public void readConfig(HashMap<String, String> idDescription) {
 		log.debug("Init readConfig");
-		log.info("Se descarga la configuración");
-		GoogleDriveAPI api = new GoogleDriveAPI();
-		api.init();
-		try {
-			if (Prop.downloadDrive)
-				api.downloadFolderFiles(configDirectoryString, Prop.idParentFolder);
-		} catch (IOException e1) {
-			e1.printStackTrace();
-			String error = "Por problemas con la conexión de google drive no se puede descargar la configuración, intentelo más tarde.";
-			log.error(error);
-		}
+		
 		log.info("Comienza a extraerse la configuración");
-		File configDirectoryFile = new File(configDirectoryString);
-		File areasReportFile = new File(outputDirectoryString + File.separator + "areas.txt");
-		Collection<File> listCSV = FileUtils.listFiles(configDirectoryFile, extensionsConfig, true);
-		int cont = 0;
-
-		int size = listCSV.size();
+		File configDirectoryFile = new File(this.configDirectoryString);
+	    File areasReportFile = new File(String.valueOf(this.outputDirectoryString) + File.separator + "areas.txt");
+	    Collection<File> listCSV = FileUtils.listFiles(configDirectoryFile, this.extensionsConfig, true);
+	    int cont = 0;
+	    
+	    int size = listCSV.size();
 		for (File file : listCSV) {
 			log.info("Se extrae el fichero " + file.getName() + " " + (++cont) + " " + size);
 			if (!file.getName().startsWith("mapping") && !file.getName().startsWith(Prop.fileHashCSV)) {
@@ -625,8 +614,8 @@ public class GenerateRDF {
 		return result;
 	}
 	
+	
 	public void generateCommonData(){
-		
 		File propertiesFile = new File(outputDirectoryString + File.separator + "DatosTTL" + File.separator + "codelists" + File.separator + "properties.ttl");
 		File dsdFile = new File(outputDirectoryString + File.separator + "DatosTTL" + File.separator + "dataStructures" + File.separator + "dsd.ttl");
 		File errorReportFile = new File("errorReport.txt");
@@ -675,8 +664,8 @@ public class GenerateRDF {
 		log.debug("End backup");
 	}
 
+	
 	public void zipFiles() {
-
 		File kosFileDump = new File(outputDirectoryString + File.separator + "DatosTTL" + File.separator + "codelists" + File.separator + "kos.ttl");
 		File propertiesFileDump = new File(outputDirectoryString + File.separator + "DatosTTL" + File.separator + "codelists" + File.separator + "properties.ttl");
 		File dsdFileDump = new File(outputDirectoryString + File.separator + "DatosTTL" + File.separator + "dataStructures" + File.separator + "dsd.ttl");

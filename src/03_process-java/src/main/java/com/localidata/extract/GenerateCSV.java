@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.logging.Log;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
@@ -22,7 +23,6 @@ import com.localidata.util.Jdbcconnection;
 import com.localidata.util.Utils;
 
 /**
- * 
  * @author Localidata
  */
 public class GenerateCSV {
@@ -38,18 +38,18 @@ public class GenerateCSV {
 	public GenerateCSV(String urls, String outputFiles) {
 		urlsFileString = urls;
 		outputFilesDirectoryString = outputFiles;
-		log.info("Generando el fichero InformesEstadisticaLocal-URLs.csv");
+		log.info("Nos conectamos a la base de datos para generar los ficheros");
 		try {
+			log.info("Generando el fichero InformesEstadisticaLocal-URLs.csv");
 			Jdbcconnection.main(null);
 		} catch (Exception e) {
 			log.error("Error generando informe bbdd iaest",e);
 		}
-
-		log.info("fin de la generación del fichero InformesEstadisticaLocal-URLs.csv");
+		log.info("Fin de la generación del fichero InformesEstadisticaLocal-URLs.csv");
 	}
 
 	public void extractFiles() {
-		log.info("init extractFilesWithChanges");
+		log.info("Inicio extractFilesWithChanges");
 		extractHashCode();
 		List<String> all = new ArrayList<>();
 		all.add("cabecera");
@@ -62,24 +62,70 @@ public class GenerateCSV {
 		try {
 			Map<String, String> headers = new HashMap<String, String>();
 			headers.put("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36");
-			headers.put("Cookie", "sawU=" + Prop.sawUiAragonBiAragon + "; ORA_BIPS_LBINFO=" + Prop.oraBipsLbinfoBiAragon + "; ORA_BIPS_NQID=" + Prop.oraBipsNqidBiAragon + "; __utma=" + Prop.utmaBiAragon + "; __utmc=" + Prop.utmcBiAragon + "; __utmz=" + Prop.utmzBiAragon);
-			headers.put("content-type", "text/csv; charset=ISO-8859-1");
-			Utils.processURLGet(Prop.urlBiAragon + Prop.initialDataCube + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
+			headers.put("Cookie", "sawU=" + Prop.sawUiAragonBiAragon + "; __utma=" + Prop.utmaBiAragon + "; __utmc=" + Prop.utmcBiAragon + "; __utmz=" + Prop.utmzBiAragon);			
+			headers.put("content-type", "text/csv; charset=ISO-8859-1");			
+			Utils.processURLGet(Prop.urlBiAragon + Prop.initialDataCube + "&Action=Download&Options=df" , "", headers, cookies, "ISO-8859-1");
+						
 			List<String> csvLines = FileUtils.readLines(urlsFile, "UTF-8");
 
+			//ESTABLECEMOS COOKIES EN EL HEADER
+			Map mapaCookiesAragon = (Map)cookies.getStore().get("aragon.es");
+			
+			for(Object cabecera : mapaCookiesAragon.keySet()) {				
+				if(cabecera.toString().contains("_WL_AUTHCOOKIE_JSESSIONID")) {
+					String lineaCookies = headers.get("Cookie");
+					
+					Map sesion = (Map)mapaCookiesAragon.get("_WL_AUTHCOOKIE_JSESSIONID");
+					String authCookieSesion = sesion.get("_WL_AUTHCOOKIE_JSESSIONID").toString();
+					lineaCookies += "; " + cabecera + "=" + authCookieSesion;	
+					
+					headers.replace("Cookie", lineaCookies);
+				}
+				else if(cabecera.toString().contains("JSESSIONID")){							
+					String lineaCookies = headers.get("Cookie");
+					
+					Map sesionID = (Map)mapaCookiesAragon.get("JSESSIONID");
+					String cookieSesionID = sesionID.get("JSESSIONID").toString();
+					lineaCookies += "; " + "JSESSIONID" + "=" + cookieSesionID;
+					
+					headers.replace("Cookie", lineaCookies);
+				}					
+				else if(cabecera.toString().contains("ORA_BIPS_NQID")){							
+					String lineaCookies = headers.get("Cookie");
+					
+					Map sesionID = (Map)mapaCookiesAragon.get("ORA_BIPS_NQID");
+					String cookieSesionID = sesionID.get("ORA_BIPS_NQID").toString();
+					lineaCookies += "; " + "ORA_BIPS_NQID" + "=" + cookieSesionID;
+					
+					headers.replace("Cookie", lineaCookies);
+				}	
+				else if(cabecera.toString().contains("ORA_BIPS_LBINFO")){							
+					String lineaCookies = headers.get("Cookie");
+					
+					Map sesionID = (Map)mapaCookiesAragon.get("ORA_BIPS_LBINFO");
+					String cookieSesionID = sesionID.get("ORA_BIPS_LBINFO").toString();
+					lineaCookies += "; " + "ORA_BIPS_LBINFO" + "=" + cookieSesionID;
+					
+					headers.replace("Cookie", lineaCookies);
+				}	
+			}
+
 			for (int h = 1; h < csvLines.size(); h++) {
-				try {
+				try {		
+					cookies = new Cookies();
 					String line = csvLines.get(h);
 					valores = line.split(",");
 					valores[0] = valores[0].replaceAll("\"", "");
 					valores[1] = valores[1].replaceAll("\"", "");
 					valores[2] = valores[2].replaceAll("\"", "");
 					idDescription.put(valores[1], valores[2]);
-					content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
+															
+					content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df", "", headers, cookies, "ISO-8859-1");
+							
 					if (Utils.v(content)) {
 						content = cleanAndTransform(content);
-							String hash = Utils.generateHash(content);
-							processContentFile(all, numErrorFiles, errorFiles, valores, content, hash);
+						String hash = Utils.generateHash(content);
+						processContentFile(all, numErrorFiles, errorFiles, valores, content, hash);
 					}
 				} catch (Exception e2) {
 					numErrorFiles.put(valores, new Integer(0));
@@ -88,7 +134,7 @@ public class GenerateCSV {
 					log.error("Error al descargar " + valor, e2);
 				}
 			}
-
+			
 			int j = 0;
 			int totalElements = numErrorFiles.size();
 
@@ -100,7 +146,7 @@ public class GenerateCSV {
 					boolean sucess = false;
 					while (numErrors < 5 && numErrors != -1 && sucess ) {
 						log.info("Intento "+numErrors+" del csv "+valores[0]);
-						content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
+						content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df" , "", headers, cookies, "ISO-8859-1");
 						if (Utils.v(content)) {
 							content = cleanAndTransform(content);
 							if (!content.contains(Constants.errorDoctypeHtml1) && !content.contains(Constants.errorHtml) && !content.contains(Constants.errorDoctypeHtml2) && !content.contains(Constants.errorDiv) && !content.contains(Constants.errorNingunaFila)) {
@@ -128,7 +174,7 @@ public class GenerateCSV {
 			} catch (Exception e2) {
 				log.error("Error al descargar " + valores[1], e2);
 			}
-
+			
 			for (String[] val : errorFiles.keySet()) {
 				String cont = errorFiles.get(valores);
 				informeErrores(val[1], cont);
@@ -137,7 +183,7 @@ public class GenerateCSV {
 		} catch (Exception e) {
 			log.error("Error desconocido", e);
 		}
-		log.info("end extractFilesWithChanges");
+		log.info("End extractFilesWithChanges");
 	}
 
 	private void processContentFile(List<String> all, HashMap<String[], Integer> numErrorFiles, HashMap<String[], String> errorFiles, String[] valores, String content, String hash) throws Exception {
@@ -157,6 +203,7 @@ public class GenerateCSV {
 			log.info("No hay cambios en el cubo de datos " + valores[1]);
 		}
 		if (safeFile) {
+			
 			if (!content.contains(Constants.errorDoctypeHtml1) && !content.contains(Constants.errorHtml) && !content.contains(Constants.errorDoctypeHtml2) && !content.contains(Constants.errorDiv) && !content.contains(Constants.errorNingunaFila)) {
 				Utils.stringToFile(content, new File(outputFilesDirectoryString + File.separator + valores[1] + ".csv"));
 				hashCodeNew.put(valores[1], hash);
@@ -177,6 +224,7 @@ public class GenerateCSV {
 	}
 
 	private String cleanAndTransform(String content) {
+		content = content.replace("\"", "");
 		content = content.replace(new String(Character.toChars(0)), "");
 		content = content.replace("ÿþ", "");
 		return content;
@@ -229,7 +277,7 @@ public class GenerateCSV {
 			headers.put("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36");
 			headers.put("Cookie", "sawU=" + Prop.sawUiAragonBiAragon + "; ORA_BIPS_LBINFO=" + Prop.oraBipsLbinfoBiAragon + "; ORA_BIPS_NQID=" + Prop.oraBipsNqidBiAragon + "; __utma=" + Prop.utmaBiAragon + "; __utmc=" + Prop.utmcBiAragon + "; __utmz=" + Prop.utmzBiAragon);
 			headers.put("content-type", "text/csv; charset=ISO-8859-1");
-			Utils.processURLGet(Prop.urlBiAragon + Prop.initialDataCube + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
+			Utils.processURLGet(Prop.urlBiAragon + Prop.initialDataCube + "&Action=Download&Options=df", "", headers, cookies, "ISO-8859-1");
 			List<String> csvLines = FileUtils.readLines(urlsFile, "UTF-8");
 	
 			try {
@@ -239,8 +287,8 @@ public class GenerateCSV {
 					valores[0] = valores[0].replaceAll("\"", "");
 					valores[1] = valores[1].replaceAll("\"", "");
 					valores[2] = valores[2].replaceAll("\"", "");
-					content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
-					if (Utils.v(content)) {
+					content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df" , "", headers, cookies, "ISO-8859-1");
+					if (Utils.v(content) && !valores[1].equals("")) {
 						content = cleanAndTransform(content);
 						String hash = Utils.generateHash(content);
 						result.append(valores[1]+","+hash+"\n");
@@ -265,7 +313,7 @@ public class GenerateCSV {
 					valores = iterator.next();
 					Integer numErrors = numErrorFiles.get(valores);
 					if (numErrors < 5 && numErrors != -1) {
-						content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df&NQUser=" + Prop.nqUserBiAragon + "&NQPassword=" + Prop.nqPasswordBiAragon , "", headers, cookies, "ISO-8859-1");
+						content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df" , "", headers, cookies, "ISO-8859-1");
 						if (Utils.v(content)) {
 							content = cleanAndTransform(content);
 							if (!content.contains(Constants.errorDoctypeHtml1) && !content.contains(Constants.errorHtml) && !content.contains(Constants.errorDoctypeHtml2) && !content.contains(Constants.errorDiv)) {

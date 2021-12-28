@@ -81,8 +81,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  */
 public class Utils {
 	private final static Logger log = Logger.getLogger(Utils.class);
-	private static final int defaultReadTimeOut = 30000;
-	private static final int defaultTimeOut = 5000;
+	private static final int defaultReadTimeOut = 40000;
+	private static final int defaultTimeOut = 40000;
 	private static String comarcasAragon = null;
 	private static String municipiosAragon = null;
 	private static String provinciasAragon = null;
@@ -563,7 +563,6 @@ public class Utils {
 	}
 
 	public static String processURLGet(String url, String urlParameters, Map<String, String> headers, Cookies cookies, String encoding) throws SocketTimeoutException {
-
 		//Security SSL
 		TrustManager[] trustAllCerts = { new X509TrustManager() {
 			    @Override
@@ -614,6 +613,8 @@ public class Utils {
 			output = IOUtils.toString(is, encoding);
 
 			cookies.storeCookies(httpsConnection);
+			
+			
 
 			if (httpsConnection.getResponseCode() != 200) {
 				log.error("The URI does not return a 200 code");
@@ -1121,6 +1122,43 @@ public class Utils {
 	                continue;
 	            } 
 	            data.append(cell + ",");
+	          } 
+	          data.append('\n');
+	      } 
+	      fos.write(data.toString().getBytes());
+	      fos.close();
+	    } catch (Exception ioe) {
+	      ioe.printStackTrace();
+	    } 
+	  }
+	
+	public static void XLSXToCsvTabSplit(File inputFile, File outputFile) throws Exception {
+	    StringBuffer data = new StringBuffer();
+	    try {
+	      FileOutputStream fos = new FileOutputStream(outputFile);
+	      XSSFWorkbook wBook = new XSSFWorkbook(new FileInputStream(inputFile));
+	      XSSFSheet sheet = wBook.getSheetAt(0);
+	      Iterator<Row> rowIterator = sheet.iterator();
+	      while (rowIterator.hasNext()) {
+	        Row row = rowIterator.next();
+	        Iterator<Cell> cellIterator = row.cellIterator();
+	        while (cellIterator.hasNext()) {
+	          Cell cell = cellIterator.next();
+	          switch (cell.getCellType()) {
+	          	case 4:
+	              data.append(String.valueOf(cell.getBooleanCellValue()) + "\t");
+	              continue;
+	            case 0:
+	              data.append(String.valueOf(cell.getNumericCellValue()) + "\t");
+	              continue;
+	            case 1:
+	                data.append(String.valueOf(cell.getStringCellValue()) + "\t");
+	                continue;
+	              case 3:
+	                data.append("\t");
+	                continue;
+	            } 
+	            data.append(cell + "\t");
 	          } 
 	          data.append('\n');
 	      } 

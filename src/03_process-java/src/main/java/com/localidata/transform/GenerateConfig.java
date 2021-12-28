@@ -485,14 +485,14 @@ public class GenerateConfig {
 				id = change.substring(0, change.length() - 2);
 				letters = change.substring(change.length() - 2, change.length());
 			}
-
+			
 			try {
 				String nameFile = id;
 		        File dir = new File(configDirectoryString);
-		        File[] files = dir.listFiles((dir1, name) -> (name.startsWith("Informe-" + nameFile) && name.endsWith(".xlsx")));
+		        File[] files = dir.listFiles((dir1, name) -> (name.startsWith("Informe-" + nameFile) && name.endsWith(".xlsx")));		        
 		        File fileXlsx = new File(String.valueOf(configDirectoryString) + "/" + files[0].getName());
-		        File file = new File(String.valueOf(configDirectoryString) + "/" + files[0].getName().substring(0, 4) + "csv");
-		        Utils.XLSXToCsv(fileXlsx, file);
+		        File file = new File(String.valueOf(configDirectoryString) + "/" + files[0].getName().substring(0, 4) + "csv");		        
+		        Utils.XLSXToCsvTabSplit(fileXlsx, file);
 				List<String> csvLinesDrive = FileUtils.readLines(file, "UTF-8");
 				List cellsDriveList = new ArrayList();
 				String lineClean = csvLinesDrive.get(0);
@@ -516,7 +516,7 @@ public class GenerateConfig {
 					}
 					charac++;
 				}
-				Object[] cellsDriveArray = Utils.split(lineClean, ",");
+				Object[] cellsDriveArray = Utils.split(lineClean, "\t");
 				cellsDriveList.addAll(Arrays.asList(cellsDriveArray));
 				ConfigBean config = configMap.get(id);
 
@@ -526,8 +526,8 @@ public class GenerateConfig {
 				log.debug("csvLinesLocal "+lineClean);
 				lineClean = lineClean.replace("'", "");
 				lineClean = lineClean.replace("", "");
-				Object[] cellsLocalArray = Utils.split(lineClean, "\t");
-				List cellsLocalList = Arrays.asList(cellsLocalArray);
+				Object[] cellsLocalArray = Utils.split(lineClean, "\t");				
+				List cellsLocalList = Arrays.asList(cellsLocalArray);								
 				ConfigBean configLocal = configExtrated.get(id + letters);
 
 				if (ListUtils.subtract(cellsLocalList, cellsDriveList).size() > 0) {
@@ -544,7 +544,7 @@ public class GenerateConfig {
 						if(!mensajesCambiosNuevaConf.contains(mensajeAux))
 							mensajesCambiosNuevaConf = mensajesCambiosNuevaConf + mensajeAux;
 						List<String> lettersList = config.getLetters();
-						for (String letter : lettersList) {
+						for (String letter : lettersList) {					
 							filesNotRDF.add(config.getId() + letter);
 						}
 					}else{

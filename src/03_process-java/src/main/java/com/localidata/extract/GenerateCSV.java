@@ -111,6 +111,7 @@ public class GenerateCSV {
 			}
 
 			for (int h = 1; h < csvLines.size(); h++) {
+				boolean procesar = true;
 				try {		
 					cookies = new Cookies();
 					String line = csvLines.get(h);
@@ -121,9 +122,20 @@ public class GenerateCSV {
 					idDescription.put(valores[1], valores[2]);
 															
 					content = Utils.processURLGet(Prop.urlBiAragon + valores[0] + "&Action=Download&Options=df", "", headers, cookies, "ISO-8859-1");
-							
-					if (Utils.v(content)) {
+					
+					// Calculamos el numero de bytes que ocupa el string en local
+					int numBytesOcupa = content.length() / 2;					
+					
+					if(Prop.limitCubeSizeActive) {
+						if(numBytesOcupa > Prop.limitCubeSize) {
+							procesar = false;
+							log.info("Se ha superado el limite establecido por parametro para procesar el cubo " + valores[0] + ":" + numBytesOcupa + " bytes");
+						}
+					}
+					
+					if (Utils.v(content) && procesar) {
 						content = cleanAndTransform(content);
+						
 						String hash = Utils.generateHash(content);
 						processContentFile(all, numErrorFiles, errorFiles, valores, content, hash);
 					}
@@ -223,7 +235,11 @@ public class GenerateCSV {
 		}
 	}
 
-	private String cleanAndTransform(String content) {
+	private String cleanAndTransform(String content) {				
+		int separador = 0;
+		String cadena_reemplazar = (char)separador + "";
+		content = content.replace(cadena_reemplazar, ""); //REMPLAZAMOS EL CARACTER NULO (EN OCASIONES VIENE UN CARACTER NULO ENTRE CADA CARACTER DEL CONTENIDO)
+		content = content.replace(",0\"", "\"");
 		content = content.replace("\"", "");
 		content = content.replace(new String(Character.toChars(0)), "");
 		content = content.replace("ÿþ", "");

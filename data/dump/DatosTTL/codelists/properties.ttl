@@ -693,14 +693,19 @@ iaest-dimension:estado-del-edificio a qb:DimensionProperty , rdf:Property, qb:Co
 	qb:codeList <http://opendata.aragon.es/kos/iaest/estado-del-edificio> .
 
 iaest-dimension:superficie-util-agrupada a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
-	rdfs:label "Superficie útil agrupada"@es ;
-	rdfs:comment "Superficie útil agrupada"@es ;
+	rdfs:label "Superficie útil agrupada (m2)"@es ;
+	rdfs:comment "Superficie útil agrupada (m2)"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/superficie-util-agrupada> .
 
 iaest-measure:n-habitaciones a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Nº habitaciones"@es ;
 	rdfs:comment "Nº habitaciones"@es ;
+	rdfs:range xsd:double .
+
+iaest-measure:num-viviendas a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Nº viviendas"@es ;
+	rdfs:comment "Nº viviendas"@es ;
 	rdfs:range xsd:double .
 
 iaest-measure:superficie-util a qb:MeasureProperty , rdf:Property;
@@ -793,6 +798,11 @@ iaest-dimension:sector-vab-descripcion a qb:DimensionProperty , rdf:Property, qb
 	rdfs:comment "Sector VAB descripción"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/sector-vab-descripcion> .
+
+iaest-measure:numero-de-viviendas a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Número de viviendas"@es ;
+	rdfs:comment "Número de viviendas"@es ;
+	rdfs:range xsd:int .
 
 iaest-dimension:numero-habitaciones a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Número habitaciones"@es ;
@@ -1894,8 +1904,8 @@ iaest-measure:explotaciones-ganaderia a qb:MeasureProperty , rdf:Property;
 	rdfs:range xsd:int .
 
 iaest-measure:especie-ganaderia a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Especie ganadería"@es ;
-	rdfs:comment "Especie ganadería"@es ;
+	rdfs:label "Especie ganadería "@es ;
+	rdfs:comment "Especie ganadería "@es ;
 	rdfs:range xsd:string .
 
 iaest-measure:explotaciones-que-usan-maquinaria-no-en-propiedad-exclusiva-cosechadora a qb:MeasureProperty , rdf:Property;
@@ -2220,8 +2230,8 @@ iaest-measure:ganado-ovino-cabezas a qb:MeasureProperty , rdf:Property;
 	rdfs:range xsd:int .
 
 iaest-measure:ganado-bovino-cabezas a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Ganado bovino (cabezas)"@es ;
-	rdfs:comment "Ganado bovino (cabezas)"@es ;
+	rdfs:label "Ganado bovino (cabezas) "@es ;
+	rdfs:comment "Ganado bovino (cabezas) "@es ;
 	rdfs:range xsd:int .
 
 iaest-measure:unidades-ganaderas a qb:MeasureProperty , rdf:Property;
@@ -2629,6 +2639,106 @@ iaest-measure:personas-mano-obra-familiar-son-titulares-de-mas-de-65-anos a qb:M
 	rdfs:comment "Personas mano obra familiar son titulares de más de 65 años"@es ;
 	rdfs:range xsd:int .
 
+iaest-measure:personas-mano-obra-familiar-otros-trabajan-en-otra-actividad-como-principal a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar otros,  trabajan en otra actividad como principal"@es ;
+	rdfs:comment "Personas mano obra familiar otros,  trabajan en otra actividad como principal"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-secundaria a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar otros, que sólo trabajan en la explotación"@es ;
+	rdfs:comment "Personas mano obra familiar otros, que sólo trabajan en la explotación"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-conyuges-que-solo-trabajan-en-la-explotacion a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar cónyuges que sólo trabajan en la explotación"@es ;
+	rdfs:comment "Personas mano obra familiar cónyuges que sólo trabajan en la explotación"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-tambien-en-otra-activ-lucrativa a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar titulares que trabajan también en otra activ. lucrativa"@es ;
+	rdfs:comment "Personas mano obra familiar titulares que trabajan también en otra activ. lucrativa"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-con-74-99-y-100-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar con >74,99 y <100% trabajando en explotación"@es ;
+	rdfs:comment "Personas mano obra familiar con >74,99 y <100% trabajando en explotación"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-principal a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar titulares que trabajan en otra actividad como principal"@es ;
+	rdfs:comment "Personas mano obra familiar titulares que trabajan en otra actividad como principal"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-en-otra-actividad-como-principal a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar cónyuges que trabajan en otra actividad como principal"@es ;
+	rdfs:comment "Personas mano obra familiar cónyuges que trabajan en otra actividad como principal"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-otros-que- trabajan-tambien-en-otra-activ-lucrativa a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar otros, que  trabajan también en otra activ. lucrativa"@es ;
+	rdfs:comment "Personas mano obra familiar otros, que  trabajan también en otra activ. lucrativa"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-con-100-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar con 100% trabajando en explotación"@es ;
+	rdfs:comment "Personas mano obra familiar con 100% trabajando en explotación"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-conyuges-que-trabajan-tambien-en-otra-activ-lucrativa a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar cónyuges que trabajan también en otra activ. Lucrativa"@es ;
+	rdfs:comment "Personas mano obra familiar cónyuges que trabajan también en otra activ. Lucrativa"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-titulares-que-trabajan-en-otra-actividad-como-secundaria a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar titulares que trabajan en otra actividad como secundaria"@es ;
+	rdfs:comment "Personas mano obra familiar titulares que trabajan en otra actividad como secundaria"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-titulares-que-solo-trabajan-en-la-explotacion a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar titulares que sólo trabajan en la explotación"@es ;
+	rdfs:comment "Personas mano obra familiar titulares que sólo trabajan en la explotación"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-con-25-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar con <25% trabajando en explotación"@es ;
+	rdfs:comment "Personas mano obra familiar con <25% trabajando en explotación"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-secundaria a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar trabajan en otra actividad como secundaria"@es ;
+	rdfs:comment "Personas mano obra familiar trabajan en otra actividad como secundaria"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-trabajan-tambien-en-otra-activ-lucrativa a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar trabajan también en otra activ. lucrativa"@es ;
+	rdfs:comment "Personas mano obra familiar trabajan también en otra activ. lucrativa"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-otros-que-trabajan-en-otra-actividad-como-secundaria a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar otros, que trabajan en otra actividad como secundaria"@es ;
+	rdfs:comment "Personas mano obra familiar otros, que trabajan en otra actividad como secundaria"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-trabajan-en-otra-actividad-como-principal a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar trabajan en otra actividad como principal"@es ;
+	rdfs:comment "Personas mano obra familiar trabajan en otra actividad como principal"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-con-24-99-y-50-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar con >24,99 y <50% trabajando en explotación"@es ;
+	rdfs:comment "Personas mano obra familiar con >24,99 y <50% trabajando en explotación"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-solo-trabajan-en-la-explotacion a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar sólo trabajan en la explotación"@es ;
+	rdfs:comment "Personas mano obra familiar sólo trabajan en la explotación"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:personas-mano-obra-familiar-con-49-99-y-75-trabajando-en-explotacion a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Personas mano obra familiar con >49,99 y <75% trabajando en explotación"@es ;
+	rdfs:comment "Personas mano obra familiar con >49,99 y <75% trabajando en explotación"@es ;
+	rdfs:range xsd:int .
+
 iaest-measure:total-personas a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Total personas"@es ;
 	rdfs:comment "Total personas"@es ;
@@ -2999,6 +3109,16 @@ iaest-dimension:tipo-licencias-descripcion a qb:DimensionProperty , rdf:Property
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/tipo-licencias-descripcion> .
 
+iaest-measure:autorizaciones-según-tipo a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Autorizaciones según tipo"@es ;
+	rdfs:comment "Autorizaciones según tipo"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:autorizaciones a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Autorizaciones"@es ;
+	rdfs:comment "Autorizaciones"@es ;
+	rdfs:range xsd:int .
+
 iaest-measure:licencias a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Licencias"@es ;
 	rdfs:comment "Licencias"@es ;
@@ -3031,6 +3151,11 @@ iaest-measure:numero-actividades a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Número de actividades"@es ;
 	rdfs:comment "Número de actividades"@es ;
 	rdfs:range xsd:int .
+
+iaest-measure:vab-per-capita a qb:MeasureProperty , rdf:Property;
+	rdfs:label "VAB per cápita"@es ;
+	rdfs:comment "VAB per cápita"@es ;
+	rdfs:range xsd:double .
 
 iaest-dimension:vehiculos-en-el-hogar a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Vehículos en el hogar"@es ;
@@ -3065,11 +3190,6 @@ iaest-measure:tamano-medio a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "Tamaño medio"@es ;
 	rdfs:range xsd:double .
 
-iaest-measure:territorio a qb:MeasureProperty , rdf:Property;
-	rdfs:label "Territorio:"@es ;
-	rdfs:comment "Territorio:"@es ;
-	rdfs:range xsd:string .
-
 iaest-measure:numero-empresas a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Número Empresas"@es ;
 	rdfs:comment "Número Empresas"@es ;
@@ -3080,6 +3200,12 @@ iaest-dimension:estrato a qb:DimensionProperty , rdf:Property, qb:CodedProperty 
 	rdfs:comment "Estrato"@es ;
 	rdfs:range skos:Concept ;
 	qb:codeList <http://opendata.aragon.es/kos/iaest/estrato> .
+
+iaest-dimension:empresas-numero-afiliados a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
+	rdfs:label " CASE WHEN Número Trabajadores (empr) < 10 THEN 01 De 1 a 9 afiliados WHEN Número Trabajadores (empr) < 20 THEN 02 De 10 a 19 afiliados WHEN Número Trabajadores (empr) < 50 THEN 03 De 20 a 49 afiliados WHEN Empre"@es ;
+	rdfs:comment " CASE WHEN Número Trabajadores (empr) < 10 THEN 01 De 1 a 9 afiliados WHEN Número Trabajadores (empr) < 20 THEN 02 De 10 a 19 afiliados WHEN Número Trabajadores (empr) < 50 THEN 03 De 20 a 49 afiliados WHEN Empre"@es ;
+	rdfs:range skos:Concept ;
+	qb:codeList <http://opendata.aragon.es/kos/iaest/empresas-numero-afiliados> .
 
 iaest-dimension:tipo-de-hogar-2 a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Tipo de hogar 2"@es ;
@@ -3257,6 +3383,11 @@ iaest-measure:candidatura a qb:MeasureProperty , rdf:Property;
 	rdfs:comment "Candidatura"@es ;
 	rdfs:range xsd:string .
 
+iaest-measure:empleo a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Empleo"@es ;
+	rdfs:comment "Empleo"@es ;
+	rdfs:range xsd:double .
+
 iaest-dimension:formacion-jefe-explotacion a qb:DimensionProperty , rdf:Property, qb:CodedProperty ;
 	rdfs:label "Formación jefe explotación"@es ;
 	rdfs:comment "Formación jefe explotación"@es ;
@@ -3401,6 +3532,16 @@ iaest-measure:superficie-calificada-agricultura-ecologica a qb:MeasureProperty ,
 	rdfs:comment "Superficie calificada agricultura ecológica"@es ;
 	rdfs:range xsd:double .
 
+iaest-measure:superficie-certificaciones-privadas a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Superficie certificaciones privadas"@es ;
+	rdfs:comment "Superficie certificaciones privadas"@es ;
+	rdfs:range xsd:double .
+
+iaest-measure:superficie-sin-clasificar a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Superficie sin clasificar"@es ;
+	rdfs:comment "Superficie sin clasificar"@es ;
+	rdfs:range xsd:double .
+
 iaest-measure:superficie-calificada-primer-ano-practicas a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Superficie calificada primer año prácticas"@es ;
 	rdfs:comment "Superficie calificada primer año prácticas"@es ;
@@ -3414,6 +3555,11 @@ iaest-measure:superficie-calificada-en-reconversion a qb:MeasureProperty , rdf:P
 iaest-measure:habitantes-equivalentes a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Habitantes equivalentes"@es ;
 	rdfs:comment "Habitantes equivalentes"@es ;
+	rdfs:range xsd:int .
+
+iaest-measure:colectores a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Colectores"@es ;
+	rdfs:comment "Colectores"@es ;
 	rdfs:range xsd:int .
 
 iaest-measure:depuradoras a qb:MeasureProperty , rdf:Property;
@@ -3465,6 +3611,11 @@ iaest-measure:contenedores-de-papel-y-carton a qb:MeasureProperty , rdf:Property
 	rdfs:label "Contenedores de papel y cartón"@es ;
 	rdfs:comment "Contenedores de papel y cartón"@es ;
 	rdfs:range xsd:int .
+
+iaest-measure:kg-recogidos-papel-y-carton a qb:MeasureProperty , rdf:Property;
+	rdfs:label "Kg recogidos papel y cartón"@es ;
+	rdfs:comment "Kg recogidos papel y cartón"@es ;
+	rdfs:range xsd:double .
 
 iaest-measure:numero-de-cabezas a qb:MeasureProperty , rdf:Property;
 	rdfs:label "Número de cabezas"@es ;

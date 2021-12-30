@@ -59,6 +59,11 @@ public class Prop {
 	public static String urlQueryTodosGrafos = "";
 	public static String urlGraph = "";
 	public static String urlGraphCommonData = "";
+	public static boolean limitCubeSizeActive = false;
+	public static int limitCubeSize = 100000;
+	public static int defaultTimeOut = 5000;
+	public static int readTimeOut = 30000;
+	
 	
 	public static boolean loadConf() {
 		boolean conf = false;
@@ -116,6 +121,12 @@ public class Prop {
 			urlQueryTodosGrafos = prop.getProperty("urlQueryTodosGrafos");
 			urlGraph = prop.getProperty("urlGraph");
 			urlGraphCommonData = prop.getProperty("urlGraphCommonData");
+			
+			
+			limitCubeSizeActive = Boolean.valueOf(prop.getProperty("limitCubeSizeActive"));
+			limitCubeSize = Integer.parseInt(prop.getProperty("limitCubeSize"));
+			defaultTimeOut = Integer.parseInt(prop.getProperty("defaultTimeOut"));
+			readTimeOut = Integer.parseInt(prop.getProperty("readTimeOut"));
 
 			conf = true;
 		} catch (IOException io) {

@@ -386,11 +386,11 @@ public class Utils {
 		if (comarcasAragon == null) {
 			String url = "https://opendata.aragon.es/recurso/territorio/Comarca";
 			String response = "";
-			comarcasAragon = Utils.processURLGet(url + ".ttl?_sort=label&_page=0&_pageSize=100&api_key=" + Prop.apiKeyAragopedia, "", null);
+			comarcasAragon = Utils.processURLGet(url + ".ttl?_sort=label&_page=0&_pageSize=10&api_key=" + Prop.apiKeyAragopedia, "", null);
 			boolean finish = false;
 			int page = 1;
 			while (!finish) {
-				response = Utils.processURLGet(url + ".ttl?_sort=label&_page=" + page + "&_pageSize=100&api_key=" + Prop.apiKeyAragopedia, "", null);
+				response = Utils.processURLGet(url + ".ttl?_sort=label&_page=" + page + "&_pageSize=10&api_key=" + Prop.apiKeyAragopedia, "", null);
 				page++;
 				if (!response.contains("xhv:next")) {
 					finish = true;

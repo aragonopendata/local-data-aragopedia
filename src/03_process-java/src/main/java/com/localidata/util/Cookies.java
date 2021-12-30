@@ -193,7 +193,11 @@ public class Cookies {
      */
 
     public String toString() {
-	return store.toString();
+    	return store.toString();
+    }
+    
+    public Map getStore() {
+    	return store;
     }
     
     /*

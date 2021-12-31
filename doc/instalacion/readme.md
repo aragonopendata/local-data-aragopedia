@@ -5,29 +5,29 @@
 1. Comprobaremos que tenemos java 8 instalado ejecutando el comando java -version
 2. Comprobaremos que tenemos git instalado ejecutando el comando git -version
 3. Descomprimiremos el zip doc/instalacion/datacube.zip en el directorio home del usuario
-4. A los archivos .sh les daremos permisos con el comando: sudo chmod 755 *.sh
-5. Ejecutaremos el siguiente comando teniendo en cuanta que hay que sustituir <usuarioGit> por el usuario de git que va a crear las issues: curl -i -u <usuarioGit> -d '{"scopes": ["repo", "user"], "note": "getting-started"}' https://api.github.com/authorizations
-5.1. En la respuesta nos quedaremos con el código que hay al lado de "token": para ponerlo en la configuración.
-6. Editaremos el archivo datacube/system.properties en githubToken podremos el token del usuario que va a crear las issues y en githubURLIssues la URL del repositorio de GitHub
-7. Comprobaremos que podemos crear issues en GitHub ejecutando el comando: java -Dfile.encoding=UTF8 -jar DataCube.jar createIssue
-8. Descargaremos el proyecto del git
-  8.1. En el directorio datacube ejecutamos el comando git clone  https://github.com/aragonopendata/local-data-aragopedia.git
-  8.2. Se descargará un directorio local-data-aragopedia, entramos en el y editamos el fichero readme.md
-  8.3. Añadiremos un espacio en blanco al final de la primera línea
-  8.4. Ejecutaremos los siguientes comandos en el directorio local-data-aragopedia:
-    8.4.1. Para este paso vamos a necesitar un usuario de github que pueda hacer commit en el repositorio http://github.com/aragonopendata/local-data-aragopedia.git
-    8.4.2. git config credential.helper store
-    8.4.3. git config --global user.email "you@example.com"
-    8.4.4. git config --global user.name "Your Name"
-    8.4.5. git add .
-    8.4.6. git commit -m "Actualización  automática $(date)"
-    8.4.7. git push origin master
-    8.4.8. Insertamos el usuario de github
-    8.4.9. Insertamos la contraseña github
-9. Ejecutaremos el script home/datacube/GenerateAllRDFandLoad.sh
-10. Se revisará el log para ver que no hay nada excepciones que paren el proceso.
-11. Ejecutaremos el script home/datacube/UpdateRDFandLoad.sh
-12. Se revisará el log para ver que no hay nada excepciones que paren el proceso.
+4. Sobreescribiremos el fichero DataCube.jar con la última versión ubicada en doc/instalacion/DataCube.jar
+5. A los archivos .sh les daremos permisos con el comando: sudo chmod 755 *.sh
+6. Ejecutaremos el siguiente comando teniendo en cuanta que hay que sustituir <usuarioGit> por el usuario de git que va a crear las issues: curl -i -u <usuarioGit> -d '{"scopes": ["repo", "user"], "note": "getting-started"}' https://api.github.com/authorizations En la respuesta nos quedaremos con el código que hay al lado de "token": para ponerlo en la configuración.
+7. Editaremos el archivo datacube/system.properties en githubToken podremos el token del usuario que va a crear las issues y en githubURLIssues la URL del repositorio de GitHub
+8. Comprobaremos que podemos crear issues en GitHub ejecutando el comando: java -Dfile.encoding=UTF8 -jar DataCube.jar createIssue
+9. Descargaremos el proyecto del git
+  - En el directorio datacube ejecutamos el comando git clone  https://github.com/aragonopendata/local-data-aragopedia.git
+  - Se descargará un directorio local-data-aragopedia, entramos en el y editamos el fichero readme.md
+  - Añadiremos un espacio en blanco al final de la primera línea
+  - Ejecutaremos los siguientes comandos en el directorio local-data-aragopedia:
+     - Para este paso vamos a necesitar un usuario de github que pueda hacer commit en el repositorio http://github.com/aragonopendata/local-data-aragopedia.git
+     - git config credential.helper store
+     - git config --global user.email "you@example.com"
+     - git config --global user.name "Your Name"
+     - git add .
+     - git commit -m "Actualización  automática $(date)"
+     - git push origin master
+     - Insertamos el usuario de github
+     - Insertamos la contraseña github
+10. Ejecutaremos el script home/datacube/GenerateAllRDFandLoad.sh
+11. Se revisará el log para ver que no hay nada excepciones que paren el proceso.
+12. Ejecutaremos el script home/datacube/UpdateRDFandLoad.sh
+13. Se revisará el log para ver que no hay nada excepciones que paren el proceso.
 
 
 ## Instalación del proceso de actualización de datos y carga en virtuoso

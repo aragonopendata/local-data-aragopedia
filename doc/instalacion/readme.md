@@ -1,54 +1,52 @@
-# Manual de instalaciÛn
+# Manual de instalaci√≥n
 
-## InstalaciÛn del proceso de generaciÛn de cubo de datos y carga en virtuoso
+## Instalaci√≥n del proceso de generaci√≥n de cubo de datos y carga en virtuoso
 
 1. Comprobaremos que tenemos java 8 instalado ejecutando el comando java -version
 2. Comprobaremos que tenemos git instalado ejecutando el comando git -version
 3. Descomprimiremos el zip doc/instalacion/datacube.zip en el directorio home del usuario
-4. A los archivos .sh les daremos permisos con el comando: sudo chmod 755 *.sh
-5. Ejecutaremos el siguiente comando teniendo en cuanta que hay que sustituir <usuarioGit> por el usuario de git que va a crear las issues: curl -i -u <usuarioGit> -d '{"scopes": ["repo", "user"], "note": "getting-started"}' https://api.github.com/authorizations
-5.1. En la respuesta nos quedaremos con el cÛdigo que hay al lado de "token": para ponerlo en la configuraciÛn.
-6. Editaremos el archivo datacube/app/KBManager/props/3cixty.properties En user pondremos el usuario de virtuoso en password la contraseÒa de virtuoso, en virtuoso_path donde est· instalado virtuoso y en httpHost la direcciÛn del punto de sparql
+4. Sobreescribiremos el fichero DataCube.jar con la √∫ltima versi√≥n ubicada en doc/instalacion/DataCube.jar
+5. A los archivos .sh les daremos permisos con el comando: sudo chmod 755 *.sh
+6. Ejecutaremos el siguiente comando teniendo en cuanta que hay que sustituir <usuarioGit> por el usuario de git que va a crear las issues: curl -i -u <usuarioGit> -d '{"scopes": ["repo", "user"], "note": "getting-started"}' https://api.github.com/authorizations En la respuesta nos quedaremos con el c√≥digo que hay al lado de "token": para ponerlo en la configuraci√≥n.
 7. Editaremos el archivo datacube/system.properties en githubToken podremos el token del usuario que va a crear las issues y en githubURLIssues la URL del repositorio de GitHub
-8. Comprobaremos que podemos descargar documentos de google drive ejecutando el comando: java -Dfile.encoding=UTF8 -jar DataCube.jar googleDrive
-9. Comprobaremos que podemos crear issues en GitHub ejecutando el comando: java -Dfile.encoding=UTF8 -jar DataCube.jar createIssue
-10. Descargaremos el proyecto del git
-10.1. En el directorio datacube ejecutamos el comando git clone  https://github.com/aragonopendata/local-data-aragopedia.git
-10.2. Se descargar· un directorio local-data-aragopedia, entramos en el y editamos el fichero readme.md
-10.3. AÒadiremos un espacio en blanco al final de la primera lÌnea
-10.4. Ejecutaremos los siguientes comandos en el directorio local-data-aragopedia:
-10.4.1. Para este paso vamos a necesitar un usuario de github que pueda hacer commit en el repositorio http://github.com/aragonopendata/local-data-aragopedia.git
-10.4.2. git config credential.helper store
-10.4.3. git config --global user.email "you@example.com"
-10.4.4. git config --global user.name "Your Name"
-10.4.5. git add .
-10.4.6. git commit -m "ActualizaciÛn  autom·tica $(date)"
-10.4.7. git push origin master
-10.4.8. Insertamos el usuario de github
-10.4.9. Insertamos la contraseÒa github
-11. Ejecutaremos el script home/datacube/GenerateAllRDFandLoad.sh
-12. Se revisar· el log para ver que no hay nada excepciones que paren el proceso.
-13. Ejecutaremos el script home/datacube/UpdateRDFandLoad.sh
-14. Se revisar· el log para ver que no hay nada excepciones que paren el proceso.
+8. Comprobaremos que podemos crear issues en GitHub ejecutando el comando: java -Dfile.encoding=UTF8 -jar DataCube.jar createIssue
+9. Descargaremos el proyecto del git
+  - En el directorio datacube ejecutamos el comando git clone  https://github.com/aragonopendata/local-data-aragopedia.git
+  - Se descargar√° un directorio local-data-aragopedia, entramos en el y editamos el fichero readme.md
+  - A√±adiremos un espacio en blanco al final de la primera l√≠nea
+  - Ejecutaremos los siguientes comandos en el directorio local-data-aragopedia:
+     - Para este paso vamos a necesitar un usuario de github que pueda hacer commit en el repositorio http://github.com/aragonopendata/local-data-aragopedia.git
+     - git config credential.helper store
+     - git config --global user.email "you@example.com"
+     - git config --global user.name "Your Name"
+     - git add .
+     - git commit -m "Actualizaci√≥n  autom√°tica $(date)"
+     - git push origin master
+     - Insertamos el usuario de github
+     - Insertamos la contrase√±a github
+10. Ejecutaremos el script home/datacube/GenerateAllRDFandLoad.sh
+11. Se revisar√° el log para ver que no hay nada excepciones que paren el proceso.
+12. Ejecutaremos el script home/datacube/UpdateRDFandLoad.sh
+13. Se revisar√° el log para ver que no hay nada excepciones que paren el proceso.
 
 
-## InstalaciÛn del proceso de actualizaciÛn de datos y carga en virtuoso
+## Instalaci√≥n del proceso de actualizaci√≥n de datos y carga en virtuoso
 
 1. Ejecutamos el comando crontab -e
-2. Insertamos en la ultima lÌnea lo siguiente:
+2. Insertamos en la ultima l√≠nea lo siguiente:
 00 22 * * * ~/datacube/UpdateRDFandLoad.sh
-3. Comprobaremos que a las 22:00 de cada dÌa se ejecuta el script viendo el log datacube/datacube.log
-4. Se revisar· que se ha creado un issue en github con los cambios realizados.
+3. Comprobaremos que a las 22:00 de cada d√≠a se ejecuta el script viendo el log datacube/datacube.log
+4. Se revisar√° que se ha creado un issue en github con los cambios realizados.
  
 ## Como desplegar los linked data api en nuestro servidor
 
- 1. Una vez accedemos a la m·quina, desplegamos en el tomcat los war doc.war, eldakos.war y kos.war, en ese orden. Para desplegar los war se puede hacer o desde el tomcat manager vÌa navegador web o parando el tomcat, copiando los .war en la carpeta webapps (por ejemplo /var/lib/tomcat7/webapps) y arrancando en tomcat (sudo service tomcat7 restart)
+ 1. Una vez accedemos a la m√°quina, desplegamos en el tomcat los war doc.war, eldakos.war y kos.war, en ese orden. Para desplegar los war se puede hacer o desde el tomcat manager v√≠a navegador web o parando el tomcat, copiando los .war en la carpeta webapps (por ejemplo /var/lib/tomcat7/webapps) y arrancando en tomcat (sudo service tomcat7 restart)
  2. Una vez desplegados los war visualizamos que en los logs no hay errores (/var/log/tomcat7)
- 3. En la aplicaciÛn actual del linkded data api, normalmente llamadas standalone o elda, deberemos de agregar el fichero iaest.ttl en la carpeta var/lib/tomcat7/webapps/standalone/specs/iaest.ttl y despuÈs deberemos de editar el fichero /var/lib/tomcat7/webapps/standalone/WEB-INF/web.xml aÒadiendo la siguiente lÌnea ', iaest::specs/iaest.ttl' despuÈs del actual contenido de la etiqueta <param-value>
- 4. Si el host del servidor es diferente de http://opendata.aragon.es habr· que editar el fichero /var/lib/tomcat7/webapps/kos/WEB-INF/localidata.properties cambiando la variable urlRecurso por el host del actual servidor y si existe seguridad 3scale habr· que poner la variable seguridad3Scale a true y en localidataKey3Scale la key identificativa
+ 3. En la aplicaci√≥n actual del linkded data api, normalmente llamadas standalone o elda, deberemos de agregar el fichero iaest.ttl en la carpeta var/lib/tomcat7/webapps/standalone/specs/iaest.ttl y despu√©s deberemos de editar el fichero /var/lib/tomcat7/webapps/standalone/WEB-INF/web.xml a√±adiendo la siguiente l√≠nea ', iaest::specs/iaest.ttl' despu√©s del actual contenido de la etiqueta <param-value>
+ 4. Si el host del servidor es diferente de http://opendata.aragon.es habr√° que editar el fichero /var/lib/tomcat7/webapps/kos/WEB-INF/localidata.properties cambiando la variable urlRecurso por el host del actual servidor y si existe seguridad 3scale habr√° que poner la variable seguridad3Scale a true y en localidataKey3Scale la key identificativa
  5. Editar los ficheros /var/lib/tomcat7/webapps/doc/api.json y /var/lib/tomcat7/webapps/doc/index.html y en donde aparezca alzir.dia.fi.upm.es sustituirlo por el host del servidor 
  
-Si el despliegue se ha hecho correctamente las siguientes urls deberÌan de cargar bien:
+Si el despliegue se ha hecho correctamente las siguientes urls deber√≠an de cargar bien:
 
 http://opendata.aragon.es/recurso/iaest/dsd
 http://opendata.aragon.es/recurso/iaest/observacion.json

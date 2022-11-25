@@ -74,7 +74,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import com.localidata.util.SparqlJenaClass;
+import com.localidata.util.Jena;
 /**
  * 
  * @author Localidata
@@ -321,76 +321,48 @@ public class Utils {
 	}
 
 	public static String queryUrlComarca(String comarcaName){
-		String url = SparqlJenaClass.queryComarca(comarcaName);
-		/*
-		 * 
-		 * esto hay que manejarlo aqui de alguna manera
-		 * 
-		 * 
-		if (!ttl.contains("<"+cadidateUrl+">")) {
-			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell + " NOT FOUND");
-			log.error("URL no encontrada para: " + header + " | " + cleanCell);
-			log.debug("Error en getUrlRefArea cadidateUrl " + cadidateUrl + " response " + ttl);
-			cadidateUrl="";
-			return cadidateUrl;
+		String url = "";
+		try {
+			url = Jena.getUri(comarcaName);
+		}catch(Exception e){
+			TransformToRDF.insertError(e.getMessage());	
 		}
-		 */
+		
+
 		return url;
+
 	}
 
 	public static String queryUrlMunicipio(String munName){
-		/*
-		 * 
-		 * esto hay que manejarlo aqui de alguna manera
-		 * 
-		 * 
-		if (!ttl.contains("<"+cadidateUrl+">")) {
-			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell + " NOT FOUND");
-			log.error("URL no encontrada para: " + header + " | " + cleanCell);
-			log.debug("Error en getUrlRefArea cadidateUrl " + cadidateUrl + " response " + ttl);
-			cadidateUrl="";
-			return cadidateUrl;
+		String url = "";
+		try {
+			url = Jena.getUri(munName);
+		}catch(Exception e){
+			TransformToRDF.insertError(e.getMessage());	
 		}
-		 */
-		String url = SparqlJenaClass.queryMunicipio(munName);
+		
+
 		return url;
 	}
 
 	public static String queryUrlProvincia(String provName){
-		/*
-		 * 
-		 * esto hay que manejarlo aqui de alguna manera
-		 * 
-		 * 
-		if (!ttl.contains("<"+cadidateUrl+">")) {
-			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell + " NOT FOUND");
-			log.error("URL no encontrada para: " + header + " | " + cleanCell);
-			log.debug("Error en getUrlRefArea cadidateUrl " + cadidateUrl + " response " + ttl);
-			cadidateUrl="";
-			return cadidateUrl;
+		
+		String url = "";
+		try {
+			url = Jena.getUri(provName);
+		}catch(Exception e){
+			TransformToRDF.insertError(e.getMessage());	
 		}
-		 */
-		String url = SparqlJenaClass.queryProvincia(provName);
+		
+
 		return url;
 	}
 
 	public static String queryUrlComunidad(String comName){
-		/*
-		 * 
-		 * esto hay que manejarlo aqui de alguna manera
-		 * 
-		 * 
-		if (!ttl.contains("<"+cadidateUrl+">")) {
-			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell + " NOT FOUND");
-			log.error("URL no encontrada para: " + header + " | " + cleanCell);
-			log.debug("Error en getUrlRefArea cadidateUrl " + cadidateUrl + " response " + ttl);
-			cadidateUrl="";
-			return cadidateUrl;
-		}
-		 */
+		
 		String url = "";
 		try {
-			url = SparqlJenaClass.queryComunidad(comName);
+			url = Jena.getUri(comName);
 		}catch(Exception e){
 			TransformToRDF.insertError(e.getMessage());	
 		}

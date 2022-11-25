@@ -74,6 +74,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import com.localidata.util.SparqlJenaClass;
 /**
  * 
  * @author Localidata
@@ -319,9 +320,151 @@ public class Utils {
 		return true;
 	}
 
+	public static String queryUrlComarca(String comarcaName){
+		String url = SparqlJenaClass.queryComarca(comarcaName);
+		/*
+		 * 
+		 * esto hay que manejarlo aqui de alguna manera
+		 * 
+		 * 
+		if (!ttl.contains("<"+cadidateUrl+">")) {
+			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell + " NOT FOUND");
+			log.error("URL no encontrada para: " + header + " | " + cleanCell);
+			log.debug("Error en getUrlRefArea cadidateUrl " + cadidateUrl + " response " + ttl);
+			cadidateUrl="";
+			return cadidateUrl;
+		}
+		 */
+		return url;
+	}
+
+	public static String queryUrlMunicipio(String munName){
+		/*
+		 * 
+		 * esto hay que manejarlo aqui de alguna manera
+		 * 
+		 * 
+		if (!ttl.contains("<"+cadidateUrl+">")) {
+			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell + " NOT FOUND");
+			log.error("URL no encontrada para: " + header + " | " + cleanCell);
+			log.debug("Error en getUrlRefArea cadidateUrl " + cadidateUrl + " response " + ttl);
+			cadidateUrl="";
+			return cadidateUrl;
+		}
+		 */
+		String url = SparqlJenaClass.queryMunicipio(munName);
+		return url;
+	}
+
+	public static String queryUrlProvincia(String provName){
+		/*
+		 * 
+		 * esto hay que manejarlo aqui de alguna manera
+		 * 
+		 * 
+		if (!ttl.contains("<"+cadidateUrl+">")) {
+			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell + " NOT FOUND");
+			log.error("URL no encontrada para: " + header + " | " + cleanCell);
+			log.debug("Error en getUrlRefArea cadidateUrl " + cadidateUrl + " response " + ttl);
+			cadidateUrl="";
+			return cadidateUrl;
+		}
+		 */
+		String url = SparqlJenaClass.queryProvincia(provName);
+		return url;
+	}
+
+	public static String queryUrlComunidad(String comName){
+		/*
+		 * 
+		 * esto hay que manejarlo aqui de alguna manera
+		 * 
+		 * 
+		if (!ttl.contains("<"+cadidateUrl+">")) {
+			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell + " NOT FOUND");
+			log.error("URL no encontrada para: " + header + " | " + cleanCell);
+			log.debug("Error en getUrlRefArea cadidateUrl " + cadidateUrl + " response " + ttl);
+			cadidateUrl="";
+			return cadidateUrl;
+		}
+		 */
+		String url = "";
+		try {
+			url = SparqlJenaClass.queryComunidad(comName);
+		}catch(Exception e){
+			TransformToRDF.insertError(e.getMessage());	
+		}
+		
+
+		return url;
+	}
+
+	public static String processSpecialNames(String header, String valueCell, String fileName){
+		// este caso creo que es mejor solo corregir el nombre por el que es correcto y guardarlo en newValueCell
+		// y de todas formas, ir a consultarlo en virtuoso usando ahora con newValueCell
+		String newValueCell = "";
+		if (valueCell.contains("Torla-Ordesa")) {
+			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". " + valueCell + " instead of Torla");
+			newValueCell = "Torla";
+		} else if (valueCell.contains("Beranuy")) {
+			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". " + valueCell + " instead of Veracruz");
+			newValueCell = "Veracruz";
+		} else if (valueCell.contains("Biel-Fuencalderas")) {
+			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". " + valueCell + " instead of Biel");
+			newValueCell = "Biel";
+		} else if (valueCell.contains("Sin_clasificar")) {
+			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell);
+			newValueCell=""; // preguntar esto, porque va a dar error en consulta. no sepuede consultar un vacio
+		} else{
+			newValueCell= valueCell;
+		}
+		return newValueCell;
+	}
+
+	public static String getUrlNewFormat(String header, String cleanCell, String fileName) {
+		String valueCell = cleanCell;
+		valueCell = valueCell.replaceAll(" / ", "/");
+		valueCell = valueCell.replaceAll(" ", "_");
+		String url = "";
+		//usar jena sparql para
+		// 1. dado un nombre de entidad territorial, crear una clase para consultas en virtuoso, con el proposito de comprobar si existe esta entidad dado su nombre, y obtener el codigo ine
+		// 2. importar esta clase nueva en el Utils.java e implementarla dentro del nuevo modulo
+		// 3. hay que cambiar las candidateUrl por http://opendata.aragon.es/recurso/sector-publico/organizacion/municipio/
+		// 4. ya la concatenacion no seria cadidateUrl += valueCell sino cadidateUrl += valueINE
+		// 5. el control de errores debe incluir la query a sparql
+		// 6. invocar con el nuevo nombre de funcion getUrlNewFormat
+		String verifiedName = processSpecialNames(header, valueCell, fileName);
+
+		if (header.contains("comarca")) {
+			//cadidateUrl = "http://opendata.aragon.es/recurso/sector-publico/organizacion/comarca/";
+			//la funcion de queries me deberia devolver la nueva candidate url de una vez. decirle a oriol TODO
+			url = queryUrlComarca(verifiedName);
+		} else if (header.contains("municipio")) {
+			//cadidateUrl = "http://opendata.aragon.es/recurso/sector-publico/organizacion/municipio/";
+			url = queryUrlMunicipio(verifiedName);
+		} else if (header.contains("provincia")) {
+			//cadidateUrl = "http://opendata.aragon.es/recurso/sector-publico/organizacion/provincia/";
+			url = queryUrlProvincia(verifiedName);
+		} else if (header.contains("comunidad") || header.contains("aragon") || header.contains("ccaa")) {
+			//cadidateUrl = "http://opendata.aragon.es/recurso/sector-publico/organizacion/ccaa/";
+			url = queryUrlComunidad(verifiedName);
+		}
+		
+		if (url.isEmpty()){
+			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell + " NOT FOUND");
+			return "";
+		}else{
+			return "<" + url + ">";
+		}
+		
+		
+	}
+
+
 	public static String getUrlRefArea(String header, String cleanCell, String fileName) {
 
 		String valueCell = cleanCell;
+		log.info(valueCell);
 		valueCell = valueCell.replaceAll(" / ", "/");
 		valueCell = valueCell.replaceAll(" ", "_");
 		String cadidateUrl = "";
@@ -404,6 +547,7 @@ public class Utils {
 	private static String getMunicipiosAragon() {
 		if (municipiosAragon == null) {
 			String url = "https://opendata.aragon.es/recurso/territorio/Municipio";
+			Prop.apiKeyAragopedia="727272";
 			String response = "";
 			municipiosAragon = Utils.processURLGet(url + ".ttl?_sort=label&_page=0&_pageSize=100&api_key=" + Prop.apiKeyAragopedia, "", null);
 			boolean finish = false;

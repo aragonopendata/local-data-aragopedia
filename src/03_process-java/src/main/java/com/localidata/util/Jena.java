@@ -3,7 +3,6 @@ package com.localidata.util;
 import java.text.Normalizer;
 
 import org.apache.jena.query.*;
-import org.apache.jena.rdf.model.Literal;
 import org.apache.jena.rdf.model.Resource;
 
 public class Jena {

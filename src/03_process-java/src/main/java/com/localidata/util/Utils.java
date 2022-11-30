@@ -376,8 +376,6 @@ public class Utils {
 	}
 
 	public static String processSpecialNames(String header, String valueCell, String fileName){
-		// este caso creo que es mejor solo corregir el nombre por el que es correcto y guardarlo en newValueCell
-		// y de todas formas, ir a consultarlo en virtuoso usando ahora con newValueCell
 		String newValueCell = "";
 		if (valueCell.contains("Torla-Ordesa")) {
 			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". " + valueCell + " instead of Torla");
@@ -390,7 +388,7 @@ public class Utils {
 			newValueCell = "Biel";
 		} else if (valueCell.contains("Sin_clasificar")) {
 			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell);
-			newValueCell=""; // preguntar esto, porque va a dar error en consulta. no sepuede consultar un vacio
+			newValueCell="";
 		} else{
 			newValueCell= valueCell;
 		}
@@ -400,24 +398,28 @@ public class Utils {
 	public static String getUrlNewFormat(String header, String cleanCell, String fileName) {
 		String valueCell = cleanCell;
 		String url = null;
-		String verifiedName = processSpecialNames(header, valueCell, fileName);
+		String verifiedName = processSpecialNames(header, valueCell, fileName).trim();
+		//no necesitamos consultar un vacio, por lo tanto:
+		if (!verifiedName.isEmpty()){ 
+			if (header.contains("comarca")) {
+				url = queryUrlComarca(verifiedName);
+			} else if (header.contains("municipio")) {
+				url = queryUrlMunicipio(verifiedName);
+			} else if (header.contains("provincia")) {
+				url = queryUrlProvincia(verifiedName);
+			} else if (header.contains("comunidad") || header.contains("aragon") || header.contains("ccaa")) {
+				url = queryUrlComunidad(verifiedName);
+			}
+			
+			if (url==null){
+				TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell + " NOT FOUND");
+				return "";
+			}else{
+				return "<" + url + ">";
+			}
+		}
 
-		if (header.contains("comarca")) {
-			url = queryUrlComarca(verifiedName);
-		} else if (header.contains("municipio")) {
-			url = queryUrlMunicipio(verifiedName);
-		} else if (header.contains("provincia")) {
-			url = queryUrlProvincia(verifiedName);
-		} else if (header.contains("comunidad") || header.contains("aragon") || header.contains("ccaa")) {
-			url = queryUrlComunidad(verifiedName);
-		}
-		
-		if (url==null){
-			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell + " NOT FOUND");
-			return "";
-		}else{
-			return "<" + url + ">";
-		}
+		return "";
 		
 	}
 

@@ -257,7 +257,7 @@ public class TransformToRDF {
 	                                  cell = cell.substring(cell.indexOf("-") + 1, cell.length());
 	                                } 
 	                                if (Utils.v(cell)) {
-	                                  String urlRefArea = Utils.getUrlRefArea(header, cell, fileName);
+	                                  String urlRefArea = Utils.getUrlNewFormat(header, cell, fileName);
 	                                  if (Utils.v(urlRefArea))
 	                                      result.append("\t" + dataBean.getDimensionMesureSDMX() + ":refArea " + urlRefArea + " ;" + "\n"); 
 	                                  } 

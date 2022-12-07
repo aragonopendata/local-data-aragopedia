@@ -96,7 +96,7 @@ public class Prop {
 			fileErrorBig = prop.getProperty("fileErrorBig");
 			fileErrorNotFound = prop.getProperty("fileErrorNotFound");
 			fileConfElda = prop.getProperty("fileConfElda");
-			bom = Integer.valueOf(prop.getProperty("bom"));
+			bom = Integer.valueOf("3");
 			
 			emailUser = prop.getProperty("emailUser");
 			emailPassword = prop.getProperty("emailPassword");
@@ -124,9 +124,9 @@ public class Prop {
 			
 			
 			limitCubeSizeActive = Boolean.valueOf(prop.getProperty("limitCubeSizeActive"));
-			limitCubeSize = Integer.parseInt(prop.getProperty("limitCubeSize"));
-			defaultTimeOut = Integer.parseInt(prop.getProperty("defaultTimeOut"));
-			readTimeOut = Integer.parseInt(prop.getProperty("readTimeOut"));
+			limitCubeSize = Integer.parseInt("10000");
+			defaultTimeOut = Integer.parseInt("5000");
+			readTimeOut = Integer.parseInt("30000");
 
 			conf = true;
 		} catch (IOException io) {

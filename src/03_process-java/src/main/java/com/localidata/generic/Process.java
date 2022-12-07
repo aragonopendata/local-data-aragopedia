@@ -23,7 +23,7 @@ public class Process {
 		
 		Logger log = Logger.getLogger(Process.class);
 		PropertyConfigurator.configure("log4j.properties");
-		
+
 		if (args[0].equals("config")) {
 			GenerateConfig.main(args);
 		} else if (args[0].equals("data")) {

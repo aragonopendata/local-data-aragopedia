@@ -399,7 +399,7 @@ public class Utils {
 		String valueCell = cleanCell;
 		String url = null;
 		String verifiedName = processSpecialNames(header, valueCell, fileName).trim();
-		//no necesitamos consultar un vacio, por lo tanto:
+		
 		if (!verifiedName.isEmpty()){ 
 			if (header.contains("comarca")) {
 				url = queryUrlComarca(verifiedName);

@@ -386,10 +386,22 @@ public class Utils {
 		} else if (valueCell.contains("Biel-Fuencalderas")) {
 			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". " + valueCell + " instead of Biel");
 			newValueCell = "Biel";
+		} else if(valueCell.contains("La Litera / La Llitera")) {
+			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell);
+			newValueCell="LITERA/LA LLITERA, LA";
+		} else if(valueCell.contains("La Jacetania")) {
+			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell);
+			newValueCell="JACETANIA, LA";
+		} else if(valueCell.contains("Los Monegros")) {
+			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell);
+			newValueCell="MONEGROS, LOS";
+		} else if(valueCell.contains("La Ribagorza")) {
+			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell);
+			newValueCell="RIBAGORZA, LA";
 		} else if (valueCell.contains("Sin_clasificar")) {
 			TransformToRDF.insertError(fileName + ". ERROR. Column " + header + ". VALUE " + valueCell);
 			newValueCell="";
-		} else{
+		}else{
 			newValueCell= valueCell;
 		}
 		return newValueCell;

@@ -124,9 +124,9 @@ public class Prop {
 			
 			
 			limitCubeSizeActive = Boolean.valueOf(prop.getProperty("limitCubeSizeActive"));
-			limitCubeSize = Integer.parseInt("10000");
-			defaultTimeOut = Integer.parseInt("5000");
-			readTimeOut = Integer.parseInt("30000");
+			limitCubeSize = Integer.parseInt(prop.getProperty("limitCubeSize"));
+			defaultTimeOut = Integer.parseInt(prop.getProperty("defaultTimeOut"));
+			readTimeOut = Integer.parseInt(prop.getProperty("readTimeOut"));
 
 			conf = true;
 		} catch (IOException io) {
